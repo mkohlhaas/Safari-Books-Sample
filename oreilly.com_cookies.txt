@@ -1,0 +1,39 @@
+# Netscape HTTP Cookie File
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file!  Do not edit.
+
+learning.oreilly.com	FALSE	/library/view/	FALSE	1621103897	orm-ucv-cohort	1--B
+www.oreilly.com	FALSE	/	FALSE	1778778176	BrowserCookie	8df6477d-5a7e-41f9-a096-6f891da0177b
+.oreilly.com	TRUE	/	FALSE	1652722994	_vwo_uuid_v2	D1CF5633DA641CB2FE0CAC9C44CE57334|8c6ceabe0c9eca690fac0d8348fc5c24
+.oreilly.com	TRUE	/	FALSE	1628874189	_gcl_au	1.1.1061105991.1621098189
+.oreilly.com	TRUE	/	FALSE	1621189703	_gid	GA1.2.1138195579.1621098190
+.oreilly.com	TRUE	/	FALSE	1684172594	_mkto_trk	id:107-FMS-070&token:_mch-oreilly.com-1621098189544-65590
+www.oreilly.com	FALSE	/	TRUE	1652634190	kampyle_userid	4999-7b04-be21-193e-0eaf-8abd-7784-7493
+.oreilly.com	TRUE	/	FALSE	1652634190	cd_user_id	17970fb5692218-04d989a9d1f33f-18281a0c-4b9600-17970fb56954c1
+.oreilly.com	TRUE	/	FALSE	1629739619	_vis_opt_s	1%7C
+.oreilly.com	TRUE	/	FALSE	1936459619	_vwo_uuid	D22E16BD6E04EF0D54FC5B7F23B72283A
+.oreilly.com	TRUE	/	FALSE	1628875619	_vwo_ds	3%241621099617%3A24.58622006%3A%3A
+www.oreilly.com	FALSE	/	TRUE	1684171621	drift_aid	a8eb0ed0-befe-4563-a1b7-7a632dc713b4
+www.oreilly.com	FALSE	/	TRUE	1684171621	driftt_aid	a8eb0ed0-befe-4563-a1b7-7a632dc713b4
+learning.oreilly.com	FALSE	/	FALSE	1778779622	BrowserCookie	52d5c7b3-0101-4500-be91-5eacbfd7a007
+.oreilly.com	TRUE	/	FALSE	1621186026	_uetsid	6cd92050b59f11eb9924f789908b40ee
+.oreilly.com	TRUE	/	FALSE	1622503626	_uetvid	6cd94d10b59f11eba6f3a5238c5cd355
+www.oreilly.com	FALSE	/	FALSE	1652549238	csrftoken	jk2VS97YyLPYxl38FsQIplJucodnpIDiS1EsEZY8wRgkkTqH0MZ38NosZt6hkZY5
+.oreilly.com	TRUE	/	FALSE	1623691638	groot_sessionid	9jnfxzc3b1o8g2aj4i3giyiup4bfxafa
+learning.oreilly.com	FALSE	/	FALSE	1623691639	salesforce_id	309c8dec5011ff0261b8bbc106576bdd
+learning.oreilly.com	FALSE	/	TRUE	1652552847	csrfsafari	tDLt1ZHBpIomgrpwCvBLl3MXO4nlipcHGNMniEZDCJUEn84Na5kq7pc9wiCexi9Z
+.oreilly.com	TRUE	/	TRUE	1623691638	orm-rt	d18a010352964f2399346ca742cad201
+learning.oreilly.com	FALSE	/	TRUE	1623691636	sessionid	y86y68wczmtbxz81t06f5momondeg31h
+learning.oreilly.com	FALSE	/	TRUE	1652635643	kampyle_userid	5f8c-7894-e427-af56-82fe-5d41-a1f1-fcee
+www.oreilly.com	FALSE	/	TRUE	1652636595	kampyleUserSession	1621100595416
+www.oreilly.com	FALSE	/	TRUE	1652636595	kampyleUserSessionsCount	11
+www.oreilly.com	FALSE	/	TRUE	1652636595	kampyleSessionPageCounter	1
+.oreilly.com	TRUE	/	FALSE	1684172597	_ga_092EL089CH	GS1.1.1621098189.1.1.1621100597.57
+.learning.oreilly.com	TRUE	/	FALSE	1652725647	_vwo_uuid_v2	D1CF5633DA641CB2FE0CAC9C44CE57334|8c6ceabe0c9eca690fac0d8348fc5c24
+.oreilly.com	TRUE	/	TRUE	1623694990	orm-jwt	eyJhbGciOiAiUlMyNTYiLCAia2lkIjogImI1ZjliMGU1YzM1ZDRiY2NjYjY1YzZkOGQxYzQ2MWI5In0.eyJhY2N0cyI6IFsiMjk5NjRiN2ItNjhkOC00NTMyLTlhOWItMzJlMDg5Njg5YzFmIl0sICJlaWRzIjogeyJleGFjdHRhcmdldCI6ICJwbGF0Zm9ybV9wcm9kX2NlNDdkZTViLWNlODAtNDlmMC1iNWNkLWM2MGQzZDMzYjE5OCIsICJoZXJvbiI6ICJjZTQ3ZGU1Yi1jZTgwLTQ5ZjAtYjVjZC1jNjBkM2QzM2IxOTgifSwgImVudiI6ICJwcm9kdWN0aW9uIiwgImV4cCI6IDE2MjExMDY1OTAsICJpbmRpdmlkdWFsIjogdHJ1ZSwgInBlcm1zIjogeyJhY2FkbSI6ICJ2IiwgImFwaWRjIjogInYiLCAiY25mcmMiOiAidiIsICJjcHJleCI6ICJ2IiwgImNzc3RkIjogInYiLCAiZXB1YnMiOiAidiIsICJscnB0aCI6ICJ2IiwgImx2dHJnIjogInYiLCAibnRia3MiOiAidiIsICJvcmlvbCI6ICJ2IiwgInBseWxzIjogImNldiIsICJzY25yaW8iOiAidiIsICJ1c2FnZSI6ICJjIiwgInVzcnBmIjogImV2IiwgInZpZGVvIjogInYifSwgInN1YiI6ICJjZTQ3ZGU1Yi1jZTgwLTQ5ZjAtYjVjZC1jNjBkM2QzM2IxOTgifQ.m6EpjbYKKLiNn0IdoqzRme8rZ3xg-Z6GkmhPsjBoBfLmVN4BlmxABqtNXepT4yrqAWcITHjgT82k3EwZPaCK8olngRnsQuzGczBBtT-LMmMNN5gwFSToeePYVBjK_CVIKH1ImQVtgFaQ5VNk7jooEtfYWhW2AQYfaDXKsb6va9E
+learning.oreilly.com	FALSE	/	FALSE	1621104201	_dd_s	rum=0&expire=1621104201728
+.oreilly.com	TRUE	/	FALSE	1684175303	_ga_4WZYL59WMV	GS1.1.1621099626.1.1.1621103303.4
+.oreilly.com	TRUE	/	FALSE	1684175303	_ga	GA1.2.836847317.1621098189
+learning.oreilly.com	FALSE	/	TRUE	1652639303	kampyleUserSession	1621103303507
+learning.oreilly.com	FALSE	/	TRUE	1652639303	kampyleUserSessionsCount	7
+learning.oreilly.com	FALSE	/	TRUE	1652639303	kampyleSessionPageCounter	1
