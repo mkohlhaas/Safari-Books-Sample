@@ -1,0 +1,1518 @@
+<!--[if IE]><![endif]--><!DOCTYPE html><!--[if IE 8]><html class="no-js ie8 oldie" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/creating-solid-apis/9781491986301/ch04.html"
+data-csrf-cookie="csrfsafari"
+
+
+  data-user-id="11366403"
+  data-user-uuid="ce47de5b-ce80-49f0-b5cd-c60d3d33b198"
+  data-username="michaelschiner"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/13/2021"
+
+
+  data-archive="9781491986301"
+  data-publishers="O&#39;Reilly Media, Inc."
+
+
+
+  data-htmlfile-name="ch04.html"
+  data-epub-title="Creating Solid APIs with Lua" data-debug=0 data-testing=0><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/creating-solid-apis/9781491986301/ch04.html"
+data-csrf-cookie="csrfsafari"
+
+
+  data-user-id="11366403"
+  data-user-uuid="ce47de5b-ce80-49f0-b5cd-c60d3d33b198"
+  data-username="michaelschiner"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/13/2021"
+
+
+  data-archive="9781491986301"
+  data-publishers="O&#39;Reilly Media, Inc."
+
+
+
+  data-htmlfile-name="ch04.html"
+  data-epub-title="Creating Solid APIs with Lua" data-debug=0 data-testing=0><!--<![endif]--><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="author" content="O'Reilly Media" /><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"/><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9781491986301"/><link rel="shortcut icon" href="https://www.oreilly.com/favicon.ico" /><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"/><meta property="twitter:account_id" content="4503599627559754" /><link rel="shortcut icon" href="https://learning.oreilly.com/favicon.ico" type="image/x-icon"><link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'><title>4. Making Your API Classy - Creating Solid APIs with Lua</title><link rel="stylesheet" href="https://learning.oreilly.com/static/CACHE/css/output.5bdb4fcb2aad.css" type="text/css"><link rel="stylesheet" type="text/css" href="https://learning.oreilly.com/static/css/annotator.e3b0c44298fc.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><style type="text/css" title="ibis-book">
+    @charset "utf-8";#sbo-rt-content html,#sbo-rt-content div,#sbo-rt-content div,#sbo-rt-content span,#sbo-rt-content applet,#sbo-rt-content object,#sbo-rt-content iframe,#sbo-rt-content h1,#sbo-rt-content h2,#sbo-rt-content h3,#sbo-rt-content h4,#sbo-rt-content h5,#sbo-rt-content h6,#sbo-rt-content p,#sbo-rt-content blockquote,#sbo-rt-content pre,#sbo-rt-content a,#sbo-rt-content abbr,#sbo-rt-content acronym,#sbo-rt-content address,#sbo-rt-content big,#sbo-rt-content cite,#sbo-rt-content code,#sbo-rt-content del,#sbo-rt-content dfn,#sbo-rt-content em,#sbo-rt-content img,#sbo-rt-content ins,#sbo-rt-content kbd,#sbo-rt-content q,#sbo-rt-content s,#sbo-rt-content samp,#sbo-rt-content small,#sbo-rt-content strike,#sbo-rt-content strong,#sbo-rt-content sub,#sbo-rt-content sup,#sbo-rt-content tt,#sbo-rt-content var,#sbo-rt-content b,#sbo-rt-content u,#sbo-rt-content i,#sbo-rt-content center,#sbo-rt-content dl,#sbo-rt-content dt,#sbo-rt-content dd,#sbo-rt-content ol,#sbo-rt-content ul,#sbo-rt-content li,#sbo-rt-content fieldset,#sbo-rt-content form,#sbo-rt-content label,#sbo-rt-content legend,#sbo-rt-content table,#sbo-rt-content caption,#sbo-rt-content tdiv,#sbo-rt-content tfoot,#sbo-rt-content thead,#sbo-rt-content tr,#sbo-rt-content th,#sbo-rt-content td,#sbo-rt-content article,#sbo-rt-content aside,#sbo-rt-content canvas,#sbo-rt-content details,#sbo-rt-content embed,#sbo-rt-content figure,#sbo-rt-content figcaption,#sbo-rt-content footer,#sbo-rt-content header,#sbo-rt-content hgroup,#sbo-rt-content menu,#sbo-rt-content nav,#sbo-rt-content output,#sbo-rt-content ruby,#sbo-rt-content section,#sbo-rt-content summary,#sbo-rt-content time,#sbo-rt-content mark,#sbo-rt-content audio,#sbo-rt-content video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}#sbo-rt-content article,#sbo-rt-content aside,#sbo-rt-content details,#sbo-rt-content figcaption,#sbo-rt-content figure,#sbo-rt-content footer,#sbo-rt-content header,#sbo-rt-content hgroup,#sbo-rt-content menu,#sbo-rt-content nav,#sbo-rt-content section{display:block}#sbo-rt-content div{line-height:1}#sbo-rt-content ol,#sbo-rt-content ul{list-style:none}#sbo-rt-content blockquote,#sbo-rt-content q{quotes:none}#sbo-rt-content blockquote:before,#sbo-rt-content blockquote:after,#sbo-rt-content q:before,#sbo-rt-content q:after{content:none}#sbo-rt-content table{border-collapse:collapse;border-spacing:0}@page{margin:5px !important}#sbo-rt-content p{margin:10px 0 0;line-height:125%;text-align:left}#sbo-rt-content p.byline{text-align:left;margin:-33px auto 35px;font-style:italic;font-weight:bold}#sbo-rt-content div.preface p+p.byline{margin:1em 0 0}#sbo-rt-content div.preface p.byline+p.byline{margin:0}#sbo-rt-content div.sect1>p.byline{margin:-.25em 0 1em}#sbo-rt-content div.sect1>p.byline+p.byline{margin-top:-1em}#sbo-rt-content em{font-style:italic;font-family:inherit}#sbo-rt-content em strong,#sbo-rt-content strong em{font-weight:bold;font-style:italic;font-family:inherit}#sbo-rt-content strong,#sbo-rt-content span.bold{font-weight:bold}#sbo-rt-content em.replaceable{font-style:italic}#sbo-rt-content strong.userinput{font-weight:bold;font-style:normal}#sbo-rt-content span.bolditalic{font-weight:bold;font-style:italic}#sbo-rt-content a.ulink,#sbo-rt-content a.xref,#sbo-rt-content a.email,#sbo-rt-content a.link,#sbo-rt-content a{text-decoration:none;color:#8e0012}#sbo-rt-content span.lineannotation{font-style:italic;color:#a62a2a;font-family:serif}#sbo-rt-content span.underline{text-decoration:underline}#sbo-rt-content span.strikethrough{text-decoration:line-through}#sbo-rt-content span.smallcaps{font-variant:small-caps}#sbo-rt-content span.cursor{background:#000;color:#fff}#sbo-rt-content span.smaller{font-size:75%}#sbo-rt-content .boxedtext,#sbo-rt-content .keycap{border-style:solid;border-width:1px;border-color:#000;padding:1px}#sbo-rt-content span.gray50{color:#7F7F7F;}#sbo-rt-content h1,#sbo-rt-content div.toc-title,#sbo-rt-content h2,#sbo-rt-content h3,#sbo-rt-content h4,#sbo-rt-content h5{-webkit-hyphens:none;hyphens:none;adobe-hyphenate:none;font-weight:bold;text-align:left;page-break-after:avoid !important;font-family:sans-serif,"DejaVuSans"}#sbo-rt-content div.toc-title{font-size:1.5em;margin-top:20px !important;margin-bottom:30px !important}#sbo-rt-content section[data-type="sect1"] h1{font-size:1.3em;color:#8e0012;margin:40px 0 8px 0}#sbo-rt-content section[data-type="sect2"] h2{font-size:1.1em;margin:30px 0 8px 0 !important}#sbo-rt-content section[data-type="sect3"] h3{font-size:1em;color:#555;margin:20px 0 8px 0 !important}#sbo-rt-content section[data-type="sect4"] h4{font-size:1em;font-weight:normal;font-style:italic;margin:15px 0 6px 0 !important}#sbo-rt-content section[data-type="chapter"]>div>h1,#sbo-rt-content section[data-type="preface"]>div>h1,#sbo-rt-content section[data-type="appendix"]>div>h1,#sbo-rt-content section[data-type="glossary"]>div>h1,#sbo-rt-content section[data-type="bibliography"]>div>h1,#sbo-rt-content section[data-type="index"]>div>h1{font-size:2em;line-height:1;margin-bottom:50px;color:#000;padding-bottom:10px;border-bottom:1px solid #000}#sbo-rt-content span.label,#sbo-rt-content span.keep-together{font-size:inherit;font-weight:inherit}#sbo-rt-content div[data-type="part"] h1{font-size:2em;text-align:center;margin-top:0 !important;margin-bottom:50px;padding:50px 0 10px 0;border-bottom:1px solid #000}#sbo-rt-content img.width-ninety{width:90%}#sbo-rt-content img{max-width:95%;margin:0 auto;padding:0}#sbo-rt-content div.figure{background-color:transparent;text-align:center !important;margin:15px 0 15px 0 !important;page-break-inside:avoid}#sbo-rt-content figure{margin:15px 0 15px 0 !important;page-break-inside:avoid}#sbo-rt-content div.figure h6{font-size:90%;text-align:center;font-weight:normal;font-style:italic;font-family:serif !important;color:#000;padding-top:10px !important;page-break-before:avoid;page-break-after:avoid}#sbo-rt-content div.informalfigure{text-align:center !important;padding:5px 0 !important}#sbo-rt-content div.sidebar{margin:15px 0 10px 0 !important;border:1px solid #DCDCDC;background-color:#F7F7F7;padding:15px !important;page-break-inside:avoid}#sbo-rt-content aside[data-type="sidebar"]{margin:15px 0 10px 0 !important;page-break-inside:avoid}#sbo-rt-content div.sidebar-title,#sbo-rt-content aside[data-type="sidebar"] h5{font-weight:bold;font-size:1em;font-family:sans-serif;text-transform:uppercase;letter-spacing:1px;text-align:center;margin:4px 0 6px 0 !important;page-break-inside:avoid}#sbo-rt-content div.sidebar ol,#sbo-rt-content div.sidebar ul,#sbo-rt-content aside[data-type="sidebar"] ol,#sbo-rt-content aside[data-type="sidebar"] ul{margin-left:1.25em !important}#sbo-rt-content div.sidebar div.figure p.title,#sbo-rt-content aside[data-type="sidebar"] figcaption,#sbo-rt-content div.sidebar div.informalfigure div.caption{font-size:90%;text-align:center;font-weight:normal;font-style:italic;font-family:serif !important;color:#000;padding:5px !important;page-break-before:avoid;page-break-after:avoid}#sbo-rt-content div.sidebar div.tip,#sbo-rt-content div.sidebar div[data-type="tip"],#sbo-rt-content div.sidebar div.note,#sbo-rt-content div.sidebar div[data-type="note"],#sbo-rt-content div.sidebar div.warning,#sbo-rt-content div.sidebar div[data-type="warning"],#sbo-rt-content div.sidebar div[data-type="caution"],#sbo-rt-content div.sidebar div[data-type="important"]{margin:20px auto 20px auto !important;font-size:90%;width:85%}#sbo-rt-content aside[data-type="sidebar"] p.byline{font-size:90%;font-weight:bold;font-style:italic;text-align:center;text-indent:0;margin:5px auto 6px;page-break-after:avoid}#sbo-rt-content pre{white-space:pre-wrap;font-family:"Ubuntu Mono",monospace;margin:25px 0 25px 20px;font-size:85%;display:block;-webkit-hyphens:none;hyphens:none;adobe-hyphenate:none;overflow-wrap:break-word}#sbo-rt-content div.note pre.programlisting,#sbo-rt-content div.tip pre.programlisting,#sbo-rt-content div.warning pre.programlisting,#sbo-rt-content div.caution pre.programlisting,#sbo-rt-content div.important pre.programlisting{margin-bottom:0}#sbo-rt-content code{font-family:"Ubuntu Mono",monospace;-webkit-hyphens:none;hyphens:none;adobe-hyphenate:none;overflow-wrap:break-word}#sbo-rt-content code strong em,#sbo-rt-content code em strong,#sbo-rt-content pre em strong,#sbo-rt-content pre strong em,#sbo-rt-content strong code em code,#sbo-rt-content em code strong code,#sbo-rt-content span.bolditalic code{font-weight:bold;font-style:italic;font-family:"Ubuntu Mono BoldItal",monospace}#sbo-rt-content code em,#sbo-rt-content em code,#sbo-rt-content pre em,#sbo-rt-content em.replaceable{font-family:"Ubuntu Mono Ital",monospace;font-style:italic}#sbo-rt-content code strong,#sbo-rt-content strong code,#sbo-rt-content pre strong,#sbo-rt-content strong.userinput{font-family:"Ubuntu Mono Bold",monospace;font-weight:bold}#sbo-rt-content div[data-type="example"]{margin:10px 0 15px 0 !important}#sbo-rt-content div[data-type="example"] h1,#sbo-rt-content div[data-type="example"] h2,#sbo-rt-content div[data-type="example"] h3,#sbo-rt-content div[data-type="example"] h4,#sbo-rt-content div[data-type="example"] h5,#sbo-rt-content div[data-type="example"] h6{font-style:italic;font-weight:normal;text-align:left !important;text-transform:none !important;font-family:serif !important;margin:10px 0 5px 0 !important;border-bottom:1px solid #000}#sbo-rt-content li pre.example{padding:10px 0 !important}#sbo-rt-content div[data-type="example"] pre[data-type="programlisting"],#sbo-rt-content div[data-type="example"] pre[data-type="screen"]{margin:0}#sbo-rt-content section[data-type="titlepage"]>div>h1{font-size:2em;margin:50px 0 10px 0 !important;line-height:1;text-align:center}#sbo-rt-content section[data-type="titlepage"] h2,#sbo-rt-content section[data-type="titlepage"] p.subtitle,#sbo-rt-content section[data-type="titlepage"] p[data-type="subtitle"]{font-size:1.3em;font-weight:normal;text-align:center;margin-top:.5em;color:#555}#sbo-rt-content section[data-type="titlepage"]>div>h2[data-type="author"],#sbo-rt-content section[data-type="titlepage"] p.author{font-size:1.3em;font-family:serif !important;font-weight:bold;margin:50px 0 !important;text-align:center}#sbo-rt-content section[data-type="titlepage"] p.edition{text-align:center;text-transform:uppercase;margin-top:2em}#sbo-rt-content div.book div.titlepage div.publishername{margin-top:60%;margin-bottom:20px;text-align:center;font-size:1.25em}#sbo-rt-content div.book div.titlepage div.locations p{margin:0;text-align:center}#sbo-rt-content div.book div.titlepage div.locations p.cities{font-size:80%;text-align:center;margin-top:5px}#sbo-rt-content section.preface[title="Dedication"]>div.titlepage h2.title{text-align:center;text-transform:uppercase;font-size:1.5em;margin-top:50px;margin-bottom:50px}#sbo-rt-content ul.stafflist{margin:15px 0 15px 20px !important}#sbo-rt-content ul.stafflist li{list-style-type:none;padding:5px 0}#sbo-rt-content ul.printings li{list-style-type:none}#sbo-rt-content section.preface[title="Dedication"] p{font-style:italic;text-align:center}#sbo-rt-content div.colophon h1.title{font-size:1.3em;margin:0 !important;font-family:serif !important;font-weight:normal}#sbo-rt-content div.colophon h2.subtitle{margin:0 !important;color:#000;font-family:serif !important;font-size:1em;font-weight:normal}#sbo-rt-content div.colophon div.author h3.author{font-size:1.1em;font-family:serif !important;margin:10px 0 0 !important;font-weight:normal}#sbo-rt-content div.colophon div.editor h4,#sbo-rt-content div.colophon div.editor h3.editor{color:#000;font-size:.8em;margin:15px 0 0 !important;font-family:serif !important;font-weight:normal}#sbo-rt-content div.colophon div.editor h3.editor{font-size:.8em;margin:0 !important;font-family:serif !important;font-weight:normal}#sbo-rt-content div.colophon div.publisher{margin-top:10px}#sbo-rt-content div.colophon div.publisher p,#sbo-rt-content div.colophon div.publisher span.publishername{margin:0;font-size:.8em}#sbo-rt-content div.legalnotice p,#sbo-rt-content div.timestamp p{font-size:.8em}#sbo-rt-content div.timestamp p{margin-top:10px}#sbo-rt-content div.colophon[title="About the Author"] h1.title,#sbo-rt-content div.colophon[title="Colophon"] h1.title{font-size:1.5em;margin:0 !important;font-family:sans-serif !important}#sbo-rt-content section.chapter div.titlepage div.author{margin:10px 0 10px 0}#sbo-rt-content section.chapter div.titlepage div.author div.affiliation{font-style:italic}#sbo-rt-content div.attribution{margin:5px 0 0 50px !important}#sbo-rt-content h3.author span.orgname{display:none}#sbo-rt-content div.epigraph{margin:10px 0 10px 20px !important;page-break-inside:avoid;font-size:90%}#sbo-rt-content div.epigraph p{font-style:italic}#sbo-rt-content blockquote,#sbo-rt-content div.blockquote{margin:10px !important;page-break-inside:avoid;font-size:95%}#sbo-rt-content blockquote p,#sbo-rt-content div.blockquote p{font-style:italic;margin:.75em 0 0 !important}#sbo-rt-content blockquote div.attribution,#sbo-rt-content blockquote p[data-type="attribution"]{margin:5px 0 10px 30px !important;text-align:right;width:80%}#sbo-rt-content blockquote div.attribution p,#sbo-rt-content blockquote p[data-type="attribution"]{font-style:normal;margin-top:5px}#sbo-rt-content blockquote div.attribution p:before,#sbo-rt-content blockquote p[data-type="attribution"]:before{font-style:normal;content:"—";-webkit-hyphens:none;hyphens:none;adobe-hyphenate:none}#sbo-rt-content p.right{text-align:right;margin:0}#sbo-rt-content div[data-type="footnotes"]{border-top:1px solid black;margin-top:1.5em}#sbo-rt-content sub,#sbo-rt-content sup{font-size:75%;line-height:0;position:relative}#sbo-rt-content sup{top:-.5em}#sbo-rt-content sub{bottom:-.25em}#sbo-rt-content div.refentry p.refname{font-size:1em;font-family:sans-serif,"DejaVuSans";font-weight:bold;margin-bottom:5px;overflow:auto;width:100%}#sbo-rt-content div.refentry{width:100%;display:block;margin-top:2em}#sbo-rt-content div.refsynopsisdiv{display:block;clear:both}#sbo-rt-content div.refentry header{page-break-inside:avoid !important;display:block;break-inside:avoid !important;padding-top:0;border-bottom:1px solid #000}#sbo-rt-content div.refsect1 h6{font-size:.9em;font-family:sans-serif,"DejaVuSans";font-weight:bold}#sbo-rt-content div.refsect1{margin-top:3em}#sbo-rt-content dt{padding-top:10px !important;padding-bottom:0 !important}#sbo-rt-content dd{margin-left:1.5em !important;margin-bottom:.25em}#sbo-rt-content dd,#sbo-rt-content li{text-align:left}#sbo-rt-content ul{list-style-type:disc}#sbo-rt-content ul ul{list-style-type:square}#sbo-rt-content ul ul ul{list-style-type:circle}#sbo-rt-content ol{list-style-type:decimal}#sbo-rt-content ol ol{list-style-type:lower-alpha}#sbo-rt-content ol ol ol{list-style-type:lower-roman}#sbo-rt-content ol ul{list-style-type:disc}#sbo-rt-content ol ul ol{list-style-type:decimal}#sbo-rt-content ul ol{list-style-type:decimal}#sbo-rt-content ul ol ul{list-style-type:disc}#sbo-rt-content ol,#sbo-rt-content ul{list-style-position:outside;margin:15px 0 15px 1.25em}#sbo-rt-content ol li,#sbo-rt-content ul li{margin:.5em 0 .65em;line-height:125%}#sbo-rt-content div.orderedlistalpha{list-style-type:upper-alpha}#sbo-rt-content table.simplelist,#sbo-rt-content ul.simplelist{margin:15px 0 15px 20px !important}#sbo-rt-content ul.simplelist li{list-style-type:none;padding:5px 0}#sbo-rt-content table.simplelist td{border:none}#sbo-rt-content table.simplelist tr{border-bottom:none}#sbo-rt-content table.simplelist tr:nth-of-type(even){background-color:transparent}#sbo-rt-content dl.calloutlist p:first-child{margin-top:-25px !important}#sbo-rt-content dl.calloutlist dd{padding-left:0;margin-top:-25px}#sbo-rt-content dl.calloutlist img,#sbo-rt-content a.co img{padding:0}#sbo-rt-content div.toc ol{margin-top:8px !important;margin-bottom:8px !important;margin-left:0 !important;padding-left:0 !important}#sbo-rt-content div.toc ol ol{margin-left:30px !important;padding-left:0 !important}#sbo-rt-content div.toc ol li{list-style-type:none}#sbo-rt-content div.toc a{color:#8e0012}#sbo-rt-content div.toc ol a{font-size:1em;font-weight:bold}#sbo-rt-content div.toc ol>li>ol a{font-weight:bold;font-size:1em}#sbo-rt-content div.toc ol>li>ol>li>ol a{text-decoration:none;font-weight:normal;font-size:1em}#sbo-rt-content div.tip,#sbo-rt-content div[data-type="tip"],#sbo-rt-content div.note,#sbo-rt-content div[data-type="note"],#sbo-rt-content div.warning,#sbo-rt-content div[data-type="warning"],#sbo-rt-content div[data-type="caution"],#sbo-rt-content div[data-type="important"]{margin:30px !important;font-size:90%;padding:10px 8px 20px 8px !important;page-break-inside:avoid}#sbo-rt-content div.tip ol,#sbo-rt-content div.tip ul,#sbo-rt-content div[data-type="tip"] ol,#sbo-rt-content div[data-type="tip"] ul,#sbo-rt-content div.note ol,#sbo-rt-content div.note ul,#sbo-rt-content div[data-type="note"] ol,#sbo-rt-content div[data-type="note"] ul,#sbo-rt-content div.warning ol,#sbo-rt-content div.warning ul,#sbo-rt-content div[data-type="warning"] ol,#sbo-rt-content div[data-type="warning"] ul,#sbo-rt-content div[data-type="caution"] ol,#sbo-rt-content div[data-type="caution"] ul,#sbo-rt-content div[data-type="important"] ol,#sbo-rt-content div[data-type="important"] ul{margin-left:1.5em !important}#sbo-rt-content div.tip,#sbo-rt-content div[data-type="tip"],#sbo-rt-content div.note,#sbo-rt-content div[data-type="note"]{border:1px solid #BEBEBE;background-color:transparent}#sbo-rt-content div.warning,#sbo-rt-content div[data-type="warning"],#sbo-rt-content div[data-type="caution"],#sbo-rt-content div[data-type="important"]{border:1px solid #BC8F8F}#sbo-rt-content div.tip h3,#sbo-rt-content div[data-type="tip"] h6,#sbo-rt-content div[data-type="tip"] h1,#sbo-rt-content div.note h3,#sbo-rt-content div[data-type="note"] h6,#sbo-rt-content div[data-type="note"] h1,#sbo-rt-content div.warning h3,#sbo-rt-content div[data-type="warning"] h6,#sbo-rt-content div[data-type="warning"] h1,#sbo-rt-content div[data-type="caution"] h6,#sbo-rt-content div[data-type="caution"] h1,#sbo-rt-content div[data-type="important"] h1,#sbo-rt-content div[data-type="important"] h6{font-weight:bold;font-size:110%;font-family:sans-serif !important;text-transform:uppercase;letter-spacing:1px;text-align:center;margin:4px 0 6px !important}#sbo-rt-content div.tip h3,#sbo-rt-content div[data-type="tip"] h6,#sbo-rt-content div.note h3,#sbo-rt-content div[data-type="note"] h6,#sbo-rt-content div[data-type="tip"] h1,#sbo-rt-content div[data-type="note"] h1{color:#737373}#sbo-rt-content div.warning h3,#sbo-rt-content div[data-type="warning"] h6,#sbo-rt-content div[data-type="caution"] h6,#sbo-rt-content div[data-type="important"] h6,#sbo-rt-content div[data-type="warning"] h1,#sbo-rt-content div[data-type="caution"] h1,#sbo-rt-content div[data-type="important"] h1{color:#C67171}#sbo-rt-content div.sect1[title="Safari® Books Online"] div.note,#sbo-rt-content div.safarienabled{background-color:transparent;margin:8px 0 0 !important;border:0 solid #BEBEBE;font-size:100%;padding:0 !important;page-break-inside:avoid}#sbo-rt-content div.sect1[title="Safari® Books Online"] div.note h3,#sbo-rt-content div.safarienabled h6{display:none}#sbo-rt-content div.table,#sbo-rt-content table{margin:15px 0 30px 0 !important;max-width:95%;border:none !important;background:none;display:table !important}#sbo-rt-content div.table,#sbo-rt-content div.informaltable,#sbo-rt-content table{page-break-inside:avoid}#sbo-rt-content tr,#sbo-rt-content tr td{border-bottom:1px solid #c3c3c3}#sbo-rt-content thead td,#sbo-rt-content thead th{border-bottom:#9d9d9d 1px solid !important;border-top:#9d9d9d 1px solid !important}#sbo-rt-content tr:nth-of-type(even){background-color:#f1f6fc}#sbo-rt-content thead{font-family:sans-serif;font-weight:bold}#sbo-rt-content td,#sbo-rt-content th{display:table-cell;padding:.3em;text-align:left;vertical-align:middle;font-size:80%}#sbo-rt-content div.informaltable table{margin:10px auto !important}#sbo-rt-content div.informaltable table tr{border-bottom:none}#sbo-rt-content div.informaltable table tr:nth-of-type(even){background-color:transparent}#sbo-rt-content div.informaltable td,#sbo-rt-content div.informaltable th{border:#9d9d9d 1px solid}#sbo-rt-content div.table-title,#sbo-rt-content table caption{font-weight:normal;font-style:italic;font-family:serif;font-size:1em;margin:10px 0 10px 0 !important;padding:0;page-break-after:avoid;text-align:left !important}#sbo-rt-content table code{font-size:smaller}#sbo-rt-content div.equation,#sbo-rt-content div[data-type="equation"]{margin:10px 0 15px 0 !important}#sbo-rt-content div.equation-title,#sbo-rt-content div[data-type="equation"] h5{font-style:italic;font-weight:normal;font-family:serif !important;font-size:90%;margin:20px 0 10px 0 !important;page-break-after:avoid}#sbo-rt-content div.equation-contents{margin-left:20px}#sbo-rt-content span.inlinemediaobject{height:.85em;display:inline-block;margin-bottom:.2em}#sbo-rt-content span.inlinemediaobject img{margin:0;height:.85em}#sbo-rt-content div.informalequation{margin:20px 0 20px 20px;width:75%}#sbo-rt-content div.informalequation img{width:75%}#sbo-rt-content div.index{text-indent:0}#sbo-rt-content div.index li{line-height:140%}#sbo-rt-content div.index a.indexterm{color:#8e0012}#sbo-rt-content div.index ul,#sbo-rt-content div[data-type="index"] ul{list-style-type:none;padding-left:0;margin-left:0}#sbo-rt-content div.index ul li{padding-left:0;margin-left:0}#sbo-rt-content div.index ul li ul li{margin-left:1em}#sbo-rt-content code.boolean,#sbo-rt-content .navy{color:rgb(0,0,128);}#sbo-rt-content code.character,#sbo-rt-content .olive{color:rgb(128,128,0);}#sbo-rt-content code.comment,#sbo-rt-content .blue{color:rgb(0,0,255);}#sbo-rt-content code.conditional,#sbo-rt-content .limegreen{color:rgb(50,205,50);}#sbo-rt-content code.constant,#sbo-rt-content .darkorange{color:rgb(255,140,0);}#sbo-rt-content code.debug,#sbo-rt-content .darkred{color:rgb(139,0,0);}#sbo-rt-content code.define,#sbo-rt-content .darkgoldenrod,#sbo-rt-content .gold{color:rgb(184,134,11);}#sbo-rt-content code.delimiter,#sbo-rt-content .dimgray{color:rgb(105,105,105);}#sbo-rt-content code.error,#sbo-rt-content .red{color:rgb(255,0,0);}#sbo-rt-content code.exception,#sbo-rt-content .salmon{color:rgb(250,128,11);}#sbo-rt-content code.float,#sbo-rt-content .steelblue{color:rgb(70,130,180);}#sbo-rt-content pre code.function,#sbo-rt-content .green{color:rgb(0,128,0);}#sbo-rt-content code.identifier,#sbo-rt-content .royalblue{color:rgb(65,105,225);}#sbo-rt-content code.ignore,#sbo-rt-content .gray{color:rgb(128,128,128);}#sbo-rt-content code.include,#sbo-rt-content .purple{color:rgb(128,0,128);}#sbo-rt-content code.keyword,#sbo-rt-content .sienna{color:rgb(160,82,45);}#sbo-rt-content code.label,#sbo-rt-content .deeppink{color:rgb(255,20,147);}#sbo-rt-content code.macro,#sbo-rt-content .orangered{color:rgb(255,69,0);}#sbo-rt-content code.number,#sbo-rt-content .brown{color:rgb(165,42,42);}#sbo-rt-content code.operator,#sbo-rt-content .black{color:#000;}#sbo-rt-content code.preCondit,#sbo-rt-content .teal{color:rgb(0,128,128);}#sbo-rt-content code.preProc,#sbo-rt-content .fuschia{color:rgb(255,0,255);}#sbo-rt-content code.repeat,#sbo-rt-content .indigo{color:rgb(75,0,130);}#sbo-rt-content code.special,#sbo-rt-content .saddlebrown{color:rgb(139,69,19);}#sbo-rt-content code.specialchar,#sbo-rt-content .magenta{color:rgb(255,0,255);}#sbo-rt-content code.specialcomment,#sbo-rt-content .seagreen{color:rgb(46,139,87);}#sbo-rt-content code.statement,#sbo-rt-content .forestgreen{color:rgb(34,139,34);}#sbo-rt-content code.storageclass,#sbo-rt-content .plum{color:rgb(221,160,221);}#sbo-rt-content code.string,#sbo-rt-content .darkred{color:rgb(139,0,0);}#sbo-rt-content code.structure,#sbo-rt-content .chocolate{color:rgb(210,106,30);}#sbo-rt-content code.tag,#sbo-rt-content .darkcyan{color:rgb(0,139,139);}#sbo-rt-content code.todo,#sbo-rt-content .black{color:#000;}#sbo-rt-content code.type,#sbo-rt-content .mediumslateblue{color:rgb(123,104,238);}#sbo-rt-content code.typedef,#sbo-rt-content .darkgreen{color:rgb(0,100,0);}#sbo-rt-content code.underlined{text-decoration:underline;}#sbo-rt-content pre code.hll{background-color:#ffc}#sbo-rt-content pre code.c{color:#09F;font-style:italic}#sbo-rt-content pre code.err{color:#A00}#sbo-rt-content pre code.k{color:#069;font-weight:bold}#sbo-rt-content pre code.o{color:#555}#sbo-rt-content pre code.cm{color:#35586C;font-style:italic}#sbo-rt-content pre code.cp{color:#099}#sbo-rt-content pre code.c1{color:#35586C;font-style:italic}#sbo-rt-content pre code.cs{color:#35586C;font-weight:bold;font-style:italic}#sbo-rt-content pre code.gd{background-color:#FCC}#sbo-rt-content pre code.ge{font-style:italic}#sbo-rt-content pre code.gr{color:#F00}#sbo-rt-content pre code.gh{color:#030;font-weight:bold}#sbo-rt-content pre code.gi{background-color:#CFC}#sbo-rt-content pre code.go{color:#000}#sbo-rt-content pre code.gp{color:#009;font-weight:bold}#sbo-rt-content pre code.gs{font-weight:bold}#sbo-rt-content pre code.gu{color:#030;font-weight:bold}#sbo-rt-content pre code.gt{color:#9C6}#sbo-rt-content pre code.kc{color:#069;font-weight:bold}#sbo-rt-content pre code.kd{color:#069;font-weight:bold}#sbo-rt-content pre code.kn{color:#069;font-weight:bold}#sbo-rt-content pre code.kp{color:#069}#sbo-rt-content pre code.kr{color:#069;font-weight:bold}#sbo-rt-content pre code.kt{color:#078;font-weight:bold}#sbo-rt-content pre code.m{color:#F60}#sbo-rt-content pre code.s{color:#C30}#sbo-rt-content pre code.na{color:#309}#sbo-rt-content pre code.nb{color:#366}#sbo-rt-content pre code.nc{color:#0A8;font-weight:bold}#sbo-rt-content pre code.no{color:#360}#sbo-rt-content pre code.nd{color:#99F}#sbo-rt-content pre code.ni{color:#999;font-weight:bold}#sbo-rt-content pre code.ne{color:#C00;font-weight:bold}#sbo-rt-content pre code.nf{color:#C0F}#sbo-rt-content pre code.nl{color:#99F}#sbo-rt-content pre code.nn{color:#0CF;font-weight:bold}#sbo-rt-content pre code.nt{color:#309;font-weight:bold}#sbo-rt-content pre code.nv{color:#033}#sbo-rt-content pre code.ow{color:#000;font-weight:bold}#sbo-rt-content pre code.w{color:#bbb}#sbo-rt-content pre code.mf{color:#F60}#sbo-rt-content pre code.mh{color:#F60}#sbo-rt-content pre code.mi{color:#F60}#sbo-rt-content pre code.mo{color:#F60}#sbo-rt-content pre code.sb{color:#C30}#sbo-rt-content pre code.sc{color:#C30}#sbo-rt-content pre code.sd{color:#C30;font-style:italic}#sbo-rt-content pre code.s2{color:#C30}#sbo-rt-content pre code.se{color:#C30;font-weight:bold}#sbo-rt-content pre code.sh{color:#C30}#sbo-rt-content pre code.si{color:#A00}#sbo-rt-content pre code.sx{color:#C30}#sbo-rt-content pre code.sr{color:#3AA}#sbo-rt-content pre code.s1{color:#C30}#sbo-rt-content pre code.ss{color:#A60}#sbo-rt-content pre code.bp{color:#366}#sbo-rt-content pre code.vc{color:#033}#sbo-rt-content pre code.vg{color:#033}#sbo-rt-content pre code.vi{color:#033}#sbo-rt-content pre code.il{color:#F60}#sbo-rt-content pre code.g{color:#050}#sbo-rt-content pre code.l{color:#C60}#sbo-rt-content pre code.l{color:#F90}#sbo-rt-content pre code.n{color:#008}#sbo-rt-content pre code.nx{color:#008}#sbo-rt-content pre code.py{color:#96F}#sbo-rt-content pre code.p{color:#000}#sbo-rt-content pre code.x{color:#F06}#sbo-rt-content div.blockquote_sampler_toc{width:95%;margin:5px 5px 5px 10px !important}#sbo-rt-content div{font-family:serif;text-align:left}#sbo-rt-content .gray-background,#sbo-rt-content .reverse-video{background:#2E2E2E;color:#FFF}#sbo-rt-content .light-gray-background{background:#A0A0A0}#sbo-rt-content .preserve-whitespace{white-space:pre-wrap}#sbo-rt-content span.gray{color:#4C4C4C}
+    </style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9781491986301/chapter/ch04.html",
+          "book_id": "9781491986301",
+          "chapter_uri": "ch04.html",
+          "position": 0.0,
+          "user_uuid": "ce47de5b-ce80-49f0-b5cd-c60d3d33b198",
+          "next_chapter_uri": "/library/view/creating-solid-apis/9781491986301/part02.html"
+        
+      },
+      title: "Creating Solid APIs with Lua",
+      author_list: "Tyler Neylon",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: true,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false
+    };
+    // ]]></script><script src="https://learning.oreilly.com/static/js/src/modernizr.8e35451ddb64.js"></script><script>
+    
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+      window.PRIVACY_CONTROL_SWITCH = true;
+
+      window.PUBLISHER_PAGES = true;
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "https://learning.oreilly.com/api/v2/search/select/",
+        }
+      };
+  </script><link rel="canonical" href="ch04.html"/><meta name="description" content=" Chapter 4. Making Your API Classy Often, the functions in an API can be broken down into a few categories. Suppose, for instance, that a library allows you to manage ... "><meta property="og:title" content="4. Making Your API Classy" /><meta itemprop="isPartOf" content="/library/view/creating-solid-apis/9781491986301/" /><meta itemprop="name" content="4. Making Your API Classy" /><meta property="og:url" itemprop="url" content="https://learning.oreilly.com/library/view/creating-solid-apis/9781491986301/ch04.html" /><meta property="og:site_name" content="Safari" /><meta property="og:image" itemprop="thumbnailUrl" content="https://learning.oreilly.com/library/cover/9781491986301/" /><meta property="og:description" itemprop="description" content=" Chapter 4. Making Your API Classy Often, the functions in an API can be broken down into a few categories. Suppose, for instance, that a library allows you to manage ... "><meta itemprop="inLanguage" content="en" /><meta itemprop="publisher" content="O&#39;Reilly Media, Inc." /><meta property="og:type" content="book" /><meta property="og:book:isbn" itemprop="isbn" content="9781491963760" /><meta property="og:book:author" itemprop="author" content="Tyler Neylon" /><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@OReillyMedia"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: <%= font_size %> !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: <%= font_family %> !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: <%= column_width %>% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; URL=https://learning.oreilly.com/library/no-js/" /></noscript><script>
+    var dataLayer = window.dataLayer || [];
+
+    
+      window.medalliaVsgUserIdentifier = 'ce47de5b-ce80-49f0-b5cd-c60d3d33b198';
+      dataLayer.push({userIdentifier: 'ce47de5b-ce80-49f0-b5cd-c60d3d33b198'});
+      dataLayer.push({loggedIn: 'yes'});
+
+      
+        window.medalliaVsgAccountIdentifier = '29964b7b-68d8-4532-9a9b-32e089689c1f';
+        
+
+        window.medalliaVsgIsIndividual = true;
+        
+          
+          dataLayer.push({learningAccountType: 'free trial'});
+          
+        
+
+        
+      
+    
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+    (function () {
+      var VERSION = 'V1.1';
+      var AUTHOR = 'Awwad';
+      if (!window.GtmHelper)
+        window.GtmHelper = function () {
+          var instance = this;
+          var loc = document.location;
+          this.version = VERSION;
+          this.author = AUTHOR;
+          this.readCookie = function (name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+          };
+          this.createCookie = function (name, value, days, cookieDomain) {
+            var domain = "";
+            var expires = "";
+
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + Math.ceil(days * 24 * 60 * 60 * 1000));
+              var expires = " expires=" + date.toGMTString() + ";";
+            }
+
+            if (typeof (cookieDomain) != 'undefined')
+              domain = " domain=" + cookieDomain + "; ";
+
+            document.cookie = name + "=" + value + ";" + expires + domain + "path=/";
+          };
+
+          this.isDuplicated = function (currentTransactionId) {
+            // the previous transaction id:
+            var previousTransIdValue = this.readCookie("previousTransId");
+
+            if (currentTransactionId === previousTransIdValue) {
+              return true; // Duplication
+            } else {
+              return false;
+            }
+          };
+        }
+    })()
+  </script><script defer src="https://learning.oreilly.com/static/js/build/vendor.0eac897f11ed.js"></script><script defer src="https://learning.oreilly.com/static/js/build/reader.c745ea9296ac.js"></script></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts">
+
+    
+  <noscript> 
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+  
+
+
+<a href="ch04.html#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li><a href="https://learning.oreilly.com/home/" class="l0 nav-icn"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.738 14H9.254v-3.676a.617.617 0 0 0-.621-.613H7.39a.617.617 0 0 0-.62.613V14H4.284a.617.617 0 0 1-.622-.613V10.22c0-.327.132-.64.367-.87l3.547-3.493a.627.627 0 0 1 .875 0l3.54 3.499c.234.229.366.54.367.864v3.167a.617.617 0 0 1-.62.613zM7.57 2.181a.625.625 0 0 1 .882 0l5.77 5.692-.93.92-5.28-5.209-5.28 5.208-.932-.919 5.77-5.692z" /></svg><span>Home</span></a></li><li class="search"><a href="ch04.html#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"/></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="ch04.html#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"/></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li class="flyout-parent"><a
+                href="ch04.html#"
+                class="l1 nav-icn "
+                
+              ><?xml version="1.0" encoding="UTF-8"?><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M8,8 C6.34321755,8 5.00013,6.65691245 5.00013,5.00013 C5.00013,3.34334755 6.34321755,2.00026001 8,2.00026001 C9.65678245,2.00026001 10.99987,3.34334755 10.99987,5.00013 C10.99987,6.65691245 9.65678245,8 8,8 Z M2.33024571,11.3523547 L2.33774538,11.3523547 C3.7622187,9.70968996 5.82947484,8.76608166 8.00374984,8.76608166 C10.1780248,8.76608166 12.245281,9.70968996 13.6697543,11.3523547 C13.8892083,11.6177474 14.0062813,11.9530021 13.99974,12.2973138 L13.99974,13.99974 L2.00026001,13.99974 L2.00026001,12.2973138 C1.99371867,11.9530021 2.11079172,11.6177474 2.33024571,11.3523547 Z" id="path-1"></path></svg><span>Your O&#39;Reilly</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/profile/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Profile</span></a></li><li><a
+                    href="https://learning.oreilly.com/history/"
+                    class="l2 nav-icn"
+                    
+                  ><span>History</span></a></li><li><a
+                    href="https://learning.oreilly.com/playlists/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Playlists</span></a></li><li><a
+                    href="https://learning.oreilly.com/u/ce47de5b-ce80-49f0-b5cd-c60d3d33b198/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Highlights</span></a></li></ul></li><li ><a
+                href="https://learning.oreilly.com/answers/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M2.31032699,3.75609006 C4.65421571,1.41371359 8.45302454,1.41472092 10.7955702,3.75860838 C13.1381158,6.10249583 13.1369405,9.90130261 10.7930518,12.243847 C8.44916311,14.5863913 4.65018639,14.5852161 2.30780867,12.2413286 C-0.0346204845,9.89749489 -0.0334929936,6.09853298 2.31032699,3.75609006 Z M8.8198605,4.98016308 C7.34193969,3.86924672 5.23410194,3.98609692 3.88914868,5.33104946 C3.12814393,6.09032122 2.72818176,7.13880077 2.79015179,8.21201133 C2.79115912,8.23064692 2.79233434,8.24928252 2.79350956,8.26791811 L2.79350956,8.26791811 C2.83179539,8.8307976 2.9944077,9.37404287 3.26947292,9.86201677 L3.26947292,9.86201677 L2.77621706,11.7027432 C2.7699968,11.7259241 2.77662063,11.7506624 2.79359185,11.7676337 C2.8105631,11.7846049 2.83530144,11.7912287 2.85848233,11.7850085 L2.85848233,11.7850085 L4.69400524,11.2922565 C5.26306363,11.6167344 5.90703177,11.786885 6.56209849,11.7858479 C8.64827865,11.7858479 10.3395879,10.094542 10.3395879,8.00836292 C10.3405204,6.84135608 9.80105674,5.73967784 8.87862141,5.02482134 L8.87862141,5.02482134 L8.82825492,4.98654283 Z M13.7933062,2 C14.7073496,2.00009863 15.4482759,2.74110484 15.4482759,3.65514822 C15.4482759,4.32460943 15.0449926,4.92814782 14.4264842,5.18432286 C13.8079757,5.44049789 13.096053,5.29885769 12.6226979,4.82545158 C12.1493429,4.35204547 12.0077795,3.64010743 12.2640213,3.02162665 C12.5202631,2.40314587 13.123845,1.99992776 13.7933062,2 Z"/></svg><span>Answers</span></a></li><li class="flyout-parent"><a
+                href="ch04.html#"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>queue icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 29.2C25.4 29.2 25.8 29.1 26.1 28.9L48.7 16.8C49.5 16.4 50 15.5 50 14.6 50 13.7 49.5 12.8 48.7 12.4L26.1 0.3C25.4-0.1 24.6-0.1 23.9 0.3L1.3 12.4C0.5 12.8 0 13.7 0 14.6 0 15.5 0.5 16.4 1.3 16.8L23.9 28.9C24.2 29.1 24.6 29.2 25 29.2ZM7.3 14.6L25 5.2 42.7 14.6 25 24 7.3 14.6ZM48.7 22.4L47.7 21.9 25 34.2 2.3 21.9 1.3 22.4C0.5 22.9 0 23.7 0 24.7 0 25.6 0.5 26.5 1.3 26.9L23.9 39.3C24.2 39.5 24.6 39.6 25 39.6 25.4 39.6 25.8 39.5 26.1 39.3L48.7 26.9C49.5 26.5 50 25.6 50 24.7 50 23.7 49.5 22.9 48.7 22.4ZM48.7 32.8L47.7 32.3 25 44.6 2.3 32.3 1.3 32.8C0.5 33.3 0 34.1 0 35.1 0 36 0.5 36.9 1.3 37.3L23.9 49.7C24.2 49.9 24.6 50 25 50 25.4 50 25.8 49.9 26.1 49.7L48.7 37.3C49.5 36.9 50 36 50 35.1 50 34.1 49.5 33.3 48.7 32.8Z"/></g></svg><span>Explore</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/topics/"
+                    class="l2 nav-icn"
+                    
+                  ><span>All Topics</span></a></li><li><a
+                    href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;formats=case%20study&amp;formats=learning%20path&amp;formats=live%20online%20training&amp;formats=notebook&amp;formats=oriole&amp;formats=video&amp;sort=popularity&amp;facet_json=true&amp;page=0&amp;collection_type=expert"
+                    class="l2 nav-icn"
+                    
+                  ><span>Most Popular Titles</span></a></li><li><a
+                    href="https://learning.oreilly.com/recommendations/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Recommended</span></a></li><li><a
+                    href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;sort=publication_date&amp;facet_json=true&amp;page=0"
+                    class="l2 nav-icn"
+                    
+                  ><span>Early Releases</span></a></li><li><a
+                    href="https://learning.oreilly.com/playlists/discover/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Shared Playlists</span></a></li><li><a
+                    href="https://learning.oreilly.com/resource-centers/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Resource Centers</span></a></li></ul></li><li class="flyout-parent"><a
+                href="ch04.html#"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12.8 3.2A1.2 1.2 0 0 1 14 4.4v8.4a1.2 1.2 0 0 1-1.2 1.2H3.2A1.2 1.2 0 0 1 2 12.8V4.4a1.2 1.2 0 0 1 1.2-1.2h1.2V2h1.2v1.2h4.8V2h1.2v1.2h1.2zm-9.6 9.6h9.6V6.2H3.2v6.6zM8 9.5a1.35 1.35 0 1 1 0-2.7 1.35 1.35 0 0 1 0 2.7zm2.7 2.148v.552H5.3v-.552c0-.321.124-.634.355-.858a3.358 3.358 0 0 1 4.69 0c.23.224.355.537.355.858z" /></svg><span>Live Events</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/attend/"
+                    class="l2 nav-icn"
+                    
+                  ><span>All Events</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/architectural-katas/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Architectural Katas</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/ai/"
+                    class="l2 nav-icn"
+                    
+                  ><span>AI &amp; ML</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/strata/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Data Sci &amp; Eng</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/oscon/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Programming</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/infrastructure-ops/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Infra &amp; Ops</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/software-architecture/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Software Arch</span></a></li></ul></li><li class="flyout-parent"><a
+                href="ch04.html#"
+                class="l1 nav-icn "
+                
+              ><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.6467109,4.35328907 L14.7964612,7.51003884 C15.0678463,7.78304342 15.0678463,8.22395603 14.7964612,8.49696061 L11.6467109,11.6467109 L10.6597892,10.6597892 L13.3055794,8 L10.6597892,5.34021084 L11.6467109,4.35328907 Z M4.35328907,11.6467109 L1.20353875,8.48996116 C0.932153749,8.21695658 0.932153749,7.77604397 1.20353875,7.50303939 L4.35328907,4.35328907 L5.34021084,5.34021084 L2.69442057,8 L5.34021084,10.6597892 L4.35328907,11.6467109 Z M5.84417089,11.4997226 L8.67194674,4.50027742 L10.1838269,4.50027742 L7.35605105,11.4997226 L5.84417089,11.4997226 Z" id="Mask"></path></svg><span>Interactive</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/scenarios/?classification=content-scenario"
+                    class="l2 nav-icn"
+                    
+                  ><span>Scenarios</span></a></li><li><a
+                    href="https://learning.oreilly.com/scenarios/?classification=sandbox-scenario"
+                    class="l2 nav-icn"
+                    
+                  ><span>Sandboxes</span></a></li><li><a
+                    href="https://learning.oreilly.com/interactive/?classification=jupyter-notebook"
+                    class="l2 nav-icn"
+                    
+                  ><span>Jupyter Notebooks</span></a></li></ul></li><li ><a
+                href="https://learning.oreilly.com/certifications/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M12.912 9.18L14 8.014l-1.088-1.18a.304.304 0 01-.075-.268L13.195 5l-1.535-.463a.313.313 0 01-.194-.194l-.462-1.537-1.565.358c-.09.03-.194 0-.269-.074L8.007 2 6.845 3.09a.303.303 0 01-.269.074l-1.565-.358-.462 1.537a.313.313 0 01-.194.194L2.82 5l.358 1.567a.26.26 0 01-.075.269L2 8.015l1.088 1.164c.075.075.09.18.075.269l-.358 1.567 1.535.463c.09.03.164.104.194.194l.462 1.537 1.565-.358c.015 0 .045-.015.075-.015.075 0 .15.03.209.074L8.007 14l1.163-1.09a.303.303 0 01.269-.074l1.565.358.462-1.537a.313.313 0 01.194-.194L13.195 11l-.358-1.567a.338.338 0 01.075-.254zm-6.046 1.37L4.41 8.26l1.16-1.244 1.767 1.649L10.4 5.6l1.202 1.202-4.242 4.243-.495-.495z"/></svg><span>Certifications</span></a></li><li ><a
+                href="https://learning.oreilly.com/preferences/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a></li><li ><a
+                href="https://learning.oreilly.com/public/support/"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M7.363 6.656a2.692 2.692 0 0 1-2.681-2.703c0-1.493 1.2-2.703 2.681-2.703a2.692 2.692 0 0 1 2.682 2.703c0 1.493-1.2 2.703-2.682 2.703zm4.023 2.027c-1.852 0-3.352 1.513-3.352 3.379H2v-1.534c-.006-.31.099-.612.295-.852a6.666 6.666 0 0 1 9.09-.993zm-.543.676h1.12v.304c.003.284.16.543.408.676a.766.766 0 0 0 .77 0l.303-.176.556.966-.302.176a.772.772 0 0 0-.362.676v.08a.772.772 0 0 0 .362.677l.302.21-.556.965-.302-.175a.766.766 0 0 0-.771 0 .778.778 0 0 0-.409.675v.352h-1.106v-.372a.778.778 0 0 0-.409-.676.766.766 0 0 0-.77 0l-.303.176-.556-.912.302-.176a.772.772 0 0 0 .362-.676v-.04-.04a.772.772 0 0 0-.362-.676l-.302-.176.556-.966.289.155a.766.766 0 0 0 .77 0 .778.778 0 0 0 .41-.676V9.36zm1.562 2.703c0-.271-.108-.531-.3-.722a1.001 1.001 0 0 0-.72-.292 1.01 1.01 0 0 0-.992 1.023 1.01 1.01 0 0 0 1.01 1.004 1.01 1.01 0 0 0 1.002-1.013z" /></svg><span>Support</span></a></li><li ><a
+                href="https://get.oreilly.com/email-signup.html"
+                class="l1 nav-icn "
+                target=&quot;_blank&quot;
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.564 2.263l2.172 2.174c.17.168.264.397.264.636V11a.6.6 0 0 1-.6.6h-.6V6.2h-6V2.6a.6.6 0 0 1 .6-.6h3.527c.239 0 .468.095.637.263zM2.6 14a.6.6 0 0 1-.6-.6V6.8a.6.6 0 0 1 .6-.6h1.903a1.2 1.2 0 0 1 .849.352L6.2 7.4H11a.6.6 0 0 1 .6.6v5.4a.6.6 0 0 1-.6.6H2.6zM11 5h1.8L11 3.2V5z" /></svg><span>Newsletters</span></a></li><li ><a
+                href="https://learning.oreilly.com/accounts/logout/"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M2.613 12.63A.607.607 0 0 1 2 12.03V3.602C2 3.269 2.274 3 2.613 3h5.515v1.204H3.226v7.223h4.902v1.203H2.613zM5.677 9.02V6.611h4.903V4.926a.301.301 0 0 1 .19-.274.31.31 0 0 1 .33.063l2.722 2.673a.594.594 0 0 1 0 .849L11.1 10.909a.31.31 0 0 1-.331.063.301.301 0 0 1-.19-.274V9.02H5.677z" /></svg><span>Sign Out</span></a></li></ul></div></li></ul></nav></header>
+
+
+
+      </div>
+      <div id="container" class="application">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="ch04.html#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Creating Solid APIs with Lua
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="ch04.html#" title="Search in archive" class="js-search-controls search-controls" onclick="window.Appcues.track('SearchBook_HeronBook')"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9781491986301/chapter/ch04.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards" onclick="window.Appcues.track('AddPlaylist_HeronBook')"></div></div></li><li class="js-font-control-panel font-control-activator"><a href="ch04.html#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size" onclick="window.Appcues.track('ChangeFont_HeronBook')"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="ch04.html#" class="trigger" data-push-state="false" title="Share" aria-label="Share" onclick="window.Appcues.track('Share_HeronBook')"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a
+        class="twitter share-button t-twitter"
+        target="_blank"
+        aria-label="Share this section on Twitter"
+        title="Share this section on Twitter"
+      
+        href="https://twitter.com/share?url=https://learning.oreilly.com/library/view/creating-solid-apis/9781491986301/ch04.html&text=Creating%20Solid%20APIs%20with%20Lua&via=OReillyMedia"
+      ><span>Twitter</span></a></li><li><a
+        class="facebook share-button t-facebook"
+        target="_blank"
+        aria-label="Share this section on Facebook"
+        title="Share this section on Facebook"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://learning.oreilly.com/library/view/creating-solid-apis/9781491986301/ch04.html"
+      ><span>Facebook</span></a></li><li><a
+        class="googleplus share-button t-googleplus"
+        target="_blank"
+        aria-label="Share this secton on Google Plus"
+        title="Share this secton on Google Plus"
+        href="https://plus.google.com/share?url=https://learning.oreilly.com/library/view/creating-solid-apis/9781491986301/ch04.html"
+      ><span>Google Plus</span></a></li><li><a
+        class="email share-button t-email"
+        aria-label="Share this section via email"
+        title="Share this section via email"
+      
+        href="mailto:?subject=Safari: 4.%20Making%20Your%20API%20Classy&body=https://learning.oreilly.com/library/view/creating-solid-apis/9781491986301/ch04.html%0D%0Afrom Creating%20Solid%20APIs%20with%20Lua%0D%0A"
+      ><span>Email</span></a></li></ul></li><!-- endif request.user.is_authenticated -->
+      </ul>
+    </div>
+
+      
+          
+      
+
+    <section role="document">
+        
+        
+
+
+
+
+  <script defer src="https://learning.oreilly.com/static/js/build/djangoMessagesPage.bfaca9fd8619.js"></script>
+
+
+        <script src="https://fast.appcues.com/48743.js"></script>
+<script>
+  var userId = "ce47de5b-ce80-49f0-b5cd-c60d3d33b198";
+
+  var userObject = {
+    firstName: "Michael",
+    segment: "Trial",
+    admin: "False",
+    profileCreatedOn: "2021-05-13",
+    academic: ""
+  };
+  window.Appcues.identify(userId, userObject);
+  window.Appcues.page();
+
+  setTimeout(function () {
+    window.Appcues.track('ViewingBook_HeronBook')
+  }, 20000);
+</script>
+
+
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="ch03.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">3. Using Lua Values in C</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="part02.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">II. Script Safety</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><section data-type="chapter" epub:type="chapter" data-pdf-bookmark="Chapter 4. Making Your API Classy"><div class="chapter" id="making_your_api_classy">
+<h1><span class="label">Chapter 4. </span>Making Your API Classy</h1>
+
+<p>Often, the functions in an API can be broken down into a few categories. Suppose, for instance, that a library allows you to manage both image files and movie files. In cases like this, it’s natural to use a class to represent each conceptual object or task being performed by a subset of the interface—for example, we could have an <code>Image</code> class and a <code>Movie</code> class. This chapter covers common methods of defining classes in Lua; implementing inheritance; and defining custom, class-like userdata types in C.</p>
+
+<section data-type="sect1" data-pdf-bookmark="EatyGuy Version 6: Writing a Class in Lua"><div class="sect1" id="eatyguy_version_6_writing_a_class_in_lua">
+<h1>EatyGuy Version 6: Writing a Class in Lua</h1>
+
+<p>Most of Lua’s design is simple and transparent, including the building blocks of Lua’s class system. Nonetheless, Lua does ask for some depth of thought when it’s time to implement classes and class inheritance. This is due to the fact that classes in Lua are not directly supported by the language; rather, they are <em>enabled</em> by giving coders the low-level pieces needed to be assembled into class mechanics. Because of this, I’ll cover Lua classes in more detail than I’ve previously covered other language features.</p>
+
+<p>In this chapter, we add enemies to EatyGuy. Let’s call them <em>baddies</em> because it sounds more fun. This is a great opportunity to implement a class–subclass relationship: the player and baddies can share a common superclass that we’ll call <code>Character</code>, whereas the baddy-specific behavior will live in subclass called <code>Baddy</code>. As is common in some languages, we’ll capitalize the names of classes and class-like userdata. All other names we’ll keep in lowercase. Let’s also use the word <em>method</em> to refer to functions that are defined as part of a class.</p>
+
+<section data-type="sect2" data-pdf-bookmark="A Common Code Pattern for Lua Classes"><div class="sect2" id="common_code_pattern_for_lua_classes">
+<h2>A Common Code Pattern for Lua Classes</h2>
+
+<p>Because Lua provides only low-level devices from which coders build classes, different class implementations are possible. Let’s use a code pattern that is simple yet works well with single inheritance. Here’s a bare-bones example:</p>
+
+<pre data-type="programlisting">
+-- MyClass.lua
+
+MyClass = {}
+
+function MyClass:new(obj)
+  obj = obj or {}                 -- Line 1.
+  self.__index = self             -- Line 2.
+  return setmetatable(obj, self)  -- Line 3.
+end
+
+function MyClass:method()
+  print('Hi from ' .. self.name)
+end
+
+return MyClass</pre>
+
+<p>You could use this class in another Lua file by running the following code:</p>
+
+<pre data-type="programlisting">
+local MyClass = require 'MyClass'
+
+local obj = MyClass:new({name = 'Winnifred'})
+obj:method()  --&gt; Prints out 'Hi from Winnifred'.</pre>
+
+<p>Because you’re an astute reader, you probably noticed that these functions are both defined with, and called with, a colon before the function name rather than a period. This colon notation is syntactic sugar for receiving or sending in a special first parameter called <code>self</code>. I’ll explain this notation and then explain <code>MyClass</code> in more detail.</p>
+
+<p>Suppose that you <em>define</em> a function as a member of a table like so:</p>
+
+<pre data-type="programlisting">
+function atable:amethod(a, b, c)
+  -- (function body here)
+end</pre>
+
+<p>The colon indicates that the function accepts an implicit first parameter called <code>self</code>, followed by any explicitly listed parameters. The preceding example code has the same effect as this more verbose code:</p>
+
+<pre data-type="programlisting">
+function atable.amethod(self, a, b, c)
+  -- (function body here)
+end</pre>
+
+<p>Now, instead of <em>defining</em> a function, suppose that you’re <em>calling</em> a function on a table:</p>
+
+<pre data-type="programlisting">
+anothertable:amethod(10, 20)</pre>
+
+<p>In this case, the colon syntax means that the value just before the colon will be sent in as an inserted first parameter to the function. So, the preceding method call is the same as this longer version:</p>
+
+<pre data-type="programlisting">
+anothertable.amethod(anothertable, 10 20)</pre>
+
+<p>These two mechanics work together nicely, allowing class methods to access the class instance on which they’re being operated.</p>
+
+<p>Now that you understand colon syntax, let’s see what else is going on in the <code>MyClass</code> example. The most interesting piece is the constructor—that is, the <code>new()</code> method. Let’s understand the actions it takes by stepping through this call:</p>
+
+<pre data-type="programlisting">
+local obj = MyClass:new({name = 'Winnifred'})</pre>
+
+<p>The <code>new()</code> method’s first explicit parameter is <code>obj</code>, and the first line of <code>new()</code> is this:</p>
+
+<pre data-type="programlisting">
+obj = obj or {}  -- Line 1.</pre>
+
+<p>If the constructor were called with no parameters, <code>obj</code> would have a nil value, which is falsy. This first line ensures that <code>obj</code> is an empty table in that case. In general, we’d like <code>obj</code> to be some kind of table, and it will gain status as an instance of <code>MyClass</code> over the next two lines. Here’s the second line of the constructor:</p>
+
+<pre data-type="programlisting">
+self.__index = self  -- Line 2.</pre>
+
+<p>Because <code>new()</code> was called with <code>MyClass</code> immediately before the colon, the value of self is <code>MyClass</code>, so that the line effectively takes this step:</p>
+
+<pre data-type="programlisting">
+MyClass.__index = MyClass</pre>
+
+<p>Here’s the third line:</p>
+
+<pre data-type="programlisting">
+return setmetatable(obj, self)  -- Line 3.</pre>
+
+<p>This makes <code>MyClass</code> the metatable of <code>obj</code>. Any key lookups on <code>obj</code> will fall back to key lookups on the table found in <code>obj</code>’s metatable’s <code>__index</code> value. Temporarily ignoring the case of falsy values, we could write this behavior like so:</p>
+
+<pre data-type="programlisting">
+x = obj.key or getmetatable(obj).__index.key</pre>
+
+<p>In Lua, this expression is essentially executed for you when you simply write <code>obj.key</code>; and Lua is smart enough to evaluate the expression to <em>false</em> if that happens to be the direct value of <code>obj.key</code>. As a result, this method call</p>
+
+<pre data-type="programlisting">
+obj:method()</pre>
+
+<p>works as desired because it’s the same as this one:</p>
+
+<pre data-type="programlisting">
+fn = obj.method or MyClass.method
+fn(obj)  -- And this is the same as MyClass.method(obj).</pre>
+
+<p>The main mechanism is that failed key lookups result in a secondary lookup if the table has a metatable with an <code>__index</code> value. In fact, you can chain this delegation process through a series of metatables. We’ll see this chaining device later in this chapter when we discuss class inheritance.</p>
+</div></section>
+
+<section data-type="sect2" data-pdf-bookmark="The Character Class Example"><div class="sect2" id="character_class_example">
+<h2>The Character Class Example</h2>
+
+<p>Now that we’ve seen the basics of implementing a class in Lua, let’s add one to our blossoming game engine. A <em>character</em> will be any entity that takes up one grid space, such as the player or a baddy, and that may move around the screen at regular time intervals.</p>
+
+<p>Following is the code for <em>Character.lua</em>, but I won’t explain it in detail because it’s all extracted from the previous version of our EatyGuy Lua file. At first, it might feel as if I’m simply moving code around rather than improving things. The improvement comes with the reuse of this code that we’ll see when baddies are added later in this chapter. Here’s <em>Character.lua</em>:</p>
+
+<pre data-type="programlisting">
+-- Character.lua
+--
+-- A class to capture behavior of general
+-- characters.
+--
+Character = {}
+function Character:new(c)
+  c = c or {}
+  self.__index = self
+  return setmetatable(c, self)
+end
+
+function Character:can_move_in_dir(dir, grid)
+  local p = self.pos
+  local gx, gy = p[1] + dir[1], p[2] + dir[2]
+  return (grid[gx] and grid[gx][gy]), {gx, gy}
+end
+
+function Character:move_if_possible(grid)
+  -- Try to change direction; if we can't, next_dir will take
+  -- effect at a corner where we can turn in that direction.
+
+  if self:can_move_in_dir(self.next_dir, grid) then
+    self.dir = self.next_dir
+  end
+
+  -- Move in direction self.dir if possible.
+  local can_move, new_pos = self:can_move_in_dir(self.dir, grid)
+  if can_move then
+    self.old_pos = self.pos  -- Save the old position.
+    self.pos     = new_pos
+  end
+end
+
+function Character:draw(grid)
+  -- Draw the character.
+  local color = self.color or 3  -- Default to yellow.
+  set_color('b', color)
+  set_color('f', 0)  -- Black foreground.
+  local x = 2 * self.pos[1]
+  local y =     self.pos[2]
+  set_pos(x, y)
+  io.write(self.chars)
+  io.flush()
+
+  -- Erase the old character pos if appropriate.
+  if self.old_pos then
+    local op = self.old_pos
+    local x  = 2 * op[1]
+    local y  =     op[2]
+    set_pos(x, y)
+    set_color('f', 7)  -- White foreground.
+    set_color('b', 0)  -- Black background.
+    io.write(grid[op[1]][op[2]])
+    io.flush()
+    self.old_pos = nil
+  end
+end
+
+return Character</pre>
+
+<p>To make this class available to the Lua game code, the two lines that follow are added to <em>eatyguy6.c</em> immediately after <em>util.lua</em> is loaded. The file <em>eatyguy6.c</em> is otherwise a copy of <em>eatyguy5.c</em>:</p>
+
+<pre data-type="programlisting">
+luaL_dofile(L, "Character.lua");
+lua_setglobal(L, "Character");</pre>
+
+<p>In pulling out the <code>Character</code> functionality, we can create the file <em>eatyguy6.lua</em> with a few changes. The <code>player</code> variable will become an instance of <code>Character</code>. I’ve omitted several sections of code, which are identical to the previous version, and used a bold font to highlight the changes to EatyGuy’s Lua code:</p>
+
+<pre data-type="programlisting">
+-- Changed parts of eatyguy6.lua
+
+...
+
+-- Globals.
+
+local percent_extra_paths = 15
+local grid                = nil  -- grid[x][y]: falsy = wall.
+local grid_w, grid_h      = nil, nil
+<strong>local player = Character:new({pos      = {1, 1},</strong>
+                              <strong>dir      = {1, 0},</strong>
+                              <strong>next_dir = {1, 0}})</strong>
+
+...
+
+<strong>-- The can_move_in_dir() function is removed.</strong>
+
+...
+
+local function update(state)
+  ...
+
+  if state.clock &lt; next_move_time then return end
+  next_move_time = next_move_time + move_delta
+
+  <strong>-- It's been at least move_delta seconds since the last</strong>
+  <strong>-- time things moved, so let's move them now!</strong>
+  <strong>player:move_if_possible(grid)</strong>
+end
+
+local function draw(clock)
+
+  ...
+
+  -- framekey switches between 1 &amp; 2; basic sprite animation.
+  local framekey = math.floor(clock / anim_timestep) % 2 + 1
+  <strong>player.chars   = draw_data[dirkey][framekey]</strong>
+
+  <strong>-- Draw the player and baddies.</strong>
+  <strong>player:draw(grid)</strong>
+end
+
+...</pre>
+
+<p>For the most part, the extraction either replaces code with a method call, or removes a function altogether in the case of <code>can_move_in_dir()</code>.</p>
+
+<p>The end result is a surprisingly small game file—<em>eatyguy6.lua</em> is only 127 lines long—for a pseudographical, procedurally generated interactive game, albeit a simple one.</p>
+</div></section>
+</div></section>
+
+<section data-type="sect1" data-pdf-bookmark="EatyGuy Version 7: Class Inheritance"><div class="sect1" id="eatyguy_version_7_class_inheritance">
+<h1>EatyGuy Version 7: Class Inheritance</h1>
+
+<p>At long last, we’re ready to give EatyGuy a reason for all that running around: Let’s add some baddies!</p>
+
+<p>In this section, I’ll cover the mechanics of inheritance while implementing an example subclass of <code>Character</code> called <code>Baddy</code>. There are two common ways that subclassing can appear in an API. You, the API writer, might want to subclass your own objects in order to offer related but slightly different interfaces. For example, suppose that you’ve implemented an <code>Image</code> class. You might also choose to implement an <code>AnimatedImage</code> subclass that adds functionality for working with animated images.</p>
+
+<p>In the case of EatyGuy, there is already some separation between what can be considered a text-based game engine that is providing an API—with functions like <code>set_color()</code> and <code>set_pos()</code>—and game-specific code that uses this API. The <code>Character</code> class is in a gray area that could fall on either side of the game/engine divide, but I’ll consider it to be part of the engine. By making <code>Baddy</code> a subclass of <code>Character</code>, we’ll see an example of a user-written subclass of an API-provided superclass.</p>
+
+<section data-type="sect2" data-pdf-bookmark="Subclasses in Lua"><div class="sect2" id="subclasses_in_lua">
+<h2>Subclasses in Lua</h2>
+
+<p>Before diving into the <code>Baddy</code> class, let’s take a look at a more generic subclass of the earlier <code>MyClass</code> example. In the simplest case, your subclass won’t require any special per-instance initialization, and will only either add or replace existing methods. Here’s a simple subclass that overrides <code>method()</code>:</p>
+
+<pre data-type="programlisting">
+-- Subclass.lua
+--
+-- An example subclass of the earlier MyClass example.
+--
+
+local MyClass = require 'MyClass'
+
+local Subclass = MyClass:new()
+
+function Subclass:method()
+  print('Hi from subclass instance ' .. self.name)
+end
+
+return Subclass</pre>
+
+<p>The interesting thing here is that <code>Subclass</code> begins life as an <em>instance</em> of <code>MyClass</code>. (In other languages, it’s common for classes to simply define new <em>types</em> in the language, rather than to be <em>values</em> [such as class instances] themselves.) I’ll explain how this works in a moment. Here’s an example usage of <code>Subclass</code>:</p>
+
+<pre data-type="programlisting">
+-- subclass_usage.lua
+
+local Subclass = require 'Subclass'
+
+local s = Subclass:new({name = 'Gwendolyn'})
+
+s:method()  --&gt; Prints 'Hi from subclass instance Gwendolyn'.</pre>
+
+<p>In using the subclass, we give it similar treatment to the superclass, calling its <code>new()</code> method first, followed by a <code>method()</code> call on the resulting instance.</p>
+
+<p>The preceding example works because of the following two connections:</p>
+
+<ul>
+	<li>
+	<p>Because <code>Subclass</code> is an instance of <code>MyClass</code>, any method of <code>MyClass</code>—<em>including</em> <code>new()</code>—is also a method of <code>Subclass</code>. So, calling <code>Subclass:new()</code> is the same as calling <code>MyClass.new(Subclass)</code>.</p>
+	</li>
+	<li>
+	<p>The <code>new()</code> method on <code>MyClass</code> was written specifically to support this usage pattern. In particular, a call to <code>MyClass.new(Subclass)</code> will ensure that <code>Subclass.__index = Subclass</code>, and that the new instance <code>obj</code> has <code>Subclass</code> as its metatable. So, methods defined on <code>Subclass</code> will be callable on all instances of <code>Subclass</code>, and methods defined on <code>MyClass</code> that are not overridden by <code>Subclass</code> will also be callable on <code>Subclass</code> instances.</p>
+	</li>
+</ul>
+
+<p>The relationship between an instance of <code>Subclass</code> called <code>obj</code>, and the <code>Subclass</code> and <code>MyClass</code> tables is shown in <a data-type="xref" href="ch04.html#how_underscoreunderscoreindex_values_cha">Figure 4-1</a>.</p>
+
+<figure><div id="how_underscoreunderscoreindex_values_cha" class="figure"><img alt="How __index values chain together the obj, Subclass, and MyClass tables." src="https://learning.oreilly.com/library/view/creating-solid-apis/9781491986301/assets/csal_0401.png" width="975" height="117">
+<h6><span class="label">Figure 4-1. </span>How <code>__index</code> values chain together the obj, Subclass, and MyClass tables</h6>
+</div></figure>
+
+<p>This simple example didn’t cover two common workflows. First, if you’d like to call a superclass’s method that you’ve overridden from a subclass’s method, you can do so by using this syntax:</p>
+
+<pre data-type="programlisting">
+Superclass.method(self, &lt;other parameters&gt;)</pre>
+
+<p>The other common workflow is the case in which your subclass needs its own <code>new()</code> method. The <code>Baddy</code> class will provide an example of this. You also can wrap calls to the superclass’s <code>new()</code> method, but you must do so explicitly because overridden methods in Lua, even constructors, don’t automatically call the versions they override. Such a <code>new()</code> method might look like this:</p>
+
+<pre data-type="programlisting">
+function Subclass:new(obj)
+  obj = Superclass.new(obj)
+  -- Subclass-specific setup.
+  self.__index = self
+  return setmetatable(obj, self)
+end</pre>
+</div></section>
+
+<section data-type="sect2" data-pdf-bookmark="The Baddy Class"><div class="sect2" id="baddy_class">
+<h2>The Baddy Class</h2>
+
+<p>EatyGuy will contain baddies that move around at random. The current function that controls character movement is <code><span class="keep-together">Character:move_if_possible()</span></code>.</p>
+
+<p>We now have a design decision to make: we could either put the movement code for baddies in <em>eatyguy7.lua</em>, or we could put it in a new Lua file devoted to a subclass of <code>Character</code>. One advantage of keeping the code in <em>eatyguy7.lua</em> is that doing so reduces the total number of files in our game, which is good if each file is not too long. On the other hand, it’s useful to decouple chunks of code that conceptually work on different units or perform separate operations. If code is decoupled nicely, it can be easier to maintain when future changes fit well with the separation you’ve chosen, in which case each piece of separated code will most likely be smaller and simpler to work with.</p>
+
+<p>I’ve chosen to create a new file for the new code because this approach minimizes the impact on <em>eatyguy7.lua</em>, and because this makes it easier to focus on the new code for learning purposes. Here are the necessary changes to <em>eatyguy7.lua</em>, compared to the previous version, <em>eatyguy6.lua</em>:</p>
+
+<pre data-type="programlisting">
+-- eatyguy7.lua
+
+local eatyguy = {}
+
+
+<strong>-- Require modules.</strong>
+
+<strong>local Baddy = require 'Baddy'</strong>
+
+
+-- Globals.
+...
+<strong>local baddies = {}</strong>
+
+
+-- Internal functions.
+...
+
+local function update(state)
+
+  ...
+  player:move_if_possible(grid)
+  <strong>for _, baddy in pairs(baddies) do</strong>
+    <strong>baddy:move_if_possible(grid)</strong>
+  <strong>end</strong>
+end
+
+local function draw(clock)
+
+  ...
+
+  player:draw(grid)
+  <strong>for _, baddy in pairs(baddies) do</strong>
+    <strong>baddy:draw(grid)</strong>
+  <strong>end</strong>
+end
+
+-- Public functions.
+
+function eatyguy.init()
+
+  -- Set up the grid size and pseudorandom number generation.
+  grid_w, grid_h = 39, 21
+  math.randomseed(os.time())
+
+  <strong>-- Set up the baddies.</strong>
+  <strong>local baddy_info = { {color = 1, chars = 'oo', pos = {1, 1}},</strong>
+                       <strong>{color = 2, chars = '@@', pos = {1, 0}},</strong>
+                       <strong>{color = 5, chars = '^^', pos = {0, 1}} }</strong>
+  <strong>for _, info in pairs(baddy_info) do</strong>
+    <strong>info.home = {(grid_w - 1) * info.pos[1] + 1,</strong>
+                 <strong>(grid_h - 1) * info.pos[2] + 1}</strong>
+    <strong>table.insert(baddies, Baddy:new(info))</strong>
+  <strong>end</strong>
+
+  -- Build the maze.
+  ...
+
+end</pre>
+
+<p>In <code>eatyguy.init()</code>, each baddy is assigned a pair of characters, such as <code>@@</code>, which we use for their eyeballs. They are also assigned home positions, beginning in the three corners of the maze that are far from EatyGuy’s initial position at location (1, 1). I consider this to be a small change to the primary Lua file, particularly considering the level of functionality being added.</p>
+
+<p>Next, here’s the code for <em>Baddy.lua</em>, which I’ll explain momentarily:</p>
+
+<pre data-type="programlisting">
+-- Baddy.lua
+--
+-- A subclass of Character to capture behavior
+-- specific to baddies.
+--
+
+local Character = require 'Character'
+
+-- Set a new direction and simultaneously update baddy.next_dir
+-- to be a right or left turn from new_dir.
+-- This function cannot be seen outside the Baddy module.
+local function set_new_dir(baddy, new_dir)
+  baddy.dir = new_dir
+  local sign = math.random(2) * 2 - 3  -- Either -1 or +1.
+  baddy.next_dir = {sign * baddy.dir[2], -sign * baddy.dir[1]}
+end
+
+Baddy = Character:new()
+
+-- Set up a new baddy.
+-- This expects a table with keys {home, color, chars}.
+function Baddy:new(b)
+  assert(b)  -- Require a table of initial values.
+  b.pos        = b.home
+  b.dir        = {-1, 0}
+  b.next_dir   = {-1, 0}
+  self.__index = self
+  return setmetatable(b, self)
+end
+
+function Baddy:move_if_possible(grid)
+  local deltas = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}}
+
+  -- Try to change direction; otherwise the next_dir will take
+  -- effect when we're at a turn in that direction.
+  if self:can_move_in_dir(self.next_dir, grid) then
+    set_new_dir(self, self.next_dir)
+  end
+
+  -- Try to move in self.dir; if that doesn't work, randomly
+  -- change directions till we can move again.
+  local can_move, new_pos = self:can_move_in_dir(self.dir, grid)
+  while not can_move do
+    set_new_dir(self, deltas[math.random(4)])
+    can_move, new_pos = self:can_move_in_dir(self.dir, grid)
+  end
+  self.old_pos = self.pos  -- Save the old position.
+  self.pos     = new_pos
+end
+
+return Baddy</pre>
+
+<p>Instances of <code>Baddy’s</code> superclass, <code>Character</code>, simply halt as soon as they hit a wall. When a <code>Baddy</code> instance hits a wall, however, it will continue moving in a random new direction. This behavior is different because the <code>Baddy</code> class overrides the <code>move_if_possible()</code> method.</p>
+
+<p>The file <em>Baddy.lua</em> also contains a local function called <code>set_new_dir()</code> that sets <code>self.dir</code> to a given direction and also sets <code>self.next_dir</code> to either a right or left turn away from <code>self.dir</code>. This results in baddies that are capable of turning at any corner while also avoiding 180° turns.</p>
+
+<p>The <code>set_new_dir()</code> function is also an example of a function that is effectively private to a file. Because it’s a local function that isn’t accessible as a value from the <code>Baddy</code> table, Lua code outside of this file has no access to it without resorting to the debug module. If you’d like to have private values or functions that are visible only within a single file, you can declare them as globals with local scope just like <code>set_new_dir()</code>.</p>
+
+<p><a data-type="xref" href="ch04.html#screenshot_from_eatyguy7comma_featuring">Figure 4-2</a> shows us what the game looks like at this point.</p>
+
+<figure><div id="screenshot_from_eatyguy7comma_featuring" class="figure"><img alt="A screenshot from eatyguy7, featuring some rather frightening baddies." src="https://learning.oreilly.com/library/view/creating-solid-apis/9781491986301/assets/csal_0402.png" width="975" height="646">
+<h6><span class="label">Figure 4-2. </span>A screenshot from <em>eatyguy7</em>, featuring some rather frightening baddies</h6>
+</div></figure>
+
+<p>That’s a bit more exciting!</p>
+
+<p>So far, we’ve talked about writing classes and subclasses in Lua, but we haven’t done much in C in this chapter. Let’s change that by talking about the userdata type, which offers C coders unique powers to combine C-based data structures, including arbitrary pointer values, with Lua-facing functionality.</p>
+</div></section>
+</div></section>
+
+<section data-type="sect1" data-pdf-bookmark="EatyGuy Version 8: Introducing the userdata Type"><div class="sect1" id="eatyguy_version_8_introducing_the_userda">
+<h1>EatyGuy Version 8: Introducing the userdata Type</h1>
+
+<p>Almost every Lua value is equally transparent to both C and Lua code. For example, anyone running either C or Lua can see all the keys and values in a table and look up that table’s metatable. This symmetric transparency, however, does not apply to the <em>userdata</em> type, which is specifically tailored to wrap C-side data in opaque, Lua-facing values.</p>
+
+<p>Technically, a userdata instance has no intrinsic Lua-visible data. How can such an opaque object be useful? Because userdata instances can have metatables, and through these metatables they can effectively have methods and fields, just like tables, as well as support operator overloading. (If you want a refresher on metatables, flip back to the section “The Primary Table Functions” in <a data-type="xref" href="ch03.html#using_lua_values_in_c">Chapter 3</a>.) In other words, from the Lua side, a userdata can effectively look and feel just like a table, although all that functionality has to come directly from a metatable instead of being built-in.</p>
+
+<p>From C’s perspective, there are actually two types of userdata objects: <em>full</em> and <em>light</em>. A <em>full userdata</em> instance—the default type—corresponds to a block of dynamically allocated memory that’s managed by Lua’s garbage collector. This gives you the power, for example, to wrap an arbitrary C <code>struct</code> in a Lua value. This <code>struct</code> can be passed around to C functions that know nothing of Lua.</p>
+
+<p>A <em>light userdata</em>, on the other hand, simply wraps a single pointer. Light userdata are seen by Lua as direct values, similar to the number type. You are completely responsible for managing the memory pointed to by a light userdatum. In addition, light userdata instances can’t have metatables, making them unsuitable as classes. The example C code that follows will work with the full userdata type.</p>
+
+<p>Let’s see why it’s useful to be able to opaquely wrap C data. Consider the <code>io.open()</code> method that’s part of Lua’s standard library. The following code reveals the type returned by this function:</p>
+
+<pre data-type="programlisting">
+&gt; <strong>f = io.open('myfile.txt')</strong>
+&gt; <strong>print(type(f))</strong>  --&gt; Prints out 'userdata'.</pre>
+
+<p>Here are two potential follow-up statements that result in errors:</p>
+
+<pre data-type="programlisting">
+&gt; <strong>setmetatable(f, {})</strong>          -- Error!
+&gt; <strong>read = getmetatable(f).read</strong>  -- Ok.
+&gt; <strong>read(f)</strong>                      -- Ok, reads file.
+&gt; <strong>read(42)</strong>                     -- Error!</pre>
+
+<p>We can’t change the metatable of <code>f</code>, and we can’t call <code>read()</code> on arbitrary values. To be more precise, we can <em>try</em> to do either of those things, but both result in type errors.</p>
+
+<p>What’s going on behind the scenes is that the variable <code>f</code>, which represents a file handle, is internally stored as a <code>FILE</code> pointer in C. Imagine a parallel universe in which, rather than returning a userdata from <code>io.open()</code>, Lua returned a number from <code>io.fopen()</code> and accepted that number as an input to <code>io.fread()</code>. These functions are meant to be analogous to <code>fopen()</code> and <code>fread()</code> in C, so that the return value of <code>io.fopen()</code> is the Lua number with the same numeric value as the corresponding <code>FILE</code> pointer in C. Suddenly, we can make mistakes like this:</p>
+
+<pre data-type="programlisting">
+&gt; io.fread(1729)  -- Ruh-roh, that's not good.</pre>
+
+<p>In this case, the number given is treated as a pointer so that C code can dereference arbitrary memory, resulting in a segfault or a bus error. At a higher level, this violates Lua’s <em>safety</em>. Lua is designed to be safe in the sense that any error, no matter how egregious, will at worst result in a Lua error, and not something worse such as crashing the hosting C app. In other words, if you were to wrap your Lua script in a call via <code>pcall()</code>, it would be guaranteed to not crash. When you write C code that is executed by Lua, it’s your responsibility to uphold this safety by making sure that any error case is surfaced to Lua as a Lua error, rather than crashing the entire program.</p>
+
+<p>The userdata type makes it easier to ensure this safety when working with values in C that need to be tightly controlled in order to remain valid. In the <code>io.open()</code> example, this safety is provided because Lua users can neither change the value of the underlying <code>FILE</code> pointer nor can they create new userdata values without going through the officially supported methods.</p>
+
+<p>Next, I’m going to take a brief detour to explain how Lua loads modules written in C, and then we’ll bring these ideas together in an example module that implements (<em>x</em>, <em>y</em>) coordinate pairs in C, exposing them to Lua as a userdata-based class.</p>
+</div></section>
+
+<section data-type="sect1" data-pdf-bookmark="Writing a Lua-Loadable Module in C"><div class="sect1" id="writing_a_lua-loadable_module_in_c">
+<h1>Writing a Lua-Loadable Module in C</h1>
+
+<p>So far in this book, the Lua interfaces we’ve created have either been written in Lua or have been explicitly loaded via C code, such as by using the <code>luaL_dofile()</code> function. But there’s another way: you can write a Lua module entirely in C. Lua can use your platform’s dynamic linking library to find a compiled object file and to call a specially named function in that file that loads your C module. On Windows, these object files have the filename extension <em>.dll</em> (dynamic link library), whereas on Linux and macOS, they have the extension .<em>so</em> (shared object).</p>
+
+<p>Suppose that your C module is written in the file <em>cmodule.c</em>. In that case, Lua expects it to contain the function <code>luaopen_cmodule()</code>; this function is called when the following Lua statement is executed:</p>
+
+<pre data-type="programlisting">
+&gt; <strong>cmodule = require 'cmodule'</strong></pre>
+
+<p>Here’s a small, valid C module that can be loaded from Lua, but simply returns an empty table:</p>
+
+<pre data-type="programlisting">
+// cmodule.c
+
+#include "lua.h"
+#include &lt;stdio.h&gt;
+
+int luaopen_cmodule(lua_State *L) {
+  printf("luaopen_cmodule() was called!\n");
+  lua_newtable(L);
+  return 1;  // Return the empty table.
+}</pre>
+
+<p>The module can be compiled like so, depending on your operating system:</p>
+
+<pre data-type="programlisting">
+On Windows:
+$ <strong>cc -c cmodule.c -o cmodule.o</strong>
+$ <strong>cc -shared cmodule.o -o cmodule.dll -llua</strong>
+
+On macOS:
+$ <strong>cc cmodule.c -o cmodule.so -undefined dynamic_lookup -I../lua</strong>
+
+On Linux:
+$ <strong>cc cmodule.c -o cmodule.so -I../lua -shared -fpic</strong></pre>
+
+<p>The preceding macOS and Linux commands assume that your Lua header files are in the <em>../lua</em> directory; if that’s not accurate, change the values of the <code>-I</code> flags to the directory containing your Lua header files. You can find more details on this build process at <a href="http://lua-users.org/wiki/BuildingModules">the lua-users.org page on building modules</a>.</p>
+
+<p>After the .<em>so</em> or <em>.dll</em> file is built, you can load it like so:</p>
+
+<pre data-type="programlisting">
+$ <strong>lua</strong>
+Lua 5.3.3  Copyright (C) 1994-2016 Lua.org, PUC-Rio
+&gt; <strong>require 'cmodule'</strong>
+luaopen_cmodule() was called!
+table: 0x7fe0b9e00f60</pre>
+
+<p>The response from the <code>require()</code> call indicates two things. First, that your custom C function was effectively called despite the Lua interpreter not even knowing that it existed when the interpreter was loaded; second, that the <code>require()</code> call did indeed return a table. If you inspected the contents of this table, you’d find it to be empty.</p>
+
+<p>You might be wondering how the Lua interpreter found your module, given that you didn’t provide any information about it before <code>require()</code> was called. Lua looks for module files in a fixed number of locations. Similar to a shell’s <code>PATH</code> environment variable, Lua keeps this list of locations in a string called <code>package.cpath</code>. Here’s the value of <code>package.cpath</code> on my Mac:</p>
+
+<pre data-type="programlisting">
+$ <strong>lua -e 'print(package.cpath)'</strong>
+/usr/local/lib/lua/5.3/?.so;/usr/local/lib/lua/5.3/loadall.so;
+./?.so</pre>
+
+<p>This is a list separated by semicolons. Each path in the list can contain zero or more question marks. When <code>require(</code><code><em>&lt;module_name&gt;</em></code><code>)</code> is called, those question marks are replaced by the <code><em>&lt;module_name&gt;</em></code> string. As an example, a call to <code>require 'cmodule'</code> on my Mac performs the search for the module in this order:</p>
+
+<ol>
+	<li>
+	<p>It looks for the file <em>/usr/local/lib/lua/5.3/cmodule.so</em>. If that file exists, it attempts to run the function <code>luaopen_cmodule()</code> within it. If that succeeds, the search ends.</p>
+	</li>
+	<li>
+	<p>If step 1 failed, it looks for the file <em>/usr/local/lib/lua/5.3/loadall.so</em>. If that file is found, Lua attempts to run the function <code>luaopen_cmodule()</code> within it. If that succeeds, the search ends.</p>
+	</li>
+	<li>
+	<p>If steps 1 and 2 both failed, Lua looks for the file <em>./cmodule.so</em>. If that file is found, Lua attempts to run the function <code>luaopen_cmodule()</code> within it.</p>
+	</li>
+</ol>
+
+<p>In fact, this is just a subset of the complete search because the <code>require()</code> function also looks for <em>&lt;module_name&gt;.lua</em> files, and keeps track of a cache of previously loaded modules, skipping the search if the module name is found in the cache. If none of the search steps succeed, a Lua error is thrown.</p>
+
+<p>The <em>cmodule.c</em> example is a bit underwhelming in that it doesn’t actually do anything. Let’s take a look at a more interesting example that <em>does</em> do something.</p>
+
+<section data-type="sect2" data-pdf-bookmark="Implementing a Class-Like userdata Type"><div class="sect2" id="implementing_a_class-like_userdata_type">
+<h2>Implementing a Class-Like userdata Type</h2>
+
+<p>We’re now ready to implement our own class-like userdata type. The EatyGuy code often uses (<em>x</em>, <em>y</em>) coordinate pairs to indicate either grid positions or directions. It would be convenient if we could perform standard arithmetic operations on these objects as if they were vectors. So, let’s implement this by using Lua’s <code>__add()</code> and <code>__mul()</code> metamethods.</p>
+
+<p>In a burst of unbridled creativity, I’ve decided to use the name <em>Pair</em> for this example class. We could actually implement the <code>Pair</code> class entirely in Lua because it doesn’t strictly require any of the extra power that C offers. However, I’m going to write it in C because I’m using it to illustrate how you can create userdata-based classes in C. In general, when you’re building a class, you have a choice of using a table or a userdata as the type. The need to store C data—especially pointers—is a good reason to base your class on the userdata type rather than on a table. Compared to building a class on the table type, building on the userdata type makes it much more practical to store and safely encapsulate the C values behind your class’s instances. If you don’t need to store C data, basing your class on a table might be less work for you, and it might provide more transparency to coders using your class.</p>
+
+<p>Let’s begin by looking at the setup of <em>Pair.c</em> and the <code>luaopen_Pair()</code> function:</p>
+
+<pre data-type="programlisting">
+// Pair.c
+//
+// When this module is loaded, it sets up two tables:
+// * Pair, which is the class itself, and.
+// * Pair_mt, the metatable of Pair.
+// Pair_mt contains metamethods such as __index.
+// Pair contains the new() method so the user can create new
+// Pairs by using the familiar pattern:
+//
+// local p = Pair:new{12, 34}.
+//
+
+#include "lauxlib.h"
+
+
+// -- Macros and types --
+
+#define Pair_metatable "Pair"
+
+typedef struct {
+  lua_Number x;
+  lua_Number y;
+} Pair;
+
+...
+// The function Pair_new is defined.
+// The functions Pair_mt_{index,add_eq,mul} are defined.
+// The basics of this omitted code are explained later in this
+// chapter; the full source is in this book's github repo.
+...
+
+int luaopen_Pair(lua_State *L) {
+
+  // The user may pass in values here,
+  // but we'll ignore those values.
+  lua_settop(L, 0);
+
+    // stack = []
+
+  // If this metatable already exists, the library is already
+  // loaded.
+  if (luaL_newmetatable(L, Pair_metatable)) {
+
+    // stack = [mt]
+
+    static struct luaL_Reg metamethods[] = {
+      {"__index", Pair_mt_index},
+      {"__add",   Pair_mt_add},
+      {"__eq",    Pair_mt_eq},
+      {"__mul",   Pair_mt_mul},
+      {NULL, NULL}
+    };
+    luaL_setfuncs(L, metamethods, 0);
+    lua_pop(L, 1);  // The table is saved in the Lua's registry.
+
+    // stack = []
+  }
+
+  static struct luaL_Reg fns[] = {
+    {"new", Pair_new},
+    {NULL, NULL}
+  };
+
+  luaL_newlib(L, fns);  // Push a new table with fns key/vals.
+
+    // stack = [Pair = {new = new}]
+
+  return 1;  // Return the top item, the Pair table.
+}</pre>
+
+<p>The first new C API function here is <code>luaL_newmetatable()</code>. To describe this function and its companion, <code>luaL_checkudata()</code>, I’d like to first describe the Lua <em>registry</em>. The Lua registry is a special table that is always available to C code but is hidden by default from Lua code. Aside from its hidden nature, it’s a completely normal Lua table. It exists as a place to store a variant of global values that are usable from C but not from Lua.</p>
+
+<p><a data-type="xref" href="ch04.html#need_table_caption_here">Table 4-1</a> describes the two main helper functions for working with metatables on C-defined classes.</p>
+
+<table class="border" id="need_table_caption_here">
+	<caption><span class="label">Table 4-1. </span>Helper functions with metatables on C classes</caption>
+	<thead>
+		<tr>
+			<th style="vertical-align: top;"><strong>C API function</strong></th>
+			<th style="vertical-align: top;"><strong>Description</strong></th>
+			<th style="vertical-align: top;"><strong>Stack use</strong></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="vertical-align: top;"><code><span class="keep-together">luaL_newmetatable</span>(L,</code> <code><em>&lt;tname&gt;</em></code><code>)</code></td>
+			<td style="vertical-align: top;">Create a new table and push it onto the stack. At the same time, set this new table as the value of the key <code><em>&lt;tname&gt;</em></code> in the registry.</td>
+			<td style="vertical-align: top;"><span class="keep-together">[–0, +1]</span></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top;"><code><span class="keep-together">luaL_checkudata</span>(L,</code> <code><em>&lt;arg&gt;</em></code><code>,</code> <code><em>&lt;tname&gt;</em></code><code>)</code></td>
+			<td style="vertical-align: top;">Check that the value at index <code><em>&lt;arg&gt;</em></code> in the stack is a userdata, and that this userdata’s metatable is the same as the metatable stored with key <code><em>&lt;tname&gt;</em></code> in the registry. If these conditions are all true, then the C pointer value of the userdata is returned; otherwise an error is thrown with an error message about a bad argument type.</td>
+			<td style="vertical-align: top;"><span class="keep-together">[–0, +0]</span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>Earlier in this chapter, we saw how the behavior of a Lua class is determined by its metatable. Lua userdata instances are similar—if they have a metatable, that metatable essentially determines to which class the instance belongs. Hence, when C code sets up a new Lua class, it needs to create a new table to act as the metatable for all instances, and it needs a way to refer back to that metatable later on. The creation and registration of this table is done by the <code>luaL_<span class="keep-together">newmetatable()</span></code> function. In a moment, we’ll see how the companion function <code>luaL_checkudata()</code> can work with metatables created in this manner.</p>
+
+<p>For now, let’s take a look at <a data-type="xref" href="ch04.html#table_caption">Table 4-2</a> and the other two C API functions just introduced.</p>
+
+<table class="border" id="table_caption">
+	<caption><span class="label">Table 4-2. </span>luaL_set and luaL_new lib functions</caption>
+	<thead>
+		<tr>
+			<th style="vertical-align: top;"><strong>C API function</strong></th>
+			<th style="vertical-align: top;"><strong>Description</strong></th>
+			<th style="vertical-align: top;"><strong>Stack use</strong></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="vertical-align: top;"><code><span class="keep-together">luaL_setfuncs</span>(L,</code> <code><em>&lt;fns&gt;</em></code><code>,</code> <code><em>&lt;nup&gt;</em></code><code>)</code></td>
+			<td style="vertical-align: top;">Pop <code><em>&lt;nup&gt;</em></code> values from the stack, set each function in <code><em>&lt;fns&gt;</em></code> as a key/value pair in the table now at the top of the stack. The functions in <code><em>&lt;fns&gt;</em></code> are expected to be given as string/C-function pairs using the <code>luaL_Reg</code> struct, and this array is expected to end with a <code>{NULL, NULL}</code> instance.</td>
+			<td style="vertical-align: top;"><span class="keep-together">[–<code><em>&lt;nup&gt;</em></code>, +0]</span></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top;"><code><span class="keep-together">luaL_newlib</span>(L,</code> <code><em>&lt;fns&gt;</em></code><code>)</code></td>
+			<td style="vertical-align: top;">Create a new table and populate it with the key/value pairs from <code><em>&lt;fns&gt;</em></code>. The functions in <code><em>&lt;fns&gt;</em></code> are expected to be in the same format as those given to <code>luaL_setfuncs()</code>.</td>
+			<td style="vertical-align: top;"><span class="keep-together">[–0, +1]</span></td>
+		</tr>
+	</tbody>
+</table>
+
+<div data-type="note" epub:type="note"><h6>Note</h6>
+<p>This book won’t dive into the details of <em>upvalues</em>, but I’ll mention that the number <code><em>&lt;nup&gt;</em></code> handed to <code>luaL_setfuncs()</code> indicates a number of upvalues to be shared by the functions being set. Upvalues are values visible from a closure—that is, values that are visible to a function but that are defined outside that function and are not globals. You can read more about upvalues in <a href="https://www.lua.org/pil/27.3.3.html">the appropriate section of Roberto Ierusalimschy’s book <em>Programming in Lua</em></a>.</p>
+</div>
+
+<p>The two C API functions in <a data-type="xref" href="ch04.html#table_caption">Table 4-2</a> are extremely useful when it comes to defining classes. The <code>luaL_newlib()</code> function is perfect for setting up a new table with function values, which is exactly the kind of table you’d want to return when a module is set up via a <code>require()</code> call. When you’re setting up a metatable, however, you’ll want to use <code>luaL_setfuncs()</code> because it can work with tables created by other means, such as via the <code>luaL_newmetatable()</code> function.</p>
+
+<p>Our example <code>luaopen_Pair()</code> function has the following effects:</p>
+
+<ul>
+	<li>
+	<p>A new table is set up with key/value pairs for the <code>__index()</code>, <code>__add()</code>, <code>__eq()</code>, and <code>__mul()</code> metamethods. This new table is a value in the registry with the string key <code>"Pair"</code>.</p>
+	</li>
+	<li>
+	<p>Another table is set up to include the key <code>"new"</code> and whose value is the C function <code>Pair_new()</code>.</p>
+	</li>
+	<li>
+	<p>The table just created—the one that includes the <code>"new"</code> key—becomes the return value of the call to <code>require()</code>.</p>
+	</li>
+</ul>
+
+<p>This is enough initialization to understand how the following two lines would work, assuming that your Lua interpreter is using the same version of Lua as the Lua version with which you’ve compiled <em>Pair.c</em>:</p>
+
+<pre data-type="programlisting">
+&gt; <strong>Pair = require 'Pair'</strong>
+&gt; <strong>p = Pair:new{1, 2}</strong></pre>
+
+<div data-type="note" epub:type="note"><h6>Note</h6>
+<p>If you happen to call <code>require 'Pair'</code> from a Lua interpreter whose version is different from the Lua version in your <em>lua.h</em>, the interpreter might display a <code><span class="keep-together">version</span> mismatch</code> error. The fix is to change either your interpreter version or your Lua source code version so that they match. (Type <code><strong>lua -v</strong></code> to see your interpreter’s version; the source’s version is near the top of the <em>lua.h</em> file.)</p>
+</div>
+
+<p>The call to <code>Pair:new()</code> uses curly braces because we’re sending in a single table as the only argument (ignoring the implicit <code>self</code> value). In other words, the call <code>Pair:new{1, 2}</code> is identical to the call <code>Pair:new({1, 2})</code>, but we’re using the shorter syntax. Such a call would result in the C function <code>Pair_new()</code> being called with the stack set to <code>[Pair, {1, 2}]</code>, as those are the two arguments sent into the function.</p>
+
+<p>Let’s take a closer look at Pair’s constructor, <code>Pair:new()</code>, as written in C:</p>
+
+<pre data-type="programlisting">
+// Pair:new(p)
+int Pair_new(lua_State *L) {
+
+  // Extract the x, y data from the stack.
+  luaL_checktype(L, 2, LUA_TTABLE);
+      // stack = [self, p]
+  lua_rawgeti(L, 2, 1);  // 2, 1 = idx in stack, idx in table
+      // stack = [self, p, p[1]]
+  lua_rawgeti(L, 2, 2);
+      // stack = [self, p, p[1], p[2]]
+  lua_Number x = lua_tonumber(L, -2);  // p[1]
+  lua_Number y = lua_tonumber(L, -1);  // p[2]
+  lua_settop(L, 0);
+      // stack = []
+
+  // Create a Pair instance and set its metatable.
+  Pair *pair = (Pair *)lua_newuserdata(L, sizeof(Pair));
+      // stack = [pair]
+  luaL_getmetatable(L, Pair_metatable);
+      // stack = [pair, mt]
+  lua_setmetatable(L, 1);
+      // stack = [pair]
+
+  // Set up the C data.
+  pair-&gt;x = x;
+  pair-&gt;y = y;
+
+  return 1;
+}</pre>
+
+<p>This function performs two operations. It begins by extracting the <em>x</em>, <em>y</em> values from its arguments and then creates a new userdata instance to hold those values. The C API functions shown in <a data-type="xref" href="ch04.html#some_c_api_functions_that_are_useful_for">Table 4-3</a> are used to help extract the <em>x</em>, <em>y</em> values.</p>
+
+<table class="border" id="some_c_api_functions_that_are_useful_for">
+	<caption><span class="label">Table 4-3. </span>Some C API functions that are useful for working with Lua tables in C</caption>
+	<thead>
+		<tr>
+			<th style="vertical-align: top;"><strong>C API function</strong></th>
+			<th style="vertical-align: top;"><strong>Description</strong></th>
+			<th style="vertical-align: top;"><strong>Stack use</strong></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="vertical-align: top;"><code><span class="keep-together">luaL_checktype</span>(L,</code> <code><em>&lt;idx&gt;</em></code><code>,</code> <code><em>&lt;type&gt;</em></code><code>)</code></td>
+			<td style="vertical-align: top;">Check that the Lua type of the value at stack index <code><em>&lt;idx&gt;</em></code> matches the type <code><em>&lt;type&gt;</em></code>, which must be one of the C constants beginning with <code>LUA_T</code> and ending with the type name in all-caps (e.g., <code>LUA_TTABLE</code>). If the check fails, an error message is thrown indicating that the value at <code><em>&lt;arg&gt;</em></code> was of the wrong type.</td>
+			<td style="vertical-align: top;"><span class="keep-together">[–0, +0]</span></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top;"><code><span class="keep-together">lua_rawgeti</span>(L,</code> <code><em>&lt;idx&gt;</em></code><code>,</code> <code><em>&lt;n&gt;</em></code><code>)</code></td>
+			<td style="vertical-align: top;">For the table at stack index <code><em>&lt;idx&gt;</em></code>, get the value of integer key <code><em>&lt;n&gt;</em></code>, ignoring any <code>__index()</code> metamethod. Push the received value onto the top of the stack.</td>
+			<td style="vertical-align: top;"><span class="keep-together">[–0, +1]</span></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top;"><code><span class="keep-together">lua_rawseti</span>(L,</code> <code><em>&lt;idx&gt;</em></code><code>,</code> <code><em>&lt;n&gt;</em></code><code>)</code></td>
+			<td style="vertical-align: top;">Pop the value off the top of the stack and set it as the value of integer key <code><em>&lt;n&gt;</em></code> in the table at stack index <code><em>&lt;idx&gt;</em></code>; this ignores any <code>__newindex()</code> metamethod.</td>
+			<td style="vertical-align: top;"><span class="keep-together">[–1, +0]</span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>In our case, the functions in <a data-type="xref" href="ch04.html#some_c_api_functions_that_are_useful_for">Table 4-3</a> make it easy to check the validity of the incoming argument, and to extract the values of keys 1 and 2 in the given table.</p>
+
+<p>Next, the <code>Pair:new()</code> constructor needs to set up a new userdata instance and give it <code>Pair</code>’s metatable. The key function is <code>lua_<span class="keep-together">newuserdata()</span></code>, which allocates memory similar to <code>malloc()</code>, except that Lua’s garbage collector will manage the actual memory for you. Also similar to <code>malloc()</code>, the return value from <code>lua_newuserdata()</code> can be cast to a pointer of your preferred type and henceforth treated as a pointer to whichever C type you’d like to work with. In the case of the <code>Pair</code> class, the C-side type is a struct with fields <em>x</em> and <em>y</em>.</p>
+
+<p>Let’s see how this nascent userdata obtains the proper metatable. <a data-type="xref" href="ch04.html#some_c_api_functions_for_working_with_us">Table 4-4</a> lists the key functions, including a quick review of <code>lua_newuserdata()</code>.</p>
+
+<table class="border" id="some_c_api_functions_for_working_with_us">
+	<caption><span class="label">Table 4-4. </span>Some C API functions for working with userdata types and metatables</caption>
+	<thead>
+		<tr>
+			<th style="vertical-align: top;"><strong>C API function</strong></th>
+			<th style="vertical-align: top;"><strong>Description</strong></th>
+			<th style="vertical-align: top;"><strong>Stack use</strong></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="vertical-align: top;"><code><span class="keep-together">lua_newuserdata</span>(L,</code> <code><em>&lt;size&gt;</em></code><code>)</code></td>
+			<td style="vertical-align: top;">Create a new userdata object tied to a chunk of newly allocated C memory of size <code><em>&lt;size&gt;</em></code>, in bytes. The new memory is managed by Lua and will be deallocated after the corresponding Lua value is no longer referenced. This function returns a pointer to the newly allocated memory. This pointer and its Lua value will be associated for their lifetime, like a pair of mated albatross.</td>
+			<td style="vertical-align: top;"><span class="keep-together">[–0, +1]</span></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top;"><code><span class="keep-together">luaL_getmetatable</span>(L,</code> <code><em>&lt;tname&gt;</em></code><code>)</code></td>
+			<td style="vertical-align: top;">Retrieve the table stored in the registry with key <code><em>&lt;tname&gt;</em></code> and push it onto the top of the stack.</td>
+			<td style="vertical-align: top;"><span class="keep-together">[–0, +1]</span></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top;"><code><span class="keep-together">lua_setmetatable</span>(L,</code> <code><em>&lt;idx&gt;</em></code><code>)</code></td>
+			<td style="vertical-align: top;">Pop the table from the top of the stack and set it as the metatable of the value found at stack index <code><em>&lt;idx&gt;</em></code>.</td>
+			<td style="vertical-align: top;"><span class="keep-together">[–1, +0]</span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>Note that this last function, <code>lua_setmetatable()</code>, can set metatables for more than just tables. In particular, it can set metatables for userdata, which is exactly what <code>Pair:new()</code> does.</p>
+
+<p>The return value of <code>Pair:new()</code> is a new userdata instance that wraps a C struct of type <code>Pair</code>. The <em>x</em>, <em>y</em> values of this C struct are based on the arguments to <code>Pair:new()</code>, and the userdata’s metatable is <code>Pair_mt</code>, the table set up when <code>luaopen_Pair()</code> made its call to <code>luaL_newmetatable()</code>. Thus, the return value of <code>Pair:new()</code> will have all the metamethods (<code>__add()</code>, <code>__eq()</code>, <code>__mul()</code>, and <code>__index()</code>) set up when the <code>Pair</code> module was loaded.</p>
+
+<p>Rather than cover the complete <code>Pair</code> module in detail, let’s simply take a look at one more function in the <em>Pair.c</em> file. The C function <code>Pair_mt_index()</code>, which corresponds with the <code>__index</code> metamethod, enables <code>Pair</code> users to dereference a single <code>Pair</code> instance in multiple ways, like so:</p>
+
+<pre data-type="programlisting">
+&gt; <strong>Pair = require 'Pair'</strong>
+&gt; <strong>p = Pair:new{100, 200}</strong>
+&gt; <strong>p.x</strong>  -- p[1] is a synonym for this value.
+100
+&gt; <strong>p[2]</strong>  -- p.y is a synonym for this value.
+200</pre>
+
+<p>Here’s the code for <code>Pair_mt_index()</code>:</p>
+
+<pre data-type="programlisting">
+// Pair_mt:index(key)
+// This is used to enable p.x and p.y dereferencing on Pair p.
+// This also supports p[1] and p[2] lookups.
+int Pair_mt_index(lua_State *L) {
+
+  // Expected: stack = [self, key]
+  Pair *pair = (Pair *)luaL_checkudata(L, 1, Pair_metatable);
+
+  // Find the key value as either 1 (x) or 2 (y).
+  int key = 0;
+  int t = lua_type(L, 2);
+  if (t == LUA_TNUMBER) {
+    int ok;
+    key = (int)lua_tointegerx(L, 2, &amp;ok);
+    if (!ok || (key != 1 &amp;&amp; key != 2)) key = 0;
+  } else if (t == LUA_TSTRING) {
+    const char *str_key = lua_tostring(L, 2);
+    if (strcmp(str_key, "x") == 0) key = 1;
+    if (strcmp(str_key, "y") == 0) key = 2;
+  }
+
+  // Push the value.
+  if (key) {
+    lua_pushnumber(L, key == 1 ? pair-&gt;x : pair-&gt;y);
+  } else {
+    lua_pushnil(L);
+  }
+
+  return 1;
+}</pre>
+
+<p>At last, we’ve used the long-anticipated <code>luaL_checkudata()</code> function to simultaneously check that a given argument was of the expected type and convert that value into a C pointer. This code also uses the two C API functions described in <a data-type="xref" href="ch04.html#c_api_functions_to_work_with_lua_values">Table 4-5</a>.</p>
+
+<table class="pagebreak-before" id="c_api_functions_to_work_with_lua_values">
+	<caption><span class="label">Table 4-5. </span>C API functions to work with Lua values of unknown types</caption>
+	<thead>
+		<tr>
+			<th style="vertical-align: top;"><strong>C API function</strong></th>
+			<th style="vertical-align: top;"><strong>Description</strong></th>
+			<th style="vertical-align: top;"><strong>Stack use</strong></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="vertical-align: top;"><code>lua_type(L,</code> <code><em>&lt;idx&gt;</em></code><code>)</code></td>
+			<td style="vertical-align: top;">Return the type of the value at stack index <code><em>&lt;idx&gt;</em></code>. The returned value is a C <code>int</code> that can be compared with the same constants described for the function <code>luaL_checktype()</code> earlier in this chapter (e.g., <code>LUA_TTABLE</code>).</td>
+			<td style="vertical-align: top;">[–0, +0]</td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top;"><code><span class="keep-together">lua_tointegerx</span>(L,</code> <code><em>&lt;idx&gt;</em></code><code>,</code> <code><em>&lt;isnum&gt;</em></code><code>)</code></td>
+			<td style="vertical-align: top;">Attempt to convert the value at stack index <code><em>&lt;idx&gt;</em></code> into a <code>lua_Integer</code> type. If the conversion is successful, the value pointed to by <code><em>&lt;isnum&gt;</em></code> is true, and the return value is the converted integer; otherwise, the value pointed to by <code><em>&lt;isnum&gt;</em></code> is false.</td>
+			<td style="vertical-align: top;"><span class="keep-together">[–0, +0]</span></td>
+		</tr>
+	</tbody>
+</table>
+</div></section>
+
+<section data-type="sect2" data-pdf-bookmark="Integrating a C Module into Your API"><div class="sect2" id="integrating_a_c_module_into_your_api">
+<h2>Integrating a C Module into Your API</h2>
+
+<p>If you’d like a C module to be loaded only upon a user request, the dynamic loading process described earlier will suffice. You also have the option of loading your C module explicitly. For example, these two statements would load the <code>Pair</code> class from C:</p>
+
+<pre data-type="programlisting">
+// C code similar to the Lua statement "Pair = require 'Pair'".
+luaopen_Pair(L);
+lua_setglobal(L, "Pair");</pre>
+
+<p>To make that code work, you’d need to set up a header file (e.g., <em>Pair.h</em>) that declared the <code>luaopen_Pair()</code> function, and compile <em>Pair.c</em> into a typical object file—that is, <em>Pair.o</em>—as opposed to the shared object file used for dynamic loading. Here’s a typical command line to compile <em>Pair.o</em>:</p>
+
+<pre data-type="programlisting">
+cc -std=c99 -I../lua -c Pair.c -o Pair.o</pre>
+
+<p>All subsequent versions of EatyGuy will be linked with <em>Pair.o</em>. Linking <em>Pair.o</em> into <em>eatyguy8</em> is as simple as adding the parameter <code>Pair.o</code> to the command line you use to build <em>eatyguy8</em>. As an example, here is a compilation command that works on macOS:</p>
+
+<pre data-type="programlisting">
+cc -std=c99 -llua -L../lua -I../lua eatyguy8.c Pair.o -o 
+    eatyguy8</pre>
+
+<p>As an example of how the <code>Pair</code> class can clarify EatyGuy’s code, consider this extract from the previous version of EatyGuy’s Lua file, <em>eatyguy7.lua</em>, with the portions we’re about to change shown in bold:</p>
+
+<pre class="pagebreak-before" data-type="programlisting">
+-- Part of eatyguy7.lua, the previous verison
+
+local function drill_path_from(<strong>x, y</strong>)
+  grid[<strong>x</strong>][<strong>y</strong>] = '. '
+  local nbor_dirs = get_nbor_dirs(<strong>x, y</strong>)
+  while #nbor_dirs &gt; 0 do
+    local dir = table.remove(nbor_dirs, math.random(#nbor_dirs))
+    grid[<strong>x + dir[1]</strong>][<strong>y + dir[2]</strong>] = '. '
+    drill_path_from(<strong>x + 2 * dir[1], y + 2 * dir[2]</strong>)
+    nbor_dirs = get_nbor_dirs(<strong>x, y</strong>, percent_extra_paths)
+  end
+end</pre>
+
+<p>You can change this function to accept a single <code>Pair</code> value call <code>pt</code>, and you can clarify several of its expressions by using <code>Pair</code> values instead of tables. Here is the same function in <em>eatyguy8.lua</em>, with changes in bold:</p>
+
+<pre data-type="programlisting">
+-- Part of eatyguy8.lua
+
+local function drill_path_from(<strong>pt</strong>)
+  grid[<strong>pt.x</strong>][<strong>pt.y</strong>] = '. '
+  local nbor_dirs = get_nbor_dirs(<strong>pt</strong>)
+  while #nbor_dirs &gt; 0 do
+    local dir = table.remove(nbor_dirs, math.random(#nbor_dirs))
+    grid[<strong>pt.x + dir.x</strong>][<strong>pt.y + dir.y</strong>] = '. '
+    drill_path_from(<strong>pt + dir * 2</strong>)
+    nbor_dirs = get_nbor_dirs(<strong>pt</strong>, percent_extra_paths)
+  end
+end</pre>
+
+<p>Other changes of a similar nature can be made throughout <em>eatyguy8.lua</em>; <a href="https://github.com/tylerneylon/APIsWithLua/blob/master/ch4/eatyguy8.lua">the full example file</a> is available in this book’s online repository (including compilation commands in the corresponding <em>makefile</em>). I won’t list all the changes here, because the purpose of this section was to explain C-based classes rather than to focus on changes in EatyGuy.</p>
+</div></section>
+</div></section>
+
+<section data-type="sect1" data-pdf-bookmark="Making Your Code Debug-Friendly"><div class="sect1" id="making_your_code_debug-friendly">
+<h1>Making Your Code Debug-Friendly</h1>
+
+<p>This chapter taught you how to build classes in either Lua or C. We saw how classes are built with metatables and how inheritance fits into that structure. We also explored the utility of the userdata type, along with several C API functions and code patterns that can maintain Lua’s code safety while arbitrarily extending its functionality.</p>
+
+<p>Albeit a rare and embarrassing event, most coders occasionally find themselves facing a <em>bug</em> that they must understand and defeat. In the long run, there are a number of practices you can learn that will help you both before and after any particular debugging battle. In <a data-type="xref" href="ch05.html#detecting_errors">Chapter 5</a> (which begins the section on Script Safety), we take a look at some techniques that will help you avoid bugs before they can happen. We also explore other approaches that can assist you in your quest to identify the source of any issues that do come up.</p>
+</div></section>
+</div></section></div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="ch03.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">3. Using Lua Values in C</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="part02.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">II. Script Safety</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag">
+        
+        
+
+        
+          <p>You have 6 days left in your trial, Michaelschiner. Subscribe today. <a href="https://learning.oreilly.com/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+        
+
+<footer class="pagefoot t-pagefoot">
+  <a href="ch04.html#" class="icon-up" onclick="window.Appcues.track('JumpTop_HeronBook')"><div class="visuallyhidden">Back to top</div></a>
+  <ul class='js-footer-nav'>
+  
+    
+    <li><a href="https://learning.oreilly.com/public/support/">Support</a></li>
+    
+    <li><a href="https://learning.oreilly.com/accounts/logout/">Sign Out</a></li>
+    
+  
+  
+  </ul>
+  <span class="copyright">&#169; 2021 <a href="https://learning.oreilly.com/" target="_blank">O'Reilly Media, Inc</a>.</span>
+  
+    
+    <a href="https://www.oreilly.com/terms/">Terms of Service</a> 
+     / 
+    
+    <a href="https://learning.oreilly.com/privacy">Privacy Policy</a> 
+    
+    
+  
+</footer>
+
+      
+    
+    <script src="https://learning.oreilly.com/jsi18n/web/" charset="utf-8"></script>
+    <script src="https://learning.oreilly.com/library/jsi18n/appcache/" charset="utf-8"></script>
+  </body>
+</html>

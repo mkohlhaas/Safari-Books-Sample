@@ -1,0 +1,956 @@
+<!--[if IE]><![endif]--><!DOCTYPE html><!--[if IE 8]><html class="no-js ie8 oldie" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/beginning-lua-programming/9780470069172/ch18.html"
+data-csrf-cookie="csrfsafari"
+
+
+  data-user-id="11366403"
+  data-user-uuid="ce47de5b-ce80-49f0-b5cd-c60d3d33b198"
+  data-username="michaelschiner"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/13/2021"
+
+
+  data-archive="9780470069172"
+  data-publishers="Wrox"
+
+
+
+  data-htmlfile-name="ch18.html"
+  data-epub-title="Beginning Lua Programming" data-debug=0 data-testing=0><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/beginning-lua-programming/9780470069172/ch18.html"
+data-csrf-cookie="csrfsafari"
+
+
+  data-user-id="11366403"
+  data-user-uuid="ce47de5b-ce80-49f0-b5cd-c60d3d33b198"
+  data-username="michaelschiner"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/13/2021"
+
+
+  data-archive="9780470069172"
+  data-publishers="Wrox"
+
+
+
+  data-htmlfile-name="ch18.html"
+  data-epub-title="Beginning Lua Programming" data-debug=0 data-testing=0><!--<![endif]--><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="author" content="O'Reilly Media" /><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"/><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9780470069172"/><link rel="shortcut icon" href="https://www.oreilly.com/favicon.ico" /><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"/><meta property="twitter:account_id" content="4503599627559754" /><link rel="shortcut icon" href="https://learning.oreilly.com/favicon.ico" type="image/x-icon"><link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'><title>18. Carrying Lua with You - Beginning Lua Programming</title><link rel="stylesheet" href="https://learning.oreilly.com/static/CACHE/css/output.5bdb4fcb2aad.css" type="text/css"><link rel="stylesheet" type="text/css" href="https://learning.oreilly.com/static/css/annotator.e3b0c44298fc.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><style type="text/css" title="ibis-book"></style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9780470069172/chapter/ch18.html",
+          "book_id": "9780470069172",
+          "chapter_uri": "ch18.html",
+          "position": 0,
+          "user_uuid": "ce47de5b-ce80-49f0-b5cd-c60d3d33b198",
+          "next_chapter_uri": "/library/view/beginning-lua-programming/9780470069172/ch19.html"
+        
+      },
+      title: "Beginning Lua Programming",
+      author_list: "Aaron Brown, Kurt Jung",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false
+    };
+    // ]]></script><script src="https://learning.oreilly.com/static/js/src/modernizr.8e35451ddb64.js"></script><script>
+    
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+      window.PRIVACY_CONTROL_SWITCH = true;
+
+      window.PUBLISHER_PAGES = true;
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "https://learning.oreilly.com/api/v2/search/select/",
+        }
+      };
+  </script><link rel="canonical" href="ch18.html"/><meta name="description" content="Chapter 18. Carrying Lua with You Lua&#39;s efficiency and small size make it highly suitable for use with the scaled-down resources of a handheld device. This chapter introduces the use ... "><meta property="og:title" content="18. Carrying Lua with You" /><meta itemprop="isPartOf" content="/library/view/beginning-lua-programming/9780470069172/" /><meta itemprop="name" content="18. Carrying Lua with You" /><meta property="og:url" itemprop="url" content="https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch18.html" /><meta property="og:site_name" content="Safari" /><meta property="og:image" itemprop="thumbnailUrl" content="https://learning.oreilly.com/library/cover/9780470069172/" /><meta property="og:description" itemprop="description" content="Chapter 18. Carrying Lua with You Lua&#39;s efficiency and small size make it highly suitable for use with the scaled-down resources of a handheld device. This chapter introduces the use ... "><meta itemprop="inLanguage" content="en" /><meta itemprop="publisher" content="Wrox" /><meta property="og:type" content="book" /><meta property="og:book:isbn" itemprop="isbn" content="9780470069172" /><meta property="og:book:author" itemprop="author" content="Aaron Brown" /><meta property="og:book:author" itemprop="author" content="Kurt Jung" /><meta property="og:book:tag" itemprop="about" content="Core Programming" /><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@OReillyMedia"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: <%= font_size %> !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: <%= font_family %> !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: <%= column_width %>% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; URL=https://learning.oreilly.com/library/no-js/" /></noscript><script>
+    var dataLayer = window.dataLayer || [];
+
+    
+      window.medalliaVsgUserIdentifier = 'ce47de5b-ce80-49f0-b5cd-c60d3d33b198';
+      dataLayer.push({userIdentifier: 'ce47de5b-ce80-49f0-b5cd-c60d3d33b198'});
+      dataLayer.push({loggedIn: 'yes'});
+
+      
+        window.medalliaVsgAccountIdentifier = '29964b7b-68d8-4532-9a9b-32e089689c1f';
+        
+
+        window.medalliaVsgIsIndividual = true;
+        
+          
+          dataLayer.push({learningAccountType: 'free trial'});
+          
+        
+
+        
+      
+    
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+    (function () {
+      var VERSION = 'V1.1';
+      var AUTHOR = 'Awwad';
+      if (!window.GtmHelper)
+        window.GtmHelper = function () {
+          var instance = this;
+          var loc = document.location;
+          this.version = VERSION;
+          this.author = AUTHOR;
+          this.readCookie = function (name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+          };
+          this.createCookie = function (name, value, days, cookieDomain) {
+            var domain = "";
+            var expires = "";
+
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + Math.ceil(days * 24 * 60 * 60 * 1000));
+              var expires = " expires=" + date.toGMTString() + ";";
+            }
+
+            if (typeof (cookieDomain) != 'undefined')
+              domain = " domain=" + cookieDomain + "; ";
+
+            document.cookie = name + "=" + value + ";" + expires + domain + "path=/";
+          };
+
+          this.isDuplicated = function (currentTransactionId) {
+            // the previous transaction id:
+            var previousTransIdValue = this.readCookie("previousTransId");
+
+            if (currentTransactionId === previousTransIdValue) {
+              return true; // Duplication
+            } else {
+              return false;
+            }
+          };
+        }
+    })()
+  </script><script defer src="https://learning.oreilly.com/static/js/build/vendor.0eac897f11ed.js"></script><script defer src="https://learning.oreilly.com/static/js/build/reader.c745ea9296ac.js"></script></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts">
+
+    
+  <noscript> 
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+  
+
+
+<a href="ch18.html#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li><a href="https://learning.oreilly.com/home/" class="l0 nav-icn"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.738 14H9.254v-3.676a.617.617 0 0 0-.621-.613H7.39a.617.617 0 0 0-.62.613V14H4.284a.617.617 0 0 1-.622-.613V10.22c0-.327.132-.64.367-.87l3.547-3.493a.627.627 0 0 1 .875 0l3.54 3.499c.234.229.366.54.367.864v3.167a.617.617 0 0 1-.62.613zM7.57 2.181a.625.625 0 0 1 .882 0l5.77 5.692-.93.92-5.28-5.209-5.28 5.208-.932-.919 5.77-5.692z" /></svg><span>Home</span></a></li><li class="search"><a href="ch18.html#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"/></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="ch18.html#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"/></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li class="flyout-parent"><a
+                href="ch18.html#"
+                class="l1 nav-icn "
+                
+              ><?xml version="1.0" encoding="UTF-8"?><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M8,8 C6.34321755,8 5.00013,6.65691245 5.00013,5.00013 C5.00013,3.34334755 6.34321755,2.00026001 8,2.00026001 C9.65678245,2.00026001 10.99987,3.34334755 10.99987,5.00013 C10.99987,6.65691245 9.65678245,8 8,8 Z M2.33024571,11.3523547 L2.33774538,11.3523547 C3.7622187,9.70968996 5.82947484,8.76608166 8.00374984,8.76608166 C10.1780248,8.76608166 12.245281,9.70968996 13.6697543,11.3523547 C13.8892083,11.6177474 14.0062813,11.9530021 13.99974,12.2973138 L13.99974,13.99974 L2.00026001,13.99974 L2.00026001,12.2973138 C1.99371867,11.9530021 2.11079172,11.6177474 2.33024571,11.3523547 Z" id="path-1"></path></svg><span>Your O&#39;Reilly</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/profile/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Profile</span></a></li><li><a
+                    href="https://learning.oreilly.com/history/"
+                    class="l2 nav-icn"
+                    
+                  ><span>History</span></a></li><li><a
+                    href="https://learning.oreilly.com/playlists/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Playlists</span></a></li><li><a
+                    href="https://learning.oreilly.com/u/ce47de5b-ce80-49f0-b5cd-c60d3d33b198/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Highlights</span></a></li></ul></li><li ><a
+                href="https://learning.oreilly.com/answers/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M2.31032699,3.75609006 C4.65421571,1.41371359 8.45302454,1.41472092 10.7955702,3.75860838 C13.1381158,6.10249583 13.1369405,9.90130261 10.7930518,12.243847 C8.44916311,14.5863913 4.65018639,14.5852161 2.30780867,12.2413286 C-0.0346204845,9.89749489 -0.0334929936,6.09853298 2.31032699,3.75609006 Z M8.8198605,4.98016308 C7.34193969,3.86924672 5.23410194,3.98609692 3.88914868,5.33104946 C3.12814393,6.09032122 2.72818176,7.13880077 2.79015179,8.21201133 C2.79115912,8.23064692 2.79233434,8.24928252 2.79350956,8.26791811 L2.79350956,8.26791811 C2.83179539,8.8307976 2.9944077,9.37404287 3.26947292,9.86201677 L3.26947292,9.86201677 L2.77621706,11.7027432 C2.7699968,11.7259241 2.77662063,11.7506624 2.79359185,11.7676337 C2.8105631,11.7846049 2.83530144,11.7912287 2.85848233,11.7850085 L2.85848233,11.7850085 L4.69400524,11.2922565 C5.26306363,11.6167344 5.90703177,11.786885 6.56209849,11.7858479 C8.64827865,11.7858479 10.3395879,10.094542 10.3395879,8.00836292 C10.3405204,6.84135608 9.80105674,5.73967784 8.87862141,5.02482134 L8.87862141,5.02482134 L8.82825492,4.98654283 Z M13.7933062,2 C14.7073496,2.00009863 15.4482759,2.74110484 15.4482759,3.65514822 C15.4482759,4.32460943 15.0449926,4.92814782 14.4264842,5.18432286 C13.8079757,5.44049789 13.096053,5.29885769 12.6226979,4.82545158 C12.1493429,4.35204547 12.0077795,3.64010743 12.2640213,3.02162665 C12.5202631,2.40314587 13.123845,1.99992776 13.7933062,2 Z"/></svg><span>Answers</span></a></li><li class="flyout-parent"><a
+                href="ch18.html#"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>queue icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 29.2C25.4 29.2 25.8 29.1 26.1 28.9L48.7 16.8C49.5 16.4 50 15.5 50 14.6 50 13.7 49.5 12.8 48.7 12.4L26.1 0.3C25.4-0.1 24.6-0.1 23.9 0.3L1.3 12.4C0.5 12.8 0 13.7 0 14.6 0 15.5 0.5 16.4 1.3 16.8L23.9 28.9C24.2 29.1 24.6 29.2 25 29.2ZM7.3 14.6L25 5.2 42.7 14.6 25 24 7.3 14.6ZM48.7 22.4L47.7 21.9 25 34.2 2.3 21.9 1.3 22.4C0.5 22.9 0 23.7 0 24.7 0 25.6 0.5 26.5 1.3 26.9L23.9 39.3C24.2 39.5 24.6 39.6 25 39.6 25.4 39.6 25.8 39.5 26.1 39.3L48.7 26.9C49.5 26.5 50 25.6 50 24.7 50 23.7 49.5 22.9 48.7 22.4ZM48.7 32.8L47.7 32.3 25 44.6 2.3 32.3 1.3 32.8C0.5 33.3 0 34.1 0 35.1 0 36 0.5 36.9 1.3 37.3L23.9 49.7C24.2 49.9 24.6 50 25 50 25.4 50 25.8 49.9 26.1 49.7L48.7 37.3C49.5 36.9 50 36 50 35.1 50 34.1 49.5 33.3 48.7 32.8Z"/></g></svg><span>Explore</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/topics/"
+                    class="l2 nav-icn"
+                    
+                  ><span>All Topics</span></a></li><li><a
+                    href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;formats=case%20study&amp;formats=learning%20path&amp;formats=live%20online%20training&amp;formats=notebook&amp;formats=oriole&amp;formats=video&amp;sort=popularity&amp;facet_json=true&amp;page=0&amp;collection_type=expert"
+                    class="l2 nav-icn"
+                    
+                  ><span>Most Popular Titles</span></a></li><li><a
+                    href="https://learning.oreilly.com/recommendations/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Recommended</span></a></li><li><a
+                    href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;sort=publication_date&amp;facet_json=true&amp;page=0"
+                    class="l2 nav-icn"
+                    
+                  ><span>Early Releases</span></a></li><li><a
+                    href="https://learning.oreilly.com/playlists/discover/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Shared Playlists</span></a></li><li><a
+                    href="https://learning.oreilly.com/resource-centers/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Resource Centers</span></a></li></ul></li><li class="flyout-parent"><a
+                href="ch18.html#"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12.8 3.2A1.2 1.2 0 0 1 14 4.4v8.4a1.2 1.2 0 0 1-1.2 1.2H3.2A1.2 1.2 0 0 1 2 12.8V4.4a1.2 1.2 0 0 1 1.2-1.2h1.2V2h1.2v1.2h4.8V2h1.2v1.2h1.2zm-9.6 9.6h9.6V6.2H3.2v6.6zM8 9.5a1.35 1.35 0 1 1 0-2.7 1.35 1.35 0 0 1 0 2.7zm2.7 2.148v.552H5.3v-.552c0-.321.124-.634.355-.858a3.358 3.358 0 0 1 4.69 0c.23.224.355.537.355.858z" /></svg><span>Live Events</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/attend/"
+                    class="l2 nav-icn"
+                    
+                  ><span>All Events</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/architectural-katas/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Architectural Katas</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/ai/"
+                    class="l2 nav-icn"
+                    
+                  ><span>AI &amp; ML</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/strata/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Data Sci &amp; Eng</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/oscon/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Programming</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/infrastructure-ops/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Infra &amp; Ops</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/software-architecture/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Software Arch</span></a></li></ul></li><li class="flyout-parent"><a
+                href="ch18.html#"
+                class="l1 nav-icn "
+                
+              ><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.6467109,4.35328907 L14.7964612,7.51003884 C15.0678463,7.78304342 15.0678463,8.22395603 14.7964612,8.49696061 L11.6467109,11.6467109 L10.6597892,10.6597892 L13.3055794,8 L10.6597892,5.34021084 L11.6467109,4.35328907 Z M4.35328907,11.6467109 L1.20353875,8.48996116 C0.932153749,8.21695658 0.932153749,7.77604397 1.20353875,7.50303939 L4.35328907,4.35328907 L5.34021084,5.34021084 L2.69442057,8 L5.34021084,10.6597892 L4.35328907,11.6467109 Z M5.84417089,11.4997226 L8.67194674,4.50027742 L10.1838269,4.50027742 L7.35605105,11.4997226 L5.84417089,11.4997226 Z" id="Mask"></path></svg><span>Interactive</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/scenarios/?classification=content-scenario"
+                    class="l2 nav-icn"
+                    
+                  ><span>Scenarios</span></a></li><li><a
+                    href="https://learning.oreilly.com/scenarios/?classification=sandbox-scenario"
+                    class="l2 nav-icn"
+                    
+                  ><span>Sandboxes</span></a></li><li><a
+                    href="https://learning.oreilly.com/interactive/?classification=jupyter-notebook"
+                    class="l2 nav-icn"
+                    
+                  ><span>Jupyter Notebooks</span></a></li></ul></li><li ><a
+                href="https://learning.oreilly.com/certifications/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M12.912 9.18L14 8.014l-1.088-1.18a.304.304 0 01-.075-.268L13.195 5l-1.535-.463a.313.313 0 01-.194-.194l-.462-1.537-1.565.358c-.09.03-.194 0-.269-.074L8.007 2 6.845 3.09a.303.303 0 01-.269.074l-1.565-.358-.462 1.537a.313.313 0 01-.194.194L2.82 5l.358 1.567a.26.26 0 01-.075.269L2 8.015l1.088 1.164c.075.075.09.18.075.269l-.358 1.567 1.535.463c.09.03.164.104.194.194l.462 1.537 1.565-.358c.015 0 .045-.015.075-.015.075 0 .15.03.209.074L8.007 14l1.163-1.09a.303.303 0 01.269-.074l1.565.358.462-1.537a.313.313 0 01.194-.194L13.195 11l-.358-1.567a.338.338 0 01.075-.254zm-6.046 1.37L4.41 8.26l1.16-1.244 1.767 1.649L10.4 5.6l1.202 1.202-4.242 4.243-.495-.495z"/></svg><span>Certifications</span></a></li><li ><a
+                href="https://learning.oreilly.com/preferences/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a></li><li ><a
+                href="https://learning.oreilly.com/public/support/"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M7.363 6.656a2.692 2.692 0 0 1-2.681-2.703c0-1.493 1.2-2.703 2.681-2.703a2.692 2.692 0 0 1 2.682 2.703c0 1.493-1.2 2.703-2.682 2.703zm4.023 2.027c-1.852 0-3.352 1.513-3.352 3.379H2v-1.534c-.006-.31.099-.612.295-.852a6.666 6.666 0 0 1 9.09-.993zm-.543.676h1.12v.304c.003.284.16.543.408.676a.766.766 0 0 0 .77 0l.303-.176.556.966-.302.176a.772.772 0 0 0-.362.676v.08a.772.772 0 0 0 .362.677l.302.21-.556.965-.302-.175a.766.766 0 0 0-.771 0 .778.778 0 0 0-.409.675v.352h-1.106v-.372a.778.778 0 0 0-.409-.676.766.766 0 0 0-.77 0l-.303.176-.556-.912.302-.176a.772.772 0 0 0 .362-.676v-.04-.04a.772.772 0 0 0-.362-.676l-.302-.176.556-.966.289.155a.766.766 0 0 0 .77 0 .778.778 0 0 0 .41-.676V9.36zm1.562 2.703c0-.271-.108-.531-.3-.722a1.001 1.001 0 0 0-.72-.292 1.01 1.01 0 0 0-.992 1.023 1.01 1.01 0 0 0 1.01 1.004 1.01 1.01 0 0 0 1.002-1.013z" /></svg><span>Support</span></a></li><li ><a
+                href="https://get.oreilly.com/email-signup.html"
+                class="l1 nav-icn "
+                target=&quot;_blank&quot;
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.564 2.263l2.172 2.174c.17.168.264.397.264.636V11a.6.6 0 0 1-.6.6h-.6V6.2h-6V2.6a.6.6 0 0 1 .6-.6h3.527c.239 0 .468.095.637.263zM2.6 14a.6.6 0 0 1-.6-.6V6.8a.6.6 0 0 1 .6-.6h1.903a1.2 1.2 0 0 1 .849.352L6.2 7.4H11a.6.6 0 0 1 .6.6v5.4a.6.6 0 0 1-.6.6H2.6zM11 5h1.8L11 3.2V5z" /></svg><span>Newsletters</span></a></li><li ><a
+                href="https://learning.oreilly.com/accounts/logout/"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M2.613 12.63A.607.607 0 0 1 2 12.03V3.602C2 3.269 2.274 3 2.613 3h5.515v1.204H3.226v7.223h4.902v1.203H2.613zM5.677 9.02V6.611h4.903V4.926a.301.301 0 0 1 .19-.274.31.31 0 0 1 .33.063l2.722 2.673a.594.594 0 0 1 0 .849L11.1 10.909a.31.31 0 0 1-.331.063.301.301 0 0 1-.19-.274V9.02H5.677z" /></svg><span>Sign Out</span></a></li></ul></div></li></ul></nav></header>
+
+
+
+      </div>
+      <div id="container" class="application">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="ch18.html#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Beginning Lua Programming
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="ch18.html#" title="Search in archive" class="js-search-controls search-controls" onclick="window.Appcues.track('SearchBook_HeronBook')"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9780470069172/chapter/ch18.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards" onclick="window.Appcues.track('AddPlaylist_HeronBook')"></div></div></li><li class="js-font-control-panel font-control-activator"><a href="ch18.html#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size" onclick="window.Appcues.track('ChangeFont_HeronBook')"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="ch18.html#" class="trigger" data-push-state="false" title="Share" aria-label="Share" onclick="window.Appcues.track('Share_HeronBook')"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a
+        class="twitter share-button t-twitter"
+        target="_blank"
+        aria-label="Share this section on Twitter"
+        title="Share this section on Twitter"
+      
+        href="https://twitter.com/share?url=https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch18.html&text=Beginning%20Lua%20Programming&via=OReillyMedia"
+      ><span>Twitter</span></a></li><li><a
+        class="facebook share-button t-facebook"
+        target="_blank"
+        aria-label="Share this section on Facebook"
+        title="Share this section on Facebook"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch18.html"
+      ><span>Facebook</span></a></li><li><a
+        class="googleplus share-button t-googleplus"
+        target="_blank"
+        aria-label="Share this secton on Google Plus"
+        title="Share this secton on Google Plus"
+        href="https://plus.google.com/share?url=https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch18.html"
+      ><span>Google Plus</span></a></li><li><a
+        class="email share-button t-email"
+        aria-label="Share this section via email"
+        title="Share this section via email"
+      
+        href="mailto:?subject=Safari: 18.%20Carrying%20Lua%20with%20You&body=https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch18.html%0D%0Afrom Beginning%20Lua%20Programming%0D%0A"
+      ><span>Email</span></a></li></ul></li><!-- endif request.user.is_authenticated -->
+      </ul>
+    </div>
+
+      
+          
+      
+
+    <section role="document">
+        
+        
+
+
+
+
+  <script defer src="https://learning.oreilly.com/static/js/build/djangoMessagesPage.bfaca9fd8619.js"></script>
+
+
+        <script src="https://fast.appcues.com/48743.js"></script>
+<script>
+  var userId = "ce47de5b-ce80-49f0-b5cd-c60d3d33b198";
+
+  var userObject = {
+    firstName: "Michael",
+    segment: "Trial",
+    admin: "False",
+    profileCreatedOn: "2021-05-13",
+    academic: ""
+  };
+  window.Appcues.identify(userId, userObject);
+  window.Appcues.page();
+
+  setTimeout(function () {
+    window.Appcues.track('ViewingBook_HeronBook')
+  }, 20000);
+</script>
+
+
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="ch17.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">17. Programming Games with Lua</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="ch19.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">19. Fitting into the Lua Community</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="carrying_lua_with_you"></a>Chapter 18. Carrying Lua with You</h1></div></div></div><p>Lua's efficiency and small size make it highly suitable for use with the scaled-down resources of a handheld device. This chapter introduces the use of Lua in devices that function with Palm OS, such as PDAs (personal digital assistants) and mobile telephones. The focus will be on Plua, a port of Lua with a very nicely engineered binding to the Palm OS application programming interface. In this chapter, you learn how to do the following:<a id="IDX-CHP-18-0001" class="indexterm"></a><a id="IDX-CHP-18-0002" class="indexterm"></a><a id="IDX-CHP-18-0003" class="indexterm"></a></p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>Obtain and set up Plua on your Palm OS device</p></li><li class="listitem"><p>Obtain and set up tools to develop Plua applications from your desktop</p></li><li class="listitem"><p>Save your source code in various formats</p></li><li class="listitem"><p>Develop Lua modules</p></li><li class="listitem"><p>Generate artwork programmatically using turtle graphics</p></li><li class="listitem"><p>Create programs with forms</p></li></ul></div><p>The flexibility of the Plua package enables you to develop Lua applications right on your Palm device. Alternatively, with the freely available Palm OS Emulator or Simulator, you can build and test your Lua application from your desktop.</p><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="getting_started_with_plua"></a>Getting Started with Plua</h1></div></div></div><p>Plua was created by Márcio Migueletto de Andrade and is maintained and copyrighted by him. Currently, version 1.1 and the most recent beta release of version 2.0 are available. The earlier version was a port of Lua version 4.0, and the later version is a port of Lua 5.0. It is the later version, often referred to as Plua2, that's covered here. It is referred to as Plua in this chapter, unless it needs to be distinguished from its predecessor. Because you've been using Lua 5.1 in this book, review the differences between this and Lua 5.0 before developing your own applications with Plua. A summary of these changes can be found near the end of the Lua reference manual. In particular, be aware that in version 5.0 of Lua, there is no <code class="literal">#</code> operator and the vararg mechanism uses a table named <code class="literal">arg</code>.<a id="IDX-CHP-18-0004" class="indexterm"></a></p><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="obtaining_plua"></a>Obtaining Plua</h2></div></div></div><p>To obtain an official release of Plua2, you need to be a registered member of the Plua discussion group hosted at <code class="systemitem">http://groups.yahoo.com/group/plua</code>. Plua's author is active in this forum and maintains a directory named Plua in the Files section where official releases can be found. Additionally, the Plua community has placed many other contributions such as applications, tutorials, and libraries in other directories of this forum.<a id="IDX-CHP-18-0005" class="indexterm"></a><a id="IDX-CHP-18-0006" class="indexterm"></a><a id="IDX-CHP-18-0007" class="indexterm"></a><a id="IDX-CHP-18-0008" class="indexterm"></a><a id="IDX-CHP-18-0009" class="indexterm"></a><a id="IDX-CHP-18-0010" class="indexterm"></a><a id="IDX-CHP-18-0011" class="indexterm"></a><a id="IDX-CHP-18-0012" class="indexterm"></a></p><p>From the Plua directory in the Files section of the Yahoo Plua group site, locate and download the most recent plua zip file and examples zip file. Additionally, if a pluac zip file is available for your desktop operating system, you may want to download it as well. This package will allow you to build Plua applications that contain bitmaps and other resources.</p><p>Like many other applications, Plua uses MathLib for double-precision math functions. If you don't already have this library, visit <code class="systemitem">www.radiks.net/~rhuebner/mathlib.html</code> to download <code class="literal">MathLib.zip</code>.<a id="IDX-CHP-18-0013" class="indexterm"></a></p></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="examining_the_distribution_contents"></a>Examining the Distribution Contents</h2></div></div></div><p>Unzip the files you downloaded into a convenient location. For example, assuming you have downloaded <code class="literal">plua-2.0b6.zip</code> and are using the shell in Windows, the following commands work. Make the appropriate adjustments if the files you have downloaded are of a more recent version or you are on a different platform Replace <code class="literal">/path/to</code> with the location of the downloaded files.</p><pre class="programlisting">c:
+md plua2
+cd plua2
+7z x /path/to/plua-2.0b6.zip
+7z x /path/to/pluac-2.0b6.windows.zip
+7z x /path/to/plua-examples.zip
+7z x /path/to/MathLib.zip</pre><p>The zip files may be deleted at this point. The extraction process creates a number of subdirectories such as doc, examples, libkit, and prc. The prc subdirectory contains the following three files:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>The <code class="literal">program plua2.prc</code> file includes the Lua compiler, interpreter, library, and editor. If you develop applications directly on your Palm device, you will need to install this file.</p></li><li class="listitem"><p>The <code class="literal">plua2help.prc</code> file provides online help for the library functions. This file is highly recommended if you develop program directly on your Palm device.<a id="IDX-CHP-18-0014" class="indexterm"></a></p></li><li class="listitem"><p>The <code class="literal">plua2rt.prc</code> file includes the library and Lua interpreter and is the only file to be distributed with your application.<a id="IDX-CHP-18-0015" class="indexterm"></a></p></li></ul></div><p>The <code class="literal">doc</code> subdirectory contains a file named <code class="literal">pluadoc.htm</code> that documents various aspects of Plua's use and libraries. Also included here is the Plua2 change log.</p><p>The examples subdirectory contains the following subdirectories:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p><span class="strong"><strong>Aquario</strong></span>: This example demonstrates the use of animated graphics known as sprites. If you want to include graphics in your application, this is a good example to study.<a id="IDX-CHP-18-0016" class="indexterm"></a></p></li><li class="listitem"><p><span class="strong"><strong>LuaCalc</strong></span>: This example implements a reverse polish notation (RPN) calculator.<a id="IDX-CHP-18-0017" class="indexterm"></a><a id="IDX-CHP-18-0018" class="indexterm"></a><a id="IDX-CHP-18-0019" class="indexterm"></a></p></li><li class="listitem"><p><span class="strong"><strong>Demo</strong></span>: This contains the following three example programs:</p></li><li class="listitem"><p><span class="strong"><strong>Demo1</strong></span>: This program bundles the various controls that are available in the Plua library. These include check box, selector, button, label, slider, popup, list, and field controls. Make a point of running this program and referring to Demo1.lua to see how controls are programmed and how an event loop is used within a program.<a id="IDX-CHP-18-0020" class="indexterm"></a><a id="IDX-CHP-18-0021" class="indexterm"></a><a id="IDX-CHP-18-0022" class="indexterm"></a><a id="IDX-CHP-18-0023" class="indexterm"></a><a id="IDX-CHP-18-0024" class="indexterm"></a><a id="IDX-CHP-18-0025" class="indexterm"></a></p></li><li class="listitem"><p><span class="strong"><strong>Demo2</strong></span>: This demonstrates how various other standard Palm OS windows are invoked. These include the alert, confirmation, text input, color selection, date selection, and time selection windows.</p></li><li class="listitem"><p><span class="strong"><strong>Life</strong></span>: This program implements a Palm version of the classic cellular automaton invention of John Conway. This is an adaptation of the script found in the Lua distribution.</p></li></ul></div><p>The <code class="literal">libkit</code> subdirectory includes examples of extending Plua with libraries written in C. You'll need the Palm OS software development kit and a compiler capable of creating Palm executables to build these libraries. You'll want to be familiar with developing Plua applications before venturing into this domain.</p></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="exploring_plua_apostrophy_s_features"></a>Exploring Plua's Features</h1></div></div></div><p>Using the Palm HotSync Manager, install <code class="literal">plua2.prc</code> and <code class="literal">plua2help.prc</code> from the <code class="literal">prc</code> subdirectory of the Plua2 distribution onto your Palm device. Also, if it isn't already on your device, install <code class="literal">mathlib.prc</code>. If you don't have a Palm device or would rather use your desktop or notebook computer to develop Plua applications, see "<a class="link" href="ch18.html#the_palm_os_emulator" title="The Palm OS Emulator">The Palm OS Emulator</a>" later in this chapter. The instructions in this chapter still apply, except you'll be working with a computer mouse and keyboard rather than with a handheld device.<a id="IDX-CHP-18-0026" class="indexterm"></a><a id="IDX-CHP-18-0027" class="indexterm"></a><a id="IDX-CHP-18-0028" class="indexterm"></a><a id="IDX-CHP-18-0029" class="indexterm"></a></p><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="running_the_plua_application"></a>Running the Plua Application</h2></div></div></div><p>You should place the Plua application into its own category if you have one available. Select Edit Categories from the main screen's upper right selector. Click the New button, type <span class="strong"><strong>Lua</strong></span> in the text category name field, and tap the OK button. From the main screen menu, select Category and, using the category selector to the right of Plua2, choose the new category. Tap the Done button to approve the action. The online help library is not directly launchable, so it will not show up in this list. <a class="link" href="ch18.html#figure_18-1" title="Figure 18.1. Figure 18-1">Figure 18-1</a> shows the Lua category screen.</p><div class="figure"><a id="figure_18-1"></a><div class="figure-contents"><div><img src="https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/figs/1801.png" width="339" alt="Figure 18-1" height="339"></div></div><p class="title"><strong>Figure 18.1. Figure 18-1</strong></p></div><div class="sidebar"><a id="try_it_out_colon_creating_your_first_plu"></a><div class="titlepage"><div><div><p class="title"><strong>Try It Out: Creating Your First Plua Program</strong></p></div></div></div><p>In this Try It Out, you tip your hat to Brian Kernighan and Dennis Ritchie, who first published a "Hello, world" program in the 1970s as a means to test the development environment.</p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Tap the Plua2 icon. You're presented with the screen shown in <a class="link" href="ch18.html#figure_18-2" title="Figure 18.2. Figure 18-2">Figure 18-2</a>.</p><div class="figure"><a id="figure_18-2"></a><div class="figure-contents"><div><img src="https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/figs/1802.png" width="357" alt="Figure 18-2" height="357"></div></div><p class="title"><strong>Figure 18.2. Figure 18-2</strong></p></div></li><li class="listitem"><p>On the first dotted line, type the following:</p><pre class="programlisting">print "Hello world"</pre></li><li class="listitem"><p>Tap the Run button. The greeting appears in the area above the input section as shown in <a class="link" href="ch18.html#figure_18-3" title="Figure 18.3. Figure 18-3">Figure 18-3</a>. You can repeat the output by tapping the Run button more than once.</p></li><li class="listitem"><p>Tap the Clear button. The Lua code will be cleared from the input section.</p></li><li class="listitem"><p>Text in the output section does not automatically scroll when it becomes full, so it is convenient to have this area erased when you clear the input section. To enable this behavior, tap the Palm OS Menu icon (or, alternatively, tap the caption bar) and choose Preferences from the Options menu. Enable the Clear output check box and tap the Done button. Now when you tap the Clear button, both the program and its output are cleared.</p></li></ol></div><p><span class="strong"><strong>How It Works</strong></span></p><p>In this mode, you use Plua much like you do the interactive mode of the Lua interpreter when using a command shell on Windows or a Unix-type system. Unlike the standard Lua interpreter, however, nothing is submitted to the Plua interpreter until you tap the Run button. If you attempt to run an incomplete Lua program, you get an error message.<a id="IDX-CHP-18-0030" class="indexterm"></a><a id="IDX-CHP-18-0031" class="indexterm"></a></p><div class="figure"><a id="figure_18-3"></a><div class="figure-contents"><div><img src="https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/figs/1803.png" width="357" alt="Figure 18-3" height="357"></div></div><p class="title"><strong>Figure 18.3. Figure 18-3</strong></p></div></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="saving_plua_programs"></a>Saving Plua Programs</h2></div></div></div><p>Tapping the File button in the Plua2 program presents a screen where you can create, edit, and run persistent Lua programs. Plua will process a source file in any of the standard ways that text can be saved on a Palm device: as a memo record, a doc file, a stream file, or a file on an expansion card. The particular format is selected from the pop-up menu in the upper-right part of the file screen. Each format has some advantages and disadvantages, as described here:<a id="IDX-CHP-18-0032" class="indexterm"></a></p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>All memo records on a Palm device belong to a single database. Each record has a fairly modest size restriction of between 4KB to 32KB of text depending on the version of the Palm operating system. A memo record is identified by its first line. Plua will consider as a source file a memo whose first line begins with two dashes, a space, a program name (which may include whitespace), and the extension <code class="literal">.lua</code>., like this one:</p><pre class="programlisting">-- Example.lua.</pre><p>The advantage of creating a Plua program as a memo record is that it can be edited within the Plua application. Additionally, while you're editing in Plua, an online help system is available that provides documentation for all supported functions and global variables.</p></li><li class="listitem"><p>Doc files (not to be confused with word processed files with the <code class="literal">.doc</code> extension) are intended for larger quantities of text than a memo record can have. In fact, many books are available in this standard format. A number of editors, free and commercial, are available for handheld and desktop editing of doc files. The freely available SrcEdit editor is popular for handheld programming because it has amenities for developers such as brace and quote completion. If this program is present on your Palm device, Plua will launch it if you select a doc file and tap the Edit button. However, to return to the file screen, you will need to relaunch Plua.<a id="IDX-CHP-18-0033" class="indexterm"></a></p></li><li class="listitem"><p>Stream programs use the File Stream library, a relatively recent addition to the Palm API. This may be a suitable format if you generate Plua source files programmatically.<a id="IDX-CHP-18-0034" class="indexterm"></a><a id="IDX-CHP-18-0035" class="indexterm"></a><a id="IDX-CHP-18-0036" class="indexterm"></a><a id="IDX-CHP-18-0037" class="indexterm"></a><a id="IDX-CHP-18-0038" class="indexterm"></a><a id="IDX-CHP-18-0039" class="indexterm"></a><a id="IDX-CHP-18-0040" class="indexterm"></a></p></li><li class="listitem"><p>Storing source files in the virtual file system (VFS) of an expansion card may facilitate the transfer of programs from one device or platform to another. You'll see shortly that this source file format enables you to develop Plua programs from your desktop machine very easily.<a id="IDX-CHP-18-0041" class="indexterm"></a></p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="reading_the_online_documentation"></a>Reading the Online Documentation</h2></div></div></div><p>Plua comes with an online help system that covers the Lua core functions and global variables as well as functions provided by Plua. In the following Try It Out, you explore this handy interactive resource.</p><div class="sidebar"><a id="try_it_out_colon_calling_for_help"></a><div class="titlepage"><div><div><p class="title"><strong>Try It Out: Calling for Help</strong></p></div></div></div><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>In the Files screen of Plua, select Memo from the pop-up menu in the upper-right corner.</p></li><li class="listitem"><p>Tap the New button to create a new Plua program in the memo record format.</p></li><li class="listitem"><p>Type <code class="literal"><span class="strong"><strong>Example.lua</strong></span></code> in the New File Name field, and then tap the OK button.</p></li><li class="listitem"><p>From the program list, select <code class="literal">Example.lua</code> and tap the Edit button. Plua prepares the first line of the program for you. You can change the name, but don't introduce any spaces before the two dashes or add anything after the <code class="literal">.lua</code> extension.</p></li><li class="listitem"><p>Tap a line or two below the title line and enter the following:</p><pre class="programlisting">print("Hello from Plua")</pre></li><li class="listitem"><p>Tap and drag your stylus to select the text <code class="literal">print</code>.</p></li><li class="listitem"><p>Tap the Palm OS Find icon. A help screen appears with documentation for the print function, as shown in <a class="link" href="ch18.html#figure_18-4" title="Figure 18.4. Figure 18-4">Figure 18-4</a>.</p><div class="figure"><a id="figure_18-4"></a><div class="figure-contents"><div><img src="https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/figs/1804.png" width="357" alt="Figure 18-4" height="295"></div></div><p class="title"><strong>Figure 18.4. Figure 18-4</strong></p></div></li></ol></div><p><span class="strong"><strong>How It Works</strong></span><a id="IDX-CHP-18-0042" class="indexterm"></a><a id="IDX-CHP-18-0043" class="indexterm"></a><a id="IDX-CHP-18-0044" class="indexterm"></a></p><p>Plua's online help system is available from the main screen as well. If you tap the Palm OS Find icon when no text is selected, you are presented with a scrolling list of all help topics. To jump to a topic from this list, select the full name of the topic as if this text was in an editor, then tap Goto. If the text you select is not found in the help system, nothing happens when you click the Find icon.</p></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="using_palm_os_streams"></a>Using Palm OS Streams</h2></div></div></div><p>The Palm operating system stores data in record-based flat databases. The file stream API is a layer on top of this that removes many of the difficulties of working with databases. As mentioned earlier, Plua can process source code stored as a stream. It also supports the usual reading and writing operations on streams.</p><p>In the following Try It Out, you will write a program in stream format. A stream editor on a Palm device is a specialized application that you might not have, so in this example you will use Plua itself to create the program.</p><div class="sidebar"><a id="try_it_out_colon_writing_a_program_with"></a><div class="titlepage"><div><div><p class="title"><strong>Try It Out: Writing a Program with a Program</strong></p></div></div></div><p>Write a simple Plua program that generates, in stream format, another simple Plua program.</p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Go to the File section of the Plua application.</p></li><li class="listitem"><p>Select Memo format from the pop-up menu in the upper right corner.</p></li><li class="listitem"><p>Tap the New button and type <code class="literal">StreamGen.lua</code> as the new filename. Tap OK.</p></li><li class="listitem"><p>Enter the following program:</p><div class="blockquote"><blockquote class="blockquote"><p>Some of the longer lines will wrap within the editor.</p></blockquote></div><pre class="programlisting">local ProgStr = [[
+screen.clear()
+print("Hello from a stream program!")
+gui.event()
+]]
+
+local FileStr = "ExampleStream.lua"
+local Hnd = io.open(FileStr, "w")
+if Hnd then
+  Hnd:write(ProgStr)
+  Hnd:close()
+  gui.alert(FileStr .. " successfully created")
+else
+  gui.alert("Error creating " .. FileStr)
+end</pre></li><li class="listitem"><p>Tap the Done button when you are finished entering the source code. This should return you to the list of memo programs with <code class="literal">StreamGen.lua</code> highlighted.</p></li><li class="listitem"><p>Tap the Run button. An information box with the text <code class="literal">ExampleStream.lua successfully created</code> appears. Tap OK to dismiss it.<a id="IDX-CHP-18-0045" class="indexterm"></a><a id="IDX-CHP-18-0046" class="indexterm"></a><a id="IDX-CHP-18-0047" class="indexterm"></a></p></li><li class="listitem"><p>Select Stream from the pop-up menu in the upper-right corner.</p></li><li class="listitem"><p>In the resulting list, highlight ExampleStream.lua. Tap Run.</p></li><li class="listitem"><p>A blank screen with the text <code class="literal">Hello from a stream program!</code> appears. Tap the screen to exit the program.</p></li></ol></div><p><span class="strong"><strong>How It Works</strong></span></p><p>In this exercise, you created a memo source file directly and a stream source file programmatically. When <code class="literal">StreamGen.lua</code>, in memo format, was run by Plua, it wrote the text of another short program as a stream file named <code class="literal">ExampleStream.lua</code>. In a subsequent step, Plua ran <code class="literal">ExampleStream.lua</code>.</p></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="compiling_applications"></a>Compiling Applications</h2></div></div></div><p>So far, you have run your programs from within the Plua development application. Plua lets you compile your programs so that they can be invoked directly from a Palm OS application screen. A program you build this way isn't entirely standalone, however. Either the Plua development application or the Plua runtime library needs to be present on the Palm device for your program to execute. The license for Plua2 clearly states that you are free to distribute the runtime library with your application, but not the development application or its online help library.</p><p>In the following Try It Out, you prepare a program that runs outside of the Plua development environment.</p><div class="sidebar"><a id="try_it_out_colon_leaving_the_nest"></a><div class="titlepage"><div><div><p class="title"><strong>Try It Out: Leaving the Nest</strong></p></div></div></div><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>From Plua's File screen, select Memo from the pop-up menu in the upper right corner.</p></li><li class="listitem"><p>Tap the New button and type <span class="strong"><strong>standalone.lua</strong></span> in the New file name input field. Tap the OK button.</p></li><li class="listitem"><p>Tap the Edit button and, beneath the automatically generated top line, enter the following short program:</p><pre class="programlisting">gui.alert("Look, Ma, no development environment!")</pre></li><li class="listitem"><p>Tap the Done button. Test your program by tapping the Run button. Dismiss the message box by tapping the OK button.</p></li><li class="listitem"><p>Tap the Compile button to open the New PRC Information dialog box (shown in <a class="link" href="ch18.html#figure_18-5" title="Figure 18.5. Figure 18-5">Figure 18-5</a>). (PRC refers to a Palm resource such as an application or library.) Select the App button, and type <span class="strong"><strong>LkMa</strong></span> for the creator ID, <span class="strong"><strong>Look Ma</strong></span> for the name, and <span class="strong"><strong>1.0</strong></span> for the version. Then check the No Title box and tap the OK button.</p></li><li class="listitem"><p>Tap the Palm OS Home icon.</p></li><li class="listitem"><p>Optionally, place the <code class="literal">Look Ma</code> application into the <code class="literal">Lua</code> category. To do this, tap the Palm OS Menu icon or, alternatively, tap the caption bar. Select the Category option, and then locate <code class="literal">Look Ma</code> and select <code class="literal">Lua</code> for its category.</p></li><li class="listitem"><p>Locate the <code class="literal">Look Ma</code> application and tap its icon. This invokes your application, independent of the development environment.<a id="IDX-CHP-18-0048" class="indexterm"></a><a id="IDX-CHP-18-0049" class="indexterm"></a></p><div class="figure"><a id="figure_18-5"></a><div class="figure-contents"><div><img src="https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/figs/1805.png" width="357" alt="Figure 18-5" height="250"></div></div><p class="title"><strong>Figure 18.5. Figure 18-5</strong></p></div></li></ol></div><p><span class="strong"><strong>How It Works</strong></span></p><p>When Plua builds an application, it compiles your source code and attaches the generated bytecode to a Palm OS application that, at runtime, links with either the Plua development application or the Plua runtime library. No harm is done if both are present. The application that is created is a bona fide Palm OS program that can be distributed like any other. Note, however, that any device that your program is installed on needs to have the Plua2 runtime library onboard. Note also that there is no way to modify the icon that is associated with your standalone application.</p><p>Palm OS links an application to its databases with a unique four-character creator ID. Every Palm OS program requires such an ID. Unless you are going to distribute your application, you are reasonably safe just coming up with what looks like a unique value that has at least one upper case character. If your application will be installed on other people's devices, however, you'll want to register your application at the Palm developer's site. Visit <code class="systemitem">palmos.com</code> and follow the links to the developer's pages.</p></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="compiling_libraries"></a>Compiling Libraries</h2></div></div></div><p>When you built a standalone application, you selected the App option in the compiler dialog box. You can also build Plua libraries that are used much like modules.</p><div class="sidebar"><a id="try_it_out_colon_examining_lua_objects_w"></a><div class="titlepage"><div><div><p class="title"><strong>Try It Out: Examining Lua Objects with a Library</strong></p></div></div></div><p>Here you'll implement a scaled-down version of the <code class="literal">show</code> module as a Plua library. This exercise and the ones that follow contain a lot of text. You may prefer to acquire the script from the book's website at <code class="systemitem">wrox.com</code> and transfer it from your desktop system to your Palm device. The next section in this chapter, "Plua on the Mothership," has instructions that tell you how to do that.</p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Create a new file in your preferred format. Copy in the following contents:</p><pre class="programlisting">local function LclVisit(Tbl, Val, Key, Lvl, Seen)
+ Seen = Seen or {}
+ Lvl = Lvl or 0
+ local VtpStr = type(Val)</pre><pre class="programlisting">local Vqt = VtpStr == "string" and '"' or ''
+ local Kqt = type(Key) == "string" and '"' or ''
+ local ValStr = tostring(Val)
+ ValStr = string.gsub(ValStr, "table:%s*.*$", "(tbl)")
+ ValStr = string.gsub(ValStr, "function:%s*.*$", "(fnc)")
+ table.insert(Tbl, string.rep(' ', Lvl) ..
+   tostring(Key) .. " " .. Vqt .. ValStr .. Vqt)
+ if VtpStr == "table" then
+   if not Seen[Val] then
+     Seen[Val] = true
+     local SrtTbl = {}
+     for K, V in Val do
+       table.insert(SrtTbl, K)
+     end
+     table.sort(SrtTbl)
+     for J, K in ipairs(SrtTbl) do
+       LclVisit(Tbl, Val[K], K, Lvl + 1, Seen)
+     end
+   end
+ end
+end
+
+function ObjectRender(Val, Key)
+  local Tbl = {}
+  LclVisit(Tbl, Val, Key, 0)
+  return Tbl
+end
+
+local function Metrics()
+  local Scr = {}
+  Scr.Wd, Scr.Ht, Scr.Depth, Scr.Color = screen.mode()
+  local Base = Scr.Wd / 160
+  Scr.DlgBrd = Base 2 -- Border
+  Scr.ScrollWd = Base 7
+  Scr.ChWd, Scr.ChHt = screen.textsize("X") -- Character size
+  Scr.Top = math.floor(Scr.ChHt 3 / 2)
+  return Scr
+end
+
+function ObjectShow(Obj, TitleStr)
+  local Tbl = ObjectRender(Obj, TitleStr)
+  local Scr = Metrics()
+  local Wd, Ht = Scr.Wd - 2 Scr.DlgBrd,
+    Scr.Ht - 2 Scr.DlgBrd
+  gui.dialog(0, 0, Wd, Ht, TitleStr)
+  local ChWd, ChHt = screen.font(0)
+  local Cols = math.floor((Wd - Scr.ScrollWd) / ChWd) - 1
+  local Rows = math.floor((Ht - 4 ChHt) / ChHt)
+  gui.control{type = "field", lines = Rows,
+    columns = Cols, limit = 30000, editable = false,
+    underlined = false, text = table.concat(Tbl, "\n")}
+  gui.nl()
+  gui.tab()
+  local IdOk = gui.control{type = "button", text = "OK"}</pre><pre class="programlisting">local Loop = true
+  while Loop do
+    local Evt, Id = gui.event()
+    if Evt == ctlSelect then
+       if Id == IdOk then
+         Loop = false
+       end
+     elseif Evt == appStop then
+       Loop = false
+     end
+   end
+   gui.destroy()
+ end</pre></li><li class="listitem"><p>Save this file as <code class="literal">show.lua</code>.</p></li><li class="listitem"><p>Tap the Compile button to open the New PRC Information dialog box. Select the Lib button, and type <span class="bold"><strong>SH11</strong></span> for the creator ID, <span class="strong"><strong>show</strong></span> for the name, and <span class="strong"><strong>1.0</strong></span> for the version. Then check the No Title box and tap the OK button.</p></li><li class="listitem"><p>Enter the following script into a new file:</p><pre class="programlisting">dofile("show")
+
+screen.clear()
+ObjectShow({gui = gui, screen = screen, bin = bin,
+ bit = bit, buffer = buffer}, "Plua")</pre></li><li class="listitem"><p>Save this file as <code class="literal">showtest.lua</code>.</p></li><li class="listitem"><p>Tap the Run button. A dialog box appears with a scrolling list of some of the Plua namespace tables, as shown in <a class="link" href="ch18.html#figure_18-6" title="Figure 18.6. Figure 18-6">Figure 18-6</a>.</p><div class="figure"><a id="figure_18-6"></a><div class="figure-contents"><div><img src="https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/figs/1806.png" width="357" alt="Figure 18-6" height="357"></div></div><p class="title"><strong>Figure 18.6. Figure 18-6</strong></p></div></li></ol></div><p><span class="strong"><strong>How It Works</strong></span><a id="IDX-CHP-18-0050" class="indexterm"></a><a id="IDX-CHP-18-0051" class="indexterm"></a><a id="IDX-CHP-18-0052" class="indexterm"></a></p><p>The Palm version of <code class="literal">ObjectShow</code> is not as detailed as the full version you first saw in <a class="link" href="ch07.html" title="Chapter 7. Using Modules">Chapter 7</a>, but it still provides a valuable glimpse into Lua data structures. One of the first function calls made is to <code class="literal">Metrics</code> to determine certain GUI metrics such as the width of a dialog border. These are needed to size the dialog correctly so that it appears the same on a 160 × 160 pixel device as it does on a 320 × 320 pixel device.</p><p>The scrolling list is actually a text input field with the dotted lines and editability disabled. This is done by creating the field with the <code class="literal">screen.control</code> function. This function receives a table as its only argument. Various key/value pairs in this table are used to pass in information. In this example, the fields <code class="literal">editable</code> and <code class="literal">underlined</code> are both set to <code class="literal">false</code>. Variables such as <code class="literal">ctlSelect</code> and <code class="literal">appStop</code> identify events and are available to all Plua programs. (See the Plua documentation for <code class="literal">gui.event</code> to see a complete list.)</p><p>The <code class="literal">ObjectShow</code> routine implements its own event loop so it will be called as a blocking function. This loop is terminated when the user taps either the OK button or a Palm OS icon to exit the program.</p></div></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="plua_on_the_mothership"></a>Plua on the Mothership</h1></div></div></div><p>The ability to program directly on your handheld device opens up many opportunities. It's a simple matter to use Plua to write a quick program to solve a particular task, and you can develop software in situations where even a notebook computer would be cumbersome. However, even with a good handheld editor such as SrcEdit and with well-chosen shortcuts for Graffiti (the Palm method of handwriting), you may yearn for a more familiar development platform. There are three approaches that let you work from your main computer: the <code class="literal">pluac</code> command-line compiler, the Palm OS Emulator, and the Palm OS Simulator. Each has a particular niche.<a id="IDX-CHP-18-0053" class="indexterm"></a></p><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="the_command-line_compiler"></a>The Command-Line Compiler</h2></div></div></div><p>A Plua2 command-line compiler can be downloaded as a zip file (<code class="literal">pluac-2.0b6.windows.zip</code> as of this writing) from the same place you obtained the main Plua2 zip file: <code class="systemitem">groups.yahoo.com/group/plua</code>. This application runs from a shell window on the Windows platform. (Versions for both Linux and Windows are available for the first version of Plua.)</p><p>The Plua command-line compiler is much like the standalone Lua compiler—it is not an interactive or visual tool. It builds an installable Palm OS application that may include additional resources such as bitmaps. It accepts the same command line arguments as the Lua compiler plus a few of its own, as shown in the following table.</p><div class="informaltable"><table style="border-collapse: collapse;border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; "><colgroup><col class="col1"><col class="col2"></colgroup><thead><tr><th style="text-align: left" valign="bottom"><p>Option</p></th><th style="text-align: left" valign="bottom"><p>Action</p></th></tr></thead><tbody><tr><td style="text-align: left" valign="top"><p><code class="literal">-l</code></p></td><td style="text-align: left" valign="top"><p>Displays the generated bytecode.</p></td></tr><tr><td style="text-align: left" valign="top"><p><code class="literal">-o name</code></p></td><td style="text-align: left" valign="top"><p>Specifies the name of the generated application or library (the default is <code class="literal">PluaApp.prc</code>).</p></td></tr><tr><td style="text-align: left" valign="top"><p><code class="literal">-p</code></p></td><td style="text-align: left" valign="top"><p>Parses the source but don't produce an application or library.</p></td></tr><tr><td style="text-align: left" valign="top"><p><code class="literal">-s</code></p></td><td style="text-align: left" valign="top"><p>Strips debug information from the generated bytecode.</p></td></tr><tr><td style="text-align: left" valign="top"><p><code class="literal">-v</code><a id="IDX-CHP-18-0054" class="indexterm"></a><a id="IDX-CHP-18-0055" class="indexterm"></a><a id="IDX-CHP-18-0056" class="indexterm"></a><a id="IDX-CHP-18-0057" class="indexterm"></a></p></td><td style="text-align: left" valign="top"><p>Displays version information for both Lua and the Plua compiler.</p></td></tr><tr><td style="text-align: left" valign="top"><p><code class="literal">-lib</code></p></td><td style="text-align: left" valign="top"><p>Generates a Plua2 library instead of an application.</p></td></tr><tr><td style="text-align: left" valign="top"><p><code class="literal">-nt</code></p></td><td style="text-align: left" valign="top"><p>Specifies that the application not have a title.</p></td></tr><tr><td style="text-align: left" valign="top"><p><code class="literal">-name name</code></p></td><td style="text-align: left" valign="top"><p>Specifies the name of the application or library as used by Palm OS.</p></td></tr><tr><td style="text-align: left" valign="top"><p><code class="literal">-cid ID</code></p></td><td style="text-align: left" valign="top"><p>Specifies the unique application or library creator ID. This is coded as a four-character string.</p></td></tr><tr><td style="text-align: left" valign="top"><p><code class="literal">-ver version</code></p></td><td style="text-align: left" valign="top"><p>Specifies the application or library version, for example 0.6.</p></td></tr><tr><td style="text-align: left" valign="top"><p><code class="literal">--</code></p></td><td style="text-align: left" valign="top"><p>Stops handling options.</p></td></tr></tbody></table></div><p>The command-line compiler allows you to bind bitmap resources to your application, something that isn't supported in the handheld version. To do this, you'll need a resource compiler that bundles the images into a Palm OS resource. The freely available PilRC resource compiler, which you can find at <code class="literal">pilrc.sourceforge.net</code>, is a good choice. Study the Aquario example that comes with Plua2 to see how images and sprites are programmed. Note that large bitmaps may exceed a resource size limit imposed by Palm OS. In this case, they can be divided into smaller sections that are handled individually.<a id="IDX-CHP-18-0058" class="indexterm"></a></p><p>When you have generated an application with the command-line compiler, you can HotSync it to your Palm device the way you would any other Palm application.</p></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="the_palm_os_emulator"></a>The Palm OS Emulator</h2></div></div></div><p>An indispensable tool for developing and testing applications on the Palm OS platform is the Palm OS Emulator (POSE). This open-source graphical program runs on Windows and Unix-like systems. As its name implies, it contains software that emulates the hardware of a Palm OS device. The current generation of Palm OS devices uses a processor that is not emulated by POSE, but these devices support programs for the older processors. Plua generates code for older processors, so it and the programs you create with it can run on both the newer and the older Palm OS devices.</p><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="obtaining_the_emulator"></a>Obtaining the Emulator</h3></div></div></div><p>Visit <code class="systemitem">palmos.com/dev/tools/core.html</code> and download a copy of POSE for your platform. To do this, you'll need to be a registered member of the ACCESS Developer Network. While you are at the Palm OS developer's site, you should download these packages:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>Emulator</p></li><li class="listitem"><p>Emulator HostFS<a id="IDX-CHP-18-0059" class="indexterm"></a></p></li><li class="listitem"><p>ROM image for Palm OS version 4 or higher</p></li></ul></div><p>Ready-to-install binary packages for Windows and Mac OS are available. For other platforms, you'll need to download the source distribution and build POSE from that. The HostFS application enables you to use a directory on your computer as if it is the virtual file system of an expansion card. The ROM image file corresponds to a system that is embedded in an actual device.</p></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="installing_on_windows"></a>Installing on Windows</h3></div></div></div><p>Create a directory for POSE and extract the contents of the emulator zip file into it. Additionally, in this directory create the following four subdirectories:<a id="IDX-CHP-18-0060" class="indexterm"></a><a id="IDX-CHP-18-0061" class="indexterm"></a><a id="IDX-CHP-18-0062" class="indexterm"></a><a id="IDX-CHP-18-0063" class="indexterm"></a></p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p><code class="literal">autoload</code></p></li><li class="listitem"><p><code class="literal">Card1</code></p></li><li class="listitem"><p><code class="literal">ROM</code></p></li><li class="listitem"><p><code class="literal">skins</code></p></li></ul></div><p>Any Palm OS programs located in the <code class="literal">autoload</code> subdirectory will be loaded automatically when you start the emulator. Extract the contents of the <code class="literal">HostFS</code> zip file into the <code class="literal">autoload</code> subdirectory. Extract the contents of the <code class="literal">ROM</code> zip file into the <code class="literal">ROM</code> subdirectory. Then copy <code class="literal">plua2.prc, plua2help.prc</code>, and <code class="literal">mathlib.prc</code> from your Plua directory to the <code class="literal">autoload</code> subdirectory.</p></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="configuring_pose"></a>Configuring POSE</h3></div></div></div><p>To start POSE, you can use the Run window from the Windows Start button or you can create a shortcut. Either way, you will be executing <code class="literal">Emulator.exe</code> in the directory you created for POSE.</p><p><a class="link" href="ch18.html#figure_18-7" title="Figure 18.7. Figure 18-7">Figure 18-7</a> shows what the POSE generic skin looks like. You can download and select graphics that depict other devices.</p><p>To configure POSE, follow these steps:</p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Right-click anywhere on the window.</p></li><li class="listitem"><p>From the pop-up menu, select New to invoke the New Session dialog box.</p></li><li class="listitem"><p>Click the ROM File button, and then click the Other option.</p></li><li class="listitem"><p>In the file browser window, locate the ROM file that you downloaded (such as <code class="literal">PalmOS412_FullRel_EZ_enUS.rom</code>), and then click the Open button.</p></li><li class="listitem"><p>Click the Device button and choose Palm Vx from the menu.</p></li><li class="listitem"><p>Click the RAM Size button and choose 16,384K from the menu.</p></li><li class="listitem"><p>Click OK to approve the session window.</p></li></ol></div><p>To mount the host-based expansion card, you'll need to active the POSE host file system. Right-click on the POSE window, select Settings, select HostFS, and select Slot 1. Click the Browse button and select the Card1 directory, click the Mounted check box, and then click the OK button. Perform a soft reset of the emulator. To do this, right-click anywhere on the emulator window, select Reset from the pop-up menu, choose Soft reset, and click the Reset button.</p></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="running_plua_in_the_emulator"></a>Running Plua in the Emulator</h3></div></div></div><p>The appearance and operation of Plua in the emulator are the same as on a handheld device, although you may notice that the response times may be different between the two. Also, POSE emulates devices with a 160 × 160-pixel screen area, so if you have a device with a higher screen resolution, the Plua application may appear differently on your handheld. The programs you develop with Plua will work fine with devices having any screen resolution as long as you take into account the screen size when you're sizing and positioning elements.<a id="IDX-CHP-18-0064" class="indexterm"></a></p><div class="figure"><a id="figure_18-7"></a><div class="figure-contents"><div><img src="https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/figs/1807.png" width="390" alt="Figure 18-7" height="588"></div></div><p class="title"><strong>Figure 18.7. Figure 18-7</strong></p></div><div class="sidebar"><a id="try_it_out_colon_programming_plua_with_t"></a><div class="titlepage"><div><div><p class="title"><strong>Try It Out: Programming Plua with the Emulator</strong></p></div></div></div><p>The emulator host file system makes it easy to develop applications with Plua using your text editor. In the following steps, you create and run a Plua program from your main computer.</p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>In the emulator, tap the Plua2 icon.</p></li><li class="listitem"><p>Tap the File button.</p></li><li class="listitem"><p>Select Card from the pop-up menu in the upper-right corner of the screen.</p></li><li class="listitem"><p>The Card1 subdirectory that you created in the POSE directory will have had some new subdirectories added in it. The directory tree now looks like this:</p><pre class="programlisting">Card1
+ PALM
+   Launcher
+   Programs
+     Plua
+       src</pre></li><li class="listitem"><p>Using your text editor, create a new file with the following contents:<a id="IDX-CHP-18-0065" class="indexterm"></a><a id="IDX-CHP-18-0066" class="indexterm"></a><a id="IDX-CHP-18-0067" class="indexterm"></a></p><pre class="programlisting">screen.clear()
+print("Hello from HostFS")
+gui.event()</pre></li><li class="listitem"><p>Save this file as <code class="literal">hostfs.lua</code> in the <code class="literal">Card1\PALM\Programs\Plua\src</code> directory.</p></li><li class="listitem"><p>In the Plua application, refresh the card list by choosing Memo and then choosing Card from the pop-up menu in the upper-right corner.</p></li><li class="listitem"><p>Select <code class="literal">hostfs.lua</code> from the file list and tap Run. The program is executed as if it had been stored in the emulated device's main memory.</p></li></ol></div><p><span class="strong"><strong>How It Works</strong></span></p><p>The following two features are combined to make it very easy to develop applications with Plua running in POSE:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>Plua's capability to access Lua files on an expansion card</p></li><li class="listitem"><p>POSE's emulation of an expansion card file system in the Card1 subdirectory beneath the point where it is installed</p></li></ul></div><p>Although you needed to refresh the card list in Plua when you created a new file, simply modifying a Lua file that is already present doesn't require this. You can simply tap Run after making a change using your desktop editor, and Plua will load the updated file.</p></div></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="compiling_a_program_in_the_emulator"></a>Compiling a Program in the Emulator</h3></div></div></div><p>You can compile applications and libraries using the emulator just as you can on a handheld device. When you do this, the compiled resource is placed in the main memory rather than the expansion card. How do you get this resource to your hard drive as a .prc file? There are two ways:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>You can right-click anywhere on the emulator window to open the main application menu. Then select Export Database and your application or library from the menu. Save the file using the Save As dialog box.</p></li><li class="listitem"><p>You can tap the Palm OS Applications icon and then the Menu icon, select Copy from the menu, select POSESlot1 in the Copy To menu and Handheld in the From menu, choose your compiled resource from the list, and then tap on the Copy button. The emulator will place the <code class="literal">.prc</code> file in the <code class="literal">Card1\PALM\Launcher</code> subdirectory beneath its own installation directory.</p></li></ul></div></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="exiting_the_emulator"></a>Exiting the Emulator</h3></div></div></div><p>To exit POSE, right-click anywhere on its window and choose Exit from the resulting menu. You are given the opportunity to save the session. Doing so will allow POSE to retain its current state, emulating what a handheld device would do if you turned it off with the power button. However, because you placed your essential files in the POSE autoload subdirectory and set up the host file system, saving the session isn't critical. If you opt not to save your session when exiting, you should store the applications and libraries you write in the autoload subdirectory to assure that they are available when you restart POSE.<a id="IDX-CHP-18-0068" class="indexterm"></a></p></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="the_palm_os_simulator"></a>The Palm OS Simulator</h2></div></div></div><p>Like POSE, the Palm OS Simulator is a desktop application that lets you run Palm OS applications. From a user's point of view, its differences are as follows:<a id="IDX-CHP-18-0069" class="indexterm"></a><a id="IDX-CHP-18-0070" class="indexterm"></a><a id="IDX-CHP-18-0071" class="indexterm"></a><a id="IDX-CHP-18-0072" class="indexterm"></a><a id="IDX-CHP-18-0073" class="indexterm"></a><a id="IDX-CHP-18-0074" class="indexterm"></a><a id="IDX-CHP-18-0075" class="indexterm"></a><a id="IDX-CHP-18-0076" class="indexterm"></a><a id="IDX-CHP-18-0077" class="indexterm"></a></p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>It supports Palm OS version 5.0 and higher. (Like the newer generation of Palm OS handhelds, it supports applications and libraries written for older versions.)</p></li><li class="listitem"><p>It supports 320 × 480 screen resolution and up to 65,536 colors.</p></li><li class="listitem"><p>It is available only for the Windows platform.</p></li></ul></div><p>In other respects, it functions virtually the same as POSE. It supports the autoload subdirectory, the host file system mechanism (including the need to issue a soft reset to engage it), and the right-click action to raise the main menu.</p><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="obtaining_the_simulator"></a>Obtaining the Simulator</h3></div></div></div><p>From <code class="systemitem">palmos.com/dev/tools/core.html</code>, download <code class="literal">PalmOS_Garnet_54_simulator.zip</code> and its associated host file system application, <code class="literal">HostFS_Simulator.zip</code>. Registration is required. When you extract the simulator zip file on your hard drive, it will create a number of directories, including one named <code class="literal">release</code>. Create the following two directories in the <code class="literal">release</code> directory:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p><code class="literal">autoload</code></p></li><li class="listitem"><p><code class="literal">Card1</code></p></li></ul></div><p>Unlike the setup for the Palm OS Emulator, you don't create the <code class="literal">skins</code> and <code class="literal">ROM</code> directories.</p></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="using_the_simulator"></a>Using the Simulator</h3></div></div></div><p>Except for configuration, the instructions for POSE apply to the simulator as well. With the simulator, you don't choose a device to emulate, but you can specify parameters such as memory size, screen resolution, and color depth. Access these by right-clicking anywhere on the simulator window and choosing Settings from the resulting pop-up menu. To terminate the program, select Exit from the main menu.</p></div></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="programming_with_plua"></a>Programming with Plua</h1></div></div></div><p>Plua greatly facilitates the programming of many aspects of the Palm OS API, including the handling of data records, expansion card files and directories, image resources and sprites, line and area graphics, and user interface controls and sound. Programming even the simplest Palm application in a low-level language like C can be a daunting task. The Plua programming interface does far more than merely map the Palm OS API to Lua—it encapsulates many details such as memory management and record locking.</p><p>In the following sections, you'll have a chance to briefly explore some of Plua's capabilities. Be sure to examine the examples and documentation that come with Plua to find out how much more extensive its scope is than what is covered here.</p><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="generating_graphics"></a>Generating Graphics</h2></div></div></div><p>Plua has three functions—<code class="literal">screen.heading, screen.turn</code> and <code class="literal">screen.walk</code>—that you can use to draw surprisingly intricate graphics with very little code. These are the so-called "turtle" functions that are associated with the Logo programming language.<a id="IDX-CHP-18-0078" class="indexterm"></a><a id="IDX-CHP-18-0079" class="indexterm"></a><a id="IDX-CHP-18-0080" class="indexterm"></a><a id="IDX-CHP-18-0081" class="indexterm"></a><a id="IDX-CHP-18-0082" class="indexterm"></a><a id="IDX-CHP-18-0083" class="indexterm"></a><a id="IDX-CHP-18-0084" class="indexterm"></a><a id="IDX-CHP-18-0085" class="indexterm"></a></p><p>In this exercise, you'll explore the use of these functions in a loop to draw a repeating pattern.</p><div class="sidebar"><a id="try_it_out_colon_turn_comma_turn_comma_t"></a><div class="titlepage"><div><div><p class="title"><strong>Try It Out: Turn, Turn, Turn</strong></p></div></div></div><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Create a new file (a memo record, a doc file, or a card file—it's your choice) with the following contents:</p><pre class="programlisting">-- graph.lua
+
+local Wd, Ht = screen.mode()
+local Turn = 1
+local Reduce = 0.98
+local WalkLen = Wd
+local Color = 0
+local ColorInc = 1
+local Min = 5
+
+screen.clear()
+screen.heading(90)
+screen.moveto(0, 0)
+repeat
+  screen.color(screen.rgb(Color, Color, Color))
+  Color = Color + ColorInc
+  WalkLen = Reduce WalkLen
+  screen.turn(-(90 + Turn))
+  screen.walk(WalkLen)
+until WalkLen &lt; Min
+gui.event()</pre></li><li class="listitem"><p>Save the file as <code class="literal">graph.lua</code>. If you created a memo record, the first line needs to remain intact.</p></li><li class="listitem"><p>From Plua's File screen, select the type of file you created from the pop-up menu in the upper-right corner.</p></li><li class="listitem"><p>Select <code class="literal">graph.lua</code> from the file list and tap the Run button. The screen shown in <a class="link" href="ch18.html#figure_18-8" title="Figure 18.8. Figure 18-8">Figure 18-8</a> is displayed.</p></li><li class="listitem"><p>Tap the screen to dismiss the graphic and return to the file selection screen.</p></li></ol></div><p><span class="strong"><strong>How It Works</strong></span></p><p>The program source code begins with the following:</p><pre class="programlisting">-- graph.lua</pre><p>This is a line that the Lua interpreter treats as a comment, but it allows Plua to recognize the file as a Lua program if it is saved as a memo record. Following this, there are several tweakable parameters. Placing these above the main code makes it easier to adjust the program's operation.<a id="IDX-CHP-18-0086" class="indexterm"></a><a id="IDX-CHP-18-0087" class="indexterm"></a></p><div class="figure"><a id="figure_18-8"></a><div class="figure-contents"><div><img src="https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/figs/1808.png" width="404" alt="Figure 18-8" height="396"></div></div><p class="title"><strong>Figure 18.8. Figure 18-8</strong></p></div><p>The actual turtle instructions follow the parameters. The screen is cleared, the turtle is pointed to the top of the screen with the <code class="literal">screen.heading(90)</code> call, and the turtle position is set to the upper-left corner of the screen.</p><p>A loop is entered in which the turtle is turned clockwise a little more than 90 degrees and then walks, drawing a line as it does so that is a little shorter and lighter than it was in the previous iteration. This continues until the distance walked becomes smaller than some limiting value. After the loop terminates, a call to <code class="literal">gui.event</code> is made to put the screen on hold until you tap on it or cause some other Palm OS event to occur.</p></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="programming_the_user_interface"></a>Programming the User Interface</h2></div></div></div><p>The Palm OS user interface was designed from the start to support brief, punctuated interactions. This allows users to quickly perform a task (such as schedule an appointment or consult the address list) without navigating through complicated program windows. The GUI controls that Plua provides all support this objective. As you'll see shortly, including these controls in your programs is straightforward as well. For example, initializing a list control and keeping it updated is as simple as providing it with a Lua table of strings.</p><p>It is often desirable to view detail information as you scroll through a list of names or other key information. In the following exercise, you'll program an application that allows you to add, edit, and delete simple records. The main screen will provide a window for viewing the note attached to the currently selected key.</p><div class="sidebar"><a id="try_it_out_colon_creating_a_note_viewer"></a><div class="titlepage"><div><div><p class="title"><strong>Try It Out: Creating a Note Viewer</strong></p></div></div></div><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Create a new doc file or expansion card file (a memo record may work, but on older devices the program will exceed its size limit) and include the following contents:</p><pre class="programlisting">-- Returns a table in which keys are names and values are associated notes.
+
+local function ListInitialize()
+ -- Simulate reading data from a database. This can be replaced with actual
+ -- Palm OS database access.
+ return {
+   Dante = "1265-1321",
+   Petrarch = "1304-1374",
+   Leonardo = "1452-1519",
+   Copernicus = "1473-1543",
+   Michelangelo = "1475-1564",
+   Cervantes = "1547-1616",
+   Galileo = "1564-1642",
+   Shakespeare = "1564-1616",
+   Donne = "1572-1631",
+   Milton = "1608-1674"}
+end
+
+-- Stores data from associative data table
+
+local function ListFinalize(List)
+ -- Store modified data here.
+end
+
+-- Place a button at position X, return button ID
+
+local function LclButton(X, Str)
+  local Id
+  screen.moveto(X)
+  Id = gui.control{type = "button", text = Str}
+  gui.nl()
+  return Id
+end
+
+-- Initialize main form
+
+local function LclForm(Lcl)
+  local X, Y
+  Lcl.ScrWd, Lcl.ScrHt = screen.mode()
+  Lcl.ScrUnit = Lcl.ScrWd / 160
+  Lcl.DlgBrd = Lcl.ScrUnit 2
+  screen.clear()
+  gui.title(Lcl.TitleStr)
+  screen.moveto(1)
+  Lcl.ListRowCount = 8
+  Lcl.CtlList = gui.control{type = "list", lines = Lcl.ListRowCount,
+    columns = 21, selected = 4, list = Lcl.ShowList}
+  X, Y = screen.pos()
+  gui.nl()</pre><pre class="programlisting">screen.moveto(1)
+  Lcl.CtlNote = gui.control{type = "field", lines = 4, columns = 28,
+    limit = 30000, editable = false, underlined = false}
+  X = X - Lcl.ScrUnit
+  screen.moveto(X, Y)
+  Lcl.CtlNew = LclButton(X, "New")
+  Lcl.CtlEdit = LclButton(X, "Edit")
+  Lcl.CtlDel = LclButton(X, "Delete")
+  gui.setfocus(Lcl.CtlList)
+end
+
+-- Raises record editor dialog. If NameStr is nil, it will
+-- be editable, otherwise noneditable
+
+local function RecDlg(Lcl, NameStr, NoteStr)
+  local CtlName, CtlNote, CtlOk, CtlCancel,
+    Name, Note
+  local New = NameStr == nil
+  local Border = 2 Lcl.DlgBrd
+  gui.dialog(0, 0, Lcl.ScrWd - Border, Lcl.ScrHt - Border,
+    New and "New record" or "Edit record")
+  gui.control{type = "label", text = "Name"}
+  gui.nl()
+  CtlName = gui.control{type = "field", lines = 1,
+    columns = 27, limit = 27, text = NameStr or "",
+    editable = New},
+  gui.nl()
+  gui.control{type = "label", text = "Note"}
+  gui.nl()
+  CtlNote = gui.control{type = "field", lines = 6,
+    columns = 27, limit = 1024, text = NoteStr or ""},
+  gui.nl()
+  CtlOk = gui.control{type = "button", text = "OK"}
+  CtlCancel = gui.control{type = "button", text = "Cancel"}
+  gui.setfocus(New and CtlName or CtlNote)
+  local Loop = true
+  while Loop do
+    local Evt, Id = gui.event()
+    if Evt == appStop then
+      Loop = false
+    elseif Evt == ctlSelect then
+      Loop = false
+      if Id == CtlOk then
+        Name = gui.gettext(CtlName)
+        if string.len(Name) &gt; 0 then
+          Note = gui.gettext(CtlNote)
+        else
+          Name = nil
+        end
+      end
+    end
+  end
+  gui.destroy()
+  return Name, Note -- May be nil</pre><pre class="programlisting">end
+
+-- Returns currently selected name
+
+local function RecName(Lcl)
+  local Name, Pos
+  Pos = gui.getstate(Lcl.CtlList)
+  if Pos then
+    Name = Lcl.ShowList[Pos]
+  end
+  return Name
+end
+
+-- Updates note field in main form based on currently selected record
+
+local function NoteRefresh(Lcl)
+  local Note, Name
+  Name = RecName(Lcl)
+  if Name then
+    Note = Lcl.DataList[Name]
+  end
+  gui.settext(Lcl.CtlNote, Note or "")
+end
+
+-- Refreshes selection list on main form. Pos specifies new selection. Nil: no
+-- change; number: new selection by position; string: new position by name.
+
+local function ListRefresh(Lcl, Pos)
+  local J = 1
+  for Key in pairs(Lcl.DataList) do
+    Lcl.ShowList[J] = Key
+    J = J + 1
+  end
+  Lcl.ShowList[J] = nil
+  table.sort(Lcl.ShowList)
+  gui.settext(Lcl.CtlList, Lcl.ShowList)
+  local PosCat = type(Pos)
+  if PosCat == "number" then
+  gui.setstate(Lcl.CtlList, Pos)
+  elseif PosCat == "string" then
+    local J, Count, NewPos = 1, table.getn(Lcl.ShowList)
+    while J &lt;= Count and not NewPos do
+      if Lcl.ShowList[J] == Pos then
+        NewPos = J
+      else
+        J = J + 1
+      end
+    end
+    if NewPos then
+      gui.setstate(Lcl.CtlList, NewPos)
+    end
+  end
+  NoteRefresh(Lcl)</pre><pre class="programlisting">end
+
+-- Handles addition of new record
+
+local function RecNew(Lcl)
+  local Name, Note = RecDlg(Lcl)
+  if Name then
+    if Lcl.DataList[Name] then
+      gui.alert("Duplicate name: " .. Name)
+    else
+      Lcl.DataList[Name] = Note
+      ListRefresh(Lcl, Name)
+      Lcl.Modified = true
+    end
+  end
+ end
+
+-- Handles modification of existing record
+
+local function RecEdit(Lcl)
+  local Name, Note
+  Name = RecName(Lcl)
+  if Name then
+    Name, Note = RecDlg(Lcl, Name, Lcl.DataList[Name])
+    if Name then
+      Lcl.DataList[Name] = Note
+      ListRefresh(Lcl)
+      Lcl.Modified = true
+    end
+  end
+end
+
+-- Shift the currently selected record with hardware button
+
+local function RecScroll(Lcl, Key)
+  local Pos = gui.getstate(Lcl.CtlList)
+  local NewPos
+  local Count = table.getn(Lcl.ShowList) -- Lua 5.0
+  if Key == hardKeyDown then -- Down
+    NewPos = Pos + 1
+  elseif Key == hardKeyUp then -- Up
+    NewPos = Pos - 1
+  elseif Key == hardKey1 then -- Top
+    NewPos = 1
+  elseif Key == hardKey2 then -- Page up
+    NewPos = Pos - Lcl.ListRowCount
+  elseif Key == hardKey3 then -- Page down
+    NewPos = Pos + Lcl.ListRowCount
+  elseif Key == hardKey4 then -- Bottom
+    NewPos = Count
+  end
+  if NewPos then
+    if NewPos &lt; 1 then</pre><pre class="programlisting">NewPos = 1
+    elseif NewPos &gt; Count then
+      NewPos = Count
+    end
+    if NewPos ~= Pos then
+      gui.setstate(Lcl.CtlList, NewPos)
+      NoteRefresh(Lcl)
+    end
+  end
+end
+
+-- Handles deletion of currently selected record
+
+local function RecDel(Lcl)
+  local Name = RecName(Lcl)
+  if Name then
+    Lcl.DataList[Name] = nil
+    ListRefresh(Lcl)
+    Lcl.Modified = true
+  end
+end
+
+-- Main initialization and event loop
+
+local Lcl = {TitleStr = "Notes"}
+screen.clear()
+Lcl.DataList = ListInitialize()
+Lcl.ShowList = {}
+LclForm(Lcl)
+ListRefresh(Lcl, 1)
+local Loop = true
+while Loop do
+  local Evt, Id = gui.event()
+  if Evt == appStop then
+    Loop = false
+  elseif Evt == ctlSelect then
+    if Id == Lcl.CtlNew then
+      RecNew(Lcl)
+    elseif Id == Lcl.CtlEdit then
+      RecEdit(Lcl)
+    elseif Id == Lcl.CtlDel then
+      RecDel(Lcl)
+    end
+  elseif Evt == lstSelect then
+    NoteRefresh(Lcl)
+  elseif Evt == keyDown then
+    RecScroll(Lcl, Id)
+  end
+end
+if Lcl.Modified then
+  ListFinalize(Lcl.DataList)
+end</pre></li><li class="listitem"><p>Save this file as <code class="literal">notes.lua</code>. If you have managed to create this program in a memo record, be sure to include <code class="literal">-- notes.lua</code> as the first line.</p></li><li class="listitem"><p>From Plua's File screen, tap the file category from the pop-up menu in upper-right corner. Select notes.lua from the file list.<a id="IDX-CHP-18-0088" class="indexterm"></a></p></li><li class="listitem"><p>Tap the Run button. <a class="link" href="ch18.html#figure_18-9" title="Figure 18.9. Figure 18-9">Figure 18-9</a> shows what the main form looks like.</p><div class="figure"><a id="figure_18-9"></a><div class="figure-contents"><div><img src="https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/figs/1809.png" width="357" alt="Figure 18-9" height="357"></div></div><p class="title"><strong>Figure 18.9. Figure 18-9</strong></p></div></li><li class="listitem"><p>Experiment with the application: add, edit and delete some records, and use the hardware buttons to scroll through the list.</p></li><li class="listitem"><p>When you are finished with the application, tap the Palm OS Home icon.</p></li></ol></div><p><span class="strong"><strong>How It Works</strong></span></p><p>This example follows a standard application format. It begins with a number of helper functions (including ones that arrange the user interface), followed by an event loop. Here are some key points to note:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>Most Plua functions in the <code class="literal">gui</code> namespace return immediately. (The exceptions are those like <code class="literal">gui.alert</code> and <code class="literal">gui.selectdate</code> that put up their own dialog box and implement their own event loop.)</p></li><li class="listitem"><p>You can call the <code class="literal">screen.pos</code> and <code class="literal">screen.moveto</code> functions to position the various controls when you're building a form.<a id="IDX-CHP-18-0089" class="indexterm"></a><a id="IDX-CHP-18-0090" class="indexterm"></a></p></li><li class="listitem"><p>You can use the <code class="literal">gui.gettext</code> and <code class="literal">gui.settext</code> functions with different types of controls to get and set content. In this example, <code class="literal">gui.settext</code> is used to assign a table to the list control and to assign text to the note field. Likewise, <code class="literal">gui.getstate</code> and <code class="literal">gui.setstate</code> work with different types of controls.<a id="IDX-CHP-18-0091" class="indexterm"></a><a id="IDX-CHP-18-0092" class="indexterm"></a><a id="IDX-CHP-18-0093" class="indexterm"></a><a id="IDX-CHP-18-0094" class="indexterm"></a></p></li><li class="listitem"><p>The record dialog box for creating a new record or modifying an existing one uses the <code class="literal">gui.dialog</code> function. After this function is called, the dialog box is populated with form controls and an event loop is entered. When a terminating event occurs, a call to <code class="literal">gui.destroy</code> is made to destroy the dialog box.<a id="IDX-CHP-18-0095" class="indexterm"></a><a id="IDX-CHP-18-0096" class="indexterm"></a></p></li></ul></div></div><p>In an actual application, information will be stored in a Palm OS database. The program presented here has functions for retrieving and saving the data (<code class="literal">ListInitialize</code> and <code class="literal">ListFinalize</code>, respectively) with the assumption that all of the application database records will be loaded into a Lua table when the program begins and saved, if modifications have been made, when the program ends.<a id="IDX-CHP-18-0097" class="indexterm"></a><a id="IDX-CHP-18-0098" class="indexterm"></a><a id="IDX-CHP-18-0099" class="indexterm"></a></p><p>At the cost of some program complexity, another approach would be to load only the keys of the database records into a Lua table, and the record IDs into another table. Record insertions, modifications, and deletions would then take place directly in the database.</p></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="accessing_databases"></a>Accessing Databases</h2></div></div></div><p>Plua provides a unified approach to input and output with the <code class="literal">io.open</code> function. With it, you can access standard Palm OS databases, stream files, doc files, memo records, serial port devices, expansion card files, and network devices. Consult the Unified I/O chart in the Plua documentation to see how to format the name of the resource or device when opening it.</p><p>In the following exercise, you'll write a script that will access the standard address book database. This demonstrates how you can use the <code class="literal">io</code> library with Palm OS databases.</p><div class="sidebar"><a id="try_it_out_colon_displaying_the_address"></a><div class="titlepage"><div><div><p class="title"><strong>Try It Out: Displaying the Address Book</strong></p></div></div></div><p>Programmatically open the address book on your Palm OS device and, using the list control, display the name and first phone number for each record. Before starting this exercise, make sure you've got at least a couple records in the address book. The Address or Contacts application is used to manage this database interactively.</p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Open a new file on your handheld and add in the following script:</p><pre class="programlisting">-- address.lua
+
+screen.clear()
+local DbStr = "db:/AddressDB"
+local ErrStr
+local Hnd, Count = io.open(DbStr, "rb")
+local List = {}
+if Hnd then
+ if Count &gt; 0 then
+   for J = 0, Count - 1 do
+     local RecSize = Hnd:openrec(J)
+     if RecSize then
+       if RecSize &gt; 0 then
+         local RecStr = Hnd:read("*a")
+         if RecStr then
+           local Rec = bin.unpack("BBBBBBBBBSSS", RecStr)
+           table.insert(List, (Rec[11] or "") .. " " .. (Rec[10] or "") ..
+             " " .. (Rec[12] or ""))
+         end
+       end
+       Hnd:closerec()
+     end
+   end</pre><pre class="programlisting">else
+   ErrStr = "The address book contains no records"
+ end
+ Hnd:close()
+else
+ ErrStr = "Error opening the address book"
+end
+if not ErrStr then
+ if next(List) then -- At least one item?
+   gui.title("Address")
+   gui.list(10, 30, List)
+   gui.nl()
+   local CtlOk = gui.button("OK")
+   local Evt, Id
+   repeat
+     Evt, Id = gui.event()
+   until Evt == appStop or (Evt == ctlSelect and Id == CtlOk)
+ end
+else
+  print(ErrStr)
+  repeat until gui.event() == penDown
+end</pre></li><li class="listitem"><p>Save the file as <code class="literal">address.lua</code>.</p></li><li class="listitem"><p>Tap the Run button. The resulting screen displays the partial contents of your address book as shown in <a class="link" href="ch18.html#figure_18-10" title="Figure 18.10. Figure 18-10">Figure 18-10</a>.</p></li><li class="listitem"><p>Tap the Palm OS Home key to exit.</p><div class="figure"><a id="figure_18-10"></a><div class="figure-contents"><div><img src="https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/figs/1810.png" width="357" alt="Figure 18-10" height="358"></div></div><p class="title"><strong>Figure 18.10. Figure 18-10</strong></p></div></li></ol></div><p><span class="strong"><strong>How It Works</strong></span></p><p>This example opens the address database on your Palm OS device. The <code class="literal">db:/</code> prefix to the resource name indicates that this is a regular database. The call to <code class="literal">io.open</code> returns the handle and record count of the database if it succeeds, or <code class="literal">nil</code> otherwise.</p><p>The address book record format includes nine bytes of binary information followed by a number of null-terminated strings. (This information can be gleaned from various web resources.) No attempt to read the binary information is made here. In the main record reading loop, a record is opened by position with a call to the <code class="literal">openrec</code> method before it can be accessed. After a record has been opened, it is read using the <code class="literal">io.read</code> function with the same arguments as if the record itself was a file.</p><p>Like most databases on a Palm OS device, the address database has records that are binary and packed—not all fields are text strings, and those that are contain no trailing unused characters. The <code class="literal">bin.unpack</code> function is called with a format string to extract the packed fields into a new record table. Here, the format string contains one <code class="literal">B</code> for each binary byte, and one <code class="literal">S</code> for each null terminated string. The code in this exercise does not handle missing fields robustly.</p></div></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="summary-064"></a>Summary</h1></div></div></div><p>In this chapter, you had a chance to become familiar with Plua, which is a port of Lua to the Palm OS platform. In particular, you've learned to do the following:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>Use Plua in interactive mode to run quick program snippets</p></li><li class="listitem"><p>Prepare Lua scripts in various source code formats (memo, doc, stream, and expansion card) that Plua can process</p></li><li class="listitem"><p>Access online help while working in the Plua development application</p></li><li class="listitem"><p>Create and write to a Palm OS stream file</p></li><li class="listitem"><p>Compile applications and libraries into Palm OS resources that can be distributed to others</p></li><li class="listitem"><p>Use compiled libraries as modules in your Plua programs</p></li><li class="listitem"><p>Use the Plua command-line compiler</p></li><li class="listitem"><p>Run Plua from your desktop computer using the Palm OS Emulator and Simulator</p></li><li class="listitem"><p>Develop Palm OS programs using turtle graphics, GUI features, and databases</p></li></ul></div><p>There's a lot more to programming in Plua. The documentation and examples that come with Plua contain information to get you going with network communication, resource graphics, sound, and more.</p><p>In the next chapter, you'll take a look at the vibrant community that has arisen around Lua and how you can be a part of it. Before proceeding with that, review the skills you have picked up in this chapter by trying the following exercises.</p></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="exercises-065"></a>Exercises</h1></div></div></div><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Use turtle graphics to write a Plua script that generates a five-pointed star like the one shown in <a class="link" href="ch18.html#figure_18-11" title="Figure 18.11. Figure 18-11">Figure 18-11</a>.</p><div class="figure"><a id="figure_18-11"></a><div class="figure-contents"><div><img src="https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/figs/1811.png" width="357" alt="Figure 18-11" height="357"></div></div><p class="title"><strong>Figure 18.11. Figure 18-11</strong></p></div></li><li class="listitem"><p>Write a simple Lua expression interpreter that accepts a single line of input and displays what Lua returns when that string is submitted to <code class="literal">tostring</code>. In addition to the Plua GUI functions, plan on using the Lua <code class="literal">loadstring</code> and <code class="literal">pcall</code> functions. The screen can look something like the one shown in <a class="link" href="ch18.html#figure_18-12" title="Figure 18.12. Figure 18-12">Figure 18-12</a>.</p><div class="figure"><a id="figure_18-12"></a><div class="figure-contents"><div><img src="https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/figs/1812.png" width="357" alt="Figure 18-12" height="357"></div></div><p class="title"><strong>Figure 18.12. Figure 18-12</strong></p></div></li><li class="listitem"><p>Write a function named <code class="literal">Barchart</code> that accepts as arguments a title string and an indexed table containing numbers. The values in the table are to be displayed as bars in a chart. For example, the following call should result in a display that looks like <a class="link" href="ch18.html#figure_18-13" title="Figure 18.13. Figure 18-13">Figure 18-13</a>:</p><pre class="programlisting">Barchart("Example", {12, 34, 23, 25, 67, 45, 23, 7, 5, 54, 48, 50})</pre><p>Use the Plua <code class="literal">screen.box</code> function to draw the bars, but avoid using <code class="literal">gui.dialog</code>, because it does not support drawing.</p><div class="figure"><a id="figure_18-13"></a><div class="figure-contents"><div><img src="https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/figs/1813.png" width="357" alt="Figure 18-13" height="357"></div></div><p class="title"><strong>Figure 18.13. Figure 18-13</strong></p></div></li></ol></div></div></div></div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="ch17.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">17. Programming Games with Lua</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="ch19.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">19. Fitting into the Lua Community</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag">
+        
+        
+
+        
+          <p>You have 6 days left in your trial, Michaelschiner. Subscribe today. <a href="https://learning.oreilly.com/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+        
+
+<footer class="pagefoot t-pagefoot">
+  <a href="ch18.html#" class="icon-up" onclick="window.Appcues.track('JumpTop_HeronBook')"><div class="visuallyhidden">Back to top</div></a>
+  <ul class='js-footer-nav'>
+  
+    
+    <li><a href="https://learning.oreilly.com/public/support/">Support</a></li>
+    
+    <li><a href="https://learning.oreilly.com/accounts/logout/">Sign Out</a></li>
+    
+  
+  
+  </ul>
+  <span class="copyright">&#169; 2021 <a href="https://learning.oreilly.com/" target="_blank">O'Reilly Media, Inc</a>.</span>
+  
+    
+    <a href="https://www.oreilly.com/terms/">Terms of Service</a> 
+     / 
+    
+    <a href="https://learning.oreilly.com/privacy">Privacy Policy</a> 
+    
+    
+  
+</footer>
+
+      
+    
+    <script src="https://learning.oreilly.com/jsi18n/web/" charset="utf-8"></script>
+    <script src="https://learning.oreilly.com/library/jsi18n/appcache/" charset="utf-8"></script>
+  </body>
+</html>

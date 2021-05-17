@@ -1,0 +1,766 @@
+<!--[if IE]><![endif]--><!DOCTYPE html><!--[if IE 8]><html class="no-js ie8 oldie" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/beginning-lua-programming/9780470069172/ch06.html"
+data-csrf-cookie="csrfsafari"
+
+
+  data-user-id="11366403"
+  data-user-uuid="ce47de5b-ce80-49f0-b5cd-c60d3d33b198"
+  data-username="michaelschiner"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/13/2021"
+
+
+  data-archive="9780470069172"
+  data-publishers="Wrox"
+
+
+
+  data-htmlfile-name="ch06.html"
+  data-epub-title="Beginning Lua Programming" data-debug=0 data-testing=0><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/beginning-lua-programming/9780470069172/ch06.html"
+data-csrf-cookie="csrfsafari"
+
+
+  data-user-id="11366403"
+  data-user-uuid="ce47de5b-ce80-49f0-b5cd-c60d3d33b198"
+  data-username="michaelschiner"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/13/2021"
+
+
+  data-archive="9780470069172"
+  data-publishers="Wrox"
+
+
+
+  data-htmlfile-name="ch06.html"
+  data-epub-title="Beginning Lua Programming" data-debug=0 data-testing=0><!--<![endif]--><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="author" content="O'Reilly Media" /><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"/><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9780470069172"/><link rel="shortcut icon" href="https://www.oreilly.com/favicon.ico" /><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"/><meta property="twitter:account_id" content="4503599627559754" /><link rel="shortcut icon" href="https://learning.oreilly.com/favicon.ico" type="image/x-icon"><link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'><title>6. Handling and Avoiding Errors - Beginning Lua Programming</title><link rel="stylesheet" href="https://learning.oreilly.com/static/CACHE/css/output.5bdb4fcb2aad.css" type="text/css"><link rel="stylesheet" type="text/css" href="https://learning.oreilly.com/static/css/annotator.e3b0c44298fc.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><style type="text/css" title="ibis-book"></style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9780470069172/chapter/ch06.html",
+          "book_id": "9780470069172",
+          "chapter_uri": "ch06.html",
+          "position": 0,
+          "user_uuid": "ce47de5b-ce80-49f0-b5cd-c60d3d33b198",
+          "next_chapter_uri": "/library/view/beginning-lua-programming/9780470069172/ch07.html"
+        
+      },
+      title: "Beginning Lua Programming",
+      author_list: "Aaron Brown, Kurt Jung",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false
+    };
+    // ]]></script><script src="https://learning.oreilly.com/static/js/src/modernizr.8e35451ddb64.js"></script><script>
+    
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+      window.PRIVACY_CONTROL_SWITCH = true;
+
+      window.PUBLISHER_PAGES = true;
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "https://learning.oreilly.com/api/v2/search/select/",
+        }
+      };
+  </script><link rel="canonical" href="ch06.html"/><meta name="description" content="Chapter 6. Handling and Avoiding Errors Program correctness matters on every count, from user acceptance and trust to the downstream consequences of program output. In this chapter, you learn about ... "><meta property="og:title" content="6. Handling and Avoiding Errors" /><meta itemprop="isPartOf" content="/library/view/beginning-lua-programming/9780470069172/" /><meta itemprop="name" content="6. Handling and Avoiding Errors" /><meta property="og:url" itemprop="url" content="https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch06.html" /><meta property="og:site_name" content="Safari" /><meta property="og:image" itemprop="thumbnailUrl" content="https://learning.oreilly.com/library/cover/9780470069172/" /><meta property="og:description" itemprop="description" content="Chapter 6. Handling and Avoiding Errors Program correctness matters on every count, from user acceptance and trust to the downstream consequences of program output. In this chapter, you learn about ... "><meta itemprop="inLanguage" content="en" /><meta itemprop="publisher" content="Wrox" /><meta property="og:type" content="book" /><meta property="og:book:isbn" itemprop="isbn" content="9780470069172" /><meta property="og:book:author" itemprop="author" content="Aaron Brown" /><meta property="og:book:author" itemprop="author" content="Kurt Jung" /><meta property="og:book:tag" itemprop="about" content="Core Programming" /><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@OReillyMedia"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: <%= font_size %> !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: <%= font_family %> !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: <%= column_width %>% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; URL=https://learning.oreilly.com/library/no-js/" /></noscript><script>
+    var dataLayer = window.dataLayer || [];
+
+    
+      window.medalliaVsgUserIdentifier = 'ce47de5b-ce80-49f0-b5cd-c60d3d33b198';
+      dataLayer.push({userIdentifier: 'ce47de5b-ce80-49f0-b5cd-c60d3d33b198'});
+      dataLayer.push({loggedIn: 'yes'});
+
+      
+        window.medalliaVsgAccountIdentifier = '29964b7b-68d8-4532-9a9b-32e089689c1f';
+        
+
+        window.medalliaVsgIsIndividual = true;
+        
+          
+          dataLayer.push({learningAccountType: 'free trial'});
+          
+        
+
+        
+      
+    
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+    (function () {
+      var VERSION = 'V1.1';
+      var AUTHOR = 'Awwad';
+      if (!window.GtmHelper)
+        window.GtmHelper = function () {
+          var instance = this;
+          var loc = document.location;
+          this.version = VERSION;
+          this.author = AUTHOR;
+          this.readCookie = function (name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+          };
+          this.createCookie = function (name, value, days, cookieDomain) {
+            var domain = "";
+            var expires = "";
+
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + Math.ceil(days * 24 * 60 * 60 * 1000));
+              var expires = " expires=" + date.toGMTString() + ";";
+            }
+
+            if (typeof (cookieDomain) != 'undefined')
+              domain = " domain=" + cookieDomain + "; ";
+
+            document.cookie = name + "=" + value + ";" + expires + domain + "path=/";
+          };
+
+          this.isDuplicated = function (currentTransactionId) {
+            // the previous transaction id:
+            var previousTransIdValue = this.readCookie("previousTransId");
+
+            if (currentTransactionId === previousTransIdValue) {
+              return true; // Duplication
+            } else {
+              return false;
+            }
+          };
+        }
+    })()
+  </script><script defer src="https://learning.oreilly.com/static/js/build/vendor.0eac897f11ed.js"></script><script defer src="https://learning.oreilly.com/static/js/build/reader.c745ea9296ac.js"></script></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts">
+
+    
+  <noscript> 
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+  
+
+
+<a href="ch06.html#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li><a href="https://learning.oreilly.com/home/" class="l0 nav-icn"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.738 14H9.254v-3.676a.617.617 0 0 0-.621-.613H7.39a.617.617 0 0 0-.62.613V14H4.284a.617.617 0 0 1-.622-.613V10.22c0-.327.132-.64.367-.87l3.547-3.493a.627.627 0 0 1 .875 0l3.54 3.499c.234.229.366.54.367.864v3.167a.617.617 0 0 1-.62.613zM7.57 2.181a.625.625 0 0 1 .882 0l5.77 5.692-.93.92-5.28-5.209-5.28 5.208-.932-.919 5.77-5.692z" /></svg><span>Home</span></a></li><li class="search"><a href="ch06.html#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"/></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="ch06.html#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"/></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li class="flyout-parent"><a
+                href="ch06.html#"
+                class="l1 nav-icn "
+                
+              ><?xml version="1.0" encoding="UTF-8"?><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M8,8 C6.34321755,8 5.00013,6.65691245 5.00013,5.00013 C5.00013,3.34334755 6.34321755,2.00026001 8,2.00026001 C9.65678245,2.00026001 10.99987,3.34334755 10.99987,5.00013 C10.99987,6.65691245 9.65678245,8 8,8 Z M2.33024571,11.3523547 L2.33774538,11.3523547 C3.7622187,9.70968996 5.82947484,8.76608166 8.00374984,8.76608166 C10.1780248,8.76608166 12.245281,9.70968996 13.6697543,11.3523547 C13.8892083,11.6177474 14.0062813,11.9530021 13.99974,12.2973138 L13.99974,13.99974 L2.00026001,13.99974 L2.00026001,12.2973138 C1.99371867,11.9530021 2.11079172,11.6177474 2.33024571,11.3523547 Z" id="path-1"></path></svg><span>Your O&#39;Reilly</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/profile/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Profile</span></a></li><li><a
+                    href="https://learning.oreilly.com/history/"
+                    class="l2 nav-icn"
+                    
+                  ><span>History</span></a></li><li><a
+                    href="https://learning.oreilly.com/playlists/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Playlists</span></a></li><li><a
+                    href="https://learning.oreilly.com/u/ce47de5b-ce80-49f0-b5cd-c60d3d33b198/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Highlights</span></a></li></ul></li><li ><a
+                href="https://learning.oreilly.com/answers/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M2.31032699,3.75609006 C4.65421571,1.41371359 8.45302454,1.41472092 10.7955702,3.75860838 C13.1381158,6.10249583 13.1369405,9.90130261 10.7930518,12.243847 C8.44916311,14.5863913 4.65018639,14.5852161 2.30780867,12.2413286 C-0.0346204845,9.89749489 -0.0334929936,6.09853298 2.31032699,3.75609006 Z M8.8198605,4.98016308 C7.34193969,3.86924672 5.23410194,3.98609692 3.88914868,5.33104946 C3.12814393,6.09032122 2.72818176,7.13880077 2.79015179,8.21201133 C2.79115912,8.23064692 2.79233434,8.24928252 2.79350956,8.26791811 L2.79350956,8.26791811 C2.83179539,8.8307976 2.9944077,9.37404287 3.26947292,9.86201677 L3.26947292,9.86201677 L2.77621706,11.7027432 C2.7699968,11.7259241 2.77662063,11.7506624 2.79359185,11.7676337 C2.8105631,11.7846049 2.83530144,11.7912287 2.85848233,11.7850085 L2.85848233,11.7850085 L4.69400524,11.2922565 C5.26306363,11.6167344 5.90703177,11.786885 6.56209849,11.7858479 C8.64827865,11.7858479 10.3395879,10.094542 10.3395879,8.00836292 C10.3405204,6.84135608 9.80105674,5.73967784 8.87862141,5.02482134 L8.87862141,5.02482134 L8.82825492,4.98654283 Z M13.7933062,2 C14.7073496,2.00009863 15.4482759,2.74110484 15.4482759,3.65514822 C15.4482759,4.32460943 15.0449926,4.92814782 14.4264842,5.18432286 C13.8079757,5.44049789 13.096053,5.29885769 12.6226979,4.82545158 C12.1493429,4.35204547 12.0077795,3.64010743 12.2640213,3.02162665 C12.5202631,2.40314587 13.123845,1.99992776 13.7933062,2 Z"/></svg><span>Answers</span></a></li><li class="flyout-parent"><a
+                href="ch06.html#"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>queue icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 29.2C25.4 29.2 25.8 29.1 26.1 28.9L48.7 16.8C49.5 16.4 50 15.5 50 14.6 50 13.7 49.5 12.8 48.7 12.4L26.1 0.3C25.4-0.1 24.6-0.1 23.9 0.3L1.3 12.4C0.5 12.8 0 13.7 0 14.6 0 15.5 0.5 16.4 1.3 16.8L23.9 28.9C24.2 29.1 24.6 29.2 25 29.2ZM7.3 14.6L25 5.2 42.7 14.6 25 24 7.3 14.6ZM48.7 22.4L47.7 21.9 25 34.2 2.3 21.9 1.3 22.4C0.5 22.9 0 23.7 0 24.7 0 25.6 0.5 26.5 1.3 26.9L23.9 39.3C24.2 39.5 24.6 39.6 25 39.6 25.4 39.6 25.8 39.5 26.1 39.3L48.7 26.9C49.5 26.5 50 25.6 50 24.7 50 23.7 49.5 22.9 48.7 22.4ZM48.7 32.8L47.7 32.3 25 44.6 2.3 32.3 1.3 32.8C0.5 33.3 0 34.1 0 35.1 0 36 0.5 36.9 1.3 37.3L23.9 49.7C24.2 49.9 24.6 50 25 50 25.4 50 25.8 49.9 26.1 49.7L48.7 37.3C49.5 36.9 50 36 50 35.1 50 34.1 49.5 33.3 48.7 32.8Z"/></g></svg><span>Explore</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/topics/"
+                    class="l2 nav-icn"
+                    
+                  ><span>All Topics</span></a></li><li><a
+                    href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;formats=case%20study&amp;formats=learning%20path&amp;formats=live%20online%20training&amp;formats=notebook&amp;formats=oriole&amp;formats=video&amp;sort=popularity&amp;facet_json=true&amp;page=0&amp;collection_type=expert"
+                    class="l2 nav-icn"
+                    
+                  ><span>Most Popular Titles</span></a></li><li><a
+                    href="https://learning.oreilly.com/recommendations/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Recommended</span></a></li><li><a
+                    href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;sort=publication_date&amp;facet_json=true&amp;page=0"
+                    class="l2 nav-icn"
+                    
+                  ><span>Early Releases</span></a></li><li><a
+                    href="https://learning.oreilly.com/playlists/discover/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Shared Playlists</span></a></li><li><a
+                    href="https://learning.oreilly.com/resource-centers/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Resource Centers</span></a></li></ul></li><li class="flyout-parent"><a
+                href="ch06.html#"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12.8 3.2A1.2 1.2 0 0 1 14 4.4v8.4a1.2 1.2 0 0 1-1.2 1.2H3.2A1.2 1.2 0 0 1 2 12.8V4.4a1.2 1.2 0 0 1 1.2-1.2h1.2V2h1.2v1.2h4.8V2h1.2v1.2h1.2zm-9.6 9.6h9.6V6.2H3.2v6.6zM8 9.5a1.35 1.35 0 1 1 0-2.7 1.35 1.35 0 0 1 0 2.7zm2.7 2.148v.552H5.3v-.552c0-.321.124-.634.355-.858a3.358 3.358 0 0 1 4.69 0c.23.224.355.537.355.858z" /></svg><span>Live Events</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/attend/"
+                    class="l2 nav-icn"
+                    
+                  ><span>All Events</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/architectural-katas/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Architectural Katas</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/ai/"
+                    class="l2 nav-icn"
+                    
+                  ><span>AI &amp; ML</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/strata/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Data Sci &amp; Eng</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/oscon/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Programming</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/infrastructure-ops/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Infra &amp; Ops</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/software-architecture/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Software Arch</span></a></li></ul></li><li class="flyout-parent"><a
+                href="ch06.html#"
+                class="l1 nav-icn "
+                
+              ><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.6467109,4.35328907 L14.7964612,7.51003884 C15.0678463,7.78304342 15.0678463,8.22395603 14.7964612,8.49696061 L11.6467109,11.6467109 L10.6597892,10.6597892 L13.3055794,8 L10.6597892,5.34021084 L11.6467109,4.35328907 Z M4.35328907,11.6467109 L1.20353875,8.48996116 C0.932153749,8.21695658 0.932153749,7.77604397 1.20353875,7.50303939 L4.35328907,4.35328907 L5.34021084,5.34021084 L2.69442057,8 L5.34021084,10.6597892 L4.35328907,11.6467109 Z M5.84417089,11.4997226 L8.67194674,4.50027742 L10.1838269,4.50027742 L7.35605105,11.4997226 L5.84417089,11.4997226 Z" id="Mask"></path></svg><span>Interactive</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/scenarios/?classification=content-scenario"
+                    class="l2 nav-icn"
+                    
+                  ><span>Scenarios</span></a></li><li><a
+                    href="https://learning.oreilly.com/scenarios/?classification=sandbox-scenario"
+                    class="l2 nav-icn"
+                    
+                  ><span>Sandboxes</span></a></li><li><a
+                    href="https://learning.oreilly.com/interactive/?classification=jupyter-notebook"
+                    class="l2 nav-icn"
+                    
+                  ><span>Jupyter Notebooks</span></a></li></ul></li><li ><a
+                href="https://learning.oreilly.com/certifications/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M12.912 9.18L14 8.014l-1.088-1.18a.304.304 0 01-.075-.268L13.195 5l-1.535-.463a.313.313 0 01-.194-.194l-.462-1.537-1.565.358c-.09.03-.194 0-.269-.074L8.007 2 6.845 3.09a.303.303 0 01-.269.074l-1.565-.358-.462 1.537a.313.313 0 01-.194.194L2.82 5l.358 1.567a.26.26 0 01-.075.269L2 8.015l1.088 1.164c.075.075.09.18.075.269l-.358 1.567 1.535.463c.09.03.164.104.194.194l.462 1.537 1.565-.358c.015 0 .045-.015.075-.015.075 0 .15.03.209.074L8.007 14l1.163-1.09a.303.303 0 01.269-.074l1.565.358.462-1.537a.313.313 0 01.194-.194L13.195 11l-.358-1.567a.338.338 0 01.075-.254zm-6.046 1.37L4.41 8.26l1.16-1.244 1.767 1.649L10.4 5.6l1.202 1.202-4.242 4.243-.495-.495z"/></svg><span>Certifications</span></a></li><li ><a
+                href="https://learning.oreilly.com/preferences/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a></li><li ><a
+                href="https://learning.oreilly.com/public/support/"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M7.363 6.656a2.692 2.692 0 0 1-2.681-2.703c0-1.493 1.2-2.703 2.681-2.703a2.692 2.692 0 0 1 2.682 2.703c0 1.493-1.2 2.703-2.682 2.703zm4.023 2.027c-1.852 0-3.352 1.513-3.352 3.379H2v-1.534c-.006-.31.099-.612.295-.852a6.666 6.666 0 0 1 9.09-.993zm-.543.676h1.12v.304c.003.284.16.543.408.676a.766.766 0 0 0 .77 0l.303-.176.556.966-.302.176a.772.772 0 0 0-.362.676v.08a.772.772 0 0 0 .362.677l.302.21-.556.965-.302-.175a.766.766 0 0 0-.771 0 .778.778 0 0 0-.409.675v.352h-1.106v-.372a.778.778 0 0 0-.409-.676.766.766 0 0 0-.77 0l-.303.176-.556-.912.302-.176a.772.772 0 0 0 .362-.676v-.04-.04a.772.772 0 0 0-.362-.676l-.302-.176.556-.966.289.155a.766.766 0 0 0 .77 0 .778.778 0 0 0 .41-.676V9.36zm1.562 2.703c0-.271-.108-.531-.3-.722a1.001 1.001 0 0 0-.72-.292 1.01 1.01 0 0 0-.992 1.023 1.01 1.01 0 0 0 1.01 1.004 1.01 1.01 0 0 0 1.002-1.013z" /></svg><span>Support</span></a></li><li ><a
+                href="https://get.oreilly.com/email-signup.html"
+                class="l1 nav-icn "
+                target=&quot;_blank&quot;
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.564 2.263l2.172 2.174c.17.168.264.397.264.636V11a.6.6 0 0 1-.6.6h-.6V6.2h-6V2.6a.6.6 0 0 1 .6-.6h3.527c.239 0 .468.095.637.263zM2.6 14a.6.6 0 0 1-.6-.6V6.8a.6.6 0 0 1 .6-.6h1.903a1.2 1.2 0 0 1 .849.352L6.2 7.4H11a.6.6 0 0 1 .6.6v5.4a.6.6 0 0 1-.6.6H2.6zM11 5h1.8L11 3.2V5z" /></svg><span>Newsletters</span></a></li><li ><a
+                href="https://learning.oreilly.com/accounts/logout/"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M2.613 12.63A.607.607 0 0 1 2 12.03V3.602C2 3.269 2.274 3 2.613 3h5.515v1.204H3.226v7.223h4.902v1.203H2.613zM5.677 9.02V6.611h4.903V4.926a.301.301 0 0 1 .19-.274.31.31 0 0 1 .33.063l2.722 2.673a.594.594 0 0 1 0 .849L11.1 10.909a.31.31 0 0 1-.331.063.301.301 0 0 1-.19-.274V9.02H5.677z" /></svg><span>Sign Out</span></a></li></ul></div></li></ul></nav></header>
+
+
+
+      </div>
+      <div id="container" class="application">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="ch06.html#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Beginning Lua Programming
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="ch06.html#" title="Search in archive" class="js-search-controls search-controls" onclick="window.Appcues.track('SearchBook_HeronBook')"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9780470069172/chapter/ch06.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards" onclick="window.Appcues.track('AddPlaylist_HeronBook')"></div></div></li><li class="js-font-control-panel font-control-activator"><a href="ch06.html#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size" onclick="window.Appcues.track('ChangeFont_HeronBook')"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="ch06.html#" class="trigger" data-push-state="false" title="Share" aria-label="Share" onclick="window.Appcues.track('Share_HeronBook')"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a
+        class="twitter share-button t-twitter"
+        target="_blank"
+        aria-label="Share this section on Twitter"
+        title="Share this section on Twitter"
+      
+        href="https://twitter.com/share?url=https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch06.html&text=Beginning%20Lua%20Programming&via=OReillyMedia"
+      ><span>Twitter</span></a></li><li><a
+        class="facebook share-button t-facebook"
+        target="_blank"
+        aria-label="Share this section on Facebook"
+        title="Share this section on Facebook"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch06.html"
+      ><span>Facebook</span></a></li><li><a
+        class="googleplus share-button t-googleplus"
+        target="_blank"
+        aria-label="Share this secton on Google Plus"
+        title="Share this secton on Google Plus"
+        href="https://plus.google.com/share?url=https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch06.html"
+      ><span>Google Plus</span></a></li><li><a
+        class="email share-button t-email"
+        aria-label="Share this section via email"
+        title="Share this section via email"
+      
+        href="mailto:?subject=Safari: 6.%20Handling%20and%20Avoiding%20Errors&body=https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch06.html%0D%0Afrom Beginning%20Lua%20Programming%0D%0A"
+      ><span>Email</span></a></li></ul></li><!-- endif request.user.is_authenticated -->
+      </ul>
+    </div>
+
+      
+          
+      
+
+    <section role="document">
+        
+        
+
+
+
+
+  <script defer src="https://learning.oreilly.com/static/js/build/djangoMessagesPage.bfaca9fd8619.js"></script>
+
+
+        <script src="https://fast.appcues.com/48743.js"></script>
+<script>
+  var userId = "ce47de5b-ce80-49f0-b5cd-c60d3d33b198";
+
+  var userObject = {
+    firstName: "Michael",
+    segment: "Trial",
+    admin: "False",
+    profileCreatedOn: "2021-05-13",
+    academic: ""
+  };
+  window.Appcues.identify(userId, userObject);
+  window.Appcues.page();
+
+  setTimeout(function () {
+    window.Appcues.track('ViewingBook_HeronBook')
+  }, 20000);
+</script>
+
+
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="ch05.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">5. Using Strings</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="ch07.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">7. Using Modules</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="handling_and_avoiding_errors"></a>Chapter 6. Handling and Avoiding Errors</h1></div></div></div><p>Program correctness matters on every count, from user acceptance and trust to the downstream consequences of program output. In this chapter, you learn about the following:<a id="IDX-CHP-6-0001" class="indexterm"></a><a id="IDX-CHP-6-0002" class="indexterm"></a><a id="IDX-CHP-6-0003" class="indexterm"></a></p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>The kinds of errors that can occur in your programs<a id="IDX-CHP-6-0004" class="indexterm"></a></p></li><li class="listitem"><p>Lua's mechanisms for handling errors</p></li><li class="listitem"><p>Techniques to avoid program errors</p></li><li class="listitem"><p>Techniques to locate program errors</p></li></ul></div><p>Along the way, you'll become familiar with Lua's I/O library, which is included in some of the examples.</p><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="kinds_of_errors"></a>Kinds of Errors</h1></div></div></div><p>Some flaws can turn up before a program is executed. These are compile-time errors, which Lua can find as it converts your source code into executable bytecode. Often these result from simple misspellings or typing slips as you edit your source code. Other flaws are more insidious—Lua recognizes them as syntactically correct so they make their way into the executable bytecode. These errors await discovery at run time, preferably by you during testing rather than by someone who's actually using a product after it's been released with the erroneous code.</p><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="syntax_errors"></a>Syntax Errors</h2></div></div></div><p>Syntax refers to the way various language elements are allowed to fit together, completely independent from the meaning of those elements. A programming language like Lua is necessarily fussy about syntax, because source code expressed in it needs to translate unambiguously to bytecode, the instructions that Lua's virtual machine can deal with. During the 1960s (the renaissance era of modern programming languages) computer science practitioners such as Niklaus Wirth understood the importance of specifying syntactic rules that express naturally and simply the intent of a programmer. Lua's syntax falls neatly into this heritage. Take time to study the page in the Lua manual that describes Lua's complete syntax. Doing so can provide much insight into the Lua language and the way the Lua parser operates.<a id="IDX-CHP-6-0005" class="indexterm"></a></p><p>Essentially, it is the job of Lua's parser to recognize syntactically correct Lua programs and, in the case of an incorrect program, to let you know where the problem is. Of course, the program you submit to Lua might have more than one syntax error, but Lua will stop at the first one it encounters and print a message that should allow you to pinpoint the location of the problem. Usually, but not always, you'll instantly recognize the offending construction, make a quick fix, and compile the code again.<a id="IDX-CHP-6-0006" class="indexterm"></a></p><p>Here is an example of a syntax error:</p><pre class="programlisting">a = 1 + + 2</pre><p>This results in an "<code class="literal">unexpected symbol near '+'</code>" message.</p><p>Here's another example:</p><pre class="programlisting">for do</pre><p>Lua expects a variable name to follow <code class="literal">for</code>, so it generates a "'<code class="literal">&lt;name&gt;' expected near 'do'</code>" message.</p><p>And here's an erroneous script example:</p><pre class="programlisting">Str = 'hello, world</pre><p>The result is the message "<code class="literal">unfinished string near ''hello, world'</code>". When you run this as a noninteractive Lua script, this error is generated immediately. When you type it in interactively, Lua presents you with a continuation prompt and defers the error until you provide more input. Strings that begin with a single or double quote must end, on the same line, with a matching quote. Lua supports multiline strings, for which you use the <code class="literal">[[ ]]</code> notation (or represent each newline with a backslash-escaped <code class="literal">n</code> or backslash-escaped newline, as described in <a class="link" href="ch02.html" title="Chapter 2. First Steps">Chapter 2</a>).</p><p>Now take a look at this example:</p><pre class="programlisting">break</pre><p>By itself, this command results in the message "<code class="literal">no loop to break near '&lt;eof&gt;'</code>" (where <code class="literal">&lt;eof&gt;</code> refers to "end of file").</p><p>Here's a function call example:</p><pre class="programlisting">Fnc
+(42)</pre><p>Lua generally allows you to put whitespace, including line endings, wherever you like. As mentioned in <a class="link" href="ch03.html" title="Chapter 3. Extending Lua with Functions">Chapter 3</a>, however, calling a function is an exception: The opening parenthesis must occur on the same line as the function expression. The preceding construction leads to the message "<code class="literal">ambiguous syntax (function call x new statement) near '('</code>."</p><p>Now look at this:<a id="IDX-CHP-6-0007" class="indexterm"></a><a id="IDX-CHP-6-0008" class="indexterm"></a><a id="IDX-CHP-6-0009" class="indexterm"></a><a id="IDX-CHP-6-0010" class="indexterm"></a><a id="IDX-CHP-6-0011" class="indexterm"></a><a id="IDX-CHP-6-0012" class="indexterm"></a><a id="IDX-CHP-6-0013" class="indexterm"></a><a id="IDX-CHP-6-0014" class="indexterm"></a><a id="IDX-CHP-6-0015" class="indexterm"></a></p><pre class="programlisting">Tbl:Fnc 4</pre><p>This results in the message "<code class="literal">function arguments expected near '4'</code>." When Lua sets up a method call, it expects the usual function argument specification: a list of zero or more arguments wrapped in parentheses, a single quoted string, or a single table constructor.</p><p>In the following example, the vararg expression ... is used inside a function whose parameter list does not end in ...:</p><pre class="programlisting">function Fnc() print(...) end</pre><p>This results in the message "<code class="literal">cannot use '...' outside a vararg function near '...'</code>." A Lua script, whether it is a single line entered interactively in the Lua interpreter or a complete file that has been loaded noninteractively, has an implicit ... that contains any arguments with which it is called.</p><p>In the case of a single line entered in the Lua interpreter, there can't be any arguments, but still you can see that the following statement is valid:</p><pre class="programlisting">print(...)</pre><p>Unlike named parameters, the ... expression has limited visibility and cannot be used as an upvalue.</p><div class="blockquote"><blockquote class="blockquote"><p>For more on upvalue, see <a class="link" href="ch03.html" title="Chapter 3. Extending Lua with Functions">Chapter 3</a></p></blockquote></div><p>These are contrived examples—you'll rarely, if ever, see some of these syntax error messages. Or if you do get an error message from Lua, it may not make immediate sense. For example, if you enter the following:</p><pre class="programlisting">string.sub9"Hello", 1, 1)</pre><p>it will return the message "<code class="literal">unexpected symbol near ','</code>." You can easily recognize the last problem as a typing mistake in which <code class="literal">"9"</code> was typed instead of <code class="literal">"("</code>, so what accounts for Lua's error message? Recall that Lua permits the parentheses to be omitted when calling a function with a single string argument. In this case, Lua treats <code class="literal">string.sub9</code> as a global function that, at run time, will be passed the string <code class="literal">"Hello"</code>. In this context, the comma that follows <code class="literal">"Hello"</code> doesn't make sense, and Lua lets you know about it.<a id="IDX-CHP-6-0016" class="indexterm"></a></p><p>Some programming languages require variables to be declared before use. When programs written in these languages are compiled, any reference to an undeclared variable will be reported as an error. This is not the case with Lua. Any variable name that does not match an in-scope local variable name is considered to be one that will be resolved at run time in the global environment.</p><p>Some very uncommon compile-time errors have to do with internal limits rather than syntax violations. We've never encountered any of these in practice or heard of them occurring. But, in the spirit of inquiry and with a hammer in hand, give it a try. The following Lua program generates another Lua program, one that contains an impracticably large number of nested <code class="literal">do</code> blocks. In the first program, a routine is called recursively to generate a text file that simulates a handwritten Lua script. Here are the contents of the <code class="literal">recurse.lua</code> script:<a id="IDX-CHP-6-0017" class="indexterm"></a><a id="IDX-CHP-6-0018" class="indexterm"></a><a id="IDX-CHP-6-0019" class="indexterm"></a></p><pre class="programlisting">function Recurse(Count, Indent)
+  Indent = Indent or ""</pre><pre class="programlisting">if Count &gt; 0 then
+    io.write(Indent, "do\n")
+    Recurse(Count - 1, Indent .. " ")
+    io.write(Indent, "end\n")
+  end
+end
+
+Recurse(299)</pre><p>Now attempt to compile the program that this script generates:<a id="IDX-CHP-6-0020" class="indexterm"></a><a id="IDX-CHP-6-0021" class="indexterm"></a><a id="IDX-CHP-6-0022" class="indexterm"></a><a id="IDX-CHP-6-0023" class="indexterm"></a><a id="IDX-CHP-6-0024" class="indexterm"></a></p><pre class="programlisting">lua recurse.lua | lua</pre><p>The pipe directs the output of the first program to the input of the second. Note that, in the spirit of the Unix tool philosophy, the Lua interpreter acts like a filter when its standard input is not a terminal. This results in the following message:</p><pre class="programlisting">stdin:200: chunk has too many syntax levels</pre><p>Notice the line number that seems to indicate that Lua was okay with nesting blocks just up to that limit. In practice, your nested blocks will never exceed even a small fraction of that number. But this limit and other limits involving expression complexity are worth keeping in mind if you ever automatically generate Lua programs.</p><div class="sidebar"><a id="the_call_stack-015"></a><div class="titlepage"><div><div><p class="title"><strong>The Call Stack</strong></p></div></div></div><p>When a function is called in Lua, space needs to be set aside to hold local variables and certain bookkeeping information such as where program control should resume when the function returns. Because Lua functions are reentrant (that is, there can be multiple outstanding calls to the same function at a given time), this storage must be bound to a particular function call rather than just to the function itself. When Lua compiles a program, it knows how much space needs to be reserved for a particular function, but the actual contents of that space aren't known until the function is actually called. The simplest solution that meets these requirements is a last-in first-out stack. This is a data structure in which items to be stored are pushed onto the top of the stack, increasing its size, and items to be retrieved are popped from the top of the stack, decreasing its size. When a function is called, its stack frame is pushed onto the call stack, and when it returns, that frame is popped, making the vacated space available for other function calls.</p><p>The details of the call stack are hidden from general view. As a Lua programmer, you want to keep in mind that a stack is being used behind the scenes to make sure that function calls work as expected, but in general you won't need to be aware of its implementation or details. For the times when you <span class="emphasis"><em>do</em></span> need a window into your program's internal environment, Lua provides a debugging library. You can use one of its functions, <code class="literal">debug.traceback</code>, to generate a list of pending function calls, essentially an overview of the call stack. The <code class="literal">debug.traceback</code> function augments the string you pass it with such a list.</p><pre class="programlisting"><em class="replaceable"><code>1</code></em> function B()
+<em class="replaceable"><code>2</code></em>   print(debug.traceback("B"))</pre><pre class="programlisting"><em class="replaceable"><code>3</code></em> end
+<em class="replaceable"><code>4</code></em>
+<em class="replaceable"><code>5</code></em> function A()
+<em class="replaceable"><code>6</code></em>   print(debug.traceback("A 1"))
+<em class="replaceable"><code>7</code></em>   B()
+<em class="replaceable"><code>8</code></em>   print(debug.traceback("A 2"))
+<em class="replaceable"><code>9</code></em> end
+<em class="replaceable"><code>10</code></em>
+<em class="replaceable"><code>11</code></em> A()</pre><p>The output that this program generates has a strong resemblance to the error messages that were shown earlier:<a id="IDX-CHP-6-0025" class="indexterm"></a><a id="IDX-CHP-6-0026" class="indexterm"></a><a id="IDX-CHP-6-0027" class="indexterm"></a><a id="IDX-CHP-6-0028" class="indexterm"></a></p><pre class="programlisting">A 1
+stack traceback:
+        trace.lua:6: in function 'A'
+        trace.lua:11: in main chunk
+        [C]: ?
+B
+stack traceback:
+        trace.lua:2: in function 'B'
+        trace.lua:7: in function 'A'
+        trace.lua:11: in main chunk
+        [C]: ?
+A 2
+stack traceback:
+        trace.lua:8: in function 'A'
+        trace.lua:11: in main chunk
+        [C]: ?</pre><p>Notice that the traceback doesn't give you a history of function calls. For example, you won't find any reference to the <code class="literal">print</code> function. What it does show you is a list of functions that have been called but that have not yet returned. The topmost indented line indicates the location in the Lua script where <code class="literal">debug.traceback</code> was called. Each line beneath that shows a pending function and the line number from which it was called. These lines are shown with the most recently called functions first. The bottom line indicates that the first function call originated in a C function for which no line number information is available.</p></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="runtime_errors"></a>Runtime Errors</h2></div></div></div><p>When a Lua source file is successfully compiled into bytecode and executed by the interpreter, an error results in a descriptive message followed by a stack traceback. Here's an example:</p><pre class="programlisting">function C()
+  print(1 + nil)
+end
+
+function B()
+  C()</pre><pre class="programlisting">end
+
+function A()
+  B()
+end
+
+A()</pre><p>When this runs, Lua prints the following:<a id="IDX-CHP-6-0029" class="indexterm"></a></p><pre class="programlisting">lua: err.lua:2: attempt to perform arithmetic on a nil value
+stack traceback:
+        err.lua:2: in function 'C'
+        err.lua:6: in function 'B'
+        err.lua:10: in function 'A'
+        err.lua:13: in main chunk
+        [C]: ?</pre><p>In addition to the message that describes what went wrong during program execution and on which line, there is also a <code class="literal">stack traceback</code> section. That portion of the output is a snapshot of pending function calls and provides you with the context of the error. It's important to have a good grasp of how call stacks operate in Lua, not only for reading stack tracebacks, but also for writing programs that work well with Lua's error-handling system.<a id="IDX-CHP-6-0030" class="indexterm"></a></p></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="handling_errors"></a>Handling Errors</h1></div></div></div><p>As you develop a program, there are a number of ways you can deal with the inevitable errors that crop up. Your best course of action will be dictated by the following:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>How the program is to be used and its targeted user</p></li><li class="listitem"><p>Whether the error is surmountable</p></li><li class="listitem"><p>Whether the error is code-related or data-related</p></li></ul></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="default_error_behavior"></a>Default Error Behavior</h2></div></div></div><p>The default behavior of the standalone Lua interpreter when it encounters an error condition is to print a message followed by a stack traceback and then to terminate the program, like this:<a id="IDX-CHP-6-0031" class="indexterm"></a></p><pre class="programlisting">local function Fnc(A, B, C)
+  print(A + B + C)
+end
+
+print("Position 1")
+Fnc(1, nil, 3)
+print("Position 2")</pre><p>The output includes the expected error and also shows that <code class="literal">"Position 2"</code> was never reached:</p><pre class="programlisting">Position 1
+lua: err.lua:2: attempt to perform arithmetic on local 'B' (a nil value)</pre><pre class="programlisting">stack traceback:
+        err.lua:2: in function 'Fnc'
+        err.lua:6: in main chunk
+        [C]: ?</pre><p>For many quickly written scripts that are intended to be run by the developer, this behavior is acceptable. In these cases, the runtime error can be treated as if it was a syntax error—that is, you can identify the problem, correct it, and run the script again, repeating the process until the program does what you want it to do.<a id="IDX-CHP-6-0032" class="indexterm"></a><a id="IDX-CHP-6-0033" class="indexterm"></a></p><p>In the context of a program used in the real world, Lua's default response to errors is rather draconian. It is bad form to abruptly terminate a program while a network connection, database connection, or file is still open. Buffers may not have been flushed and system resources may not be freed in a timely or consistent manner. In the case of a program with a user interface, it can be more than annoying to have a program abnormally end. A considerable amount of work may be lost when a program crashes.</p></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="checking_assumptions"></a>Checking Assumptions</h2></div></div></div><p>When you track down the source of runtime errors, you may find that certain assumptions you made have proved to be invalid. For example, you may have implemented a loop in which you assume the value of some variable will never exceed a certain number, or you may have written a function that requires a string as its first argument. The problem is that the consequences of an invalid assumption might occur far from its source. Sometimes, errors occur with such irregularity that it is hard to even know where to start looking. These can stem from multiple invalid assumptions that by themselves don't cause apparent problems, but wreak havoc in combinations that might occur infrequently. Avoid these oblique issues by testing your assumptions directly. Lua makes this easy for you with the assert function, as shown in this example:</p><pre class="programlisting">local function Quote(Str)
+  assert(type(Str) == "string", "Str is not a string")
+  return string.format("%q", Str)
+end
+
+print(Quote('Huckleberry "Blue" Hound'))
+print(Quote(1))</pre><p>This outputs the following:</p><pre class="programlisting">"Huckleberry \"Blue\" Hound"
+lua: test.lua:2: Str is not a string
+stack traceback:
+        [C]: in function 'assert'
+        test.lua:2: in function 'Quote'
+        test.lua:7: in main chunk
+        [C]: ?</pre><p>The idea here is that it is far better to terminate an errant program the moment you know something has gone wrong than to let the problem become clouded by further processing. Keep in mind that this is a development technique that is intended to address problems with program infrastructure—that is, things over which you as the developer have control.</p><div class="sidebar"><a id="stack_tracebacks_and_end_users"></a><div class="titlepage"><div><div><p class="title"><strong>Stack Tracebacks and End Users</strong></p></div></div></div><p>Abnormal program termination may occur repeatedly as you develop a script and consequently you can become accustomed to stack tracebacks. However, an end user who encounters a stack traceback won't have a clue what it means and will inevitably lose some trust in your program. Treat stack tracebacks as a symptom of a bug that should not make it past the development stage. To emphasize this, you may want to display stack tracebacks with the header <code class="literal">Programmer error</code>. Later in this chapter, you'll see how to avoid the conditions that generate stack tracebacks, but first you'll learn a technique to intentionally generate them and the circumstance in which you should.<a id="IDX-CHP-6-0034" class="indexterm"></a><a id="IDX-CHP-6-0035" class="indexterm"></a><a id="IDX-CHP-6-0036" class="indexterm"></a><a id="IDX-CHP-6-0037" class="indexterm"></a><a id="IDX-CHP-6-0038" class="indexterm"></a><a id="IDX-CHP-6-0039" class="indexterm"></a><a id="IDX-CHP-6-0040" class="indexterm"></a><a id="IDX-CHP-6-0041" class="indexterm"></a><a id="IDX-CHP-6-0042" class="indexterm"></a><a id="IDX-CHP-6-0043" class="indexterm"></a><a id="IDX-CHP-6-0044" class="indexterm"></a></p></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="code_errors"></a>Code Errors</h3></div></div></div><p>View your program as comprising code on one hand and data on the other. Code is the fixed deliverable made up of program statements and data is the material your program processes at run time. Calls to assert are an appropriate way of dealing with code errors. The program you deliver should be free of coding errors, and if abnormal endings and stack tracebacks get you closer to eliminating them, then using <code class="literal">assert</code> is fully warranted.<a id="IDX-CHP-6-0045" class="indexterm"></a><a id="IDX-CHP-6-0046" class="indexterm"></a><a id="IDX-CHP-6-0047" class="indexterm"></a></p></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="data_errors"></a>Data Errors</h3></div></div></div><p>Data errors are by their nature different than code errors. Essentially, your job here is to make your program respond gracefully when garbage is shoveled into it, because sooner or later, intentionally or not, your program's input domain will be taxed grievously. Your best approach is to mistrust all data that your program reads—the closer to the source, the better.<a id="IDX-CHP-6-0048" class="indexterm"></a></p><p>In the preceding example, you have control over the type of value that you pass to the <code class="literal">Quote</code> function. You may not, however, have control over the string's value, which may have been entered by the user into a text field. If the string itself needs to conform to certain patterns for the program to function correctly, that should be checked and handled by some user-friendlier means than <code class="literal">assert</code>. Of course, you may use <code class="literal">assert</code> to ensure that your string screening logic is working as expected, because if it isn't, you've got some code adjustments to make.</p></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="the_assert_and_error_functions"></a>The assert and error Functions</h3></div></div></div><p>You don't have to leave it up to Lua to issue errors. There may be circumstances in which your program should issue an error itself, and for these cases, Lua provides the <code class="literal">assert</code> and <code class="literal">error</code> functions. Use the <code class="literal">assert</code> function to issue an error if an assumption proves to be invalid at run time. To issue an error unconditionally, no questions asked, use the <code class="literal">error</code> function.</p><p>One or more values are passed to the <code class="literal">assert</code> function. These values may be passed in directly, but usually they are the results of an expression such as a function call. If the first argument is either <code class="literal">false</code> or <code class="literal">nil, assert</code> generates an error and prints an error message followed by a stack traceback. If a second argument is present, it is used as the error message; otherwise, the string <code class="literal">"assertion failed!"</code> is used. If the first argument is neither false nor <code class="literal">nil</code>, then <code class="literal">assert</code> returns every argument that was passed in:</p><pre class="programlisting">function Reflect(A)
+  return A, 1, 2, 3</pre><pre class="programlisting">end
+
+print(assert(Reflect(0)))
+print(assert(Reflect(nil)))</pre><p>This displays the following:<a id="IDX-CHP-6-0049" class="indexterm"></a></p><pre class="programlisting">0      1      2      3
+lua: test.lua:6: 1
+stack traceback:
+        [C]: in function 'assert'
+        test.lua:6: in main chunk
+        [C]: ?</pre><p>The <code class="literal">assert</code> function is a wrapper for the more general <code class="literal">error</code> function, which you can be use to unconditionally generate an error.</p></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="defining_your_own_error_condition"></a>Defining Your Own Error Condition</h3></div></div></div><p>Lua has a well-defined set of conditions under which an error will occur. Using the error function, you can define your own as well. Here's how:</p><pre class="programlisting">function Answer(Question)
+  local Res
+  if Question == "no bananas" then
+    Res = "yes"
+  elseif Question == "everything" then
+    Res = 42
+  elseif Question == "Tuesday" then
+    Res = "Belgium"
+  else
+    error("No answer for " .. tostring(Question))
+  end
+  return Res
+end
+
+print(Answer("this statement is false"))</pre><p>Running this results in the following:</p><pre class="programlisting">lua: answer.lua:10: No answer for this statement is false
+stack traceback:
+  [C]: in function 'error'
+  answer.lua:10: in function 'Answer'
+  answer.lua:15: in main chunk
+  [C]: ?</pre><p>The same error-handling mechanism is used for user-generated errors as for those originating in the Lua core.</p><p>You can pass an integer as an optional second argument to <code class="literal">error</code>. Passing <code class="literal">0</code> suppresses line number information in the error message. If you specify the value <code class="literal">1</code> (the default if the argument is missing), the line number where error was called will be displayed. A higher value tells Lua how far down on the call stack to reach to determine which line number to display. This is useful if you write an error handler that in turn calls error. In this case, you don't want to mislead the programmer by displaying a line in your handler; you want to show the line where the call to your handler was made, so a value of <code class="literal">2</code> is appropriate.<a id="IDX-CHP-6-0050" class="indexterm"></a><a id="IDX-CHP-6-0051" class="indexterm"></a><a id="IDX-CHP-6-0052" class="indexterm"></a></p></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="anticipating_error_conditions"></a>Anticipating Error Conditions</h2></div></div></div><p>One way to cope with the problem of runtime errors is to diligently check for the conditions that can lead to an error. For example, a function that prints the sum of its three arguments could be written as follows:</p><pre class="programlisting">local function Fnc(A, B, C)
+  A, B, C = tonumber(A), tonumber(B), tonumber(C)
+  print(A and B and C and A + B + C
+    or "Three numbers expected")
+end
+
+print("Position 1")
+Fnc(1, "2", 3)
+print("Position 2")
+Fnc(1, "Lua", 3)
+print("Position 3")</pre><p>Here, where the conditions needed to calculate and print the sum of three numbers are not met, an alternative is printed instead:</p><pre class="programlisting">Position 1
+6
+Position 2
+Three numbers expected
+Position 3</pre><p>After reaching position <code class="literal">3</code>, the program terminates normally, even though the values passed in the second call to <code class="literal">Fnc</code> included a nonnumeric value.</p><p>Anticipating an error condition allows you to handle the situation appropriately. For example, in an interactive program you could allow the user to specify an alternate course of action or to repeat an action with different input values. If it is appropriate to terminate the program, at least this can be done gracefully, closing open resources as needed and reporting the condition in an expected fashion.</p></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="working_with_return_values"></a>Working with Return Values</h2></div></div></div><p>Because the preceding example uses the <code class="literal">print</code> function, its use is restricted to programs that can work with the standard output channel. Its output is directed to the user rather than the caller. In all but the simplest cases, you'll want to avoid this kind of restriction by making your functions independent of the kind of program that uses them. This practice enables you to build up a library of functions that should be portable to different platforms. The key to this is to have functions and their callers communicate by means of parameter lists and return values. The actual input and output to the system can then be handled at a higher level by the caller of the platform-independent functions.</p><p>One of Lua's many distinctive features is that it allows functions to return multiple values. A convention has evolved regarding how functions should indicate success and failure. If a function succeeds, its first return value should be something other than <code class="literal">false</code> or <code class="literal">nil</code>. Usually this return value is the principal value the function was called on to produce, like a file handle or string capture. This value can be followed by other pertinent values. If the function fails, its first value should be <code class="literal">nil</code>. This is followed by something that explains why the error occurred, usually an error message but possibly something else like a table or numeric error code.<a id="IDX-CHP-6-0053" class="indexterm"></a></p><p>The example can be reworked to follow this convention:</p><pre class="programlisting">local function Fnc(A, B, C)
+  local Sum, ErrStr
+  A, B, C = tonumber(A), tonumber(B), tonumber(C)
+  if A and B and C then
+    Sum = A + B + C
+  else
+    ErrStr = "Three numbers expected"
+  end
+  return Sum, ErrStr
+end
+
+print("Position 1")
+local Sum, ErrStr = Fnc(1, "2", 3)
+print(Sum or ErrStr)
+print("Position 2")
+local Sum, ErrStr = Fnc(1, nil, 3)
+print(Sum or ErrStr)
+print("Position 3")</pre><p>The output is like that of the previous example:</p><pre class="programlisting">Position 1
+6
+Position 2
+Three numbers expected
+Position 3</pre><p>You'll occasionally see a clever use of <code class="literal">assert</code> that utilizes Lua's return value convention. For example:</p><pre class="programlisting">Hnd = assert(io.open("index.html", "r"))</pre><p>The <code class="literal">io.open</code> function returns <code class="literal">nil</code> followed by an error message if the file cannot be opened; otherwise, it returns the handle to the opened file. In either case, these return values are passed directly to <code class="literal">assert</code>. In the event that <code class="literal">io.open</code> fails, the first argument to <code class="literal">assert</code> will be nil. This causes <code class="literal">assert</code> to issue a runtime error using as its error value the second argument it receives, namely the error message returned by <code class="literal">io.open</code>. If, on the other hand, <code class="literal">io.open</code> succeeds, <code class="literal">assert</code> receives as its first argument the handle to the open file. Because this value is neither <code class="literal">false</code> nor <code class="literal">nil</code>, it simply returns this value and does not issue an error.</p><p>The problem with using <code class="literal">assert</code> is that, in the event of a failed assertion, the default action is to terminate the program. In the case of the example shown here, there may be good reasons why the file <code class="literal">index.html</code> cannot be opened, and to bring the entire program to a halt just because the file can't be opened is especially heavy-handed. In the next section, you'll learn about structured programming techniques that let you recover gracefully and simply from conditions like this. The <code class="literal">assert</code> function is extremely useful for ferreting out wrong assumptions in your code, but it's not the best approach to handle conditions that are beyond the programmer's control.<a id="IDX-CHP-6-0054" class="indexterm"></a><a id="IDX-CHP-6-0055" class="indexterm"></a><a id="IDX-CHP-6-0056" class="indexterm"></a><a id="IDX-CHP-6-0057" class="indexterm"></a></p><p>Another convention has evolved to handle the returns values of a function that is called indirectly through another function. Like all values in Lua, a function is a first class value and can be passed as an argument, something you've already seen with the comparison function that can be optionally passed to <code class="literal">table.sort</code>. In some cases, a function's job can simply be to call another function in a modified runtime environment. The <code class="literal">pcall</code> and <code class="literal">xpcall</code> functions (described later in this chapter) are examples of this. However, the added indirection requires some means to distinguish between errors caused by the function that is called directly and the one that is called indirectly. Typically in this case, the directly-called function returns <code class="literal">true</code> if it succeeds; this is followed by the return values of the indirectly-called function whether it succeeds or fails. If the directly-called function fails, it returns <code class="literal">false</code> followed by an error message.</p></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="structuring_code"></a>Structuring Code</h2></div></div></div><p>In the examples you've seen so far, the program code has been structured to visually indicate the blocks as Lua sees them. For example, the statements following an <code class="literal">if</code> expression are indented to show what gets executed if the expression evaluates to <code class="literal">true</code>. The benefit to this structuring is that you can tell at a glance what state the program is in—for example, which files are open and which conditions are currently met.</p><p>Following is an example that uses Lua's return value convention with structured programming to generate a file listing with line numbers. It shows how error handling can be integrated with block structuring to handle errors in a predictable and robust way. As you study the example, ask yourself what happens under different scenarios. For example, what happens to the source file handle if the destination file cannot be opened?</p><pre class="programlisting">local function FileCopyLineNum(SrcFileStr, DstFileStr)
+  local SrcHnd, DstHnd, ErrStr, Line
+  SrcHnd, ErrStr = io.open(SrcFileStr, "r")
+  if SrcHnd then
+    DstHnd, ErrStr = io.open(DstFileStr, "w")
+    if DstHnd then
+      Line = 0
+      for Str in SrcHnd:lines() do
+        Line = Line + 1
+        DstHnd:write(Line, " ", Str, "\n")
+      end
+      if Line == 0 then
+        ErrStr = SrcFileStr .. ": File is empty"
+        Line = nil
+      end
+      DstHnd:close()
+    end
+    SrcHnd:close()
+  end
+return Line, ErrStr</pre><pre class="programlisting">end
+
+local Count, ErrStr = FileCopyLineNum("index.html", "index.lst")
+io.write(Count and ("OK: count " .. Count) or ErrStr, "\n")</pre><p>If <code class="literal">index.html</code> does not exist, this script outputs the following:</p><pre class="programlisting">index.html: No such file or directory</pre><p>If this file exists but is empty, the output is this:</p><pre class="programlisting">index.html: File is empty</pre><p>If <code class="literal">index.html</code> exists and has lines in it, and <code class="literal">index.lst</code> can be opened for writing, the output looks like this:</p><pre class="programlisting">OK: count 243</pre><p>The general idea behind structuring your code is to place operations in their correct position. For example, an indented block follows the conditional statement that tests whether the source file has been successfully opened. You can bring much clarity to your code by ensuring that this condition remains valid through the entire block, and that the condition is invalid outside of the block. In this example, that's done by closing the source file at the very end of the conditional block. You don't need to check whether the file is currently open and ready to be closed—the block structure guarantees that it is, regardless of what happened inside the block. Whether or not the destination file is successfully opened, you know from the visual representation of the code where the source file is open and where it needs to be closed.</p><p>Why would it be a problem to close the source file as soon as its contents have been copied? A glance at the indentation of the code should tell you immediately: the source file would not be properly closed if an error occurred while opening the destination file.</p><p>Lua enables you to keep your program clear by declaring local variables only where you need them, that is, to keep their scope at a minimum. Here, the declaration of <code class="literal">DstHnd</code> could have been deferred to the point after the source file has been opened. However, the declaration of <code class="literal">Line</code> and <code class="literal">ErrStr</code> need to be where they are, because they are used as return values. Furthermore, neither should be redeclared in an inner block because this would mask the outer values. Beginners to Lua often wish that variables would be local by default, but doing so would make this powerful form of scope control impossible.</p><p>Notice that no assumptions about the user interface are made in the <code class="literal">FileCopyLineNum</code> function. Communication with this function occur through its parameter list and its return values.</p><p>A slight visual problem occurs in the destination file when the number of digits in the line number changes. This can be remedied with string formatting, as described in <a class="link" href="ch05.html" title="Chapter 5. Using Strings">Chapter 5</a>.</p><p>Bigger problems have to do with guarding against unintended input. What if the function is called with nonstring arguments? What if a binary file is specified as the source file? Worse still, what if an important system file is specified as the destination file?</p><p>Calling the function with nonstring arguments is a code issue, and in this case you'll learn about the problem when you call <code class="literal">io.open</code>. Like a syntax error, after you correct the problem, it won't be an issue anymore. If this routine merely stored the arguments for later processing, some assertions might be necessary to ensure that each argument is a string.<a id="IDX-CHP-6-0058" class="indexterm"></a></p><p>As written, the <code class="literal">FileCopyLineNum</code> function assumes that the source file is a text file. In the copy loop, you could check for the presence of unexpected characters or unexpectedly long source lines. If either of these occurs, you could terminate the loop and proceed appropriately.</p><p>The risk of overwriting an important file is more difficult to address. The relevant question is whether this routine is at the right level to implement a safeguard. Clearly, <code class="literal">io.open</code> isn't making the check, and it could be convincingly argued that <code class="literal">FileCopyLineNum</code> shouldn't either. If it doesn't, the burden is on the caller to make sure that the destination file is safe to create or overwrite. The important lesson is that you need to consider these issues and strive to cover them at the right place in your code.</p><p>Even if the block following a resource test does not itself contain nested indented blocks, it is still a good policy to defer closing the resource until the end of the block, because as you refine the program and possibly add new conditionals, knowing that the resource is open throughout the block is one less thing you have to verify.</p><p>Some programmers criticize, sometimes with alarming fervor, this type of code structuring, complaining that indentation levels can become excessive and that even small changes to a routine's logic can necessitate shifting large blocks to the left or right (something that is easy to do in a decent text editor). In practice, deep nesting indicates a need to break blocks into functions. Doing so makes your program more modular and reduces the degree of indentation. The functions in the following example are fictitious and, for simplicity's sake, are called without any arguments and portrayed without error handling:</p><pre class="programlisting">A = ResourceOpen()
+if A then
+  B = ItemFirst()
+  while B do
+    C = ResourceOpen()
+    if C then
+      for D in E() do
+        if F then
+          DoSomething()
+        end
+      end
+      ResourceClose(C)
+    end
+    B = ItemNext(B)
+  end
+  ResourceClose(A)
+end</pre><p>This can be rewritten as follows:</p><pre class="programlisting">function Moon(B, C)
+  for D in E() do
+    if F then
+      DoSomething()</pre><pre class="programlisting">end
+  end
+end
+
+function Sun(B)
+  C = ResourceOpen()
+  if C then
+    Moon(B, C)
+    ResourceClose(C)
+  end
+end
+
+A = ResourceOpen()
+if A then
+  B = ItemFirst()
+  while B do
+    Sun(B)
+    B = ItemNext(B)
+  end
+  ResourceClose(A)
+end</pre></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="error-containment_functions"></a>Error-Containment Functions</h2></div></div></div><p>In the examples you have seen so far, runtime errors result in the termination of the entire program. Fortunately, this can be avoided. Lua provides a mechanism—the protected environment—to contain the damage caused by an error condition. The Lua <code class="literal">pcall</code> and the <code class="literal">xpcall</code> functions enable you to suppress the propagation of an error.<a id="IDX-CHP-6-0059" class="indexterm"></a><a id="IDX-CHP-6-0060" class="indexterm"></a></p><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="the_pcall_function"></a>The pcall Function</h3></div></div></div><p>Any Lua function, including Lua scripts loaded from disk and converted to a function by <code class="literal">loadfile</code>, can be run in a protected environment. You do this by calling <code class="literal">pcall</code> with the function to be called as its first argument. Additional arguments to <code class="literal">pcall</code> are passed as arguments to this function. The principal difference between calling a function directly and calling it through <code class="literal">pcall</code> is the way errors are handled. As you've seen so far, if an error occurs in a function that is called directly, the Lua interpreter responds by displaying the stack traceback and terminating the program. If, on the other hand, an error occurs in a function that has been invoked by <code class="literal">pcall</code>, the error is reported as one of the return values of <code class="literal">pcall</code>. You can handle the error in whatever way you consider appropriate.</p><div class="sidebar"><a id="try_it_out_colon_using_pcall"></a><div class="titlepage"><div><div><p class="title"><strong>Try It Out: Using pcall</strong></p></div></div></div><p>In this Try It Out, you'll see the <code class="literal">pcall</code> function in action. The following code is a revision of the first example from this chapter adapted to run in a protected environment.</p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>With your text editor, create a new file with the following contents:</p><pre class="programlisting">function C()
+  print("C 1")
+  print(1 + nil)
+  print("C 2")</pre><pre class="programlisting">end
+
+function B()
+  print("B 1")
+  C()
+  print("B 2")
+end
+
+function A()
+  print("A 1")
+  B()
+  print("A 2")
+end
+
+print("Main 1")
+local Code, ErrStr = pcall(A)
+print("Main 2", Code and "Success" or ErrStr)</pre></li><li class="listitem"><p>Save this script as <span class="strong"><strong>err.lua</strong></span>.</p></li><li class="listitem"><p>Run the script with the Lua interpreter, like this:</p><pre class="programlisting">lua err.lua</pre><p>The output is as follows:</p><pre class="programlisting">Main 1
+A 1
+B 1
+C 1
+Main 2 err.lua:3: attempt to perform arithmetic on a nil value</pre></li></ol></div><p><span class="strong"><strong>How It Works</strong></span></p><p>The main clue to understanding what happened is the lack of <code class="literal">"C 2", "B 2"</code>, and <code class="literal">"A 2"</code> markers. If this gives you the notion that when the error occurred control was transferred directly back to <code class="literal">pcall</code>, you're entirely correct.</p><p>Remember, it is the call stack that allows functions to return properly. In effect, the stack is Lua's only memory regarding where it came from and where it should return to. The <code class="literal">pcall</code> function effectively marks the current position on the stack and arranges with Lua to return to that mark—the recover point—in the event of an error. Up until the error occurred, the stack functioned as expected. You can follow this in more detail by adding a call to <code class="literal">debug.traceback</code> in the print statements. For example, replace <code class="literal">print("A 1")</code> with <code class="literal">print(debug.traceback("A 1"))</code>.</p></div><p>A protected call will keep your program from sinking after a runtime error, but it may tilt frightfully to starboard. Imagine that the "<code class="literal">A 1"</code>, "<code class="literal">B 1"</code>, and "<code class="literal">C 1"</code> markers indicate positions where resources such as database connections and files are opened, and the markers "<code class="literal">A 2"</code>, "<code class="literal">B 2"</code>, and "<code class="literal">C 2"</code> indicate the positions where the resources are closed. When <code class="literal">pcall</code> returns with a return code indicating that an error took place, it may be difficult to programmatically determine which resources are in need of closing.</p><p>Some resources—in such as userdata resources that have been specially programmed—will close themselves when they are no longer accessible to your program and are consequently collected as garbage. Using Lua's C programming interface, you can create resource handles to behave this way. However, you should not depend on this behavior to close resources. A very large number of open resources may accumulate between garbage collection cycles, and this can have an adverse effect on the operation of your program.<a id="IDX-CHP-6-0061" class="indexterm"></a><a id="IDX-CHP-6-0062" class="indexterm"></a></p><p>Another method to manage dangling resources is to pass a newly constructed local table to your function by means of <code class="literal">pcall</code>. You can use this table to store handles for open resources, among other things. When a resource is opened, its handle is stored in the table. After the resource is closed, its handle is set to <code class="literal">nil</code>. This table would be passed as an argument to all functions in the call chain. Unfortunately, this approach couples these functions in a way that may be undesirable. It also means that the caller of the protected function must know, given an assortment of handles, how to close the resources. A variation on this theme would be to store a closure that would close the resource instead of a resource handle.</p><p>The caller of a protected function must also, in the event of an error, determine the best subsequent course of action. Should the program clean up and terminate? Should it invoke the protected function again with different arguments? One action your program should definitely not take is to proceed as if nothing happened.</p></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="the_xpcall_function"></a>The xpcall Function</h3></div></div></div><p>You may have noticed that the error message returned by <code class="literal">pcall</code> does not have a stack traceback. After <code class="literal">pcall</code> returns, all stack levels between <code class="literal">pcall</code> and the place where the error occurred are no longer accessible, so no traceback can be constructed. The <code class="literal">xpcall</code> function is like <code class="literal">pcall</code>, except that you specify as its second argument an error handler that is called before Lua transfers control back to the place where <code class="literal">xpcall</code> was called. This handler receives the error message and returns the new error value, usually the same error message after it has been augmented with a stack traceback. The <code class="literal">xpcall</code> function differs from the <code class="literal">pcall</code> function in two respects:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>It uses an error handler.</p></li><li class="listitem"><p>It is unable to pass arguments to the function it calls.</p></li></ul></div><p>Here's an example of its use:</p><pre class="programlisting">function A()
+  print(1 + nil)
+end
+
+print(xpcall(A, debug.traceback))</pre><p>This outputs the following:</p><pre class="programlisting">false err.lua:2: attempt to perform arithmetic on a nil value
+stack traceback:
+      err.lua:2: in function &lt;err.lua:1&gt;
+      [C]: in function 'xpcall'
+      err.lua:5: in main chunk
+      [C]: ?</pre><p>Here, the <code class="literal">debug.traceback</code> function was used as a handler, but you can write your own as well. It can return something other than an error string if you want.</p></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="user-written_scripts"></a>User-Written Scripts</h3></div></div></div><p>Many applications employ Lua so that users can prepare and run their own extension scripts. However, you should run these scripts in protected mode to contain any errors that may occur.<a id="IDX-CHP-6-0063" class="indexterm"></a><a id="IDX-CHP-6-0064" class="indexterm"></a><a id="IDX-CHP-6-0065" class="indexterm"></a><a id="IDX-CHP-6-0066" class="indexterm"></a></p><p>Most users have experienced programs that run fine as long as nothing unexpected occurs, but operate erratically after they attempt to recover from an error. If your application supports the execution of user-provided Lua scripts, you need to guard against destabilizing your entire application as a result of running an errant script. As you learned in <a class="link" href="ch04.html" title="Chapter 4. Working with Tables">Chapter 4</a>, Lua provides sandboxing mechanisms to isolate these user-written scripts from each other and from the host application. In the next chapter, you'll see that Lua supports a way to require that only local variables be created by a script. Doing this helps to ensure that resources are cleaned up properly in the event of an error. Similarly, functions that could pose a risk to the operating environment are easily made unavailable to the user-written scripts.</p></div></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="locating_errors"></a>Locating Errors</h1></div></div></div><p>The diagnostic message and stack traceback that Lua presents when a runtime error occurs are often sufficient for you to identify exactly what went wrong. However, sometimes an error occurs long after the source of the problem has been executed. For example, an error might indicate that arithmetic was attempted on a nil value, and you are left wondering how a certain variable ever <span class="emphasis"><em>became</em></span> nil. A good approach when you don't have a clue where something like this may have occurred is to use the <code class="literal">print</code> function or a message box routine to temporarily display important values at various points where you think the problem may have originated. But rather than sprinkling such calls haphazardly throughout your code, you'll usually do better by attempting to repeatedly divide the problem area in half.</p></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="summary-016"></a>Summary</h1></div></div></div><p>In this chapter, you've learned to do the following:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>Look for and correct syntax errors.</p></li><li class="listitem"><p>Handle runtime errors (both code-based and data-based).</p></li><li class="listitem"><p>Understand Lua's call stack.</p></li><li class="listitem"><p>Use <code class="literal">assert</code> when it's desirable to do so.</p></li><li class="listitem"><p>Read stack tracebacks.</p></li><li class="listitem"><p>Structure your code with an emphasis on resource lifespan.</p></li><li class="listitem"><p>Protect a function call so that the entire application isn't abnormally ended if it causes a runtime error.</p></li></ul></div><p>Any mechanism that enables you to understand the internal state of your program is valuable in ensuring that it is functioning as expected or in uncovering errors. In the next chapter, you'll learn about Lua modules, and one of the examples shows you how to generate a tree diagram of Lua tables. A rendering like that can provide a lot more information than a simple <code class="literal">print</code> statement can and is consequently a good tool to have when tracking down program errors.</p></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="exercises-017"></a>Exercises</h1></div></div></div><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>In the Lua interpreter, issue the following statement:</p><pre class="programlisting">&gt; print(1 + nil)</pre><p>Why doesn't <code class="literal">print</code> show up in the resulting stack traceback?</p></li><li class="listitem"><p>How would you add the prefix 'Programmer error' to the stack traceback?</p></li><li class="listitem"><p>The <code class="literal">pcall</code> function accepts arguments, and the <code class="literal">xpcall</code> function accepts an error handler. How can you write a protected function caller that accepts both arguments and an error handler?</p></li></ol></div></div></div></div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="ch05.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">5. Using Strings</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="ch07.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">7. Using Modules</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag">
+        
+        
+
+        
+          <p>You have 6 days left in your trial, Michaelschiner. Subscribe today. <a href="https://learning.oreilly.com/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+        
+
+<footer class="pagefoot t-pagefoot">
+  <a href="ch06.html#" class="icon-up" onclick="window.Appcues.track('JumpTop_HeronBook')"><div class="visuallyhidden">Back to top</div></a>
+  <ul class='js-footer-nav'>
+  
+    
+    <li><a href="https://learning.oreilly.com/public/support/">Support</a></li>
+    
+    <li><a href="https://learning.oreilly.com/accounts/logout/">Sign Out</a></li>
+    
+  
+  
+  </ul>
+  <span class="copyright">&#169; 2021 <a href="https://learning.oreilly.com/" target="_blank">O'Reilly Media, Inc</a>.</span>
+  
+    
+    <a href="https://www.oreilly.com/terms/">Terms of Service</a> 
+     / 
+    
+    <a href="https://learning.oreilly.com/privacy">Privacy Policy</a> 
+    
+    
+  
+</footer>
+
+      
+    
+    <script src="https://learning.oreilly.com/jsi18n/web/" charset="utf-8"></script>
+    <script src="https://learning.oreilly.com/library/jsi18n/appcache/" charset="utf-8"></script>
+  </body>
+</html>

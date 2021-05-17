@@ -1,0 +1,1270 @@
+<!--[if IE]><![endif]--><!DOCTYPE html><!--[if IE 8]><html class="no-js ie8 oldie" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/beginning-lua-programming/9780470069172/ch09.html"
+data-csrf-cookie="csrfsafari"
+
+
+  data-user-id="11366403"
+  data-user-uuid="ce47de5b-ce80-49f0-b5cd-c60d3d33b198"
+  data-username="michaelschiner"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/13/2021"
+
+
+  data-archive="9780470069172"
+  data-publishers="Wrox"
+
+
+
+  data-htmlfile-name="ch09.html"
+  data-epub-title="Beginning Lua Programming" data-debug=0 data-testing=0><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/beginning-lua-programming/9780470069172/ch09.html"
+data-csrf-cookie="csrfsafari"
+
+
+  data-user-id="11366403"
+  data-user-uuid="ce47de5b-ce80-49f0-b5cd-c60d3d33b198"
+  data-username="michaelschiner"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/13/2021"
+
+
+  data-archive="9780470069172"
+  data-publishers="Wrox"
+
+
+
+  data-htmlfile-name="ch09.html"
+  data-epub-title="Beginning Lua Programming" data-debug=0 data-testing=0><!--<![endif]--><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="author" content="O'Reilly Media" /><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"/><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9780470069172"/><link rel="shortcut icon" href="https://www.oreilly.com/favicon.ico" /><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"/><meta property="twitter:account_id" content="4503599627559754" /><link rel="shortcut icon" href="https://learning.oreilly.com/favicon.ico" type="image/x-icon"><link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'><title>9. Handling Events Naturally with Coroutines - Beginning Lua Programming</title><link rel="stylesheet" href="https://learning.oreilly.com/static/CACHE/css/output.5bdb4fcb2aad.css" type="text/css"><link rel="stylesheet" type="text/css" href="https://learning.oreilly.com/static/css/annotator.e3b0c44298fc.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><style type="text/css" title="ibis-book"></style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9780470069172/chapter/ch09.html",
+          "book_id": "9780470069172",
+          "chapter_uri": "ch09.html",
+          "position": 0,
+          "user_uuid": "ce47de5b-ce80-49f0-b5cd-c60d3d33b198",
+          "next_chapter_uri": "/library/view/beginning-lua-programming/9780470069172/ch10.html"
+        
+      },
+      title: "Beginning Lua Programming",
+      author_list: "Aaron Brown, Kurt Jung",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false
+    };
+    // ]]></script><script src="https://learning.oreilly.com/static/js/src/modernizr.8e35451ddb64.js"></script><script>
+    
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+      window.PRIVACY_CONTROL_SWITCH = true;
+
+      window.PUBLISHER_PAGES = true;
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "https://learning.oreilly.com/api/v2/search/select/",
+        }
+      };
+  </script><link rel="canonical" href="ch09.html"/><meta name="description" content="Chapter 9. Handling Events Naturally with Coroutines When you&#39;re implementing an application, you, as a developer, should strive for simplicity and generality. These qualities make a program easy to extend ... "><meta property="og:title" content="9. Handling Events Naturally with Coroutines" /><meta itemprop="isPartOf" content="/library/view/beginning-lua-programming/9780470069172/" /><meta itemprop="name" content="9. Handling Events Naturally with Coroutines" /><meta property="og:url" itemprop="url" content="https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch09.html" /><meta property="og:site_name" content="Safari" /><meta property="og:image" itemprop="thumbnailUrl" content="https://learning.oreilly.com/library/cover/9780470069172/" /><meta property="og:description" itemprop="description" content="Chapter 9. Handling Events Naturally with Coroutines When you&#39;re implementing an application, you, as a developer, should strive for simplicity and generality. These qualities make a program easy to extend ... "><meta itemprop="inLanguage" content="en" /><meta itemprop="publisher" content="Wrox" /><meta property="og:type" content="book" /><meta property="og:book:isbn" itemprop="isbn" content="9780470069172" /><meta property="og:book:author" itemprop="author" content="Aaron Brown" /><meta property="og:book:author" itemprop="author" content="Kurt Jung" /><meta property="og:book:tag" itemprop="about" content="Core Programming" /><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@OReillyMedia"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: <%= font_size %> !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: <%= font_family %> !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: <%= column_width %>% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; URL=https://learning.oreilly.com/library/no-js/" /></noscript><script>
+    var dataLayer = window.dataLayer || [];
+
+    
+      window.medalliaVsgUserIdentifier = 'ce47de5b-ce80-49f0-b5cd-c60d3d33b198';
+      dataLayer.push({userIdentifier: 'ce47de5b-ce80-49f0-b5cd-c60d3d33b198'});
+      dataLayer.push({loggedIn: 'yes'});
+
+      
+        window.medalliaVsgAccountIdentifier = '29964b7b-68d8-4532-9a9b-32e089689c1f';
+        
+
+        window.medalliaVsgIsIndividual = true;
+        
+          
+          dataLayer.push({learningAccountType: 'free trial'});
+          
+        
+
+        
+      
+    
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+    (function () {
+      var VERSION = 'V1.1';
+      var AUTHOR = 'Awwad';
+      if (!window.GtmHelper)
+        window.GtmHelper = function () {
+          var instance = this;
+          var loc = document.location;
+          this.version = VERSION;
+          this.author = AUTHOR;
+          this.readCookie = function (name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+          };
+          this.createCookie = function (name, value, days, cookieDomain) {
+            var domain = "";
+            var expires = "";
+
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + Math.ceil(days * 24 * 60 * 60 * 1000));
+              var expires = " expires=" + date.toGMTString() + ";";
+            }
+
+            if (typeof (cookieDomain) != 'undefined')
+              domain = " domain=" + cookieDomain + "; ";
+
+            document.cookie = name + "=" + value + ";" + expires + domain + "path=/";
+          };
+
+          this.isDuplicated = function (currentTransactionId) {
+            // the previous transaction id:
+            var previousTransIdValue = this.readCookie("previousTransId");
+
+            if (currentTransactionId === previousTransIdValue) {
+              return true; // Duplication
+            } else {
+              return false;
+            }
+          };
+        }
+    })()
+  </script><script defer src="https://learning.oreilly.com/static/js/build/vendor.0eac897f11ed.js"></script><script defer src="https://learning.oreilly.com/static/js/build/reader.c745ea9296ac.js"></script></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts">
+
+    
+  <noscript> 
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+  
+
+
+<a href="ch09.html#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li><a href="https://learning.oreilly.com/home/" class="l0 nav-icn"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.738 14H9.254v-3.676a.617.617 0 0 0-.621-.613H7.39a.617.617 0 0 0-.62.613V14H4.284a.617.617 0 0 1-.622-.613V10.22c0-.327.132-.64.367-.87l3.547-3.493a.627.627 0 0 1 .875 0l3.54 3.499c.234.229.366.54.367.864v3.167a.617.617 0 0 1-.62.613zM7.57 2.181a.625.625 0 0 1 .882 0l5.77 5.692-.93.92-5.28-5.209-5.28 5.208-.932-.919 5.77-5.692z" /></svg><span>Home</span></a></li><li class="search"><a href="ch09.html#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"/></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="ch09.html#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"/></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li class="flyout-parent"><a
+                href="ch09.html#"
+                class="l1 nav-icn "
+                
+              ><?xml version="1.0" encoding="UTF-8"?><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M8,8 C6.34321755,8 5.00013,6.65691245 5.00013,5.00013 C5.00013,3.34334755 6.34321755,2.00026001 8,2.00026001 C9.65678245,2.00026001 10.99987,3.34334755 10.99987,5.00013 C10.99987,6.65691245 9.65678245,8 8,8 Z M2.33024571,11.3523547 L2.33774538,11.3523547 C3.7622187,9.70968996 5.82947484,8.76608166 8.00374984,8.76608166 C10.1780248,8.76608166 12.245281,9.70968996 13.6697543,11.3523547 C13.8892083,11.6177474 14.0062813,11.9530021 13.99974,12.2973138 L13.99974,13.99974 L2.00026001,13.99974 L2.00026001,12.2973138 C1.99371867,11.9530021 2.11079172,11.6177474 2.33024571,11.3523547 Z" id="path-1"></path></svg><span>Your O&#39;Reilly</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/profile/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Profile</span></a></li><li><a
+                    href="https://learning.oreilly.com/history/"
+                    class="l2 nav-icn"
+                    
+                  ><span>History</span></a></li><li><a
+                    href="https://learning.oreilly.com/playlists/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Playlists</span></a></li><li><a
+                    href="https://learning.oreilly.com/u/ce47de5b-ce80-49f0-b5cd-c60d3d33b198/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Highlights</span></a></li></ul></li><li ><a
+                href="https://learning.oreilly.com/answers/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M2.31032699,3.75609006 C4.65421571,1.41371359 8.45302454,1.41472092 10.7955702,3.75860838 C13.1381158,6.10249583 13.1369405,9.90130261 10.7930518,12.243847 C8.44916311,14.5863913 4.65018639,14.5852161 2.30780867,12.2413286 C-0.0346204845,9.89749489 -0.0334929936,6.09853298 2.31032699,3.75609006 Z M8.8198605,4.98016308 C7.34193969,3.86924672 5.23410194,3.98609692 3.88914868,5.33104946 C3.12814393,6.09032122 2.72818176,7.13880077 2.79015179,8.21201133 C2.79115912,8.23064692 2.79233434,8.24928252 2.79350956,8.26791811 L2.79350956,8.26791811 C2.83179539,8.8307976 2.9944077,9.37404287 3.26947292,9.86201677 L3.26947292,9.86201677 L2.77621706,11.7027432 C2.7699968,11.7259241 2.77662063,11.7506624 2.79359185,11.7676337 C2.8105631,11.7846049 2.83530144,11.7912287 2.85848233,11.7850085 L2.85848233,11.7850085 L4.69400524,11.2922565 C5.26306363,11.6167344 5.90703177,11.786885 6.56209849,11.7858479 C8.64827865,11.7858479 10.3395879,10.094542 10.3395879,8.00836292 C10.3405204,6.84135608 9.80105674,5.73967784 8.87862141,5.02482134 L8.87862141,5.02482134 L8.82825492,4.98654283 Z M13.7933062,2 C14.7073496,2.00009863 15.4482759,2.74110484 15.4482759,3.65514822 C15.4482759,4.32460943 15.0449926,4.92814782 14.4264842,5.18432286 C13.8079757,5.44049789 13.096053,5.29885769 12.6226979,4.82545158 C12.1493429,4.35204547 12.0077795,3.64010743 12.2640213,3.02162665 C12.5202631,2.40314587 13.123845,1.99992776 13.7933062,2 Z"/></svg><span>Answers</span></a></li><li class="flyout-parent"><a
+                href="ch09.html#"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>queue icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 29.2C25.4 29.2 25.8 29.1 26.1 28.9L48.7 16.8C49.5 16.4 50 15.5 50 14.6 50 13.7 49.5 12.8 48.7 12.4L26.1 0.3C25.4-0.1 24.6-0.1 23.9 0.3L1.3 12.4C0.5 12.8 0 13.7 0 14.6 0 15.5 0.5 16.4 1.3 16.8L23.9 28.9C24.2 29.1 24.6 29.2 25 29.2ZM7.3 14.6L25 5.2 42.7 14.6 25 24 7.3 14.6ZM48.7 22.4L47.7 21.9 25 34.2 2.3 21.9 1.3 22.4C0.5 22.9 0 23.7 0 24.7 0 25.6 0.5 26.5 1.3 26.9L23.9 39.3C24.2 39.5 24.6 39.6 25 39.6 25.4 39.6 25.8 39.5 26.1 39.3L48.7 26.9C49.5 26.5 50 25.6 50 24.7 50 23.7 49.5 22.9 48.7 22.4ZM48.7 32.8L47.7 32.3 25 44.6 2.3 32.3 1.3 32.8C0.5 33.3 0 34.1 0 35.1 0 36 0.5 36.9 1.3 37.3L23.9 49.7C24.2 49.9 24.6 50 25 50 25.4 50 25.8 49.9 26.1 49.7L48.7 37.3C49.5 36.9 50 36 50 35.1 50 34.1 49.5 33.3 48.7 32.8Z"/></g></svg><span>Explore</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/topics/"
+                    class="l2 nav-icn"
+                    
+                  ><span>All Topics</span></a></li><li><a
+                    href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;formats=case%20study&amp;formats=learning%20path&amp;formats=live%20online%20training&amp;formats=notebook&amp;formats=oriole&amp;formats=video&amp;sort=popularity&amp;facet_json=true&amp;page=0&amp;collection_type=expert"
+                    class="l2 nav-icn"
+                    
+                  ><span>Most Popular Titles</span></a></li><li><a
+                    href="https://learning.oreilly.com/recommendations/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Recommended</span></a></li><li><a
+                    href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;sort=publication_date&amp;facet_json=true&amp;page=0"
+                    class="l2 nav-icn"
+                    
+                  ><span>Early Releases</span></a></li><li><a
+                    href="https://learning.oreilly.com/playlists/discover/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Shared Playlists</span></a></li><li><a
+                    href="https://learning.oreilly.com/resource-centers/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Resource Centers</span></a></li></ul></li><li class="flyout-parent"><a
+                href="ch09.html#"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12.8 3.2A1.2 1.2 0 0 1 14 4.4v8.4a1.2 1.2 0 0 1-1.2 1.2H3.2A1.2 1.2 0 0 1 2 12.8V4.4a1.2 1.2 0 0 1 1.2-1.2h1.2V2h1.2v1.2h4.8V2h1.2v1.2h1.2zm-9.6 9.6h9.6V6.2H3.2v6.6zM8 9.5a1.35 1.35 0 1 1 0-2.7 1.35 1.35 0 0 1 0 2.7zm2.7 2.148v.552H5.3v-.552c0-.321.124-.634.355-.858a3.358 3.358 0 0 1 4.69 0c.23.224.355.537.355.858z" /></svg><span>Live Events</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/attend/"
+                    class="l2 nav-icn"
+                    
+                  ><span>All Events</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/architectural-katas/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Architectural Katas</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/ai/"
+                    class="l2 nav-icn"
+                    
+                  ><span>AI &amp; ML</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/strata/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Data Sci &amp; Eng</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/oscon/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Programming</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/infrastructure-ops/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Infra &amp; Ops</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/software-architecture/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Software Arch</span></a></li></ul></li><li class="flyout-parent"><a
+                href="ch09.html#"
+                class="l1 nav-icn "
+                
+              ><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.6467109,4.35328907 L14.7964612,7.51003884 C15.0678463,7.78304342 15.0678463,8.22395603 14.7964612,8.49696061 L11.6467109,11.6467109 L10.6597892,10.6597892 L13.3055794,8 L10.6597892,5.34021084 L11.6467109,4.35328907 Z M4.35328907,11.6467109 L1.20353875,8.48996116 C0.932153749,8.21695658 0.932153749,7.77604397 1.20353875,7.50303939 L4.35328907,4.35328907 L5.34021084,5.34021084 L2.69442057,8 L5.34021084,10.6597892 L4.35328907,11.6467109 Z M5.84417089,11.4997226 L8.67194674,4.50027742 L10.1838269,4.50027742 L7.35605105,11.4997226 L5.84417089,11.4997226 Z" id="Mask"></path></svg><span>Interactive</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/scenarios/?classification=content-scenario"
+                    class="l2 nav-icn"
+                    
+                  ><span>Scenarios</span></a></li><li><a
+                    href="https://learning.oreilly.com/scenarios/?classification=sandbox-scenario"
+                    class="l2 nav-icn"
+                    
+                  ><span>Sandboxes</span></a></li><li><a
+                    href="https://learning.oreilly.com/interactive/?classification=jupyter-notebook"
+                    class="l2 nav-icn"
+                    
+                  ><span>Jupyter Notebooks</span></a></li></ul></li><li ><a
+                href="https://learning.oreilly.com/certifications/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M12.912 9.18L14 8.014l-1.088-1.18a.304.304 0 01-.075-.268L13.195 5l-1.535-.463a.313.313 0 01-.194-.194l-.462-1.537-1.565.358c-.09.03-.194 0-.269-.074L8.007 2 6.845 3.09a.303.303 0 01-.269.074l-1.565-.358-.462 1.537a.313.313 0 01-.194.194L2.82 5l.358 1.567a.26.26 0 01-.075.269L2 8.015l1.088 1.164c.075.075.09.18.075.269l-.358 1.567 1.535.463c.09.03.164.104.194.194l.462 1.537 1.565-.358c.015 0 .045-.015.075-.015.075 0 .15.03.209.074L8.007 14l1.163-1.09a.303.303 0 01.269-.074l1.565.358.462-1.537a.313.313 0 01.194-.194L13.195 11l-.358-1.567a.338.338 0 01.075-.254zm-6.046 1.37L4.41 8.26l1.16-1.244 1.767 1.649L10.4 5.6l1.202 1.202-4.242 4.243-.495-.495z"/></svg><span>Certifications</span></a></li><li ><a
+                href="https://learning.oreilly.com/preferences/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a></li><li ><a
+                href="https://learning.oreilly.com/public/support/"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M7.363 6.656a2.692 2.692 0 0 1-2.681-2.703c0-1.493 1.2-2.703 2.681-2.703a2.692 2.692 0 0 1 2.682 2.703c0 1.493-1.2 2.703-2.682 2.703zm4.023 2.027c-1.852 0-3.352 1.513-3.352 3.379H2v-1.534c-.006-.31.099-.612.295-.852a6.666 6.666 0 0 1 9.09-.993zm-.543.676h1.12v.304c.003.284.16.543.408.676a.766.766 0 0 0 .77 0l.303-.176.556.966-.302.176a.772.772 0 0 0-.362.676v.08a.772.772 0 0 0 .362.677l.302.21-.556.965-.302-.175a.766.766 0 0 0-.771 0 .778.778 0 0 0-.409.675v.352h-1.106v-.372a.778.778 0 0 0-.409-.676.766.766 0 0 0-.77 0l-.303.176-.556-.912.302-.176a.772.772 0 0 0 .362-.676v-.04-.04a.772.772 0 0 0-.362-.676l-.302-.176.556-.966.289.155a.766.766 0 0 0 .77 0 .778.778 0 0 0 .41-.676V9.36zm1.562 2.703c0-.271-.108-.531-.3-.722a1.001 1.001 0 0 0-.72-.292 1.01 1.01 0 0 0-.992 1.023 1.01 1.01 0 0 0 1.01 1.004 1.01 1.01 0 0 0 1.002-1.013z" /></svg><span>Support</span></a></li><li ><a
+                href="https://get.oreilly.com/email-signup.html"
+                class="l1 nav-icn "
+                target=&quot;_blank&quot;
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.564 2.263l2.172 2.174c.17.168.264.397.264.636V11a.6.6 0 0 1-.6.6h-.6V6.2h-6V2.6a.6.6 0 0 1 .6-.6h3.527c.239 0 .468.095.637.263zM2.6 14a.6.6 0 0 1-.6-.6V6.8a.6.6 0 0 1 .6-.6h1.903a1.2 1.2 0 0 1 .849.352L6.2 7.4H11a.6.6 0 0 1 .6.6v5.4a.6.6 0 0 1-.6.6H2.6zM11 5h1.8L11 3.2V5z" /></svg><span>Newsletters</span></a></li><li ><a
+                href="https://learning.oreilly.com/accounts/logout/"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M2.613 12.63A.607.607 0 0 1 2 12.03V3.602C2 3.269 2.274 3 2.613 3h5.515v1.204H3.226v7.223h4.902v1.203H2.613zM5.677 9.02V6.611h4.903V4.926a.301.301 0 0 1 .19-.274.31.31 0 0 1 .33.063l2.722 2.673a.594.594 0 0 1 0 .849L11.1 10.909a.31.31 0 0 1-.331.063.301.301 0 0 1-.19-.274V9.02H5.677z" /></svg><span>Sign Out</span></a></li></ul></div></li></ul></nav></header>
+
+
+
+      </div>
+      <div id="container" class="application">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="ch09.html#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Beginning Lua Programming
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="ch09.html#" title="Search in archive" class="js-search-controls search-controls" onclick="window.Appcues.track('SearchBook_HeronBook')"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9780470069172/chapter/ch09.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards" onclick="window.Appcues.track('AddPlaylist_HeronBook')"></div></div></li><li class="js-font-control-panel font-control-activator"><a href="ch09.html#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size" onclick="window.Appcues.track('ChangeFont_HeronBook')"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="ch09.html#" class="trigger" data-push-state="false" title="Share" aria-label="Share" onclick="window.Appcues.track('Share_HeronBook')"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a
+        class="twitter share-button t-twitter"
+        target="_blank"
+        aria-label="Share this section on Twitter"
+        title="Share this section on Twitter"
+      
+        href="https://twitter.com/share?url=https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch09.html&text=Beginning%20Lua%20Programming&via=OReillyMedia"
+      ><span>Twitter</span></a></li><li><a
+        class="facebook share-button t-facebook"
+        target="_blank"
+        aria-label="Share this section on Facebook"
+        title="Share this section on Facebook"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch09.html"
+      ><span>Facebook</span></a></li><li><a
+        class="googleplus share-button t-googleplus"
+        target="_blank"
+        aria-label="Share this secton on Google Plus"
+        title="Share this secton on Google Plus"
+        href="https://plus.google.com/share?url=https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch09.html"
+      ><span>Google Plus</span></a></li><li><a
+        class="email share-button t-email"
+        aria-label="Share this section via email"
+        title="Share this section via email"
+      
+        href="mailto:?subject=Safari: 9.%20Handling%20Events%20Naturally%20with%20Coroutines&body=https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch09.html%0D%0Afrom Beginning%20Lua%20Programming%0D%0A"
+      ><span>Email</span></a></li></ul></li><!-- endif request.user.is_authenticated -->
+      </ul>
+    </div>
+
+      
+          
+      
+
+    <section role="document">
+        
+        
+
+
+
+
+  <script defer src="https://learning.oreilly.com/static/js/build/djangoMessagesPage.bfaca9fd8619.js"></script>
+
+
+        <script src="https://fast.appcues.com/48743.js"></script>
+<script>
+  var userId = "ce47de5b-ce80-49f0-b5cd-c60d3d33b198";
+
+  var userObject = {
+    firstName: "Michael",
+    segment: "Trial",
+    admin: "False",
+    profileCreatedOn: "2021-05-13",
+    academic: ""
+  };
+  window.Appcues.identify(userId, userObject);
+  window.Appcues.page();
+
+  setTimeout(function () {
+    window.Appcues.track('ViewingBook_HeronBook')
+  }, 20000);
+</script>
+
+
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="ch08.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">8. Extending Lua&#39;s Behavior with Metamethods</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="ch10.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">10. Looking Under the Hood</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="handling_events_naturally_with_coroutine"></a>Chapter 9. Handling Events Naturally with Coroutines</h1></div></div></div><p>When you're implementing an application, you, as a developer, should strive for simplicity and generality. These qualities make a program easy to extend and maintain, and allow it to be reused under a variety of platforms and circumstances. However, real-world requirements often conspire to make these objectives hard to attain. In this chapter, you'll learn how Lua <span class="emphasis"><em>coroutines</em></span> provide you with an elegant and powerful tool that can dramatically simplify certain kinds of problems. For example, you can use coroutines to manage concurrent tasks, such as updating a progress bar and responding appropriately to user input while transferring a file.<a id="IDX-CHP-9-0001" class="indexterm"></a><a id="IDX-CHP-9-0002" class="indexterm"></a><a id="IDX-CHP-9-0003" class="indexterm"></a><a id="IDX-CHP-9-0004" class="indexterm"></a></p><p>You also use coroutines to provide contextual continuity to functions. A routine that is called intermittently as part of a continuing task may need to go to great lengths to reestablish the context of the task—that is, to remember "where it left off." For example, a tokenizing routine may be called from various parts of a parsing application yet must, when it is invoked, pick up right where it left off and return the next available token to the caller.</p><p>The event-driven nature of interactive programs can lead to logical discontinuities in the application source code. For example, in the interest of clarity, a program should invoke a window and wait until it is closed in much the same way that it calls a file reading routine. This way, directly after the call to show a window, the program can take the suitable course of action depending on the way the window is closed. However, most GUI development models don't allow a window to block like this. Instead, one or more functions are generally registered that are called in response to events such as the closing of a window. This prevents a sequence of statements from including both the display of a window and the action taken after its closure.</p><p>A number of attempts to tame problems such as these have evolved over the years with varying levels of success. These will be discussed briefly and compared with the way you can use coroutines to tackle the same problems.<a id="IDX-CHP-9-0005" class="indexterm"></a></p><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="coroutines_and_program_control"></a>Coroutines and Program Control</h1></div></div></div><p>A coroutine is a subroutine-like body into and out of which program control can flow repeatedly.</p><p>The essence of Lua coroutines is the way they use a familiar notation on top of a program control mechanism that may appear unfamiliar. In this section, you'll see some examples of coroutines and learn of the special considerations you must make to use them effectively.<a id="IDX-CHP-9-0006" class="indexterm"></a><a id="IDX-CHP-9-0007" class="indexterm"></a><a id="IDX-CHP-9-0008" class="indexterm"></a><a id="IDX-CHP-9-0009" class="indexterm"></a><a id="IDX-CHP-9-0010" class="indexterm"></a><a id="IDX-CHP-9-0011" class="indexterm"></a><a id="IDX-CHP-9-0012" class="indexterm"></a><a id="IDX-CHP-9-0013" class="indexterm"></a><a id="IDX-CHP-9-0014" class="indexterm"></a><a id="IDX-CHP-9-0015" class="indexterm"></a><a id="IDX-CHP-9-0016" class="indexterm"></a><a id="IDX-CHP-9-0017" class="indexterm"></a><a id="IDX-CHP-9-0018" class="indexterm"></a><a id="IDX-CHP-9-0019" class="indexterm"></a><a id="IDX-CHP-9-0020" class="indexterm"></a></p><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="coroutines_are_not_functions"></a>Coroutines Are Not Functions</h2></div></div></div><p>In <a class="link" href="ch03.html" title="Chapter 3. Extending Lua with Functions">Chapter 3</a>, you learned about Lua functions: how they are defined, how they are invoked, and how they receive values from and return values to the caller. The general picture from that chapter is that a function receives program control when it is called, and relinquishes control when it returns. When a function is called, local variables and bookkeeping information are pushed onto a call stack for safekeeping. When a function returns, these data are popped off of the call stack. This pattern of a call stack growing and shrinking frame by frame provides a very logical basis for structuring a program. It models to some extent the way people manage certain everyday tasks.<a id="IDX-CHP-9-0021" class="indexterm"></a></p><p>In <a class="link" href="ch06.html" title="Chapter 6. Handling and Avoiding Errors">Chapter 6</a>, you learned about an error handling mechanism that allows this stack pattern to be circumvented, namely the protected call. In this case, the call stack grows and shrinks as usual, but when an error occurs, the stack is truncated to the point where the protected call was made without going through the usual function returns.</p><p>A coroutine is another mechanism that doesn't quite fit into the familiar nested nature of function calls. Like ordinary functions, coroutines are invoked with argument values and eventually they return values. But coroutines differ from functions in the following ways:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>Unlike a function, a coroutine must be specially prepared, or <span class="emphasis"><em>instantiated</em></span>, before it can be activated. You use the <code class="literal">coroutine.create</code> function to do this.<a id="IDX-CHP-9-0022" class="indexterm"></a></p></li><li class="listitem"><p>When a coroutine is invoked—that is, when it receives program control by means of the <code class="literal">coroutine.resume</code> function—it operates on its own call stack, not that of its caller. A coroutine's stack serves the usual purpose of keeping track of function calls and local variables. As with an ordinary program, the use of this stack is transparent to the programmer. Although invoking a coroutine seems like calling a function, it is more similar to starting a new program.</p></li><li class="listitem"><p>In the absence of an error, a coroutine relinquishes control to its invoker either by <span class="emphasis"><em>yielding</em></span> with the <code class="literal">coroutine.yield</code> function, or by returning (either with a <code class="literal">return</code> statement or by reaching the end of the coroutine body).</p></li><li class="listitem"><p>After a coroutine returns control by yielding, it can be resumed—that is, it can be given program control again—with the return of its call to <code class="literal">coroutine.yield</code>. A coroutine can yield and be resumed repeatedly.</p></li><li class="listitem"><p>After a coroutine terminates, it cannot be activated again. Returning from the main body of a coroutine is much like returning from the main body of a program.</p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="how_coroutines_are_like_programs"></a>How Coroutines Are Like Programs</h2></div></div></div><p>Even though coroutines look a lot like functions (in fact, you can use <code class="literal">coroutine.wrap</code> to put a function wrapper around a coroutine), it's beneficial to think of a coroutine as a separate program rather than as an enhanced function. All of the operations available to an ordinary Lua program, such as creating variables and calling functions, are available to coroutines. Because each coroutine has its own call stack, its particular statement path, or <span class="emphasis"><em>thread</em></span>, is independent of the program's initial statement path (the <span class="emphasis"><em>main thread</em></span>) and that of other coroutines. One and only one thread is active at any given time during the execution of a program. To a limited extent, a useful analogy is a text editor that can have multiple files open simultaneously. You can switch to any of the open files, but only one can be active. Similarly, a Lua program can have many threads, but only one will be currently running.<a id="IDX-CHP-9-0023" class="indexterm"></a><a id="IDX-CHP-9-0024" class="indexterm"></a><a id="IDX-CHP-9-0025" class="indexterm"></a><a id="IDX-CHP-9-0026" class="indexterm"></a><a id="IDX-CHP-9-0027" class="indexterm"></a><a id="IDX-CHP-9-0028" class="indexterm"></a><a id="IDX-CHP-9-0029" class="indexterm"></a><a id="IDX-CHP-9-0030" class="indexterm"></a><a id="IDX-CHP-9-0031" class="indexterm"></a><a id="IDX-CHP-9-0032" class="indexterm"></a><a id="IDX-CHP-9-0033" class="indexterm"></a><a id="IDX-CHP-9-0034" class="indexterm"></a><a id="IDX-CHP-9-0035" class="indexterm"></a><a id="IDX-CHP-9-0036" class="indexterm"></a><a id="IDX-CHP-9-0037" class="indexterm"></a><a id="IDX-CHP-9-0038" class="indexterm"></a><a id="IDX-CHP-9-0039" class="indexterm"></a></p><p>The distinctive magic of coroutines centers on the <code class="literal">coroutine.yield</code> and <code class="literal">coroutine.resume</code> functions. The <code class="literal">coroutine.yield</code> function may be used as a coroutine's way of saying to its caller, "I don't know how long I'm going to have to sit around waiting for something interesting to happen, so I'll let you take control. When something happens that I should know about, wake me up from my nap and let me know about it." The <code class="literal">coroutine.resume</code> function, in this context, is the currently active thread's way of saying, "Hey, sleepy coroutine, wake up. Here's something of interest for you. When you reach another lull, let me know and I'll take over again."</p><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="coroutines_transfer_control"></a>Coroutines Transfer Control</h3></div></div></div><p>There are alternate uses of coroutines. In another context, perhaps the transfer of a number of files, a coroutine might call <code class="literal">coroutine.yield</code> as a way of saying, "I'm busy right now, but I know that other threads are in need of some machine cycles too, so I'll relinquish control to let them do some work." In this scenario, a dispatcher may resume a number of coroutines in turn to overlap multiple tasks.</p><p>Even though <code class="literal">coroutine.yield</code> and <code class="literal">coroutine.resume</code> look like ordinary functions, they map to thread transfer operations that are very unlike ordinary functions. One very nice attribute of coroutines in Lua is that, as a programmer, you can use familiar function notation to switch between threads, exchanging values as you do so.</p></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="wrapping_a_coroutine"></a>Wrapping a Coroutine</h3></div></div></div><p>Coroutine usage can be simplified somewhat with <code class="literal">coroutine.wrap</code>. This function is used to instantiate a coroutine just as <code class="literal">coroutine.create</code> does, but instead of returning the new coroutine itself, it returns a function that resumes the coroutine. To resume the wrapped coroutine, either initially or after it has yielded, you simply call the returned function with the arguments you want to pass to it. This function is unprotected, so if an error occurs in the coroutine, the function will not return. By using the <code class="literal">coroutine.running</code> function, you can identify the wrapped coroutine but, in general, if you need this value, you are better off using unwrapped coroutines.</p></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="coroutines_are_cooperative"></a>Coroutines Are Cooperative</h2></div></div></div><p>Coroutines enable a program to <span class="emphasis"><em>multitask</em></span>, which means it can interleave the execution of more than one task over a period of time. Just like the main body of a program, the body of a coroutine gives every appearance of being in complete control of the machine. However, the programmer of a coroutine knows that other threads require time to execute too, so a coroutine is programmed to yield control at opportune times, knowing that in due course it will receive control again. In the following exercise, you learn how to write a script that enables coroutines to cooperate.</p><div class="sidebar"><a id="try_it_out_colon_learning_to_cooperate"></a><div class="titlepage"><div><div><p class="title"><strong>Try It Out: Learning to Cooperate</strong></p></div></div></div><p>The following script demonstrates the use of coroutines to volley control back and forth cooperatively.</p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>With your text editor, enter the following script:</p><pre class="programlisting">local function KnightFnc()
+  print [[Knight:
+The name of the song is called "HADDOCKS' EYES."</pre><pre class="programlisting">]]
+  coroutine.yield()
+  print [[Knight, looking a little vexed:
+No, you don't understand, that's what the name is CALLED. The
+name really IS "THE AGED AGED MAN."
+]]
+  coroutine.yield()
+  print [[Knight:
+No, you oughtn't, that's quite another thing! The SONG is
+called "WAYS AND MEANS," but that's only what it's CALLED, you
+know!
+]]
+  coroutine.yield()
+  print [[Knight:
+I was coming to that. The song really IS "A-SITTING ON A GATE",
+and the tune's my own invention.
+]]
+end
+
+local function Alice()
+  local Knight = coroutine.create(KnightFnc)
+
+  coroutine.resume(Knight)
+  print [[Alice, trying to feel interested:
+Oh, that's the name of the song, is it?
+]]
+  coroutine.resume(Knight)
+  print [[Alice:
+Then I ought to have said "That's what the SONG is called"?
+]]
+  coroutine.resume(Knight)
+  print [[Alice, completely bewildered:
+Well, what IS the song, then?
+]]
+  coroutine.resume(Knight)
+end
+
+Alice()</pre></li><li class="listitem"><p>Save the file as <code class="literal">looking_glass.lua</code>.</p></li><li class="listitem"><p>Run the script using the Lua interpreter as follows:</p><pre class="programlisting"><strong class="userinput"><code>lua looking_glass.lua</code></strong>
+Knight:
+The name of the song is called "HADDOCKS' EYES."
+
+Alice, trying to feel interested:
+Oh, that's the name of the song, is it?
+
+Knight, looking a little vexed:
+No, you don't understand, that's what the name is CALLED. The
+name really IS "THE AGED AGED MAN."
+
+Alice:</pre><pre class="programlisting">Then I ought to have said "That's what the SONG is called"?
+
+Knight:
+No, you oughtn't, that's quite another thing! The SONG is
+called "WAYS AND MEANS," but that's only what it's CALLED, you
+know!
+
+Alice, completely bewildered:
+Well, what IS the song, then?
+
+Knight:
+I was coming to that. The song really IS "A-SITTING ON A GATE",
+and the tune's my own invention.</pre></li></ol></div><p><span class="strong"><strong>How It Works</strong></span><a id="IDX-CHP-9-0040" class="indexterm"></a></p><p>In this dialog taken from Lewis Carroll's <span class="emphasis"><em>Through the Looking-Glass</em></span> (which is, incidentally, a startlingly prescient glimpse into the realm of variable names and indirection), the main thread (<code class="literal">Alice</code>) and the coroutine thread (<code class="literal">Knight</code>) cooperate by relinquishing control at appropriate points. Note that each thread proceeds as if it is in charge. In fact, this <span class="emphasis"><em>is</em></span> the case—each thread <span class="emphasis"><em>does</em></span> have program control until it cooperatively gives it up. This happens when the invoking thread, <code class="literal">Alice</code>, calls <code class="literal">coroutine.resume</code> and when the coroutine <code class="literal">Knight</code> calls <code class="literal">coroutine.yield</code>. Each thread executes statements from a sequence that are interleaved with statements from the other thread's sequence.</p></div><p>When a coroutine is resumed, it is specified explicitly in the call to <code class="literal">coroutine.resume</code>. However, when a coroutine yields, it always transfers control back to the thread that resumed it.</p><p>When a program without coroutines includes a function that produces something and another that consumes it, either the producer function or the consumer function will be in control of the program flow. The other function will be called repeatedly as a service and will run each time from its beginning.</p><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="outside_looking_in"></a>Outside Looking In</h3></div></div></div><p>An admittedly whimsical way to look at coroutines is to consider an ordinary function call as the placement of program control into an ordinary bottle. When the function terminates, program control flows out of the bottle back to the caller. This analogy emphasizes that no matter how much control a function may have when it is active, it is constrained to eventually run its course and return to its caller. With the inside-out nature of coroutines, the analogy to an ordinary bottle just doesn't "hold water." Instead, when a coroutine yields, it places program control into a Klein bottle, the four dimensional equivalent of a Möbius strip. If you trace the surface of such a bottle, you find the "inside" and "outside" to be one and the same. A yielding coroutine curiously enters not a constrained enclosure, but the rest of the program. This analogy plays on Lua's way of making the transfer of control between coroutines look like function calls. If you find yourself getting confused about coroutines, focus on <code class="literal">coroutine.resume</code> and <code class="literal">coroutine.yield</code> as control transfer points rather than as functions.<a id="IDX-CHP-9-0041" class="indexterm"></a></p><p>The following Try It Out puts these ideas on a more familiar footing by using a classic application of coroutines: the interaction of a producer and a consumer. In particular, pay attention to how the producer's call to <code class="literal">coroutine.yield</code> looks like an ordinary function call, but in fact, it is the mechanism by which program control is transferred back to the consumer. Unlike a called function, the consumer can run its course without ever transferring control back to the producer.</p><div class="sidebar"><a id="a_word_about_preemptive_multitasking"></a><div class="titlepage"><div><div><p class="title"><strong>A Word About Preemptive Multitasking</strong></p></div></div></div><p>The cooperative nature of multitasking with coroutines distinguishes it from <span class="emphasis"><em>preemptive multitasking</em></span>, in which the operating system decides when control is transferred from one thread to another, usually based on time slices. In the discussion that follows, threads in a preemptive multitasking environment will be referred to as <span class="emphasis"><em>system threads</em></span>. Like a coroutine, a system thread has its own stack, so it is free to manipulate local variables and call and return from functions. However, a system thread must handle the following issues, which a coroutine does not:<a id="IDX-CHP-9-0042" class="indexterm"></a><a id="IDX-CHP-9-0043" class="indexterm"></a><a id="IDX-CHP-9-0044" class="indexterm"></a></p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>Explicit arrangement with the operating system needs to be made to keep certain blocks of code, such as a series of file writes that need to remain synchronized, from being interrupted.</p></li><li class="listitem"><p>Access to globally shared resources must be properly synchronized to avoid corruption by different system threads.</p></li><li class="listitem"><p>The termination of a system thread often needs to be specially coordinated with other system threads. Sometimes, a system thread's sole purpose is to coordinate the termination of other threads.</p></li></ul></div><p>In practice, system threads can be messy. The simplest of programs take on a whole new level of complexity when preemptive multitasking is introduced. This occurs primarily because of the need to avoid <span class="emphasis"><em>race</em></span> conditions in which statements are executed by system threads in an order that is incorrect and unexpected. Even if system threads don't have control over when they are preempted, they nevertheless need to exhibit a high degree of cooperation with other system threads to manage global resource access and proper termination issues. In light of the long history of coroutines, you may understandably wonder why they have been overshadowed by preemptive solutions in recent decades.</p><p>A Lua universe is the reentrant C data structure that all Lua programs are based on. Lua supports preemptive multitasking if special care is taken to protect this structure. To do so, follow these guidelines:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>If multiple system threads interact with a single Lua universe, they must be properly regulated with locks. Lua allows you to provide a locking function and an unlocking function that will be called by Lua when, respectively, it enters and leaves a block of code that must not be interrupted. These functions are not implemented within the Lua core because they in turn call operating system-dependent functions. This solution comes with a performance penalty due to locking overhead.</p></li><li class="listitem"><p>More than one Lua universe can be active in a C program that embeds Lua. You can avoid locking requirements by arranging to have each Lua universe accessible to only one system thread. This avoids locking overhead, but requires you to provide a system thread-safe mechanism to transfer data from one Lua universe to another.</p></li></ul></div><p>Preemptive multitasking is not covered any further in this book.</p></div><div class="sidebar"><a id="try_it_out_colon_sharing_control"></a><div class="titlepage"><div><div><p class="title"><strong>Try It Out: Sharing Control</strong></p></div></div></div><p>Coroutines provide a framework that puts the consumer and producer on similar footing. The script that follows demonstrates this. In it, the producer thread generates simulated input events. The consumer thread simply displays these events in text form.<a id="IDX-CHP-9-0045" class="indexterm"></a></p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Using your text editor, create a new document with the following contents:</p><pre class="programlisting">local function LclProducer()
+  print("Producer: initialize")
+  -- Simulate event generation
+  local List = {"mouse", "keyboard", "keyboard", "mouse"}
+  for J, Val in ipairs(List) do
+    local Evt = string.format("Event %d (%s)", J, Val)
+    print("Producer: " .. Evt)
+    coroutine.yield(Evt)
+  end
+  print("Producer: finalize")
+  return "end"
+end
+
+local function LclConsumer()
+  local GetEvent = coroutine.wrap(LclProducer)
+  local Evt
+  print("Consumer: initialize")
+  while Evt ~= "end" do
+    Evt = GetEvent()
+    print("Consumer: " .. Evt)
+  end
+  print("Consumer: finalize")
+end
+
+LclConsumer()</pre></li><li class="listitem"><p>Save the file as <code class="literal">producer_consumer.lua</code>.</p></li><li class="listitem"><p>Run the script with the Lua interpreter as follows:</p><pre class="programlisting"><strong class="userinput"><code>lua producer_consumer.lua</code></strong>
+Consumer: initialize
+Producer: initialize
+Producer: Event 1 (mouse)
+Consumer: Event 1 (mouse)
+Producer: Event 2 (keyboard)
+Consumer: Event 2 (keyboard)
+Producer: Event 3 (keyboard)
+Consumer: Event 3 (keyboard)
+Producer: Event 4 (mouse)
+Consumer: Event 4 (mouse)
+Producer: finalize
+Consumer: end
+Consumer: finalize</pre></li></ol></div></div></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="how_it_works-023"></a>How It Works</h3></div></div></div><p>In this script, <code class="literal">LclConsumer</code> runs in the main thread, and <code class="literal">LclProducer</code> runs in its own coroutine thread. Notice that <code class="literal">coroutine.resume</code> is not called explicitly in the code. That's because the <code class="literal">GetEvent</code> function (the product of <code class="literal">coroutine.wrap</code>) does this implicitly whenever it is called. The aspect of this script that warrants attention is how each thread transfer (<code class="literal">GetEvent</code> in <code class="literal">LclConsumer</code> and <code class="literal">coroutine.yield</code> in <code class="literal">LclProducer</code>) occurs within a loop. This is an indication that each thread has control. Local variables that are within the scope in the loop are preserved in the same way as if the resume and yield calls were ordinary function calls. Writing routines from this vantage is generally more natural than writing a routine that runs to completion each time it is called.<a id="IDX-CHP-9-0046" class="indexterm"></a><a id="IDX-CHP-9-0047" class="indexterm"></a><a id="IDX-CHP-9-0048" class="indexterm"></a><a id="IDX-CHP-9-0049" class="indexterm"></a><a id="IDX-CHP-9-0050" class="indexterm"></a><a id="IDX-CHP-9-0051" class="indexterm"></a></p><p>Had this example been used in a real event-driven environment, the loop in which <code class="literal">LclProducer</code> visits each array element would be replaced by a loop in which successive events are retrieved from the operating system. The fact that these events could arrive sporadically wouldn't change the way the two threads interact.</p></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="coroutines_have_status"></a>Coroutines Have Status</h2></div></div></div><p>You've seen that a coroutine is instantiated with a call to <code class="literal">coroutine.create</code>. From that point on, a coroutine always has an operational status. If you're unsure what state a coroutine is in, you can call <code class="literal">coroutine.status</code> to find out. That function returns a string with one of the following values:</p><div class="informaltable"><table style="border-collapse: collapse;border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; "><colgroup><col class="col1"><col class="col2"></colgroup><thead><tr><th style="text-align: left" valign="bottom"><p>Status</p></th><th style="text-align: left" valign="bottom"><p>Description</p></th></tr></thead><tbody><tr><td style="text-align: left" valign="top"><p><code class="literal">"suspended"</code></p></td><td style="text-align: left" valign="top"><p>The specified coroutine is resumable.</p></td></tr><tr><td style="text-align: left" valign="top"><p><code class="literal">"running"</code></p></td><td style="text-align: left" valign="top"><p>The specified coroutine is currently running.</p></td></tr><tr><td style="text-align: left" valign="top"><p><code class="literal">"normal"</code></p></td><td style="text-align: left" valign="top"><p>The specified coroutine has resumed another coroutine.</p></td></tr><tr><td style="text-align: left" valign="top"><p><code class="literal">"dead"</code></p></td><td style="text-align: left" valign="top"><p>The specified coroutine has returned normally or in error.</p></td></tr></tbody></table></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="try_it_out_colon_examining_the_status_of"></a>Try It Out: Examining the Status of Coroutines</h3></div></div></div><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Using your text editor, create a new file with the following contents:</p><pre class="programlisting">local A, B, C
+
+local function Status(Str)
+    io.write(string.format("%-8s A is %-10s C is %-10s (%s)\n",
+    Str, coroutine.status(A), coroutine.status(C),
+    tostring(coroutine.running() or "main thread")))
+end
+
+function A()
+    Status("A")
+end
+
+function B()
+    Status("B")
+end
+
+function C()</pre><pre class="programlisting">Status("C 1")
+    coroutine.resume(A)
+    Status("C 2")
+    B()
+    Status("C 3")
+    coroutine.yield()
+    Status("C 4")
+end
+
+A = coroutine.create(A)
+B = coroutine.wrap(B)
+C = coroutine.create(C)
+Status("Main 1")
+coroutine.resume(C)
+Status("Main 2")
+coroutine.resume(C)
+Status("Main 3")</pre></li><li class="listitem"><p>Save this file as <code class="literal">status.lua</code>.<a id="IDX-CHP-9-0052" class="indexterm"></a><a id="IDX-CHP-9-0053" class="indexterm"></a><a id="IDX-CHP-9-0054" class="indexterm"></a></p></li><li class="listitem"><p>Run the script using the Lua interpreter as follows:</p><pre class="programlisting"><strong class="userinput"><code>lua status.lua</code></strong>
+Main 1   A is suspended  C is suspended  (main thread)
+C 1      A is suspended  C is running     (thread: 00767F80)
+A        A is running    C is normal      (thread: 007659C0)
+C 2      A is dead       C is running     (thread: 00767F80)
+B        A is dead       C is normal      (thread: 00766BD0)
+C 3      A is dead       C is running     (thread: 00767F80)
+Main 2   A is dead       C is suspended   (main thread)
+C 4      A is dead       C is running     (thread: 00767F80)
+Main 3   A is dead       C is dead        (main thread)</pre></li></ol></div></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="how_it_works-024"></a>How It Works</h3></div></div></div><p>In the course of this script, coroutine C assumes each possible status. Coroutine <code class="literal">A</code> never assumes the <code class="literal">"normal"</code> status, because it never resumes another coroutine.</p><p>The return value of <code class="literal">coroutine.wrap</code> is a function wrapper around a coroutine, not a coroutine, so it is not a suitable as an argument to <code class="literal">coroutine.status</code>. However, when <code class="literal">B</code> is called, its wrapped coroutine assumes the <code class="literal">"running"</code> status, in this case temporarily taking that status away from <code class="literal">C</code>.</p></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="rules_of_conduct"></a>Rules of Conduct</h2></div></div></div><p>The care and feeding of coroutines is quite modest in return for the coolness they lend to a program. Here are some requirements you need to consider when welcoming coroutines into your application.</p><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="work_shoulder-to-shoulder"></a>Work Shoulder-to-Shoulder</h3></div></div></div><p>A running coroutine must explicitly yield control in a timely manner. A coroutine that runs too long without yielding deprives other threads of the chance to execute. Selecting a point at which to yield is usually straightforward. If the coroutine has produced one or more values to be delivered, it can yield with them as arguments and they will be delivered as return values of the invoking thread's <code class="literal">resume</code> call.</p><p>If the time needed to produce these values is long, the task can sometimes be partitioned into smaller pieces. In this case, the coroutine enters a loop in which parts of the product are yielded and the resuming thread reassembles them into the complete value. The resuming thread can cycle through a number of coroutines, resuming each in turn.<a id="IDX-CHP-9-0055" class="indexterm"></a><a id="IDX-CHP-9-0056" class="indexterm"></a><a id="IDX-CHP-9-0057" class="indexterm"></a><a id="IDX-CHP-9-0058" class="indexterm"></a><a id="IDX-CHP-9-0059" class="indexterm"></a></p></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="trust_the_dispatcher"></a>Trust the Dispatcher</h3></div></div></div><p>Another time a coroutine should yield is when it begins waiting an indeterminate time for something to occur. The problem is that the only way a yielding coroutine will regain control is if it is resumed, so there must be some way for the resumer to know when the coroutine's wait is complete. This is usually possible with message-based applications in which notifications are pulled from an event queue. In this case, a thread (which is often the main thread) can be dedicated to dispatching these events by executing a loop in which it repeatedly collects an event and resumes the appropriate coroutine.<a id="IDX-CHP-9-0060" class="indexterm"></a><a id="IDX-CHP-9-0061" class="indexterm"></a></p></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="expect_the_best_comma_prepare_for_the_wo"></a>Expect the Best, Prepare for the Worst</h3></div></div></div><p>A yielding coroutine generally has no control over which other threads will be activated, or in what order, before it is resumed. Consequently, you must pay some attention to the points at which a coroutine yields to prevent the possibility of unexpected modification of shared resources. For this reason, it pays to limit the scope of variables as much as possible. Avoid yielding in critical sequences of code. For example, if an external file and an internal Lua table need to remain synchronized, don't yield between the points where the update begins and where it ends.</p></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="play_on_your_side_of_the_fence"></a>Play on Your Side of the Fence</h3></div></div></div><p>Coroutines face some restrictions where the C runtime stack is involved. A Lua function that is called from a library that uses Lua's C interface utilizes stacks on both sides of this interface. Coroutines run properly in this circumstance, but they cannot yield across the C interface because this would cause problems with the single stack that is used in the C code. This restriction applies to certain Lua functions such as <code class="literal">dofile</code> and <code class="literal">pcall</code>. Consider the following script:</p><pre class="programlisting">local function A()
+  coroutine.yield()
+end
+
+local function B()
+  print(pcall(A))
+end
+
+coroutine.wrap(B)()</pre><p>This generates the following output:</p><pre class="programlisting">false     attempt to yield across metamethod/C-call boundary</pre><p>In general, yields across the C interface can usually be worked around. If you encounter a situation where they are required, investigate Coco, a Lua patchset created by Mike Pall and located on the LuaForge site. This extension creates a C stack for each coroutine. It runs on POSIX and Windows (including Windows 98 and above).</p></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="avoid_the_deep_end"></a>Avoid the Deep End</h3></div></div></div><p>The Lua distribution comes with a file named <code class="literal">sieve.lua</code> located in the <code class="literal">test</code> subdirectory. This script generates prime numbers up to a specified value (1000 by default) using, with coroutines, an algorithm created by the brilliant Hellenistic mathematician Eratosthenes. As shown by this program, coroutines and recursion appear to be a natural fit. Unfortunately, a known issue with Lua coroutines keeps the C runtime stack (yes, it keeps showing up in these problem areas) from being protected against an overflow condition. Unless you can be sure the C runtime stack is sufficiently large to handle your particular case, you'll want to avoid deeply recursive coroutines. Note also that the problem, because it pertains to the C stack, cannot be bounded with a protected call.<a id="IDX-CHP-9-0062" class="indexterm"></a><a id="IDX-CHP-9-0063" class="indexterm"></a><a id="IDX-CHP-9-0064" class="indexterm"></a><a id="IDX-CHP-9-0065" class="indexterm"></a><a id="IDX-CHP-9-0066" class="indexterm"></a><a id="IDX-CHP-9-0067" class="indexterm"></a></p></div></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="managing_concurrent_tasks"></a>Managing Concurrent Tasks</h1></div></div></div><p>You can multitask with coroutines to partition long jobs into smaller segments. If your program has some way of detecting user input without blocking (which is not possible with ANSI C and, consequently, standard Lua), then you can use this feature to interrupt or otherwise modify the course of these jobs.<a id="IDX-CHP-9-0068" class="indexterm"></a></p><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="managing_concurrent_task"></a></h2></div></div></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="try_it_out_colon_partitioning_longs_jobs"></a>Try It Out: Partitioning Longs Jobs with Coroutines</h3></div></div></div><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Using your text editor, create a new file with the following script:</p><pre class="programlisting">local function Multitask()
+
+ local function LclWork(Id, Count) -- Simulate some work
+   for J = 1, Count do
+     io.write(Id)
+     io.flush()
+     local Stop = os.time() + 1
+     while os.time() &lt; Stop do end
+     coroutine.yield()
+  end
+ end
+
+ local function LclContinue() -- Simulate check for user cancellation
+   return math.random(12) &gt; 1
+ end
+
+ local WorkA = coroutine.create(function () LclWork('A', 2) end)
+ local WorkB = coroutine.create(function () LclWork('B', 4) end)
+ math.randomseed(os.time())
+ local A, B, Ok = true, true, true
+
+ while (A or B) and Ok do
+   Ok = LclContinue()
+   if Ok and A then
+     A = coroutine.resume(WorkA)
+  end
+  Ok = LclContinue()
+  if Ok and B then
+     B = coroutine.resume(WorkB)
+   end
+ end</pre><pre class="programlisting">io.write(Ok and " done" or " cancel", "\n")
+
+ end
+
+ Multitask()</pre></li><li class="listitem"><p>Save this file as <code class="literal">multitask.lua</code>.<a id="IDX-CHP-9-0069" class="indexterm"></a><a id="IDX-CHP-9-0070" class="indexterm"></a><a id="IDX-CHP-9-0071" class="indexterm"></a><a id="IDX-CHP-9-0072" class="indexterm"></a><a id="IDX-CHP-9-0073" class="indexterm"></a><a id="IDX-CHP-9-0074" class="indexterm"></a></p></li><li class="listitem"><p>Run through the following invocations using the Lua interpreter (because user cancellation is simulated randomly, the output you see will likely be different from what is shown here):</p><pre class="programlisting"><strong class="userinput"><code>lua multitask.lua</code></strong>
+ABABBB done
+
+<strong class="userinput"><code>lua multitask.lua</code></strong>
+ABA cancel
+
+<strong class="userinput"><code>lua multitask.lua</code></strong>
+AB cancel</pre></li></ol></div></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="how_it_works-025"></a>How It Works</h3></div></div></div><p>This example uses a number of simulations to demonstrate multitasking. For one, a bunch of cycles are consumed repeatedly calling <code class="literal">os.time</code> to simulate a segment of work. In a real application, arrange to have work performed in a coroutine, yielding after a segment of it has been completed. If user input is needed, it must be retrieved in a nonblocking manner. That is, some mechanism like an event queue or keypress buffer must be available for examination without actually waiting for user input.</p><p>The example presented here is just one of many variations you can use to repeatedly resume active coroutines. A common construction is to use an array to hold a number of coroutines.</p></div></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="retaining_state"></a>Retaining State</h1></div></div></div><p>When you programmatically open a file, you obtain a handle that is used for subsequent operations such as writing to the file and closing it. The handle is <span class="emphasis"><em>opaque</em></span>, which means that information about the file's state (such as its buffers and file position and other internal details) is hidden from view. Within the file routines themselves, the handle is mapped to a data structure that allows the internal state to be accessed during an operation and retained between operations. The discipline of object orientation extends this notion by bundling fields and methods while restricting access to internal data. Each approach has been used extensively and successfully.</p><p>A Lua coroutine retains state through its dedicated stack. As you saw in the consumer and producer example, thread transfers don't affect the local variables in these stacks. Because of these stacks, a Lua coroutine can yield from a function other than its main body.</p><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="exercising_a_coroutine_apostrophy_s_memo"></a>Exercising a Coroutine's Memory</h2></div></div></div><p>One example of a body of code that must maintain its internal state is a <span class="emphasis"><em>tokenizer</em></span>, a routine whose job is to deliver on demand the next lexical unit in a sequence. The following Try It Out shows how a coroutine can be used to let a tokenizer keep track of its internal state.</p><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="try_it_out_colon_creating_a_tokenizing_c"></a>Try It Out: Creating a Tokenizing Coroutine</h3></div></div></div><p>Expression analysis benefits from the use of a coroutine to collect tokens. Here, you'll see how naturally a coroutine-based tokenizer fits into a larger program.</p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Using your text editor, create a new file with the following contents:</p><pre class="programlisting">local Token, Pos
+
+local function LclToken(ExpStr)
+  local Len, PosStart, PosEnd, Allow
+  Allow = "factor"
+  Len = string.len(ExpStr)
+  Pos = 1
+  while Pos &lt;= Len do
+    if Allow == "factor" then
+      PosStart, PosEnd, Token = string.find(ExpStr,
+        "^%s*([%+%-]?%d+%.?%d*)%s*", Pos)
+      if PosStart then
+        Token = tonumber(Token)
+      else
+        PosStart, PosEnd, Token = string.find(ExpStr,
+          "^%s*(%()%s*", Pos)
+        if not PosStart then
+          error("expected number or '(' at position " .. Pos)
+        end
+     end
+   else -- "op"
+     PosStart, PosEnd, Token = string.find(ExpStr,
+       "^%s*([%)%+%-%*%/])%s*", Pos)
+     if not PosStart then
+       error("expected operator at position " .. Pos)
+     end
+   end
+   Allow = coroutine.yield()
+   Pos = PosEnd + 1
+ end
+ Token = "end"
+ coroutine.yield()
+ error("end of expression overreached")
+end
+
+local LclExpression
+
+local function LclFactor()
+  local Val = 0
+  if type(Token) == "number" then
+    Val = Token
+    LclToken("op")
+  elseif Token == "(" then
+    LclToken("factor")
+    Val = LclExpression()
+    if Token == ")" then
+      LclToken("op")
+    else
+     error("missing ')' at position " .. Pos)</pre><pre class="programlisting">end
+   else
+     error("expecting number or '(' at position " .. Pos)
+   end
+   return Val
+ end
+
+ local function LclTerm()
+   local Val = LclFactor()
+   while Token == '*' or Token == '/' do
+     if Token == '*' then
+       LclToken("factor")
+       Val = Val * LclFactor()
+     else
+       LclToken("factor")
+       Val = Val / LclFactor()
+     end
+   end
+   return Val
+end
+
+function LclExpression()
+  local Val = LclTerm()
+  while Token == '+' or Token == '-' do
+     if Token == '+' then
+       LclToken("factor")
+       Val = Val + LclTerm()
+    else
+       LclToken("factor")
+       Val = Val - LclTerm()
+   end
+  end
+  return Val
+end
+
+local function LclEvaluate(ExpStr)
+   LclToken = coroutine.wrap(LclToken)
+   LclToken(ExpStr)
+   local Val = LclExpression()
+   if Token ~= "end" then
+      error("unexpected token at position " .. Pos)
+   end
+   return Val
+ end
+
+-- Evaluates the specified expression. If successful, returns result of
+-- expression. If the expression can't be evaluated, (nil, error message, error
+-- position) is returned.
+
+function Evaluate(ExpStr)
+   local ErrPos
+   local Code, Val = pcall(LclEvaluate, ExpStr)
+   if Code then
+     Code, Val = Val, nil</pre><pre class="programlisting">else
+     Code, ErrPos = nil, Pos
+   end
+   return Code, Val, ErrPos
+ end
+
+ local ExpStr = arg[1] or "1 + 1"
+ local Result, ErrStr, ErrPos = Evaluate(ExpStr)
+ io.write("Expression: ", ExpStr, "\n")
+ if Result then
+   io.write("Result: ", Result, "\n")
+ else
+   io.write(string.rep(' ', ErrPos + 11), "^\n")
+   io.write("Error: ", ErrStr, "\n")
+ end</pre></li><li class="listitem"><p>Save the file as <code class="literal">expr.lua</code>.</p></li><li class="listitem"><p>Using the Lua interpreter, try the evaluator out with the following expressions:</p><pre class="programlisting"><strong class="userinput"><code>lua expr.lua "1 + 2 * 3 / 4 * 5 - 6"</code></strong>
+Expression: 1 + 2 * 3 / 4 * 5 - 6
+Result: 2.5
+
+<strong class="userinput"><code>lua expr.lua "(1 + 2) * 3 / 4 * (5 - 6)"</code></strong>
+Expression: (1 + 2) * 3 / 4 * (5 - 6)
+Result: −2.25
+
+<strong class="userinput"><code>lua expr.lua "1+1"</code></strong>
+Expression: 1+1
+Result: 2
+
+<strong class="userinput"><code>lua expr.lua "1++1"</code></strong>
+Expression: 1++1
+Result: 2
+
+<strong class="userinput"><code>lua expr.lua "1+++1"</code></strong>
+Expression: 1+++1
+              ^
+Error: expr.lua:75: expr.lua:18: expected number or '(' at position 3
+
+<strong class="userinput"><code>lua expr.lua "1 1"</code></strong>
+Expression: 1 1
+              ^
+Error: expr.lua:42: expr.lua:25: expected operator at position 3
+
+<strong class="userinput"><code>lua expr.lua "1 % 2"</code></strong>
+Expression: 1 % 2
+              ^
+Error: expr.lua:42: expr.lua:25: expected operator at position 3
+
+<strong class="userinput"><code>lua expr.lua "1 + 1 )"</code></strong>
+Expression: 1 + 1 )
+              ^</pre><pre class="programlisting">Error: expr.lua:90: unexpected token at position 7
+
+<strong class="userinput"><code>lua expr.lua "( 1 + 1</code></strong>
+Expression: ( 1 + 1
+              ^
+Error: expr.lua:49: missing ')' at position 8
+
+<strong class="userinput"><code>lua expr.lua "(((1)))"</code></strong>
+Expression: (((1)))
+Result: 1</pre></li></ol></div></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="how_it_works-026"></a>How It Works</h3></div></div></div><p>A parser's job is to analyze the elements of an expression. In the four-function expression evaluator presented here, the method of <span class="emphasis"><em>recursive descent</em></span> is used. The idea is to treat an expression as a series of terms to be added or subtracted. Each term is treated similarly as a series of factors to be multiplied or divided. And each factor is treated as either a number or as a parenthesized expression. In the last case, the same function used to analyze the outermost expression can be called recursively to analyze the subexpression. This can be repeated to any practical depth. With this method, the precedence of the various operators is built into the structure of the parser.<a id="IDX-CHP-9-0075" class="indexterm"></a><a id="IDX-CHP-9-0076" class="indexterm"></a><a id="IDX-CHP-9-0077" class="indexterm"></a><a id="IDX-CHP-9-0078" class="indexterm"></a><a id="IDX-CHP-9-0079" class="indexterm"></a></p><p>The task of parsing requires the services of a tokenizer, a routine that identifies constituent elements. The tokenizer is called from various parts of the parser, and it must keep track of where it's been so that it can effectively collect the next available token. Additionally, the tokenizer is called in a context-sensitive manner. Based on where in the parser the request for a token is made, either a factor (a number or opening parenthesis) or an operator (+, -, *, /, closing parenthesis, or end of expression) is requested. This prevents a simple loop from simply collecting all tokens and placing them into a table prior to calling the parser. The context-sensitivity is required; for example, to recognize −3 as a number in one case, and as the subtraction operator followed by a number in another.</p><p>Here are some aspects of this program that warrant special note:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>The combination of <code class="literal">pcall</code> and coroutines doesn't present any problems here. The <code class="literal">LclToken</code> coroutine yields repeatedly as it generates tokens, but always to a thread running in the same protected call. Note also that there are no open resources such as files that are left unclosed when an expression error is encountered.</p></li><li class="listitem"><p>The <code class="literal">coroutine.wrap</code> is used to convert <code class="literal">LclToken</code> from a variable that references an ordinary function to one that references a coroutine that can be invoked like a function—without explicitly using <code class="literal">coroutine.resume</code>.</p></li><li class="listitem"><p>The body of <code class="literal">LclToken</code> is not intended to return. If <code class="literal">LclToken</code> is called after the "end" token (indicating the end of the expression) has been retrieved, a descriptive error is issued. Had <code class="literal">LclToken</code> returned rather than yielded after setting the "end" token, and if the coroutine was resumed, the less helpful "cannot resume dead coroutine" message would have been displayed.</p></li></ul></div></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="iterating_with_coroutines"></a>Iterating with Coroutines</h2></div></div></div><p>In <a class="link" href="ch04.html" title="Chapter 4. Working with Tables">Chapter 4</a>, you learned how to create an iterator, a mechanism that encapsulates many details of looping through sequences. Recall that behind the scenes, Lua calls your iterator function repeatedly to produce successive return values. Coroutines are useful in this context because they don't have to be run from their beginning at each call.</p><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="try_it_out_colon_looping_backwards_with"></a>Try It Out: Looping Backwards with a Coroutine Iterator</h3></div></div></div><p>In this Try It Out, you'll write a new version of the <code class="literal">ReverseIPairs</code> iterator factory that you first saw in <a class="link" href="ch04.html" title="Chapter 4. Working with Tables">Chapter 4</a>. This one will use a coroutine to achieve the same goal of iterating through an array in reverse order.<a id="IDX-CHP-9-0080" class="indexterm"></a><a id="IDX-CHP-9-0081" class="indexterm"></a><a id="IDX-CHP-9-0082" class="indexterm"></a><a id="IDX-CHP-9-0083" class="indexterm"></a><a id="IDX-CHP-9-0084" class="indexterm"></a><a id="IDX-CHP-9-0085" class="indexterm"></a><a id="IDX-CHP-9-0086" class="indexterm"></a></p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Create a new file with your text editor and include the follow script:</p><pre class="programlisting">local function ReverseIPairs(Arr)
+  local function Iter()
+    for J = #Arr, 1, −1 do
+      coroutine.yield(J, Arr[J])
+    end
+  end
+  return coroutine.wrap(Iter)
+end
+
+for J, Str in ReverseIPairs({"one", "two", "three"}) do
+  print(J, Str)
+end</pre></li><li class="listitem"><p>Save the file as <code class="literal">co_iter.lua</code>.</p></li><li class="listitem"><p>Run the script using the Lua interpreter as follows:</p><pre class="programlisting"><strong class="userinput"><code>lua co_iter.lua</code></strong>
+3       three
+2       two
+1       one</pre></li></ol></div></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="how_it_works-027"></a>How It Works</h3></div></div></div><p>The <code class="literal">ReverseIPairs</code> iterator factory returns only one value, a function that wraps <code class="literal">Iter</code> as a coroutine body. No state information needs to be returned; that's all contained in the coroutine itself. When the loop within <code class="literal">Iter</code> is complete, <code class="literal">nil</code> is implicitly returned. This signals the end of the generic <code class="literal">for</code> loop to Lua, and the iterator function is not called anymore.</p></div></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="handling_events_simply"></a>Handling Events Simply</h1></div></div></div><p>In the era of dumb terminals, timesharing servers and near-total disregard for user-friendliness (veteran programmers refer to this time period as the "good old days"), interactive programs were <span class="emphasis"><em>modal</em></span>—all user input was channeled into one screen at a time. In the middle of one screen, a user simply couldn't access another. The advantages were all with the software developer. Programming modal screens was easy and promoted clear code that was straightforward to follow because screen functions blocked the way a call to open a file blocked—they simply didn't return until the screen was either approved or cancelled. The ease that programmers had with this model was paid for with user frustration. The limitations of this kind of program became apparent even before the era of GUIs. The solution was for all application input events to be centrally queued and dispatched to appropriate handlers. This new paradigm allowed users to switch between open screens at the cost of complicated program code. Given the constraint of a single application call stack, the event-driven approach led to a programming model that is still pervasive. The following sections describe how this model works, with the focus on the call stack.</p><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="the_event_loop"></a>The Event Loop</h2></div></div></div><p>When an event-driven application starts, it typically takes care of some initialization work. The function calls that take place here result in some stack activity.<a id="IDX-CHP-9-0087" class="indexterm"></a><a id="IDX-CHP-9-0088" class="indexterm"></a><a id="IDX-CHP-9-0089" class="indexterm"></a></p><p>At some point, usually right after a window or some other <span class="emphasis"><em>event sink</em></span> is created, the application begins a loop in which events are requested by calling a system function. In the X Window System, this is the <code class="literal">XNextEvent</code> function; in Windows, it is the <code class="literal">GetMessage</code> function. The height of the stack at this point indicates a "low watermark." Until the event retrieval loop is terminated prior to the end of the program, the call stack will not shrink below this level. It will, however, be quite active above this level as various functions are called in response to particular events, such as keyboard presses, mouse actions, and window-drawing requests. In a well-functioning application, the processing of any event should take no longer than a tenth of a second or so to avoid choppy window refreshes and sluggish response times.<a id="IDX-CHP-9-0090" class="indexterm"></a><a id="IDX-CHP-9-0091" class="indexterm"></a></p><p>The event retrieval function is a <span class="emphasis"><em>blocking</em></span> function—it does not return until an event occurs. It is where an interactive application yields control to the system and generally spends most its time waiting. After handling an event, program control has to return to the event loop to retrieve the next event. This implies that the application call stack has to return to its low watermark, meaning that the various event handlers that are called must find some other means than local variables to retain the state needed for continuity. Because of their integrated approach to methods and fields, object-oriented solutions abound in event-driven systems. For example, a window object can store fields such as list contents and control properties that persist between event notifications.<a id="IDX-CHP-9-0092" class="indexterm"></a><a id="IDX-CHP-9-0093" class="indexterm"></a></p><p>Modal windows are supported in this single call stack model, but they have the unfortunate consequence of disabling other active windows, preventing users from switching from one window to another within the application. The window created with a blocking call to <code class="literal">DialogBox</code> in the Windows API is an example of a modal window. In order to block, such a window is implemented with its own event loop. The modal window's event loop allows other windows to be redrawn when needed, but only the modal window itself is permitted to receive user input. The disabling of other windows prevents problems with variables maintained in the stack between the low watermark and the point at which the modal event loop is implemented. After the modal window is dismissed, you wouldn't want references to other windows that may have been closed or altered. Any practical number of modal windows can be stacked in a chain, but the limitation of only one window that can receive user input makes this technique suitable only for small dialog boxes that can be cancelled without hardship if the user needs to work in another window. In other words, a modal window is easy for the programmer and frustrating for the user.<a id="IDX-CHP-9-0094" class="indexterm"></a></p><p>If you have reached the conclusion that it is the single stack model that prevents switchable, blocking windows, you are correct. What is needed is a window event handler that has its own stack. The solution is to implement this handler as a coroutine. Giving users the flexibility of switching between windows while implementing them, behind the scenes, as blocking windows is a remarkable capability of coroutines. It dramatically simplifies the development of event-driven programs.</p><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="try_it_out_colon_handling_events_with_co"></a>Try It Out: Handling Events with Coroutines</h3></div></div></div><p>In order to focus on the essential structure of a coroutine-based event handling module, the following program uses the command line shell to simulate how windows would behave in a GUI. This not only keeps the code free of a lot of low-level windowing code, it allows you to test it in a pure, platform-independent Lua environment.</p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>With your text editor, create a new file with the following contents:</p><div class="blockquote"><blockquote class="blockquote"><p>As you can see, there is a lot of code here, so this is a good place to remind you that this and every other script in this book is available from <code class="systemitem">wrox.com</code>.</p></blockquote></div><pre class="programlisting">local Window, Lcl = {}, {}
+
+-- Queue of posted event messages
+
+Lcl.MsgQueue = {}
+
+-- Window structure
+--    Parent: window object of parent
+--    Id: string identifier, e.g. 1.2.5 for 5th child of 2nd child of window 1
+--    Co: coroutine(Fnc) blocks until terminating event
+--    ChildCount: number of active children
+--    ChildSerial: used for naming new children
+--    ChildList: associative array keyed by child window objects
+--    Close: assigned the terminating message (usually "cancel" or "ok")
+--    User: table passed to handler to hold data that must persist from event to
+--      event
+
+-- List of window structures keyed by Id
+
+Lcl.WindowList = {}
+
+-- Currently active window
+
+Lcl.WindowActive = nil
+
+-- Value of message to indicate that associated window should be unblocked
+
+Lcl.MsgReturn = "\000"
+
+-- Display all active windows
+
+function Lcl.Show()
+  local List = {}
+  for Id, Wnd in pairs(Lcl.WindowList) do
+    table.insert(List, Wnd.Close and (Id .. " (pending closure)") or Id)
+  end
+  table.sort(List)
+  for J, Id in ipairs(List) do
+    io.write(Id, "\n")
+  end
+end
+
+-- This function is called when an event occurs that could result in the return
+-- of a window call.
+
+function Lcl.Destroy(Wnd)
+  if Wnd.Close and Wnd.ChildCount == 0 then
+    io.write("Unblocking window ", Wnd.Id, "\n")
+    table.insert(Lcl.MsgQueue, {Wnd, Lcl.MsgReturn})
+  end</pre><pre class="programlisting">end
+
+-- Show some help text
+
+function Lcl.Help()
+  io.write("Type 'show' to see all active windows\n")
+  io.write("Type 'window_id msg' to send message to window\n")
+  io.write("Standard messages are 'create', 'ok' and 'cancel'\n")
+end
+
+-- Simulate the generation of a window event. For a windowed application, this
+-- would typically originate with the graphical shell (Windows: GetMessage,
+-- XLib: XNextEvent. No coroutine yielding occurs here, so this can be a
+-- binding to C.
+
+function Lcl.EventGet()
+ local Wnd, Msg
+ if Lcl.MsgQueue[1] then -- If event is queued, retrieve the first one in
+    local Rec = table.remove(Lcl.MsgQueue, 1)
+    Wnd, Msg = Rec[1], Rec[2]
+ else -- Wait for event from user
+    while not Msg do
+      io.write("Cmd&gt; ")
+      local Str = io.read()
+      Str = string.gsub(Str, "^ *(.-) *$", "%1")
+      Str = string.lower(Str)
+      if Str == "help" or Str == "?" then
+        Lcl.Help()
+      elseif Str == "show" then
+        Lcl.Show()
+      else -- Pass message along to designated window
+        local IdStr, MsgStr = string.match(Str, "(%S+)%s+(%S+)")
+        if IdStr then
+          Wnd = Lcl.WindowList[IdStr]
+          if Wnd then
+            if not Wnd.Close then
+              Msg = MsgStr
+            else
+              io.write("Window ", IdStr, " is inactive\n")
+          end
+        else
+          io.write("Unknown window: ", IdStr, "\n")
+        end
+      else
+        io.write("Expecting 'help', 'show' or 'window_id msg'\n")
+      end
+    end
+  end
+end
+return Wnd, Msg
+end
+
+-- Main event loop. All coroutines are resumed from this function and yield
+-- back to it.
+
+function Lcl.EventLoop()</pre><pre class="programlisting">local Wnd, Msg
+local Loop = true
+while Loop do
+  Wnd, Msg = Lcl.EventGet()
+  if Wnd then
+    Lcl.WindowActive = Wnd
+    if Msg == Lcl.MsgReturn then
+       -- Resume blocking window call
+       if Wnd.Co then
+           coroutine.resume(Wnd.Co, Wnd.Close)
+       else
+          Loop = false
+         Msg = Wnd.Close
+       end
+    else
+      -- Non-terminating message was received. Notify window in new coroutine
+      -- rather than direct function call because a new blocking window may
+      -- be raised.
+      local Co = coroutine.create(Wnd.Fnc)
+      coroutine.resume(Co, Wnd.User, Msg)
+    end
+  end
+ end
+ return Msg
+end
+
+function Window.Show(Fnc)
+  local Parent = Lcl.WindowActive -- Nil for first window shown
+  local Msg, Id
+  if Parent then
+     Parent.ChildSerial = Parent.ChildSerial + 1
+     Id = Parent.Id .. "." .. Parent.ChildSerial
+  else -- First window
+    Lcl.Help()
+    Id = "1"
+end
+local Co = coroutine.running()
+local Wnd = {Parent = Parent, Co = Co, Id = Id, Fnc = Fnc,
+    ChildCount = 0, ChildSerial = 0, ChildList = {}, User = {Id = Id}}
+io.write("Creating window ", Wnd.Id, "\n")
+table.insert(Lcl.MsgQueue, {Wnd, "create"})
+Lcl.WindowList[Id] = Wnd
+if Parent then
+    assert(Co)
+    Parent.ChildList[Wnd] = true
+    Parent.ChildCount = Parent.ChildCount + 1
+    -- We're running in a coroutine; yield back to event loop. The current
+    -- coroutine will not be resumed until the newly created window and all of
+    -- its descendent windows have been destroyed. This happens when a
+    -- Lcl.MsgReturn is posted for this window.
+    Msg = coroutine.yield()
+    Parent.ChildCount = Parent.ChildCount - 1
+    Parent.ChildList[Wnd] = nil
+    -- Close parent if it's in pending state
+    Lcl.Destroy(Parent)
+ else</pre><pre class="programlisting">assert(not Co)
+   -- We're running in main thread; call event loop and don't return
+   -- until the loop ends
+   Msg = Lcl.EventLoop()
+ end
+ Lcl.WindowList[Id] = nil
+ return Msg
+end
+
+function Window.Close(Msg)
+  local Wnd = Lcl.WindowActive
+  Wnd.Close = Msg or "destroy"
+  Lcl.Destroy(Wnd)
+end
+
+return Window</pre></li><li class="listitem"><p>Save this file as <code class="literal">window.lua</code>.</p></li><li class="listitem"><p>Create another new file with the following contents:</p><pre class="programlisting">local Window = require("window")
+
+-- Sample window message handler.
+
+local function SampleWindow(Wnd, Msg)
+  Wnd.Serial = (Wnd.Serial or 0) + 1
+  io.write("Window ", Wnd.Id, ", message ", Msg, ", serial ", Wnd.Serial, "\n")
+  if Msg == "ok" or Msg == "cancel" then
+    io.write("Calling Window.Close on ", Wnd.Id, "\n")
+    Window.Close(Msg)
+    io.write("Called Window.Close on ", Wnd.Id, "\n")
+  elseif Msg == "button" or Msg == "new" then
+    local Time = os.date("%X")
+    io.write("Calling Window.Show from ", Wnd.Id, " (", Time, ")\n")
+    local Status = Window.Show(SampleWindow)
+    io.write("Called Window.Show from ", Wnd.Id, ", child returned ",
+       Status, " (", Time, ")\n")
+  end
+end
+
+-- Main statements
+
+io.write("Application: starting\n")
+local Status = Window.Show(SampleWindow)
+io.write("Window returned ", Status, "\n")
+io.write("Application: ending\n")</pre></li><li class="listitem"><p>Save this script as <code class="literal">window_app.lua</code>.</p></li><li class="listitem"><p>Make sure that <code class="literal">?.lua</code> is specified in your LUA_PATH environment variable. Invoke the <code class="literal">window_app.lua</code> script and simulate a simple session in which a main window and a child window are created and, in reverse order, closed:</p><pre class="programlisting"><strong class="userinput"><code>lua window_app.lua</code></strong>
+Application: starting
+Type 'show' to see all active windows</pre><pre class="programlisting">Type 'window_id msg' to send message to window
+Standard messages are 'create', 'ok' and 'cancel'
+Creating window 1
+Window 1, message create, serial 1
+Cmd&gt; <strong class="userinput"><code>1 mouse</code></strong>
+Window 1, message mouse, serial 2
+Cmd&gt; <strong class="userinput"><code>1 keypress</code></strong>
+Window 1, message keypress, serial 3
+Cmd&gt; <strong class="userinput"><code>1 new</code></strong>
+Window 1, message new, serial 4
+Calling Window.Show from 1 (09:11:25)
+Creating window 1.1
+Window 1.1, message create, serial 1
+Cmd&gt; <strong class="userinput"><code>show</code></strong>
+1
+1.1
+Cmd&gt; <strong class="userinput"><code>1.1 ok</code></strong>
+Window 1.1, message ok, serial 2
+Calling Window.Close on 1.1
+Unblocking window 1.1
+Called Window.Close on 1.1
+Called Window.Show from 1, child returned ok (09:11:25)
+Cmd&gt; <strong class="userinput"><code>1 mouse</code></strong>
+Window 1, message mouse, serial 5
+Cmd&gt; <strong class="userinput"><code>1 ok</code></strong>
+Window 1, message ok, serial 6
+Calling Window.Close on 1
+Unblocking window 1
+Called Window.Close on 1
+Window returned ok
+Application: ending</pre></li><li class="listitem"><p>Invoke the script again. This time, build up a window tree and experiment with closing the windows in something other than reverse order, like this:</p><pre class="programlisting"><strong class="userinput"><code>lua window_app.lua</code></strong>
+Application: starting
+Type 'show' to see all active windows
+Type 'window_id msg' to send message to window
+Standard messages are 'create', 'ok' and 'cancel'
+Creating window 1
+Window 1, message create, serial 1
+Cmd&gt; <strong class="userinput"><code>1 new</code></strong>
+Window 1, message new, serial 2
+Calling Window.Show from 1 (09:03:18)
+Creating window 1.1
+Window 1.1, message create, serial 1
+Cmd&gt; <strong class="userinput"><code>1 new</code></strong>
+Window 1, message new, serial 3
+Calling Window.Show from 1 (09:03:20)
+Creating window 1.2
+Window 1.2, message create, serial 1
+Cmd&gt; <strong class="userinput"><code>1 new</code></strong>
+Window 1, message new, serial 4</pre><pre class="programlisting">Calling Window.Show from 1 (09:03:21)
+Creating window 1.3
+Window 1.3, message create, serial 1
+Cmd&gt; <strong class="userinput"><code>1.1 new</code></strong>
+Window 1.1, message new, serial 2
+Calling Window.Show from 1.1 (09:03:28)
+Creating window 1.1.1
+Window 1.1.1, message create, serial 1
+Cmd&gt; <strong class="userinput"><code>1.2 new</code></strong>
+Window 1.2, message new, serial 2
+Calling Window.Show from 1.2 (09:03:31)
+Creating window 1.2.1
+Window 1.2.1, message create, serial 1
+Cmd&gt; <strong class="userinput"><code>1.2 new</code></strong>
+Window 1.2, message new, serial 3
+Calling Window.Show from 1.2 (09:03:33)
+Creating window 1.2.2
+Window 1.2.2, message create, serial 1
+Cmd&gt; <strong class="userinput"><code>1.2.2 new</code></strong>
+Window 1.2.2, message new, serial 2
+Calling Window.Show from 1.2.2 (09:03:39)
+Creating window 1.2.2.1
+Window 1.2.2.1, message create, serial 1
+Cmd&gt; <strong class="userinput"><code>show</code></strong>
+1
+1.1
+1.1.1
+1.2
+1.2.1
+1.2.2
+1.2.2.1
+1.3
+Cmd&gt; <strong class="userinput"><code>1.2.1 ok</code></strong>
+Window 1.2.1, message ok, serial 2
+Calling Window.Close on 1.2.1
+Unblocking window 1.2.1
+Called Window.Close on 1.2.1
+Called Window.Show from 1.2, child returned ok (09:03:31)
+Cmd&gt; <strong class="userinput"><code>1.3 ok</code></strong>
+Window 1.3, message ok, serial 2
+Calling Window.Close on 1.3
+Unblocking window 1.3
+Called Window.Close on 1.3
+Called Window.Show from 1, child returned ok (09:03:21)
+Cmd&gt; <strong class="userinput"><code>show</code></strong>
+1
+1.1
+1.1.1
+1.2
+1.2.2
+1.2.2.1
+Cmd&gt; <strong class="userinput"><code>1 ok</code></strong>
+Window 1, message ok, serial 5
+Calling Window.Close on 1</pre><pre class="programlisting">Called Window.Close on 1
+Cmd&gt; <strong class="userinput"><code>1.1 ok</code></strong>
+Window 1.1, message ok, serial 3
+Calling Window.Close on 1.1
+Called Window.Close on 1.1
+Cmd&gt; <strong class="userinput"><code>show</code></strong>
+1 (pending closure)
+1.1 (pending closure)
+1.1.1
+1.2
+1.2.2
+1.2.2.1
+Cmd&gt; <strong class="userinput"><code>1.2.2 ok</code></strong>
+Window 1.2.2, message ok, serial 3
+Calling Window.Close on 1.2.2
+Called Window.Close on 1.2.2
+Cmd&gt; <strong class="userinput"><code>show</code></strong>
+1 (pending closure)
+1.1 (pending closure)
+1.1.1
+1.2
+1.2.2 (pending closure)
+1.2.2.1
+Cmd&gt; <strong class="userinput"><code>1.2.2.1 ok</code></strong>
+Window 1.2.2.1, message ok, serial 2
+Calling Window.Close on 1.2.2.1
+Unblocking window 1.2.2.1
+Called Window.Close on 1.2.2.1
+Unblocking window 1.2.2
+Called Window.Show from 1.2.2, child returned ok (09:03:39)
+Called Window.Show from 1.2, child returned ok (09:03:33)
+Cmd&gt; <strong class="userinput"><code>show</code></strong>
+1 (pending closure)
+1.1 (pending closure)
+1.1.1
+1.2
+Cmd&gt; <strong class="userinput"><code>1.2 ok</code></strong>
+Window 1.2, message ok, serial 4
+Calling Window.Close on 1.2
+Unblocking window 1.2
+Called Window.Close on 1.2
+Called Window.Show from 1, child returned ok (09:03:20)
+Cmd&gt; <strong class="userinput"><code>1.1.1 ok</code></strong>
+Window 1.1.1, message ok, serial 2
+Calling Window.Close on 1.1.1
+Unblocking window 1.1.1
+Called Window.Close on 1.1.1
+Unblocking window 1.1
+Called Window.Show from 1.1, child returned ok (09:03:28)
+Unblocking window 1
+Called Window.Show from 1, child returned ok (09:03:18)
+Window returned ok
+Application: ending</pre></li></ol></div></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="how_it_works-028"></a>How It Works</h3></div></div></div><p>There are two functions exported from the window module: <code class="literal">Window.Show</code> and <code class="literal">Window.Close</code>. The first is used to raise a window, and the second is used to signal its closure. In a full-featured window library, some sort of descriptive data structure would typically be passed to <code class="literal">Window.Show</code> that describes the controls and parameters of the window to be displayed.<a id="IDX-CHP-9-0095" class="indexterm"></a><a id="IDX-CHP-9-0096" class="indexterm"></a><a id="IDX-CHP-9-0097" class="indexterm"></a><a id="IDX-CHP-9-0098" class="indexterm"></a></p><p>When a window is raised, it is associated with a function that acts as its event handler. For simplicity in this example, the function <code class="literal">SampleWindow</code> is used for all windows, but typically you would have one handler for each unique window. Any event message that pertains to a specific window will be sent to its event handler. Here, the only messages that <code class="literal">SampleWindow</code> responds to are <code class="literal">ok, cancel, button</code>, and <code class="literal">new</code>. In an actual event-driven application, messages would be more generic (for example, <code class="literal">button click</code> rather than <code class="literal">ok</code>), and they would be accompanied by parameters that would provide additional details about the message.</p><p>Each event notification in this library is sent to the handler in a new thread. That is, with each new event, the event handler is instantiated as a coroutine and resumed with the event passed as an argument. This is done because the event dispatcher can't know which, if any, event will result in the application blocking in another call to <code class="literal">Window.Show</code>. Otherwise, it could call the event handler as a function for each event that it knew would not block because control would return promptly and it could return to the business of dispatching events.</p><p>A consequence of this model is that variables local to the handler are not shared between invocations. Here is a clarification of the tradeoff that is made:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>On one hand, a coroutine can repeatedly yield and be resumed. In this case, local variables are retained. The consumer-producer and expression evaluation programs are examples of this. In this type of arrangement, an event processing loop is placed in the scope of local variables that will be retained between yields.</p></li><li class="listitem"><p>On the other hand, a coroutine can yield and not be resumed until a particular event occurs—in this case, the window closure event. To allow a window event handler to behave this way, a new coroutine needs to be created using the handler as a body for each event notification. This approach gives you the advantage of blocking window calls, but requires you to find another place to store persistent data. In the window example, you can simply store persistent fields in the <code class="literal">Wnd</code> table argument that is passed to the handler for just this purpose.</p></li></ul></div><p>The important aspect to note as you run this program is that the calls to <code class="literal">Window.Show</code> are blocking calls. Even if <code class="literal">Window.Close</code> is called on a window, it will not return until all of its descendents are closed. (Incidentally, it would be a simple matter to adjust this behavior so that, when a window is closed, all of its active descendents are forced to close.) The capability to sequentially raise a window and wait for it to terminate frees your application code from much of the complexity often associated with interactive, event-driven programs.</p></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="yielding_to_another_coroutine"></a>Yielding to Another Coroutine</h2></div></div></div><p>A coroutine in Lua always yields back to the thread that resumed it. If you would rather specify a coroutine to which to yield, the function <code class="literal">Lcl.EventLoop</code> in the previous example gives you the first of two required steps. These steps are:</p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Implement a dispatcher that handles all resuming of coroutines.</p></li><li class="listitem"><p>When yielding, provide the dispatcher with enough information to resume the desired coroutine.</p></li></ol></div><p>In this framework, it will be the dispatcher thread to which all coroutines yield. If an argument of the yield, say the first, always specifies the desired coroutine to resume, the dispatcher can do this transparently on behalf of the yielding coroutine.</p></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="summary-029"></a>Summary</h1></div></div></div><p>In this chapter, you learned how to use Lua coroutines in a variety of situations to implement solutions that would otherwise be cumbersome. These include the following:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>Sequentially running multiple jobs</p></li><li class="listitem"><p>Retaining state as with an expression tokenizer</p></li><li class="listitem"><p>Implementing an iterator</p></li><li class="listitem"><p>Blocking on a call that returns an event</p></li></ul></div><p>You also learned the following coroutine concepts:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>Their capabilities derive from transferring control between threads that each have a dedicated call stack.</p></li><li class="listitem"><p>Only one thread is active at a time&gt;</p></li><li class="listitem"><p>The transfer of control between threads is done with a natural function-like mechanism, namely <code class="literal">coroutine.yield</code> and <code class="literal">coroutine.resume</code>, that permits the exchange of values.</p></li></ul></div><p>In the next chapter, you'll dust off your software development kit and learn how to extend Lua with routines that you'll program in C. In the meantime, try your hand at the following exercises.</p></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="exercises-030"></a>Exercises</h1></div></div></div><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Without actually running it, determine what the following script prints.</p><pre class="programlisting">local function F()
+  local J, K = 0, 1
+  coroutine.yield(J)
+  coroutine.yield(K)
+  while true do
+    J, K = K, J + K
+   coroutine.yield(K)
+  end
+end
+
+F = coroutine.wrap(F)
+
+ for J = 1, 8 do
+   print(F())
+ end</pre></li><li class="listitem"><p>Write a coroutine-based iterator named <code class="literal">JoinPairs</code> that pairs elements from parallel lists. For example, the following loop:</p><pre class="programlisting">for Name, Number in JoinPairs({"Sally", "Mary", "James"}, {12, 32, 7}) do
+  print(Name, Number)
+end</pre><p>should generate the following output:</p><pre class="programlisting">Sally 12
+Mary     32
+James    7</pre></li><li class="listitem"><p>In the producer-consumer example, the consumer thread resumes the producer thread. Modify the example so that this is turned around; that is, execute the producer function in the main thread and run the consumer as a coroutine.</p></li></ol></div></div></div></div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="ch08.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">8. Extending Lua&#39;s Behavior with Metamethods</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="ch10.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">10. Looking Under the Hood</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag">
+        
+        
+
+        
+          <p>You have 6 days left in your trial, Michaelschiner. Subscribe today. <a href="https://learning.oreilly.com/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+        
+
+<footer class="pagefoot t-pagefoot">
+  <a href="ch09.html#" class="icon-up" onclick="window.Appcues.track('JumpTop_HeronBook')"><div class="visuallyhidden">Back to top</div></a>
+  <ul class='js-footer-nav'>
+  
+    
+    <li><a href="https://learning.oreilly.com/public/support/">Support</a></li>
+    
+    <li><a href="https://learning.oreilly.com/accounts/logout/">Sign Out</a></li>
+    
+  
+  
+  </ul>
+  <span class="copyright">&#169; 2021 <a href="https://learning.oreilly.com/" target="_blank">O'Reilly Media, Inc</a>.</span>
+  
+    
+    <a href="https://www.oreilly.com/terms/">Terms of Service</a> 
+     / 
+    
+    <a href="https://learning.oreilly.com/privacy">Privacy Policy</a> 
+    
+    
+  
+</footer>
+
+      
+    
+    <script src="https://learning.oreilly.com/jsi18n/web/" charset="utf-8"></script>
+    <script src="https://learning.oreilly.com/library/jsi18n/appcache/" charset="utf-8"></script>
+  </body>
+</html>

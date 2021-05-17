@@ -1,0 +1,1039 @@
+<!--[if IE]><![endif]--><!DOCTYPE html><!--[if IE 8]><html class="no-js ie8 oldie" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/coding-roblox-games/9781800561991/B16623_03_Final_JC_ePub.xhtml"
+data-csrf-cookie="csrfsafari"
+
+
+  data-user-id="11366403"
+  data-user-uuid="ce47de5b-ce80-49f0-b5cd-c60d3d33b198"
+  data-username="michaelschiner"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/13/2021"
+
+
+  data-archive="9781800561991"
+  data-publishers="Packt Publishing"
+
+
+
+  data-htmlfile-name="B16623_03_Final_JC_ePub.xhtml"
+  data-epub-title="Coding Roblox Games Made Easy" data-debug=0 data-testing=0><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/coding-roblox-games/9781800561991/B16623_03_Final_JC_ePub.xhtml"
+data-csrf-cookie="csrfsafari"
+
+
+  data-user-id="11366403"
+  data-user-uuid="ce47de5b-ce80-49f0-b5cd-c60d3d33b198"
+  data-username="michaelschiner"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/13/2021"
+
+
+  data-archive="9781800561991"
+  data-publishers="Packt Publishing"
+
+
+
+  data-htmlfile-name="B16623_03_Final_JC_ePub.xhtml"
+  data-epub-title="Coding Roblox Games Made Easy" data-debug=0 data-testing=0><!--<![endif]--><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="author" content="O'Reilly Media" /><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"/><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9781800561991"/><link rel="shortcut icon" href="https://www.oreilly.com/favicon.ico" /><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"/><meta property="twitter:account_id" content="4503599627559754" /><link rel="shortcut icon" href="https://learning.oreilly.com/favicon.ico" type="image/x-icon"><link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'><title>Chapter 3: Introduction to Roblox Lua - Coding Roblox Games Made Easy</title><link rel="stylesheet" href="https://learning.oreilly.com/static/CACHE/css/output.5bdb4fcb2aad.css" type="text/css"><link rel="stylesheet" type="text/css" href="https://learning.oreilly.com/static/css/annotator.e3b0c44298fc.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><style type="text/css" title="ibis-book">
+    #sbo-rt-content div,#sbo-rt-content p,#sbo-rt-content h1,#sbo-rt-content h2,#sbo-rt-content h3,#sbo-rt-content h4{margin:0;orphans:2;widows:2}#sbo-rt-content p{margin-top:1rem}#sbo-rt-content article,#sbo-rt-content aside,#sbo-rt-content details,#sbo-rt-content figcaption,#sbo-rt-content figure,#sbo-rt-content footer,#sbo-rt-content header,#sbo-rt-content hgroup,#sbo-rt-content main,#sbo-rt-content menu,#sbo-rt-content nav,#sbo-rt-content section,#sbo-rt-content summary{display:block}#sbo-rt-content [hidden],#sbo-rt-content template,#sbo-rt-content .hidden{display:none}#sbo-rt-content a{background-color:transparent}#sbo-rt-content a:active,#sbo-rt-content a:hover{outline:0}#sbo-rt-content abbr[title]{border-bottom:1px dotted}#sbo-rt-content b,#sbo-rt-content strong,#sbo-rt-content .source-inline{font-weight:bold}#sbo-rt-content dfn,#sbo-rt-content .chapter-number,#sbo-rt-content .callout,#sbo-rt-content .callout-heading,#sbo-rt-content .author-quote{font-style:italic}#sbo-rt-content mark{background:#ff0;color:#000}#sbo-rt-content small{font-size:80%}#sbo-rt-content sub,#sbo-rt-content sup,#sbo-rt-content .subscript,#sbo-rt-content .superscript{font-size:75%;line-height:0;position:relative;vertical-align:baseline}#sbo-rt-content sup,#sbo-rt-content .superscript{top:-.5em}#sbo-rt-content sub,#sbo-rt-content .subscript{bottom:-.25em}#sbo-rt-content img{border:0}#sbo-rt-content svg:not(:root){overflow:hidden}#sbo-rt-content div.IMG---Figure{margin-top:1rem;margin-left:auto;margin-right:auto;text-align:center;width:100%;max-width:100%;page-break-inside:avoid !important;page-break-before:auto}#sbo-rt-content div.figure-logo{text-align:left;width:40%;max-width:40%}#sbo-rt-content hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}#sbo-rt-content html{font-size:62.5%}#sbo-rt-content div{font-size:1.5em;line-height:1.6;font-weight:400;color:#222}#sbo-rt-content h1,#sbo-rt-content h2,#sbo-rt-content h3,#sbo-rt-content h4,#sbo-rt-content .figure-caption{margin-top:1.2rem;margin-bottom:1rem;font-weight:normal}#sbo-rt-content .figure-caption{text-align:center}#sbo-rt-content .author-quote{text-align:left;margin-left:2rem}#sbo-rt-content .author-quote-source{text-align:right;font-style:italic;margin-left:2rem}#sbo-rt-content h1{font-family:serif;font-size:3.2rem;line-height:1.2;letter-spacing:.2rem;margin-top:2rem;margin-bottom:1.5rem}#sbo-rt-content .H1---Section-Part{font-family:serif;font-size:3rem;line-height:1.2;letter-spacing:.2rem;margin-top:2rem;margin-bottom:1.5rem;text-transform:uppercase}#sbo-rt-content h2{font-family:serif;font-size:2.4rem;line-height:1.25;letter-spacing:.15rem;margin-top:2rem;margin-bottom:1rem}#sbo-rt-content h3{font-family:serif;font-size:2rem;line-height:1.3;letter-spacing:.1rem;margin-top:2rem;margin-bottom:.5rem}#sbo-rt-content h4{font-family:serif;font-size:1.6rem;font-weight:bold;line-height:1.35;letter-spacing:.08rem;margin-top:2rem;margin-bottom:.5rem}#sbo-rt-content p{margin-top:1rem}#sbo-rt-content a{color:#1EAEDB}#sbo-rt-content a:hover{color:#f37121}#sbo-rt-content ul{font-family:serif;list-style:circle outside}#sbo-rt-content ol{font-family:serif;list-style:decimal outside}#sbo-rt-content ol,#sbo-rt-content ul{padding-left:1rem;margin-top:0}#sbo-rt-content ul ul,#sbo-rt-content ul ol,#sbo-rt-content ol ol,#sbo-rt-content ol ul{margin:0 0 1.5rem 2rem}#sbo-rt-content li{font-family:serif;margin-bottom:.5rem;margin-top:.5rem}#sbo-rt-content .callout-heading{font-family:sans-serif;font-size:2rem;line-height:1.5;letter-spacing:.05rem;text-transform:uppercase}#sbo-rt-content .callout{font-family:serif}#sbo-rt-content code,#sbo-rt-content kbd,#sbo-rt-content pre,#sbo-rt-content samp,#sbo-rt-content .source-code,#sbo-rt-content .source-inline,#sbo-rt-content .screen-inline{font-family:"CourierStd.otf",monospace;font-size:1.4rem}#sbo-rt-content pre{-epub-hyphens:none;-epub-ruby-position:over;font-size:1.4rem;margin-top:.3rem;margin-bottom:0;margin-left:5rem;margin-right:0;text-align:left;text-decoration:none;text-indent:-4.6rem}#sbo-rt-content p.source-code{font-family:"CourierStd.otf",monospace;-epub-hyphens:none;-epub-ruby-position:over;font-size:1.4rem;font-style:normal;font-variant:normal;font-weight:normal;line-height:1.1rem;margin-top:.3rem;margin-bottom:0;margin-left:5rem;margin-right:0;text-align:left;text-decoration:none;text-indent:-4.6rem}#sbo-rt-content .source-code-heading{font-family:"MinionPro",serif;margin-bottom:1.5rem;border-bottom:2px solid #424242;font-weight:bold}#sbo-rt-content .source-code-link{font-family:"CourierStd.otf",monospace;margin-top:1.5rem;border-top:2px solid #424242;font-style:italic}
+    </style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9781800561991/chapter/B16623_03_Final_JC_ePub.xhtml",
+          "book_id": "9781800561991",
+          "chapter_uri": "B16623_03_Final_JC_ePub.xhtml",
+          "position": 0,
+          "user_uuid": "ce47de5b-ce80-49f0-b5cd-c60d3d33b198",
+          "next_chapter_uri": "/library/view/coding-roblox-games/9781800561991/B16623_04_Final_JC_ePub.xhtml"
+        
+      },
+      title: "Coding Roblox Games Made Easy",
+      author_list: "Zander Brumbaugh",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false
+    };
+    // ]]></script><script src="https://learning.oreilly.com/static/js/src/modernizr.8e35451ddb64.js"></script><script>
+    
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+      window.PRIVACY_CONTROL_SWITCH = true;
+
+      window.PUBLISHER_PAGES = true;
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "https://learning.oreilly.com/api/v2/search/select/",
+        }
+      };
+  </script><link rel="canonical" href="B16623_03_Final_JC_ePub.xhtml.html"/><meta name="description" content=" Chapter 3: Introduction to Roblox Lua The Roblox Lua language is a fast, procedural programming language adapted from Lua. Lua was originally created in 1993 due to software ... "><meta property="og:title" content="Chapter 3: Introduction to Roblox Lua" /><meta itemprop="isPartOf" content="/library/view/coding-roblox-games/9781800561991/" /><meta itemprop="name" content="Chapter 3: Introduction to Roblox Lua" /><meta property="og:url" itemprop="url" content="https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/B16623_03_Final_JC_ePub.xhtml" /><meta property="og:site_name" content="Safari" /><meta property="og:image" itemprop="thumbnailUrl" content="https://learning.oreilly.com/library/cover/9781800561991/" /><meta property="og:description" itemprop="description" content=" Chapter 3: Introduction to Roblox Lua The Roblox Lua language is a fast, procedural programming language adapted from Lua. Lua was originally created in 1993 due to software ... "><meta itemprop="inLanguage" content="en" /><meta itemprop="publisher" content="Packt Publishing" /><meta property="og:type" content="book" /><meta property="og:book:isbn" itemprop="isbn" content="9781800561991" /><meta property="og:book:author" itemprop="author" content="Zander Brumbaugh" /><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@OReillyMedia"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: <%= font_size %> !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: <%= font_family %> !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: <%= column_width %>% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; URL=https://learning.oreilly.com/library/no-js/" /></noscript><script>
+    var dataLayer = window.dataLayer || [];
+
+    
+      window.medalliaVsgUserIdentifier = 'ce47de5b-ce80-49f0-b5cd-c60d3d33b198';
+      dataLayer.push({userIdentifier: 'ce47de5b-ce80-49f0-b5cd-c60d3d33b198'});
+      dataLayer.push({loggedIn: 'yes'});
+
+      
+        window.medalliaVsgAccountIdentifier = '29964b7b-68d8-4532-9a9b-32e089689c1f';
+        
+
+        window.medalliaVsgIsIndividual = true;
+        
+          
+          dataLayer.push({learningAccountType: 'free trial'});
+          
+        
+
+        
+      
+    
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+    (function () {
+      var VERSION = 'V1.1';
+      var AUTHOR = 'Awwad';
+      if (!window.GtmHelper)
+        window.GtmHelper = function () {
+          var instance = this;
+          var loc = document.location;
+          this.version = VERSION;
+          this.author = AUTHOR;
+          this.readCookie = function (name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+          };
+          this.createCookie = function (name, value, days, cookieDomain) {
+            var domain = "";
+            var expires = "";
+
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + Math.ceil(days * 24 * 60 * 60 * 1000));
+              var expires = " expires=" + date.toGMTString() + ";";
+            }
+
+            if (typeof (cookieDomain) != 'undefined')
+              domain = " domain=" + cookieDomain + "; ";
+
+            document.cookie = name + "=" + value + ";" + expires + domain + "path=/";
+          };
+
+          this.isDuplicated = function (currentTransactionId) {
+            // the previous transaction id:
+            var previousTransIdValue = this.readCookie("previousTransId");
+
+            if (currentTransactionId === previousTransIdValue) {
+              return true; // Duplication
+            } else {
+              return false;
+            }
+          };
+        }
+    })()
+  </script><script defer src="https://learning.oreilly.com/static/js/build/vendor.0eac897f11ed.js"></script><script defer src="https://learning.oreilly.com/static/js/build/reader.c745ea9296ac.js"></script></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts">
+
+    
+  <noscript> 
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+  
+
+
+<a href="B16623_03_Final_JC_ePub.xhtml.html#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li><a href="https://learning.oreilly.com/home/" class="l0 nav-icn"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.738 14H9.254v-3.676a.617.617 0 0 0-.621-.613H7.39a.617.617 0 0 0-.62.613V14H4.284a.617.617 0 0 1-.622-.613V10.22c0-.327.132-.64.367-.87l3.547-3.493a.627.627 0 0 1 .875 0l3.54 3.499c.234.229.366.54.367.864v3.167a.617.617 0 0 1-.62.613zM7.57 2.181a.625.625 0 0 1 .882 0l5.77 5.692-.93.92-5.28-5.209-5.28 5.208-.932-.919 5.77-5.692z" /></svg><span>Home</span></a></li><li class="search"><a href="B16623_03_Final_JC_ePub.xhtml.html#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"/></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="B16623_03_Final_JC_ePub.xhtml.html#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"/></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li class="flyout-parent"><a
+                href="B16623_03_Final_JC_ePub.xhtml.html#"
+                class="l1 nav-icn "
+                
+              ><?xml version="1.0" encoding="UTF-8"?><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M8,8 C6.34321755,8 5.00013,6.65691245 5.00013,5.00013 C5.00013,3.34334755 6.34321755,2.00026001 8,2.00026001 C9.65678245,2.00026001 10.99987,3.34334755 10.99987,5.00013 C10.99987,6.65691245 9.65678245,8 8,8 Z M2.33024571,11.3523547 L2.33774538,11.3523547 C3.7622187,9.70968996 5.82947484,8.76608166 8.00374984,8.76608166 C10.1780248,8.76608166 12.245281,9.70968996 13.6697543,11.3523547 C13.8892083,11.6177474 14.0062813,11.9530021 13.99974,12.2973138 L13.99974,13.99974 L2.00026001,13.99974 L2.00026001,12.2973138 C1.99371867,11.9530021 2.11079172,11.6177474 2.33024571,11.3523547 Z" id="path-1"></path></svg><span>Your O&#39;Reilly</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/profile/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Profile</span></a></li><li><a
+                    href="https://learning.oreilly.com/history/"
+                    class="l2 nav-icn"
+                    
+                  ><span>History</span></a></li><li><a
+                    href="https://learning.oreilly.com/playlists/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Playlists</span></a></li><li><a
+                    href="https://learning.oreilly.com/u/ce47de5b-ce80-49f0-b5cd-c60d3d33b198/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Highlights</span></a></li></ul></li><li ><a
+                href="https://learning.oreilly.com/answers/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M2.31032699,3.75609006 C4.65421571,1.41371359 8.45302454,1.41472092 10.7955702,3.75860838 C13.1381158,6.10249583 13.1369405,9.90130261 10.7930518,12.243847 C8.44916311,14.5863913 4.65018639,14.5852161 2.30780867,12.2413286 C-0.0346204845,9.89749489 -0.0334929936,6.09853298 2.31032699,3.75609006 Z M8.8198605,4.98016308 C7.34193969,3.86924672 5.23410194,3.98609692 3.88914868,5.33104946 C3.12814393,6.09032122 2.72818176,7.13880077 2.79015179,8.21201133 C2.79115912,8.23064692 2.79233434,8.24928252 2.79350956,8.26791811 L2.79350956,8.26791811 C2.83179539,8.8307976 2.9944077,9.37404287 3.26947292,9.86201677 L3.26947292,9.86201677 L2.77621706,11.7027432 C2.7699968,11.7259241 2.77662063,11.7506624 2.79359185,11.7676337 C2.8105631,11.7846049 2.83530144,11.7912287 2.85848233,11.7850085 L2.85848233,11.7850085 L4.69400524,11.2922565 C5.26306363,11.6167344 5.90703177,11.786885 6.56209849,11.7858479 C8.64827865,11.7858479 10.3395879,10.094542 10.3395879,8.00836292 C10.3405204,6.84135608 9.80105674,5.73967784 8.87862141,5.02482134 L8.87862141,5.02482134 L8.82825492,4.98654283 Z M13.7933062,2 C14.7073496,2.00009863 15.4482759,2.74110484 15.4482759,3.65514822 C15.4482759,4.32460943 15.0449926,4.92814782 14.4264842,5.18432286 C13.8079757,5.44049789 13.096053,5.29885769 12.6226979,4.82545158 C12.1493429,4.35204547 12.0077795,3.64010743 12.2640213,3.02162665 C12.5202631,2.40314587 13.123845,1.99992776 13.7933062,2 Z"/></svg><span>Answers</span></a></li><li class="flyout-parent"><a
+                href="B16623_03_Final_JC_ePub.xhtml.html#"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>queue icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 29.2C25.4 29.2 25.8 29.1 26.1 28.9L48.7 16.8C49.5 16.4 50 15.5 50 14.6 50 13.7 49.5 12.8 48.7 12.4L26.1 0.3C25.4-0.1 24.6-0.1 23.9 0.3L1.3 12.4C0.5 12.8 0 13.7 0 14.6 0 15.5 0.5 16.4 1.3 16.8L23.9 28.9C24.2 29.1 24.6 29.2 25 29.2ZM7.3 14.6L25 5.2 42.7 14.6 25 24 7.3 14.6ZM48.7 22.4L47.7 21.9 25 34.2 2.3 21.9 1.3 22.4C0.5 22.9 0 23.7 0 24.7 0 25.6 0.5 26.5 1.3 26.9L23.9 39.3C24.2 39.5 24.6 39.6 25 39.6 25.4 39.6 25.8 39.5 26.1 39.3L48.7 26.9C49.5 26.5 50 25.6 50 24.7 50 23.7 49.5 22.9 48.7 22.4ZM48.7 32.8L47.7 32.3 25 44.6 2.3 32.3 1.3 32.8C0.5 33.3 0 34.1 0 35.1 0 36 0.5 36.9 1.3 37.3L23.9 49.7C24.2 49.9 24.6 50 25 50 25.4 50 25.8 49.9 26.1 49.7L48.7 37.3C49.5 36.9 50 36 50 35.1 50 34.1 49.5 33.3 48.7 32.8Z"/></g></svg><span>Explore</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/topics/"
+                    class="l2 nav-icn"
+                    
+                  ><span>All Topics</span></a></li><li><a
+                    href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;formats=case%20study&amp;formats=learning%20path&amp;formats=live%20online%20training&amp;formats=notebook&amp;formats=oriole&amp;formats=video&amp;sort=popularity&amp;facet_json=true&amp;page=0&amp;collection_type=expert"
+                    class="l2 nav-icn"
+                    
+                  ><span>Most Popular Titles</span></a></li><li><a
+                    href="https://learning.oreilly.com/recommendations/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Recommended</span></a></li><li><a
+                    href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;sort=publication_date&amp;facet_json=true&amp;page=0"
+                    class="l2 nav-icn"
+                    
+                  ><span>Early Releases</span></a></li><li><a
+                    href="https://learning.oreilly.com/playlists/discover/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Shared Playlists</span></a></li><li><a
+                    href="https://learning.oreilly.com/resource-centers/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Resource Centers</span></a></li></ul></li><li class="flyout-parent"><a
+                href="B16623_03_Final_JC_ePub.xhtml.html#"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12.8 3.2A1.2 1.2 0 0 1 14 4.4v8.4a1.2 1.2 0 0 1-1.2 1.2H3.2A1.2 1.2 0 0 1 2 12.8V4.4a1.2 1.2 0 0 1 1.2-1.2h1.2V2h1.2v1.2h4.8V2h1.2v1.2h1.2zm-9.6 9.6h9.6V6.2H3.2v6.6zM8 9.5a1.35 1.35 0 1 1 0-2.7 1.35 1.35 0 0 1 0 2.7zm2.7 2.148v.552H5.3v-.552c0-.321.124-.634.355-.858a3.358 3.358 0 0 1 4.69 0c.23.224.355.537.355.858z" /></svg><span>Live Events</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/attend/"
+                    class="l2 nav-icn"
+                    
+                  ><span>All Events</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/architectural-katas/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Architectural Katas</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/ai/"
+                    class="l2 nav-icn"
+                    
+                  ><span>AI &amp; ML</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/strata/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Data Sci &amp; Eng</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/oscon/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Programming</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/infrastructure-ops/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Infra &amp; Ops</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/software-architecture/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Software Arch</span></a></li></ul></li><li class="flyout-parent"><a
+                href="B16623_03_Final_JC_ePub.xhtml.html#"
+                class="l1 nav-icn "
+                
+              ><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.6467109,4.35328907 L14.7964612,7.51003884 C15.0678463,7.78304342 15.0678463,8.22395603 14.7964612,8.49696061 L11.6467109,11.6467109 L10.6597892,10.6597892 L13.3055794,8 L10.6597892,5.34021084 L11.6467109,4.35328907 Z M4.35328907,11.6467109 L1.20353875,8.48996116 C0.932153749,8.21695658 0.932153749,7.77604397 1.20353875,7.50303939 L4.35328907,4.35328907 L5.34021084,5.34021084 L2.69442057,8 L5.34021084,10.6597892 L4.35328907,11.6467109 Z M5.84417089,11.4997226 L8.67194674,4.50027742 L10.1838269,4.50027742 L7.35605105,11.4997226 L5.84417089,11.4997226 Z" id="Mask"></path></svg><span>Interactive</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/scenarios/?classification=content-scenario"
+                    class="l2 nav-icn"
+                    
+                  ><span>Scenarios</span></a></li><li><a
+                    href="https://learning.oreilly.com/scenarios/?classification=sandbox-scenario"
+                    class="l2 nav-icn"
+                    
+                  ><span>Sandboxes</span></a></li><li><a
+                    href="https://learning.oreilly.com/interactive/?classification=jupyter-notebook"
+                    class="l2 nav-icn"
+                    
+                  ><span>Jupyter Notebooks</span></a></li></ul></li><li ><a
+                href="https://learning.oreilly.com/certifications/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M12.912 9.18L14 8.014l-1.088-1.18a.304.304 0 01-.075-.268L13.195 5l-1.535-.463a.313.313 0 01-.194-.194l-.462-1.537-1.565.358c-.09.03-.194 0-.269-.074L8.007 2 6.845 3.09a.303.303 0 01-.269.074l-1.565-.358-.462 1.537a.313.313 0 01-.194.194L2.82 5l.358 1.567a.26.26 0 01-.075.269L2 8.015l1.088 1.164c.075.075.09.18.075.269l-.358 1.567 1.535.463c.09.03.164.104.194.194l.462 1.537 1.565-.358c.015 0 .045-.015.075-.015.075 0 .15.03.209.074L8.007 14l1.163-1.09a.303.303 0 01.269-.074l1.565.358.462-1.537a.313.313 0 01.194-.194L13.195 11l-.358-1.567a.338.338 0 01.075-.254zm-6.046 1.37L4.41 8.26l1.16-1.244 1.767 1.649L10.4 5.6l1.202 1.202-4.242 4.243-.495-.495z"/></svg><span>Certifications</span></a></li><li ><a
+                href="https://learning.oreilly.com/preferences/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a></li><li ><a
+                href="https://learning.oreilly.com/public/support/"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M7.363 6.656a2.692 2.692 0 0 1-2.681-2.703c0-1.493 1.2-2.703 2.681-2.703a2.692 2.692 0 0 1 2.682 2.703c0 1.493-1.2 2.703-2.682 2.703zm4.023 2.027c-1.852 0-3.352 1.513-3.352 3.379H2v-1.534c-.006-.31.099-.612.295-.852a6.666 6.666 0 0 1 9.09-.993zm-.543.676h1.12v.304c.003.284.16.543.408.676a.766.766 0 0 0 .77 0l.303-.176.556.966-.302.176a.772.772 0 0 0-.362.676v.08a.772.772 0 0 0 .362.677l.302.21-.556.965-.302-.175a.766.766 0 0 0-.771 0 .778.778 0 0 0-.409.675v.352h-1.106v-.372a.778.778 0 0 0-.409-.676.766.766 0 0 0-.77 0l-.303.176-.556-.912.302-.176a.772.772 0 0 0 .362-.676v-.04-.04a.772.772 0 0 0-.362-.676l-.302-.176.556-.966.289.155a.766.766 0 0 0 .77 0 .778.778 0 0 0 .41-.676V9.36zm1.562 2.703c0-.271-.108-.531-.3-.722a1.001 1.001 0 0 0-.72-.292 1.01 1.01 0 0 0-.992 1.023 1.01 1.01 0 0 0 1.01 1.004 1.01 1.01 0 0 0 1.002-1.013z" /></svg><span>Support</span></a></li><li ><a
+                href="https://get.oreilly.com/email-signup.html"
+                class="l1 nav-icn "
+                target=&quot;_blank&quot;
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.564 2.263l2.172 2.174c.17.168.264.397.264.636V11a.6.6 0 0 1-.6.6h-.6V6.2h-6V2.6a.6.6 0 0 1 .6-.6h3.527c.239 0 .468.095.637.263zM2.6 14a.6.6 0 0 1-.6-.6V6.8a.6.6 0 0 1 .6-.6h1.903a1.2 1.2 0 0 1 .849.352L6.2 7.4H11a.6.6 0 0 1 .6.6v5.4a.6.6 0 0 1-.6.6H2.6zM11 5h1.8L11 3.2V5z" /></svg><span>Newsletters</span></a></li><li ><a
+                href="https://learning.oreilly.com/accounts/logout/"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M2.613 12.63A.607.607 0 0 1 2 12.03V3.602C2 3.269 2.274 3 2.613 3h5.515v1.204H3.226v7.223h4.902v1.203H2.613zM5.677 9.02V6.611h4.903V4.926a.301.301 0 0 1 .19-.274.31.31 0 0 1 .33.063l2.722 2.673a.594.594 0 0 1 0 .849L11.1 10.909a.31.31 0 0 1-.331.063.301.301 0 0 1-.19-.274V9.02H5.677z" /></svg><span>Sign Out</span></a></li></ul></div></li></ul></nav></header>
+
+
+
+      </div>
+      <div id="container" class="application">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="B16623_03_Final_JC_ePub.xhtml.html#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Coding Roblox Games Made Easy
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="B16623_03_Final_JC_ePub.xhtml.html#" title="Search in archive" class="js-search-controls search-controls" onclick="window.Appcues.track('SearchBook_HeronBook')"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9781800561991/chapter/B16623_03_Final_JC_ePub.xhtml"><div class="js-collections-dropdown collections-dropdown menu-bit-cards" onclick="window.Appcues.track('AddPlaylist_HeronBook')"></div></div></li><li class="js-font-control-panel font-control-activator"><a href="B16623_03_Final_JC_ePub.xhtml.html#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size" onclick="window.Appcues.track('ChangeFont_HeronBook')"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="B16623_03_Final_JC_ePub.xhtml.html#" class="trigger" data-push-state="false" title="Share" aria-label="Share" onclick="window.Appcues.track('Share_HeronBook')"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a
+        class="twitter share-button t-twitter"
+        target="_blank"
+        aria-label="Share this section on Twitter"
+        title="Share this section on Twitter"
+      
+        href="https://twitter.com/share?url=https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/B16623_03_Final_JC_ePub.xhtml&text=Coding%20Roblox%20Games%20Made%20Easy&via=OReillyMedia"
+      ><span>Twitter</span></a></li><li><a
+        class="facebook share-button t-facebook"
+        target="_blank"
+        aria-label="Share this section on Facebook"
+        title="Share this section on Facebook"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/B16623_03_Final_JC_ePub.xhtml"
+      ><span>Facebook</span></a></li><li><a
+        class="googleplus share-button t-googleplus"
+        target="_blank"
+        aria-label="Share this secton on Google Plus"
+        title="Share this secton on Google Plus"
+        href="https://plus.google.com/share?url=https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/B16623_03_Final_JC_ePub.xhtml"
+      ><span>Google Plus</span></a></li><li><a
+        class="email share-button t-email"
+        aria-label="Share this section via email"
+        title="Share this section via email"
+      
+        href="mailto:?subject=Safari: Chapter%203%3A%20Introduction%20to%20Roblox%20Lua&body=https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/B16623_03_Final_JC_ePub.xhtml%0D%0Afrom Coding%20Roblox%20Games%20Made%20Easy%0D%0A"
+      ><span>Email</span></a></li></ul></li><!-- endif request.user.is_authenticated -->
+      </ul>
+    </div>
+
+      
+          
+      
+
+    <section role="document">
+        
+        
+
+
+
+
+  <script defer src="https://learning.oreilly.com/static/js/build/djangoMessagesPage.bfaca9fd8619.js"></script>
+
+
+        <script src="https://fast.appcues.com/48743.js"></script>
+<script>
+  var userId = "ce47de5b-ce80-49f0-b5cd-c60d3d33b198";
+
+  var userObject = {
+    firstName: "Michael",
+    segment: "Trial",
+    admin: "False",
+    profileCreatedOn: "2021-05-13",
+    academic: ""
+  };
+  window.Appcues.identify(userId, userObject);
+  window.Appcues.page();
+
+  setTimeout(function () {
+    window.Appcues.track('ViewingBook_HeronBook')
+  }, 20000);
+</script>
+
+
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="B16623_Section_2_Final_JC_ePub.xhtml.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Section 2: Programming in Roblox</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="B16623_04_Final_JC_ePub.xhtml.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">Chapter 4: Roblox Programming Scenarios</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><div id="_idContainer035">
+			<h1 id="_idParaDest-52"><em class="italic"><a id="_idTextAnchor054"></a>Chapter 3</em>: Introduction to Roblox Lua</h1>
+			<p>The <strong class="bold">Roblox Lua</strong> language is a fast, procedural programming language adapted from <strong class="bold">Lua</strong>. Lua was originally <a id="_idIndexMarker090"></a>created in 1993 due to software trade barriers in Brazil, which prevented many from buying specialized software from outside the country. Because of this, the language was designed to be highly customizable and C-based so that programmers could make their own implementations using Lua's C API.</p>
+			<p>The goal of this chapter is to give you the knowledge you need to make your first programs in Roblox Lua so that you're ready to become a fully proficient programmer. No prior programming experience is assumed, so we will start by covering the concept of variables and other universal programming constructs. Then, within a few chapters, you will be able to create full games, of your own design, on Roblox.</p>
+			<p>In this chapter, we're going to cover the following main topics:</p>
+			<ul>
+				<li>Creating variables and conditionals</li>
+				<li>Declaring and using loops</li>
+				<li>Learning about functions and events</li>
+				<li>Demonstrating programming style and efficiency</li>
+			</ul>
+			<p>Let's get started!</p>
+			<h1 id="_idParaDest-53"><a id="_idTextAnchor055"></a>Technical requirements</h1>
+			<p>In this chapter, you will be working entirely in Studio and must meet the requirements mentioned in the <em class="italic">Technical requirements</em> section of <a href="B16623_02_Final_JC_ePub.xhtml.html#_idTextAnchor030"><em class="italic">Chapter 2</em></a>, <em class="italic">Know Your Work Environment</em>. As a note, you will never need to check for updates on either Roblox Studio or <strong class="bold">Roblox Player</strong> as they will update automatically when you start them. This will ensure that any new features and security measures have been enabled.</p>
+			<p>You can find all the code used in this chapter in the book's GitHub repository at - <a href="https://github.com/PacktPublishing/Coding-Roblox-Games-Made-Easy/tree/main/Chapter03">https://github.com/PacktPublishing/Coding-Roblox-Games-Made-Easy/tree/main/Chapter03</a></p>
+			<h1 id="_idParaDest-54"><a id="_idTextAnchor056"></a>Creating variables and conditionals</h1>
+			<p>In programming, a <strong class="bold">variable</strong> is a way for your code to<a id="_idIndexMarker091"></a> hold various types of<a id="_idIndexMarker092"></a> data, or <strong class="bold">data types</strong>. Variables are convenient because when you create one, you can give it<a id="_idIndexMarker093"></a> an identifier so that it may be easily referenced later. In most programming languages, these variables are <strong class="bold">typed</strong>; this means that the type of variable must be declared when<a id="_idIndexMarker094"></a> it is created. If you were to create a variable that holds a number, for example, you could only assign data that is a number to<a id="_idIndexMarker095"></a> that variable. In Roblox Lua, variables are not typed; if you were to initialize a variable as a number, you could later set it to anything else without issue. </p>
+			<p class="callout-heading">Important note</p>
+			<p class="callout">It should be noted that there is a new option for a typed version of Lua, though it is currently in beta, and not available to the general public.</p>
+			<p>It is important that you know what the most common data types are before you begin programming.</p>
+			<h2 id="_idParaDest-55"><a id="_idTextAnchor057"></a>Data types</h2>
+			<p><strong class="bold">Integers</strong> are any whole, real <a id="_idIndexMarker096"></a>number within a <strong class="bold">64-bit</strong> range. This means that the value of a signed 64-bit integer can be either positive or negative but can only hold values between <em class="italic">-2</em><span class="supe sc ipt">63</span> and <em class="italic">2</em><span class="supe sc ipt">63</span><em class="italic"> - 1</em>. While this does not particularly matter in a Roblox environment, the benefit of integers not containing fractional data is that they are more optimized for processes that do not need that additional information. For example, if you counted every egg a chicken had laid, you would want to use an integer value, as your chicken could never lay half of an egg, and you would otherwise be taking up resources to hold that empty, but existent, fractional data. The following diagram shows how the 64 bits are formatted to represent a signed integer in binary:</p>
+			<div>
+				<div id="_idContainer029" class="IMG---Figure">
+					<img src="https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/image/Figure_3.1_B16623.jpg" alt="Figure 3.1 – In a signed integer, the first bit is the sign and the remaining bits represent the magnitude
+" width="543" height="107">
+				</div>
+			</div>
+			<p class="figure-caption">Figure 3.1 – In a signed integer, the first bit is the sign and the remaining bits represent the magnitude</p>
+			<p><strong class="bold">Numbers</strong> can hold both whole<a id="_idIndexMarker097"></a> and fractional portions of numeric values, meaning that they can hold virtually any number between (<em class="italic">-1.8 * (10</em><span class="supe sc ipt">308</span>)) and (<em class="italic">1.8 * 10</em><span class="supe sc ipt">308</span>)). The reason for<a id="_idIndexMarker098"></a> this difference in range for possible values is because of how the data type itself is formatted in computer systems; the following diagram shows how binary formatting for numbers differs from integers. The number data type is <a id="_idIndexMarker099"></a>actually named a <strong class="bold">double precision floating-point number</strong>, though it is more commonly called a <strong class="bold">double</strong>, which is a type of <strong class="bold">float</strong>. These numbers use <a id="_idIndexMarker100"></a>what is known as <em class="italic">IEEE-754</em>, a technical standard<a id="_idIndexMarker101"></a> that is used to represent floats at the binary level. Since these values are rooted in binary and are derived from a base-2 number system, some values cannot be perfectly represented in our base-10 world. These inaccuracies are referred to as <strong class="bold">floating-point errors</strong>. While these<a id="_idIndexMarker102"></a> are important in fields such as data processing, these errors are so minute that in a game development environment, they can typically be ignored:</p>
+			<div>
+				<div id="_idContainer030" class="IMG---Figure">
+					<img src="https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/image/Figure_3.2_B16623.jpg" alt="Figure 3.2 – Float bits are formatted differently from integers but how many are used remains the same
+" width="536" height="107">
+				</div>
+			</div>
+			<p class="figure-caption">Figure 3.2 – Float bits are formatted differently from integers but how many are used remains the same</p>
+			<p><strong class="bold">Booleans</strong> are a simple data type <a id="_idIndexMarker103"></a>with a binary true or false value; when stored in a <a id="_idIndexMarker104"></a>variable, they are more frequently called <strong class="bold">bools</strong>. <em class="italic">It is important to note that in Lua, 1 and 0 only have numeric values and do not have any uses in Boolean logic, as seen in other languages.</em></p>
+			<p><strong class="bold">Strings</strong>, as a data <a id="_idIndexMarker105"></a>type, are best explained in <a id="_idIndexMarker106"></a>most languages as an array of individual <a id="_idIndexMarker107"></a>characters; in Lua, however, characters are not a data type. Strings are used to represent letters, numbers, and other characters to the client, but they can have different internal applications.</p>
+			<p>In Lua, <strong class="bold">tables</strong>, which can be most closely<a id="_idIndexMarker108"></a> associated with arrays in other languages, are data <a id="_idIndexMarker109"></a>types that can hold an infinite number of elements for a piece of data. Unlike arrays in other programming languages, tables act more like lists, as they are not limited to an initialized size, nor do they require one; as a result, additional table positions do not need to be preemptively reserved. Elements contained in these tables are indexed from <em class="italic">1</em> to <em class="italic">n</em>, with <em class="italic">n</em> being how many elements are in your table. It should be noted that in most other languages, the starting index value of a table is <em class="italic">0</em>; these are called zero-based and one-based indexing styles. Additionally, like any other variable in Lua, tables are untyped; it could be said that this has many advantages, as in other languages you would be restricted to only adding values of the same type into a single array. However, you should still keep your tables organized and not loosely throw any type of data into it like a virtual colander.</p>
+			<p><strong class="bold">Dictionaries</strong> are tables that utilize key-based indexing<a id="_idIndexMarker110"></a> as opposed to numbered indexes. As we<a id="_idIndexMarker111"></a> mentioned previously, their size is not finite and elements within them are still untyped. The greatest benefit dictionaries offer is the ability to index anything with a convenient key. For example, if you wanted all the apples in the <strong class="bold">Workspace</strong> to have one functionality and all bananas to have another, you could use the name of the fruit as a dictionary key that has an associated function; you could even use the fruit instance itself as the key, since the keys are not limited just to strings. As we mentioned previously, Roblox does not make it very practical to<a id="_idIndexMarker112"></a> utilize <strong class="bold">object-oriented programming </strong>(<strong class="bold">OOP</strong>), so creating a dictionary containing different data types with unique keys allows you to make what is essentially a class within Lua, which can be quite convenient for both organizational and functional purposes.</p>
+			<p>In <a id="_idIndexMarker113"></a>mathematics, a <strong class="bold">vector</strong> is a quantity that<a id="_idIndexMarker114"></a> contains both direction and magnitude. These can be used to represent data about both position and rotation. In Roblox, vectors are a userdata, meaning that<a id="_idIndexMarker115"></a> they are a custom data type made by Roblox, not a Lua <strong class="bold">primitive</strong> (native data type), like those previously mentioned. There are two specific vector types you will commonly work with: the <strong class="sou ce-inline">Vector3</strong> and <strong class="sou ce-inline">Vector2</strong> data types. A <strong class="sou ce-inline">Vector3</strong> contains <em class="italic">X</em>, <em class="italic">Y</em>, and <em class="italic">Z</em> components and is used to define the position and orientation of instances such as parts. A <strong class="sou ce-inline">Vector2</strong> is typically only used when working with a UI or in any other two-dimensional scenario; it contains only <em class="italic">X</em> and <em class="italic">Y</em> components. Vectors are useful for performing various calculations, from checking the distance between two positions to calculus-level computations such as cross and dot products:</p>
+			<div>
+				<div id="_idContainer031" class="IMG---Figure">
+					<img src="https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/image/Figure_3.3_B16623.jpg" alt="Figure 3.3 – A vector is capable of conveying information about both direction and magnitude
+" width="340" height="162">
+				</div>
+			</div>
+			<p class="figure-caption">Figure 3.3 – A vector is capable of conveying information about both direction and magnitude</p>
+			<p>A <strong class="sou ce-inline">CFrame</strong>, or coordinate<a id="_idIndexMarker116"></a> frame, is another userdata similar to that of a vector but has the ability to hold additional information. Similarly, <strong class="bold">CFrames</strong> contain positional data but also include nine elements that make up a <em class="italic">3x3</em> matrix describing the rotation of the <strong class="sou ce-inline">CFrame</strong>. Because of this, most <strong class="sou ce-inline">CFrame</strong> manipulations allow for positional changes to be relative to the orientation of the coordinate frame itself.</p>
+			<p><strong class="bold">Instances</strong> are<a id="_idIndexMarker117"></a> a userdata and represent <a id="_idIndexMarker118"></a>everything that you can interact with in the <strong class="bold">Explorer</strong> window of Studio. Different types of<a id="_idIndexMarker119"></a> instances are called <strong class="bold">classes</strong>, and each class possesses different associated properties. To see<a id="_idIndexMarker120"></a> the extent of instance classes, view the full list on the developer website:</p>
+			<p><a href="https://developer.roblox.com/en-us/api-reference/index">https://developer.roblox.com/en-us/api-reference/index</a></p>
+			<p class="callout-heading">Important note</p>
+			<p class="callout">While you have learned about all the primitive data types Lua contains, there are many more userdata types Roblox has that would not be relevant to mention in this section. The full list of Roblox userdata types can <a id="_idIndexMarker121"></a>be found here: <a href="https://developer.roblox.com/en-us/api-reference/data-types%0D">https://developer.roblox.com/en-us/api-reference/data-types</a></p>
+			<p>Next, you will learn how to handle these different data types by assigning them to variables. Variables allow you to hold and manipulate data so that it can be used with any program that you write.</p>
+			<h2 id="_idParaDest-56"><a id="_idTextAnchor058"></a>Setting and manipulating variables</h2>
+			<p>Initializing and changing <a id="_idIndexMarker122"></a>variables in Lua is a process that utilizes a variety of different operators to achieve a desired result. A convenient way to check the value of your variable is by using the <strong class="sou ce-inline">print()</strong> function. For many programmers, <strong class="sou ce-inline">print("Hello World!")</strong> is the first<a id="_idIndexMarker123"></a> line of code they ever write. The <strong class="sou ce-inline">print()</strong> function is a valuable tool, not only when looking for bugs, but also for observing what your code produces when it would otherwise not be visible. </p>
+			<h2 id="_idParaDest-57"><a id="_idTextAnchor059"></a>Numbers</h2>
+			<p><strong class="bold">Numbers</strong> are among the most<a id="_idIndexMarker124"></a> intuitive variables to set and change in Lua. If you want to initialize a variable, you should utilize the <strong class="bold">local</strong> keyword. Initializing a variable without this keyword <a id="_idIndexMarker125"></a>will work, but it defines the variable for the entire script once it has been run, which is unnecessary in almost all cases and is considered poor style. After putting <strong class="sou ce-inline">local</strong>, you put the name of your variable. A variable name cannot start with non-alphabetical characters and cannot contain any characters that are non-alphabetical or non-numeric, except for underscores. For example, if you wanted to have a variable that simply held the value of 99, your code would look like this:</p>
+			<p class="sou ce-code">local myNumber = 99</p>
+			<p>There are many different operators we can use to change the variable, and even <strong class="bold">libraries</strong> of special functions, but for this example, we simply want the value to increment by <em class="italic">1</em> to reach a total value of 100. To accomplish this, we can set the variable to itself plus <em class="italic">1</em> by using the addition operator (<strong class="sou ce-inline">+</strong>):</p>
+			<p class="sou ce-code">myNumber = myNumber + 1</p>
+			<p>You may have noticed that <strong class="sou ce-inline">local</strong> does not precede the variable name here. This is because <strong class="sou ce-inline">local</strong> is only put before your variable name when you're initializing it; to reference or alter a variable, you simply put the variable's name. Depending on the scenario, it may be more practical to simply set the variable to 100 directly. In this case, you would simply set the variable to the value, similar to what you did when initializing it (without the <strong class="sou ce-inline">local</strong> statement, of course).</p>
+			<p>Lua supports the <a id="_idIndexMarker126"></a>arithmetic operators that are standard across most languages, those being for addition (<strong class="sou ce-inline">+</strong>), subtraction (<strong class="sou ce-inline">-</strong>), multiplication (<strong class="sou ce-inline">*</strong>), division (<strong class="sou ce-inline">/</strong>), and modulo (<strong class="sou ce-inline">%</strong>). For more advanced operations, Lua provides a library with the same functionality as the standard <strong class="sou ce-inline">math</strong> library in the C language. This library provides trigonometric functions, value conversions, and specific values with convenience and accuracy. To utilize this library, we can use the <strong class="sou ce-inline">math</strong> keyword. Here is an example of getting a more accurate value for pi by using the <strong class="sou ce-inline">math</strong> library:</p>
+			<p class="sou ce-code">myNumber = math.pi</p>
+			<p>Moving forward, we will discuss the <strong class="bold">Boolean</strong> data type.</p>
+			<h2 id="_idParaDest-58"><a id="_idTextAnchor060"></a>Booleans</h2>
+			<p>Setting a Boolean is simple as there are <a id="_idIndexMarker127"></a>only two initialization options: using the <strong class="sou ce-inline">true</strong> or <strong class="sou ce-inline">false</strong> keyword. An initialization statement for a Boolean value may look something like this:</p>
+			<p class="sou ce-code">local myBool = true</p>
+			<p>While changing the value of this variable is simply a matter of setting the bool between true or false, there is a trick for setting the bool to its opposite value in one line, as opposed to using a conditional. We can do this by making use of the <strong class="sou ce-inline">not</strong> operator, which will be covered more once we get to conditional statements. The <strong class="sou ce-inline">not</strong> operator serves to simply return the opposite of the input following it. For example, if we wanted to change the preceding <strong class="sou ce-inline">myBool</strong> variable from true to false, we could simply use the following line of code:</p>
+			<p class="sou ce-code">myBool = not myBool</p>
+			<p class="sou ce-code">print(myBool) -&gt; false</p>
+			<p>Continuing, we will cover another primitive data type, <strong class="bold">strings</strong>.</p>
+			<h2 id="_idParaDest-59"><a id="_idTextAnchor061"></a>Strings</h2>
+			<p>To declare a string, you should use the same variable initialization style and encapsulate your text inside<a id="_idIndexMarker128"></a> double quotes. While single quotes can be used, double quotes are more typical, unless double quotes are contained within the string itself:</p>
+			<p class="sou ce-code">local myString = "Hello"</p>
+			<p>If your string contains double quotes, Lua uses the backslash (<strong class="bold">\</strong>) as an escape character. This means that any character that would normally be special is treated as text within a string. For example, if someone in some game dialog is speaking from the third person, you could create double quote marks, like this:</p>
+			<p class="sou ce-code">myStrin<a id="_idTextAnchor062"></a>g = "He said \"I don't like apples!\""</p>
+			<p>Conversely, this backslash operator makes some normal text special. The two characters that are granted functionality by the backslash character are the letters <strong class="sou ce-inline">n</strong> and <strong class="sou ce-inline">t</strong>. When a <strong class="sou ce-inline">\t</strong> is present within your string, a tab will be added in that place; as a side note, a tab is considered a single character by computer systems. When a <strong class="sou ce-inline">\n</strong> is in your string, a new line is inserted at that point, for example:</p>
+			<p class="sou ce-code">myString = "Separated\tby\ttabs" </p>
+			<p class="sou ce-code">print(myString) -&gt; "Separated by    tabs"</p>
+			<p class="sou ce-code">myString = "Separated\nby\nlines" </p>
+			<p class="sou ce-code">print(myString) -&gt; </p>
+			<p class="sou ce-code">"Separated</p>
+			<p class="sou ce-code">by</p>
+			<p class="sou ce-code">lines"</p>
+			<p>If you have multiple lines in your string, you do not necessarily need to utilize the <strong class="sou ce-inline">\n</strong> operator. Lua, unlike some other languages, supports the use of multi-line strings. Aside from being able to simply press your <em class="italic">Enter</em> key to create new lines, you can more conveniently format paragraph sized strings in your programs. To initialize a paragraph string, you must capture your text within double brackets, as shown here:</p>
+			<p class="sou ce-code">myString = [[This string</p>
+			<p class="sou ce-code">can span</p>
+			<p class="sou ce-code">multiple lines.]] </p>
+			<p>One of the most common ways<a id="_idIndexMarker129"></a> string variables can be altered is by <strong class="bold">concatenating</strong> them. By following<a id="_idIndexMarker130"></a> any string with <strong class="sou ce-inline">..</strong> and providing another string, the latter string will be attached at that position:</p>
+			<p class="sou ce-code">myString = "Hello"</p>
+			<p class="sou ce-code">myString = myString.. " World!"</p>
+			<p class="sou ce-code">print(myString) -&gt; "Hello World!"</p>
+			<p>The ability to append is particularly useful when you're presenting different information to a player via a UI element. For example, if you wanted to announce who the winner of the round of a game is, you can append the name of that player to a string:</p>
+			<p class="sou ce-code">local winnerName = "WinnerWinner"</p>
+			<p class="sou ce-code">myString = "Game over! ".. winnerName.. " has won the round!"</p>
+			<p class="sou ce-code">print(myString) -&gt; "Game over! WinnerWinner has won the round!"</p>
+			<p>Similar to how numeric data has a library for mathematical operations, there exists a library of string functions for more complex manipulations, as well as data management. This library can be accessed by using the <strong class="sou ce-inline">string</strong> keyword. Some functions include the ability to change the case of all letters within a string, the ability to split strings at certain points, and even to find all strings within a string that match a certain pattern, which is useful for systems such as in-game search bars. For example, all the letters in the following string will be converted into uppercase using one of the <strong class="sou ce-inline">string</strong> library's functions:</p>
+			<p class="sou ce-code">myString = "iT iS wARm tOdaY."</p>
+			<p class="sou ce-code">print(string.upper(myString)) -&gt; "IT IS WARM TODAY."</p>
+			<p>Using strings in numeric arithmetic should be avoided when possible, but there may be situations where this would be appropriate. Whenever a string is used where a number is required, Lua will attempt to automatically convert that string into a number. For example, if you try to add the string <strong class="sou ce-inline">"50"</strong> to the number 100, it will function correctly, as shown here:</p>
+			<p class="sou ce-code">print("50" + 100) -&gt; 150</p>
+			<p>However, if the string you are<a id="_idIndexMarker131"></a> attempting to perform an operation on contains non-numeric characters, the string-to-number conversion will fail. To prevent this, you can check if a string is fully numeric by using the <strong class="sou ce-inline">tonumber()</strong> function. If the string that's been passed to the function cannot be converted into a number, the value that's returned will be nil; <strong class="bold">nil</strong> is a value that represents something non-existent. If we attempt to add the string <strong class="sou ce-inline">"Hello"</strong> to the number 100, an error will occur:</p>
+			<p class="sou ce-code">myString = "Hello"</p>
+			<p class="sou ce-code">print(tonumber(myString)) -&gt; nil</p>
+			<p class="sou ce-code">local myNumber = 100 + myString -&gt; <strong class="bold">"local myNumber = 100 + myString:3: attempt to perform arithmetic (add) on number and string"</strong></p>
+			<p>Next, you will learn about <strong class="bold">tables</strong>, which have a wide variety of applications.</p>
+			<h2 id="_idParaDest-60"><a id="_idTextAnchor063"></a>Tables</h2>
+			<p>Tables are straightforward but less<a id="_idIndexMarker132"></a> intuitive to set and manipulate than the other data types we have covered so far, as you must make use of another library to accomplish most alterations. To create a new, empty table, you must set your variable to a set of braces, as shown here:</p>
+			<p class="sou ce-code">local myTable = {}</p>
+			<p>When initializing a new table, you do not need to have it start out empty; you can include elements within your table when it is first created. It is important to note that elements in tables require a separating character; in this case, that character can be either a comma (<strong class="sou ce-inline">,</strong>) or semicolon (<strong class="sou ce-inline">;</strong>). For example, if a player were tasked with retrieving items from a grocery list, you could initialize a table of predetermined foodstuffs in this fashion:</p>
+			<p class="sou ce-code">local myTable = {"Tofu", "Milk", "Bacon"}</p>
+			<p>Once you've created your table, you will need to be able to index what items exist within your list. Without loops, which will be covered later in this chapter, you can only index items individually. Remember that<a id="_idIndexMarker133"></a> tables use one-based numeric indexing, so indexing items is just done with a number. All items from the grocery list could be either assigned to a variable or acquired directly, as seen in the following <strong class="sou ce-inline">print</strong> line of code:</p>
+			<p class="sou ce-code">local myTable = {"Tofu", "Milk", "Bacon"}</p>
+			<p class="sou ce-code">local firstItem = myTable[1]</p>
+			<p class="sou ce-code">print(firstItem, myTable[2], myTable[3]) -&gt; "Tofu Milk Bacon"</p>
+			<p>To add or remove elements from a table, you can use the <strong class="sou ce-inline">table</strong> library, which can be accessed by using the <strong class="sou ce-inline">table</strong> keyword. This library allows you to alter the structure of tables by changing how they are sorted, what their contents are, and where existing table entries are located. In order to add new elements to a table, you should use the <strong class="sou ce-inline">table.insert()</strong> function. The function requires a minimum of two arguments, with the first being the table being targeted and the second being the value that you wish to add to the table. If three arguments are provided, the first argument is the targeted table, the second is the desired table position, and the third is the value to be added. When using the function with three arguments, it is important to remember that all the elements following or at the desired position are shifted to the right. Furthermore, there are no restrictions to the provided index, meaning the index can be negative or be an element that hasn't been reached yet by the length of the table, though you should avoid doing this. Here is an example of adding an element to the beginning of a table and an element without a position specified, which will, by default, go to the end of the table:</p>
+			<p class="sou ce-code">local items = {"Elephant", "Towel", "Turtle"}</p>
+			<p class="sou ce-code">table.insert(items, 1, "Rock")</p>
+			<p class="sou ce-code">table.insert(items, "Cat")</p>
+			<p class="sou ce-code">-&gt; items = {"Rock", "Elephant", "Towel", "Turtle", "Cat"}</p>
+			<p>Without loops, you cannot remove all the elements of a specified value or those that meet some criteria with complete certainty. In this case, you will need to know the index of the value you <a id="_idIndexMarker134"></a>want removed from the table. For example, if the list is only supposed to contain living things, we would want to remove the <strong class="sou ce-inline">Rock</strong> and <strong class="sou ce-inline">Towel</strong> items. We can do this by using the <strong class="sou ce-inline">table.remove()</strong> function. It is important to note that removing an element from a table will shift all the elements that follow it to the left. So, if the rock was removed from the table first, the indexes of all the other items in the table would be one less than they were before. This can be seen in the following code:</p>
+			<p class="sou ce-code">items = {"Rock", "Elephant", "Towel", "Turtle", "Cat"}</p>
+			<p class="sou ce-code">table.remove(items, 1)</p>
+			<p class="sou ce-code">-&gt; items = {"Elephant", "Towel", "Turtle", "Cat"}</p>
+			<p class="sou ce-code">table.remove(items, 2)</p>
+			<p class="sou ce-code">-&gt; items = {"Elephant", "Turtle", "Cat"}</p>
+			<p>To confirm that the correct number of elements are within your table at any given time, you can preface a table or table variable with the <strong class="sou ce-inline">#</strong> operator to return the number of elements within it. Additionally, you can use the <strong class="sou ce-inline">table.getn()</strong> function to return the same result, though this is a little bit longer to write. You can prove these techniques return the same result by making the following comparison; we'll cover how to make more comparisons when we learn about conditional statements:</p>
+			<p class="sou ce-code">print(#items == table.getn(items)) -&gt; true</p>
+			<p>In the following section, you will learn about <strong class="bold">dictionaries</strong>.</p>
+			<h2 id="_idParaDest-61"><a id="_idTextAnchor064"></a>Dictionaries</h2>
+			<p>As we mentioned <a id="_idIndexMarker135"></a>previously, dictionaries are tables that use custom, key-based indexing as opposed to sorted numeric indexes. Conceptually, you can think of entering values into a dictionary as declaring a variable, except the <strong class="sou ce-inline">local</strong> keyword is not applicable here. While elements in a dictionary can be laid out like a table, it is more common for the elements to be situated like a <strong class="bold">struct</strong>, with each entry having its own line; the separating character for elements can be either a semi-colon or a comma. If you had a <a id="_idIndexMarker136"></a>restaurant's menu within your game, you could arrange the items within a dictionary, with the key being the name of the meal's course and the value being the name of the dish:</p>
+			<p class="sou ce-code">local menu = {</p>
+			<p class="sou ce-code">    appetizer = "House salad";</p>
+			<p class="sou ce-code">    entree = "Ham sandwich";</p>
+			<p class="sou ce-code">    dessert = "Ice cream";</p>
+			<p class="sou ce-code">}</p>
+			<p>Indexing these declared elements is quite intuitive as you must simply follow the path to the desired value. In this case, let's say you wanted to capture what dish was being served as the entrée on the menu with a new variable:</p>
+			<p class="sou ce-code">local meal = menu.entree</p>
+			<p class="sou ce-code">print(meal) -&gt; "Ham sandwich"</p>
+			<p>Setting elements is equally as straightforward: by following the path, you can set or alter the element based on its data type like any other variable:</p>
+			<p class="sou ce-code">menu.entree = "Turkey sandwich"</p>
+			<p>One of the advantages of using these keys in Lua is that they are not restricted to only string indexes. By using brackets (<strong class="sou ce-inline">[ ]</strong>), you can use any data type as an index of your value. This is particularly useful if you want one data type to have a direct association with another at a given value. For example, if you wanted to set a list of threshold prices that correlated with a describing string, you could use a number as an index. Bear in mind that in order to index non-string keys, you must also use brackets:</p>
+			<p class="sou ce-code">local prices = {</p>
+			<p class="sou ce-code">    [0] = "Free";</p>
+			<p class="sou ce-code">    [5] = "Cheap";</p>
+			<p class="sou ce-code">    [20] = "Average";</p>
+			<p class="sou ce-code">    [50] = "Expensive";</p>
+			<p class="sou ce-code">}</p>
+			<p class="sou ce-code">print(prices[0]) -&gt; "Free"</p>
+			<p>What may be less obvious is the ability to use userdata values as keys. We could associate the origin of our <strong class="bold">Workspace</strong> with a string, number, or another position; you are not restricted in any regard.</p>
+			<p>Something to note is that<a id="_idIndexMarker137"></a> tables can be the value of another table; whenever something exists within another entity of the same type, we call this <strong class="bold">nesting</strong>. You can create tree-like <a id="_idIndexMarker138"></a>structures by nesting tables within each other, fetching them with the same key-based style. When we discuss modules, in addition to other script types, you'll see that nesting tables are somewhat of a common practice for organizational and functional purposes. For instance, if you wanted to list some basic stats of <strong class="bold">non-playable characters</strong> (<strong class="bold">NPCs</strong>) in your game, it may make sense to include those stats in a table under one collective NPC table so that the information can be indexed by the name of the NPC:</p>
+			<p class="sou ce-code">local units = {</p>
+			<p class="sou ce-code">    ["Heavy Soldier"] = {</p>
+			<p class="sou ce-code">        WalkSpeed = 16;</p>
+			<p class="sou ce-code">        Damage = 25;</p>
+			<p class="sou ce-code">    };</p>
+			<p class="sou ce-code">    Scout = {</p>
+			<p class="sou ce-code">        WalkSpeed = 25;</p>
+			<p class="sou ce-code">        Damage = 15;</p>
+			<p class="sou ce-code">    };</p>
+			<p class="sou ce-code">}</p>
+			<p>You will now learn about <strong class="bold">vectors</strong>, which will allow you to better understand 3D environments.</p>
+			<h2 id="_idParaDest-62"><a id="_idTextAnchor065"></a>Vectors</h2>
+			<p><strong class="bold">Vectors</strong> are values that<a id="_idIndexMarker139"></a> represent both direction and magnitude. In Roblox programming, vectors are used to represent the positions in three- and two-dimensional environments, define the orientations of different instances, show the direction of <strong class="bold">CFrames</strong>, and calculate additional information about objects in relation to each other.</p>
+			<p>Declaring a vector is much like creating many other Roblox userdata types. After stating the name of the userdata, you choose the constructing function. In most cases, when you're working with vectors, you will use the <strong class="sou ce-inline">new</strong> option. For this example, we will be using a <strong class="sou ce-inline">Vector3</strong>, though a <strong class="sou ce-inline">Vector2</strong> follows the same format but will have only two components: </p>
+			<p class="sou ce-code">local myVector = Vector3.new(0,0,0)</p>
+			<p>Changing vector values is a little different than changing the other data types we have covered. This is because arithmetic is done across all components with changing behaviors, depending on what is being used in the operation. To demonstrate this, arithmetic between two vectors is done by component, meaning that adding two vectors will combine the values of each component; you can conceptualize this as the vectors being physically over each other and adding each column together:</p>
+			<p class="sou ce-code">myVector = Vector3.new(1,3,5) + Vector3.new(2,4,6) </p>
+			<p class="sou ce-code">-&gt; Vector3.new(3,7,11)</p>
+			<p>However, the behavior of <a id="_idIndexMarker140"></a>vector arithmetic changes when <strong class="bold">scalar</strong> values are present. A scalar is any value that conveys magnitude but not direction. For example, vectors can be both multiplied and divided by scalars, but you cannot perform addition or subtraction with these mismatched data types. The only exception to this is when a scalar is divided by a vector, in which case division is done by component, with the scalar acting as the numerator of each element:</p>
+			<p class="sou ce-code">myVector = Vector3.new(2,4,6) * 2 -&gt; Vector3.new(4,8,12)</p>
+			<p class="sou ce-code">myVector = Vector3.new(2,4,6) / 2 -&gt; Vector3.new(1,2,3)</p>
+			<p class="sou ce-code">myVector = 2 / Vector3.new(2,4,6) -&gt; Vector3.new(1,0.5,0.333)</p>
+			<p>Aside from changing vectors as a whole, you can capture individual values from a vector. Here, we are setting three local variables at once. Typically, this format is reserved for what is called a <strong class="bold">tuple</strong>; a tuple is <a id="_idIndexMarker141"></a>essentially when a function returns multiple values that are not grouped together in a structure such as a table and, consequently, more than one variable must be<a id="_idIndexMarker142"></a> assigned to one statement. By indexing the <em class="italic">X</em>, <em class="italic">Y</em>, and <em class="italic">Z</em> fields of the vector, we can capture number values, which can be used in various computations:</p>
+			<p class="sou ce-code">local x,y,z = myVector.X, myVector.Y, myVector.Z</p>
+			<p>One of the most common calculations that's done with vectors is finding the distance between two positions. While you could use the distance formula using the <strong class="sou ce-inline">math</strong> library, there is a more direct way to do this. As we mentioned previously, all vectors have magnitude; this magnitude can also be manually calculated. However, Roblox includes a magnitude property for all vectors that can be captured, as shown here:</p>
+			<p class="sou ce-code">local magnitude = myVector.Magnitude</p>
+			<p>To calculate the distance between two positional vectors, the vectors must be subtracted from each other; then, the resulting magnitude of the new vector will be the distance between them:</p>
+			<p class="sou ce-code">local vector1 = Vector3.new(1,5,7)</p>
+			<p class="sou ce-code">local vector2 = Vector3.new(2,4,6)</p>
+			<p class="sou ce-code">local distance = (vector1 - vector2).Magnitude</p>
+			<p class="sou ce-code">print(distance) -&gt; 1.73205</p>
+			<p>Like vectors, <strong class="bold">CFrames</strong> are a data type used in 3D environments. We will discuss them in the next section.</p>
+			<h2 id="_idParaDest-63"><a id="_idTextAnchor066"></a>CFrames</h2>
+			<p>The userdata <strong class="sou ce-inline">CFrame</strong> is similar to a <a id="_idIndexMarker143"></a>vector but has a wider range of uses and behaviors because of the additional information it carries. Declaring a <strong class="sou ce-inline">CFrame</strong> variable with only positional data is the same as what you'd do with a vector; you can use the <strong class="sou ce-inline">new</strong> constructor and must provide <em class="italic">X</em>, <em class="italic">Y</em>, and <em class="italic">Z</em> coordinates, as shown here:</p>
+			<p class="sou ce-code">local myCFrame = CFrame.new(0,0,0) --CFrame.new() also works --for creating blank CFrame identities.</p>
+			<p>What makes a <strong class="sou ce-inline">CFrame</strong> distinct from a vector is its matrix of rotational information, which describes its orientation via directional vectors. While you will likely not deal with these matrix components individually, changing the orientation of <strong class="bold">CFrames</strong>, is something you will be doing constantly. A typical way to set the orientation of a <strong class="sou ce-inline">CFrame</strong> is to use the <strong class="sou ce-inline">LookAt</strong> portion of the <strong class="sou ce-inline">CFrame.new()</strong> constructor. By providing an origin and target, a new <strong class="sou ce-inline">CFrame</strong> will be created at the provided position, with <strong class="sou ce-inline">LookVector</strong> (the front of part being manipulated) directed toward the specified <strong class="sou ce-inline">LookAt</strong> position. The greatest <a id="_idIndexMarker144"></a>advantage of this is for making parts look at a different position for ease of movement relative to its forward-facing direction. To test this, add two parts to our <strong class="bold">Workspace</strong> named <strong class="sou ce-inline">Part1</strong> and <strong class="sou ce-inline">Part2</strong>. Position <strong class="sou ce-inline">Part1</strong> wherever you would like and place <strong class="sou ce-inline">Part2</strong> where you want the first part to look. Once you've done this, execute the following code to see how the front face of <strong class="sou ce-inline">Part1</strong> now points directly at <strong class="sou ce-inline">Part2</strong>:</p>
+			<p class="sou ce-code">local Part1 = workspace.Part1</p>
+			<p class="sou ce-code">local Part2 = workspace.Part2</p>
+			<p class="sou ce-code">Part1.CFrame = CFrame.new(Part1.Position, Part2.Position)</p>
+			<p>As we mentioned previously, one of the benefits of manipulating <strong class="sou ce-inline">CFrame</strong> rotation is for relative movement. If you've already played around with the position property of our parts, you may have noticed that the position is global and there is not really a way for a part to move in the direction it is facing. This <a id="_idIndexMarker145"></a>global view is called the <strong class="bold">world space</strong>. By using <strong class="sou ce-inline">CFrame</strong> arithmetic, you can move parts in relation to their orientation, which is important for systems such as projectiles, doors, and even vehicles; this relative view is called the <strong class="bold">object space</strong>. Here is a<a id="_idIndexMarker146"></a> simple application where you could move a part forward in the direction it is facing by one stud:</p>
+			<p class="sou ce-code">myCFrame = myCFrame * CFrame.new(0,0,-1)</p>
+			<p>Take note that multiplying two <strong class="sou ce-inline">CFrame</strong> values does not actually multiply the components, and the operation that's occurring is conceptually more like addition. When the preceding code is implemented inside a loop, particularly a fast running one, you can simulate movement. This is a technique that's often used for projectile systems as many resources are saved since the <em class="italic">moving</em> part is anchored, so physics calculations do not need to be made. This directional movement is used for almost any moving part and in most cases should be used instead of the <strong class="sou ce-inline">Position</strong> property.</p>
+			<p>While it may not be intuitive, you<a id="_idIndexMarker147"></a> must be aware of which axes control the rotational behavior you seek in a three-dimensional environment. As shown in the following image, the <em class="italic">X</em>, <em class="italic">Y</em>, and <em class="italic">Z</em> axes may control different directions of rotation than you may have anticipated:</p>
+			<div>
+				<div id="_idContainer032" class="IMG---Figure">
+					<img src="https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/image/Figure_3.4_B16623.jpg" alt="Figure 3.4 – Looking at the front of this part, you can see which axes cause what rotational behavior
+" width="382" height="352">
+				</div>
+			</div>
+			<p class="figure-caption">Figure 3.4 – Looking at the front of this part, you can see which axes cause what rotational behavior</p>
+			<p>You may be wondering why the handles for the <em class="italic">Y</em> axis are horizontal and the handles for the <em class="italic">X</em> axis vertical. The reason behind this is that the axes of rotation are defined by the object moving around the axis. Due to this, they will not stand in the same orientation that the axes lay on a graph. So, in the case of an object being rotated around the <em class="italic">Y</em> axis, you would need horizontal handles:</p>
+			<div>
+				<div id="_idContainer033" class="IMG---Figure">
+					<img src="https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/image/Figure_3.5_B16623.jpg" alt="Figure 3.5 – Here, you can see that the handles correspond to the object rotating around the axes
+" width="387" height="370">
+				</div>
+			</div>
+			<p class="figure-caption">Figure 3.5 – Here, you can see that the handles correspond to the object rotating around the axes</p>
+			<p>By using the <strong class="sou ce-inline">CFrame.Angles()</strong> constructor, you can directly manipulate the orientation of a <strong class="sou ce-inline">CFrame</strong>. Remember that parts use degrees for their <strong class="sou ce-inline">Orientation</strong> property, but <strong class="bold">CFrames</strong> use radians when<a id="_idIndexMarker148"></a> working with their rotational matrix. While keeping the same behavior of other <strong class="sou ce-inline">CFrame</strong> arithmetic cases, multiplying a <strong class="sou ce-inline">CFrame</strong> by <strong class="sou ce-inline">CFrame.Angles()</strong> effectively adds to each orientation component. Let's follow an example where we want a <strong class="sou ce-inline">CFrame</strong> to fully turn around by 180 degrees. To achieve this, we will need to rotate around the <em class="italic">Y</em> axis and use radians, as shown here:</p>
+			<p class="sou ce-code">myCFrame = CFrame.new() --No rotation</p>
+			<p class="sou ce-code">myCFrame = myCFrame * CFrame.Angles(0,math.pi,0) --you can also use math.rad(180) for math.pi</p>
+			<p><strong class="bold">CFrames</strong> have many built-in functions but do not use a library like the Lua primitive types we have already covered. There are many functions and constructors – even some redundant ones – that all have their own uses for accomplishing complex operations for use in a variety of world-based computations. While these functions are in abundance, you will not likely use many of them unless you're making some very math intensive systems. However, say you wanted to obtain the orientation of the <strong class="sou ce-inline">CFrame</strong> we just set. As stated previously, <strong class="bold">CFrames</strong> use a matrix of directional vectors to describe their rotation; you are unable to just index this value like a part's orientation. Isolating this orientation for use with parts or calculations is not immediately apparent and requires the use of a special function. To <a id="_idIndexMarker149"></a>extract this information, we must use the <strong class="sou ce-inline">ToEulerAnglesYXZ()</strong> function. This function will return three numbers as a tuple in the normal <em class="italic">X</em>, <em class="italic">Y</em>, <em class="italic">Z</em> order. These values represent a close approximation of the rotation of the <strong class="sou ce-inline">CFrame</strong> in radians. Using the <strong class="sou ce-inline">CFrame</strong> value from the previous example, we can capture all three components of the orientation within a <strong class="sou ce-inline">Vector3</strong> without assigning the values to variables:</p>
+			<p class="sou ce-code">local orientation = Vector3.new(myCFrame:ToEulerAnglesYXZ()) </p>
+			<p class="sou ce-code">-&gt; Vector3.new(-0,3.1415925,0)</p>
+			<p>With this new value, there are several types of applications you may want to perform. This orientation can now be applied to a part in our <strong class="bold">Workspace</strong>; this can be done by multiplying the vector by a conversion value in order to have the orientation be in degrees:</p>
+			<p class="sou ce-code">part.Orientation = orientation * (360 / (2 * math.pi))</p>
+			<p>If you are interested in exploring more information about other <strong class="sou ce-inline">CFrame</strong> functions and constructors, you can view all of them by visiting the API reference for the topic on the developer website here: <a href="https://developer.roblox.com/en-us/api-reference/datatype/CFrame">https://developer.roblox.com/en-us/api-reference/datatype/CFrame</a></p>
+			<h2 id="_idParaDest-64"><a id="_idTextAnchor067"></a>Instances</h2>
+			<p>Instances are a userdata and subsequently are also created by using the <strong class="sou ce-inline">new</strong> constructor. There are hundreds of <a id="_idIndexMarker150"></a>different instances, though only some can be created from scripts due to security permissions. Instances will be covered much more in the following chapter, but for now, let's simply make a new part in our <strong class="bold">Workspace</strong> and color it a bright cyan. To do this, we can use <strong class="sou ce-inline">Instance.new()</strong> and provide a string of the class name as its argument:</p>
+			<p class="sou ce-code">local part = Instance.new("Part")</p>
+			<p class="sou ce-code">part.BrickColor = BrickColor.new("Cyan")</p>
+			<p class="sou ce-code">part.Parent = workspace</p>
+			<p>Now that you know how to set and alter these data types once they have been assigned to variables, you will learn how to check the values of them to determine what type of behavior should occur as a result.</p>
+			<h2 id="_idParaDest-65"><a id="_idTextAnchor068"></a>Conditional statements</h2>
+			<p><strong class="bold">Conditional statements</strong> or <strong class="bold">conditional expressions</strong> are used in code when you want different behaviors to occur only<a id="_idIndexMarker151"></a> when some requirement is met. These are <a id="_idIndexMarker152"></a>important for determining different information about data and what your program should do to handle that data accordingly.</p>
+			<p>The <strong class="sou ce-inline">if</strong> statement is the core component of conditional expressions. These statements consist of three elements: the <strong class="sou ce-inline">if</strong> keyword, the case that must be met for the contained code to be executed, and the <strong class="sou ce-inline">then</strong> keyword, which serves as an identifier for the end of your case. To give you a direct example of this, the following code shows a conditional where the condition is simply <strong class="sou ce-inline">true</strong>, meaning the contained instructions will always be executed:</p>
+			<p class="sou ce-code">if true then</p>
+			<p class="sou ce-code">    print("Executed")</p>
+			<p class="sou ce-code">end</p>
+			<p>Here, you can see that the conditional closes with the <strong class="sou ce-inline">end</strong> keyword. In Lua, anything that acts as a single block of code will have <strong class="sou ce-inline">end</strong> designate the conclusion of that block.</p>
+			<p>Returning to the<a id="_idIndexMarker153"></a> condition portion of <strong class="sou ce-inline">if</strong> statements, determining whether a condition has been met is based on Boolean logic, a system of evaluating any type of data. We end up with a <strong class="sou ce-inline">true</strong> or <strong class="sou ce-inline">false</strong> value as the result. To do this, evaluations are made using<a id="_idIndexMarker154"></a> a system <a id="_idIndexMarker155"></a>containing various <strong class="bold">logical operators</strong> and <strong class="bold">relational operators</strong>. Like many languages, Lua uses two equals signs (<strong class="sou ce-inline">==</strong>) to check the equality between <a id="_idIndexMarker156"></a>values; this is a relational operator. As an example, let's say you want to make a part collidable only if its transparency is equal to <em class="italic">1</em>; for this scenario, the part is arbitrarily defined:</p>
+			<p class="sou ce-code">if part.Transparency == 1 then</p>
+			<p class="sou ce-code">    part.CanCollide = true</p>
+			<p class="sou ce-code">end</p>
+			<p>For this operator, there exists an opposite: the <em class="italic">not equal to</em> expression <em class="italic">(~=)</em>. Like the use of its counterpart, this relational operator is used to make comparisons at an explicit value.</p>
+			<p>To check finite or infinite ranges of numbers, you can use the relational operators of greater than (<strong class="sou ce-inline">&gt;</strong>) and less than (<strong class="sou ce-inline">&lt;</strong>). These operators have variations that include the value they are being compared to in the form of greater than or equal to (<strong class="sou ce-inline">&gt;=</strong>) and less than or equal to (<strong class="sou ce-inline">&lt;=</strong>). A very practical application of these operators is simply checking if a player is alive. In this example, assume that <strong class="sou ce-inline">char</strong> is already defined as a player's character:</p>
+			<p class="sou ce-code">local humanoid = char.Humanoid</p>
+			<p class="sou ce-code">if humanoid.Health &gt; 0 then</p>
+			<p class="sou ce-code">    print("Player is alive!")</p>
+			<p class="sou ce-code">end</p>
+			<p>The <strong class="sou ce-inline">not</strong> operator serves to negate whatever value is provided to it. As we saw previously when we switched the state of a bool variable, the <strong class="sou ce-inline">not</strong> operator returned the opposite of what was given to it. In terms of conditional statements, this can be used in similar situations as the <strong class="sou ce-inline">~=</strong> operator:</p>
+			<p class="sou ce-code">if not part.Anchored then</p>
+			<p class="sou ce-code">    part.Material = Enum.Material.Neon</p>
+			<p class="sou ce-code">end</p>
+			<p>The logical <strong class="sou ce-inline">and</strong> operator is used to<a id="_idIndexMarker157"></a> compare two values and requires that the values provided to it are both true. In the following example, we want to ensure that both <a id="_idIndexMarker158"></a>variables hold <strong class="sou ce-inline">Fruit</strong> as their value. When this condition is not met because one is defined as <strong class="sou ce-inline">Vegetable</strong>, we will not see any output since a true value is not present on both sides of the operator:</p>
+			<p class="sou ce-code">local item1 = "Fruit"</p>
+			<p class="sou ce-code">local item2 = "Vegetable"</p>
+			<p class="sou ce-code">if item1 == "Fruit" and item2 == "Fruit" then</p>
+			<p class="sou ce-code">    print("Both fruit.") --No output as requirements not met.</p>
+			<p class="sou ce-code">end</p>
+			<p>The logical <strong class="sou ce-inline">or</strong> operator only requires that at least one of the values it receives is true. We can see in this instance that the item is defined as <strong class="sou ce-inline">Vegetable</strong>. The condition says that the item must be defined as either <strong class="sou ce-inline">Fruit</strong> or <strong class="sou ce-inline">Vegetable</strong>, meaning we will see output since one of the values on either side of the operator is true:</p>
+			<p class="sou ce-code">local item = "Vegetable"</p>
+			<p class="sou ce-code">if item == "Fruit" or item == "Vegetable" then</p>
+			<p class="sou ce-code">    print("Is produce.") --Prints as one requirement is met.</p>
+			<p class="sou ce-code">end</p>
+			<p>Commonly used in conditional statements in the Roblox environment when working with instances is the <strong class="sou ce-inline">IsA</strong> method. This method allows you to check whether an instance is of a specified type. This differs from the <strong class="sou ce-inline">ClassName</strong> property of an instance as <strong class="sou ce-inline">IsA</strong> allows you to check <strong class="bold">base classes</strong>. Base classes exist as groups for some instances that share the same characteristics. For example, <strong class="bold">Parts</strong>, <strong class="bold">MeshParts</strong>, and <strong class="bold">UnionOperations</strong> are all <strong class="bold">BaseParts</strong>, a base class. So, if you wanted to ensure whatever instance <a id="_idIndexMarker159"></a>you are interacting with is a <strong class="sou ce-inline">BasePart</strong> before printing its transparency, you could do this:</p>
+			<p class="sou ce-code">if myInstance:IsA("BasePart") then</p>
+			<p class="sou ce-code">    print(myInstance.Name.. "'s transparency is ".. myInstance.     Transparency)</p>
+			<p class="sou ce-code">end</p>
+			<p>As we mentioned previously, you can<a id="_idIndexMarker160"></a> check multiple cases using one conditional expression, though this does not require the use of multiple <strong class="sou ce-inline">if</strong> statements. The <strong class="sou ce-inline">else</strong> keyword grants additional functionality to these expressions by executing an alternate case if the first condition was not passed. Let's look at an example where lifting a heavy object requires <strong class="sou ce-inline">100</strong> strength but an object that is not heavy requires only <strong class="sou ce-inline">50</strong> strength. Notice that our <strong class="sou ce-inline">heavy</strong> variable, being a bool, will only be true or false and consequently, we do not need to use an equality operator:</p>
+			<p class="sou ce-code">local heavy = true</p>
+			<p class="sou ce-code">local strengthRequired = 0</p>
+			<p class="sou ce-code">if heavy then</p>
+			<p class="sou ce-code">    strengthRequired = 100</p>
+			<p class="sou ce-code">else</p>
+			<p class="sou ce-code">    strengthRequired = 50</p>
+			<p class="sou ce-code">end</p>
+			<p class="sou ce-code">print(strengthRequired) -&gt; 100</p>
+			<p>While this has great uses, it does not allow us to explicitly check additional cases – it merely gives us an idea of what to do if the previous condition was not satisfied. The <strong class="sou ce-inline">elseif</strong> keyword is used when you want to check additional cases that may occur under different conditions. You can have as many <strong class="sou ce-inline">elseif</strong> statements as desired, allowing you to create<a id="_idIndexMarker161"></a> a chain of various conditions and cases. When using <strong class="sou ce-inline">elseif</strong> statements, you can still utilize an <strong class="sou ce-inline">else</strong> expression, but it must be at the end of the overall conditional statement. Let's look at an example where a machine has been<a id="_idIndexMarker162"></a> supplied random produce and we must count fruits, vegetables, as well as any other item that managed to find their way into the supply:</p>
+			<p class="sou ce-code">local numFruits = 0</p>
+			<p class="sou ce-code">local numVeggies = 0</p>
+			<p class="sou ce-code">local notProduce = 0</p>
+			<p class="sou ce-code">local item = "Fruit"</p>
+			<p class="sou ce-code">if item == "Fruit" then</p>
+			<p class="sou ce-code">    numFruits = numFruits + 1</p>
+			<p class="sou ce-code">elseif item == "Vegetable" then</p>
+			<p class="sou ce-code">    numVeggies = numVeggies + 1</p>
+			<p class="sou ce-code">else</p>
+			<p class="sou ce-code">    notProduce = notProduce + 1</p>
+			<p class="sou ce-code">end</p>
+			<p>Lastly, there exists implicit conditional statements, which are expressions where, through the use of logical operators, you can set a condition and alternate cases without ever explicitly writing an <strong class="sou ce-inline">if</strong> statement. In the following code, the goal is to assign a string to the <strong class="sou ce-inline">isAnchored</strong> variable based on whether the part is, in fact, anchored. While this could be accomplished with an <strong class="sou ce-inline">if</strong>-<strong class="sou ce-inline">else</strong> statement, it is shorter to use some logic here instead:</p>
+			<p class="sou ce-code">local isAnchored = Part.Anchored and "Anchored" or "Unanchored"</p>
+			<p>As you can see, if the part is anchored, that side of the <strong class="sou ce-inline">and</strong> operator will be true when assigning <strong class="sou ce-inline">"Anchored"</strong> to the variable by<a id="_idIndexMarker163"></a> using <strong class="bold">short-circuit logic</strong>, meaning conditional evaluation stops after one condition is met. If the part is not anchored, it will go to an alternate case, which is <strong class="sou ce-inline">"Unanchored"</strong>. You may have observed that the <strong class="sou ce-inline">or</strong> operator acts similarly<a id="_idIndexMarker164"></a> to the <strong class="sou ce-inline">else</strong> keyword because of the nature of this implicit expression.</p>
+			<p>Conditional statements <a id="_idIndexMarker165"></a>are a core component in programming and, as you have seen, have a multitude of applications for even the most basic systems in game development. In the next section, we will cover loops. Loops often go hand in hand with conditional statements, since they can feed whole sets of data into a conditional or repeat manipulation as needed to accomplish the behavior you want.</p>
+			<h1 id="_idParaDest-66"><a id="_idTextAnchor069"></a>Declaring and using loops</h1>
+			<p><strong class="bold">Loops</strong> are valuable components <a id="_idIndexMarker166"></a>when it comes to programming, especially when working with sets of data. It would, of course, be quite unrealistic to expect a<a id="_idIndexMarker167"></a> programmer to index and assign all one thousand elements of a hypothetical table to variables in order to perform some sort of operation. To accomplish behaviors like this, loops are key. These loops function by jumping back to the beginning of their code block if a condition is still met, executing until they reach their terminating case.</p>
+			<h2 id="_idParaDest-67"><a id="_idTextAnchor070"></a>For loops</h2>
+			<p><strong class="sou ce-inline">for</strong> loops are a type of loop that<a id="_idIndexMarker168"></a> are primarily used for iterating over datasets. In Lua, those<a id="_idIndexMarker169"></a> datasets are typically related to tables or numbers. In Lua, there<a id="_idIndexMarker170"></a> are two types of <strong class="sou ce-inline">for</strong> loops: <strong class="bold">numeric</strong> <strong class="sou ce-inline">for</strong> loops and <strong class="bold">generic</strong> <strong class="sou ce-inline">for</strong> loops. The primary difference between these is what determines how<a id="_idIndexMarker171"></a> they are executed. For numeric <strong class="sou ce-inline">for</strong> loops, a variable is assigned to a defined start value, end value, and optionally an increment value; if the increment is not included, Lua sets the increment to one. The numeric <strong class="sou ce-inline">for</strong> loop will then execute the contained code a specified number of times, treating the endpoints of the number range inclusively. Additionally, the assigned variable serves to<a id="_idIndexMarker172"></a> tell you what the current value of the loop is. Much like the use of <strong class="sou ce-inline">if</strong> and <strong class="sou ce-inline">then</strong> in conditionals, <strong class="sou ce-inline">for</strong> loops use <strong class="sou ce-inline">for</strong> and <strong class="sou ce-inline">do</strong> as their declaration keywords. The following example prints numbers going from <strong class="sou ce-inline">0</strong> to <strong class="sou ce-inline">10</strong>, incrementing by <strong class="sou ce-inline">1</strong> with each loop completion. Note that the increment in this case did not need to be specified but has been shown to aid with your understanding:</p>
+			<p class="sou ce-code">for i = 0, 10, 1 do</p>
+			<p class="sou ce-code">    print(i)</p>
+			<p class="sou ce-code">end</p>
+			<p>Let's create a more practical example <a id="_idIndexMarker173"></a>using a numeric <strong class="sou ce-inline">for</strong> loop where we find the<a id="_idIndexMarker174"></a> sum of all integers ranging from <em class="italic">1</em> to <em class="italic">n</em>. Additionally, we can test that the <strong class="sou ce-inline">for</strong> loop works correctly by plugging in the same value for <em class="italic">n</em> into the proof of this operation:</p>
+			<div>
+				<div id="_idContainer034" class="IMG---Figure">
+					<img src="https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/image/Figure_3.6_B16623.jpg" alt="Figure 3.6 – Proof of the sum of the first n natural numbers
+" width="246" height="67">
+				</div>
+			</div>
+			<p class="figure-caption">Figure 3.6 – Proof of the sum of the first n natural numbers</p>
+			<p>In this demonstration, there are some details you should pay attention to. Firstly, since the loop increments by <em class="italic">1</em>, the need for an increment value is not needed; when it is not needed, it should not be included in order to maintain good style. Secondly, you will notice the use of <strong class="sou ce-inline">tostring()</strong>, which functions much like the aforementioned <strong class="sou ce-inline">tonumber()</strong>. This is used because while <strong class="sou ce-inline">print()</strong> will automatically convert other data types into strings, you cannot append other data types, except for numbers to strings. In this example, we will find the sum, print it, and then print whether the sum that was found by the <strong class="sou ce-inline">for</strong> loop matches the value expected by the proof:</p>
+			<p class="sou ce-code">local n = 17</p>
+			<p class="sou ce-code">local sum = 0</p>
+			<p class="sou ce-code">for i = 1, n do</p>
+			<p class="sou ce-code">    sum = sum + i</p>
+			<p class="sou ce-code">end</p>
+			<p class="sou ce-code">print(sum) -&gt; 153</p>
+			<p class="sou ce-code">print("Function working = ".. tostring(sum == (n * (n + 1)) / 2)) </p>
+			<p class="sou ce-code">-&gt; "Function working = true"</p>
+			<p>Returning to the <strong class="sou ce-inline">for</strong> loop types, we have generic <strong class="sou ce-inline">for</strong> loops. While the name seems to imply that they are not<a id="_idIndexMarker175"></a> useful or special, you will likely utilize them more than numeric <strong class="sou ce-inline">for</strong> loops – or most other types of loops for that matter. Generic <strong class="sou ce-inline">for</strong> loops allow you to traverse all indexes <a id="_idIndexMarker176"></a>and values returned by an <strong class="bold">iterator function</strong>. In programming languages, an iterator function is designed to allow programmers to process every element of a data structure while making those returned values isolated from the data structure itself. This isolation, which can be seen when defining a<a id="_idIndexMarker177"></a> variable in a code block, relates to the concept of <strong class="bold">scope</strong>. This means that something that's declared in a block cannot be referenced outside of that block. In the following example, we have a dictionary called <strong class="sou ce-inline">items</strong> that contains three strings. By providing this data structure to the <strong class="sou ce-inline">pairs()</strong> iterator function, you can nicely display every index and value being provided by the iterator:</p>
+			<p class="sou ce-code">local items = {</p>
+			<p class="sou ce-code">    Animal = "Elephant";</p>
+			<p class="sou ce-code">    Food = "Egg";</p>
+			<p class="sou ce-code">    Plant = "Flower";</p>
+			<p class="sou ce-code">}</p>
+			<p class="sou ce-code">for index, value in pairs(items) do</p>
+			<p class="sou ce-code">    print(index, value)</p>
+			<p class="sou ce-code">end</p>
+			<p>As we mentioned previously, the index and value provided by the iterator are not components of the actual data structure that is passed to <strong class="sou ce-inline">pairs()</strong>. This means you are free to manipulate these as desired without the risk of affecting the elements currently being processed. In the following code, the goal is to double any odd numbers to make them even. While <a id="_idIndexMarker178"></a>we could assign the number that results from using modulo to a new variable, it is alright in this case to simply use the <strong class="sou ce-inline">value</strong> variable directly. Notice that in order to actually change the element of the table that <strong class="sou ce-inline">value</strong> corresponds to, you must use the index provided by the iterator with the table itself:</p>
+			<p class="sou ce-code">local values = {37, 60, 59, 20, 4, 10, 100, 75, 83}</p>
+			<p class="sou ce-code">for index, value in pairs(values) do</p>
+			<p class="sou ce-code">    value = value % 2</p>
+			<p class="sou ce-code">    if value == 1 then --Odd number</p>
+			<p class="sou ce-code">        values[index] = values[index] * 2</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">end</p>
+			<p class="sou ce-code">-&gt; values = {74, 60, 118, 20, 4, 10 , 100, 150, 166}</p>
+			<p>Our last generic <strong class="sou ce-inline">for</strong> loop example will be parsing through instances that have been parented to our <strong class="bold">Workspace</strong>. Changing the properties of various objects within our <strong class="bold">Workspace</strong> is where you will likely utilize this type of <strong class="sou ce-inline">for</strong> loop the most. In the following demonstration, we will be looking for and anchoring all <strong class="bold">BaseParts</strong>. By using the <strong class="sou ce-inline">GetDescendants()</strong> method of the <strong class="bold">Workspace</strong>, all instances contained within it are returned recursively, meaning it does not matter where an instance is parented, only that it exists somewhere in the <strong class="bold">Workspace</strong>. It is pertinent to remember that there the <strong class="sou ce-inline">GetChildren()</strong> method also exists, which returns a table of only the immediate children of an instance. Notice that the index position has an underscore (<strong class="sou ce-inline">_</strong>) as opposed to a name that could be better referenced; this is merely a stylistic choice for when the index component is not being used, making it more readable for someone who would otherwise be looking for its location in your code. Here, you can see that we check that the object is a <strong class="sou ce-inline">BasePart</strong> since the <strong class="sou ce-inline">Anchored</strong> property would be nonexistent for any other class <a id="_idIndexMarker179"></a>of instance:</p>
+			<p class="sou ce-code">local items = workspace:GetDescendants()</p>
+			<p class="sou ce-code">for _, object in pairs(items) do</p>
+			<p class="sou ce-code">    if object:IsA("BasePart") then</p>
+			<p class="sou ce-code">        object.Anchored = true</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">end</p>
+			<p>You will now learn about a different type of loop that will always run, so long as a condition is met.</p>
+			<h2 id="_idParaDest-68"><a id="_idTextAnchor071"></a>While loops</h2>
+			<p><strong class="sou ce-inline">while</strong> loops are loops<a id="_idIndexMarker180"></a> that run continuously, as long as some specified condition is met. Though they<a id="_idIndexMarker181"></a> can be used for similar purposes as <strong class="sou ce-inline">for</strong> loops, it is best to conceptualize them as a repeating conditional statement. In the following example, the <strong class="sou ce-inline">while</strong> loop increments a value by 1 only if that value is less than 10:</p>
+			<p class="sou ce-code">local num = 0</p>
+			<p class="sou ce-code">while num &lt; 10 do</p>
+			<p class="sou ce-code">    num = num + 1</p>
+			<p class="sou ce-code">end</p>
+			<p class="sou ce-code">print(num) -&gt; 10</p>
+			<p>In a game development setting, <strong class="sou ce-inline">while</strong> loops are particularly useful for running round-based games or performing any other event that should occur after a given amount of time. A convenient but perhaps unintuitive behavior of the <strong class="sou ce-inline">while</strong> loop condition is that the condition is not restricted to just a Boolean value. As long as the condition is not <strong class="sou ce-inline">falsy</strong> (<strong class="sou ce-inline">false</strong> or <strong class="sou ce-inline">nil</strong> in Lua), the loop<a id="_idIndexMarker182"></a> will execute, and if the condition itself is a function, that function will execute and the loop will also run if the function returns a value. You should remember to use good style when doing this, which we will discuss more in the <em class="italic">Demonstrating programming style and efficiency</em> section.</p>
+			<p>Another variation of the <strong class="sou ce-inline">while</strong> loop is the <strong class="sou ce-inline">while true</strong> loop. This type of loop will always execute as the condition is always <strong class="sou ce-inline">true</strong>. This unending variation of a <strong class="sou ce-inline">while</strong> loop is useful for something that does not need to terminate; however, it can cause a script to crash as the loop stacks on top of itself infinitely. To avoid this, we can use the <strong class="sou ce-inline">wait()</strong> function; this function serves as a pause within your script, which is convenient for delaying a behavior or allowing more time for something to occur. Adding a <strong class="sou ce-inline">wait()</strong> to this loop will prevent the loop from stacking and instead run at the rate you want. In the following code, a <strong class="sou ce-inline">while</strong> loop has been created that increments a variable every second, keeping track of the elapsed time since the loop began. Note that the number argument to <strong class="sou ce-inline">wait()</strong> is in seconds:</p>
+			<p class="sou ce-code">local elapsedTime = 0</p>
+			<p class="sou ce-code">while true do</p>
+			<p class="sou ce-code">    wait(1)</p>
+			<p class="sou ce-code">    elapsedTime = elapsedTime + 1</p>
+			<p class="sou ce-code">    print(elapsedTime)</p>
+			<p class="sou ce-code">end</p>
+			<p>In the next section, you will learn about a similar type of loop that can be used in slightly different applications.</p>
+			<h2 id="_idParaDest-69"><a id="_idTextAnchor072"></a>Repeat loops</h2>
+			<p><strong class="sou ce-inline">repeat</strong> loops execute their <a id="_idIndexMarker183"></a>contents until a condition is met. While this may seem much like a <strong class="sou ce-inline">while</strong> loop, the difference is that <strong class="sou ce-inline">while</strong> loops run only if a condition is met, checking the condition before running. Unlike other loop types, <strong class="sou ce-inline">repeat</strong> loops always run at least <a id="_idIndexMarker184"></a>once, checking the terminating condition only after execution, much like a <strong class="sou ce-inline">do-while</strong> loop in other languages. The keywords for <strong class="sou ce-inline">repeat</strong> loops are <strong class="sou ce-inline">repeat</strong> and <strong class="sou ce-inline">until</strong>, where the code to be executed follows the <strong class="sou ce-inline">repeat</strong> keyword, closed by <strong class="sou ce-inline">until</strong>, and ends with the condition to leave the loop. The following loop shows a number variable being decremented until its value is equal to <strong class="sou ce-inline">0</strong>:</p>
+			<p class="sou ce-code">local num = 12</p>
+			<p class="sou ce-code">repeat</p>
+			<p class="sou ce-code">    num = num - 1</p>
+			<p class="sou ce-code">until num == 0</p>
+			<p class="sou ce-code">print(num) -&gt; 0</p>
+			<p>With loops now at your disposal, you can process large sets of data and make systems that require consistent, repetitive behavior. Next, you will learn about a new way of feeding data to loops, as well as condensing them if they are frequently used.</p>
+			<h1 id="_idParaDest-70"><a id="_idTextAnchor073"></a>Learning functions and events</h1>
+			<p>In programming, a <strong class="bold">function</strong> is a repeatably <a id="_idIndexMarker185"></a>callable code block, typically designed to accomplish a single task. Functions are important for abbreviating common jobs being done<a id="_idIndexMarker186"></a> and help reduce the amount of redundancy within your programs. In this section, you will learn different ways to format functions, as well as when you should be using them.</p>
+			<h2 id="_idParaDest-71"><a id="_idTextAnchor074"></a>Functions in programming</h2>
+			<p>We primarily use<a id="_idIndexMarker187"></a> functions to define code that can be easily referenced and executed repeatedly. For the sake of terminology, many programming languages<a id="_idIndexMarker188"></a> distinguish functions from <strong class="bold">procedures</strong> or <strong class="bold">subroutines</strong>; the difference<a id="_idIndexMarker189"></a> here is that a function executes code to compute some data that is returned, whereas a procedure simply accomplishes a task without returning a value to where it was called. The following function has been designed to create a new table and fill it with fruits, vegetables, or a non-produce item based on a randomly generated value. See that the function is locally defined, much like a variable, followed by the <strong class="sou ce-inline">function</strong> keyword and the name of the function, and ends with a set of parentheses; this<a id="_idIndexMarker190"></a> part of a function is called the <strong class="bold">header</strong>. To select a random item, we make a new random object using the <strong class="sou ce-inline">Random.new()</strong> constructor; this is created in a<a id="_idIndexMarker191"></a> manner quite similar to <strong class="bold">Java</strong>. By using the <strong class="sou ce-inline">NextInteger()</strong> method of the random object, a random integer can be generated between the min and max value that's provided to it inclusively. This function could be associated with one of the examples seen in the <em class="italic">Conditional statements</em> section. If you feel comfortable, try making a produce counter using the conditional statement from the previous section, a loop, and this function:</p>
+			<p class="sou ce-code">local random = Random.new()</p>
+			<p class="sou ce-code">local function fillStoreSupply()</p>
+			<p class="sou ce-code">    local storeSupply = {}</p>
+			<p class="sou ce-code">    </p>
+			<p class="sou ce-code">    for i = 1, 10 do</p>
+			<p class="sou ce-code">        local ranVal = random:NextInteger(1,3)</p>
+			<p class="sou ce-code">        local item = (ranVal == 1 and "Fruit") or (ranVal == 2          and "Vegetable") or "Shoe"</p>
+			<p class="sou ce-code">        table.insert(storeSupply, item)</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">    </p>
+			<p class="sou ce-code">    return storeSupply</p>
+			<p class="sou ce-code">end</p>
+			<p class="sou ce-code">local supplyTable = fillStoreSupply()</p>
+			<p>One of the main aspects of using functions is providing information to them when you call them for a task. To do this, values need to be added to the call statement of the function and defined in the line where the function is declared. When a value is being provided to a call, it is<a id="_idIndexMarker192"></a> referred to as an <strong class="bold">argument</strong>. However, when referring to this data<a id="_idIndexMarker193"></a> inside a function, it is referred to as a <strong class="bold">parameter</strong>. The following function creates a factorial from the provided number, <em class="italic">n</em>. A factorial is the result of multiplying all whole numbers less than a number, by that number. See how a<a id="_idIndexMarker194"></a> number is provided as the argument in the function call. When the function runs, that value is automatically assigned to <em class="italic">n</em>, which can then be manipulated as needed:</p>
+			<p class="sou ce-code">local function factorial(n)</p>
+			<p class="sou ce-code">    assert(n == math.floor(n), "n must be a whole number.")</p>
+			<p class="sou ce-code">    local factorial = 1 --Empty product should be 1</p>
+			<p class="sou ce-code">    while n &gt; 0 do</p>
+			<p class="sou ce-code">        factorial = factorial * n</p>
+			<p class="sou ce-code">        n = n - 1</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">    return factorial</p>
+			<p class="sou ce-code">end</p>
+			<p class="sou ce-code">print(factorial(12)) -&gt; 479001600</p>
+			<p>You may have noticed the use of the <strong class="sou ce-inline">assert()</strong> function. Much like the use of <strong class="sou ce-inline">throw()</strong> in Java, you can use this to throw an error and terminate a process if some condition is not met. The second argument is a string that is sent to the output and will look like any other naturally occurring error message.</p>
+			<p>In the case that you <a id="_idIndexMarker195"></a>do not know how many arguments are going to be passed to a function, you can create a <strong class="bold">variadic function</strong>. Variadic functions are like regular functions, though they possess the <a id="_idIndexMarker196"></a>ability to take any number of arguments in a tuple state. The following variadic function returns the sum of all numbers provided to it. Notice the use of the three dots (<strong class="sou ce-inline">…</strong>); these dots represent whatever arguments are passed to the function and are most often put directly into a table for processing. In the following code block, you can see a random amount of number arguments being passed to the <strong class="sou ce-inline">sum</strong> function. The parameters are added and returned as a single value: </p>
+			<p class="sou ce-code">local function sum(...)</p>
+			<p class="sou ce-code">    local args = {...}</p>
+			<p class="sou ce-code">    local sum = 0</p>
+			<p class="sou ce-code">    for _, number in pairs(args) do</p>
+			<p class="sou ce-code">        sum = sum + number</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">    return sum</p>
+			<p class="sou ce-code">end</p>
+			<p class="sou ce-code">local num = sum(7, 9, 12, 3, 2, 6, 13)</p>
+			<p class="sou ce-code">print(num) -&gt; 52</p>
+			<p>As you may have found out on your own, all the loops we have covered have the ability to <strong class="bold">yield</strong>; that is, to say that when they run, they pause the current <strong class="bold">thread</strong>, meaning that the loop must finish before<a id="_idIndexMarker197"></a> any code following it can be executed. In programming, we can make use of what is called <strong class="bold">multithreading</strong> to handle this. In Lua, the <strong class="sou ce-inline">spawn()</strong> function is used to create a new thread within a script. In the following example, a <strong class="sou ce-inline">while</strong> loop is running every 1 second in order to record the elapsed time. Note that this loop has a behavior that's equivalent to the second example that was provided in the <em class="italic">While loops</em> section; though the condition is different, it is not <strong class="sou ce-inline">falsy</strong>. Normally, code after this <strong class="sou ce-inline">while</strong> loop can never be reached as there is no condition that will cause the loop to end. However, with it wrapped within a <strong class="sou ce-inline">spawn()</strong> function, a<a id="_idIndexMarker198"></a> new thread is created just for the loop or any other contained code, and the rest of the script's content in the main thread will not be impeded from running:</p>
+			<p class="sou ce-code">local elapsedTime = 0</p>
+			<p class="sou ce-code">spawn(function()</p>
+			<p class="sou ce-code">    while wait(1) do</p>
+			<p class="sou ce-code">        elapsedTime = elapsedTime + 1</p>
+			<p class="sou ce-code">        print(elapsedTime)</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">end)</p>
+			<p class="sou ce-code">print("Code after loop can still execute!")</p>
+			<p>It should be noted that sometimes, Lua can behave in an unexpected manner if multiple threads are stacked. To prevent this, you should avoid nesting <strong class="sou ce-inline">spawn()</strong> functions whenever possible.</p>
+			<h2 id="_idParaDest-72"><a id="_idTextAnchor075"></a>Recursion</h2>
+			<p>One of the invaluable features of<a id="_idIndexMarker199"></a> functions is their ability to call themselves. When properly structured, this can create a type of loop in a process called <strong class="bold">recursion</strong>. The difference between something like a <strong class="sou ce-inline">while</strong> loop and a recursive process is that a loop jumps back to its beginning, whereas<a id="_idIndexMarker200"></a> recursion actually <strong class="bold">stacks</strong> upon itself. In programming, a stack can be a data structure or, as in the case of recursion, simply the state of something in your program. Like a stack of plates or pancakes, the one that was most recently added will be the first one to be removed.</p>
+			<p>To demonstrate this stacking, let's return to the factorial function we created earlier in the <em class="italic">Functions</em> section. Though a <strong class="sou ce-inline">while</strong> loop was able to accomplish the goal, you could also achieve the same result by using recursion. In the following function, notice that the call and header of the function remain unchanged; the recursive elements exist in the <strong class="sou ce-inline">return</strong> statements. For the <strong class="sou ce-inline">if</strong> statement, the first case simply returns <em class="italic">1</em> if <em class="italic">n</em> is less than <em class="italic">1</em>, because<a id="_idIndexMarker201"></a> we cannot create a factorial from any values less than this; in the case of <em class="italic">n</em> being <em class="italic">0</em>, its factorial would also be <em class="italic">1</em> by convention. The next case is the most important: if <em class="italic">n</em> is greater than <em class="italic">1</em>, then it is multiplied by the value that's returned by the factorial function, where <em class="italic">n</em> is one less than the current value of <em class="italic">n</em>. As you may begin to see, this causes the function to stack until <em class="italic">n</em> has been decremented down to <em class="italic">1</em>. This is the "base case", where no function call is made:</p>
+			<p class="sou ce-code">local function factorial(n)</p>
+			<p class="sou ce-code">    assert(n == math.floor(n), "n must be a whole number.")</p>
+			<p class="sou ce-code">    </p>
+			<p class="sou ce-code">    if n &lt; 1 then</p>
+			<p class="sou ce-code">        return 1</p>
+			<p class="sou ce-code">    else</p>
+			<p class="sou ce-code">        return n * factorial(n - 1)</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">end</p>
+			<p class="sou ce-code">print(factorial(6)) -&gt; 720</p>
+			<p>To give a better visualization of how this process is being executed, let's look at a mapped out example of the previous call to the factorial function, using <em class="italic">6</em> for <em class="italic">n</em>. Observe that each call, <em class="italic">n</em>, is set to be multiplied by the returned value of the function and continues to be stacked until a case without a function call is reached. Then, each function stops and is taken off the stack, returning the value to the <strong class="sou ce-inline">return</strong> statement that called it. Once this process finishes, our original function returns the final value to wherever it was called from:</p>
+			<p class="sou ce-code">6 * factorial(5)</p>
+			<p class="sou ce-code">6 * (5 * factorial(4))</p>
+			<p class="sou ce-code">6 * (5 * (4 * factorial(3)))</p>
+			<p class="sou ce-code">6 * (5 * (4 * (3 * (factorial(2))))</p>
+			<p class="sou ce-code">6 * (5 * (4 * (3 * (2 * factorial(1)))))</p>
+			<p class="sou ce-code">6 * (5 * (4 * (3 * (2 * 1))))</p>
+			<p class="sou ce-code">6 * (5 * (4 * (3 * 2)))</p>
+			<p class="sou ce-code">6 * (5 * (4 * 6))</p>
+			<p class="sou ce-code">6 * (5 * 24)</p>
+			<p class="sou ce-code">6 * 120</p>
+			<p class="sou ce-code">720</p>
+			<p>Now that you<a id="_idIndexMarker202"></a> have a firmer grasp of the concept of recursion, let's look at another practical example. When working with tables, setting a variable to an already existing table will not follow normal behavior and simply copy that value to the new variable; instead, tables use <strong class="bold">references</strong>. References<a id="_idIndexMarker203"></a> work to save resources, essentially causing new variables to act only as pointers to a previously declared table; the pointer can actually be seen by printing the table. With this behavior, assigning a table to a variable and changing anything within that table would change it everywhere it is referenced. You can test this with the following code. Here, you can see that when a variable's value is set to a table that has already been created, the variables contain the same reference:</p>
+			<p class="sou ce-code">local function checkEquality(table1, table2)</p>
+			<p class="sou ce-code">    print("Variable 1: ".. tostring(table1))</p>
+			<p class="sou ce-code">    print("Variable 2: ".. tostring(table2))</p>
+			<p class="sou ce-code">    print("First and second variable same table = ".. tostring(table1 == table2))</p>
+			<p class="sou ce-code">end</p>
+			<p class="sou ce-code">local group = {"Ashitosh", "Hayden", "Sofi"}</p>
+			<p class="sou ce-code">local groupClone = group</p>
+			<p class="sou ce-code">checkEquality(group, groupClone)</p>
+			<p>If a table were cloned every time it was assigned to a variable, that would make indexing libraries or any other large table structure extraordinarily expensive. There are scenarios, however, where you may need to clone a table or dictionary. While <strong class="sou ce-inline">for</strong> loops may be viable in some <a id="_idIndexMarker204"></a>cases, the presence of nested tables, as seen at the end of the <em class="italic">Dictionaries</em> section, could potentially require that you use any number of <strong class="sou ce-inline">for</strong> loops to accomplish your task. To get around this, we can once again use recursion. The following example creates a copy of our items table by creating a new table and adding each element to it by index and value. In the case that the value to be cloned is a table, the function recurses with the nested table as the argument. Once it's done this, the completely new table is returned to where it was called from, and the <strong class="sou ce-inline">checkEquality()</strong> function from the previous example is used to verify that the tables are unique:</p>
+			<p class="sou ce-code">local items = {</p>
+			<p class="sou ce-code">    Egg = {fragile = true;};</p>
+			<p class="sou ce-code">    Water = {wet = true};</p>
+			<p class="sou ce-code">}</p>
+			<p class="sou ce-code">local function recursiveCopy(targetTable)</p>
+			<p class="sou ce-code">local tableCopy = {}</p>
+			<p class="sou ce-code">for index, value in pairs(targetTable) do</p>
+			<p class="sou ce-code">        if type(value) == "table" then</p>
+			<p class="sou ce-code">            value = recursiveCopy(value)</p>
+			<p class="sou ce-code">        end</p>
+			<p class="sou ce-code">        tableCopy[index] = value</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">    return tableCopy</p>
+			<p class="sou ce-code">end</p>
+			<p class="sou ce-code">local itemsClone = recursiveCopy(items)</p>
+			<p class="sou ce-code">checkEquality(items, itemsClone)</p>
+			<p>Like loops, calls to<a id="_idIndexMarker205"></a> recursive functions can yield, but typically, they finish in a short enough amount of time to where nothing in your thread is affected. If, for some reason, your recursive function runs long enough to cause a noticeable pause for the rest of your script, you should more likely review your function than try to implement a new thread. This is because any code following the new thread will execute before the value is returned, causing potential issues.</p>
+			<h2 id="_idParaDest-73"><a id="_idTextAnchor076"></a>Events and methods of instances</h2>
+			<p>Just like instances have<a id="_idIndexMarker206"></a> different properties depending on their class, they also have unique methods and events that vary with their class. Just like base classes grant the same <a id="_idIndexMarker207"></a>properties to multiple instances, some methods and events are inherited by all instances, or likewise by base classes.</p>
+			<p>For the following examples, we will continue to use a part as our instance of choice. The following method returns the mass of that part, taking into account the density of that part based on its <strong class="bold">PhysicalProperties</strong> and its size. Using this, we can calculate the amount of force needed to locally simulate zero gravity for this object. We will be using a <strong class="sou ce-inline">BodyForce</strong> instance to accomplish this; we will cover the <strong class="sou ce-inline">BodyMover</strong> base class and more of its types in future chapters. To make this work best, place your part slightly off the ground and jump on it or apply some other force to see it start moving. Make sure the part is unanchored; otherwise, it will not be able to move:</p>
+			<p class="sou ce-code">local part = workspace.FloatingPart</p>
+			<p class="sou ce-code">local mass = part:GetMass()</p>
+			<p class="sou ce-code">local bodyForce = Instance.new("BodyForce")</p>
+			<p class="sou ce-code">bodyForce.Force = Vector3.new(0,mass * workspace.Gravity,0)</p>
+			<p class="sou ce-code">bodyForce.Parent = part</p>
+			<p>While methods <a id="_idIndexMarker208"></a>have already been well-defined, <strong class="bold">events</strong> are best described as detectable signals that are sent out when something happens within your game. These signals can <a id="_idIndexMarker209"></a>be easily connected to functions, which allows you to associate any event that is triggered with a predefined behavior in an easily manageable cause-and-effect relationship. When using the appropriate terminology, when a signal is triggered, we say it has been <strong class="bold">fired</strong>. </p>
+			<p>For this demonstration, we will be examining the <strong class="sou ce-inline">Touched</strong> event of <strong class="bold">BaseParts</strong>. This event is fired whenever another <strong class="sou ce-inline">BasePart</strong> touches <strong class="sou ce-inline">TouchPart</strong>, the part looking for the event's signal. For connecting signals to functions, we use the <strong class="sou ce-inline">Connect()</strong> method. Much like how a <strong class="sou ce-inline">spawn()</strong> function is formatted, you can include the <strong class="sou ce-inline">function</strong> keyword and a set of parentheses. However, many events pass information in the form of arguments that you will want to include in your function. You can define these parameters like you would when creating your own function to be called. Here, the part that has been touched is an argument that's passed by the event. It must be defined in the function header if you wish to use it:</p>
+			<p class="sou ce-code">local Part = workspace.TouchPart</p>
+			<p class="sou ce-code">Part.Touched:Connect(function(hit)</p>
+			<p class="sou ce-code">    print(hit)</p>
+			<p class="sou ce-code">end)</p>
+			<p>In the preceding example, the function has been formatted so that it is embedded within the event. For many, this is the preferred method of doing things, but if you want a function that is being used elsewhere to also be associated with an event, you can provide the function name to the <strong class="sou ce-inline">Connect()</strong> method. In the following example, we are locally defining a function and, separately, declaring that the function should be called when the <strong class="sou ce-inline">touched</strong> event is fired. Notice that the function's first parameter is still present without us needing to pass it from where the event is connected:</p>
+			<p class="sou ce-code">local Part = workspace.TouchPart</p>
+			<p class="sou ce-code">local function printHitName(hit)</p>
+			<p class="sou ce-code">    print(hit)</p>
+			<p class="sou ce-code">end</p>
+			<p class="sou ce-code">Part.Touched:Connect(printHitName)</p>
+			<p>You have<a id="_idIndexMarker210"></a> learned a lot of information in this chapter that will be relevant to you in the future, just as much as it is relevant to you now. While you now know enough from <a id="_idIndexMarker211"></a>these sections to start experimenting with making some intermediate programs, you must learn how to do so with good style and make sure that your code is as efficient as possible.</p>
+			<h1 id="_idParaDest-74"><a id="_idTextAnchor077"></a>Demonstrating programming style and efficiency</h1>
+			<p>Writing code with good style not<a id="_idIndexMarker212"></a> only improves the quality of your work, but it also prepares you to pursue programming in more professional environments or when <a id="_idIndexMarker213"></a>working with other people. The rules you are about to cover are categorized by whether they exist universally in programming or if they pertain primarily to Roblox.</p>
+			<h2 id="_idParaDest-75"><a id="_idTextAnchor078"></a>General style rules</h2>
+			<p><strong class="bold">Readability</strong> is an important aspect <a id="_idIndexMarker214"></a>of maintaining good style. Not only do others who<a id="_idIndexMarker215"></a> may read your code need to understand what is happening, but being able to follow your own code will greatly increase your workflow. Having a clean coding style will also enable you to be more conscious of other style factors you should be implementing. The two ways you can make your code the most readable are to use proper indentation and observe appropriate line length. For line length, most college programming courses will likely suggest that you limit your lines of code to one hundred characters. In Roblox, there are line numbers but not an indicator for which character you are on for a line. Generally, your line length should not exceed your viewport size, which means that you should not require the use of a horizontal scrollbar to see the entirety of your line. You should arguably observe indentation style the most carefully out of the readability rules. Roblox Studio should automatically indent your code when you hit the <em class="italic">Enter</em> key, but make sure what you write follows the code examples in this chapter until you feel confident with your ability to follow this rule.</p>
+			<p>Going back to working<a id="_idIndexMarker216"></a> with multiple programmers, comments are an invaluable part of letting others know what your code is doing. While readability is also needed to make others aware of what a script's purpose is, comments can be used to more explicitly tell fellow programmers where a code block is being used, what it requires, or what behavior to expect from it.</p>
+			<p>Looking back at implicit conditionals, there are situations where it may make more sense to use logic within a variable declaration than to use an explicit conditional statement. This decision is ultimately up to you, but only use it when it's practical to. If you need to create more than two or three cases, you should likely just use a conditional. Additionally, remember to consider previously mentioned style points, such as line length.</p>
+			<p>While mentioned briefly previously, you should ensure that you are not grouping random data together in tables or dictionaries. For organizational purposes, you should be using tables for a significant purpose, and the elements of data within them should be at least loosely associated with each other. If necessary, there is no harm in creating additional tables to accommodate different sets of data being used in your code.</p>
+			<h2 id="_idParaDest-76"><a id="_idTextAnchor079"></a>Roblox-specific rules</h2>
+			<p>Optimizing code is very<a id="_idIndexMarker217"></a> important when making sure every player in your potential audience does not experience issues when playing. While we will cover a variety of ways to make different systems as efficient as possible, you should learn to implement events as opposed to loops whenever possible. For example, if you know that a value that's being displayed to the player is subject to change, you should use an event to detect this rather than constantly updating the displayed information with a loop. This is so that resources are only being used when the event is fired, as opposed to constant usage.</p>
+			<p>Some Roblox methods and functions have certain disadvantages that cause them to be labeled as <strong class="bold">deprecated</strong>, meaning that <a id="_idIndexMarker218"></a>while they still work, they are not recommended for use in new work, nor do they show up in autofill. None of the examples in this book contain <a id="_idIndexMarker219"></a>deprecated content at the time of writing and if you are unsure when writing your own programs, you are encouraged to view the documentation for what you are about to use via the developer website.</p>
+			<p>By making use of the rules we've covered, you can increase your ability as a programmer exponentially. Not only will those you code with be more appreciative of your work but in the following chapters, writing programs more effectively will allow you to better grasp new material and implement that material in new coding creations.</p>
+			<h1 id="_idParaDest-77"><a id="_idTextAnchor080"></a>Summary</h1>
+			<p>In this chapter, you learned about the programming constructs that exist in a wide variety of languages, as well as those that are exclusive to Lua. With this knowledge, you can begin making your own mental connections by experimenting with the examples from this chapter and making your own programs.</p>
+			<p>In the next chapter, you will learn about programming that pertains almost exclusively to Roblox development. Following that, you will utilize the new information you have learned about to start making your first game-oriented systems, which will lead to you making full games in the following chapters.</p>
+		</div>
+	</div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="B16623_Section_2_Final_JC_ePub.xhtml.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Section 2: Programming in Roblox</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="B16623_04_Final_JC_ePub.xhtml.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">Chapter 4: Roblox Programming Scenarios</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag">
+        
+        
+
+        
+          <p>You have 6 days left in your trial, Michaelschiner. Subscribe today. <a href="https://learning.oreilly.com/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+        
+
+<footer class="pagefoot t-pagefoot">
+  <a href="B16623_03_Final_JC_ePub.xhtml.html#" class="icon-up" onclick="window.Appcues.track('JumpTop_HeronBook')"><div class="visuallyhidden">Back to top</div></a>
+  <ul class='js-footer-nav'>
+  
+    
+    <li><a href="https://learning.oreilly.com/public/support/">Support</a></li>
+    
+    <li><a href="https://learning.oreilly.com/accounts/logout/">Sign Out</a></li>
+    
+  
+  
+  </ul>
+  <span class="copyright">&#169; 2021 <a href="https://learning.oreilly.com/" target="_blank">O'Reilly Media, Inc</a>.</span>
+  
+    
+    <a href="https://www.oreilly.com/terms/">Terms of Service</a> 
+     / 
+    
+    <a href="https://learning.oreilly.com/privacy">Privacy Policy</a> 
+    
+    
+  
+</footer>
+
+      
+    
+    <script src="https://learning.oreilly.com/jsi18n/web/" charset="utf-8"></script>
+    <script src="https://learning.oreilly.com/library/jsi18n/appcache/" charset="utf-8"></script>
+  </body>
+</html>

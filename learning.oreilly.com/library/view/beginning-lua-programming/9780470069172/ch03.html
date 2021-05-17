@@ -1,0 +1,1341 @@
+<!--[if IE]><![endif]--><!DOCTYPE html><!--[if IE 8]><html class="no-js ie8 oldie" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/beginning-lua-programming/9780470069172/ch03.html"
+data-csrf-cookie="csrfsafari"
+
+
+  data-user-id="11366403"
+  data-user-uuid="ce47de5b-ce80-49f0-b5cd-c60d3d33b198"
+  data-username="michaelschiner"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/13/2021"
+
+
+  data-archive="9780470069172"
+  data-publishers="Wrox"
+
+
+
+  data-htmlfile-name="ch03.html"
+  data-epub-title="Beginning Lua Programming" data-debug=0 data-testing=0><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/beginning-lua-programming/9780470069172/ch03.html"
+data-csrf-cookie="csrfsafari"
+
+
+  data-user-id="11366403"
+  data-user-uuid="ce47de5b-ce80-49f0-b5cd-c60d3d33b198"
+  data-username="michaelschiner"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/13/2021"
+
+
+  data-archive="9780470069172"
+  data-publishers="Wrox"
+
+
+
+  data-htmlfile-name="ch03.html"
+  data-epub-title="Beginning Lua Programming" data-debug=0 data-testing=0><!--<![endif]--><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="author" content="O'Reilly Media" /><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"/><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9780470069172"/><link rel="shortcut icon" href="https://www.oreilly.com/favicon.ico" /><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"/><meta property="twitter:account_id" content="4503599627559754" /><link rel="shortcut icon" href="https://learning.oreilly.com/favicon.ico" type="image/x-icon"><link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'><title>3. Extending Lua with Functions - Beginning Lua Programming</title><link rel="stylesheet" href="https://learning.oreilly.com/static/CACHE/css/output.5bdb4fcb2aad.css" type="text/css"><link rel="stylesheet" type="text/css" href="https://learning.oreilly.com/static/css/annotator.e3b0c44298fc.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><style type="text/css" title="ibis-book"></style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9780470069172/chapter/ch03.html",
+          "book_id": "9780470069172",
+          "chapter_uri": "ch03.html",
+          "position": 0,
+          "user_uuid": "ce47de5b-ce80-49f0-b5cd-c60d3d33b198",
+          "next_chapter_uri": "/library/view/beginning-lua-programming/9780470069172/ch04.html"
+        
+      },
+      title: "Beginning Lua Programming",
+      author_list: "Aaron Brown, Kurt Jung",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false
+    };
+    // ]]></script><script src="https://learning.oreilly.com/static/js/src/modernizr.8e35451ddb64.js"></script><script>
+    
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+      window.PRIVACY_CONTROL_SWITCH = true;
+
+      window.PUBLISHER_PAGES = true;
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "https://learning.oreilly.com/api/v2/search/select/",
+        }
+      };
+  </script><link rel="canonical" href="ch03.html"/><meta name="description" content="Chapter 3. Extending Lua with Functions One of the key concepts in programming is abstraction, which means ignoring unimportant details. Consider the following set of instructions: Get two slices ... "><meta property="og:title" content="3. Extending Lua with Functions" /><meta itemprop="isPartOf" content="/library/view/beginning-lua-programming/9780470069172/" /><meta itemprop="name" content="3. Extending Lua with Functions" /><meta property="og:url" itemprop="url" content="https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch03.html" /><meta property="og:site_name" content="Safari" /><meta property="og:image" itemprop="thumbnailUrl" content="https://learning.oreilly.com/library/cover/9780470069172/" /><meta property="og:description" itemprop="description" content="Chapter 3. Extending Lua with Functions One of the key concepts in programming is abstraction, which means ignoring unimportant details. Consider the following set of instructions: Get two slices ... "><meta itemprop="inLanguage" content="en" /><meta itemprop="publisher" content="Wrox" /><meta property="og:type" content="book" /><meta property="og:book:isbn" itemprop="isbn" content="9780470069172" /><meta property="og:book:author" itemprop="author" content="Aaron Brown" /><meta property="og:book:author" itemprop="author" content="Kurt Jung" /><meta property="og:book:tag" itemprop="about" content="Core Programming" /><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@OReillyMedia"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: <%= font_size %> !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: <%= font_family %> !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: <%= column_width %>% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; URL=https://learning.oreilly.com/library/no-js/" /></noscript><script>
+    var dataLayer = window.dataLayer || [];
+
+    
+      window.medalliaVsgUserIdentifier = 'ce47de5b-ce80-49f0-b5cd-c60d3d33b198';
+      dataLayer.push({userIdentifier: 'ce47de5b-ce80-49f0-b5cd-c60d3d33b198'});
+      dataLayer.push({loggedIn: 'yes'});
+
+      
+        window.medalliaVsgAccountIdentifier = '29964b7b-68d8-4532-9a9b-32e089689c1f';
+        
+
+        window.medalliaVsgIsIndividual = true;
+        
+          
+          dataLayer.push({learningAccountType: 'free trial'});
+          
+        
+
+        
+      
+    
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+    (function () {
+      var VERSION = 'V1.1';
+      var AUTHOR = 'Awwad';
+      if (!window.GtmHelper)
+        window.GtmHelper = function () {
+          var instance = this;
+          var loc = document.location;
+          this.version = VERSION;
+          this.author = AUTHOR;
+          this.readCookie = function (name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+          };
+          this.createCookie = function (name, value, days, cookieDomain) {
+            var domain = "";
+            var expires = "";
+
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + Math.ceil(days * 24 * 60 * 60 * 1000));
+              var expires = " expires=" + date.toGMTString() + ";";
+            }
+
+            if (typeof (cookieDomain) != 'undefined')
+              domain = " domain=" + cookieDomain + "; ";
+
+            document.cookie = name + "=" + value + ";" + expires + domain + "path=/";
+          };
+
+          this.isDuplicated = function (currentTransactionId) {
+            // the previous transaction id:
+            var previousTransIdValue = this.readCookie("previousTransId");
+
+            if (currentTransactionId === previousTransIdValue) {
+              return true; // Duplication
+            } else {
+              return false;
+            }
+          };
+        }
+    })()
+  </script><script defer src="https://learning.oreilly.com/static/js/build/vendor.0eac897f11ed.js"></script><script defer src="https://learning.oreilly.com/static/js/build/reader.c745ea9296ac.js"></script></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts">
+
+    
+  <noscript> 
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+  
+
+
+<a href="ch03.html#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li><a href="https://learning.oreilly.com/home/" class="l0 nav-icn"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.738 14H9.254v-3.676a.617.617 0 0 0-.621-.613H7.39a.617.617 0 0 0-.62.613V14H4.284a.617.617 0 0 1-.622-.613V10.22c0-.327.132-.64.367-.87l3.547-3.493a.627.627 0 0 1 .875 0l3.54 3.499c.234.229.366.54.367.864v3.167a.617.617 0 0 1-.62.613zM7.57 2.181a.625.625 0 0 1 .882 0l5.77 5.692-.93.92-5.28-5.209-5.28 5.208-.932-.919 5.77-5.692z" /></svg><span>Home</span></a></li><li class="search"><a href="ch03.html#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"/></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="ch03.html#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"/></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li class="flyout-parent"><a
+                href="ch03.html#"
+                class="l1 nav-icn "
+                
+              ><?xml version="1.0" encoding="UTF-8"?><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M8,8 C6.34321755,8 5.00013,6.65691245 5.00013,5.00013 C5.00013,3.34334755 6.34321755,2.00026001 8,2.00026001 C9.65678245,2.00026001 10.99987,3.34334755 10.99987,5.00013 C10.99987,6.65691245 9.65678245,8 8,8 Z M2.33024571,11.3523547 L2.33774538,11.3523547 C3.7622187,9.70968996 5.82947484,8.76608166 8.00374984,8.76608166 C10.1780248,8.76608166 12.245281,9.70968996 13.6697543,11.3523547 C13.8892083,11.6177474 14.0062813,11.9530021 13.99974,12.2973138 L13.99974,13.99974 L2.00026001,13.99974 L2.00026001,12.2973138 C1.99371867,11.9530021 2.11079172,11.6177474 2.33024571,11.3523547 Z" id="path-1"></path></svg><span>Your O&#39;Reilly</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/profile/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Profile</span></a></li><li><a
+                    href="https://learning.oreilly.com/history/"
+                    class="l2 nav-icn"
+                    
+                  ><span>History</span></a></li><li><a
+                    href="https://learning.oreilly.com/playlists/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Playlists</span></a></li><li><a
+                    href="https://learning.oreilly.com/u/ce47de5b-ce80-49f0-b5cd-c60d3d33b198/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Highlights</span></a></li></ul></li><li ><a
+                href="https://learning.oreilly.com/answers/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M2.31032699,3.75609006 C4.65421571,1.41371359 8.45302454,1.41472092 10.7955702,3.75860838 C13.1381158,6.10249583 13.1369405,9.90130261 10.7930518,12.243847 C8.44916311,14.5863913 4.65018639,14.5852161 2.30780867,12.2413286 C-0.0346204845,9.89749489 -0.0334929936,6.09853298 2.31032699,3.75609006 Z M8.8198605,4.98016308 C7.34193969,3.86924672 5.23410194,3.98609692 3.88914868,5.33104946 C3.12814393,6.09032122 2.72818176,7.13880077 2.79015179,8.21201133 C2.79115912,8.23064692 2.79233434,8.24928252 2.79350956,8.26791811 L2.79350956,8.26791811 C2.83179539,8.8307976 2.9944077,9.37404287 3.26947292,9.86201677 L3.26947292,9.86201677 L2.77621706,11.7027432 C2.7699968,11.7259241 2.77662063,11.7506624 2.79359185,11.7676337 C2.8105631,11.7846049 2.83530144,11.7912287 2.85848233,11.7850085 L2.85848233,11.7850085 L4.69400524,11.2922565 C5.26306363,11.6167344 5.90703177,11.786885 6.56209849,11.7858479 C8.64827865,11.7858479 10.3395879,10.094542 10.3395879,8.00836292 C10.3405204,6.84135608 9.80105674,5.73967784 8.87862141,5.02482134 L8.87862141,5.02482134 L8.82825492,4.98654283 Z M13.7933062,2 C14.7073496,2.00009863 15.4482759,2.74110484 15.4482759,3.65514822 C15.4482759,4.32460943 15.0449926,4.92814782 14.4264842,5.18432286 C13.8079757,5.44049789 13.096053,5.29885769 12.6226979,4.82545158 C12.1493429,4.35204547 12.0077795,3.64010743 12.2640213,3.02162665 C12.5202631,2.40314587 13.123845,1.99992776 13.7933062,2 Z"/></svg><span>Answers</span></a></li><li class="flyout-parent"><a
+                href="ch03.html#"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>queue icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 29.2C25.4 29.2 25.8 29.1 26.1 28.9L48.7 16.8C49.5 16.4 50 15.5 50 14.6 50 13.7 49.5 12.8 48.7 12.4L26.1 0.3C25.4-0.1 24.6-0.1 23.9 0.3L1.3 12.4C0.5 12.8 0 13.7 0 14.6 0 15.5 0.5 16.4 1.3 16.8L23.9 28.9C24.2 29.1 24.6 29.2 25 29.2ZM7.3 14.6L25 5.2 42.7 14.6 25 24 7.3 14.6ZM48.7 22.4L47.7 21.9 25 34.2 2.3 21.9 1.3 22.4C0.5 22.9 0 23.7 0 24.7 0 25.6 0.5 26.5 1.3 26.9L23.9 39.3C24.2 39.5 24.6 39.6 25 39.6 25.4 39.6 25.8 39.5 26.1 39.3L48.7 26.9C49.5 26.5 50 25.6 50 24.7 50 23.7 49.5 22.9 48.7 22.4ZM48.7 32.8L47.7 32.3 25 44.6 2.3 32.3 1.3 32.8C0.5 33.3 0 34.1 0 35.1 0 36 0.5 36.9 1.3 37.3L23.9 49.7C24.2 49.9 24.6 50 25 50 25.4 50 25.8 49.9 26.1 49.7L48.7 37.3C49.5 36.9 50 36 50 35.1 50 34.1 49.5 33.3 48.7 32.8Z"/></g></svg><span>Explore</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/topics/"
+                    class="l2 nav-icn"
+                    
+                  ><span>All Topics</span></a></li><li><a
+                    href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;formats=case%20study&amp;formats=learning%20path&amp;formats=live%20online%20training&amp;formats=notebook&amp;formats=oriole&amp;formats=video&amp;sort=popularity&amp;facet_json=true&amp;page=0&amp;collection_type=expert"
+                    class="l2 nav-icn"
+                    
+                  ><span>Most Popular Titles</span></a></li><li><a
+                    href="https://learning.oreilly.com/recommendations/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Recommended</span></a></li><li><a
+                    href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;sort=publication_date&amp;facet_json=true&amp;page=0"
+                    class="l2 nav-icn"
+                    
+                  ><span>Early Releases</span></a></li><li><a
+                    href="https://learning.oreilly.com/playlists/discover/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Shared Playlists</span></a></li><li><a
+                    href="https://learning.oreilly.com/resource-centers/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Resource Centers</span></a></li></ul></li><li class="flyout-parent"><a
+                href="ch03.html#"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12.8 3.2A1.2 1.2 0 0 1 14 4.4v8.4a1.2 1.2 0 0 1-1.2 1.2H3.2A1.2 1.2 0 0 1 2 12.8V4.4a1.2 1.2 0 0 1 1.2-1.2h1.2V2h1.2v1.2h4.8V2h1.2v1.2h1.2zm-9.6 9.6h9.6V6.2H3.2v6.6zM8 9.5a1.35 1.35 0 1 1 0-2.7 1.35 1.35 0 0 1 0 2.7zm2.7 2.148v.552H5.3v-.552c0-.321.124-.634.355-.858a3.358 3.358 0 0 1 4.69 0c.23.224.355.537.355.858z" /></svg><span>Live Events</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/attend/"
+                    class="l2 nav-icn"
+                    
+                  ><span>All Events</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/architectural-katas/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Architectural Katas</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/ai/"
+                    class="l2 nav-icn"
+                    
+                  ><span>AI &amp; ML</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/strata/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Data Sci &amp; Eng</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/oscon/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Programming</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/infrastructure-ops/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Infra &amp; Ops</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/software-architecture/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Software Arch</span></a></li></ul></li><li class="flyout-parent"><a
+                href="ch03.html#"
+                class="l1 nav-icn "
+                
+              ><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.6467109,4.35328907 L14.7964612,7.51003884 C15.0678463,7.78304342 15.0678463,8.22395603 14.7964612,8.49696061 L11.6467109,11.6467109 L10.6597892,10.6597892 L13.3055794,8 L10.6597892,5.34021084 L11.6467109,4.35328907 Z M4.35328907,11.6467109 L1.20353875,8.48996116 C0.932153749,8.21695658 0.932153749,7.77604397 1.20353875,7.50303939 L4.35328907,4.35328907 L5.34021084,5.34021084 L2.69442057,8 L5.34021084,10.6597892 L4.35328907,11.6467109 Z M5.84417089,11.4997226 L8.67194674,4.50027742 L10.1838269,4.50027742 L7.35605105,11.4997226 L5.84417089,11.4997226 Z" id="Mask"></path></svg><span>Interactive</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/scenarios/?classification=content-scenario"
+                    class="l2 nav-icn"
+                    
+                  ><span>Scenarios</span></a></li><li><a
+                    href="https://learning.oreilly.com/scenarios/?classification=sandbox-scenario"
+                    class="l2 nav-icn"
+                    
+                  ><span>Sandboxes</span></a></li><li><a
+                    href="https://learning.oreilly.com/interactive/?classification=jupyter-notebook"
+                    class="l2 nav-icn"
+                    
+                  ><span>Jupyter Notebooks</span></a></li></ul></li><li ><a
+                href="https://learning.oreilly.com/certifications/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M12.912 9.18L14 8.014l-1.088-1.18a.304.304 0 01-.075-.268L13.195 5l-1.535-.463a.313.313 0 01-.194-.194l-.462-1.537-1.565.358c-.09.03-.194 0-.269-.074L8.007 2 6.845 3.09a.303.303 0 01-.269.074l-1.565-.358-.462 1.537a.313.313 0 01-.194.194L2.82 5l.358 1.567a.26.26 0 01-.075.269L2 8.015l1.088 1.164c.075.075.09.18.075.269l-.358 1.567 1.535.463c.09.03.164.104.194.194l.462 1.537 1.565-.358c.015 0 .045-.015.075-.015.075 0 .15.03.209.074L8.007 14l1.163-1.09a.303.303 0 01.269-.074l1.565.358.462-1.537a.313.313 0 01.194-.194L13.195 11l-.358-1.567a.338.338 0 01.075-.254zm-6.046 1.37L4.41 8.26l1.16-1.244 1.767 1.649L10.4 5.6l1.202 1.202-4.242 4.243-.495-.495z"/></svg><span>Certifications</span></a></li><li ><a
+                href="https://learning.oreilly.com/preferences/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a></li><li ><a
+                href="https://learning.oreilly.com/public/support/"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M7.363 6.656a2.692 2.692 0 0 1-2.681-2.703c0-1.493 1.2-2.703 2.681-2.703a2.692 2.692 0 0 1 2.682 2.703c0 1.493-1.2 2.703-2.682 2.703zm4.023 2.027c-1.852 0-3.352 1.513-3.352 3.379H2v-1.534c-.006-.31.099-.612.295-.852a6.666 6.666 0 0 1 9.09-.993zm-.543.676h1.12v.304c.003.284.16.543.408.676a.766.766 0 0 0 .77 0l.303-.176.556.966-.302.176a.772.772 0 0 0-.362.676v.08a.772.772 0 0 0 .362.677l.302.21-.556.965-.302-.175a.766.766 0 0 0-.771 0 .778.778 0 0 0-.409.675v.352h-1.106v-.372a.778.778 0 0 0-.409-.676.766.766 0 0 0-.77 0l-.303.176-.556-.912.302-.176a.772.772 0 0 0 .362-.676v-.04-.04a.772.772 0 0 0-.362-.676l-.302-.176.556-.966.289.155a.766.766 0 0 0 .77 0 .778.778 0 0 0 .41-.676V9.36zm1.562 2.703c0-.271-.108-.531-.3-.722a1.001 1.001 0 0 0-.72-.292 1.01 1.01 0 0 0-.992 1.023 1.01 1.01 0 0 0 1.01 1.004 1.01 1.01 0 0 0 1.002-1.013z" /></svg><span>Support</span></a></li><li ><a
+                href="https://get.oreilly.com/email-signup.html"
+                class="l1 nav-icn "
+                target=&quot;_blank&quot;
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.564 2.263l2.172 2.174c.17.168.264.397.264.636V11a.6.6 0 0 1-.6.6h-.6V6.2h-6V2.6a.6.6 0 0 1 .6-.6h3.527c.239 0 .468.095.637.263zM2.6 14a.6.6 0 0 1-.6-.6V6.8a.6.6 0 0 1 .6-.6h1.903a1.2 1.2 0 0 1 .849.352L6.2 7.4H11a.6.6 0 0 1 .6.6v5.4a.6.6 0 0 1-.6.6H2.6zM11 5h1.8L11 3.2V5z" /></svg><span>Newsletters</span></a></li><li ><a
+                href="https://learning.oreilly.com/accounts/logout/"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M2.613 12.63A.607.607 0 0 1 2 12.03V3.602C2 3.269 2.274 3 2.613 3h5.515v1.204H3.226v7.223h4.902v1.203H2.613zM5.677 9.02V6.611h4.903V4.926a.301.301 0 0 1 .19-.274.31.31 0 0 1 .33.063l2.722 2.673a.594.594 0 0 1 0 .849L11.1 10.909a.31.31 0 0 1-.331.063.301.301 0 0 1-.19-.274V9.02H5.677z" /></svg><span>Sign Out</span></a></li></ul></div></li></ul></nav></header>
+
+
+
+      </div>
+      <div id="container" class="application">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="ch03.html#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Beginning Lua Programming
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="ch03.html#" title="Search in archive" class="js-search-controls search-controls" onclick="window.Appcues.track('SearchBook_HeronBook')"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9780470069172/chapter/ch03.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards" onclick="window.Appcues.track('AddPlaylist_HeronBook')"></div></div></li><li class="js-font-control-panel font-control-activator"><a href="ch03.html#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size" onclick="window.Appcues.track('ChangeFont_HeronBook')"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="ch03.html#" class="trigger" data-push-state="false" title="Share" aria-label="Share" onclick="window.Appcues.track('Share_HeronBook')"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a
+        class="twitter share-button t-twitter"
+        target="_blank"
+        aria-label="Share this section on Twitter"
+        title="Share this section on Twitter"
+      
+        href="https://twitter.com/share?url=https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch03.html&text=Beginning%20Lua%20Programming&via=OReillyMedia"
+      ><span>Twitter</span></a></li><li><a
+        class="facebook share-button t-facebook"
+        target="_blank"
+        aria-label="Share this section on Facebook"
+        title="Share this section on Facebook"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch03.html"
+      ><span>Facebook</span></a></li><li><a
+        class="googleplus share-button t-googleplus"
+        target="_blank"
+        aria-label="Share this secton on Google Plus"
+        title="Share this secton on Google Plus"
+        href="https://plus.google.com/share?url=https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch03.html"
+      ><span>Google Plus</span></a></li><li><a
+        class="email share-button t-email"
+        aria-label="Share this section via email"
+        title="Share this section via email"
+      
+        href="mailto:?subject=Safari: 3.%20Extending%20Lua%20with%20Functions&body=https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch03.html%0D%0Afrom Beginning%20Lua%20Programming%0D%0A"
+      ><span>Email</span></a></li></ul></li><!-- endif request.user.is_authenticated -->
+      </ul>
+    </div>
+
+      
+          
+      
+
+    <section role="document">
+        
+        
+
+
+
+
+  <script defer src="https://learning.oreilly.com/static/js/build/djangoMessagesPage.bfaca9fd8619.js"></script>
+
+
+        <script src="https://fast.appcues.com/48743.js"></script>
+<script>
+  var userId = "ce47de5b-ce80-49f0-b5cd-c60d3d33b198";
+
+  var userObject = {
+    firstName: "Michael",
+    segment: "Trial",
+    admin: "False",
+    profileCreatedOn: "2021-05-13",
+    academic: ""
+  };
+  window.Appcues.identify(userId, userObject);
+  window.Appcues.page();
+
+  setTimeout(function () {
+    window.Appcues.track('ViewingBook_HeronBook')
+  }, 20000);
+</script>
+
+
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="ch02.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">2. First Steps</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="ch04.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">4. Working with Tables</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="extending_lua_with_functions"></a>Chapter 3. Extending Lua with Functions</h1></div></div></div><p>One of the key concepts in programming is <span class="emphasis"><em>abstraction</em></span>, which means ignoring unimportant details. Consider the following set of instructions:<a id="IDX-CHP-3-0001" class="indexterm"></a><a id="IDX-CHP-3-0002" class="indexterm"></a><a id="IDX-CHP-3-0003" class="indexterm"></a></p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Get two slices of bread, a jar of peanut butter, a jar of jelly, and a butter knife.</p></li><li class="listitem"><p>Using the butter knife, spread a thin layer of peanut butter on one side of one piece of bread.</p></li><li class="listitem"><p>Using the butter knife, spread a thin layer of jelly on one side of the other piece of bread.</p></li><li class="listitem"><p>Attach the two pieces of bread together by pressing the peanut-buttered side of the one to the jellied side of the other.</p></li></ol></div><p>Now compare those instructions with the following:</p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Make a peanut-butter-and-jelly sandwich.</p></li></ol></div><p>The first set of instructions is less abstract than the second, because it contains details that would only be helpful to someone naïve in the ways of sandwich preparation. The second set of instructions <span class="emphasis"><em>abstracts away</em></span> these details. Consider the following code:</p><pre class="programlisting">print(1)
+print(2)
+print(3)
+print(4)
+print(5)
+print(6)
+print(7)
+print(8)
+print(9)
+print(10)</pre><p>This is less abstract than the following code:<a id="IDX-CHP-3-0004" class="indexterm"></a><a id="IDX-CHP-3-0005" class="indexterm"></a><a id="IDX-CHP-3-0006" class="indexterm"></a><a id="IDX-CHP-3-0007" class="indexterm"></a></p><pre class="programlisting">for I = 1, 10 do
+  print(I)
+end</pre><p>Both examples do the same thing, but the second one takes advantage of the fact that Lua knows how to count. This demonstrates one of the benefits of abstraction—there's less to type! A related benefit is that it makes code easier to understand: When you know how <code class="literal">for</code> loops work, you can tell at a glance that the second example prints the numbers from 1 to 10, whereas you'd only know that for sure about the first one if you were to proofread it and make sure that (for instance) it doesn't print two sixes in a row.<a id="IDX-CHP-3-0008" class="indexterm"></a><a id="IDX-CHP-3-0009" class="indexterm"></a></p><p>Functions are the most important means of abstraction in Lua. You've already used one function in the previous chapter: <code class="literal">print</code>. In the following example, the <code class="literal">print</code> function is being told to do its thing with two pieces of data—the string <code class="literal">"The answer is"</code> and the number <code class="literal">42</code>:</p><pre class="programlisting">print("The answer is", 42)</pre><p>Another way of saying this is that <code class="literal">print</code> is being <span class="emphasis"><em>called</em></span> with two <span class="emphasis"><em>arguments</em></span>. <code class="literal">print</code> is only one of many built-in functions that Lua has, but almost any program you write will involve you defining your own functions.</p><p>Take a look at the following example:</p><pre class="programlisting">&gt; <strong class="userinput"><code>function Greet(Name)</code></strong>
+&gt;&gt;    <strong class="userinput"><code>print("Hello, " .. Name .. ".")</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt;  <strong class="userinput"><code>Greet("John")</code></strong>
+Hello, John.
+&gt;  <strong class="userinput"><code>Greet("Jane")</code></strong>
+Hello, Jane.
+&gt;  <strong class="userinput"><code>Greet("Aloysius")</code></strong>
+Hello, Aloysius.</pre><p>The first line ("<code class="literal">function Greet(Name)</code>") tells Lua that you're defining a function, that the function's name will be <code class="literal">Greet</code>, and that it will take one argument, whose value will be placed into the variable <code class="literal">Name</code>. When the function is called, the second line concatenates the string <code class="literal">"Hello, "</code> with (the contents of) <code class="literal">Name</code> and a period, and prints the result. The last line of the function tells Lua that you're done defining the function. A function definition like this is a <span class="emphasis"><em>statement</em></span>.</p><p>The function is then called three times, each time with a different name as an argument, and prints a greeting customized for a person with that name. Because the details of how to greet someone are only in one place, you only need to make any change you want once, rather than every time you greet someone.</p><p>The inside of a function definition is executed only when or if the function is called. In the preceding example, because the call to <code class="literal">print</code> is inside <code class="literal">Greet</code>, nothing is printed when <code class="literal">Greet</code> is defined, but something is printed each time <code class="literal">Greet</code> is called. This point may seem obvious, but if you're a beginning programmer, you might find yourself forgetting it when confronted with more complex pieces of code.<a id="IDX-CHP-3-0010" class="indexterm"></a></p><p>Functions can have more than one line of code inside them. In fact, they can include all the things covered in the preceding chapter. Here's one that includes assignment and an <code class="literal">if</code> control structure:<a id="IDX-CHP-3-0011" class="indexterm"></a></p><pre class="programlisting">function Greet(Name)
+  if Name == "Joe" then
+    MsgStr = "Whaddya know, Joe?"
+  else
+    MsgStr = "Hello, " .. Name .. "."
+  end
+  print(MsgStr)
+end</pre><p>For that matter, functions can even contain no lines of code, in which case they do nothing. Functions can also take any number of arguments, or none, as in the following example:</p><pre class="programlisting">&gt; <strong class="userinput"><code>function NoNameGreet()</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print("Hello.")</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt; <strong class="userinput"><code>NoNameGreet()</code></strong>
+Hello.
+&gt; <strong class="userinput"><code>function TwoNameGreet(Name1, Name2)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print("Hello, " .. Name1 .. " and " .. Name2 .. ".")</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt; <strong class="userinput"><code>TwoNameGreet("Mutt", "Jeff")</code></strong>
+Hello, Mutt and Jeff.</pre><p>If a function is called with more arguments than it was written for, the extra arguments are thrown away, like this:</p><pre class="programlisting">&gt; <strong class="userinput"><code>NoNameGreet("Cathy")</code></strong>
+Hello.
+&gt; <strong class="userinput"><code>TwoNameGreet("Larry", "Moe", "Curly", "Shemp")</code></strong>
+Hello, Larry and Moe.</pre><p>If a function is called with fewer arguments than it was written for, the remaining arguments are (inside the function) set to <code class="literal">nil</code> as follows:</p><pre class="programlisting">&gt; <strong class="userinput"><code>function Print2Args(Arg1, Arg2)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print(Arg1, Arg2)</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt; <strong class="userinput"><code>Print2Args("1st argument", "2nd argument")</code></strong>
+1st argument  2nd argument
+&gt; <strong class="userinput"><code>Print2Args("1st argument")</code></strong>
+1st argument  nil
+&gt; <strong class="userinput"><code>Print2Args()</code></strong>
+nil   nil</pre><p>Notice that this behavior (discarding extra arguments and setting missing ones to <code class="literal">nil</code>) exactly parallels the behavior of multiple assignment (described in <a class="link" href="ch02.html" title="Chapter 2. First Steps">Chapter 2</a>):<a id="IDX-CHP-3-0012" class="indexterm"></a><a id="IDX-CHP-3-0013" class="indexterm"></a><a id="IDX-CHP-3-0014" class="indexterm"></a><a id="IDX-CHP-3-0015" class="indexterm"></a></p><pre class="programlisting">&gt; <strong class="userinput"><code>Var1, Var2 = "1st value", "2nd value", "3rd value"</code></strong>
+&gt; <strong class="userinput"><code>print(Var1, Var2)</code></strong>
+1st value    2nd value
+&gt;  <strong class="userinput"><code>Var1, Var2 = "1st value"</code></strong>
+&gt;  <strong class="userinput"><code>print(Var1, Var2)</code></strong>
+1st value    nil</pre><p>This chapter is all about functions. It explains how to do the following:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>Give names to pieces of code and refer to them by those names (this is one of the most important methods used to structure a program)</p></li><li class="listitem"><p>Execute a file that contains Lua code</p></li><li class="listitem"><p>Use variables that are only valid in limited parts of a program</p></li><li class="listitem"><p>Use the same variable name to refer to different variables in different parts of a program</p></li></ul></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="return_values"></a>Return Values</h1></div></div></div><p>Functions—both ones built into Lua and ones that you define—can <span class="emphasis"><em>return</em></span> values. This means that a function call can result in a value that you can then pass to another function, use in a variable assignment, or otherwise operate on. In other words, function calls are actually expressions that, like <code class="literal">print</code> and <code class="literal">Greet</code>, you can use as statements.</p><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="using_a_function_that_returns_a_value"></a>Using a Function that Returns a Value</h2></div></div></div><p>You can return values from functions that you've defined. But first, you should see how to get a return value from a function that's already built into Lua.</p><p>Lua's built-in <code class="literal">type</code> function is a good example of a function that returns a value. Here are some examples of this function:</p><pre class="programlisting">&gt; <strong class="userinput"><code>print(type(42))</code></strong>
+number
+&gt; <strong class="userinput"><code>print(type("Hello, Aloysius."))</code></strong>
+string
+&gt; <strong class="userinput"><code>print(type(true))</code></strong>
+boolean
+&gt; <strong class="userinput"><code>print(type(type(true)))</code></strong>
+string
+&gt; <strong class="userinput"><code>print(type(nil) .. type(false))</code></strong>
+nilboolean
+&gt; <strong class="userinput"><code>SomeType = type(42)</code></strong>
+&gt; <strong class="userinput"><code>print(SomeType)</code></strong>
+number</pre><p>The <code class="literal">type</code> function takes one argument, which can be any value. It always returns a string that names the datatype of its argument, which will be—one of the following eight strings: <code class="literal">"boolean", "function", "nil", "number", "string", "table", "thread"</code>, or <code class="literal">"userdata"</code>. So, when <code class="literal">type</code> is called with a number as an argument, it returns the string <code class="literal">"number"</code>; when <code class="literal">type</code> is called with <code class="literal">nil</code> as an argument, it returns the string <code class="literal">"nil"</code>; and so on.<a id="IDX-CHP-3-0016" class="indexterm"></a><a id="IDX-CHP-3-0017" class="indexterm"></a><a id="IDX-CHP-3-0018" class="indexterm"></a></p><div class="blockquote"><blockquote class="blockquote"><p>These eight strings represent all eight Lua types. Booleans, nils, numbers, and strings were covered last chapter. Right now you're learning about functions. Tables, threads, and userdata will be explained in <a class="link" href="ch04.html" title="Chapter 4. Working with Tables">Chapter 4</a>, <a class="link" href="ch09.html" title="Chapter 9. Handling Events Naturally with Coroutines">Chapter 9</a>, and <a class="link" href="ch13.html" title="Chapter 13. Interfacing Lua with Other Languages">Chapter 13</a>, respectively.</p></blockquote></div><p>As the preceding examples show, a call to <code class="literal">type</code> is an expression and can be used wherever an expression is legal. You can use it as the argument to another function:</p><pre class="programlisting">print(type(type(true)))</pre><p>Or as an operator's operand:</p><pre class="programlisting">print(type(nil) .. type(false))</pre><p>Or in an assignment:</p><pre class="programlisting">SomeType = type(42)</pre><p>If you call <code class="literal">type</code> in the interpreter without doing anything with its value, nothing happens (the value is thrown away):</p><pre class="programlisting">&gt; <strong class="userinput"><code>type(42)</code></strong>
+&gt;</pre><p>This is why the <code class="literal">type</code> result has been passed to <code class="literal">print</code> in the preceding examples.</p></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="defining_a_function_that_returns_a_value"></a>Defining a Function that Returns a Value</h2></div></div></div><p>Unsurprisingly, Lua makes it easy to define your own functions that have return values. You use the <code class="literal">return</code> statement.</p><p>The following function, <code class="literal">Average</code>, uses <code class="literal">return</code> to return the average of its two arguments:</p><pre class="programlisting">&gt; <strong class="userinput"><code>function Average(Num1, Num2)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>return (Num1 + Num2) / 2</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt; <strong class="userinput"><code>Average(0, 10)</code></strong>
+&gt; <strong class="userinput"><code>print(Average(0, 10))</code></strong>
+5
+&gt; <strong class="userinput"><code>print(Average(Average(10, 20), Average(30, 40)))</code></strong>
+25</pre><p>The first time <code class="literal">Average</code> is called, nothing is done with the result, so the result is thrown away, and you never see it. The second time it is called, the result (<code class="literal">5</code>) is passed to <code class="literal">print</code>, so you do see it. On the next line, <code class="literal">Average</code> is called twice, and the results are passed to a third call of <code class="literal">Average</code>. This is equivalent to the following:<a id="IDX-CHP-3-0019" class="indexterm"></a><a id="IDX-CHP-3-0020" class="indexterm"></a><a id="IDX-CHP-3-0021" class="indexterm"></a><a id="IDX-CHP-3-0022" class="indexterm"></a><a id="IDX-CHP-3-0023" class="indexterm"></a><a id="IDX-CHP-3-0024" class="indexterm"></a></p><pre class="programlisting">Avg1, Avg2 = Average(10, 20), Average(30, 40)
+print(Average(Avg1, Avg2))</pre><p>Using the return values of function calls as arguments to other function calls is very common. If carried to an extreme, it can get a bit hard to read, in which case assigning intermediate results to variables (like <code class="literal">Avg1</code>) can make things more legible.</p><div class="blockquote"><blockquote class="blockquote"><p>This <code class="literal">Average</code> function can only average two numbers. In the next chapter, you'll learn how to write a function that can average however many numbers you give it.</p></blockquote></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="using_return_to_alter_control_flow"></a>Using return to Alter Control Flow</h2></div></div></div><p>Functions, just like the <code class="literal">break</code> statement and the <code class="literal">if, for</code>, and <code class="literal">while</code> control structures, alter the flow of control through a program. The <code class="literal">return</code> statement also alters the flow of control.<a id="IDX-CHP-3-0025" class="indexterm"></a><a id="IDX-CHP-3-0026" class="indexterm"></a><a id="IDX-CHP-3-0027" class="indexterm"></a></p><p>In the following example, <code class="literal">return</code> is used to jump past the bottom of the function:</p><pre class="programlisting">&gt; <strong class="userinput"><code>-- Returns true if Str has an even number of characters;</code></strong>
+&gt; <strong class="userinput"><code>-- otherwise returns false:</code></strong>
+&gt; <strong class="userinput"><code>function EvenLen(Str)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>if #Str % 2 == 0 then</code></strong>
+&gt;&gt;     <strong class="userinput"><code>return true</code></strong>
+&gt;&gt;  <strong class="userinput"><code>else</code></strong>
+&gt;&gt;     <strong class="userinput"><code>return false</code></strong>
+&gt;&gt;  <strong class="userinput"><code>end</code></strong>
+&gt;&gt;  <strong class="userinput"><code>print("This will never get printed!")</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt; <strong class="userinput"><code>print(EvenLen("Jane"))</code></strong>
+true
+&gt; <strong class="userinput"><code>print(EvenLen("Joe"))</code></strong>
+false
+&gt;</pre><p>The <code class="literal">if</code> tests whether the length of <code class="literal">Str</code> is evenly divisible by 2. If it is, the function immediately returns <code class="literal">true</code>, which means that the rest of the function (in this case, the final <code class="literal">print</code> call) never gets executed. If the length is not evenly divisible by 2, the function immediately returns <code class="literal">false</code>, and the <code class="literal">print</code> is again not reached.</p><p>If this sounds familiar, it's because <code class="literal">return</code> is very similar to <code class="literal">break</code>, which you learned about in the last chapter. In fact, there are two differences:<a id="IDX-CHP-3-0028" class="indexterm"></a><a id="IDX-CHP-3-0029" class="indexterm"></a><a id="IDX-CHP-3-0030" class="indexterm"></a><a id="IDX-CHP-3-0031" class="indexterm"></a></p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p><code class="literal">break</code> exits the innermost loop; <code class="literal">return</code> exits the innermost function (functions, like loops, can be nested).</p></li><li class="listitem"><p>Because loops don't return values, <code class="literal">break</code> cannot be followed by an expression like <code class="literal">return</code> can.</p></li></ul></div><p>Like <code class="literal">break, return</code> must be the last statement in a block. In the last chapter, an incomplete list of blocks was given (<code class="literal">do</code> blocks; <code class="literal">for, while</code>, and <code class="literal">repeat</code> loops; branches of <code class="literal">if</code> statements). The only other blocks are functions and <span class="emphasis"><em>chunks</em></span>. A chunk is a piece of code executed as a unit, such as the following:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>A complete file</p></li><li class="listitem"><p>A single line typed into the Lua interpreter without causing the continuation prompt to appear</p></li><li class="listitem"><p>Multiple lines typed into the Lua interpreter, of which all but the last cause the continuation prompt to appear</p></li></ul></div><p>Again as with <code class="literal">break</code>, if you want (for debugging purposes) to return from the middle of a block, just use a dummy <code class="literal">do</code> block like this:</p><pre class="programlisting">&gt; <strong class="userinput"><code>function ReturnFromMiddle()</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print("Does get printed")</code></strong>
+&gt;&gt;   <strong class="userinput"><code>do return true end</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print("Doesn't get printed")</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt; <strong class="userinput"><code>ReturnFromMiddle()</code></strong>
+Does get printed
+&gt;</pre><p>In the last chapter, you saw how <code class="literal">break</code> can sometimes make loops, especially long ones, harder to understand. For similar reasons, returning from the middle of functions, particularly long ones, can make them harder to understand. To verify that the last line of <code class="literal">EvenLen</code> will never be executed, you need to examine the whole function, a small hardship which would be greater with a larger function.</p><p>This book often has you write functions like this:</p><pre class="programlisting">function EvenLen(Str)
+   if #Str % 2 == 0 then
+    Ret = true
+  else
+    Ret = false
+  end
+  return Ret
+end</pre><p>The return value is assigned to <code class="literal">Ret</code> in the middle of the function, but <code class="literal">Ret</code> is only returned at the very end, so the function has only one exit point, while the earlier version of <code class="literal">EvenLen</code> had two. (There's actually something wrong with this example—<code class="literal">Ret</code> is visible outside the function, when it really should be the function's own private variable. You'll learn how to avoid this later in this chapter.)<a id="IDX-CHP-3-0032" class="indexterm"></a><a id="IDX-CHP-3-0033" class="indexterm"></a></p><div class="blockquote"><blockquote class="blockquote"><p>The practice of having only one exit point from each block is part of what is known as structured programming, a school of thought most identified with programming pioneer Edsger Dijkstra (1930–2002). Structured programming is much less controversial now than when it was first introduced in the 1960s, but it is by no means universally regarded as correct. We, the authors of this book, think of it as a rule of thumb to which exceptions can be made.</p></blockquote></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="returning_nothing"></a>Returning Nothing</h2></div></div></div><p>Before you learned about <code class="literal">return</code>, you saw how to write functions that don't include <code class="literal">return</code>. What do such functions return? It's easy enough to find out. When <code class="literal">print</code> is called with no arguments, it just prints an empty line, like this:</p><pre class="programlisting">&gt; <strong class="userinput"><code>print()</code></strong>
+
+&gt;</pre><p>If you create a function that does nothing and has no <code class="literal">return</code> statement, and print its result, you get an empty line as shown here:</p><pre class="programlisting">&gt; <strong class="userinput"><code>function DoNothing()</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt; <strong class="userinput"><code>print(DoNothing())</code></strong>
+
+&gt;</pre><p>If functions like this returned <code class="literal">nil</code>, you would see it here. This is a strong hint that functions that don't use <code class="literal">return</code> really do not return a value. You can verify this by trying to print the following <code class="literal">DoNothing</code> return value, which results in <code class="literal">type</code> complaining that it wasn't given a value:</p><pre class="programlisting">&gt; <strong class="userinput"><code>print(type(DoNothing()))</code></strong>
+stdin:1: bad argument #1 to 'type' (value expected)
+stack traceback:
+        [C]: in function 'type'
+        stdin:1: in main chunk
+        [C]: ?</pre><p>To explicitly return no value, use <code class="literal">return</code> with no value. The following version of <code class="literal">DoNothing</code> behaves exactly the same as the previous version:<a id="IDX-CHP-3-0034" class="indexterm"></a></p><pre class="programlisting">function DoNothing()
+   return
+end</pre><p>And the following function also does nothing and returns nothing:<a id="IDX-CHP-3-0035" class="indexterm"></a><a id="IDX-CHP-3-0036" class="indexterm"></a></p><pre class="programlisting">function DoNothing()
+   do return end
+   print("This will never print.")
+end</pre><p><span class="strong"><strong>Not having a</strong></span> <code class="literal">return</code> <span class="strong"><strong>statement at the end of a function has exactly the same effect as having a</strong></span> <code class="literal">return</code> <span class="strong"><strong>that returns no values</strong></span>.</p></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="returning_multiple_values"></a>Returning Multiple Values</h2></div></div></div><p>So far, you've seen functions that return one value and functions that return no values. Functions can also return more than one value, and this turns out to be a particularly handy feature of Lua.</p><p>Here's a function that takes three arguments and returns all of them.</p><pre class="programlisting">&gt; <strong class="userinput"><code>function ReturnArgs(Arg1, Arg2, Arg3)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>return Arg1, Arg2, Arg3</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt; <strong class="userinput"><code>print(ReturnArgs(1, 2, 3))</code></strong>
+1      2       3
+&gt; <strong class="userinput"><code>print(ReturnArgs(ReturnArgs(1, 2, 3)))</code></strong>
+1      2       3
+&gt; <strong class="userinput"><code>A, B, C = ReturnArgs("alpha", "bravo", "charlie")</code></strong>
+&gt; <strong class="userinput"><code>print(A, B, C)</code></strong>
+alpha  bravo  charlie</pre><p>To return multiple values, simply separate the values with commas. Just from reading the following line, you might think that <code class="literal">print</code> is being given only one argument:</p><pre class="programlisting">print(ReturnArgs(1, 2, 3))</pre><p>But it actually gets three arguments—the three values returned by <code class="literal">ReturnArgs</code>. The next line is just a generalization of this. <code class="literal">ReturnArgs</code> is given three arguments; it returns three values; those three values are given to another call of <code class="literal">ReturnArgs</code>, which itself returns three values; and those values are given to <code class="literal">print</code> (which prints them):</p><pre class="programlisting">print(ReturnArgs(ReturnArgs(1, 2, 3)))</pre><p>You can also use a call to a function that returns multiple values as the right side of an assignment, like this:</p><pre class="programlisting">A, B, C = ReturnArgs("alpha", "bravo", "charlie")</pre></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="adjusting_value_lists"></a>Adjusting Value Lists</h2></div></div></div><p>You just saw that you can use a function that returns multiple values as the first and only argument to another function (in which case it's as though the function was called with multiple arguments) or as the entire right-hand side of an assignment (in which case it's as though multiple values were assigned). What if you use a function that returns multiple values as one of several arguments to another function, or as only part of the right side of an assignment? As you know, if you call a function with more than one argument, then the arguments are separated with commas. The same applies to assignment statements that assign more than one value and <code class="literal">return</code> statements that return more than one value. These lists of zero or more (in the case of functions and <code class="literal">return</code>) or one or more (in the case of assignment) values are called <span class="emphasis"><em>value lists</em></span>.<a id="IDX-CHP-3-0037" class="indexterm"></a><a id="IDX-CHP-3-0038" class="indexterm"></a><a id="IDX-CHP-3-0039" class="indexterm"></a><a id="IDX-CHP-3-0040" class="indexterm"></a><a id="IDX-CHP-3-0041" class="indexterm"></a><a id="IDX-CHP-3-0042" class="indexterm"></a><a id="IDX-CHP-3-0043" class="indexterm"></a></p><div class="blockquote"><blockquote class="blockquote"><p>When you call functions in value lists, their return values are adjusted. This is similar to the process of adjustment (described in <a class="link" href="ch02.html" title="Chapter 2. First Steps">Chapter 2</a>) that happens in assignment statements.</p></blockquote></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="using_multiple-valued_functions_in_value"></a>Using Multiple-Valued Functions in Value Lists</h3></div></div></div><p>Here's how multiple-valued functions work in various positions in value lists of various lengths, using the <code class="literal">ReturnArgs</code> function defined in the previous section:<a id="IDX-CHP-3-0044" class="indexterm"></a><a id="IDX-CHP-3-0045" class="indexterm"></a></p><pre class="programlisting">&gt; <strong class="userinput"><code>print(1, ReturnArgs("a", "b", "c"))</code></strong>
+1      a       b       c
+&gt; <strong class="userinput"><code>print(ReturnArgs(1, 2, 3), "a")</code></strong>
+1      a
+&gt; <strong class="userinput"><code>print(ReturnArgs(1, 2, 3), ReturnArgs("a", "b", "c"))</code></strong>
+1      a       b       c</pre><p>The rule that Lua follows it this:</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>If a function call returning multiple values is the last (or only) expression in a value list, then all the function's return values are used. If a function call returning multiple values is in a value list but is not the last expression, then only its first return value is used; its remaining return values are discarded.</p></div><p>This explains why the following:</p><pre class="programlisting">print(ReturnArgs(1, 2, 3), ReturnArgs("a", "b", "c"))</pre><p>printed this:</p><pre class="programlisting">1    a    b    c</pre><p><code class="literal">ReturnArgs(1, 2, 3)</code> was not the last expression in the <code class="literal">print</code> list of arguments, so only its first return value (<code class="literal">1</code>) was used, and its second and third values were thrown away. The <code class="literal">ReturnArgs("a", "b", "c")</code> was the last expression in <code class="literal">print</code>'s argument list, so all three of its return values (<code class="literal">"a", "b"</code>, and <code class="literal">"c"</code>) were passed as (the second, third, and fourth) arguments to <code class="literal">print</code>.<a id="IDX-CHP-3-0046" class="indexterm"></a></p><p>The rule also applies to value lists with more than two expressions in them, such as these:</p><pre class="programlisting">&gt; <strong class="userinput"><code>print(</code></strong>
+&gt;&gt;   <strong class="userinput"><code>ReturnArgs(1, 2, 3),</code></strong>
+&gt;&gt;   <strong class="userinput"><code>ReturnArgs(4, 5, 6),</code></strong>
+&gt;&gt;   <strong class="userinput"><code>ReturnArgs(7, 8, 9),</code></strong>
+&gt;&gt;   <strong class="userinput"><code>ReturnArgs(10, 11, 12))</code></strong>
+1   4       7       10      11       12</pre><p>Although these examples were given using the <code class="literal">print</code> function, the value lists in <code class="literal">return</code> and assignment statements work the same way:</p><pre class="programlisting">&gt; <strong class="userinput"><code>function Test()</code></strong>
+&gt;&gt;   <strong class="userinput"><code>return ReturnArgs(1, 2, 3), ReturnArgs(4, 5, 6)</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt; <strong class="userinput"><code>print(Test())</code></strong>
+1      4        5        6
+&gt; <strong class="userinput"><code>A, B, C, D = ReturnArgs(1, 2, 3), ReturnArgs(4, 5, 6)</code></strong>
+&gt; <strong class="userinput"><code>print(A, B, C, D)</code></strong>
+1      4       5       6</pre></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="using_valueless_functions_in_value_lists"></a>Using Valueless Functions in Value Lists</h3></div></div></div><p>What about functions that return no values, such as the following:</p><pre class="programlisting">&gt; <strong class="userinput"><code>function DoNothing()</code></strong>
+&gt;&gt;  <strong class="userinput"><code>end</code></strong>
+&gt; <strong class="userinput"><code>print(1, DoNothing())</code></strong>
+1
+&gt; <strong class="userinput"><code>print(DoNothing(), 2)</code></strong>
+nil    2
+&gt; <strong class="userinput"><code>print(DoNothing(), DoNothing())</code></strong>
+nil</pre><p>This is just an application of the same rule: When the call to <code class="literal">DoNothing</code> is the last expression in the value list, no adjustment is made and no corresponding value is passed to <code class="literal">print</code>, and when the call to <code class="literal">DoNothing</code> is not the last expression in the value list, it is adjusted from no values to one value, namely <code class="literal">nil</code>. Here's the rule rephrased to cover functions that return no values:</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>If a function call is the last (or only) expression in a value list, then all (if any) values returned by the function are used. If a function call is in a value list but is not the last expression, then its first return value (or <code class="literal">nil</code>, if it returns nothing) is used and any remaining return values are discarded.</p></div><p>This rule (adjust every expression except the last to one value) may seem more complicated than necessary, but there is good reasoning behind it. If every expression in a value list were adjusted to one value, there would need to be a special way to override this, which would make the ability of Lua functions to return multiple values harder to use. If no expressions in a value list were adjusted to one value, then any function returning less or more than one value would throw off the positioning of everything that came after it in the value list.<a id="IDX-CHP-3-0047" class="indexterm"></a></p><div class="blockquote"><blockquote class="blockquote"><p>As you saw with <code class="literal">type</code>, a function call used as a statement is adjusted to no return values, because there's nowhere for those values to go.</p></blockquote></div><p>As covered in the previous chapter and earlier in this one, the whole value list involved in an assignment or a function call is adjusted to the right size by discarding values or adding <code class="literal">nil</code>s. That adjustment happens after the adjustment of individual expressions in the value list that this section has been describing:</p><pre class="programlisting">&gt; <strong class="userinput"><code>A, B = DoNothing(), 1, 2</code></strong>
+&gt; <strong class="userinput"><code>print(A, B)</code></strong>
+nil     1
+&gt; <strong class="userinput"><code>A, B, C = ReturnArgs(1, 2, 3), 4</code></strong>
+&gt; <strong class="userinput"><code>print(A, B, C)</code></strong>
+1      4       nil</pre><p>To force a function call at the end of a value list to be adjusted to one value, surround the whole function call (including its parentheses) with parentheses:</p><pre class="programlisting">&gt; <strong class="userinput"><code>print("a", (ReturnArgs("b", "c", "d")))</code></strong>
+a      b
+&gt; <strong class="userinput"><code>print("a", (DoNothing()))</code></strong>
+a      nil</pre><div class="blockquote"><blockquote class="blockquote"><p>You've seen three uses for parentheses: function calls, controlling precedence in expressions, and function definitions. It may seem as though adjusting to one value is yet another use of parentheses, but in Lua, these are the same type of parentheses used to control precedence. You can use a function to return less or more than one value only when a call to it is the last expression in a value list. Wrapping such a call in parentheses has no effect on precedence, because there are no operators and therefore no precedence to control, but it does cause the last expression in the value list to no longer be a function call (even though it contains one), and to therefore no longer be eligible for multiple- or zero-value treatment.<a id="IDX-CHP-3-0048" class="indexterm"></a></p></blockquote></div><p><code class="literal">return</code> is not a function. This means that you should not surround whatever comes after it in parentheses, unless you want to force adjustment to one value as shown in the following example:</p><pre class="programlisting">&gt; <strong class="userinput"><code>-- This example requires the ReturnArgs function used</code></strong>
+&gt; <strong class="userinput"><code>-- earlier</code></strong>.
+&gt; <strong class="userinput"><code>function Test()</code></strong>
+&gt;&gt;   <strong class="userinput"><code>return (ReturnArgs(1, 2, 3))</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt; <strong class="userinput"><code>print(Test())</code></strong>
+1</pre></div></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="chunks_as_functions"></a>Chunks as Functions</h1></div></div></div><p>Earlier in this chapter, a <span class="emphasis"><em>chunk</em></span> was defined as a piece of code executed as a unit. The simplest example is code typed into the interpreter. When you enter a line into the interpreter, it checks whether you typed any complete statements. If so, it executes those statements as a chunk. If not, it prints a continuation prompt so you can finish. After it has amassed a whole number of statements, it <span class="emphasis"><em>compiles</em></span> (converts) them into <span class="emphasis"><em>bytecode</em></span>—an internal representation much more efficient than the text that you type in (which is also known as <span class="emphasis"><em>source code</em></span>). This bytecode is meant for the internal component of Lua also known as the interpreter, which is the second meaning of the term <span class="emphasis"><em>interpreter</em></span> mentioned in the previous chapter. When there is a possibility for confusion, the first interpreter can be called <code class="literal">lua</code> or the <span class="emphasis"><em>command-line interpreter</em></span>, and the second can be called the <span class="emphasis"><em>bytecode interpreter</em></span>.<a id="IDX-CHP-3-0049" class="indexterm"></a><a id="IDX-CHP-3-0050" class="indexterm"></a><a id="IDX-CHP-3-0051" class="indexterm"></a><a id="IDX-CHP-3-0052" class="indexterm"></a><a id="IDX-CHP-3-0053" class="indexterm"></a><a id="IDX-CHP-3-0054" class="indexterm"></a><a id="IDX-CHP-3-0055" class="indexterm"></a><a id="IDX-CHP-3-0056" class="indexterm"></a><a id="IDX-CHP-3-0057" class="indexterm"></a><a id="IDX-CHP-3-0058" class="indexterm"></a><a id="IDX-CHP-3-0059" class="indexterm"></a><a id="IDX-CHP-3-0060" class="indexterm"></a><a id="IDX-CHP-3-0061" class="indexterm"></a><a id="IDX-CHP-3-0062" class="indexterm"></a></p><div class="blockquote"><blockquote class="blockquote"><p>The command-line interpreter and the bytecode interpreter are not two independent things. Rather, the command-line interpreter uses (and depends on) the bytecode interpreter.</p></blockquote></div><p>After a chunk has been compiled into bytecode, it is a function (albeit one without a name). This means that chunks, including those typed into the interpreter, can be returned from the following:</p><pre class="programlisting">&gt; <strong class="userinput"><code>return</code></strong>
+&gt;</pre><p>The return can even come from deep within a chunk, like this:</p><pre class="programlisting">&gt; <strong class="userinput"><code>for I = 1, 10 do</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print(I)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>if I == 5 then return end</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+1
+2
+3
+4
+5
+&gt;</pre><p>If values are returned, <code class="literal">lua</code> passes them to <code class="literal">print</code> so you can see them, as shown here:</p><pre class="programlisting">&gt; <strong class="userinput"><code>return nil, "Hello", nil</code></strong>
+nil     Hello    nil</pre><p>This is how the equal-sign typing saver described in the last chapter works. When the interpreter sees a chunk that starts with an equal sign, it replaces the equal sign with <code class="literal">"return "</code> before compiling the chunk like this:</p><pre class="programlisting">&gt; <strong class="userinput"><code>=nil, "Hello", nil</code></strong>
+nil     Hello    nil</pre><p>When a chunk typed into the interpreter is executed as a function, no arguments are passed to it.<a id="IDX-CHP-3-0063" class="indexterm"></a><a id="IDX-CHP-3-0064" class="indexterm"></a><a id="IDX-CHP-3-0065" class="indexterm"></a></p><p>Another important type of chunk is a file containing Lua code. Such a file is often called a <span class="emphasis"><em>script</em></span>.</p><div class="sidebar"><a id="try_it_out_colon_writing_your_first_lua"></a><div class="titlepage"><div><div><p class="title"><strong>Try It Out: Writing Your First Lua Script</strong></p></div></div></div><p>Unlike code typed directly into the interpreter, scripts are self-contained programs, which you can run repeatedly without having to type them in again. The following very simple script gives a greeting that is traditional in programming examples.</p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Create a file with the following contents and name it <span class="strong"><strong>hello.lua</strong></span>:</p><pre class="programlisting"><strong class="userinput"><code>-- This is the first file-based example in the book</code></strong>.
+<strong class="userinput"><code>print("Hello, world!")</code></strong></pre></li><li class="listitem"><p>Access your system's shell, and make sure you're in the same directory as the file you just created (as described in <a class="link" href="ch01.html" title="Chapter 1. Getting Situated">Chapter 1</a>). Then type the following and press Enter:</p><pre class="programlisting"><strong class="userinput"><code>lua hello.lua</code></strong></pre><p>You should see the following:</p><pre class="programlisting">Hello, world!</pre></li></ol></div><p><span class="strong"><strong>How It Works</strong></span></p><p>When <code class="literal">lua</code> is started with a filename, it loads that file as a chunk and executes it. As with any chunk, a file can be returned from it, and values can be returned from it, but if the file is executed as shown in this example, these values will simply be thrown away. Arguments can be given to a file, as you'll learn in the next chapter.</p><p>From here on, many of the examples will be presented as scripts to be executed by giving the filename to <code class="literal">lua</code>.</p><div class="blockquote"><blockquote class="blockquote"><p>If you don't want to have to type <span class="strong"><strong>lua</strong></span> every time you run a file like this, you can make it directly executable. On Unix-like platforms this is done by making its first line something like <code class="literal">#!/usr/local/bin/lua</code> or <code class="literal">#!/usr/bin/env lua</code>, and marking the file as executable with <code class="literal">chmod a+x</code> followed by the file's name. (If Lua saw <code class="literal">#!</code> in the middle of a script, it would complain, but if it sees <code class="literal">#</code> as the very first character, it just skips to the second line.)</p><p>There are several ways to do it on Windows. Ussing <code class="literal">hello.lua</code> as an example, one method is to make a file called <code class="literal">hello.cmd</code> that consists of a line like this:</p><pre class="programlisting">@lua "C:\Your\Dirs\Here\hello.lua" %*</pre><p>Or if that doesn't work because you are running an earlier version of Windows, you can use the following method, which limits the number of command-line arguments to nine (replace <code class="literal">"C:\Your\Dirs\Here\"</code> with the full path to the Lua file):</p><pre class="programlisting">@lua "C:\Your\Dirs\Here\hello.lua" %1 %2 %3 %4 %5 %6 %7 %8 %9</pre><p>The <code class="literal">.cmd</code> file must be in a directory in your system's search path. After you do this, typing <code class="literal">hello</code> will run the file.<a id="IDX-CHP-3-0066" class="indexterm"></a><a id="IDX-CHP-3-0067" class="indexterm"></a><a id="IDX-CHP-3-0068" class="indexterm"></a><a id="IDX-CHP-3-0069" class="indexterm"></a></p></blockquote></div></div><p>You can also execute a string as a chunk. First use the built-in function <code class="literal">loadstring</code> to convert it to a function, and then call the function like this:</p><pre class="programlisting">&gt; <strong class="userinput"><code>Fnc = loadstring("print('Hello!')")</code></strong>
+&gt; <strong class="userinput"><code>Fnc()</code></strong>
+Hello!</pre><p><code class="literal">loadstring</code> is an excellent example of the usefulness of multiple return values. If it succeeds in converting the string to a function, it returns that function; otherwise, it returns <code class="literal">nil</code> and an error message. That's demonstrated by the following example, which also shows that <code class="literal">loadstring</code> takes an optional second argument—a a string used as a name for the chunk in any error messages:</p><pre class="programlisting">&gt; <strong class="userinput"><code>Fnc, ErrStr = loadstring("print(2 + + 2)", "A STRING CHUNK")</code></strong>
+&gt; <strong class="userinput"><code>if Fnc then</code></strong>
+&gt;&gt;   <strong class="userinput"><code>Fnc()</code></strong>
+&gt;&gt; <strong class="userinput"><code>else</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print(ErrStr)</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+[string "A STRING CHUNK"]:1: unexpected symbol near '+'</pre><p>You can use the <code class="literal">vararg</code> mechanism described in the next chapter to access any arguments given to the function returned by <code class="literal">loadstring</code> (although not in Lua 5.0).</p><p>Like all chunks, a chunk compiled by <code class="literal">loadstring</code> has no access to local variables from other chunks. For example:</p><pre class="programlisting">&gt; <strong class="userinput"><code>Test = "global"</code></strong>
+&gt; <strong class="userinput"><code>do</code></strong>
+&gt;&gt;   <strong class="userinput"><code>local Test = "local"</code></strong>
+&gt;&gt;   <strong class="userinput"><code>Fnc = loadstring("print(Test)")</code></strong>
+&gt;&gt;   <strong class="userinput"><code>Fnc() -- This prints Test's global value</code></strong>.
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+global</pre><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p><code class="literal">loadstring</code> may seem like a very powerful function, but it's seldom necessary. If you feel a need to use it, chances are that what you want to do should be done another way instead (with the closures described later in this chapter, for example, or with the <code class="literal">getfenv</code> and <code class="literal">setfenv</code> functions described in the next chapter). An exception to this is a program that (like the Lua interpreter) accepts code while it's running, and runs that code. That type of thing is the ideal use of <code class="literal">loadstring</code>.<a id="IDX-CHP-3-0070" class="indexterm"></a></p></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="variable_scope"></a>Variable Scope</h1></div></div></div><p>In the last chapter, you saw that the variable created by a <code class="literal">for</code> loop is only visible inside the loop, and that a variable outside the loop can have the same name without them affecting each other. (<span class="emphasis"><em>Visible</em></span> here means that it can be assigned to and its value can be read.) This is possible because Lua, like most modern programming languages, has <span class="emphasis"><em>variable scopes</em></span>, which are regions within which certain variables are visible.<a id="IDX-CHP-3-0071" class="indexterm"></a><a id="IDX-CHP-3-0072" class="indexterm"></a><a id="IDX-CHP-3-0073" class="indexterm"></a><a id="IDX-CHP-3-0074" class="indexterm"></a><a id="IDX-CHP-3-0075" class="indexterm"></a><a id="IDX-CHP-3-0076" class="indexterm"></a><a id="IDX-CHP-3-0077" class="indexterm"></a><a id="IDX-CHP-3-0078" class="indexterm"></a><a id="IDX-CHP-3-0079" class="indexterm"></a><a id="IDX-CHP-3-0080" class="indexterm"></a><a id="IDX-CHP-3-0081" class="indexterm"></a></p><div class="blockquote"><blockquote class="blockquote"><p>In early computer languages, all variables were in the same scope, which made it hard to write large programs, because you needed to make sure that the same name wasn't used for two different things.</p></blockquote></div><p>The first step in understanding scopes is learning the distinction between a function's <span class="emphasis"><em>actual arguments</em></span> and its <span class="emphasis"><em>formal arguments</em></span>. This is explained by the next section.<a id="IDX-CHP-3-0082" class="indexterm"></a><a id="IDX-CHP-3-0083" class="indexterm"></a><a id="IDX-CHP-3-0084" class="indexterm"></a><a id="IDX-CHP-3-0085" class="indexterm"></a></p><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="actual_and_formal_arguments"></a>Actual and Formal Arguments</h2></div></div></div><p>In the following example, what is <code class="literal">PrintArg</code>'s argument?</p><pre class="programlisting">&gt; <strong class="userinput"><code>-- Prints its one argument:</code></strong>
+&gt; <strong class="userinput"><code>function PrintArg(Arg)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print(Arg)</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt; <strong class="userinput"><code>PrintArg(true)</code></strong>
+true</pre><p>There are two answers to that question. The argument <code class="literal">PrintArg</code> is defined with is <code class="literal">Arg</code>, but the argument it's called with is <code class="literal">true</code>. The arguments that a function is defined to take are called <span class="emphasis"><em>formal arguments</em></span>; the arguments that it is called with are called <span class="emphasis"><em>actual arguments</em></span>.</p><div class="blockquote"><blockquote class="blockquote"><p>This terminology is not totally standardized. For instance, some people call formal arguments parameters and reserve the word argument for actual arguments.</p></blockquote></div><p>Formal arguments are just the names by which actual arguments are referred to inside a function when it is called. This is why using something other than a name as a formal argument is an error, such as the following:</p><pre class="programlisting">&gt; <strong class="userinput"><code>function Oops(true)</code></strong>
+stdin:1: &lt;name&gt; or '...' expected near 'true'</pre></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="local_variables"></a>Local Variables</h2></div></div></div><p>A function's formal arguments are only visible inside the function, and any variable from outside the function is only visible if it does not share a name with a formal argument. For example:<a id="IDX-CHP-3-0086" class="indexterm"></a><a id="IDX-CHP-3-0087" class="indexterm"></a><a id="IDX-CHP-3-0088" class="indexterm"></a><a id="IDX-CHP-3-0089" class="indexterm"></a><a id="IDX-CHP-3-0090" class="indexterm"></a><a id="IDX-CHP-3-0091" class="indexterm"></a><a id="IDX-CHP-3-0092" class="indexterm"></a><a id="IDX-CHP-3-0093" class="indexterm"></a><a id="IDX-CHP-3-0094" class="indexterm"></a><a id="IDX-CHP-3-0095" class="indexterm"></a></p><pre class="programlisting">&gt; <strong class="userinput"><code>Arg, NotShadowed = "Outside 1", "Outside 2"</code></strong>
+&gt;
+&gt;  <strong class="userinput"><code>-- Prints its one argument and the value of NotShadowed:</code></strong>
+&gt;  <strong class="userinput"><code>function ScopeTest(Arg)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print(Arg, NotShadowed)</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt;
+&gt; <strong class="userinput"><code>ScopeTest(true)</code></strong>
+true    Outside 2
+&gt; <strong class="userinput"><code>print(Arg)</code></strong>
+Outside 1</pre><p>When <code class="literal">ScopeTest</code> is called, a new variable is created, named <code class="literal">Arg</code>, and the actual argument for <code class="literal">ScopeTest</code> is assigned to it. Because this variable is only visible inside the function, it is called a <span class="emphasis"><em>local</em></span> variable. When the value of <code class="literal">Arg</code> is printed, it's the local <code class="literal">Arg</code> (whose value is <code class="literal">true</code>) that gets printed, and not the outer <code class="literal">Arg</code> (whose value is <code class="literal">"Outside 1"</code>). For this reason, the local <code class="literal">Arg</code> is said to <span class="emphasis"><em>shadow</em></span> the outer <code class="literal">Arg</code>. On the other hand, <code class="literal">NotShadowed</code>, which does not share a name with any variable local to the function, is not shadowed, and is therefore accessible in the normal way.</p><p>After <code class="literal">ScopeTest</code> returns, the outer <code class="literal">Arg</code> is unaffected.</p><p>Scopes can be nested inside each other, as shown in this rather contrived example:</p><pre class="programlisting">&gt;  <strong class="userinput"><code>function ScopeTest2(LclA)</code></strong>
+&gt;&gt;  <strong class="userinput"><code>print("LclA is " .. LclA)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>for LclB = 1, 5 do</code></strong>
+&gt;&gt;     <strong class="userinput"><code>print("LclB is " .. LclB)</code></strong>
+&gt;&gt;     <strong class="userinput"><code>LclA = LclA + 1</code></strong>
+&gt;&gt;   <strong class="userinput"><code>end</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print("LclA is now " .. LclA)</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt;
+&gt; <strong class="userinput"><code>ScopeTest2(100)</code></strong>
+LclA is 100
+LclB is 1
+LclB is 2
+LclB is 3
+LclB is 4
+LclB is 5
+LclA is now 105</pre><p>The scope of <code class="literal">LclA</code> is the whole function. The scope of <code class="literal">LclB</code> is just the loop. The example also shows that you can assign to local variables from containing scopes.</p><p>Functions and <code class="literal">for</code> loops create their own local variables, but you can create local variables too.</p><p>This example introduces the keyword <code class="literal">local</code>:<a id="IDX-CHP-3-0096" class="indexterm"></a><a id="IDX-CHP-3-0097" class="indexterm"></a><a id="IDX-CHP-3-0098" class="indexterm"></a><a id="IDX-CHP-3-0099" class="indexterm"></a><a id="IDX-CHP-3-0100" class="indexterm"></a><a id="IDX-CHP-3-0101" class="indexterm"></a><a id="IDX-CHP-3-0102" class="indexterm"></a><a id="IDX-CHP-3-0103" class="indexterm"></a><a id="IDX-CHP-3-0104" class="indexterm"></a><a id="IDX-CHP-3-0105" class="indexterm"></a><a id="IDX-CHP-3-0106" class="indexterm"></a><a id="IDX-CHP-3-0107" class="indexterm"></a><a id="IDX-CHP-3-0108" class="indexterm"></a></p><pre class="programlisting">&gt; <strong class="userinput"><code>function ScopeTest3(Lcl)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>for I = 1, 5 do</code></strong>
+&gt;&gt;     <strong class="userinput"><code>Lcl = Lcl .. "a"</code></strong>
+&gt;&gt;     <strong class="userinput"><code>print(Lcl)</code></strong>
+&gt;&gt;     <strong class="userinput"><code>local Lcl = ""</code></strong>
+&gt;&gt;     <strong class="userinput"><code>Lcl = Lcl .. "z"</code></strong>
+&gt;&gt;     <strong class="userinput"><code>print(Lcl)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>end</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print("The loop is done.")</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print(Lcl)</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt;
+&gt; <strong class="userinput"><code>ScopeTest3("")</code></strong>
+a
+z
+aa
+z
+aaa
+z
+aaaa
+z
+aaaaa
+z
+The loop is done.
+aaaaa</pre><p><code class="literal">local Lcl = ""</code> is a statement that creates a new local variable named <code class="literal">Lcl</code> and initializes it to the empty string. This new local variable's scope starts on the statement after the <code class="literal">local</code> statement. Because it's inside the scope of another variable also named <code class="literal">Lcl</code> (the function's formal argument), it shadows that outer variable.</p><p>Every time the <code class="literal">local</code> statement is executed, a new local variable is created and initialized. That's why the outer <code class="literal">Lcl</code> becomes a longer and longer string of a's, whereas the inner <code class="literal">Lcl</code> is never longer than one z, because it keeps getting recreated and hence doesn't remember its previous value.</p><p>The scope of a local variable created with the <code class="literal">local</code> statement has to end somewhere. In this example, it ends at the end of the loop (the same place that the scope of the loop variable <code class="literal">I</code> ends). You can see that this is true, because when the value of <code class="literal">Lcl</code> is printed after the loop is done, it's the outer <code class="literal">Lcl</code> whose value get printed.</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>A local variable's scope extends to the end of the innermost block that encloses it. A block is a <code class="literal">do</code> block, the body of a <code class="literal">while</code> or <code class="literal">for</code> loop, the body of a <code class="literal">repeat</code> loop plus its <code class="literal">until</code> expression, a branch of an <code class="literal">if</code> statement, a function, or a chunk.</p></div><p><a class="link" href="ch03.html#figure_3-1" title="Figure 3.1. Figure 3-1">Figure 3-1</a> shows all the scopes in <code class="literal">ScopeTest3</code>, and clearly illustrates why the two <code class="literal">Lcl</code>s are called outer and inner. The scope of the outer <code class="literal">Lcl</code> starts at the top of the function's body and ends at the bottom of the function's body; the scope of the <code class="literal">I</code> loop variable starts at the top of the loop body and ends at the bottom of the loop body; the scope of the inner starts right after the <code class="literal">local</code> statement and ends at the bottom of the loop body.<a id="IDX-CHP-3-0109" class="indexterm"></a><a id="IDX-CHP-3-0110" class="indexterm"></a></p><div class="figure"><a id="figure_3-1"></a><div class="figure-contents"><div><img src="https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/figs/0301.png" width="549" alt="Figure 3-1" height="418"></div></div><p class="title"><strong>Figure 3.1. Figure 3-1</strong></p></div><p>Variables from outer scopes are always visible in inner scopes, unless they are shadowed. This is easier to show using the following <code class="literal">do</code> blocks to delimit scopes without altering control flow:<a id="IDX-CHP-3-0111" class="indexterm"></a><a id="IDX-CHP-3-0112" class="indexterm"></a></p><pre class="programlisting">&gt; <strong class="userinput"><code>do</code></strong>
+&gt;&gt;   <strong class="userinput"><code>local A = "A1"</code></strong>
+&gt;&gt;   <strong class="userinput"><code>do</code></strong>
+&gt;&gt;     <strong class="userinput"><code>local B = "B1"</code></strong>
+&gt;&gt;     <strong class="userinput"><code>do</code></strong>
+&gt;&gt;        <strong class="userinput"><code>local A = "A2"</code></strong>
+&gt;&gt;        <strong class="userinput"><code>do</code></strong>
+&gt;&gt;           <strong class="userinput"><code>local B = "B2"</code></strong>
+&gt;&gt;           <strong class="userinput"><code>B = "still B2"</code></strong>
+&gt;&gt;        <strong class="userinput"><code>end</code></strong>
+&gt;&gt;        <strong class="userinput"><code>do</code></strong>
+&gt;&gt;           <strong class="userinput"><code>local C = "C1"</code></strong>
+&gt;&gt;           <strong class="userinput"><code>print(A, B, C)</code></strong>
+&gt;&gt;        <strong class="userinput"><code>end</code></strong>
+&gt;&gt;      <strong class="userinput"><code>end</code></strong>
+&gt;&gt;    <strong class="userinput"><code>end</code></strong>
+&gt;&gt;  <strong class="userinput"><code>end</code></strong>
+A2     B1     C1</pre><p>The inner <code class="literal">A</code> is printed because it shadows the outer one, but the first <code class="literal">B</code> is printed because the second <code class="literal">B</code> is not in a containing scope. By the time <code class="literal">C</code>'s scope starts, the second <code class="literal">B</code> scope has already ended. <a class="link" href="ch03.html#figure_3-2" title="Figure 3.2. Figure 3-2">Figure 3-2</a> illustrates this:</p><div class="figure"><a id="figure_3-2"></a><div class="figure-contents"><div><img src="https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/figs/0302.png" width="482" alt="Figure 3-2" height="584"></div></div><p class="title"><strong>Figure 3.2. Figure 3-2</strong></p></div><p>One of the benefits of indenting by block is that it makes scopes easier to see. To find out where the inner <code class="literal">Lcl</code>'s scope ends in <code class="literal">ScopeTest3</code>, all you need to do is find the first line below the <code class="literal">local</code> line that's farther to the left—<code class="literal">Lcl</code>'s scope includes everything up to that line:</p><pre class="programlisting">function ScopeTest3(Lcl)
+   for I = 1, 5 do
+      Lcl = Lcl .. "a"
+      print(Lcl)
+      local Lcl = ""
+      Lcl = Lcl .. "z"</pre><pre class="programlisting">print(Lcl)
+   end
+   print("The loop is done.")
+   print(Lcl)
+end</pre><p>As mentioned earlier (and illustrated by the positioning of the boxes in <a class="link" href="ch03.html#figure_3-1" title="Figure 3.1. Figure 3-1">Figures 3-1</a> and <a class="link" href="ch03.html#figure_3-2" title="Figure 3.2. Figure 3-2">3-2</a>), the scope of a variable created by a <code class="literal">local</code> statement doesn't begin until the following statement. This means that if a variable name appears on both sides of a <code class="literal">local</code> statement's equal sign, the one on the left names the variable whose scope is about to begin, and the one on the right names a variable in a containing scope:<a id="IDX-CHP-3-0113" class="indexterm"></a><a id="IDX-CHP-3-0114" class="indexterm"></a><a id="IDX-CHP-3-0115" class="indexterm"></a><a id="IDX-CHP-3-0116" class="indexterm"></a><a id="IDX-CHP-3-0117" class="indexterm"></a><a id="IDX-CHP-3-0118" class="indexterm"></a><a id="IDX-CHP-3-0119" class="indexterm"></a><a id="IDX-CHP-3-0120" class="indexterm"></a></p><pre class="programlisting">&gt; <strong class="userinput"><code>do</code></strong>
+&gt;&gt;   <strong class="userinput"><code>local Lcl = "aardvark"</code></strong>
+&gt;&gt;   <strong class="userinput"><code>-- The first Lcl's scope starts here.</code></strong>
+&gt;&gt;   <strong class="userinput"><code>local Lcl = Lcl .. "zebra"</code></strong>
+&gt;&gt;   <strong class="userinput"><code>-- The second Lcl's scope starts here.</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print(Lcl)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>-- Both scopes end here.</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+aardvarkzebra</pre><p>A chunk is a block, which means that if a local variable is not contained within any other blocks, its scope ends when the chunk ends. This means that a local variable is never visible in two different files. It also means that a local variable is never visible in two different chunks of interpreter input. Here's an example:<a id="IDX-CHP-3-0121" class="indexterm"></a></p><pre class="programlisting">&gt; <strong class="userinput"><code>City = "New York"</code></strong>
+&gt; <strong class="userinput"><code>local City = "London"</code></strong>
+&gt; <strong class="userinput"><code>print(City)</code></strong>
+New York</pre><p>In this example, the first line gives a value to the variable <code class="literal">City</code>, which is not a local variable. The second line creates and initializes a local variable, also named <code class="literal">City</code>, which is forgotten about as soon as the line is done executing. The third line prints the value of a variable named <code class="literal">City</code>. Because there is no containing block with a local variable of that name, the <code class="literal">City</code> from the first line is used.</p><p>Variables that aren't local are called <span class="emphasis"><em>global</em></span> variables. They are called this because they are visible globally, everywhere in the program, even across different chunks. Their scopes begin and end at the beginning and end of the program. Not counting <code class="literal">for</code> loop variables, all the variables you used in the previous chapter were global.</p><p>You can shadow global variables by local variables as follows:</p><pre class="programlisting">&gt; <strong class="userinput"><code>Var = "global"</code></strong>
+&gt; <strong class="userinput"><code>do</code></strong>
+&gt;&gt;   <strong class="userinput"><code>local Var = "local"</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print(Var)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>Var = "still local"</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print(Var)</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+local
+still local
+&gt; <strong class="userinput"><code>print(Var)</code></strong>
+global</pre><p>You can create and initialize multiple local variables at the same time. Other than creating new local variables, you follow the same rules as for multiple assignment (for example, <code class="literal">nil</code>s are used if the list of values is too short):<a id="IDX-CHP-3-0122" class="indexterm"></a><a id="IDX-CHP-3-0123" class="indexterm"></a><a id="IDX-CHP-3-0124" class="indexterm"></a><a id="IDX-CHP-3-0125" class="indexterm"></a></p><pre class="programlisting">&gt; <strong class="userinput"><code>do</code></strong>
+&gt;&gt;   <strong class="userinput"><code>local A, B = 1, 2</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print(A, B)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>local A, B = 1</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print(A, B)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>local A, B = 1, 2, 3</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print(A, B)</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+1        2
+1        nil
+1        2</pre><p>You can create local variables without initializing them. This is exactly like initializing them to <code class="literal">nil</code>:</p><pre class="programlisting">&gt; <strong class="userinput"><code>do</code></strong>
+&gt;&gt;   <strong class="userinput"><code>local A</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print(A)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>local B, C</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print(B, C)</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+nil
+nil       nil</pre><p>Whether you make the <code class="literal">nil</code> implicit (<code class="literal">local A</code>) or explicit (<code class="literal">local A = nil</code>) is a stylistic choice. Generally, you shouldn't use the explicit version if the <code class="literal">nil</code> will never be seen because it will be replaced with another value. An example of this is the following rewritten version of the <code class="literal">EvenLen</code> function:</p><div class="blockquote"><blockquote class="blockquote"><p>Remember that the second version of <code class="literal">EvenLen</code> given earlier (the one with only one exit point) had a problem. The problem was that, before returning its return value, it stored it in the global variable <code class="literal">Ret</code>, which means that if <code class="literal">Ret</code> was used as a global anywhere else, calling <code class="literal">EvenLen</code> would rudely overwrite its value. (You can verify this by calling <code class="literal">EvenLen</code> and then printing <code class="literal">Ret</code>.) This is exactly the problem that local variables are meant to solve. Here, <code class="literal">EvenLen</code> is rewritten so that the <code class="literal">Ret</code> it uses is only visible inside it.</p></blockquote></div><pre class="programlisting">function EvenLen(Str)
+    local Ret
+    if #Str % 2 == 0 then
+      Ret = true
+    else
+      Ret = false
+    end
+    return Ret
+end</pre><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>Don't make the mistake of thinking that regular assignment (an equal sign but no <code class="literal">local</code> keyword) is for assigning to global variables and the <code class="literal">local</code> keyword is for assigning to local variables. Rather, regular assignment assigns to either globals or locals (whichever is visible, scopewise), and the <code class="literal">local</code> keyword creates new locals and optionally assigns initial values to those very locals.<a id="IDX-CHP-3-0126" class="indexterm"></a><a id="IDX-CHP-3-0127" class="indexterm"></a><a id="IDX-CHP-3-0128" class="indexterm"></a><a id="IDX-CHP-3-0129" class="indexterm"></a><a id="IDX-CHP-3-0130" class="indexterm"></a><a id="IDX-CHP-3-0131" class="indexterm"></a><a id="IDX-CHP-3-0132" class="indexterm"></a><a id="IDX-CHP-3-0133" class="indexterm"></a><a id="IDX-CHP-3-0134" class="indexterm"></a><a id="IDX-CHP-3-0135" class="indexterm"></a><a id="IDX-CHP-3-0136" class="indexterm"></a></p></div></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="understanding_side_effects"></a>Understanding Side Effects</h1></div></div></div><p>If a statement or expression causes something to change, this is called a <span class="emphasis"><em>side effect</em></span>, such as when the <code class="literal">print</code> function changes what's on the screen. For example, the following function changes the value of the global variable <code class="literal">Gl</code>:</p><div class="blockquote"><blockquote class="blockquote"><p>The <code class="literal">Val</code> variable created in this example is not part of the side effect, because creating a new local variable doesn't change the value of a variable that already exists.</p></blockquote></div><pre class="programlisting">function SetGl(Val)
+   Gl = Val
+end</pre><p>On the other hand, the <code class="literal">type</code> function has no side effects—all it does is return a value. However, this value may then be used by another function or statement that does have a side effect.</p><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="ordering_side_effects"></a>Ordering Side Effects</h2></div></div></div><p>If two functions are free of side effects, it doesn't matter which order they're called in. In the following example, it is impossible to tell whether the <code class="literal">type</code> on the left was called before or after the one on the right, but that's okay, because all that matters is that the left one's return value was used as the first <code class="literal">print</code> argument (and the right return value as the second):</p><pre class="programlisting">&gt; <strong class="userinput"><code>print(type(1), type("a"))</code></strong>
+number string</pre><p>If two functions do have side effects, though, you can see which order they're called in. This will be easiest to demonstrate with a function that has both a return value and a side effect:</p><pre class="programlisting">-- Prints a message with Val, then returns Val:
+function PrintReturn(Val)
+  print("Returning: " .. tostring(Val))
+  return Val
+end</pre><p><code class="literal">PrintReturn</code> takes a single argument. It prints a message that it is about to return this argument, and then it does so. It uses the built-in Lua function <code class="literal">tostring</code> to convert the argument to a string (otherwise the concatenation operator would choke on <code class="literal">nil</code> and Booleans):</p><pre class="programlisting">&gt; <strong class="userinput"><code>print(PrintReturn(1), PrintReturn(2), PrintReturn(3))</code></strong>
+Returning: 1
+Returning: 2
+Returning: 3
+1       2       3</pre><p>This example showed that the three calls to <code class="literal">PrintReturn</code> are made from left to right, but don't rely on this—the order is actually undefined and only happens to be left to right in the current implementation. If you want to make sure that function calls are made in a particular order, make them part of different statements like this:</p><pre class="programlisting">&gt; <strong class="userinput"><code>do</code></strong>
+&gt;&gt;   <strong class="userinput"><code>local Val1 = PrintReturn(1)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>local Val2 = PrintReturn(2)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>local Val3 = PrintReturn(3)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print(Val1, Val2, Val3)</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+Returning: 1
+Returning: 2
+Returning: 3
+1       2       3</pre><p>This holds for function calls used in expressions, too—they're done left to right, but don't rely on it:</p><pre class="programlisting">&gt; <strong class="userinput"><code>print(PrintReturn(1) + PrintReturn(2))</code></strong>
+Returning: 1
+Returning: 2
+3</pre><p>Similarly, the current implementation of Lua assigns from right to left, but this behavior shouldn't be relied on:</p><pre class="programlisting">&gt; <strong class="userinput"><code>A, A = 1, 2</code></strong>
+&gt; <strong class="userinput"><code>print(A)</code></strong>
+1</pre><p>What is guaranteed is that all function calls to the right of an assignment will be made before any of the variables to the left are assigned to. This is just a special case of the rule that all expressions to the right of an assignment are evaluated before any assigning is done. (If it weren't for that rule, you couldn't use multiple assignment to swap values, which was demonstrated in the previous chapter.) In the following example, when <code class="literal">1</code> is added to <code class="literal">B</code>, the initial value of <code class="literal">B</code> is used, and when <code class="literal">1</code> is added to <code class="literal">A</code>, the initial value of <code class="literal">A</code> is used. Only after both calls to <code class="literal">PrintReturn</code> are made (with these incremented values) do <code class="literal">A</code> and <code class="literal">B</code> get new values:</p><pre class="programlisting">&gt; <strong class="userinput"><code>A, B = 1, 10</code></strong>
+&gt; <strong class="userinput"><code>A, B = PrintReturn(B + 1), PrintReturn(A + 1)</code></strong>
+Returning: 11
+Returning: 2</pre><pre class="programlisting">&gt; <strong class="userinput"><code>print(A, B)</code></strong>
+11     2</pre><p>It's also guaranteed that any function call used as an argument (or part of an argument) to another function will be made before the other function is called. So, the innermost <code class="literal">PrintReturn</code> is called before the one whose parentheses it is inside (which would be true even if the outer <code class="literal">PrintReturn</code> never did anything with its argument):<a id="IDX-CHP-3-0137" class="indexterm"></a><a id="IDX-CHP-3-0138" class="indexterm"></a><a id="IDX-CHP-3-0139" class="indexterm"></a><a id="IDX-CHP-3-0140" class="indexterm"></a><a id="IDX-CHP-3-0141" class="indexterm"></a></p><pre class="programlisting">&gt; <strong class="userinput"><code>print(PrintReturn(PrintReturn(1) + 1))</code></strong>
+Returning: 1
+Returning: 2
+2</pre><p>Functions that don't have side effects are easier to decipher than those that do because you don't have to think about how many times or in what order they're executed. Side effects that are only visible within a small part of the program (that is, assigning to a local variable) are easier to decipher than those visible throughout the whole program, because you don't have to consider them while thinking about the rest of the program. This doesn't mean that you should completely avoid side effects. It does mean that, when faced with the choice of writing a function with side effects or without, you should write it without side effects unless there's a good reason to write it with them. It also means that, unless a variable needs to be visible throughout the entire program, it should be made local with as narrow a scope as possible.</p><p>The <code class="literal">and</code> and <code class="literal">or</code> operators have a special behavior regarding side effects. This behavior is called <span class="emphasis"><em>short-circuit</em></span> (or <span class="emphasis"><em>shortcut</em></span>) <span class="emphasis"><em>evaluation</em></span>, and it is demonstrated next.</p></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="short-circuit_evaluation"></a>Short-Circuit Evaluation</h2></div></div></div><p>Remember that the length operator <code class="literal">#</code> gets the length of a string. If it's given something that doesn't have a length (a Boolean in the following example), it will error out, but notice that there is no error when <code class="literal">Len</code> is given a Boolean, even though <code class="literal">Len</code> returns an expression that includes an attempt to get its argument's length:</p><pre class="programlisting">&gt; <strong class="userinput"><code>print(#true)</code></strong>
+stdin:1: attempt to get length of a boolean value
+stack traceback:
+        stdin:1: in main chunk
+        [C]: ?
+&gt;
+&gt; <strong class="userinput"><code>-- Returns Val's length, or false if Val isn't a string:</code></strong>
+&gt; <strong class="userinput"><code>function Len(Val)</code></strong>
+&gt;&gt;    <strong class="userinput"><code>return type(Val) == "string" and #Val</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt;
+&gt; <strong class="userinput"><code>print(Len(""))</code></strong>
+0
+&gt; <strong class="userinput"><code>print(Len("abc"))</code></strong>
+3
+&gt; <strong class="userinput"><code>print(Len(true))</code></strong>
+false</pre><p>In the previous chapter, you learned that <code class="literal">and</code> uses its second operand as its result only if its first operand is <code class="literal">true</code>. However, if its first operand is <code class="literal">false</code>, then not only does it not use its second operand as its result, but it doesn't even evaluate the second operand, so any side effects the second operand might have had will not happen. This also applies to errors; giving a Boolean to the <code class="literal">#</code> operator causes an error, but in the previous example, <code class="literal">Val</code> is only given to <code class="literal">#</code> if it's a string. The following examples, which use the <code class="literal">PrintReturn</code> function, will make this clearer:</p><pre class="programlisting">&gt; <strong class="userinput"><code>print(PrintReturn(1) and PrintReturn(2))</code></strong>
+Returning: 1
+Returning: 2
+2
+&gt; <strong class="userinput"><code>print(PrintReturn(1) and PrintReturn(false))</code></strong>
+Returning: 1
+Returning: false
+false
+&gt; <strong class="userinput"><code>print(PrintReturn(nil) and PrintReturn(2))</code></strong>
+Returning: nil
+nil
+&gt; <strong class="userinput"><code>print(PrintReturn(nil) and PrintReturn(false))</code></strong>
+Returning: nil
+nil</pre><p>The first operand of an <code class="literal">and</code> is always evaluated (which means any side effects it has will happen). The second operand is only evaluated if it needs to be—if the first operand is false (<code class="literal">false</code> or <code class="literal">nil</code>), then that's the result of the <code class="literal">and</code>, which means that there's no need to evaluate the second operand.</p><p>This also applies to <code class="literal">or</code> —if the first operand of <code class="literal">or</code> is <code class="literal">true</code> (anything other than <code class="literal">false</code> or <code class="literal">nil</code>), then that's the result, and the second operand is not evaluated. For example:</p><pre class="programlisting">&gt; <strong class="userinput"><code>print(PrintReturn(1) or PrintReturn(2))</code></strong>
+Returning: 1
+1
+&gt; <strong class="userinput"><code>print(PrintReturn(1) or PrintReturn(false))</code></strong>
+Returning: 1
+1
+&gt; <strong class="userinput"><code>print(PrintReturn(nil) or PrintReturn(2))</code></strong>
+Returning: nil
+Returning: 2
+2
+&gt; <strong class="userinput"><code>print(PrintReturn(nil) or PrintReturn(false))</code></strong>
+Returning: nil
+Returning: false
+false</pre><p>Every function, even a supposedly side effect-free function like <code class="literal">type</code>, has the side effect of taking awhile to execute. Normally, this can be ignored, but not if a function takes a particularly long time to execute, or if it's in a time-critical section of a program. To see what this has to do with short-circuit evaluation, imagine that you have a function called <code class="literal">Search</code> that always returns some true value and takes a long time to run. It may or may not have been run earlier in the program. If it was run, its result will be in the variable <code class="literal">SearchResult</code>. In this situation, the following statement is a concise way of printing the search result while making sure that <code class="literal">Search</code> is not called unnecessarily:</p><pre class="programlisting">print(SearchResult or Search(SearchStr))</pre><p>Short-circuit evaluation doesn't do anything that couldn't be done with <code class="literal">if</code> statements—and vice versa, for that matter. Use whichever one is easier to understand in a given case.<a id="IDX-CHP-3-0142" class="indexterm"></a><a id="IDX-CHP-3-0143" class="indexterm"></a><a id="IDX-CHP-3-0144" class="indexterm"></a><a id="IDX-CHP-3-0145" class="indexterm"></a><a id="IDX-CHP-3-0146" class="indexterm"></a></p></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="functions_calling_functions"></a>Functions Calling Functions</h1></div></div></div><p>From within many of the preceding functions, you called <code class="literal">print</code>. You can also call your own functions from within functions.</p><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="the_call_stack"></a>The Call Stack</h2></div></div></div><p>When a function calls another function, the calling function gets put on hold while the called one is doing its thing. Lua keeps track of which function is active and which ones are on hold with something called the <span class="emphasis"><em>call stack</em></span>. Explaining how the call stack works will require an example (given in the following Try It Out) in which function calls are nested within other function calls.</p><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="try_it_out_colon_use_creating_nested_fun"></a>Try It Out: Use Creating Nested Function Calls</h3></div></div></div><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Save the following code under the filename <span class="strong"><strong>nestedcalls.lua:</strong></span></p><pre class="programlisting">-- A demonstration of functions calling functions.
+
+function A()
+  print(" About to enter B")
+  B()
+  print(" Just exited B")
+end
+
+function B()
+  print("  About to enter C")
+  C()
+  print("  Just exited C")
+end
+
+function C()
+  print("   Inside C")
+end
+
+print("About to enter A")
+A()
+print("Just exited A")</pre></li><li class="listitem"><p>As you did with <code class="literal">hello.lua</code> earlier, run it by typing this into your shell:</p><pre class="programlisting"><strong class="userinput"><code>lua nestedcalls.lua</code></strong></pre><p>You should see this:</p><pre class="programlisting">About to enter A
+   About to enter B
+     About to enter C
+       Inside C
+     Just exited C</pre><pre class="programlisting">Just exited B
+Just exited A</pre></li></ol></div></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="how_it_works-006"></a>How It Works</h3></div></div></div><p>Lua keeps a <span class="emphasis"><em>stack</em></span> of information about all currently running functions. It's called a stack because things are only put onto or taken off of the top. When a function is called, information about it is put on the top of the stack (making the stack taller), and when a function returns, that function's information is removed from the top of the stack (making the stack shorter). Because this stack grows every time a function is called, it's called the <span class="emphasis"><em>call stack</em></span>. The information about one function call is said to occupy one <span class="emphasis"><em>stack frame</em></span>.<a id="IDX-CHP-3-0147" class="indexterm"></a><a id="IDX-CHP-3-0148" class="indexterm"></a><a id="IDX-CHP-3-0149" class="indexterm"></a><a id="IDX-CHP-3-0150" class="indexterm"></a></p><div class="blockquote"><blockquote class="blockquote"><p>A stack is also used to keep track of C function calls. This type of stack is called the C stack, and it's separate from Lua's call stack. Functions written in C also use a stack to interact with Lua, called the Lua API stack, and it is actually a little window on part of the call stack. This glosses over some details, but if you really want to know how it works, look at Lua's source code.<a id="IDX-CHP-3-0151" class="indexterm"></a><a id="IDX-CHP-3-0152" class="indexterm"></a></p></blockquote></div><p>In this example, the <code class="literal">print</code>s are formatted so as to be more and more indented as the stack gets taller. At the stack's tallest point—the line where <code class="literal">Inside C</code> is printed—the stack frame at the top of the stack (not counting <code class="literal">print</code>'s stack frame) contains (among other things) the current location inside <code class="literal">C</code>. (<span class="emphasis"><em>Location</em></span> here means the location of control: which statement is being executed and which expression is being evaluated.) The stack frame underneath that contains the current location inside the function that called <code class="literal">C</code>, namely <code class="literal">B</code>. This is the point to which control will return when <code class="literal">C</code> returns. The next stack frame contains the current location inside <code class="literal">A</code>, and the bottom one contains the current location inside the function that called <code class="literal">A</code>, which is the whole file. (Remember that files are chunks, which are executed as functions.) All of these locations are highlighted here:</p><pre class="programlisting">-- A demonstration of functions calling functions.
+
+function A()
+  print(" About to enter B")
+  B()
+  print(" Just exited B")
+end
+
+function B()
+  print("  About to enter C")
+  C()
+  print("  Just exited C")
+end
+
+function C()
+  print("   Inside C")
+end
+
+print("About to enter A")
+A()
+print("Just exited A")</pre><p>These locations will be listed (in stack order) if an error happens inside <code class="literal">C</code>. For instance, if two <code class="literal">nil</code>s are added together like this:<a id="IDX-CHP-3-0153" class="indexterm"></a><a id="IDX-CHP-3-0154" class="indexterm"></a><a id="IDX-CHP-3-0155" class="indexterm"></a><a id="IDX-CHP-3-0156" class="indexterm"></a></p><pre class="programlisting">function C()
+  print(nil + nil)
+  print("      Inside C")
+end</pre><p>then the result will be three <code class="literal">About to enter</code> messages, followed by the error message, followed by a <span class="emphasis"><em>stack traceback</em></span>, which is a multiline message showing the current location of control in each function on the stack, from the top down:<a id="IDX-CHP-3-0157" class="indexterm"></a></p><pre class="programlisting">About to enter A
+    About to enter B
+      About to enter C
+lua: nestedcalls.lua:16: attempt to perform arithmetic on a nil value
+stack traceback:
+       nestedcalls.lua:16: in function `C'
+       nestedcalls.lua:11: in function `B'
+       nestedcalls.lua:5: in function `A'
+       nestedcalls.lua:21: in main chunk
+       [C]: ?</pre><p>The bottom of the stack is <code class="literal">[C]: ?</code>. This just means that the main chunk was called by a C program (the Lua interpreter).</p><p>You'll learn more about stack tracebacks in <a class="link" href="ch06.html" title="Chapter 6. Handling and Avoiding Errors">Chapter 6</a>. The reason for introducing the concept of the call stack now is that it makes it much easier to explain the concepts of <span class="emphasis"><em>recursion, stack overflow</em></span>, and <span class="emphasis"><em>tail calls</em></span>.</p></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="recursion"></a>Recursion</h2></div></div></div><p>If a function calls itself, it is said to be <span class="emphasis"><em>recursive</em></span>. Lua uses the call stack to store local variables, which means that multiple calls to the same function can be active at the same time without one call's local variables stomping on those of another call.<a id="IDX-CHP-3-0158" class="indexterm"></a></p><p>Recursion is most often used when the problem to be solved is defined in terms of itself. The factorials in the previous chapter are an example of this: a number's factorial is defined as that number times the factorial of that number minus one (for example, the factorial of 5 is 5 times the factorial of 4). By itself, this is a circular definition and hence useless. Circularity is avoided by defining the factorial of 0 to be 1. This is easily translated into a Lua function. One branch of an <code class="literal">if</code> statement handles the <span class="emphasis"><em>base case</em></span>—the part of the definition that isn't self-referential. The <code class="literal">if</code>'s other branch handles the self-referential, or recursive, case:<a id="IDX-CHP-3-0159" class="indexterm"></a><a id="IDX-CHP-3-0160" class="indexterm"></a></p><pre class="programlisting">&gt; <strong class="userinput"><code>-- Returns the factorial of N:</code></strong>
+&gt; <strong class="userinput"><code>function Fact(N)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>local Ret</code></strong>
+&gt;&gt;   <strong class="userinput"><code>if N == 0 then</code></strong>
+&gt;&gt;   <strong class="userinput"><code>-- Base case:</code></strong>
+&gt;&gt;   <strong class="userinput"><code>Ret = 1</code></strong>
+&gt;&gt; <strong class="userinput"><code>else</code></strong></pre><pre class="programlisting">&gt;&gt;   <strong class="userinput"><code>-- Recursive case:</code></strong>
+&gt;&gt;   <strong class="userinput"><code>Ret = N * Fact(N - 1)</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt;&gt;   <strong class="userinput"><code>return Ret</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt;
+&gt; <strong class="userinput"><code>for N = 0, 5 do</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print(N .. "! is " .. Fact(N))</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+0! is 1
+1! is 1
+2! is 2
+3! is 6
+4! is 24
+5! is 120</pre><p>A step-by-step breakdown of the call <code class="literal">Fact(2)</code> would look like this:<a id="IDX-CHP-3-0161" class="indexterm"></a><a id="IDX-CHP-3-0162" class="indexterm"></a><a id="IDX-CHP-3-0163" class="indexterm"></a><a id="IDX-CHP-3-0164" class="indexterm"></a></p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p><code class="literal">N</code> is <code class="literal">2</code>. Because it is not equal to <code class="literal">0, Fact</code> is called recursively with <code class="literal">1</code> as an argument.</p></li><li class="listitem"><p>This recursive call to <code class="literal">Fact</code> creates a new variable <code class="literal">N</code> (local to this call) and sets it to <code class="literal">1</code>. This <code class="literal">N</code> is completely independent of the <code class="literal">N</code> from the previous call. Because it's not <code class="literal">0, Fact</code> is called yet again, with <code class="literal">0</code> as an argument.</p></li><li class="listitem"><p>At this point, the call stack is at its tallest—three stack frames taller than before the first call to <code class="literal">Fact</code> was made. This third call does take the base case, returning <code class="literal">1</code>.</p></li><li class="listitem"><p>Control returns to the second call, which receives the <code class="literal">1</code> returned by the third call. It multiplies this <code class="literal">1</code> by <code class="literal">N</code>, which is also <code class="literal">1</code>, and returns the result (also <code class="literal">1</code>).</p></li><li class="listitem"><p>The first call receives this <code class="literal">1</code>, multiplies it by <code class="literal">2</code>, and returns the result (also <code class="literal">2</code>). After the return, the stack will be back to the height it started at.</p></li></ol></div><p>If you've worked with recursion before, this will all be old news to you. If you haven't worked with recursion before and you're having trouble wrapping your head around it, try going step-by-step through another call or two to <code class="literal">Fact</code> with slightly higher numbers. You'll find that, to keep track of each call's location of control and value of <code class="literal">N</code>, you need to simulate a stack (mentally or on paper).</p></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="stack_overflow"></a>Stack Overflow</h2></div></div></div><p>If the call stack gets too tall, it can run out of space. This is called <span class="emphasis"><em>stack overflow</em></span>, and it is an error.<a id="IDX-CHP-3-0165" class="indexterm"></a></p><p><code class="literal">Fact</code> only works on non-negative integers. If it's given a negative or fractional number, a stack overflow occurs, as shown in the following example:</p><pre class="programlisting">&gt; <strong class="userinput"><code>print(Fact(-1))</code></strong>
+stdin:8: stack overflow
+stack traceback:
+        stdin:8: in function 'Fact'
+        stdin:8: in function 'Fact'
+        stdin:8: in function 'Fact'
+        stdin:8: in function 'Fact'
+        stdin:8: in function 'Fact'</pre><pre class="programlisting">stdin:8: in function 'Fact'
+        stdin:8: in function 'Fact'
+        stdin:8: in function 'Fact'
+        stdin:8: in function 'Fact'
+        stdin:8: in function 'Fact'
+        ...
+        stdin:8: in function 'Fact'
+        stdin:8: in function 'Fact'
+        stdin:8: in function 'Fact'
+        stdin:8: in function 'Fact'
+        stdin:8: in function 'Fact'
+        stdin:8: in function 'Fact'
+        stdin:8: in function 'Fact'
+        stdin:8: in function 'Fact'
+        stdin:1: in main chunk
+        [C]: ?</pre><p>A negative or fractional number is handled with the recursive case, but the base case is never reached, which means that the stack gets taller and taller (which takes awhile) until it <span class="emphasis"><em>overflows</em></span>, or tries to go beyond its maximum size. The stack traceback in the error message only shows the top and bottom of the stack (the dots represent the middle).<a id="IDX-CHP-3-0166" class="indexterm"></a><a id="IDX-CHP-3-0167" class="indexterm"></a><a id="IDX-CHP-3-0168" class="indexterm"></a><a id="IDX-CHP-3-0169" class="indexterm"></a></p><p>For most purposes, you are not likely to run out of stack space if your program isn't buggy. Stack overflow is usually a sign of an infinite recursion, as the previous example shows. If you do want to keep the stack from growing unnecessarily, there are two ways to do it. One is to use iteration (a loop) instead of recursion, like this:</p><pre class="programlisting">-- Returns the factorial of N (iteratively):
+function Fact(N)
+  local Ret = 1
+  for I = 1, N do
+    Ret = Ret * I
+  end
+  return Ret
+end</pre><p>The other way is to make sure that a recursive call is a <span class="emphasis"><em>tail call</em></span>, which means it has a certain form explained in the next section.</p><div class="blockquote"><blockquote class="blockquote"><p>If for some reason you need to change how big the stack gets before it overflows, edit the value of <code class="literal">LUAI_MAXCALLS</code> in <code class="literal">src/luaconf.h</code> before compiling Lua. Due to the way the stack is grown, this value should be twice the maximum number of stack frames you need to use.</p></blockquote></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="tail_calls"></a>Tail Calls</h2></div></div></div><p>In the recursive version of <code class="literal">Fact</code>, there's still more work to be done after the recursive call returns. You need to multiply the recursive call's result by <code class="literal">N</code>, and assign that value to <code class="literal">Ret</code>, which you must then return. Here's how:</p><pre class="programlisting">-- Returns the factorial of N:
+function Fact(N)
+
+ local Ret
+ if N == 0 then
+    -- Base case:
+    Ret = 1
+ else
+    -- Recursive case:
+    Ret = N * Fact(N - 1)
+  end
+  return Ret
+end</pre><p>If there were nothing left to do but return the recursive call's result after it returned, you wouldn't need to make a new stack frame for it. Instead, you could overwrite the current function's stack frame (the information in it no longer being necessary).<a id="IDX-CHP-3-0170" class="indexterm"></a></p><p>This type of function call whose result is immediately returned by the calling function is called a <span class="emphasis"><em>tail call</em></span>. When Lua sees a tail call, it does the preceding optimization, reusing the calling function's stack frame rather than making a new one. Therefore, the following function will run forever (or until interrupted), continually calling itself but never consuming more than one stack frame:<a id="IDX-CHP-3-0171" class="indexterm"></a></p><pre class="programlisting">function ForeverTail()
+  return ForeverTail()
+end</pre><p>When you do interrupt it, it looks like the stack is big, but it isn't really. Lua keeps track of how many tail calls have happened and shows them in the traceback, but they don't take up any space in the actual call stack:</p><pre class="programlisting">&gt; <strong class="userinput"><code>ForeverTail()</code></strong>
+stdin:2: interrupted!
+stack traceback:
+        stdin:2: in function 'ForeverTail'
+        stdin:2: in function &lt; stdin:1&gt;
+        (tail call): ?
+        (tail call): ?
+        (tail call): ?
+        (tail call): ?
+        (tail call): ?
+        (tail call): ?
+        (tail call): ?
+        (tail call): ?
+        ...
+        (tail call): ?
+        (tail call): ?
+        (tail call): ?
+        (tail call): ?
+        (tail call): ?
+        (tail call): ?
+        (tail call): ?
+        (tail call): ?
+        stdin:1: in main chunk
+        [C]: ?</pre><p>In the following function, it may seem that there is nothing left to do after the call, and that the call is therefore a tail call:<a id="IDX-CHP-3-0172" class="indexterm"></a></p><pre class="programlisting">function ForeverNotTail()
+  ForeverNotTail() -- Is this a tail call?
+end</pre><p>This is not a tail call, though, because there is something left to do before returning: the list of <code class="literal">ForeverNotTail</code> return values must be adjusted to zero. Therefore, <code class="literal">ForeverNotTail</code>, unlike <code class="literal">ForeverTail</code>, will overflow the stack.</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>A tail call is always a <code class="literal">return</code> statement whose expression is a single function call.</p></div><p>None of the following are tail calls—the first because there's no <code class="literal">return</code>, the rest because the <code class="literal">return</code>'s expression is something other than a single function call:</p><pre class="programlisting">Fun()
+
+return Fun() + 1
+
+return X and Fun()
+
+return (Fun()) -- This expression is a single function call
+   -- surrounded in parentheses, which is different than the
+   -- required single function call (the parentheses adjust
+   -- Fun to one return value).
+
+return Fun(), Fun()</pre><p>A recursive function that uses a tail call to call itself is said to be <span class="emphasis"><em>tail recursive</em></span>. The recursive version of <code class="literal">Fact</code> is not tail recursive, but you can rewrite it to be tail recursive by introducing an <span class="emphasis"><em>accumulator</em></span>—a variable that keeps track of all the multiplications done so far:<a id="IDX-CHP-3-0173" class="indexterm"></a><a id="IDX-CHP-3-0174" class="indexterm"></a></p><pre class="programlisting">-- Returns the factorial of N (tail-recursively). Calls
+-- itself with two arguments, but when you call it, you need
+-- supply only one argument (like the other Fact functions).
+function Fact(N, Acc)
+  -- Initialize the accumulator to 1:
+  Acc = Acc or 1
+  if N == 0 then
+   -- Base case:
+   return Acc
+ else
+   -- Recursive case:
+   return Fact(N - 1, N * Acc)
+  end
+end</pre><p>This version of <code class="literal">Fact</code> will recurse forever (instead of overflowing the stack) if you give it a negative or fractional number.<a id="IDX-CHP-3-0175" class="indexterm"></a><a id="IDX-CHP-3-0176" class="indexterm"></a><a id="IDX-CHP-3-0177" class="indexterm"></a><a id="IDX-CHP-3-0178" class="indexterm"></a><a id="IDX-CHP-3-0179" class="indexterm"></a><a id="IDX-CHP-3-0180" class="indexterm"></a><a id="IDX-CHP-3-0181" class="indexterm"></a></p><div class="blockquote"><blockquote class="blockquote"><p>Although none of the preceding examples show it, a tail call is still a tail call even if it's not a recursive call.</p></blockquote></div></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="functions_as_values"></a>Functions as Values</h1></div></div></div><p>Functions are values (as are numbers, strings, Booleans, and <code class="literal">nil</code>). For example, take a look at the following:</p><pre class="programlisting">print(type("Hello"))</pre><p>This operates by looking in the global variable <code class="literal">type</code>, finding a function there, calling that function with the value <code class="literal">"Hello"</code>, looking in the global variable <code class="literal">print</code>, finding a function there, and calling that function with the value returned by the function in <code class="literal">type</code>.</p><p>If you call <code class="literal">type</code> with a function as an argument, it returns the string <code class="literal">"function"</code>:</p><pre class="programlisting">&gt; print(type(print))
+function</pre><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="replacing_built-in_functions"></a>Replacing Built-In Functions</h2></div></div></div><p>You can demonstrate that functions are values by replacing the <code class="literal">print</code> function with your own function:<a id="IDX-CHP-3-0182" class="indexterm"></a><a id="IDX-CHP-3-0183" class="indexterm"></a></p><pre class="programlisting">&gt; <strong class="userinput"><code>-- Give the print function another name, so it'll still be</code></strong>
+&gt; <strong class="userinput"><code>-- accessible:</code></strong>
+&gt; <strong class="userinput"><code>RealPrint = print</code></strong>
+&gt;
+&gt; <strong class="userinput"><code>-- Prints a message and its one argument:</code></strong>
+&gt; <strong class="userinput"><code>function FakePrint(Val)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>RealPrint("Inside FakePrint:", Val)</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt;
+&gt; <strong class="userinput"><code>-- Replace print with FakePrint:</code></strong>
+&gt; <strong class="userinput"><code>print = FakePrint</code></strong>
+&gt; <strong class="userinput"><code>-- Use print:</code></strong>
+&gt; <strong class="userinput"><code>print("Hello")</code></strong>
+Inside FakePrint:    Hello
+&gt; <strong class="userinput"><code>print(true)</code></strong>
+Inside FakePrint:    true
+&gt; <strong class="userinput"><code>-- Undo the damage:</code></strong>
+&gt; <strong class="userinput"><code>print = RealPrint</code></strong>
+&gt; <strong class="userinput"><code>-- Back to normal:</code></strong>
+&gt; <strong class="userinput"><code>print("Hello")</code></strong>
+Hello
+&gt; <strong class="userinput"><code>print(true)</code></strong>
+true</pre><p>There are two reasons that you need to assign the real <code class="literal">print</code> function to <code class="literal">RealPrint</code> before assigning the <code class="literal">FakePrint</code> function to <code class="literal">print</code>. One is to give <code class="literal">FakePrint</code> some way to print things; the other is to allow the real <code class="literal">print</code> function to be put back in its rightful place afterwards.<a id="IDX-CHP-3-0184" class="indexterm"></a><a id="IDX-CHP-3-0185" class="indexterm"></a><a id="IDX-CHP-3-0186" class="indexterm"></a><a id="IDX-CHP-3-0187" class="indexterm"></a><a id="IDX-CHP-3-0188" class="indexterm"></a><a id="IDX-CHP-3-0189" class="indexterm"></a><a id="IDX-CHP-3-0190" class="indexterm"></a><a id="IDX-CHP-3-0191" class="indexterm"></a></p><p>If you play around a bit, you'll find that the Lua interpreter actually uses whatever function it finds in the global variable <code class="literal">print</code> to print any values returned from interpreted chunks, like this:</p><pre class="programlisting">&gt; <strong class="userinput"><code>print = FakePrint</code></strong>
+&gt; <strong class="userinput"><code>return "abc"</code></strong>
+Inside FakePrint:    abc</pre></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="comparing_and_printing_functions"></a>Comparing and Printing Functions</h2></div></div></div><p>You can compare functions for equality (or inequality), like this:</p><pre class="programlisting">&gt; <strong class="userinput"><code>print = RealPrint</code></strong>
+&gt; <strong class="userinput"><code>print(print == RealPrint)</code></strong>
+true
+&gt; <strong class="userinput"><code>print(print == type)</code></strong>
+false</pre><p>If you print a function (or convert it to a string with <code class="literal">tostring</code>), it will appear as the word <span class="emphasis"><em>function</em></span>, followed by a colon, a space, and a number (a hexadecimal number on most systems):</p><pre class="programlisting">&gt; <strong class="userinput"><code>print(print)</code></strong>
+function: 0x481720</pre><p>The only thing you need to know about this number is that two different functions that exist at the same time will have different numbers.</p><div class="blockquote"><blockquote class="blockquote"><p>Under the hood, this number represents the function's location in memory.</p></blockquote></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="function_definitions_as_assignments"></a>Function Definitions as Assignments</h2></div></div></div><p>Because functions are values and function names are variable names, it could be deduced that the <code class="literal">function</code> statement is a type of assignment. This is indeed true. Take a look at the <code class="literal">function</code> statement:</p><pre class="programlisting">function <em class="replaceable"><code>name(formal arguments)</code></em>
+  <em class="replaceable"><code>statements</code></em>
+end</pre><p>This does exactly the same thing as the following assignment statement of the form:</p><pre class="programlisting"><em class="replaceable"><code>name</code></em> = function<em class="replaceable"><code>(formal arguments)</code></em>
+  <em class="replaceable"><code>statements</code></em>
+end</pre><p>To the right of the equal sign (and spilling out onto the next two lines) is a <span class="emphasis"><em>function expression</em></span>—an expression whose value is a newly created function.<a id="IDX-CHP-3-0192" class="indexterm"></a></p><p>You can use a function expression wherever you can use any other expression. You can print it, pass it to another function, assign it, compare it, and so on. In the following example, <code class="literal">function() end</code> is a <code class="literal">function</code> expression representing a function that takes no arguments, does nothing, and returns nothing:<a id="IDX-CHP-3-0193" class="indexterm"></a><a id="IDX-CHP-3-0194" class="indexterm"></a><a id="IDX-CHP-3-0195" class="indexterm"></a></p><pre class="programlisting">&gt; <strong class="userinput"><code>print(function() end)</code></strong>
+function: 0x493888
+&gt; <strong class="userinput"><code>print(type(function() end))</code></strong>
+function</pre><p>As this example shows, you do not need to give a function a name. A function without a name is called an <span class="emphasis"><em>anonymous function</em></span>. You can call an anonymous function by wrapping the <code class="literal">function</code> expression that created it in parentheses (and following that with the usual parentheses used in function calls), like this:<a id="IDX-CHP-3-0196" class="indexterm"></a></p><pre class="programlisting">&gt; <strong class="userinput"><code>(function(A, B)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print(A + B)</code></strong>
+&gt;&gt; <strong class="userinput"><code>end)(2, 3)</code></strong>
+5</pre><div class="blockquote"><blockquote class="blockquote"><p>Calling an anonymous function (or anything that doesn't look like the part of a function call before the arguments) is yet another use for parentheses, but as far as Lua is concerned, these are the same parentheses used to control precedence and to adjust to a single value.</p></blockquote></div><p>Every time a <code class="literal">function</code> expression is evaluated, a new function is created. That's why <code class="literal">DoNothing1</code> and <code class="literal">DoNothing2</code> are not equal in the following example, even though the expressions that created them look alike:</p><pre class="programlisting">&gt; <strong class="userinput"><code>DoNothing1, DoNothing2 = function() end, function() end</code></strong>
+&gt; <strong class="userinput"><code>print(DoNothing1, DoNothing2)</code></strong>
+function: 0x493f20   function: 0x493f38
+&gt; <strong class="userinput"><code>print(DoNothing1 == DoNothing2)</code></strong>
+false</pre><p>For the same reason, both times <code class="literal">MakeDoNothing</code> is called in the following example, it returns a different function, even though each of those functions is created by literally the same <code class="literal">function</code> expression:</p><pre class="programlisting">&gt; <strong class="userinput"><code>-- Returns a do-nothing function:</code></strong>
+&gt; <strong class="userinput"><code>function MakeDoNothing()</code></strong>
+&gt;&gt;   <strong class="userinput"><code>return function() end</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt;
+&gt; <strong class="userinput"><code>print(MakeDoNothing() == MakeDoNothing())</code></strong>
+false</pre><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>Two different <code class="literal">function</code> expressions or <code class="literal">function</code> statements will always create two different functions, even if the text of the expressions or statements is the same. A single <code class="literal">function</code> expression or statement will create two different functions if it is executed twice.</p></div><div class="blockquote"><blockquote class="blockquote"><p>As shown by the <code class="literal">MakeDoNothing</code> example, you can return functions just like other values. In Lua, unlike in some other languages, there are no arbitrary limits on what can be done with functions (as compared with other values). For this reason, Lua functions are said to be first-class values.<a id="IDX-CHP-3-0197" class="indexterm"></a></p></blockquote></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="local_functions"></a>Local Functions</h2></div></div></div><p>You can also assign functions to local variables. This can be done either with a <code class="literal">function</code> expression, like this:<a id="IDX-CHP-3-0198" class="indexterm"></a></p><pre class="programlisting">&gt; <strong class="userinput"><code>do</code></strong>
+&gt;&gt;   <strong class="userinput"><code>local LclAverage = function(Num1, Num2)</code></strong>
+&gt;&gt;     <strong class="userinput"><code>return (Num1 + Num2)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>end</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print(LclAverage(10, 20))</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+15
+&gt; <strong class="userinput"><code>-- This will print the global variable LclAverage, which</code></strong>
+&gt; <strong class="userinput"><code>-- will be nil:</code></strong>
+&gt; <strong class="userinput"><code>print(LclAverage)</code></strong>
+nil</pre><p>Or with a local form of the <code class="literal">function</code> statement, like this:</p><pre class="programlisting">&gt; <strong class="userinput"><code>do</code></strong>
+&gt;&gt;   <strong class="userinput"><code>local function LclAverage(Num1, Num2)</code></strong>
+&gt;&gt;     <strong class="userinput"><code>return (Num1 + Num2) / 2</code></strong>
+&gt;&gt;  <strong class="userinput"><code>end</code></strong>
+&gt;&gt;  <strong class="userinput"><code>print(LclAverage(10, 20))</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+15
+&gt; <strong class="userinput"><code>-- This will print the global variable LclAverage, which</code></strong>
+&gt; <strong class="userinput"><code>-- will be nil:</code></strong>
+&gt; <strong class="userinput"><code>print(LclAverage)</code></strong>
+nil</pre><p>Because they can be hidden from the rest of a program, local functions have the same benefits as local variables of other types. More specifically, a function is a good candidate for localization if it only makes sense in one small part of a program—especially if it's a closure that will be recreated several times as a program runs.<a id="IDX-CHP-3-0199" class="indexterm"></a></p><p>Another use of local functions is to speed up time-critical loops. This works because access to local variables is faster than access to global variables. For example, if you use the (global) <code class="literal">type</code> function inside a loop that needed to run as quickly as possible, you could precede the loop with the following:</p><pre class="programlisting">local type = type</pre><p>However, optimizations like this should be done only if they're necessary, as discussed in <a class="link" href="ch04.html" title="Chapter 4. Working with Tables">Chapter 4</a>.<a id="IDX-CHP-3-0200" class="indexterm"></a></p><p>Because the scope of a variable created by a <code class="literal">local</code> statement starts on the next statement, creating a recursive local function like the following will not work because the <code class="literal">F</code> referred to inside the function is a global variable (or possibly a local in a containing scope):</p><pre class="programlisting">local F = function()
+  <em class="replaceable"><code>code that does something or other</code></em>
+   F() -- A failed attempt at a recursive call -- the local F
+    -- is not visible here.
+  <em class="replaceable"><code>more code that does something or other</code></em>
+end</pre><p>Instead, you need to create the <code class="literal">local</code> first, and then assign the function:<a id="IDX-CHP-3-0201" class="indexterm"></a><a id="IDX-CHP-3-0202" class="indexterm"></a><a id="IDX-CHP-3-0203" class="indexterm"></a></p><pre class="programlisting">local F
+F = function()
+  <em class="replaceable"><code>something or other</code></em>
+  F() -- This really is a recursive call.
+  <em class="replaceable"><code>more something or other</code></em>
+end</pre><p>Conveniently, the <code class="literal">local function</code> statement does exactly that for you behind the scenes:</p><pre class="programlisting">local function F()
+  <em class="replaceable"><code>something or other</code></em>
+  F() -- This, too, really is a recursive call, because the
+     -- "local function" statement arranges for the body of
+     -- the function to be within the scope of the function's
+     -- name.
+  <em class="replaceable"><code>more something or other</code></em>
+end</pre><p>In the same way that an assignment such as <code class="literal">A = 5</code> assigns to either a local variable or a global one (depending on whether a local variable named <code class="literal">A</code> is visible), a function statement such as <code class="literal">function F()</code> creates either a local function or a global one, depending on whether a local named <code class="literal">F</code> is visible.</p></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="whitespace_comma_semicolons_comma_and_fu"></a>Whitespace, Semicolons, and Function Calls</h1></div></div></div><p>This is a convenient time to cover some topics that aren't all directly related to functions.</p><p>Characters that have no visual appearance other than moving other characters farther apart (such as the space and newline characters) are called <span class="emphasis"><em>whitespace</em></span>. Outside of strings, Lua is very tolerant of different uses of whitespace. It treats the following pieces of code the same:</p><pre class="programlisting">for I=1,10 do local X=I*7 print(I,X)end--Cramped!
+
+         for
+
+          I
+        = 1
+      , 10 do
+     local  X</pre><pre class="programlisting">= I * 7
+    print   (
+   I  ,  X  )
+ end -- Spacy!!</pre><p>The first example is cramped and hard to read, and the second is just silly, but in between these two extremes, you'll see variation from programmer to programmer. In your own code, you should pick a whitespace style that is not too far from the mainstream, but you should also cultivate an eye for variations, so that if you work with other people on a project that has a consistent whitespace style, you can pick it up easily. For instance, did you notice that the comment markers in this book have spaces separating them from any code before or comments after them? Did you notice that commas in this book have spaces after (but not before) them?<a id="IDX-CHP-3-0204" class="indexterm"></a><a id="IDX-CHP-3-0205" class="indexterm"></a></p><p>Another point of variation among Lua programmers is the use of the semicolon. You can follow any statement by a semicolon if you want. For example:</p><pre class="programlisting">&gt; <strong class="userinput"><code>print("Test");</code></strong>
+Test</pre><p>Semicolons can ease the transition for programmers used to languages where semicolons are required. Most Lua programmers do not use semicolons, or if they do, they use them only to separate multiple statements on the same line, like this:</p><pre class="programlisting">function Avg(A, B) local Sum = A + B; return Sum / 2; end</pre><p>There is a situation where a semicolon is required, and it's related to a situation where a newline is prohibited. For example, Lua reads the following in a single chunk:</p><pre class="programlisting">Fun1()
+(function() return Fun2 end)()</pre><p>But Lua doesn't know whether this is supposed to be one statement (call <code class="literal">Fun1</code> with no arguments, call its return value with the anonymous function as an argument, and call that function's return value with no arguments) or two statements (call <code class="literal">Fun1</code>, and then call the anonymous function). For this reason, Lua doesn't allow a newline before the open parenthesis of a function call, as in the following example:</p><pre class="programlisting">&gt; <strong class="userinput"><code>print</code></strong>
+&gt;&gt;  <strong class="userinput"><code>("Lua")</code></strong>
+stdin:2: ambiguous syntax (function call x new statement) near '('</pre><p>If you follow this rule, and you still get the ambiguous syntax message, you'll need to put a semicolon at the end of the statement before the line where the error occurs, like this:</p><pre class="programlisting">&gt; <strong class="userinput"><code>do</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print("2 plus 3 is:")</code></strong>
+&gt;&gt;   <strong class="userinput"><code>(function(A, B)</code></strong>
+stdin:3: ambiguous syntax (function call x new statement) near '('
+&gt; <strong class="userinput"><code>do</code></strong>
+&gt;&gt;   <strong class="userinput"><code>print("2 plus 3 is:");</code></strong>
+&gt;&gt;   <strong class="userinput"><code>(function(A, B)</code></strong></pre><pre class="programlisting">&gt;&gt;    <strong class="userinput"><code>print(A + B)</code></strong>
+&gt;&gt;  <strong class="userinput"><code>end)(2, 3)</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+2 plus 3 is:
+5</pre><p>A function call variant that you'll run into is this: When a function is called with one argument, and that argument is a literal string, the parentheses can be left out. For example:<a id="IDX-CHP-3-0206" class="indexterm"></a><a id="IDX-CHP-3-0207" class="indexterm"></a><a id="IDX-CHP-3-0208" class="indexterm"></a><a id="IDX-CHP-3-0209" class="indexterm"></a><a id="IDX-CHP-3-0210" class="indexterm"></a><a id="IDX-CHP-3-0211" class="indexterm"></a></p><pre class="programlisting">&gt; <strong class="userinput"><code>print "with a space"</code></strong>
+with a space
+&gt; <strong class="userinput"><code>print"or without"</code></strong>
+or without</pre></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="upvalues_and_closures"></a>Upvalues and Closures</h1></div></div></div><p>You saw earlier that if the same <code class="literal">function</code> statement or expression is executed twice, it creates two different functions. The reason for this is that two functions created by the same source code can act differently from each other if they have <span class="emphasis"><em>upvalues</em></span> and are therefore <span class="emphasis"><em>closures</em></span>. Definitions of these terms will have to wait until after the following example.<a id="IDX-CHP-3-0212" class="indexterm"></a><a id="IDX-CHP-3-0213" class="indexterm"></a><a id="IDX-CHP-3-0214" class="indexterm"></a></p><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="defining_functions_that_create_functions"></a>Defining Functions that Create Functions</h2></div></div></div><p>You've already seen one function that created (and returned) other functions: <code class="literal">MakeDoNothing</code>. That was a bit boring, though, because even though it created a unique function each time it was called, all those functions did the same thing (which was nothing). The following function, <code class="literal">MakeLessThan</code>, creates less-than functions, each of which tests whether its argument is less than a particular number:</p><pre class="programlisting">&gt; <strong class="userinput"><code>-- Returns a function that tests whether a number is</code></strong>
+&gt; <strong class="userinput"><code>-- less than N:</code></strong>
+&gt; <strong class="userinput"><code>function MakeLessThan(N)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>return function(X)</code></strong>
+&gt;&gt;     <strong class="userinput"><code>return X &lt; N</code></strong>
+&gt;&gt;  <strong class="userinput"><code>end</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt;
+&gt; <strong class="userinput"><code>LessThanFive = MakeLessThan(5)</code></strong>
+&gt; <strong class="userinput"><code>LessThanTen = MakeLessThan(10)</code></strong>
+&gt; <strong class="userinput"><code>print(LessThanFive(4))</code></strong>
+true
+&gt; <strong class="userinput"><code>print(LessThanTen(4))</code></strong>
+true
+&gt; <strong class="userinput"><code>print(LessThanFive(5))</code></strong>
+false
+&gt; <strong class="userinput"><code>print(LessThanTen(5))</code></strong>
+true
+&gt; <strong class="userinput"><code>print(LessThanFive(9))</code></strong>
+false
+&gt; <strong class="userinput"><code>print(LessThanTen(9))</code></strong></pre><pre class="programlisting">true
+&gt; <strong class="userinput"><code>print(LessThanFive(10))</code></strong>
+false
+&gt; <strong class="userinput"><code>print(LessThanTen(10))</code></strong>
+false</pre><p>Remember that when you call a function, a new local variable is created for each of its arguments. So when <code class="literal">MakeLessThan</code> is called with <code class="literal">5</code> as an argument, a local variable <code class="literal">N</code> is created and initialized to <code class="literal">5</code>. Normally, this <code class="literal">N</code> would no longer be visible after <code class="literal">MakeLessThan</code> returns, but because there's a function (the anonymous one after <code class="literal">return</code>) in <code class="literal">N</code>'s scope that uses <code class="literal">N, N</code> will last as long as the function does. <code class="literal">MakeLessThan</code> returns the function and assigns it to <code class="literal">LessThanFive</code>.<a id="IDX-CHP-3-0215" class="indexterm"></a><a id="IDX-CHP-3-0216" class="indexterm"></a><a id="IDX-CHP-3-0217" class="indexterm"></a><a id="IDX-CHP-3-0218" class="indexterm"></a><a id="IDX-CHP-3-0219" class="indexterm"></a><a id="IDX-CHP-3-0220" class="indexterm"></a><a id="IDX-CHP-3-0221" class="indexterm"></a><a id="IDX-CHP-3-0222" class="indexterm"></a><a id="IDX-CHP-3-0223" class="indexterm"></a><a id="IDX-CHP-3-0224" class="indexterm"></a></p><p>Next, <code class="literal">MakeLessThan</code> is called with <code class="literal">10</code> as an argument. At this point, a local variable <code class="literal">N</code> is created and initialized to <code class="literal">10</code>. This is a newly created variable—it's different from the other <code class="literal">N</code> created for the previous call. <code class="literal">MakeLessThan</code> returns a function that uses this new <code class="literal">N</code>, and this function is assigned to <code class="literal">LessThanTen</code>. Calling <code class="literal">LessThanFive</code> and <code class="literal">LessThanTen</code> with various values shows that they live up to the names given to them. <code class="literal">LessThanFive</code> tests whether its argument is less than <code class="literal">5</code>, and <code class="literal">LessThanTen</code> does the same with <code class="literal">10</code>.</p><p>When a function uses a variable that is local to a containing scope (such as <code class="literal">N</code> in this example), that variable is called an <span class="emphasis"><em>external local variable</em></span> or an <span class="emphasis"><em>upvalue</em></span>. The term "upvalue" is somewhat misleading, because an upvalue is <span class="emphasis"><em>not a value</em></span>, but a variable used in a certain context. (The term dates back to Lua 3.1, when it was more accurate.) Despite this, it is used in this book because it's in common use among Lua programmers, and it's much shorter than the more accurate "external local variable." A function that has one or more upvalues is called a <span class="emphasis"><em>closure</em></span>. (All functions, even those with no upvalues, are represented in the same way internally. For this reason, "closure" is sometimes used as a synonym for "function.")<a id="IDX-CHP-3-0225" class="indexterm"></a></p><div class="blockquote"><blockquote class="blockquote"><p>Earlier it was said that local variables reside on the stack, but the stack is not a good place for long-term storage; when a function returns, its stack frame is abandoned, and when a function does a tail call, its stack frame is overwritten. Lua handles this by making sure that an upvalue is migrated from the stack to a safe place elsewhere in memory whenever the block it was created in is exited. Knowing that Lua initially stores local variables on the stack and migrates them elsewhere only if needed is good background information, but it is not strictly necessary for an understanding of either local variables or upvalues. An implementation of Lua could be written that always kept local variables somewhere other than the stack. It would act the same as the real implementation of Lua, except that it would be slower. (Actually, it would be different in one other way—it would not impose a limit on the number of local variables visible at one time. In practice, though, this limit in the real implementation is high enough that it is seldom if ever reached.)</p></blockquote></div><p>You can call a function returned by another function directly, without giving it a name first. In the following example, <code class="literal">MakeLessThan</code> is called with <code class="literal">10</code> as an argument. The function it returns is then called with <code class="literal">5</code> as an argument. Because <code class="literal">5</code> is less than <code class="literal">10, true</code> is printed:</p><pre class="programlisting">&gt; <strong class="userinput"><code>print(MakeLessThan(10)(5))</code></strong>
+true</pre><p>Two closures can share an upvalue, and upvalues can be assigned to. Both of these facts are demonstrated by the following example.</p></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="defining_functions_with_private_state"></a>Defining Functions with Private State</h2></div></div></div><p>The following <code class="literal">MakeGetAndInc</code> example makes and returns two functions: one that gets a value, and another that increments that value. These functions have <span class="emphasis"><em>private state</em></span>—"state" because there's changeable data that's remembered in between calls, and "private" because this data is stored in a local variable visible to only these functions.<a id="IDX-CHP-3-0226" class="indexterm"></a><a id="IDX-CHP-3-0227" class="indexterm"></a></p><pre class="programlisting">&gt; <strong class="userinput"><code>-- Returns two functions: a function that gets N's value,</code></strong>
+&gt; <strong class="userinput"><code>-- and a function that increments N by its argument</code></strong>.
+&gt; <strong class="userinput"><code>function MakeGetAndInc(N)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>-- Returns N:</code></strong>
+&gt;&gt;   <strong class="userinput"><code>local function Get()</code></strong>
+&gt;&gt;      <strong class="userinput"><code>return N</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt;&gt;
+&gt;&gt;  <strong class="userinput"><code>-- Increments N by M:</code></strong>
+&gt;&gt;  <strong class="userinput"><code>local function Inc(M)</code></strong>
+&gt;&gt;    <strong class="userinput"><code>N = N + M</code></strong>
+&gt;&gt;   <strong class="userinput"><code>end</code></strong>
+&gt;&gt;
+&gt;&gt;   <strong class="userinput"><code>return Get, Inc</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt;
+&gt; <strong class="userinput"><code>-- Make two pairs of get and increment functions, one</code></strong>
+&gt; <strong class="userinput"><code>-- pair initialized to 0 and the other initialized to 100:</code></strong>
+&gt; <strong class="userinput"><code>GetA, IncA = MakeGetAndInc(0)</code></strong>
+&gt; <strong class="userinput"><code>GetB, IncB = MakeGetAndInc(100)</code></strong>
+&gt; <strong class="userinput"><code>-- Try them out:</code></strong>
+&gt; <strong class="userinput"><code>print(GetA())</code></strong>
+0
+&gt; <strong class="userinput"><code>print(GetB())</code></strong>
+100
+&gt; <strong class="userinput"><code>IncA(5)</code></strong>
+&gt; <strong class="userinput"><code>print(GetA())</code></strong>
+5
+&gt; <strong class="userinput"><code>IncA(5)</code></strong>
+&gt; <strong class="userinput"><code>print(GetA())</code></strong>
+10
+&gt; <strong class="userinput"><code>IncB(1)</code></strong>
+&gt; <strong class="userinput"><code>print(GetB())</code></strong>
+101
+&gt; <strong class="userinput"><code>IncA(1)</code></strong>
+&gt; <strong class="userinput"><code>print(GetA())</code></strong>
+11</pre><p>As you can see, <code class="literal">GetA</code> and <code class="literal">IncA</code> both refer to the same <code class="literal">N</code>, but <code class="literal">GetB</code> and <code class="literal">IncB</code> both refer to another <code class="literal">N. GetA</code> and <code class="literal">IncA</code> refer to the <code class="literal">N</code> created by the first call to <code class="literal">MakeGetAndInc</code>. The initial value of this <code class="literal">N</code> is <code class="literal">0</code>, but it gets a new value every time <code class="literal">IncA</code> is called, and that new value is visible to <code class="literal">GetA. GetB</code> and <code class="literal">IncB</code> act the same way, except their value is stored in the <code class="literal">N</code> created by the second call to <code class="literal">MakeGetAndInc</code>.</p><p>This is also a good example of local functions. The names <code class="literal">Get</code> and <code class="literal">Inc</code> are only visible inside <code class="literal">MakeGetAndInc</code>. Because there's no need to make them globally visible, it would have been a programming no-no to do so, because then <code class="literal">MakeGetAndInc</code> would not be usable in a program that already used one or both of those names for global variables.</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>There are two ways to accidentally use a global when a local was intended. One is to misspell the name of a local variable. The other is to forget the <code class="literal">local</code> keyword. Both of these are common sources of bugs.<a id="IDX-CHP-3-0228" class="indexterm"></a><a id="IDX-CHP-3-0229" class="indexterm"></a><a id="IDX-CHP-3-0230" class="indexterm"></a><a id="IDX-CHP-3-0231" class="indexterm"></a><a id="IDX-CHP-3-0232" class="indexterm"></a><a id="IDX-CHP-3-0233" class="indexterm"></a><a id="IDX-CHP-3-0234" class="indexterm"></a><a id="IDX-CHP-3-0235" class="indexterm"></a><a id="IDX-CHP-3-0236" class="indexterm"></a><a id="IDX-CHP-3-0237" class="indexterm"></a></p></div></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="figuring_out_tricky_scope_situations"></a>Figuring Out Tricky Scope Situations</h2></div></div></div><p>Every iteration of a <code class="literal">for</code> loop creates a new local loop variable. This is demonstrated by the following example:</p><pre class="programlisting">&gt; <strong class="userinput"><code>for I = 1, 2 do</code></strong>
+&gt;&gt;   <strong class="userinput"><code>if I == 1 then</code></strong>
+&gt;&gt;      <strong class="userinput"><code>function One()</code></strong>
+&gt;&gt;        <strong class="userinput"><code>return I</code></strong>
+&gt;&gt;    <strong class="userinput"><code>end</code></strong>
+&gt;&gt;  <strong class="userinput"><code>else</code></strong>
+&gt;&gt;    <strong class="userinput"><code>function Two()</code></strong>
+&gt;&gt;        <strong class="userinput"><code>return I</code></strong>
+&gt;&gt;     <strong class="userinput"><code>end</code></strong>
+&gt;&gt;   <strong class="userinput"><code>end</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt; <strong class="userinput"><code>print(One())</code></strong>
+1
+&gt; <strong class="userinput"><code>print(Two())</code></strong>
+2</pre><p>Both <code class="literal">One</code> and <code class="literal">Two</code> return variables named <code class="literal">I</code>, but they are different variables—if they were the same <code class="literal">I</code>, then <code class="literal">One</code> and <code class="literal">Two</code> would return the same value.</p><div class="blockquote"><blockquote class="blockquote"><p><code class="literal">for</code> loops in Lua 5.0 actually did use the same loop variable for each iteration. If this example is tried in Lua 5.0, both <code class="literal">One</code> and <code class="literal">Two</code> return <code class="literal">2</code> because they refer to the same <code class="literal">I</code>, whose value when the loop ends is <code class="literal">2</code>. Additionally, assigning to the loop variable (which is fine in Lua 5.1) has undefined behavior in Lua 5.0.</p></blockquote></div><p>If you are ever in doubt about the scope of a variable, start from the statement where the variable's name is used and search upwards for the following:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>A <code class="literal">local</code> statement that creates a variable of this name, or a <code class="literal">local function</code> statement that creates a function of this name</p></li><li class="listitem"><p>A function definition (a <code class="literal">function</code> statement, <code class="literal">local function</code> statement, or <code class="literal">function</code> expression) that uses this name as a formal argument</p></li><li class="listitem"><p>A <code class="literal">for</code> loop that uses this name as a loop variable</p></li></ul></div><p>The first one of these that you run into whose scope extends to the statement where you started searching is the place where your (local) variable was created. (Remember that the scope of a variable created with <code class="literal">local</code> extends to the end of the innermost block that encloses it; this also applies to the scope of a function created with a <code class="literal">local function</code> statement.) If your search hits the top of the file without finding anything, the variable is global.</p><p>If your program is properly indented, this is a simple up-and-out search. You never need to look at a line that is indented further (to the right) than any line you have already looked at.</p><p>In the following example, <code class="literal">PrintStr</code> prints <code class="literal">"Inside first do block"</code> even though the call to it is in the scope of a local <code class="literal">Str</code> whose value is <code class="literal">"Inside second do block"</code>:</p><pre class="programlisting">&gt; <strong class="userinput"><code>do</code></strong>
+&gt;&gt;   <strong class="userinput"><code>local Str = "Inside first do block"</code></strong>
+&gt;&gt;
+&gt;&gt;   <strong class="userinput"><code>function PrintStr()</code></strong>
+&gt;&gt;     <strong class="userinput"><code>print(Str)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>end</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt;<strong class="userinput"><code>do</code></strong>
+&gt;&gt;    <strong class="userinput"><code>local Str = "Inside second do block"</code></strong>
+&gt;&gt;    <strong class="userinput"><code>PrintStr()</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+Inside first do block</pre><p>It doesn't matter where the call is. What matters is where <code class="literal">Str</code> is actually named, and that's inside the <span class="emphasis"><em>definition</em></span> of <code class="literal">PrintStr</code> (which is inside the first <code class="literal">do</code> block). A function cannot see local variables from the scope that called it (unless that happens to be the same scope in which it's defined). This means that you can tell everything you need to know about a variable's scope by looking at the program's source code, without having to figure out which functions call which. In the same way, Lua itself can tell everything it needs to know about a variable's scope when it compiles source code into bytecode, rather than having to wait till <span class="emphasis"><em>runtime</em></span> (when the program is running).</p><div class="blockquote"><blockquote class="blockquote"><p>Because variable scope is determined by the structure of a program's source code, Lua is said to have lexical scope (The term "lexical" here means "based on source code.")</p><p>Actually, although whether a variable is global or local is determined lexically, Lua global variables are not lexically scoped. In most cases they can be treated as if they are; the exception happens when the function <code class="literal">setfenv</code> is used. You'll learn about <code class="literal">setfenv</code> in the next chapter.</p></blockquote></div><p>Lua's scoping rules allow arbitrarily complex combinations of global variables, local variables, closures with upvalues from multiple scopes, closures that share some upvalues but not others, upvalues that themselves contain closures, and so on. But the rules themselves are relatively simple, considering their power. Here they are:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>Each time a <code class="literal">local</code> or <code class="literal">local function</code> statement is executed, a new local variable (or possibly several, in the case of <code class="literal">local</code>) is created. Its scope extends downward to the end of the innermost enclosing block.</p></li><li class="listitem"><p>Each time a <code class="literal">for</code> loop iterates, a new local variable (or possibly several, in the case of the <span class="emphasis"><em>generic</em></span> <code class="literal">for</code> loop you'll learn about next chapter) is created. Its scope extends to the end of the loop.</p></li><li class="listitem"><p>Each time a function is called, a new local variable is created for each formal argument. The scope of these variables extends to the end of the function.</p></li><li class="listitem"><p>If a variable was not created in any of the three aforementioned ways, it's global.</p></li><li class="listitem"><p>Each time a <code class="literal">function</code> or <code class="literal">local function</code> statement is executed, or a <code class="literal">function</code> expression is evaluated, a new function is created.</p></li><li class="listitem"><p>There is no limitation on reading from or assigning to a visible local variable from within a function. (In other words, closures are possible.)</p></li></ul></div><p>So if you find yourself not understanding why a program is doing what it's doing, and you think it may be a scoping issue, ask yourself these questions:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>Is this a global or local variable?</p></li><li class="listitem"><p>Where and when was this local variable created?</p></li><li class="listitem"><p>Where and when was this function created?</p></li></ul></div></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="summary-007"></a>Summary</h1></div></div></div><p>In this chapter, you learned almost everything you need to know about functions. Namely:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>Functions allow complexity to be compartmentalized, and let you use the same code in different places in a program.</p></li><li class="listitem"><p>A chunk is treated by Lua as a function.</p></li><li class="listitem"><p>To run a Lua script, give <code class="literal">lua</code> a filename when you start it.</p></li><li class="listitem"><p>Functions can take zero or more arguments and return zero or more values.</p></li><li class="listitem"><p>When a function is called, a local variable is created for each of its formal arguments. These local variables are only visible inside the function.</p></li><li class="listitem"><p>The <code class="literal">local</code> keyword and the <code class="literal">for</code> loop also create local variables.</p></li><li class="listitem"><p>A function can call itself, which is called recursion. During recursion, or in any case where two calls are made to the same function, each call has its own local variables.</p></li><li class="listitem"><p>A stack is used to keep track of function calls. You can us tail calls to avoid exhausting the large but finite space available for this stack.</p></li><li class="listitem"><p>A function is a type of value (as are numbers, strings, Booleans, and <code class="literal">nil</code>). You can create functions at runtime, pass them as arguments, return them, assign them, compare them, used them without naming them, and so on.</p></li><li class="listitem"><p>A function has full access to all local variables that are visible where the function is defined. A function that takes advantage of this is called a closure, and the variables from outer scopes that it accesses are called upvalues. You can use upvalues to create (from the same definition, at runtime) functions with different behavior, as well as to create functions that retain state between calls.</p></li></ul></div><p>There are a couple remaining facts about functions that weren't covered in this chapter. For example, how do you create a function that (like <code class="literal">print</code>) can take an indefinite number of arguments? You'll learn this and more in the next chapter, which is about <span class="emphasis"><em>tables</em></span>, Lua's tool for combining multiple pieces of data into one. When you complete the next chapter, you'll understand all of the basic elements of Lua, and you'll be ready to start applying that knowledge in the chapter after that. This chapter ends with some exercises to test your understanding of functions. The answers are in the appendix.</p></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="exercises-008"></a>Exercises</h1></div></div></div><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Write a <code class="literal">TypedToString</code> function that converts a value to a string and prefixes that string with the value's type. (You don't have to deal specially with the fact that a function converted to a string already has its type prefixed to it.)</p><pre class="programlisting">&gt; <strong class="userinput"><code>print(TypedToString("abc"))</code></strong>
+string: abc
+&gt; <strong class="userinput"><code>print(TypedToString(42))</code></strong>
+number: 42
+&gt; <strong class="userinput"><code>print(TypedToString(true))</code></strong>
+boolean: true
+&gt; <strong class="userinput"><code>print(TypedToString(function() end))</code></strong>
+function: function: 0x485a10</pre></li><li class="listitem"><p>Write a function <code class="literal">SumProd</code> that returns both the sum and the product of two numbers:</p><pre class="programlisting">&gt; <strong class="userinput"><code>print(SumProd(1, 1))</code></strong>
+2      1
+&gt; <strong class="userinput"><code>print(SumProd(2, 2))</code></strong>
+4      4
+&gt; <strong class="userinput"><code>print(SumProd(3, 5))</code></strong>
+8      15</pre></li><li class="listitem"><p>Using <code class="literal">SumProd</code> from the previous exercise, what will the following print?</p><pre class="programlisting">print(SumProd(3, 3), SumProd(5, 5))</pre></li><li class="listitem"><p>What does the following print?</p><pre class="programlisting">Continent = "North America"
+
+function F(Continent)
+  Continent = "Australia"
+end
+
+F(Continent)
+print(Continent)</pre></li><li class="listitem"><p>The following <code class="literal">MakeDotter</code> function is intended to return a function that appends <code class="literal">N</code> dots to its argument (and returns the result). It almost works, but every time it's used to make a new dotter function, the old ones stop working right. Why does this happen, and what one-line change can be made to make it work right?</p><pre class="programlisting">&gt; <strong class="userinput"><code>function MakeDotter(N)</code></strong>
+&gt;&gt;   <strong class="userinput"><code>Dots = ""</code></strong>
+&gt;&gt;   <strong class="userinput"><code>for I = 1, N do</code></strong>
+&gt;&gt;     <strong class="userinput"><code>Dots = Dots .. "."</code></strong>
+&gt;&gt;   <strong class="userinput"><code>end</code></strong>
+&gt;&gt;   <strong class="userinput"><code>return function(Str)</code></strong>
+&gt;&gt;     <strong class="userinput"><code>return Str .. Dots</code></strong>
+&gt;&gt;   <strong class="userinput"><code>end</code></strong>
+&gt;&gt; <strong class="userinput"><code>end</code></strong>
+&gt;
+&gt; <strong class="userinput"><code>-- Make a function that appends one dot to its argument:</code></strong></pre><pre class="programlisting">&gt; <strong class="userinput"><code>OneDotter = MakeDotter(1)</code></strong>
+&gt; <strong class="userinput"><code>print(OneDotter("A"))</code></strong>
+A.
+&gt; <strong class="userinput"><code>print(OneDotter("B"))</code></strong>
+B.
+&gt; <strong class="userinput"><code>-- Make a function that appends three dots to its argument:</code></strong>
+&gt; <strong class="userinput"><code>ThreeDotter = MakeDotter(3)</code></strong>
+&gt; <strong class="userinput"><code>print(ThreeDotter("C"))</code></strong>
+C...
+&gt; <strong class="userinput"><code>print(ThreeDotter("D"))</code></strong>
+D...
+&gt; <strong class="userinput"><code>-- OneDotter now appends three dots instead of one:</code></strong>
+&gt; <strong class="userinput"><code>print(OneDotter("E"))</code></strong>
+E...</pre></li></ol></div></div></div></div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="ch02.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">2. First Steps</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="ch04.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">4. Working with Tables</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag">
+        
+        
+
+        
+          <p>You have 6 days left in your trial, Michaelschiner. Subscribe today. <a href="https://learning.oreilly.com/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+        
+
+<footer class="pagefoot t-pagefoot">
+  <a href="ch03.html#" class="icon-up" onclick="window.Appcues.track('JumpTop_HeronBook')"><div class="visuallyhidden">Back to top</div></a>
+  <ul class='js-footer-nav'>
+  
+    
+    <li><a href="https://learning.oreilly.com/public/support/">Support</a></li>
+    
+    <li><a href="https://learning.oreilly.com/accounts/logout/">Sign Out</a></li>
+    
+  
+  
+  </ul>
+  <span class="copyright">&#169; 2021 <a href="https://learning.oreilly.com/" target="_blank">O'Reilly Media, Inc</a>.</span>
+  
+    
+    <a href="https://www.oreilly.com/terms/">Terms of Service</a> 
+     / 
+    
+    <a href="https://learning.oreilly.com/privacy">Privacy Policy</a> 
+    
+    
+  
+</footer>
+
+      
+    
+    <script src="https://learning.oreilly.com/jsi18n/web/" charset="utf-8"></script>
+    <script src="https://learning.oreilly.com/library/jsi18n/appcache/" charset="utf-8"></script>
+  </body>
+</html>

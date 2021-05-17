@@ -1,0 +1,1239 @@
+<!--[if IE]><![endif]--><!DOCTYPE html><!--[if IE 8]><html class="no-js ie8 oldie" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/coding-roblox-games/9781800561991/B16623_06_Final_JC_ePub.xhtml"
+data-csrf-cookie="csrfsafari"
+
+
+  data-user-id="11366403"
+  data-user-uuid="ce47de5b-ce80-49f0-b5cd-c60d3d33b198"
+  data-username="michaelschiner"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/13/2021"
+
+
+  data-archive="9781800561991"
+  data-publishers="Packt Publishing"
+
+
+
+  data-htmlfile-name="B16623_06_Final_JC_ePub.xhtml"
+  data-epub-title="Coding Roblox Games Made Easy" data-debug=0 data-testing=0><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/coding-roblox-games/9781800561991/B16623_06_Final_JC_ePub.xhtml"
+data-csrf-cookie="csrfsafari"
+
+
+  data-user-id="11366403"
+  data-user-uuid="ce47de5b-ce80-49f0-b5cd-c60d3d33b198"
+  data-username="michaelschiner"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/13/2021"
+
+
+  data-archive="9781800561991"
+  data-publishers="Packt Publishing"
+
+
+
+  data-htmlfile-name="B16623_06_Final_JC_ePub.xhtml"
+  data-epub-title="Coding Roblox Games Made Easy" data-debug=0 data-testing=0><!--<![endif]--><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="author" content="O'Reilly Media" /><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"/><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9781800561991"/><link rel="shortcut icon" href="https://www.oreilly.com/favicon.ico" /><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"/><meta property="twitter:account_id" content="4503599627559754" /><link rel="shortcut icon" href="https://learning.oreilly.com/favicon.ico" type="image/x-icon"><link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'><title>Chapter 6: Creating a Battle Royale Game - Coding Roblox Games Made Easy</title><link rel="stylesheet" href="https://learning.oreilly.com/static/CACHE/css/output.5bdb4fcb2aad.css" type="text/css"><link rel="stylesheet" type="text/css" href="https://learning.oreilly.com/static/css/annotator.e3b0c44298fc.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><style type="text/css" title="ibis-book">
+    #sbo-rt-content div,#sbo-rt-content p,#sbo-rt-content h1,#sbo-rt-content h2,#sbo-rt-content h3,#sbo-rt-content h4{margin:0;orphans:2;widows:2}#sbo-rt-content p{margin-top:1rem}#sbo-rt-content article,#sbo-rt-content aside,#sbo-rt-content details,#sbo-rt-content figcaption,#sbo-rt-content figure,#sbo-rt-content footer,#sbo-rt-content header,#sbo-rt-content hgroup,#sbo-rt-content main,#sbo-rt-content menu,#sbo-rt-content nav,#sbo-rt-content section,#sbo-rt-content summary{display:block}#sbo-rt-content [hidden],#sbo-rt-content template,#sbo-rt-content .hidden{display:none}#sbo-rt-content a{background-color:transparent}#sbo-rt-content a:active,#sbo-rt-content a:hover{outline:0}#sbo-rt-content abbr[title]{border-bottom:1px dotted}#sbo-rt-content b,#sbo-rt-content strong,#sbo-rt-content .source-inline{font-weight:bold}#sbo-rt-content dfn,#sbo-rt-content .chapter-number,#sbo-rt-content .callout,#sbo-rt-content .callout-heading,#sbo-rt-content .author-quote{font-style:italic}#sbo-rt-content mark{background:#ff0;color:#000}#sbo-rt-content small{font-size:80%}#sbo-rt-content sub,#sbo-rt-content sup,#sbo-rt-content .subscript,#sbo-rt-content .superscript{font-size:75%;line-height:0;position:relative;vertical-align:baseline}#sbo-rt-content sup,#sbo-rt-content .superscript{top:-.5em}#sbo-rt-content sub,#sbo-rt-content .subscript{bottom:-.25em}#sbo-rt-content img{border:0}#sbo-rt-content svg:not(:root){overflow:hidden}#sbo-rt-content div.IMG---Figure{margin-top:1rem;margin-left:auto;margin-right:auto;text-align:center;width:100%;max-width:100%;page-break-inside:avoid !important;page-break-before:auto}#sbo-rt-content div.figure-logo{text-align:left;width:40%;max-width:40%}#sbo-rt-content hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}#sbo-rt-content html{font-size:62.5%}#sbo-rt-content div{font-size:1.5em;line-height:1.6;font-weight:400;color:#222}#sbo-rt-content h1,#sbo-rt-content h2,#sbo-rt-content h3,#sbo-rt-content h4,#sbo-rt-content .figure-caption{margin-top:1.2rem;margin-bottom:1rem;font-weight:normal}#sbo-rt-content .figure-caption{text-align:center}#sbo-rt-content .author-quote{text-align:left;margin-left:2rem}#sbo-rt-content .author-quote-source{text-align:right;font-style:italic;margin-left:2rem}#sbo-rt-content h1{font-family:serif;font-size:3.2rem;line-height:1.2;letter-spacing:.2rem;margin-top:2rem;margin-bottom:1.5rem}#sbo-rt-content .H1---Section-Part{font-family:serif;font-size:3rem;line-height:1.2;letter-spacing:.2rem;margin-top:2rem;margin-bottom:1.5rem;text-transform:uppercase}#sbo-rt-content h2{font-family:serif;font-size:2.4rem;line-height:1.25;letter-spacing:.15rem;margin-top:2rem;margin-bottom:1rem}#sbo-rt-content h3{font-family:serif;font-size:2rem;line-height:1.3;letter-spacing:.1rem;margin-top:2rem;margin-bottom:.5rem}#sbo-rt-content h4{font-family:serif;font-size:1.6rem;font-weight:bold;line-height:1.35;letter-spacing:.08rem;margin-top:2rem;margin-bottom:.5rem}#sbo-rt-content p{margin-top:1rem}#sbo-rt-content a{color:#1EAEDB}#sbo-rt-content a:hover{color:#f37121}#sbo-rt-content ul{font-family:serif;list-style:circle outside}#sbo-rt-content ol{font-family:serif;list-style:decimal outside}#sbo-rt-content ol,#sbo-rt-content ul{padding-left:1rem;margin-top:0}#sbo-rt-content ul ul,#sbo-rt-content ul ol,#sbo-rt-content ol ol,#sbo-rt-content ol ul{margin:0 0 1.5rem 2rem}#sbo-rt-content li{font-family:serif;margin-bottom:.5rem;margin-top:.5rem}#sbo-rt-content .callout-heading{font-family:sans-serif;font-size:2rem;line-height:1.5;letter-spacing:.05rem;text-transform:uppercase}#sbo-rt-content .callout{font-family:serif}#sbo-rt-content code,#sbo-rt-content kbd,#sbo-rt-content pre,#sbo-rt-content samp,#sbo-rt-content .source-code,#sbo-rt-content .source-inline,#sbo-rt-content .screen-inline{font-family:"CourierStd.otf",monospace;font-size:1.4rem}#sbo-rt-content pre{-epub-hyphens:none;-epub-ruby-position:over;font-size:1.4rem;margin-top:.3rem;margin-bottom:0;margin-left:5rem;margin-right:0;text-align:left;text-decoration:none;text-indent:-4.6rem}#sbo-rt-content p.source-code{font-family:"CourierStd.otf",monospace;-epub-hyphens:none;-epub-ruby-position:over;font-size:1.4rem;font-style:normal;font-variant:normal;font-weight:normal;line-height:1.1rem;margin-top:.3rem;margin-bottom:0;margin-left:5rem;margin-right:0;text-align:left;text-decoration:none;text-indent:-4.6rem}#sbo-rt-content .source-code-heading{font-family:"MinionPro",serif;margin-bottom:1.5rem;border-bottom:2px solid #424242;font-weight:bold}#sbo-rt-content .source-code-link{font-family:"CourierStd.otf",monospace;margin-top:1.5rem;border-top:2px solid #424242;font-style:italic}
+    </style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9781800561991/chapter/B16623_06_Final_JC_ePub.xhtml",
+          "book_id": "9781800561991",
+          "chapter_uri": "B16623_06_Final_JC_ePub.xhtml",
+          "position": 0,
+          "user_uuid": "ce47de5b-ce80-49f0-b5cd-c60d3d33b198",
+          "next_chapter_uri": "/library/view/coding-roblox-games/9781800561991/B16623_Section_3_Final_JC_ePub.xhtml"
+        
+      },
+      title: "Coding Roblox Games Made Easy",
+      author_list: "Zander Brumbaugh",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false
+    };
+    // ]]></script><script src="https://learning.oreilly.com/static/js/src/modernizr.8e35451ddb64.js"></script><script>
+    
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+      window.PRIVACY_CONTROL_SWITCH = true;
+
+      window.PUBLISHER_PAGES = true;
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "https://learning.oreilly.com/api/v2/search/select/",
+        }
+      };
+  </script><link rel="canonical" href="B16623_06_Final_JC_ePub.xhtml.html"/><meta name="description" content=" Chapter 6: Creating a Battle Royale Game In the previous chapter, you created what may be your first whole game. Obby games are a popular concept, in part because ... "><meta property="og:title" content="Chapter 6: Creating a Battle Royale Game" /><meta itemprop="isPartOf" content="/library/view/coding-roblox-games/9781800561991/" /><meta itemprop="name" content="Chapter 6: Creating a Battle Royale Game" /><meta property="og:url" itemprop="url" content="https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/B16623_06_Final_JC_ePub.xhtml" /><meta property="og:site_name" content="Safari" /><meta property="og:image" itemprop="thumbnailUrl" content="https://learning.oreilly.com/library/cover/9781800561991/" /><meta property="og:description" itemprop="description" content=" Chapter 6: Creating a Battle Royale Game In the previous chapter, you created what may be your first whole game. Obby games are a popular concept, in part because ... "><meta itemprop="inLanguage" content="en" /><meta itemprop="publisher" content="Packt Publishing" /><meta property="og:type" content="book" /><meta property="og:book:isbn" itemprop="isbn" content="9781800561991" /><meta property="og:book:author" itemprop="author" content="Zander Brumbaugh" /><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@OReillyMedia"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: <%= font_size %> !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: <%= font_family %> !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: <%= column_width %>% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; URL=https://learning.oreilly.com/library/no-js/" /></noscript><script>
+    var dataLayer = window.dataLayer || [];
+
+    
+      window.medalliaVsgUserIdentifier = 'ce47de5b-ce80-49f0-b5cd-c60d3d33b198';
+      dataLayer.push({userIdentifier: 'ce47de5b-ce80-49f0-b5cd-c60d3d33b198'});
+      dataLayer.push({loggedIn: 'yes'});
+
+      
+        window.medalliaVsgAccountIdentifier = '29964b7b-68d8-4532-9a9b-32e089689c1f';
+        
+
+        window.medalliaVsgIsIndividual = true;
+        
+          
+          dataLayer.push({learningAccountType: 'free trial'});
+          
+        
+
+        
+      
+    
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+    (function () {
+      var VERSION = 'V1.1';
+      var AUTHOR = 'Awwad';
+      if (!window.GtmHelper)
+        window.GtmHelper = function () {
+          var instance = this;
+          var loc = document.location;
+          this.version = VERSION;
+          this.author = AUTHOR;
+          this.readCookie = function (name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+          };
+          this.createCookie = function (name, value, days, cookieDomain) {
+            var domain = "";
+            var expires = "";
+
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + Math.ceil(days * 24 * 60 * 60 * 1000));
+              var expires = " expires=" + date.toGMTString() + ";";
+            }
+
+            if (typeof (cookieDomain) != 'undefined')
+              domain = " domain=" + cookieDomain + "; ";
+
+            document.cookie = name + "=" + value + ";" + expires + domain + "path=/";
+          };
+
+          this.isDuplicated = function (currentTransactionId) {
+            // the previous transaction id:
+            var previousTransIdValue = this.readCookie("previousTransId");
+
+            if (currentTransactionId === previousTransIdValue) {
+              return true; // Duplication
+            } else {
+              return false;
+            }
+          };
+        }
+    })()
+  </script><script defer src="https://learning.oreilly.com/static/js/build/vendor.0eac897f11ed.js"></script><script defer src="https://learning.oreilly.com/static/js/build/reader.c745ea9296ac.js"></script></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts">
+
+    
+  <noscript> 
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+  
+
+
+<a href="B16623_06_Final_JC_ePub.xhtml.html#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li><a href="https://learning.oreilly.com/home/" class="l0 nav-icn"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.738 14H9.254v-3.676a.617.617 0 0 0-.621-.613H7.39a.617.617 0 0 0-.62.613V14H4.284a.617.617 0 0 1-.622-.613V10.22c0-.327.132-.64.367-.87l3.547-3.493a.627.627 0 0 1 .875 0l3.54 3.499c.234.229.366.54.367.864v3.167a.617.617 0 0 1-.62.613zM7.57 2.181a.625.625 0 0 1 .882 0l5.77 5.692-.93.92-5.28-5.209-5.28 5.208-.932-.919 5.77-5.692z" /></svg><span>Home</span></a></li><li class="search"><a href="B16623_06_Final_JC_ePub.xhtml.html#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"/></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="B16623_06_Final_JC_ePub.xhtml.html#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"/></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li class="flyout-parent"><a
+                href="B16623_06_Final_JC_ePub.xhtml.html#"
+                class="l1 nav-icn "
+                
+              ><?xml version="1.0" encoding="UTF-8"?><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M8,8 C6.34321755,8 5.00013,6.65691245 5.00013,5.00013 C5.00013,3.34334755 6.34321755,2.00026001 8,2.00026001 C9.65678245,2.00026001 10.99987,3.34334755 10.99987,5.00013 C10.99987,6.65691245 9.65678245,8 8,8 Z M2.33024571,11.3523547 L2.33774538,11.3523547 C3.7622187,9.70968996 5.82947484,8.76608166 8.00374984,8.76608166 C10.1780248,8.76608166 12.245281,9.70968996 13.6697543,11.3523547 C13.8892083,11.6177474 14.0062813,11.9530021 13.99974,12.2973138 L13.99974,13.99974 L2.00026001,13.99974 L2.00026001,12.2973138 C1.99371867,11.9530021 2.11079172,11.6177474 2.33024571,11.3523547 Z" id="path-1"></path></svg><span>Your O&#39;Reilly</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/profile/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Profile</span></a></li><li><a
+                    href="https://learning.oreilly.com/history/"
+                    class="l2 nav-icn"
+                    
+                  ><span>History</span></a></li><li><a
+                    href="https://learning.oreilly.com/playlists/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Playlists</span></a></li><li><a
+                    href="https://learning.oreilly.com/u/ce47de5b-ce80-49f0-b5cd-c60d3d33b198/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Highlights</span></a></li></ul></li><li ><a
+                href="https://learning.oreilly.com/answers/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M2.31032699,3.75609006 C4.65421571,1.41371359 8.45302454,1.41472092 10.7955702,3.75860838 C13.1381158,6.10249583 13.1369405,9.90130261 10.7930518,12.243847 C8.44916311,14.5863913 4.65018639,14.5852161 2.30780867,12.2413286 C-0.0346204845,9.89749489 -0.0334929936,6.09853298 2.31032699,3.75609006 Z M8.8198605,4.98016308 C7.34193969,3.86924672 5.23410194,3.98609692 3.88914868,5.33104946 C3.12814393,6.09032122 2.72818176,7.13880077 2.79015179,8.21201133 C2.79115912,8.23064692 2.79233434,8.24928252 2.79350956,8.26791811 L2.79350956,8.26791811 C2.83179539,8.8307976 2.9944077,9.37404287 3.26947292,9.86201677 L3.26947292,9.86201677 L2.77621706,11.7027432 C2.7699968,11.7259241 2.77662063,11.7506624 2.79359185,11.7676337 C2.8105631,11.7846049 2.83530144,11.7912287 2.85848233,11.7850085 L2.85848233,11.7850085 L4.69400524,11.2922565 C5.26306363,11.6167344 5.90703177,11.786885 6.56209849,11.7858479 C8.64827865,11.7858479 10.3395879,10.094542 10.3395879,8.00836292 C10.3405204,6.84135608 9.80105674,5.73967784 8.87862141,5.02482134 L8.87862141,5.02482134 L8.82825492,4.98654283 Z M13.7933062,2 C14.7073496,2.00009863 15.4482759,2.74110484 15.4482759,3.65514822 C15.4482759,4.32460943 15.0449926,4.92814782 14.4264842,5.18432286 C13.8079757,5.44049789 13.096053,5.29885769 12.6226979,4.82545158 C12.1493429,4.35204547 12.0077795,3.64010743 12.2640213,3.02162665 C12.5202631,2.40314587 13.123845,1.99992776 13.7933062,2 Z"/></svg><span>Answers</span></a></li><li class="flyout-parent"><a
+                href="B16623_06_Final_JC_ePub.xhtml.html#"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>queue icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 29.2C25.4 29.2 25.8 29.1 26.1 28.9L48.7 16.8C49.5 16.4 50 15.5 50 14.6 50 13.7 49.5 12.8 48.7 12.4L26.1 0.3C25.4-0.1 24.6-0.1 23.9 0.3L1.3 12.4C0.5 12.8 0 13.7 0 14.6 0 15.5 0.5 16.4 1.3 16.8L23.9 28.9C24.2 29.1 24.6 29.2 25 29.2ZM7.3 14.6L25 5.2 42.7 14.6 25 24 7.3 14.6ZM48.7 22.4L47.7 21.9 25 34.2 2.3 21.9 1.3 22.4C0.5 22.9 0 23.7 0 24.7 0 25.6 0.5 26.5 1.3 26.9L23.9 39.3C24.2 39.5 24.6 39.6 25 39.6 25.4 39.6 25.8 39.5 26.1 39.3L48.7 26.9C49.5 26.5 50 25.6 50 24.7 50 23.7 49.5 22.9 48.7 22.4ZM48.7 32.8L47.7 32.3 25 44.6 2.3 32.3 1.3 32.8C0.5 33.3 0 34.1 0 35.1 0 36 0.5 36.9 1.3 37.3L23.9 49.7C24.2 49.9 24.6 50 25 50 25.4 50 25.8 49.9 26.1 49.7L48.7 37.3C49.5 36.9 50 36 50 35.1 50 34.1 49.5 33.3 48.7 32.8Z"/></g></svg><span>Explore</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/topics/"
+                    class="l2 nav-icn"
+                    
+                  ><span>All Topics</span></a></li><li><a
+                    href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;formats=case%20study&amp;formats=learning%20path&amp;formats=live%20online%20training&amp;formats=notebook&amp;formats=oriole&amp;formats=video&amp;sort=popularity&amp;facet_json=true&amp;page=0&amp;collection_type=expert"
+                    class="l2 nav-icn"
+                    
+                  ><span>Most Popular Titles</span></a></li><li><a
+                    href="https://learning.oreilly.com/recommendations/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Recommended</span></a></li><li><a
+                    href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;sort=publication_date&amp;facet_json=true&amp;page=0"
+                    class="l2 nav-icn"
+                    
+                  ><span>Early Releases</span></a></li><li><a
+                    href="https://learning.oreilly.com/playlists/discover/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Shared Playlists</span></a></li><li><a
+                    href="https://learning.oreilly.com/resource-centers/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Resource Centers</span></a></li></ul></li><li class="flyout-parent"><a
+                href="B16623_06_Final_JC_ePub.xhtml.html#"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12.8 3.2A1.2 1.2 0 0 1 14 4.4v8.4a1.2 1.2 0 0 1-1.2 1.2H3.2A1.2 1.2 0 0 1 2 12.8V4.4a1.2 1.2 0 0 1 1.2-1.2h1.2V2h1.2v1.2h4.8V2h1.2v1.2h1.2zm-9.6 9.6h9.6V6.2H3.2v6.6zM8 9.5a1.35 1.35 0 1 1 0-2.7 1.35 1.35 0 0 1 0 2.7zm2.7 2.148v.552H5.3v-.552c0-.321.124-.634.355-.858a3.358 3.358 0 0 1 4.69 0c.23.224.355.537.355.858z" /></svg><span>Live Events</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/attend/"
+                    class="l2 nav-icn"
+                    
+                  ><span>All Events</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/architectural-katas/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Architectural Katas</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/ai/"
+                    class="l2 nav-icn"
+                    
+                  ><span>AI &amp; ML</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/strata/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Data Sci &amp; Eng</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/oscon/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Programming</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/infrastructure-ops/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Infra &amp; Ops</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/software-architecture/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Software Arch</span></a></li></ul></li><li class="flyout-parent"><a
+                href="B16623_06_Final_JC_ePub.xhtml.html#"
+                class="l1 nav-icn "
+                
+              ><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.6467109,4.35328907 L14.7964612,7.51003884 C15.0678463,7.78304342 15.0678463,8.22395603 14.7964612,8.49696061 L11.6467109,11.6467109 L10.6597892,10.6597892 L13.3055794,8 L10.6597892,5.34021084 L11.6467109,4.35328907 Z M4.35328907,11.6467109 L1.20353875,8.48996116 C0.932153749,8.21695658 0.932153749,7.77604397 1.20353875,7.50303939 L4.35328907,4.35328907 L5.34021084,5.34021084 L2.69442057,8 L5.34021084,10.6597892 L4.35328907,11.6467109 Z M5.84417089,11.4997226 L8.67194674,4.50027742 L10.1838269,4.50027742 L7.35605105,11.4997226 L5.84417089,11.4997226 Z" id="Mask"></path></svg><span>Interactive</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/scenarios/?classification=content-scenario"
+                    class="l2 nav-icn"
+                    
+                  ><span>Scenarios</span></a></li><li><a
+                    href="https://learning.oreilly.com/scenarios/?classification=sandbox-scenario"
+                    class="l2 nav-icn"
+                    
+                  ><span>Sandboxes</span></a></li><li><a
+                    href="https://learning.oreilly.com/interactive/?classification=jupyter-notebook"
+                    class="l2 nav-icn"
+                    
+                  ><span>Jupyter Notebooks</span></a></li></ul></li><li ><a
+                href="https://learning.oreilly.com/certifications/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M12.912 9.18L14 8.014l-1.088-1.18a.304.304 0 01-.075-.268L13.195 5l-1.535-.463a.313.313 0 01-.194-.194l-.462-1.537-1.565.358c-.09.03-.194 0-.269-.074L8.007 2 6.845 3.09a.303.303 0 01-.269.074l-1.565-.358-.462 1.537a.313.313 0 01-.194.194L2.82 5l.358 1.567a.26.26 0 01-.075.269L2 8.015l1.088 1.164c.075.075.09.18.075.269l-.358 1.567 1.535.463c.09.03.164.104.194.194l.462 1.537 1.565-.358c.015 0 .045-.015.075-.015.075 0 .15.03.209.074L8.007 14l1.163-1.09a.303.303 0 01.269-.074l1.565.358.462-1.537a.313.313 0 01.194-.194L13.195 11l-.358-1.567a.338.338 0 01.075-.254zm-6.046 1.37L4.41 8.26l1.16-1.244 1.767 1.649L10.4 5.6l1.202 1.202-4.242 4.243-.495-.495z"/></svg><span>Certifications</span></a></li><li ><a
+                href="https://learning.oreilly.com/preferences/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a></li><li ><a
+                href="https://learning.oreilly.com/public/support/"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M7.363 6.656a2.692 2.692 0 0 1-2.681-2.703c0-1.493 1.2-2.703 2.681-2.703a2.692 2.692 0 0 1 2.682 2.703c0 1.493-1.2 2.703-2.682 2.703zm4.023 2.027c-1.852 0-3.352 1.513-3.352 3.379H2v-1.534c-.006-.31.099-.612.295-.852a6.666 6.666 0 0 1 9.09-.993zm-.543.676h1.12v.304c.003.284.16.543.408.676a.766.766 0 0 0 .77 0l.303-.176.556.966-.302.176a.772.772 0 0 0-.362.676v.08a.772.772 0 0 0 .362.677l.302.21-.556.965-.302-.175a.766.766 0 0 0-.771 0 .778.778 0 0 0-.409.675v.352h-1.106v-.372a.778.778 0 0 0-.409-.676.766.766 0 0 0-.77 0l-.303.176-.556-.912.302-.176a.772.772 0 0 0 .362-.676v-.04-.04a.772.772 0 0 0-.362-.676l-.302-.176.556-.966.289.155a.766.766 0 0 0 .77 0 .778.778 0 0 0 .41-.676V9.36zm1.562 2.703c0-.271-.108-.531-.3-.722a1.001 1.001 0 0 0-.72-.292 1.01 1.01 0 0 0-.992 1.023 1.01 1.01 0 0 0 1.01 1.004 1.01 1.01 0 0 0 1.002-1.013z" /></svg><span>Support</span></a></li><li ><a
+                href="https://get.oreilly.com/email-signup.html"
+                class="l1 nav-icn "
+                target=&quot;_blank&quot;
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.564 2.263l2.172 2.174c.17.168.264.397.264.636V11a.6.6 0 0 1-.6.6h-.6V6.2h-6V2.6a.6.6 0 0 1 .6-.6h3.527c.239 0 .468.095.637.263zM2.6 14a.6.6 0 0 1-.6-.6V6.8a.6.6 0 0 1 .6-.6h1.903a1.2 1.2 0 0 1 .849.352L6.2 7.4H11a.6.6 0 0 1 .6.6v5.4a.6.6 0 0 1-.6.6H2.6zM11 5h1.8L11 3.2V5z" /></svg><span>Newsletters</span></a></li><li ><a
+                href="https://learning.oreilly.com/accounts/logout/"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M2.613 12.63A.607.607 0 0 1 2 12.03V3.602C2 3.269 2.274 3 2.613 3h5.515v1.204H3.226v7.223h4.902v1.203H2.613zM5.677 9.02V6.611h4.903V4.926a.301.301 0 0 1 .19-.274.31.31 0 0 1 .33.063l2.722 2.673a.594.594 0 0 1 0 .849L11.1 10.909a.31.31 0 0 1-.331.063.301.301 0 0 1-.19-.274V9.02H5.677z" /></svg><span>Sign Out</span></a></li></ul></div></li></ul></nav></header>
+
+
+
+      </div>
+      <div id="container" class="application">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="B16623_06_Final_JC_ePub.xhtml.html#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Coding Roblox Games Made Easy
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="B16623_06_Final_JC_ePub.xhtml.html#" title="Search in archive" class="js-search-controls search-controls" onclick="window.Appcues.track('SearchBook_HeronBook')"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9781800561991/chapter/B16623_06_Final_JC_ePub.xhtml"><div class="js-collections-dropdown collections-dropdown menu-bit-cards" onclick="window.Appcues.track('AddPlaylist_HeronBook')"></div></div></li><li class="js-font-control-panel font-control-activator"><a href="B16623_06_Final_JC_ePub.xhtml.html#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size" onclick="window.Appcues.track('ChangeFont_HeronBook')"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="B16623_06_Final_JC_ePub.xhtml.html#" class="trigger" data-push-state="false" title="Share" aria-label="Share" onclick="window.Appcues.track('Share_HeronBook')"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a
+        class="twitter share-button t-twitter"
+        target="_blank"
+        aria-label="Share this section on Twitter"
+        title="Share this section on Twitter"
+      
+        href="https://twitter.com/share?url=https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/B16623_06_Final_JC_ePub.xhtml&text=Coding%20Roblox%20Games%20Made%20Easy&via=OReillyMedia"
+      ><span>Twitter</span></a></li><li><a
+        class="facebook share-button t-facebook"
+        target="_blank"
+        aria-label="Share this section on Facebook"
+        title="Share this section on Facebook"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/B16623_06_Final_JC_ePub.xhtml"
+      ><span>Facebook</span></a></li><li><a
+        class="googleplus share-button t-googleplus"
+        target="_blank"
+        aria-label="Share this secton on Google Plus"
+        title="Share this secton on Google Plus"
+        href="https://plus.google.com/share?url=https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/B16623_06_Final_JC_ePub.xhtml"
+      ><span>Google Plus</span></a></li><li><a
+        class="email share-button t-email"
+        aria-label="Share this section via email"
+        title="Share this section via email"
+      
+        href="mailto:?subject=Safari: Chapter%206%3A%20Creating%20a%20Battle%20Royale%20Game&body=https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/B16623_06_Final_JC_ePub.xhtml%0D%0Afrom Coding%20Roblox%20Games%20Made%20Easy%0D%0A"
+      ><span>Email</span></a></li></ul></li><!-- endif request.user.is_authenticated -->
+      </ul>
+    </div>
+
+      
+          
+      
+
+    <section role="document">
+        
+        
+
+
+
+
+  <script defer src="https://learning.oreilly.com/static/js/build/djangoMessagesPage.bfaca9fd8619.js"></script>
+
+
+        <script src="https://fast.appcues.com/48743.js"></script>
+<script>
+  var userId = "ce47de5b-ce80-49f0-b5cd-c60d3d33b198";
+
+  var userObject = {
+    firstName: "Michael",
+    segment: "Trial",
+    admin: "False",
+    profileCreatedOn: "2021-05-13",
+    academic: ""
+  };
+  window.Appcues.identify(userId, userObject);
+  window.Appcues.page();
+
+  setTimeout(function () {
+    window.Appcues.track('ViewingBook_HeronBook')
+  }, 20000);
+</script>
+
+
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="B16623_05_Final_JC_ePub.xhtml.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Chapter 5: Creating an Obby</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="B16623_Section_3_Final_JC_ePub.xhtml.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">Section 3: The Logistics of Game Production</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><div id="_idContainer064">
+			<h1 id="_idParaDest-116"><em class="italic"><a id="_idTextAnchor120"></a>Chapter 6</em>: Creating a Battle Royale Game</h1>
+			<p>In the previous chapter, you created what may be your first whole game. <strong class="bold">Obby</strong> games are a popular concept, in part because of how easy they are to create. In this chapter, we will be making a <strong class="bold">Battle Royale</strong> game; in this game format, players are teleported from a lobby to a battleground where they must find weapons and fight each other, and the last player standing wins the game. </p>
+			<p>This project will require you to implement all that you have learned from the book so far and learn new material. This material includes working with the <strong class="bold">user interface</strong> (<strong class="bold">UI</strong>) and security techniques for systems such as weapons, and anything else where the client is communicating with the server.</p>
+			<p>In this chapter, we're going to cover the following main topics:</p>
+			<ul>
+				<li>Setting up the backend</li>
+				<li>Managing player data</li>
+				<li>Setting up the round system</li>
+				<li>Creating weapons</li>
+				<li>Local replication</li>
+				<li>Spawning loot</li>
+				<li>Setting up the frontend</li>
+			</ul>
+			<h1 id="_idParaDest-117"><a id="_idTextAnchor121"></a>Technical requirements</h1>
+			<p>As with the previous chapter, you will be working solely in Studio. As per usual, having an internet connection will improve your experience in Studio and will allow you to do independent research on any topics that are covered.</p>
+			<p>You can find all the code of this chapter in the GitHub repository of the book - <a href="https://github.com/PacktPublishing/Coding-Roblox-Games-Made-Easy/tree/main/Chapter06">https://github.com/PacktPublishing/Coding-Roblox-Games-Made-Easy/tree/main/Chapter06</a>.</p>
+			<h1 id="_idParaDest-118"><a id="_idTextAnchor122"></a>Setting up the backend</h1>
+			<p>As when creating the Obby, the backend of the game should be created to be modular. Similar to before, we will be <a id="_idIndexMarker369"></a>creating a main server-sided script called <strong class="sou ce-inline">ServerHandler</strong>, which all server modules will be under. So, you do not need to refer back to the previous chapter, as the code that should be in the <strong class="sou ce-inline">ServerHandler</strong> script is included here:</p>
+			<p class="sou ce-code">for _, module in pairs(script:GetChildren()) do</p>
+			<p class="sou ce-code">    local loadMod = coroutine.create(function()</p>
+			<p class="sou ce-code">        require(module)</p>
+			<p class="sou ce-code">    end)</p>
+			<p class="sou ce-code">    coroutine.resume(loadMod)</p>
+			<p class="sou ce-code">end</p>
+			<p>Moving forward, we will be introducing the modules that should be added to the <strong class="sou ce-inline">ServerHandler</strong> script to create the main functionalities of the game. As with the previous chapter, you are encouraged to test each system you make, assuming the said system is not dependent on one you haven't yet made. Testing throughout the development process not only ensures you do not have bugs but is motivating as well!</p>
+			<h1 id="_idParaDest-119"><a id="_idTextAnchor123"></a>Managing player data</h1>
+			<p>Managing player data will be very easy now that you have already created a reusable datastore system. All you <a id="_idIndexMarker370"></a>need to do is parent the <strong class="sou ce-inline">Data</strong> module you created in the previous chapter to the <strong class="sou ce-inline">ServerHandler</strong> script. When making games of your own design, you can similarly copy and paste this module.</p>
+			<p class="callout-heading">Important note</p>
+			<p class="callout">If you did not follow the tutorials of the last chapter, you will need to go back to the <em class="italic">Managing player data</em> section of <a href="B16623_05_Final_JC_ePub.xhtml.html#_idTextAnchor104"><em class="italic">Chapter 5</em></a>, <em class="italic">Creating an Obby</em>, in order to continue with the following steps. Once you have completed that section and its associated parts, you may come back without following any other steps in that chapter.</p>
+			<p>For this game, we will need to make some small edits within the <strong class="sou ce-inline">Data</strong> module pertaining to what data we keep track of. In the last chapter, we only kept track of the player's current stage and the amount of coins that they had. For a Battle Royale game, we will want to <a id="_idIndexMarker371"></a>keep track of the player's coins as well as how many enemy players they have knocked out and how many games they have won. To do this, we will want to change the <strong class="sou ce-inline">defaultData</strong> table to include the <strong class="sou ce-inline">Wins</strong>, <strong class="sou ce-inline">Kills</strong>, and <strong class="sou ce-inline">Coins</strong> stats. Additionally, we will need to create the associated <strong class="bold">ValueBase</strong> instances, to display on the player's screen using the <strong class="sou ce-inline">leaderstats</strong> system, as illustrated in the following code block:</p>
+			<p class="sou ce-code">local defaultData = {</p>
+			<p class="sou ce-code">    Coins = 0;</p>
+			<p class="sou ce-code">    Wins = 0;</p>
+			<p class="sou ce-code">    Kills = 0;</p>
+			<p class="sou ce-code">}</p>
+			<p class="sou ce-code">playerService.PlayerAdded:Connect(function(player)</p>
+			<p class="sou ce-code">    local folder = Instance.new("Folder")</p>
+			<p class="sou ce-code">    folder.Name = "leaderstats"</p>
+			<p class="sou ce-code">    folder.Parent = player</p>
+			<p class="sou ce-code">    </p>
+			<p class="sou ce-code">    local coins = Instance.new("IntValue")</p>
+			<p class="sou ce-code">    coins.Name = "Coins"</p>
+			<p class="sou ce-code">    coins.Parent = folder</p>
+			<p class="sou ce-code">    coins.Value = defaultData.Coins</p>
+			<p class="sou ce-code">    </p>
+			<p class="sou ce-code">    local wins = Instance.new("IntValue")</p>
+			<p class="sou ce-code">    wins.Name = "Wins"</p>
+			<p class="sou ce-code">    wins.Parent = folder</p>
+			<p class="sou ce-code">    wins.Value = defaultData.Wins</p>
+			<p class="sou ce-code">    </p>
+			<p class="sou ce-code">    local kills = Instance.new("IntValue")</p>
+			<p class="sou ce-code">    kills.Name = "Kills"</p>
+			<p class="sou ce-code">    kills.Parent = folder</p>
+			<p class="sou ce-code">    kills.Value = defaultData.Kills</p>
+			<p class="sou ce-code">    </p>
+			<p class="sou ce-code">    dataMod.setupData(player)</p>
+			<p class="sou ce-code">end)</p>
+			<p>It is important <a id="_idIndexMarker372"></a>to note that if you changed the key of your <strong class="bold">GlobalDataStore</strong> instance, you may feel free to reset it as data is not persistent throughout different Roblox games.</p>
+			<h1 id="_idParaDest-120"><a id="_idTextAnchor124"></a>Setting up the round system</h1>
+			<p>The main part of creating this game is setting up the game loop or round system. This backend code <a id="_idIndexMarker373"></a>will allow you to have an intermission period before each game, add players to the battleground, show everyone who the victor is, and repeat the process.</p>
+			<p>Before creating this loop, we need to create a lobby for players to be in during the intermission period or after they die in an ongoing game. This lobby can be designed however you want and can include pads that prompt purchases when touched, like those you created in the previous chapter. Regardless, players will likely spend several minutes in here during their play session, so you want to keep them engaged. To keep dead players more entertained, you will be instructed on how to make a <strong class="bold">graphical UI</strong> (<strong class="bold">GUI</strong>) that allows <a id="_idIndexMarker374"></a>you to spectate other players in the <em class="italic">Working with the UI</em> section of this chapter. Additionally, you could make a simple Obby with no checkpoints that players can try to complete to gain extra coins when they are waiting in the lobby.</p>
+			<p>The only thing that your lobby needs to be functional is several <strong class="sou ce-inline">SpawnLocation</strong> instances. If you are unfamiliar with a <strong class="sou ce-inline">SpawnLocation</strong> instance, players spawn at these instances by default when no code directs them elsewhere. Once you add a <strong class="sou ce-inline">SpawnLocation</strong> instance to your lobby, you may want to set the <strong class="sou ce-inline">Duration</strong> property to a low number or <strong class="sou ce-inline">0</strong>. This property controls how long players have a <strong class="bold">ForceField</strong> instance protecting their character, but for this game there is no point in having one.</p>
+			<p>The first step of <a id="_idIndexMarker375"></a>making the round system is to create a new module under the <strong class="sou ce-inline">ServerHandler</strong> script, named <strong class="sou ce-inline">GameRunner</strong>. This module will include the services, variables, and objects needed for the game loop to be made. </p>
+			<p>You will see that the <strong class="sou ce-inline">message</strong> and <strong class="sou ce-inline">remaining</strong> variables hold the paths to two <strong class="sou ce-inline">StringValue</strong> instances named <strong class="sou ce-inline">message</strong> and <strong class="sou ce-inline">remaining</strong>, respectively. These will be used for displaying information to the client during different parts of the game loop. Make sure you add these two <strong class="sou ce-inline">StringValue</strong> Instances into <strong class="sou ce-inline">ReplicatedStorage</strong> with the correct names. </p>
+			<p>Variables that are <a id="_idIndexMarker376"></a>completely capitalized are called <strong class="bold">constants</strong> for the script. Lua does not have constants as a special construct like other languages do, but when creating a globally defined variable that should never be changed at runtime, each letter should be capitalized, using underscores as spaces, as illustrated in the following code block:</p>
+			<p class="sou ce-code">local playerService = game:GetService("Players")</p>
+			<p class="sou ce-code">local replicatedStorage =   game:GetService("ReplicatedStorage")</p>
+			<p class="sou ce-code">local dataMod = require(script.Parent.Data)</p>
+			<p class="sou ce-code">local random = Random.new()</p>
+			<p class="sou ce-code">local message = replicatedStorage.Message</p>
+			<p class="sou ce-code">local remaining = replicatedStorage.Remaining</p>
+			<p class="sou ce-code">local gameRunner = {}</p>
+			<p class="sou ce-code">local competitors = {}</p>
+			<p class="sou ce-code">local MIN_PLAYERS = 2</p>
+			<p class="sou ce-code">local INTERMISSION_LENGTH = 15</p>
+			<p class="sou ce-code">local ROUND_LENGTH = 300</p>
+			<p class="sou ce-code">local PRIZE_AMOUNT = 100</p>
+			<p class="sou ce-code">return gameRunner</p>
+			<p>Let's go over the <a id="_idIndexMarker377"></a>meaning of these different constants we have declared in the module, as follows:</p>
+			<ul>
+				<li>The value held by <strong class="sou ce-inline">MIN_PLAYERS</strong> will be used to determine how many players must be in the game for it to begin. This value is set to <strong class="sou ce-inline">2</strong> by default as a game with one player would end instantly, allowing players to gain rewards infinitely if they just stayed in an empty server. </li>
+				<li>The second variable, <strong class="sou ce-inline">INTERMISSION_LENGTH</strong>, is used to create a period of intermission between each game once enough players are in a server. This value should create a long enough of a wait for people to be able to interact with others in your lobby and rest before starting another game. </li>
+				<li>The value held by <strong class="sou ce-inline">ROUND_LENGTH</strong> will be used in a similar manner but utilized only once the game has started. If there has been no victor by the end of the time limit, then the game will end with no winner. This value should allow enough time for players to loot and fight without feeling pressured but not so long as to where the last two players alive can simply bore everyone who has already died if they are not actively participating in the game. </li>
+				<li>The last value, <strong class="sou ce-inline">PRIZE_AMOUNT</strong>, will be used to award coins to whoever the victor of the round is. Feel free to change these values once you have implemented the previous code into the module.</li>
+			</ul>
+			<p>As mentioned in previous chapters, not every helper function within your module needs to be part of the returned module's table if it only has a use with a task that is isolated to the module. The following functions, which are used to get and remove players from the <strong class="sou ce-inline">competitors</strong> table, are implemented into the module as local functions since there are not many practical scenarios where they would need to be used by sources other than the module. The <strong class="sou ce-inline">getPlayerInTable()</strong> function is passed a <strong class="sou ce-inline">Player</strong> instance, and the index of the player in the table is returned. This is used with the <strong class="sou ce-inline">removePlayerFromTable()</strong> function, which will be called when a player dies or leaves the game; this method <a id="_idIndexMarker378"></a>gets the index of the player who left the game or died before removing them from the <strong class="sou ce-inline">competitors</strong> table. You should implement the following code into the <strong class="sou ce-inline">GameRunner</strong> module, without any changes: </p>
+			<p class="sou ce-code">local function getPlayerInTable(player)</p>
+			<p class="sou ce-code">    for i, competitor in pairs(competitors) do</p>
+			<p class="sou ce-code">        if competitor == player then</p>
+			<p class="sou ce-code">            return i, player</p>
+			<p class="sou ce-code">        end</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">end</p>
+			<p class="sou ce-code">local function removePlayerFromTable(player)</p>
+			<p class="sou ce-code">    local index, _ = getPlayerInTable(player)</p>
+			<p class="sou ce-code">    if index then</p>
+			<p class="sou ce-code">        table.remove(competitors, index)</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">end</p>
+			<p class="sou ce-code">playerService.PlayerRemoving:Connect(function(player)</p>
+			<p class="sou ce-code">    removePlayerFromTable(player)</p>
+			<p class="sou ce-code">end)</p>
+			<p>When the player is about to be deployed into the battleground, there are some things we need to do to prepare them. In the <strong class="sou ce-inline">preparePlayer()</strong> function, the player is given a simple default weapon, which we will go over how to create in the <em class="italic">Creating weapons</em> section of this chapter, and a new event function is made to handle the case of their death. By way of the <strong class="sou ce-inline">Humanoid</strong> Instance of a player's character, we can detect when a player dies by using the <strong class="sou ce-inline">Died</strong> event, and we can subsequently call the <strong class="sou ce-inline">removePlayerFromTable()</strong> function to make sure the player is no longer considered a competitor. When you <a id="_idIndexMarker379"></a>implement the following code into the module, you may want to comment out the lines where <strong class="sou ce-inline">defaultWeapon</strong> is referenced, as the weapon will not exist until you complete the <em class="italic">Creating weapons</em> section:</p>
+			<p class="sou ce-code">local function preparePlayer(player)</p>
+			<p class="sou ce-code">    local char = player.Character or         player.CharacterAdded:Wait()</p>
+			<p class="sou ce-code">    local hum = char:WaitForChild("Humanoid")</p>
+			<p class="sou ce-code">    local defaultWeapon =         replicatedStorage.Weapons.M1911:Clone()</p>
+			<p class="sou ce-code">    defaultWeapon.Parent = player.Backpack</p>
+			<p class="sou ce-code">    </p>
+			<p class="sou ce-code">    hum.Died:Connect(function()</p>
+			<p class="sou ce-code">        removePlayerFromTable(player)</p>
+			<p class="sou ce-code">    end)</p>
+			<p class="sou ce-code">end</p>
+			<p>The <strong class="sou ce-inline">addPlayersToTable()</strong> function will be used to add players to the <strong class="sou ce-inline">competitors</strong> table right when the game begins. By using the <strong class="sou ce-inline">GetPlayers()</strong> method of the <strong class="sou ce-inline">Players</strong> service, we get a table of each player currently connected to the game and we check that the player we want to add is alive. We do this as we do not want to risk the player being stuck in the lobby if they respawn after the code to move them to the battleground has already been executed. After this condition is met, the player is added to the <strong class="sou ce-inline">competitors</strong> table and they are prepared by way of the <strong class="sou ce-inline">preparePlayer()</strong> function. Implement the following function into your module below any functions that it must call: </p>
+			<p class="sou ce-code">local function addPlayersToTable()</p>
+			<p class="sou ce-code">    for _, player in pairs(playerService:GetPlayers()) do</p>
+			<p class="sou ce-code">        local char = player.Character or              player.CharacterAdded:Wait()</p>
+			<p class="sou ce-code">        if char.Humanoid.Health &gt; 0 then</p>
+			<p class="sou ce-code">            table.insert(competitors, player)</p>
+			<p class="sou ce-code">            preparePlayer(player)</p>
+			<p class="sou ce-code">        end</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">end</p>
+			<p>Next, we will need <a id="_idIndexMarker380"></a>to bring the players from the lobby to the battleground. To do this, start by adding a new <strong class="sou ce-inline">Folder</strong> into the <strong class="bold">Workspace</strong> named <strong class="sou ce-inline">Spawns</strong>. <em class="italic">It is important that you add at least one spawn point for the number of players that can fit into a server of your game.</em> That is to say that if your game allows for a maximum of <strong class="sou ce-inline">10</strong> players in a server, there must be at least <strong class="sou ce-inline">10</strong> spawn points. These spawn points should be a regular <strong class="sou ce-inline">Part</strong> instance, not a <strong class="sou ce-inline">SpawnLocation</strong> instance like those in your lobby.</p>
+			<p>Once the <strong class="sou ce-inline">Folder</strong> and spawn point <strong class="bold">Parts</strong> are created, you should implement the following <strong class="sou ce-inline">spawnPlayers()</strong> function into your <strong class="sou ce-inline">GameRunner</strong> module. This function will create a new table consisting of all spawn <strong class="bold">Parts</strong> in the <strong class="sou ce-inline">Spawn</strong> <strong class="sou ce-inline">Folder</strong> and then iterate over all players in the <strong class="sou ce-inline">competitors</strong> table. After identifying a player and that player's character, the <strong class="sou ce-inline">NextInteger()</strong> method of the <strong class="sou ce-inline">Random</strong> object is used to get a random index between <strong class="sou ce-inline">1</strong> and the length of the table. Once the spawn at the corresponding table position is indexed, the spawn is removed from the table so that other players cannot spawn there and the player is positioned accordingly. The code for this is shown here:</p>
+			<p class="sou ce-code">local function spawnPlayers()</p>
+			<p class="sou ce-code">    local spawnPoints = workspace.Spawns:GetChildren()</p>
+			<p class="sou ce-code">    </p>
+			<p class="sou ce-code">    for _, player in pairs(competitors) do</p>
+			<p class="sou ce-code">        local char = player.Character or              player.CharacterAdded:Wait()</p>
+			<p class="sou ce-code">        local randomIndex = random:NextInteger(1,                #spawnPoints)</p>
+			<p class="sou ce-code">        local spawnPoint = spawnPoints[randomIndex]</p>
+			<p class="sou ce-code">        table.remove(spawnPoints, randomIndex)</p>
+			<p class="sou ce-code">        </p>
+			<p class="sou ce-code">        char:SetPrimaryPartCFrame(spawnPoint.CFrame *              CFrame.new(0,2,0))</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">end</p>
+			<p>The last helper function we need to implement for this system is named <strong class="sou ce-inline">loadAllPlayers()</strong> and it will be called when the game ends, to respawn any remaining players back into the <a id="_idIndexMarker381"></a>lobby without killing them. This is done by simply iterating over the <strong class="sou ce-inline">competitors</strong> table and calling the <strong class="sou ce-inline">LoadCharacter()</strong> method of the associated <strong class="sou ce-inline">Player</strong> instance. The code for this is shown here:</p>
+			<p class="sou ce-code">local function loadAllPlayers()</p>
+			<p class="sou ce-code">    for _, player in pairs(competitors) do</p>
+			<p class="sou ce-code">        player:LoadCharacter()</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">end</p>
+			<p>Now that all helper functions have been implemented into the <strong class="sou ce-inline">GameRunner</strong> module, we must introduce the primary loop that manages the game in its entirety. We will implement this loop as a function into the module table so that we can easily use a <strong class="sou ce-inline">spawn()</strong> function with it. This function will be called <strong class="sou ce-inline">gameLoop()</strong>, and by using a <strong class="sou ce-inline">while</strong> loop it will be able to infinitely run your game. At the beginning of each loop, it will check that the minimum number of players—as defined by <strong class="sou ce-inline">MIN_PLAYERS</strong>—are in the game, and then proceed to perform a countdown through the intermission period if that condition is met, changing the message that will be displayed to players accordingly. Once the intermission period has concluded, a short period of time is used to tell players to get ready for combat before adding players to the <strong class="sou ce-inline">competitors</strong> table via the <strong class="sou ce-inline">addPlayersToTable()</strong> function. Those players added to the table are then spawned at random spawn points by way of the <strong class="sou ce-inline">spawnPlayers()</strong> function. With the players spawned and prepared, the main game clock starts, starting at the value held by <strong class="sou ce-inline">ROUND_LENGTH</strong> and approaching <strong class="sou ce-inline">0</strong>; the number of players remaining in the round will also be shown. </p>
+			<p>You may notice that there <a id="_idIndexMarker382"></a>are two exit conditions for the <strong class="sou ce-inline">repeat</strong> loop processing the main countdown. The first condition is if the number of players in the <strong class="sou ce-inline">competitors</strong> table is less than or equal to <strong class="sou ce-inline">1</strong>, and the second condition is if the value held by <strong class="sou ce-inline">gameTime</strong> has reached <strong class="sou ce-inline">0</strong>. Once the loop exits, a conditional statement makes cases based on which of these conditions are <strong class="sou ce-inline">true</strong> or <strong class="sou ce-inline">false</strong>. If the number of competitors is equal to <strong class="sou ce-inline">0</strong> or <strong class="sou ce-inline">gameTime</strong> has become <strong class="sou ce-inline">0</strong>, it means that there was no victor as either the last two players killed each other at the same time or the maximum length of the game—as defined by <strong class="sou ce-inline">ROUND_LENGTH</strong>—was reached, again resulting in no victor. Otherwise, the number of <strong class="sou ce-inline">competitors</strong> must be <strong class="sou ce-inline">1</strong> and the time limit must not have been reached, meaning that we have a victor. Indexing the victor is easy as they will be the first and only element in the <strong class="sou ce-inline">competitors</strong> table. The winner will have their number of <strong class="sou ce-inline">Wins</strong> incremented by <strong class="sou ce-inline">1</strong> and their <strong class="sou ce-inline">Coins</strong> stat incremented by the value designated in <strong class="sou ce-inline">PRIZE_AMOUNT</strong>. Furthermore, the name of the winner and a short victory message will be displayed for 5 seconds before the entire game begins again. </p>
+			<p>I encourage that after you implement the following code into your module you look at the code, following it along closely to understand how this loop accomplished all of the necessary behaviors to make the game work: </p>
+			<p class="sou ce-code">gameRunner.gameLoop = function()</p>
+			<p class="sou ce-code">    while wait(0.5) do</p>
+			<p class="sou ce-code">        if #playerService:GetPlayers() &lt; MIN_PLAYERS then</p>
+			<p class="sou ce-code">            message.Value = "There must be "..                      MIN_PLAYERS.. " players to start."</p>
+			<p class="sou ce-code">        else</p>
+			<p class="sou ce-code">            local intermission = INTERMISSION_LENGTH</p>
+			<p class="sou ce-code">            repeat</p>
+			<p class="sou ce-code">                message.Value = "Intermission: "..                         intermission</p>
+			<p class="sou ce-code">                intermission = intermission - 1</p>
+			<p class="sou ce-code">                wait(1)</p>
+			<p class="sou ce-code">            until intermission == 0</p>
+			<p class="sou ce-code">            message.Value = "Get ready..."</p>
+			<p class="sou ce-code">            wait(2)</p>
+			<p class="sou ce-code">            addPlayersToTable()</p>
+			<p class="sou ce-code">            spawnPlayers()</p>
+			<p class="sou ce-code">            local gameTime = ROUND_LENGTH</p>
+			<p class="sou ce-code">            repeat</p>
+			<p class="sou ce-code">                message.Value = "Time remaining: "..                         gameTime</p>
+			<p class="sou ce-code">                remaining.Value = #competitors.. "                         remaining"</p>
+			<p class="sou ce-code">                gameTime = gameTime - 1</p>
+			<p class="sou ce-code">                wait(1)</p>
+			<p class="sou ce-code">            until #competitors &lt;= 1 or gameTime == 0</p>
+			<p class="sou ce-code">            loadAllPlayers()</p>
+			<p class="sou ce-code">            remaining.Value = ""</p>
+			<p class="sou ce-code">            if gameTime == 0 or #competitors == 0 then</p>
+			<p class="sou ce-code">                message.Value = "There were no                         victors..."</p>
+			<p class="sou ce-code">            else</p>
+			<p class="sou ce-code">                local winner = competitors[1]</p>
+			<p class="sou ce-code">                dataMod.increment(winner, "Wins", 1)</p>
+			<p class="sou ce-code">                dataMod.increment(winner, "Coins",                        PRIZE_AMOUNT)</p>
+			<p class="sou ce-code">                message.Value = winner.Name..</p>
+			<p class="sou ce-code">                        " has won the round!"</p>
+			<p class="sou ce-code">            end</p>
+			<p class="sou ce-code">            competitors = {}</p>
+			<p class="sou ce-code">            wait(5)</p>
+			<p class="sou ce-code">        end</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">end</p>
+			<p class="sou ce-code">spawn(gameRunner.gameLoop)</p>
+			<p>With the main content loop of your game completed, we need to add some elements that make gameplay <a id="_idIndexMarker383"></a>the way we want it. In the next section, we will go over how to create weapons so that players can fight each other, making the game end with the best fighter as the champion.</p>
+			<h1 id="_idParaDest-121"><a id="_idTextAnchor125"></a>Creating weapons</h1>
+			<p>You cannot have <a id="_idIndexMarker384"></a>a Battle Royale game without having weapons. In this section, you will learn how to make a comprehensive and secure gun <a id="_idIndexMarker385"></a>system that makes use of <strong class="bold">raycasting</strong> for hit detection. </p>
+			<p>To begin making the weapon system, start by adding a new module to the <strong class="sou ce-inline">ServerHandler</strong> script, named <strong class="sou ce-inline">Weapons</strong>. In this module, we will include the necessary services, variables, and other needed references. As you can see with the <strong class="sou ce-inline">hitRemote</strong> and <strong class="sou ce-inline">replicateRemote</strong> variables, we will need two <strong class="bold">RemoteEvent</strong> instances parented to <strong class="sou ce-inline">ReplicatedStorage</strong>, named <strong class="sou ce-inline">Hit</strong> and <strong class="sou ce-inline">Replicate</strong> respectively. These will be used so that the client and <a id="_idIndexMarker386"></a>server can communicate with each other when necessary. Implement the following code block into your new module:</p>
+			<p class="sou ce-code">local playerService = game:GetService("Players")</p>
+			<p class="sou ce-code">local replicatedStorage =    game:GetService("ReplicatedStorage")</p>
+			<p class="sou ce-code">local hitRemote = replicatedStorage.Hit</p>
+			<p class="sou ce-code">local replicateRemote = replicatedStorage.Replicate</p>
+			<p class="sou ce-code">local dataMod = require(script.Parent.Data)</p>
+			<p class="sou ce-code">local weapons = {}</p>
+			<p class="sou ce-code">return weapons</p>
+			<p>You have seen this <strong class="sou ce-inline">playerFromHit()</strong> function in the previous chapter. We will be using it in the <strong class="sou ce-inline">Weapons</strong> module on the server for verifying the shots players make. You can see that it is included as part of the module table rather than as a local helper function, as you may want other systems to be able to freely reference it. You can add this function to the module table without any alterations, as follows:</p>
+			<p class="sou ce-code">weapons.playerFromHit = function(hit)</p>
+			<p class="sou ce-code">    local char = hit:FindFirstAncestorOfClass("Model")</p>
+			<p class="sou ce-code">    local player =        playerService:GetPlayerFromCharacter(char)</p>
+			<p class="sou ce-code">    return player, char</p>
+			<p class="sou ce-code">end</p>
+			<p>The next part of this system is to create a new <strong class="sou ce-inline">Tool</strong> instance within the <strong class="sou ce-inline">StarterPack</strong> service. In your <strong class="sou ce-inline">Tool</strong> instance, you should add a new <strong class="sou ce-inline">Part</strong> named <strong class="sou ce-inline">Handle</strong>. Due to its name, this <strong class="sou ce-inline">Part</strong> will automatically serve as the point where a client's character will grip the <strong class="sou ce-inline">Tool</strong>. Additionally, you should add a new module to the <strong class="sou ce-inline">Tool</strong> called <strong class="sou ce-inline">Settings</strong>, which will hold the settings for your weapon. The code for this is shown here:</p>
+			<p class="sou ce-code">local gunSettings = {</p>
+			<p class="sou ce-code">    fireMode = "SEMI"; --SEMI or AUTO</p>
+			<p class="sou ce-code">    damage = 15;</p>
+			<p class="sou ce-code">    headshotMultiplier = 1.5;</p>
+			<p class="sou ce-code">    rateOfFire = 300; --Rounds per minute</p>
+			<p class="sou ce-code">    range = 500;</p>
+			<p class="sou ce-code">    rayColor = Color3.fromRGB(255, 160, 75);</p>
+			<p class="sou ce-code">    raySize = Vector2.new(0.25, 0.25); --Width and height</p>
+			<p class="sou ce-code">    debrisTime = 0.05;</p>
+			<p class="sou ce-code">}</p>
+			<p class="sou ce-code">return gunSettings</p>
+			<p>Let's look at <a id="_idIndexMarker387"></a>what each of these values does to change the appearance and behavior of your weapon, as follows:</p>
+			<ul>
+				<li>The <strong class="sou ce-inline">fireMode</strong> value is used to determine whether players can continuously fire when holding down their mouse or only fire one shot per mouse click.</li>
+				<li>The value held by <strong class="sou ce-inline">damage</strong> is simply subtracted from the health of the player you have hit.</li>
+				<li>The value of <strong class="sou ce-inline">headshotMultiplier</strong> is multiplied by <strong class="sou ce-inline">damage</strong> if you shoot an enemy in the head, essentially acting as a <em class="italic">critical</em> shot.</li>
+				<li>The <strong class="sou ce-inline">rateOfFire</strong> value limits how many rounds per minute you can shoot. You can find the minimum amount of time a player must wait between shots by printing <strong class="sou ce-inline">60/rateOfFire</strong>.</li>
+				<li>The value of <strong class="sou ce-inline">range</strong> is used to determine how far the projectile you shoot can go; it is set to travel <strong class="sou ce-inline">500</strong> studs by default.</li>
+				<li>The <strong class="sou ce-inline">rayColor</strong> and <strong class="sou ce-inline">raySize</strong> values are used to change the color of the projectile visualizer as well as its width and height.</li>
+				<li>Lastly, the <strong class="sou ce-inline">debrisTime</strong> value will be used to limit how long a projectile visualizer will be visible for when the weapon is fired. </li>
+			</ul>
+			<p>Now that we <a id="_idIndexMarker388"></a>have created the base of the <strong class="sou ce-inline">Weapons</strong> module on the server and created the <strong class="sou ce-inline">Settings</strong> module within the <strong class="sou ce-inline">Tool</strong> inside of <strong class="sou ce-inline">StarterPack</strong>, you will need to add a new <strong class="bold">LocalScript</strong> titled <strong class="sou ce-inline">ToolHandler</strong>. Since you may want to use this weapon system in different games, it will be made a completely independent system in regard to code so that you do not need to modularize it, and instead we will be working directly within the script. </p>
+			<p>In your script add the following code, which defines the services and instances we will need to reference; you should already be familiar with all of these. In addition to general definitions, we also create two event functions and a variable to keep track of whether or not the <strong class="sou ce-inline">Tool</strong> is currently equipped, indicating whether the tool is currently usable. The only other declarations you may want to pay attention to are the <strong class="sou ce-inline">firePoint</strong> and <strong class="sou ce-inline">gunSettings</strong> variables. The <strong class="sou ce-inline">gunSettings</strong> variable simply holds the table returned by requiring the <strong class="sou ce-inline">Settings</strong> module within the <strong class="sou ce-inline">Tool</strong>. The <strong class="sou ce-inline">firePoint</strong> variable holds the instance from where your projectile will be shot; this can be the <strong class="sou ce-inline">Handle</strong> <strong class="sou ce-inline">Part</strong> by default, since you likely do not have a model for your gun. You should include any particles or sounds you want to occur when your weapon is used in this <strong class="sou ce-inline">Part</strong>, for when the <strong class="sou ce-inline">gunEffects()</strong> helper function is added later in this section. The code for this is shown here:</p>
+			<p class="sou ce-code">local playerService = game:GetService("Players")</p>
+			<p class="sou ce-code">local replicatedStorage =   game:GetService("ReplicatedStorage")</p>
+			<p class="sou ce-code">local replicateRemote = replicatedStorage.Replicate</p>
+			<p class="sou ce-code">local hitRemote = replicatedStorage.Hit</p>
+			<p class="sou ce-code">local player = playerService.LocalPlayer</p>
+			<p class="sou ce-code">local char = player.Character or   player.CharacterAdded:Wait()</p>
+			<p class="sou ce-code">local mouse = player:GetMouse()</p>
+			<p class="sou ce-code">local tool = script.Parent</p>
+			<p class="sou ce-code">local firePoint = tool:WaitForChild("Handle") --This is  --where the bullet comes from</p>
+			<p class="sou ce-code">local gunSettings = require(tool:WaitForChild("Settings"))</p>
+			<p class="sou ce-code">local equipped = false</p>
+			<p class="sou ce-code">tool.Equipped:Connect(function()</p>
+			<p class="sou ce-code">    equipped = true</p>
+			<p class="sou ce-code">end)</p>
+			<p class="sou ce-code">tool.Unequipped:Connect(function()</p>
+			<p class="sou ce-code">    equipped = false</p>
+			<p class="sou ce-code">end)</p>
+			<p>After implementing <a id="_idIndexMarker389"></a>the preceding code, add a new <strong class="sou ce-inline">Folder</strong> called <strong class="sou ce-inline">Effects</strong> into the <strong class="bold">Workspace</strong>. <em class="italic">This will be important to the functionality of your weapon's hit detection later in this section.</em></p>
+			<p class="callout-heading">Important note</p>
+			<p class="callout">You may find that depending on your weapon's model, adding a hold animation would make your game more aesthetically pleasing. Roblox makes this process very easy to do, and you can learn more about making and using animations in the following article: <a href="https://developer.roblox.com/en-us/articles/using-animations-in-games">https://developer.roblox.com/en-us/articles/using-animations-in-games</a>.</p>
+			<p>The first function <a id="_idIndexMarker390"></a>that we will want to introduce into the <strong class="sou ce-inline">ToolHandler</strong> script is named <strong class="sou ce-inline">castRay()</strong>. This function will be called to create a new <strong class="sou ce-inline">raycast</strong>, returning information about which instance was hit, the position it was hit at, the vector direction the <strong class="sou ce-inline">raycast</strong> was sent along, and the origin from where the <strong class="sou ce-inline">raycast</strong> was made. The first thing we need to identify is what a <strong class="sou ce-inline">raycast</strong> really is and what we can use it for. A good way to conceptualize a <strong class="sou ce-inline">raycast</strong> is as a one-dimensional beam or <em class="italic">ray</em> that continues from its origin to whatever it hits or, if nothing is hit, continues until it reaches the <a id="_idIndexMarker391"></a>maximum length for the <strong class="sou ce-inline">raycast</strong>, which you define in the module via the <strong class="sou ce-inline">range</strong> value. To elaborate on the concept of <em class="italic">one-dimensional</em>, a <strong class="sou ce-inline">raycast</strong> has length but does not have width or height, meaning that it will always behave like a laser in its hit detection, rather than a net.</p>
+			<p>To create a new <strong class="sou ce-inline">raycast</strong>, we first need a <strong class="sou ce-inline">Vector3</strong> origin of the <strong class="sou ce-inline">raycast</strong>, as well as a directional vector. Remember that you can get a directional vector by subtracting two position vectors. For example, if you want a directional vector representing position one looking at position two, you could subtract position one from position two (<em class="italic">P2-P1 = P1 looking at P2</em>). Once these two position vectors are subtracted to get a directional vector, you will want to get the <strong class="sou ce-inline">Unit</strong> property of the new directional vector. This converts the <a id="_idIndexMarker392"></a>vector to a <strong class="bold">unit vector</strong>, meaning the vector has a total magnitude of <strong class="sou ce-inline">1</strong>. You do not really need to know the meaning behind this, but it is important to do before multiplying by your scalar <strong class="sou ce-inline">range</strong> value. With an origin and direction unit vector, you can create a new <strong class="bold">Ray</strong> userdata using the <strong class="sou ce-inline">Ray.new()</strong> constructor, which takes the origin and direction as its argument. As when creating a new <strong class="sou ce-inline">Vector3</strong> userdata, this will need to be assigned to a variable of its own.</p>
+			<p>Looking back at the <strong class="sou ce-inline">castRay()</strong> function, we have explained the logic behind the first four lines but the rest is much more straightforward. After defining the <strong class="sou ce-inline">ray</strong> variable, we use the <strong class="sou ce-inline">FindPartOnRayWithIgnoreList()</strong> method of the <strong class="bold">Workspace</strong>. This method takes four arguments: the ray itself, the <strong class="sou ce-inline">ignoreList</strong> table, how intersections with terrain should behave, and whether intersections with terrain should be ignored. This method is named as such because the second argument, the <strong class="sou ce-inline">ignoreList</strong> table, is a table of instances where they, and all of their descendants, cannot be hit by the <strong class="sou ce-inline">raycast</strong> but everything else in the <strong class="bold">Workspace</strong> can. For example, it would be bad if you were able to shoot your own character or the projectile visualizers of other people. To avoid these being hit, we add the character of the client and the <strong class="sou ce-inline">Effects</strong> <strong class="sou ce-inline">Folder</strong> to the <strong class="sou ce-inline">ignoreList</strong> table.</p>
+			<p>When an instance in the <strong class="bold">Workspace</strong> is hit, four pieces of information are returned by the <strong class="sou ce-inline">FindPartOnRayWithIgnoreList()</strong> function, those being the instance or terrain cell that was hit, the position it was hit at, the normal vector to the surface that was hit, and the material of the <strong class="sou ce-inline">BasePart</strong> instance or terrain cell that was hit. You will likely not use the last two parts of returned data very often, but the first two will be important for this function. It is pertinent to remember that if no instance or terrain is hit, these values will simply be nil except for the intersection point, which will just be at the end of the <strong class="sou ce-inline">raycast</strong>.</p>
+			<p>After collecting the first two values returned by the <strong class="sou ce-inline">raycast</strong>, the <strong class="sou ce-inline">Replicate</strong> <strong class="bold">RemoteEvent</strong> in <strong class="sou ce-inline">ReplicatedStorage</strong> is fired. Here, we pass along the <strong class="sou ce-inline">Tool</strong><strong class="bold"> </strong>instance, origin, and point of intersection. We will go over what this remote event does to replicate the projectile visualizer in the upcoming <em class="italic">Local replication</em> section. For now, we create a <a id="_idIndexMarker393"></a>projectile visualizer that is only locally visible. This is just a regular <strong class="sou ce-inline">Part</strong> that has its anchored property set to <strong class="sou ce-inline">true</strong>, set so that it cannot be collided with, given a neon material, and—lastly—given its color, width, and height from the <strong class="sou ce-inline">Settings</strong> module. We get the length or depth for the visualizer from the distance between the origin and point of intersection. Remember that to find the distance between two position vectors, we simply subtract them and get the magnitude of the resulting vector. Once the size is set, we set the part to be positioned at the origin, looking at the point of intersection and then offsetting the part by half of its size, to be perfectly between the origin and the point of intersection. </p>
+			<p>With all of the properties of the <strong class="sou ce-inline">Part</strong> set to the correct values, we finally parent the part to the <strong class="sou ce-inline">Effects</strong> <strong class="sou ce-inline">Folder</strong> in the <strong class="bold">Workspace</strong>. Since we want this part to only be temporary and disappear after a <a id="_idIndexMarker394"></a>very short period, we will use the <strong class="bold">Debris</strong> service. This service is most often used via its <strong class="sou ce-inline">AddItem()</strong> method, which takes an instance and a length of time; once that time passes, the passed instance is permanently deleted. Looking at the code, we can see that the visualizer is in the <strong class="sou ce-inline">Folder</strong> for the length of the <strong class="sou ce-inline">debrisTime</strong> value in the <strong class="sou ce-inline">Settings</strong> module before being deleted. The default value is a good amount of time for something such as a projectile to be visible. After this, the necessary information listed before is returned to wherever the function was called from. You should implement the following function into your <strong class="sou ce-inline">ToolHandler</strong> script, without alteration:</p>
+			<p class="sou ce-code">local ignoreList = {char, workspace.Effects}</p>
+			<p class="sou ce-code">local debris = game:GetService("Debris")</p>
+			<p class="sou ce-code">local function castRay()</p>
+			<p class="sou ce-code">    local origin = firePoint.Position</p>
+			<p class="sou ce-code">    local direction = (mouse.Hit.p -         firePoint.Position).Unit</p>
+			<p class="sou ce-code">    direction = direction * gunSettings.range</p>
+			<p class="sou ce-code">    </p>
+			<p class="sou ce-code">    local ray = Ray.new(origin, direction)</p>
+			<p class="sou ce-code">    local hit, pos =        workspace:FindPartOnRayWithIgnoreList(ray,         ignoreList)</p>
+			<p class="sou ce-code">    </p>
+			<p class="sou ce-code">    replicatedStorage.Replicate:FireServer(tool, origin,        pos)</p>
+			<p class="sou ce-code">    local visual = Instance.new("Part")</p>
+			<p class="sou ce-code">    local length = (pos - origin).Magnitude</p>
+			<p class="sou ce-code">    visual.Anchored = true</p>
+			<p class="sou ce-code">    visual.CanCollide = false</p>
+			<p class="sou ce-code">    visual.Material = Enum.Material.Neon</p>
+			<p class="sou ce-code">    visual.Color = gunSettings.rayColor</p>
+			<p class="sou ce-code">    visual.Size = Vector3.new(gunSettings.raySize.X,        gunSettings.raySize.Y, length)</p>
+			<p class="sou ce-code">    visual.CFrame = CFrame.new(origin, pos) *        CFrame.new(0,0,-length/2)</p>
+			<p class="sou ce-code">    visual.Parent = workspace.Effects</p>
+			<p class="sou ce-code">    debris:AddItem(visual, gunSettings.debrisTime)</p>
+			<p class="sou ce-code">    </p>
+			<p class="sou ce-code">    return hit, pos, direction, origin</p>
+			<p class="sou ce-code">end</p>
+			<p>The last helper function you should implement into the <strong class="sou ce-inline">ToolHandler</strong> script is called <strong class="sou ce-inline">gunEffects()</strong>, which simply iterates over all of the instances that are parented to the <strong class="sou ce-inline">firePoint</strong> part of your <strong class="sou ce-inline">Tool</strong>. The loop checks for any <strong class="sou ce-inline">ParticleEmitter</strong> or <strong class="sou ce-inline">Sound</strong> instances, calling the <strong class="sou ce-inline">Emit()</strong> or <strong class="sou ce-inline">Play()</strong> methods in each case respectively. Because of how <strong class="sou ce-inline">FilteringEnabled</strong> causes games to behave, you will need to make sure the <strong class="sou ce-inline">RespectFilteringEnabled</strong> property of <strong class="bold">SoundService</strong> is unchecked (<strong class="sou ce-inline">false</strong>) in the <strong class="bold">Explorer</strong>. If this property is left <strong class="sou ce-inline">true</strong>, playing sounds on your client, such as firing your weapon, will not <a id="_idIndexMarker395"></a>replicate. You may alter the following code after implementing it, as you see fit:</p>
+			<p class="sou ce-code">local function gunEffects()</p>
+			<p class="sou ce-code">    for _, effect in pairs(firePoint:GetChildren()) do</p>
+			<p class="sou ce-code">        if effect:IsA("ParticleEmitter") then</p>
+			<p class="sou ce-code">            effect:Emit(50)</p>
+			<p class="sou ce-code">        end</p>
+			<p class="sou ce-code">        </p>
+			<p class="sou ce-code">        if effect:IsA("Sound") then</p>
+			<p class="sou ce-code">            effect:Play()</p>
+			<p class="sou ce-code">        end</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">end</p>
+			<p>Now that all helper functions have been implemented into the <strong class="sou ce-inline">ToolHandler</strong> script, we will create a function for when the player clicks. Before doing this, however, we need to add a new <strong class="sou ce-inline">BoolValue</strong> instance to the <strong class="sou ce-inline">Tool</strong>, called <strong class="sou ce-inline">Debounce</strong>. This will be used as a debounce value that both the client and server can see and manipulate. </p>
+			<p>By using the <strong class="sou ce-inline">Button1Down</strong> and <strong class="sou ce-inline">Button1Up</strong> events of the <strong class="sou ce-inline">Mouse</strong> instance, we can set behaviors for when the player clicks and releases. We will create a new function called <strong class="sou ce-inline">fire()</strong> that will call the helper functions and perform any other actions that are necessary for the weapon to shoot. Depending on the <strong class="sou ce-inline">fireMode</strong> setting of the weapon, this function will be called in a loop with a terminating variable that is manipulated by the state of the <strong class="sou ce-inline">Mouse</strong> instance. We will implement a conditional statement into this function so that the <strong class="sou ce-inline">Tool</strong> must be equipped, and the <strong class="sou ce-inline">Debounce</strong> <strong class="sou ce-inline">BoolValue</strong> instance within the <strong class="sou ce-inline">Tool</strong> must be <strong class="sou ce-inline">false</strong>, meaning that the weapon is not in cooldown from its fire rate. If these two conditions are met, we will then set the <strong class="sou ce-inline">Debounce</strong> value to <strong class="sou ce-inline">true</strong> and create a <strong class="sou ce-inline">delay()</strong> function that will set it back to <strong class="sou ce-inline">false</strong> after a period of <strong class="sou ce-inline">60/rateOfFire</strong> passes. </p>
+			<p>Following this, we will call <strong class="sou ce-inline">gunEffects()</strong> and <strong class="sou ce-inline">castRay()</strong>, capturing the information that the latter function returns. Next, we check if any instance was hit; if one was, we find the relative <strong class="sou ce-inline">CFrame</strong> between the object that was hit and the point of intersection between that object and the <strong class="sou ce-inline">raycast</strong>. </p>
+			<p>A relative <strong class="sou ce-inline">CFrame</strong> essentially tells you the position and orientation of one part relative to another. So, if a cylinder with a diameter of <strong class="sou ce-inline">2</strong> studs were hit by a <strong class="sou ce-inline">raycast</strong> so that the intersection point <a id="_idIndexMarker396"></a>between the <strong class="sou ce-inline">raycast</strong> and the cylinder was on the cylinder's front surface, with matching values on the <em class="italic">x</em> and <em class="italic">y</em> axes, then the relative <strong class="sou ce-inline">CFrame</strong> between them would be half of its diameter, or its radius, in the negative direction of the <em class="italic">z</em> axis. A relative <strong class="sou ce-inline">CFrame</strong> is found by multiplying the <strong class="sou ce-inline">CFrame</strong> of a <strong class="sou ce-inline">BasePart</strong> by the inverse of the <strong class="sou ce-inline">CFrame</strong> of the <strong class="sou ce-inline">BasePart</strong> you want to be the origin of the relative system. The inverse of a <strong class="sou ce-inline">CFrame</strong> is obtained by way of the <strong class="sou ce-inline">Inverse()</strong> method of <strong class="bold">CFrames</strong>. You can see a visualization of the previously described relative <strong class="sou ce-inline">CFrame</strong> scenario here in <em class="italic">Figure 6.1</em>, where we multiply the <strong class="sou ce-inline">CFrame</strong> of the intersection point by the inverse of the <strong class="sou ce-inline">CFrame</strong> of the cylinder:</p>
+			<div>
+				<div id="_idContainer058" class="IMG---Figure">
+					<img src="https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/image/Figue_6.1_B16623.jpg" alt="Figure 6.1 – This demonstrates the relative CFrame between an intersection point and a cylinder
+" width="471" height="332">
+				</div>
+			</div>
+			<p class="figure-caption">Figure 6.1 – This demonstrates the relative CFrame between an intersection point and a cylinder</p>
+			<p>Once this value is computed, the <strong class="sou ce-inline">Hit</strong> <strong class="bold">RemoteFunction</strong> in <strong class="sou ce-inline">ReplicatedStorage</strong> is fired, passing along the <strong class="sou ce-inline">Tool</strong>, the hit instance, the direction of the <strong class="sou ce-inline">raycast</strong>, the origin of the <strong class="sou ce-inline">raycast</strong>, the relative <strong class="sou ce-inline">CFrame</strong> of the intersection point and hit instance, and the intersection point in the process. These will all be used for security checks on the server. You should implement the <a id="_idIndexMarker397"></a>following code into your <strong class="sou ce-inline">ToolHandler</strong> script, without alteration:</p>
+			<p class="sou ce-code">local doFire = false</p>
+			<p class="sou ce-code">local function fire()</p>
+			<p class="sou ce-code">    local waitTime = 60/gunSettings.rateOfFire</p>
+			<p class="sou ce-code">    </p>
+			<p class="sou ce-code">    repeat</p>
+			<p class="sou ce-code">        if equipped and not tool.Debounce.Value then</p>
+			<p class="sou ce-code">            tool.Debounce.Value = true</p>
+			<p class="sou ce-code">            delay(waitTime, function()</p>
+			<p class="sou ce-code">                tool.Debounce.Value = false</p>
+			<p class="sou ce-code">            end)</p>
+			<p class="sou ce-code">            gunEffects()</p>
+			<p class="sou ce-code">            local hit, pos, direction, origin =                   castRay()</p>
+			<p class="sou ce-code">            if hit then</p>
+			<p class="sou ce-code">                local relCFrame = hit.CFrame:Inverse()                        * CFrame.new(pos)</p>
+			<p class="sou ce-code">                hitRemote:FireServer(tool, hit,                        direction, origin, relCFrame)</p>
+			<p class="sou ce-code">            end            </p>
+			<p class="sou ce-code">        end</p>
+			<p class="sou ce-code">        wait(waitTime)</p>
+			<p class="sou ce-code">    until not equipped or not doFire or        gunSettings.fireMode ~= "AUTO"</p>
+			<p class="sou ce-code">end</p>
+			<p class="sou ce-code">mouse.Button1Down:Connect(function()</p>
+			<p class="sou ce-code">    doFire = true</p>
+			<p class="sou ce-code">    if char.Humanoid.Health &gt; 0 then</p>
+			<p class="sou ce-code">        fire()</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">end)</p>
+			<p class="sou ce-code">mouse.Button1Up:Connect(function()</p>
+			<p class="sou ce-code">    doFire = false</p>
+			<p class="sou ce-code">end)</p>
+			<p>Now that the <strong class="sou ce-inline">Hit</strong> <strong class="bold">RemoteEvent</strong> is being fired, we need to define the behavior for it on the server. Working again in the <strong class="sou ce-inline">Weapons</strong> module, we will first need to implement a new helper function called <strong class="sou ce-inline">verifyHit()</strong>, which will be passed the instance that was hit, the direction of the <strong class="sou ce-inline">raycast</strong> according to the client, the origin of the <strong class="sou ce-inline">raycast</strong>, the relative <strong class="sou ce-inline">CFrame</strong>, and the settings of the weapon. From this, we will first apply the relative <strong class="sou ce-inline">CFrame</strong> to where the server sees the hit instance to be located. This is a valuable protection, as it will soon help us determine whether the client is falsely firing the <strong class="bold">RemoteEvent</strong> with mismatching information about the target's location. Once the new <strong class="sou ce-inline">CFrame</strong> is found, we take the position component of the <strong class="sou ce-inline">CFrame</strong> and create a new directional vector from the server's view of the intersection point and origin. Since the directional <a id="_idIndexMarker398"></a>vector seen by the server has not had its magnitude changed, taking the magnitude of this vector will give us the distance between the origin and intersection point. If this distance is greater than the value held by <strong class="sou ce-inline">range</strong> in the weapon's <strong class="sou ce-inline">Settings</strong> module, we know something is not right and the user may be attempting to exploit the system, so we will make an early return, which ends the running of the function.</p>
+			<p>Next, we will check if the magnitude of either of these directional vectors is zero. The chances of this happening are extremely unlikely, and if either vector has a magnitude of zero, we will not be able to make the next security check. So, we will once again return a nil value in this case. Next, we will find the angle between the two vectors by using a dot product between the two vectors and dividing by the product of the magnitude of the two vectors. This will give us the cosine of the angle between the two vectors. Due to floating-point errors mentioned in <a href="B16623_03_Final_JC_ePub.xhtml.html#_idTextAnchor054"><em class="italic">Chapter 3</em></a>, <em class="italic">Introduction to Roblox Lua</em>, the number yielded by the two previous calculations may be slightly greater than <strong class="sou ce-inline">1</strong> or slightly less than <strong class="sou ce-inline">-1</strong> if the angle is very close to zero or pi radians. This is a problem as the domain of the arccosine function, which we must use to get the actual angle between the two vectors, exists only from <strong class="sou ce-inline">-1</strong> to <strong class="sou ce-inline">1</strong>, meaning that we would be giving an impossible input to arccosine. To solve this, we can simply implement a conditional statement that says if the cosine of the angle is greater than <strong class="sou ce-inline">1</strong>, the actual angle is <strong class="sou ce-inline">0</strong> radians; if the cosine of the angle is less than <strong class="sou ce-inline">-1</strong>, the actual angle is pi radians. Otherwise, we feed the cosine of the angle to arccosine since it is within the domain of the function. Finally, we convert the angle from radians to degrees, and we officially have the angle between the two vectors in degrees. </p>
+			<p>We want to effectively make a cone of possible discrepancies between what the client sees versus <a id="_idIndexMarker399"></a>what the server observes, to make up for unknown factors and latency. To do this, we will create a new constant in the module called <strong class="sou ce-inline">SECURITY_ANGLE</strong>, which I have made <strong class="sou ce-inline">15</strong> degrees. In <em class="italic">Figure 6.2</em>, you can see a demonstration of how the cone is made. See here how the server directional vector and the client directional vector are allowed to be any of the directional vectors contained within and including the perimeter of the cone:</p>
+			<div>
+				<div id="_idContainer059" class="IMG---Figure">
+					<img src="https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/image/Figure_6.2_B16623.jpg" alt="Figure 6.2 – This screenshot demonstrates the security cone and how it contains infinitely many vectors
+" width="551" height="235">
+				</div>
+			</div>
+			<p class="figure-caption">Figure 6.2 – This screenshot demonstrates the security cone and how it contains infinitely many vectors</p>
+			<p>After getting the angle, a conditional statement is used to make sure the angle between the two directional vectors is less than or equal to the maximum discrepancy we allow. So, if the server's directional vector is within <strong class="sou ce-inline">15</strong> degrees of the client's reported directional vector, then we conclude that this is a valid hit and return a <strong class="sou ce-inline">true</strong> value to where the <a id="_idIndexMarker400"></a>function is called from. You should implement the following code into your <strong class="sou ce-inline">Weapons</strong> module, without alteration:</p>
+			<p class="sou ce-code">local SECURITY_ANGLE = 15</p>
+			<p class="sou ce-code">local function verifyHit(hit, direction, origin, relCFrame,    gunSettings)</p>
+			<p class="sou ce-code">    local target = (hit.CFrame * relCFrame).p</p>
+			<p class="sou ce-code">    local serverDirection = target - origin</p>
+			<p class="sou ce-code">    </p>
+			<p class="sou ce-code">    if serverDirection.Magnitude &gt; gunSettings.range then        return end</p>
+			<p class="sou ce-code">    </p>
+			<p class="sou ce-code">    if serverDirection.Magnitude == 0 or         direction.Magnitude == 0 then return end</p>
+			<p class="sou ce-code">        local combinedVectors =              serverDirection:Dot(direction)</p>
+			<p class="sou ce-code">        local angle = combinedVectors/(direction.Magnitude            *serverDirection.Magnitude)</p>
+			<p class="sou ce-code">    if angle &gt; 1 then</p>
+			<p class="sou ce-code">        angle = 0</p>
+			<p class="sou ce-code">    elseif angle &lt; -1 then</p>
+			<p class="sou ce-code">        angle = math.pi</p>
+			<p class="sou ce-code">    else</p>
+			<p class="sou ce-code">        angle = math.acos(angle)</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">    angle = math.deg(angle)    </p>
+			<p class="sou ce-code">    if angle &lt;= SECURITY_ANGLE then</p>
+			<p class="sou ce-code">        return true</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">end</p>
+			<p>With the <strong class="sou ce-inline">verifyHit()</strong> helper function created, we can now create the event function for when the <strong class="sou ce-inline">Hit</strong> <strong class="bold">RemoteEvent</strong> is fired. The first thing that occurs when the remote is fired is a call to the <strong class="sou ce-inline">playerFromHit()</strong> function, passing along the intersected instance. Note that in the conditional statement following this call we check only that <strong class="sou ce-inline">char</strong> exists, which will <a id="_idIndexMarker401"></a>always be <strong class="sou ce-inline">true</strong> if the hit <strong class="sou ce-inline">BasePart</strong> is a descendant of a model, regardless of whether there is an associated player. This is wanted behavior because we check that <strong class="sou ce-inline">char</strong> exists and that a <strong class="sou ce-inline">Humanoid</strong> instance exists within it, meaning that you can damage both <strong class="bold">non-player characters</strong> (<strong class="bold">NPCs</strong>) and <a id="_idIndexMarker402"></a>actual players with this gun system since we do not require that a player exists. Additionally, we check that the <strong class="sou ce-inline">Debounce</strong> <strong class="sou ce-inline">BoolValue</strong> instance within the passed <strong class="sou ce-inline">Tool</strong> is not in cooldown, to ensure exploiters cannot just spam the <strong class="bold">RemoteEvent</strong> with requests to damage players. If these conditions are met, then we require the <strong class="sou ce-inline">Settings</strong> module of the passed weapon and call the <strong class="sou ce-inline">verifyHit()</strong> function, which will return <strong class="sou ce-inline">true</strong> if the conditions within it are met. </p>
+			<p>Assuming the function returns a passing value, the <strong class="sou ce-inline">Debounce</strong> value in the weapon is set to <strong class="sou ce-inline">true</strong> and a <strong class="sou ce-inline">delay()</strong> function is created to turn it <strong class="sou ce-inline">false</strong> after a period of <strong class="sou ce-inline">60/rateOfFire</strong> passes. Lastly, we index the <strong class="sou ce-inline">Humanoid</strong> instance of the hit character model and check if the health of the <strong class="sou ce-inline">Humanoid</strong> is already less than or equal to <strong class="sou ce-inline">0</strong>, meaning we do not need to do anything. If the target is still alive, then we create a new variable to hold the amount of damage that should be subtracted from its health. </p>
+			<p>If the name of the hit <strong class="sou ce-inline">Part</strong> is named <strong class="sou ce-inline">Head</strong>, then we know this was a headshot and multiply the value held by <strong class="sou ce-inline">headshotMultiplier</strong> by the value of <strong class="sou ce-inline">damage</strong> and set that as the new value of the <strong class="sou ce-inline">damage</strong> variable within the event function of the <strong class="sou ce-inline">Hit</strong> <strong class="bold">RemoteEvent</strong>; this damage is then subtracted from the target's health. If the health of the target is now less than or equal to <strong class="sou ce-inline">0</strong>, we know that the player who fired the shot was the one that killed them, and the player's <strong class="sou ce-inline">Kills</strong> stat is subsequently increased. You should add <a id="_idIndexMarker403"></a>the following function to your module, without alteration:</p>
+			<p class="sou ce-code">hitRemote.OnServerEvent:Connect(function(player, weapon,   hit, direction, origin, relCFrame)    </p>
+			<p class="sou ce-code">    local otherPlayer, char = weapons.playerFromHit(hit)</p>
+			<p class="sou ce-code">    </p>
+			<p class="sou ce-code">    if char and char:FindFirstChildOfClass("Humanoid") and         not weapon.Debounce.Value then</p>
+			<p class="sou ce-code">        local gunSettings = require(weapon.Settings)</p>
+			<p class="sou ce-code">        </p>
+			<p class="sou ce-code">        if verifyHit(hit, direction, origin, relCFrame,              gunSettings) then</p>
+			<p class="sou ce-code">            weapon.Debounce.Value = true</p>
+			<p class="sou ce-code">            local waitTime = 60/gunSettings.rateOfFire</p>
+			<p class="sou ce-code">            delay(waitTime, function()</p>
+			<p class="sou ce-code">                weapon.Debounce.Value = false</p>
+			<p class="sou ce-code">            end)</p>
+			<p class="sou ce-code">            </p>
+			<p class="sou ce-code">            local hum =                       char:FindFirstChildOfClass("Humanoid")</p>
+			<p class="sou ce-code">            if hum.Health &gt; 0 then</p>
+			<p class="sou ce-code">                local damage = gunSettings.damage</p>
+			<p class="sou ce-code">                if hit.Name == "Head" then</p>
+			<p class="sou ce-code">                    damage = damage *                              gunSettings.headshotMultiplier</p>
+			<p class="sou ce-code">                end</p>
+			<p class="sou ce-code">                </p>
+			<p class="sou ce-code">                </p>
+			<p class="sou ce-code">                hum.Health = hum.Health - damage</p>
+			<p class="sou ce-code">                </p>
+			<p class="sou ce-code">                if hum.Health &lt;= 0 then</p>
+			<p class="sou ce-code">                    dataMod.increment(player,                                "Kills", 1)</p>
+			<p class="sou ce-code">                end</p>
+			<p class="sou ce-code">            end</p>
+			<p class="sou ce-code">        end</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">end) </p>
+			<p>This section has taught you a great deal about security and working with reliable hit detection <a id="_idIndexMarker404"></a>methods. In the next section, we will introduce the concept of local replication into your weapons system and handle the behavior that should occur when the <strong class="sou ce-inline">Replicate</strong> <strong class="bold">RemoteEvent</strong> is fired.</p>
+			<h1 id="_idParaDest-122"><a id="_idTextAnchor126"></a>Local replication</h1>
+			<p><strong class="bold">Local replication</strong> is a term used to describe the process of a client sending a signal to the server, which in turn <a id="_idIndexMarker405"></a>is sent to other clients to replicate different occurrences with the benefits of local behaviors. For example, if a client generated a projectile visualizer locally, nobody but that player would be able to see it. If the visualizer were on the server it would be subject to the latency and lower refresh rate of the server, causing janky visuals. When a client wanting to replicate an effect sends the needed information to the server so that the effect may be generated for a different user by their own client, then you can maintain accurate and virtually lossless visuals.</p>
+			<p>To do this, we will need to create a new <strong class="sou ce-inline">OnServerEvent</strong> event function for the <strong class="sou ce-inline">Replicate</strong> <strong class="bold">RemoteEvent</strong> in <strong class="sou ce-inline">ReplicatedStorage</strong>. This should already be defined from when you created the <strong class="sou ce-inline">Weapons</strong> module earlier. The parameters of this event function are the player who fired the remote, the weapon they used, the origin of their <strong class="sou ce-inline">raycast</strong>, and the intersection point of their <strong class="sou ce-inline">raycast</strong>. From these values, we will have the server compute the length and <strong class="sou ce-inline">CFrame</strong> of the visualizer, as well as require the <strong class="sou ce-inline">Settings</strong> module of the weapon, before sending this information to all clients via the <strong class="sou ce-inline">FireAllClients()</strong> method of the <strong class="bold">RemoteEvent</strong>. The code for this is shown here:</p>
+			<p class="sou ce-code">replicateRemote.OnServerEvent:Connect(function(player,   weapon, origin, target)</p>
+			<p class="sou ce-code">    local length = (target - origin).Magnitude</p>
+			<p class="sou ce-code">    local visualCFrame = CFrame.new(origin, target) *         CFrame.new(0,0,-length/2)</p>
+			<p class="sou ce-code">    local gunSettings = require(weapon.Settings)</p>
+			<p class="sou ce-code">    </p>
+			<p class="sou ce-code">    replicatedStorage.Replicate:FireAllClients(player,        gunSettings, visualCFrame, length)</p>
+			<p class="sou ce-code">end)</p>
+			<p>With the <a id="_idIndexMarker406"></a>signal sent, we must allow every client to receive it and handle the logic for local replication accordingly. To do this, we will add a new <strong class="bold">LocalScript</strong> under <strong class="sou ce-inline">StarterPlayerScripts</strong>, titled <strong class="sou ce-inline">LocalHandler</strong>. Since we will have multiple client-sided systems you should create this handler to be modular, using the following code, which was also included in the <strong class="sou ce-inline">ServerHandler</strong> script:</p>
+			<p class="sou ce-code">for _, module in pairs(script:GetChildren()) do</p>
+			<p class="sou ce-code">    local loadMod = coroutine.create(function()</p>
+			<p class="sou ce-code">        require(module)</p>
+			<p class="sou ce-code">    end)</p>
+			<p class="sou ce-code">    coroutine.resume(loadMod)</p>
+			<p class="sou ce-code">end</p>
+			<p>With the <strong class="sou ce-inline">LocalHandler</strong> script now created, the next step is to parent a new module titled <strong class="sou ce-inline">Replication</strong> to it. In the following code, you can see that we define the necessary services and references, as well as the <strong class="sou ce-inline">Replicate</strong> <strong class="bold">RemoteEvent</strong>. This module only needs to have one main functionality for replication, which is receiving the signal from <strong class="bold">RemoteEvent</strong> when all clients are fired. By using the <strong class="sou ce-inline">OnClientEvent</strong> event of the <strong class="sou ce-inline">Replicate</strong> <strong class="bold">RemoteEvent</strong>, we check that the player who used their weapon is not the same player we are trying to replicate to, as this would result in two projectiles. If this condition is met, we can then create a visualizer with the provided information regarding <strong class="sou ce-inline">CFrame</strong> and length while using the <strong class="sou ce-inline">Settings</strong> module from the weapon to apply the <a id="_idIndexMarker407"></a>correct width, height, color, and time that the visualizer is visible. The code for this is shown here:</p>
+			<p class="sou ce-code">local playerService = game:GetService("Players")</p>
+			<p class="sou ce-code">local replicatedStorage =   game:GetService("ReplicatedStorage")</p>
+			<p class="sou ce-code">local player = playerService.LocalPlayer</p>
+			<p class="sou ce-code">local replication = {}</p>
+			<p class="sou ce-code">local replicateRemote = replicatedStorage.Replicate</p>
+			<p class="sou ce-code">replicateRemote.OnClientEvent:Connect(function(otherPlayer,   gunSettings, cframe, length)</p>
+			<p class="sou ce-code">    if otherPlayer ~= player then</p>
+			<p class="sou ce-code">        local visual = Instance.new("Part")</p>
+			<p class="sou ce-code">        visual.Anchored = true</p>
+			<p class="sou ce-code">        visual.CanCollide = false</p>
+			<p class="sou ce-code">        visual.Material = Enum.Material.Neon</p>
+			<p class="sou ce-code">        visual.Color = gunSettings.rayColor</p>
+			<p class="sou ce-code">        visual.Size = Vector3.new(gunSettings.raySize.X,              gunSettings.raySize.Y, length)</p>
+			<p class="sou ce-code">        visual.CFrame = cframe</p>
+			<p class="sou ce-code">        visual.Parent = workspace.Effects</p>
+			<p class="sou ce-code">        game.Debris:AddItem(visual,              gunSettings.debrisTime)</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">end)</p>
+			<p class="sou ce-code">return replication</p>
+			<p>For the next section, you are encouraged to add models to your weapons. If you want to use more unique models, instead of looking in the <strong class="bold">Toolbox</strong>, try following a Blender tutorial or downloading a weapon asset pack for your game.</p>
+			<p>The <strong class="bold">Parts</strong> of your weapon model will all need to be welded to your <strong class="bold">Handle</strong> <strong class="bold">Part</strong>, as that is where the player grips the <strong class="sou ce-inline">Tool</strong>. If you are struggling to weld your weapons manually or with your own script in the <strong class="bold">Command Bar</strong>, try using the <strong class="sou ce-inline">qPerfectionWeld</strong> script made by <strong class="bold">Quenty</strong> from the <strong class="bold">Toolbox</strong>. This script will automatically weld all the parts within your gun model as long as the script is parented to it. You should <a id="_idIndexMarker408"></a>create a new <strong class="sou ce-inline">Folder</strong> in <strong class="sou ce-inline">ReplicatedStorage</strong> titled <strong class="sou ce-inline">Weapons</strong>, and parent any weapons that you create to this <strong class="sou ce-inline">Folder</strong>. Remember that you should assign one of the weapons in this <strong class="sou ce-inline">Folder</strong> to be the default weapon players spawn with in your game loop. Since this will be a default weapon, it should be a weapon that is not very powerful, such as a pistol with a slower rate of fire.</p>
+			<p>With the weapons system now created, we move on to the next section, in which we will learn how to make spawn points that players can find around the map that have randomly selected weapons to use against enemies. </p>
+			<h1 id="_idParaDest-123"><a id="_idTextAnchor127"></a>Spawning loot</h1>
+			<p>As in most Battle Royale games, players will start off with a mediocre starting weapon and then begin looting around the map for better weapons. In this section, we will be creating a system <a id="_idIndexMarker409"></a>that spawns weapons around the map for players to find and use. Keep in mind that for this system, you should have several weapons designed using the weapon system we made previously; the more weapons there are to find, the more players will continue to look for them.</p>
+			<p>To start this system, add a new module titled <strong class="sou ce-inline">Loot</strong> to the <strong class="sou ce-inline">ServerHandler</strong> script. In this module, add the following code, which defines the services and other references we will need, as well as making the spawn parts hidden, anchored, and made so that you cannot collide with them. As you may see, we will need a new <strong class="sou ce-inline">Folder</strong> called <strong class="sou ce-inline">LootSpawns</strong> that will contain <strong class="bold">Parts</strong> that weapons will spawn on. By default, weapon models will spawn one stud above the position of the <strong class="sou ce-inline">Part</strong> itself, so keep this in mind when placing <a id="_idIndexMarker410"></a>them unless you intend to change this. The following code can be added to the <strong class="sou ce-inline">Loot</strong> module, without alteration:</p>
+			<p class="sou ce-code">local replicatedStorage =   game:GetService("ReplicatedStorage")</p>
+			<p class="sou ce-code">local lootSpawns = workspace.LootSpawns</p>
+			<p class="sou ce-code">local weaponFolder = replicatedStorage.Weapons</p>
+			<p class="sou ce-code">local random = Random.new()</p>
+			<p class="sou ce-code">local weapons = require(script.Parent.Weapons)</p>
+			<p class="sou ce-code">local loot = {}</p>
+			<p class="sou ce-code">for _, spawnPoint in pairs(lootSpawns:GetChildren()) do</p>
+			<p class="sou ce-code">    spawnPoint.Anchored = true</p>
+			<p class="sou ce-code">    spawnPoint.CanCollide = false</p>
+			<p class="sou ce-code">    spawnPoint.Transparency = 1</p>
+			<p class="sou ce-code">end</p>
+			<p class="sou ce-code">return loot</p>
+			<p>With the module now set up, we must implement a new function into the module that spawns one random weapon at each loot spawn location. To prepare for this, let's introduce a helper function called <strong class="sou ce-inline">makeWeaponModel()</strong>. This function takes a <strong class="sou ce-inline">Tool</strong> instance and extracts the <strong class="sou ce-inline">BasePart</strong> instances from it, placing them into a new <strong class="sou ce-inline">Model</strong>. We do not need to keep scripts or any other types of instance, so whatever is left in the <strong class="sou ce-inline">Tool</strong> is destroyed. This new model will serve as the weapon displayed to players on the map. You should now add this helper function into the <strong class="sou ce-inline">Loot</strong> module, as follows:</p>
+			<p class="sou ce-code">local function makeWeaponModel(weapon)</p>
+			<p class="sou ce-code">    local weaponModel = Instance.new("Model")</p>
+			<p class="sou ce-code">    for _, child in pairs(weapon:GetDescendants()) do</p>
+			<p class="sou ce-code">        if child:IsA("BasePart") then</p>
+			<p class="sou ce-code">            child.Parent = weaponModel</p>
+			<p class="sou ce-code">            child.Anchored = true</p>
+			<p class="sou ce-code">            child:ClearAllChildren()</p>
+			<p class="sou ce-code">        end</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">    </p>
+			<p class="sou ce-code">    weapon:Destroy()</p>
+			<p class="sou ce-code">    </p>
+			<p class="sou ce-code">    return weaponModel</p>
+			<p class="sou ce-code">end</p>
+			<p>Now, for the main behavior of this module, add a new function named <strong class="sou ce-inline">spawnWeapons()</strong>. This function will use a <strong class="sou ce-inline">for</strong> loop to iterate over all <strong class="sou ce-inline">Parts</strong> in the <strong class="sou ce-inline">LootSpawns</strong> <strong class="sou ce-inline">Folder</strong> and add weapons to be picked up by players at each location. We will be parenting <a id="_idIndexMarker411"></a>the weapon model to the spawn part, so we will first check that there is no weapon in the <strong class="sou ce-inline">Part</strong> already and delete it if there is. Next, we will create a pool of weapons and assign the table to the <strong class="sou ce-inline">weaponPool</strong> variable. This pool can be anything; you can change this to contain a different table of weapons if you want certain spawns to be custom, but for this example we will just use the entire <strong class="sou ce-inline">Weapons</strong> <strong class="sou ce-inline">Folder</strong> from <strong class="sou ce-inline">ReplicatedStorage</strong>. </p>
+			<p>Once we create a table of the weapons contained in the <strong class="sou ce-inline">Folder</strong>, we will create a random index and capture and clone the weapon at the associated table position. Now, we utilize the <strong class="sou ce-inline">makeWeaponModel()</strong> function to create the display model that players will see. With the model now made, we create a new <strong class="sou ce-inline">Part</strong> that will act as the <strong class="sou ce-inline">PrimaryPart</strong> of the <strong class="sou ce-inline">Model</strong>. This part is made so that we can reposition the <strong class="sou ce-inline">Model</strong> as a whole using the <strong class="sou ce-inline">SetPrimaryPartCFrame()</strong> method of <strong class="sou ce-inline">Model</strong> instances and so that we can use the <strong class="sou ce-inline">Part</strong> as a hitbox. To make this <strong class="sou ce-inline">Part</strong> fit for use as a hitbox, we use the <strong class="sou ce-inline">GetBoundingBox()</strong> method of <strong class="sou ce-inline">Model</strong><strong class="bold"> </strong>instances, which returns the <strong class="sou ce-inline">CFrame</strong> description of the <strong class="sou ce-inline">Model</strong> as a whole, as well as the smallest bounding box that contains the <strong class="sou ce-inline">Model</strong>. </p>
+			<p>Lastly, we will make a new <strong class="sou ce-inline">Touched</strong> event function that checks that a player has touched the <strong class="sou ce-inline">PrimaryPart</strong>. The weapon <strong class="sou ce-inline">Tool</strong> that is associated with the display model is then parented to the player's backpack, and the weapon model is destroyed so that it cannot be <a id="_idIndexMarker412"></a>collected again. You should add the following code into the <strong class="sou ce-inline">Loot</strong> module, without alteration unless you are aware of what you are doing: </p>
+			<p class="sou ce-code">loot.spawnWeapons = function()</p>
+			<p class="sou ce-code">    for _, spawnPoint in pairs(lootSpawns:GetChildren())        do</p>
+			<p class="sou ce-code">        local oldModel =              spawnPoint:FindFirstChildOfClass("Model")</p>
+			<p class="sou ce-code">        if oldModel then</p>
+			<p class="sou ce-code">            oldModel:Destroy()</p>
+			<p class="sou ce-code">        end</p>
+			<p class="sou ce-code">        </p>
+			<p class="sou ce-code">        local weaponPool = weaponFolder:GetChildren()</p>
+			<p class="sou ce-code">        local randomIndex = random:NextInteger(1,              #weaponPool)</p>
+			<p class="sou ce-code">        local weapon = weaponPool[randomIndex]:Clone()</p>
+			<p class="sou ce-code">        local weaponName = weapon.Name</p>
+			<p class="sou ce-code">        local weaponModel = makeWeaponModel(weapon)</p>
+			<p class="sou ce-code">        weaponModel.Parent = spawnPoint</p>
+			<p class="sou ce-code">                </p>
+			<p class="sou ce-code">        local primaryPart = Instance.new("Part")</p>
+			<p class="sou ce-code">        primaryPart.Anchored = true</p>
+			<p class="sou ce-code">        primaryPart.CanCollide = false</p>
+			<p class="sou ce-code">        primaryPart.Transparency = 1</p>
+			<p class="sou ce-code">        primaryPart.CFrame, primaryPart.Size =              weaponModel:GetBoundingBox()</p>
+			<p class="sou ce-code">        primaryPart.Parent = weaponModel</p>
+			<p class="sou ce-code">        </p>
+			<p class="sou ce-code">        weaponModel.PrimaryPart = primaryPart</p>
+			<p class="sou ce-code">        local newCFrame = CFrame.new(spawnPoint.CFrame.p)             * CFrame.new(0,1,0)</p>
+			<p class="sou ce-code">        weaponModel:SetPrimaryPartCFrame(newCFrame)</p>
+			<p class="sou ce-code">        </p>
+			<p class="sou ce-code">        primaryPart.Touched:Connect(function(hit)</p>
+			<p class="sou ce-code">            local player, char =                   weapons.playerFromHit(hit)</p>
+			<p class="sou ce-code">            if player and char then</p>
+			<p class="sou ce-code">        local tool =                weaponFolder:FindFirstChild(weaponName):</p>
+			<p class="sou ce-code">              Clone()</p>
+			<p class="sou ce-code">                tool.Parent = player.Backpack</p>
+			<p class="sou ce-code">                char.Humanoid:EquipTool(tool)</p>
+			<p class="sou ce-code">                weaponModel:Destroy()</p>
+			<p class="sou ce-code">            end</p>
+			<p class="sou ce-code">        end)</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">end</p>
+			<p>With these functions now implemented, <em class="italic">it is important that in the </em><strong class="sou ce-inline">GameRunner</strong><em class="italic"> module you define the </em><strong class="sou ce-inline">Loot</strong><em class="italic"> module and add the line </em><strong class="sou ce-inline">lootMod.spawnWeapons()</strong><em class="italic"> at the start of each round, after players are added to the </em><strong class="sou ce-inline">competitors</strong><em class="italic"> table.</em> We do this to make sure new loot spawns at each loot spawn location at the beginning of each round.</p>
+			<p>If you want to make finding weapons more exciting, you can add sounds or particles to the weapon display model to give them a sort of glow or shine. You should also now have the skills <a id="_idIndexMarker413"></a>to add a rarity system if you desire. By making a module of weapon names with an associated rarity for each weapon, you can make different values of chances for the tier of the weapon that spawns. This may not be necessary for your game, but it may make players feel more rewarded when they acquire a weapon that is considered rare.</p>
+			<h1 id="_idParaDest-124"><a id="_idTextAnchor128"></a>Setting up the frontend</h1>
+			<p>With the backend of the game fully complete, the remainder of this chapter will be used to create <a id="_idIndexMarker414"></a>what players will interact with most directly. This will primarily include working with the UI.</p>
+			<h2 id="_idParaDest-125"><a id="_idTextAnchor129"></a>Working with the UI </h2>
+			<p>Up until this point, we have stayed away from creating or using any interface. The closest thing we <a id="_idIndexMarker415"></a>have come to it is working with the <strong class="sou ce-inline">leaderstats</strong> system, which is entirely automated. In this section, we will be creating a simple UI using instances provided by Roblox in order to become familiar with their associated properties, to display important information to players, and to provide additional engaging features.</p>
+			<h3>Game message and remaining players display</h3>
+			<p>To create a UI for <a id="_idIndexMarker416"></a>your game, the first thing that you will need <a id="_idIndexMarker417"></a>to do is navigate to the <strong class="bold">StarterGui</strong> service under the <strong class="bold">Explorer</strong>. After finding it, you should parent a new <strong class="sou ce-inline">ScreenGui</strong> instance directly to the service and name it <strong class="sou ce-inline">Main</strong>. By default, the properties of the <strong class="sou ce-inline">ScreenGui</strong> instance should not need any changes. These instances serve as containers for the UI that players will actually see and interact with on their screen; the instance itself is not visible. Next, we will add a <strong class="bold">TextLabel</strong> instance and name it <strong class="sou ce-inline">Message</strong>. This label will display the text that the server assigns to the <strong class="sou ce-inline">StringValue</strong> instance named <strong class="sou ce-inline">Message</strong> that you created and added to <strong class="sou ce-inline">ReplicatedStorage</strong>. After doing this, add another <strong class="bold">TextLabel</strong> instance named <strong class="sou ce-inline">Remaining</strong>. This label will function similarly to the previous one but will display the text of the <strong class="sou ce-inline">StringValue</strong> in <strong class="sou ce-inline">ReplicatedStorage</strong>, named <strong class="sou ce-inline">Remaining</strong>. After doing this, your <strong class="bold">StarterGui</strong> service in the <strong class="bold">Explorer</strong> should look like this: </p>
+			<p class="figure-caption"> </p>
+			<div>
+				<div id="_idContainer060" class="IMG---Figure">
+					<img src="https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/image/Figure_6.3_B16623.jpg" alt="Figure 6.3 – This image shows how the TextLabel instances should be parented to the ScreenGui instance
+" width="179" height="98">
+				</div>
+			</div>
+			<p class="figure-caption">Figure 6.3 – This image shows how the TextLabel instances should be parented to the ScreenGui instance</p>
+			<p>Now that you have added the needed instances to the <strong class="sou ce-inline">ScreenGui</strong>, we will need to change the <a id="_idIndexMarker418"></a>properties of them so that they have a proper appearance <a id="_idIndexMarker419"></a>on the screens of players. Let's take a look at the different properties of the <strong class="bold">TextLabel</strong> instances that should be changed from their defaults, as follows:</p>
+			<ul>
+				<li>The most important aspect of the <strong class="bold">TextLabel</strong> is the <strong class="sou ce-inline">Text</strong> property. This property is a string and, for the purpose of this game, it should be blank by default for both labels. Additionally, you should enable the <strong class="sou ce-inline">TextScaled</strong> property of the labels, which will automatically scale the size of the font to fill the box; this property is located toward the bottom of the property list.</li>
+				<li>The <strong class="sou ce-inline">ZIndex</strong> property is used to determine the order in which UI elements are displayed. For example, a <strong class="bold">TextLabel</strong> with a <strong class="sou ce-inline">ZIndex</strong> value of <strong class="sou ce-inline">2</strong> would be placed above or on top of a <strong class="bold">TextLabel</strong> with a <strong class="sou ce-inline">ZIndex</strong> value of <strong class="sou ce-inline">1</strong>. </li>
+				<li>The <strong class="sou ce-inline">BackgroundColor3</strong> and <strong class="sou ce-inline">BackgroundTransparency</strong> properties are used to change the appearance of the background of several UI instances, using a <strong class="sou ce-inline">Color3</strong> value and a number respectively. For our uses, we will be setting the background of the <strong class="sou ce-inline">Message</strong> <strong class="bold">TextLabel</strong> to be semi-transparent and gray. Furthermore, since we will be working with a gray background, we will want to set the <strong class="sou ce-inline">TextColor3</strong> property to a lighter color, preferably something close to white.</li>
+				<li>The <strong class="sou ce-inline">Size</strong> and <strong class="sou ce-inline">Position</strong> properties are used to determine the appearance of UI instances. These properties take a <strong class="sou ce-inline">UDim2</strong> userdata, which, like most userdata types, is constructed via the <strong class="sou ce-inline">.new()</strong> constructor. A <strong class="sou ce-inline">UDim2</strong> consists of four elements, which alternate between two <strong class="sou ce-inline">size</strong> types called <em class="italic">scale</em> and <em class="italic">offset</em>. For this game, we will only use scale, meaning that if we wanted to create a value for <strong class="sou ce-inline">Size</strong> that covers the entire screen, we would do <strong class="sou ce-inline">UDim2.new(1, 0, 1, 0)</strong>.</li>
+				<li>The <strong class="sou ce-inline">AnchorPoint</strong> property is part of many UI instances. This property is a <strong class="sou ce-inline">Vector2</strong> userdata and changes the point at which the interface is positioned, as well as how the interface expands or contracts with size changes. For a UI element to be universally centered, the <strong class="sou ce-inline">AnchorPoint</strong> property would need to be <strong class="sou ce-inline">Vector2.new(0.5, 0.5)</strong> and the <strong class="sou ce-inline">Position</strong> property would be <strong class="sou ce-inline">UDim2.new(0.5, 0, 0.5, 0)</strong>.</li>
+			</ul>
+			<p>Looking at <em class="italic">Figure 6.4</em>, we can see that we will need to manipulate all of the listed properties. You do not need to set these properties in a script, and are in fact encouraged to <a id="_idIndexMarker420"></a>just set them from the <strong class="bold">Properties</strong> menu of Studio. The <strong class="sou ce-inline">AnchorPoint</strong> property of the <strong class="sou ce-inline">Message</strong> label should be <strong class="sou ce-inline">Vector2.new(0.5, 0.5)</strong>. This label will span the entire width of the screen and serve as the background <a id="_idIndexMarker421"></a>for both labels. To do this, we will first set the <strong class="sou ce-inline">BackgroundColor3</strong> and <strong class="sou ce-inline">BackgroundTransparency</strong> properties to <strong class="sou ce-inline">Color3.fromRGB(86, 86 ,86)</strong> and <strong class="sou ce-inline">0.5</strong> respectively. Once this is complete, we will change the <strong class="sou ce-inline">Size</strong> of the <strong class="sou ce-inline">Message</strong> label to <strong class="sou ce-inline">UDim2.new(1, 0, 0.1, 0)</strong> and the <strong class="sou ce-inline">Position</strong> to <strong class="sou ce-inline">UDim2.new(0.5, 0, 0.05, 0)</strong>; this should make it span the width of the screen and be placed at the top and center of your screen. With these changes, the <strong class="sou ce-inline">Message</strong> label is good to go.</p>
+			<p>Now, let's look at the <strong class="sou ce-inline">Remaining</strong> label. This label will have the same <strong class="sou ce-inline">AnchorPoint</strong> property as the <strong class="sou ce-inline">Message</strong> label. The <strong class="sou ce-inline">BackgroundTransparency</strong> property, however, should be <strong class="sou ce-inline">1</strong>, as we are using the background from the <strong class="sou ce-inline">Message</strong> label as the background for this label. Once these changes have been made, change the <strong class="sou ce-inline">ZIndex</strong> value of the label from <strong class="sou ce-inline">1</strong> to <strong class="sou ce-inline">2</strong> to ensure that this label is displayed in front of the background. Lastly, we will need to change the <strong class="sou ce-inline">Size</strong> and <strong class="sou ce-inline">Position</strong> properties of the label to be nicely offset from the <strong class="sou ce-inline">Message</strong> label. You should set the <strong class="sou ce-inline">Size</strong> and <strong class="sou ce-inline">Position</strong> properties to <strong class="sou ce-inline">UDim2.new(0.2, 0, 0.1, 0)</strong> and <strong class="sou ce-inline">UDim2.new(0.85, 0, 0.05, 0)</strong> respectively. This will <a id="_idIndexMarker422"></a>set the <strong class="sou ce-inline">Remaining</strong> label at the same height <a id="_idIndexMarker423"></a>as the <strong class="sou ce-inline">Message</strong> label, with a position offset to the right end of its background. </p>
+			<p>On a minor note, you may also want to set the <strong class="sou ce-inline">BorderPixelSize</strong> property of both labels to <strong class="sou ce-inline">0</strong>; this property creates an outline for visibility but is not considered very attractive.</p>
+			<p>The listed properties are shown in the following screenshot: </p>
+			<p class="figure-caption">  </p>
+			<div>
+				<div id="_idContainer061" class="IMG---Figure">
+					<img src="https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/image/Figure_6.4_B16623.jpg" alt="Figure 6.4 – This shows the properties of the two TextLabel instances within the ScreenGui
+" width="434" height="545">
+				</div>
+			</div>
+			<p class="figure-caption">Figure 6.4 – This shows the properties of the two TextLabel instances within the ScreenGui</p>
+			<p>With the UI instances <a id="_idIndexMarker424"></a>now properly configured, you will need to <a id="_idIndexMarker425"></a>create a new <strong class="bold">LocalScript</strong> and add it to the <strong class="sou ce-inline">ScreenGui</strong> instance. This script should be titled <strong class="sou ce-inline">UIHandler</strong>, and since we will be working with multiple UI systems, you should create it to be modular. Once again, the code that will require each module to be parented to this script has been included for your convenience here:</p>
+			<p class="sou ce-code">for _, module in pairs(script:GetChildren()) do</p>
+			<p class="sou ce-code">    local loadMod = coroutine.create(function()</p>
+			<p class="sou ce-code">        require(module)</p>
+			<p class="sou ce-code">    end)</p>
+			<p class="sou ce-code">    coroutine.resume(loadMod)</p>
+			<p class="sou ce-code">end</p>
+			<p>With the <strong class="sou ce-inline">UIHandler</strong> script now created, add a new module to it called <strong class="sou ce-inline">Display</strong>. In the following code, you will see that we index <strong class="sou ce-inline">ReplicatedStorage</strong>, the <strong class="sou ce-inline">ScreenGui</strong> that the <strong class="sou ce-inline">UIHandler</strong> is parented to, as well as the <strong class="sou ce-inline">StringValue</strong> instances in <strong class="sou ce-inline">ReplicatedStorage</strong>. For abbreviation, we also index the two <strong class="bold">TextLabels</strong> that will be used to display the values of the <strong class="sou ce-inline">Message</strong> and <strong class="sou ce-inline">Remaining</strong> <strong class="sou ce-inline">StringValue</strong> instances.</p>
+			<p>Next, by way of the <strong class="sou ce-inline">GetPropertyChangedSignal()</strong> method of instances, we will update the <strong class="sou ce-inline">Text</strong> property of the <strong class="bold">TextLabel</strong> instances to the new value held by the <strong class="sou ce-inline">StringValue</strong><strong class="bold"> </strong>instances only when their <strong class="sou ce-inline">Value</strong> property changes. We implement this event function rather than a loop because it is more performant. This way, we are only making assignments when <a id="_idIndexMarker426"></a>the values change rather than over any given <a id="_idIndexMarker427"></a>interval when we do not necessarily need to. You should add the following code to the module, without alteration unless you know a specific change you want to make to the displayed text:</p>
+			<p class="sou ce-code">local replicatedStorage =   game:GetService("ReplicatedStorage")</p>
+			<p class="sou ce-code">local gui = script.Parent.Parent</p>
+			<p class="sou ce-code">local message = replicatedStorage.Message</p>
+			<p class="sou ce-code">local remaining = replicatedStorage.Remaining</p>
+			<p class="sou ce-code">local display = {}</p>
+			<p class="sou ce-code">local messageLabel = gui:WaitForChild("Message")</p>
+			<p class="sou ce-code">local remainingLabel = gui:WaitForChild("Remaining")</p>
+			<p class="sou ce-code">messageLabel.Text = message.Value</p>
+			<p class="sou ce-code">remainingLabel.Text = remaining.Value</p>
+			<p class="sou ce-code">message:GetPropertyChangedSignal("Value"):</p>
+			<p class="sou ce-code">  Connect(function()</p>
+			<p class="sou ce-code">    messageLabel.Text = message.Value</p>
+			<p class="sou ce-code">end)</p>
+			<p class="sou ce-code">remaining:GetPropertyChangedSignal("Value"):</p>
+			<p class="sou ce-code"> Connect(function()</p>
+			<p class="sou ce-code">    remainingLabel.Text = remaining.Value</p>
+			<p class="sou ce-code">end)</p>
+			<p class="sou ce-code">return display</p>
+			<p>The next topic <a id="_idIndexMarker428"></a>we cover will be UIs that may keep players in <a id="_idIndexMarker429"></a>your game even if they continuously lose.</p>
+			<h3>Making a spectate menu</h3>
+			<p>As mentioned before, when competitors die and return to the lobby, you will want to keep them <a id="_idIndexMarker430"></a>engaged so that they do not simply leave your game out of boredom or anger. A good system to implement is a spectate menu, whereby players will be able to view the remaining competitors and cycle through them with the simple click of a button.</p>
+			<p>Since we will be working with multiple UI elements that we will want to make visible or invisible all at once, we will need to implement a <strong class="bold">Frame</strong> instance. This instance is most often used to serve as a container for other UI instances. The reason we want to implement a <strong class="bold">Frame</strong> instance here is because we can instantly make all of the UI elements associated with this system appear or disappear by changing the <strong class="sou ce-inline">Visible</strong> property of the <strong class="bold">Frame</strong> instance; this reduces the amount of code you must write and improves physical organization, as visible in the <strong class="bold">Explorer</strong>. You should name this <strong class="bold">Frame</strong> instance <strong class="sou ce-inline">Spectate</strong> and universally center it, make its size the full size of the screen, and make its background transparent. This will ensure that there is no difference in behavior for scaling or <a id="_idIndexMarker431"></a>position when UI elements are parented here. You can see the properties of a properly configured <strong class="bold">Frame</strong> instance in the following screenshot: </p>
+			<div>
+				<div id="_idContainer062" class="IMG---Figure">
+					<img src="https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/image/Figure_6.5_B16623.jpg" alt="Figure 6.5 – This screenshot shows what the properties of the Spectate Frame instance should be
+" width="241" height="442">
+				</div>
+			</div>
+			<p class="figure-caption">Figure 6.5 – This screenshot shows what the properties of the Spectate Frame instance should be</p>
+			<p>After creating and sizing your <strong class="bold">Frame</strong> instance, you will need to create three <strong class="bold">TextButton</strong> instances and one <strong class="bold">TextLabel</strong> instance. <strong class="bold">TextButtons</strong> are like <strong class="bold">TextLabels</strong> but have the ability to detect when they are being interacted with via events. Since the <strong class="bold">TextButton</strong> instance is part of the same family as <strong class="bold">TextLabels</strong>, the properties are nearly identical. You should create a button for toggling the <strong class="bold">spectate</strong> UI, two buttons for going forward and backward through the remaining players, and one <strong class="bold">TextLabel</strong> instance to <a id="_idIndexMarker432"></a>display the name of the player you are currently spectating. You may notice that this UI is best described as aesthetically primitive. If you want to learn how to beautify your UI, I suggest referring to the following <a id="_idIndexMarker433"></a>articles and others like them on the developer website:</p>
+			<p><a href="https://developer.roblox.com/en-us/articles/Intro-to-GUIs">https://developer.roblox.com/en-us/articles/Intro-to-GUIs</a></p>
+			<p><a href="https://developer.roblox.com/en-us/articles/Creating-GUI-Buttons">https://developer.roblox.com/en-us/articles/Creating-GUI-Buttons</a></p>
+			<p>The following <a id="_idIndexMarker434"></a>screenshot shows how I configured my UI. This is a good layout for several reasons, including it being intuitive for the user, with clearly shown buttons that indicate what they do by appearance as well as showing some information about who they are spectating. While the layout of the following UI is good it is basic, and the design of the buttons is primitive. When making a project of your own, you should make—or hire someone to make—a UI that is colorful and engaging for your players:</p>
+			<div>
+				<div id="_idContainer063" class="IMG---Figure">
+					<img src="https://learning.oreilly.com/library/view/coding-roblox-games/9781800561991/image/Figure_6.6_B16623.jpg" alt="Figure 6.6 – This shows the Spectate Frame instance, Toggle button, and Message and Remaining TextLabels
+" width="1027" height="581">
+				</div>
+			</div>
+			<p class="figure-caption">Figure 6.6 – This shows the Spectate Frame instance, Toggle button, and Message and Remaining TextLabels</p>
+			<p>The first step of creating this new system will require that you add a new module to the <strong class="sou ce-inline">UIHandler</strong> script, named <strong class="sou ce-inline">Spectate</strong>. You can see in the following code that we define which services will be needed for the system as well as the <strong class="bold">Frame</strong> and the UI elements within it. Moreover, we create some other variables that will be used to help us track information <a id="_idIndexMarker435"></a>when the system is being used. You should add the following code into the module, without alteration:</p>
+			<p class="sou ce-code">local replicatedStorage =   game:GetService("ReplicatedStorage")</p>
+			<p class="sou ce-code">local playerService = game:GetService("Players")</p>
+			<p class="sou ce-code">local player = playerService.LocalPlayer</p>
+			<p class="sou ce-code">local cam = workspace.CurrentCamera</p>
+			<p class="sou ce-code">local spectate = {}</p>
+			<p class="sou ce-code">local gui = script.Parent.Parent</p>
+			<p class="sou ce-code">local spectateFrame = gui:WaitForChild("Spectate")</p>
+			<p class="sou ce-code">local toggle = gui:WaitForChild("Toggle")</p>
+			<p class="sou ce-code">local nameLabel = spectateFrame:WaitForChild("NameLabel")</p>
+			<p class="sou ce-code">local nextPlayer = spectateFrame:WaitForChild("NextPlayer")</p>
+			<p class="sou ce-code">local lastPlayer = spectateFrame:WaitForChild("LastPlayer")</p>
+			<p class="sou ce-code">local competitors = {}</p>
+			<p class="sou ce-code">local curIndex = 1</p>
+			<p class="sou ce-code">local spectating = false</p>
+			<p class="sou ce-code">spectateFrame.Visible = false</p>
+			<p class="sou ce-code">return spectate</p>
+			<p>First, the system needs to be able to see which players are still alive. Luckily, we can easily figure out that the players still alive are whichever players are contained within the <strong class="sou ce-inline">competitors</strong> table in the <strong class="sou ce-inline">GameRunner</strong> module. So, to get this table to the client from the server, we will implement a new <strong class="bold">RemoteFunction</strong> parented to <strong class="sou ce-inline">ReplicatedStorage</strong> and name it <strong class="sou ce-inline">GetCompetitors</strong>. Additionally, we need to add a new <strong class="bold">RemoteEvent</strong> parented to <strong class="sou ce-inline">ReplicatedStorage</strong>, named <strong class="sou ce-inline">UpdateCompetitors</strong>. </p>
+			<p>In the following code, we have two parts to the code block—one part denoted by <strong class="sou ce-inline">client</strong> and one part <a id="_idIndexMarker436"></a>denoted by <strong class="sou ce-inline">server</strong>. The client portion of the code should be added to the <strong class="sou ce-inline">Spectate</strong> module, as it will set the <strong class="sou ce-inline">competitors</strong> variable to the table returned by the <strong class="bold">RemoteFunction</strong> invocation and it will update the table when the <strong class="bold">RemoteEvent</strong> is fired. The server code will go in the <strong class="sou ce-inline">GameRunner</strong> module and return the <strong class="sou ce-inline">competitors</strong> table back to where the invocation was made. The <strong class="sou ce-inline">getCompetitors()</strong> function will be called when the <strong class="bold">spectate</strong> UI is toggled as well as whenever the player clicks to cycle through the remaining players, causing the <strong class="sou ce-inline">competitors</strong> table to update; we will handle that logic in the upcoming examples. </p>
+			<p>For the <strong class="sou ce-inline">UpdateCompetitors</strong> <strong class="bold">RemoteEvent</strong>, the server will fire this instance to update the <strong class="sou ce-inline">competitors</strong> table on each client when the game begins and when competitors die. <em class="italic">To do this, make sure to add the line</em> <strong class="sou ce-inline">updateCompetitors:FireAllClients(competitors)</strong> into the <strong class="sou ce-inline">removePlayerFromTable()</strong> and <strong class="sou ce-inline">gameLoop()</strong> functions of the <strong class="sou ce-inline">GameRunner</strong> module for when a player is actually removed, right after <a id="_idIndexMarker437"></a>players are added to the <strong class="sou ce-inline">competitors</strong> table via <strong class="sou ce-inline">addPlayersToTable()</strong> and, when the game ends, after the <strong class="sou ce-inline">competitors</strong> table is made blank. The following code should be added into the two modules, without alteration:</p>
+			<p class="sou ce-code">--client</p>
+			<p class="sou ce-code">local getCompetitors = replicatedStorage.GetCompetitors</p>
+			<p class="sou ce-code">local updateCompetitors =   replicatedStorage.UpdateCompetitors</p>
+			<p class="sou ce-code">spectate.getCompetitors = function()</p>
+			<p class="sou ce-code">    competitors = getCompetitors:InvokeServer()</p>
+			<p class="sou ce-code">end</p>
+			<p class="sou ce-code">updateCompetitors.OnClientEvent:Connect(function(list)</p>
+			<p class="sou ce-code">    competitors = list</p>
+			<p class="sou ce-code">    for _, competitor in pairs(competitors) do</p>
+			<p class="sou ce-code">        if competitor == player then</p>
+			<p class="sou ce-code">            toggle.Visible = false</p>
+			<p class="sou ce-code">            </p>
+			<p class="sou ce-code">            if spectating then</p>
+			<p class="sou ce-code">                spectate.toggleSpectate()</p>
+			<p class="sou ce-code">            end</p>
+			<p class="sou ce-code">            return</p>
+			<p class="sou ce-code">        end</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">    if spectating then</p>
+			<p class="sou ce-code">        spectate.focusCamera(competitors[curIndex])</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">end)</p>
+			<p class="sou ce-code">--server</p>
+			<p class="sou ce-code">local getCompetitors = replicatedStorage.GetCompetitors</p>
+			<p class="sou ce-code">local updateCompetitors =   replicatedStorage.UpdateCompetitors</p>
+			<p class="sou ce-code">getCompetitors.OnServerInvoke = function()</p>
+			<p class="sou ce-code">    return competitors</p>
+			<p class="sou ce-code">end</p>
+			<p>Working back in the <strong class="sou ce-inline">Spectate</strong> module, the following function, <strong class="sou ce-inline">toggleSpectate()</strong>, will make two cases based on whether the spectate system is currently being used or not. If the system is not already in use when the function is called, then the <strong class="sou ce-inline">spectating</strong> variable is set to <strong class="sou ce-inline">true</strong>, the <strong class="sou ce-inline">competitors</strong> table in the module is updated, the UI associated with the <a id="_idIndexMarker438"></a>system is made visible, and the client's camera is focused on the first player within the <strong class="sou ce-inline">competitors</strong> table. If the spectate system is being used when the function is called, then the <strong class="sou ce-inline">spectating</strong> variable is set to <strong class="sou ce-inline">false</strong>, the UI is hidden, and the client's camera is refocused on themselves. The following code should be added to the <strong class="sou ce-inline">Spectate</strong> module, without alteration:</p>
+			<p class="sou ce-code">spectate.toggleSpectate = function()</p>
+			<p class="sou ce-code">    if not spectating then</p>
+			<p class="sou ce-code">        spectating = true</p>
+			<p class="sou ce-code">        spectate.getCompetitors()</p>
+			<p class="sou ce-code">        spectateFrame.Visible = true</p>
+			<p class="sou ce-code">        local targetPlayer = competitors[1]</p>
+			<p class="sou ce-code">        spectate.focusCamera(targetPlayer)</p>
+			<p class="sou ce-code">    else</p>
+			<p class="sou ce-code">        spectating = false</p>
+			<p class="sou ce-code">        spectateFrame.Visible = false</p>
+			<p class="sou ce-code">        spectate.focusCamera(player)</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">end</p>
+			<p>The <strong class="sou ce-inline">focusCamera()</strong> function is used to focus the client's camera on the character of a passed player. This function also checks if the number of competitors remaining is <strong class="sou ce-inline">0</strong> and toggles off the <a id="_idIndexMarker439"></a>spectate menu as a game is currently not in progress. If there are players remaining, however, then the client's camera is focused on that player and the <strong class="sou ce-inline">Text</strong> property of the <strong class="sou ce-inline">NameLabel</strong> <strong class="bold">TextLabel</strong> is updated. You should add the following function to your module, without any changes:</p>
+			<p class="sou ce-code">spectate.focusCamera = function(targetPlayer)</p>
+			<p class="sou ce-code">    if #competitors == 0 and spectating then</p>
+			<p class="sou ce-code">        spectate.toggleSpectate()</p>
+			<p class="sou ce-code">    else</p>
+			<p class="sou ce-code">        if targetPlayer then</p>
+			<p class="sou ce-code">            cam.CameraSubject = targetPlayer.Character</p>
+			<p class="sou ce-code">            nameLabel.Text = targetPlayer.Name</p>
+			<p class="sou ce-code">        else</p>
+			<p class="sou ce-code">            spectate.getCompetitors()</p>
+			<p class="sou ce-code">            local newTargetPlayer = competitors[1]</p>
+			<p class="sou ce-code">            spectate.focusCamera(newTargetPlayer)</p>
+			<p class="sou ce-code">        end</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">end</p>
+			<p>The following code adds functionality to the UI buttons you have now added. By using the <strong class="sou ce-inline">MouseButton1Click</strong> event of interactable UI instances, we can create a behavior whenever a UI button is clicked. See that when the button assigned to the <strong class="sou ce-inline">toggle</strong> variable is clicked, this will call the <strong class="sou ce-inline">toggleSpectate()</strong> function of the module. For both of the buttons <a id="_idIndexMarker440"></a>assigned to the <strong class="sou ce-inline">nextPlayer</strong> and <strong class="sou ce-inline">lastPlayer</strong> variables, we update and cycle through the <strong class="sou ce-inline">competitors</strong> table, checking if the <strong class="sou ce-inline">curIndex</strong> variable needs to be reset if it is incremented to a non-existent table position. If the index is valid, then the player's camera is focused on the player at the given index in the <strong class="sou ce-inline">competitors</strong> table. The code for this is shown here: </p>
+			<p class="sou ce-code">toggle.MouseButton1Click:Connect(function()</p>
+			<p class="sou ce-code">    spectate.toggleSpectate()</p>
+			<p class="sou ce-code">end)</p>
+			<p class="sou ce-code">nextPlayer.MouseButton1Click:Connect(function()</p>
+			<p class="sou ce-code">    spectate.getCompetitors()</p>
+			<p class="sou ce-code">    curIndex = curIndex + 1</p>
+			<p class="sou ce-code">    if curIndex &gt; #competitors then</p>
+			<p class="sou ce-code">        curIndex = 1</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">    </p>
+			<p class="sou ce-code">    local targetPlayer = competitors[curIndex]</p>
+			<p class="sou ce-code">    spectate.focusCamera(targetPlayer)</p>
+			<p class="sou ce-code">end)</p>
+			<p class="sou ce-code">lastPlayer.MouseButton1Click:Connect(function()</p>
+			<p class="sou ce-code">    spectate.getCompetitors()</p>
+			<p class="sou ce-code">    curIndex = curIndex - 1</p>
+			<p class="sou ce-code">    if curIndex &lt; 1 then</p>
+			<p class="sou ce-code">        curIndex = #competitors</p>
+			<p class="sou ce-code">    end</p>
+			<p class="sou ce-code">    </p>
+			<p class="sou ce-code">    local targetPlayer = competitors[curIndex]</p>
+			<p class="sou ce-code">    spectate.focusCamera(targetPlayer)</p>
+			<p class="sou ce-code">end)</p>
+			<h3>Creating a shop</h3>
+			<p>If you want to create a shop for your game, you can now create a UI for it or follow the method using parts, as you were taught while making the Obby. It should be noted, however, that in most <a id="_idIndexMarker441"></a>game formats, users are more likely to notice an attractive button that is readily on their screen compared to a prompting <strong class="sou ce-inline">Part</strong>, which they may not find during their play session. For this reason, I encourage you to make your own UI-based shops for purchases made with both Robux and in-game currency. Remember that to manage purchases made with Robux, you can simply copy and modify the <strong class="sou ce-inline">Monetization</strong> module made in the previous chapter.</p>
+			<h1 id="_idParaDest-126"><a id="_idTextAnchor130"></a>Summary</h1>
+			<p>In this chapter, you have learned how to manage players in a round-based game, created weapons with client security, learned the concept of local replication, and made a functionally engaging UI. You now have the skills to make any game you can think of on the diverse Roblox platform. Before you begin making projects of your own, be sure to review the key concepts from these game example chapters, including security, engaging interactions, and maintaining a clean and organized code base.</p>
+			<p>In the next and final chapter of this book, you will learn the best practices of popularizing and sustaining the games that you will make in the future. In particular, you will focus on how to promote and grow your games, how to monetize them as optimally as possible, and how to implement features that retain and excite your current and potential audiences.</p>
+		</div>
+	</div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="B16623_05_Final_JC_ePub.xhtml.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Chapter 5: Creating an Obby</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="B16623_Section_3_Final_JC_ePub.xhtml.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">Section 3: The Logistics of Game Production</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag">
+        
+        
+
+        
+          <p>You have 6 days left in your trial, Michaelschiner. Subscribe today. <a href="https://learning.oreilly.com/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+        
+
+<footer class="pagefoot t-pagefoot">
+  <a href="B16623_06_Final_JC_ePub.xhtml.html#" class="icon-up" onclick="window.Appcues.track('JumpTop_HeronBook')"><div class="visuallyhidden">Back to top</div></a>
+  <ul class='js-footer-nav'>
+  
+    
+    <li><a href="https://learning.oreilly.com/public/support/">Support</a></li>
+    
+    <li><a href="https://learning.oreilly.com/accounts/logout/">Sign Out</a></li>
+    
+  
+  
+  </ul>
+  <span class="copyright">&#169; 2021 <a href="https://learning.oreilly.com/" target="_blank">O'Reilly Media, Inc</a>.</span>
+  
+    
+    <a href="https://www.oreilly.com/terms/">Terms of Service</a> 
+     / 
+    
+    <a href="https://learning.oreilly.com/privacy">Privacy Policy</a> 
+    
+    
+  
+</footer>
+
+      
+    
+    <script src="https://learning.oreilly.com/jsi18n/web/" charset="utf-8"></script>
+    <script src="https://learning.oreilly.com/library/jsi18n/appcache/" charset="utf-8"></script>
+  </body>
+</html>

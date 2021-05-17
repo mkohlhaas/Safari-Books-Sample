@@ -1,0 +1,721 @@
+<!--[if IE]><![endif]--><!DOCTYPE html><!--[if IE 8]><html class="no-js ie8 oldie" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/beginning-lua-programming/9780470069172/ch07.html"
+data-csrf-cookie="csrfsafari"
+
+
+  data-user-id="11366403"
+  data-user-uuid="ce47de5b-ce80-49f0-b5cd-c60d3d33b198"
+  data-username="michaelschiner"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/13/2021"
+
+
+  data-archive="9780470069172"
+  data-publishers="Wrox"
+
+
+
+  data-htmlfile-name="ch07.html"
+  data-epub-title="Beginning Lua Programming" data-debug=0 data-testing=0><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/beginning-lua-programming/9780470069172/ch07.html"
+data-csrf-cookie="csrfsafari"
+
+
+  data-user-id="11366403"
+  data-user-uuid="ce47de5b-ce80-49f0-b5cd-c60d3d33b198"
+  data-username="michaelschiner"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/13/2021"
+
+
+  data-archive="9780470069172"
+  data-publishers="Wrox"
+
+
+
+  data-htmlfile-name="ch07.html"
+  data-epub-title="Beginning Lua Programming" data-debug=0 data-testing=0><!--<![endif]--><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="author" content="O'Reilly Media" /><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"/><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9780470069172"/><link rel="shortcut icon" href="https://www.oreilly.com/favicon.ico" /><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"/><meta property="twitter:account_id" content="4503599627559754" /><link rel="shortcut icon" href="https://learning.oreilly.com/favicon.ico" type="image/x-icon"><link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'><title>7. Using Modules - Beginning Lua Programming</title><link rel="stylesheet" href="https://learning.oreilly.com/static/CACHE/css/output.5bdb4fcb2aad.css" type="text/css"><link rel="stylesheet" type="text/css" href="https://learning.oreilly.com/static/css/annotator.e3b0c44298fc.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><style type="text/css" title="ibis-book"></style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9780470069172/chapter/ch07.html",
+          "book_id": "9780470069172",
+          "chapter_uri": "ch07.html",
+          "position": 17.2874837901891,
+          "user_uuid": "ce47de5b-ce80-49f0-b5cd-c60d3d33b198",
+          "next_chapter_uri": "/library/view/beginning-lua-programming/9780470069172/ch08.html"
+        
+      },
+      title: "Beginning Lua Programming",
+      author_list: "Aaron Brown, Kurt Jung",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false
+    };
+    // ]]></script><script src="https://learning.oreilly.com/static/js/src/modernizr.8e35451ddb64.js"></script><script>
+    
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+      window.PRIVACY_CONTROL_SWITCH = true;
+
+      window.PUBLISHER_PAGES = true;
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "https://learning.oreilly.com/api/v2/search/select/",
+        }
+      };
+  </script><link rel="canonical" href="ch07.html"/><meta name="description" content="Chapter 7. Using Modules One of the most important techniques of structured programming is partitioning a program into subprograms that have well-defined interfaces and protected implementations. In this chapter, you ... "><meta property="og:title" content="7. Using Modules" /><meta itemprop="isPartOf" content="/library/view/beginning-lua-programming/9780470069172/" /><meta itemprop="name" content="7. Using Modules" /><meta property="og:url" itemprop="url" content="https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch07.html" /><meta property="og:site_name" content="Safari" /><meta property="og:image" itemprop="thumbnailUrl" content="https://learning.oreilly.com/library/cover/9780470069172/" /><meta property="og:description" itemprop="description" content="Chapter 7. Using Modules One of the most important techniques of structured programming is partitioning a program into subprograms that have well-defined interfaces and protected implementations. In this chapter, you ... "><meta itemprop="inLanguage" content="en" /><meta itemprop="publisher" content="Wrox" /><meta property="og:type" content="book" /><meta property="og:book:isbn" itemprop="isbn" content="9780470069172" /><meta property="og:book:author" itemprop="author" content="Aaron Brown" /><meta property="og:book:author" itemprop="author" content="Kurt Jung" /><meta property="og:book:tag" itemprop="about" content="Core Programming" /><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@OReillyMedia"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: <%= font_size %> !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: <%= font_family %> !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: <%= column_width %>% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; URL=https://learning.oreilly.com/library/no-js/" /></noscript><script>
+    var dataLayer = window.dataLayer || [];
+
+    
+      window.medalliaVsgUserIdentifier = 'ce47de5b-ce80-49f0-b5cd-c60d3d33b198';
+      dataLayer.push({userIdentifier: 'ce47de5b-ce80-49f0-b5cd-c60d3d33b198'});
+      dataLayer.push({loggedIn: 'yes'});
+
+      
+        window.medalliaVsgAccountIdentifier = '29964b7b-68d8-4532-9a9b-32e089689c1f';
+        
+
+        window.medalliaVsgIsIndividual = true;
+        
+          
+          dataLayer.push({learningAccountType: 'free trial'});
+          
+        
+
+        
+      
+    
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+    (function () {
+      var VERSION = 'V1.1';
+      var AUTHOR = 'Awwad';
+      if (!window.GtmHelper)
+        window.GtmHelper = function () {
+          var instance = this;
+          var loc = document.location;
+          this.version = VERSION;
+          this.author = AUTHOR;
+          this.readCookie = function (name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+          };
+          this.createCookie = function (name, value, days, cookieDomain) {
+            var domain = "";
+            var expires = "";
+
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + Math.ceil(days * 24 * 60 * 60 * 1000));
+              var expires = " expires=" + date.toGMTString() + ";";
+            }
+
+            if (typeof (cookieDomain) != 'undefined')
+              domain = " domain=" + cookieDomain + "; ";
+
+            document.cookie = name + "=" + value + ";" + expires + domain + "path=/";
+          };
+
+          this.isDuplicated = function (currentTransactionId) {
+            // the previous transaction id:
+            var previousTransIdValue = this.readCookie("previousTransId");
+
+            if (currentTransactionId === previousTransIdValue) {
+              return true; // Duplication
+            } else {
+              return false;
+            }
+          };
+        }
+    })()
+  </script><script defer src="https://learning.oreilly.com/static/js/build/vendor.0eac897f11ed.js"></script><script defer src="https://learning.oreilly.com/static/js/build/reader.c745ea9296ac.js"></script></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts">
+
+    
+  <noscript> 
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+  
+
+
+<a href="ch07.html#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li><a href="https://learning.oreilly.com/home/" class="l0 nav-icn"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.738 14H9.254v-3.676a.617.617 0 0 0-.621-.613H7.39a.617.617 0 0 0-.62.613V14H4.284a.617.617 0 0 1-.622-.613V10.22c0-.327.132-.64.367-.87l3.547-3.493a.627.627 0 0 1 .875 0l3.54 3.499c.234.229.366.54.367.864v3.167a.617.617 0 0 1-.62.613zM7.57 2.181a.625.625 0 0 1 .882 0l5.77 5.692-.93.92-5.28-5.209-5.28 5.208-.932-.919 5.77-5.692z" /></svg><span>Home</span></a></li><li class="search"><a href="ch07.html#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"/></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="ch07.html#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"/></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li class="flyout-parent"><a
+                href="ch07.html#"
+                class="l1 nav-icn "
+                
+              ><?xml version="1.0" encoding="UTF-8"?><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M8,8 C6.34321755,8 5.00013,6.65691245 5.00013,5.00013 C5.00013,3.34334755 6.34321755,2.00026001 8,2.00026001 C9.65678245,2.00026001 10.99987,3.34334755 10.99987,5.00013 C10.99987,6.65691245 9.65678245,8 8,8 Z M2.33024571,11.3523547 L2.33774538,11.3523547 C3.7622187,9.70968996 5.82947484,8.76608166 8.00374984,8.76608166 C10.1780248,8.76608166 12.245281,9.70968996 13.6697543,11.3523547 C13.8892083,11.6177474 14.0062813,11.9530021 13.99974,12.2973138 L13.99974,13.99974 L2.00026001,13.99974 L2.00026001,12.2973138 C1.99371867,11.9530021 2.11079172,11.6177474 2.33024571,11.3523547 Z" id="path-1"></path></svg><span>Your O&#39;Reilly</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/profile/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Profile</span></a></li><li><a
+                    href="https://learning.oreilly.com/history/"
+                    class="l2 nav-icn"
+                    
+                  ><span>History</span></a></li><li><a
+                    href="https://learning.oreilly.com/playlists/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Playlists</span></a></li><li><a
+                    href="https://learning.oreilly.com/u/ce47de5b-ce80-49f0-b5cd-c60d3d33b198/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Highlights</span></a></li></ul></li><li ><a
+                href="https://learning.oreilly.com/answers/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M2.31032699,3.75609006 C4.65421571,1.41371359 8.45302454,1.41472092 10.7955702,3.75860838 C13.1381158,6.10249583 13.1369405,9.90130261 10.7930518,12.243847 C8.44916311,14.5863913 4.65018639,14.5852161 2.30780867,12.2413286 C-0.0346204845,9.89749489 -0.0334929936,6.09853298 2.31032699,3.75609006 Z M8.8198605,4.98016308 C7.34193969,3.86924672 5.23410194,3.98609692 3.88914868,5.33104946 C3.12814393,6.09032122 2.72818176,7.13880077 2.79015179,8.21201133 C2.79115912,8.23064692 2.79233434,8.24928252 2.79350956,8.26791811 L2.79350956,8.26791811 C2.83179539,8.8307976 2.9944077,9.37404287 3.26947292,9.86201677 L3.26947292,9.86201677 L2.77621706,11.7027432 C2.7699968,11.7259241 2.77662063,11.7506624 2.79359185,11.7676337 C2.8105631,11.7846049 2.83530144,11.7912287 2.85848233,11.7850085 L2.85848233,11.7850085 L4.69400524,11.2922565 C5.26306363,11.6167344 5.90703177,11.786885 6.56209849,11.7858479 C8.64827865,11.7858479 10.3395879,10.094542 10.3395879,8.00836292 C10.3405204,6.84135608 9.80105674,5.73967784 8.87862141,5.02482134 L8.87862141,5.02482134 L8.82825492,4.98654283 Z M13.7933062,2 C14.7073496,2.00009863 15.4482759,2.74110484 15.4482759,3.65514822 C15.4482759,4.32460943 15.0449926,4.92814782 14.4264842,5.18432286 C13.8079757,5.44049789 13.096053,5.29885769 12.6226979,4.82545158 C12.1493429,4.35204547 12.0077795,3.64010743 12.2640213,3.02162665 C12.5202631,2.40314587 13.123845,1.99992776 13.7933062,2 Z"/></svg><span>Answers</span></a></li><li class="flyout-parent"><a
+                href="ch07.html#"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>queue icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 29.2C25.4 29.2 25.8 29.1 26.1 28.9L48.7 16.8C49.5 16.4 50 15.5 50 14.6 50 13.7 49.5 12.8 48.7 12.4L26.1 0.3C25.4-0.1 24.6-0.1 23.9 0.3L1.3 12.4C0.5 12.8 0 13.7 0 14.6 0 15.5 0.5 16.4 1.3 16.8L23.9 28.9C24.2 29.1 24.6 29.2 25 29.2ZM7.3 14.6L25 5.2 42.7 14.6 25 24 7.3 14.6ZM48.7 22.4L47.7 21.9 25 34.2 2.3 21.9 1.3 22.4C0.5 22.9 0 23.7 0 24.7 0 25.6 0.5 26.5 1.3 26.9L23.9 39.3C24.2 39.5 24.6 39.6 25 39.6 25.4 39.6 25.8 39.5 26.1 39.3L48.7 26.9C49.5 26.5 50 25.6 50 24.7 50 23.7 49.5 22.9 48.7 22.4ZM48.7 32.8L47.7 32.3 25 44.6 2.3 32.3 1.3 32.8C0.5 33.3 0 34.1 0 35.1 0 36 0.5 36.9 1.3 37.3L23.9 49.7C24.2 49.9 24.6 50 25 50 25.4 50 25.8 49.9 26.1 49.7L48.7 37.3C49.5 36.9 50 36 50 35.1 50 34.1 49.5 33.3 48.7 32.8Z"/></g></svg><span>Explore</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/topics/"
+                    class="l2 nav-icn"
+                    
+                  ><span>All Topics</span></a></li><li><a
+                    href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;formats=case%20study&amp;formats=learning%20path&amp;formats=live%20online%20training&amp;formats=notebook&amp;formats=oriole&amp;formats=video&amp;sort=popularity&amp;facet_json=true&amp;page=0&amp;collection_type=expert"
+                    class="l2 nav-icn"
+                    
+                  ><span>Most Popular Titles</span></a></li><li><a
+                    href="https://learning.oreilly.com/recommendations/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Recommended</span></a></li><li><a
+                    href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;sort=publication_date&amp;facet_json=true&amp;page=0"
+                    class="l2 nav-icn"
+                    
+                  ><span>Early Releases</span></a></li><li><a
+                    href="https://learning.oreilly.com/playlists/discover/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Shared Playlists</span></a></li><li><a
+                    href="https://learning.oreilly.com/resource-centers/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Resource Centers</span></a></li></ul></li><li class="flyout-parent"><a
+                href="ch07.html#"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12.8 3.2A1.2 1.2 0 0 1 14 4.4v8.4a1.2 1.2 0 0 1-1.2 1.2H3.2A1.2 1.2 0 0 1 2 12.8V4.4a1.2 1.2 0 0 1 1.2-1.2h1.2V2h1.2v1.2h4.8V2h1.2v1.2h1.2zm-9.6 9.6h9.6V6.2H3.2v6.6zM8 9.5a1.35 1.35 0 1 1 0-2.7 1.35 1.35 0 0 1 0 2.7zm2.7 2.148v.552H5.3v-.552c0-.321.124-.634.355-.858a3.358 3.358 0 0 1 4.69 0c.23.224.355.537.355.858z" /></svg><span>Live Events</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/attend/"
+                    class="l2 nav-icn"
+                    
+                  ><span>All Events</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/architectural-katas/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Architectural Katas</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/ai/"
+                    class="l2 nav-icn"
+                    
+                  ><span>AI &amp; ML</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/strata/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Data Sci &amp; Eng</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/oscon/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Programming</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/infrastructure-ops/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Infra &amp; Ops</span></a></li><li><a
+                    href="https://learning.oreilly.com/featured/software-architecture/"
+                    class="l2 nav-icn"
+                    
+                  ><span>Software Arch</span></a></li></ul></li><li class="flyout-parent"><a
+                href="ch07.html#"
+                class="l1 nav-icn "
+                
+              ><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.6467109,4.35328907 L14.7964612,7.51003884 C15.0678463,7.78304342 15.0678463,8.22395603 14.7964612,8.49696061 L11.6467109,11.6467109 L10.6597892,10.6597892 L13.3055794,8 L10.6597892,5.34021084 L11.6467109,4.35328907 Z M4.35328907,11.6467109 L1.20353875,8.48996116 C0.932153749,8.21695658 0.932153749,7.77604397 1.20353875,7.50303939 L4.35328907,4.35328907 L5.34021084,5.34021084 L2.69442057,8 L5.34021084,10.6597892 L4.35328907,11.6467109 Z M5.84417089,11.4997226 L8.67194674,4.50027742 L10.1838269,4.50027742 L7.35605105,11.4997226 L5.84417089,11.4997226 Z" id="Mask"></path></svg><span>Interactive</span></a><ul class="flyout"><li><a
+                    href="https://learning.oreilly.com/scenarios/?classification=content-scenario"
+                    class="l2 nav-icn"
+                    
+                  ><span>Scenarios</span></a></li><li><a
+                    href="https://learning.oreilly.com/scenarios/?classification=sandbox-scenario"
+                    class="l2 nav-icn"
+                    
+                  ><span>Sandboxes</span></a></li><li><a
+                    href="https://learning.oreilly.com/interactive/?classification=jupyter-notebook"
+                    class="l2 nav-icn"
+                    
+                  ><span>Jupyter Notebooks</span></a></li></ul></li><li ><a
+                href="https://learning.oreilly.com/certifications/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M12.912 9.18L14 8.014l-1.088-1.18a.304.304 0 01-.075-.268L13.195 5l-1.535-.463a.313.313 0 01-.194-.194l-.462-1.537-1.565.358c-.09.03-.194 0-.269-.074L8.007 2 6.845 3.09a.303.303 0 01-.269.074l-1.565-.358-.462 1.537a.313.313 0 01-.194.194L2.82 5l.358 1.567a.26.26 0 01-.075.269L2 8.015l1.088 1.164c.075.075.09.18.075.269l-.358 1.567 1.535.463c.09.03.164.104.194.194l.462 1.537 1.565-.358c.015 0 .045-.015.075-.015.075 0 .15.03.209.074L8.007 14l1.163-1.09a.303.303 0 01.269-.074l1.565.358.462-1.537a.313.313 0 01.194-.194L13.195 11l-.358-1.567a.338.338 0 01.075-.254zm-6.046 1.37L4.41 8.26l1.16-1.244 1.767 1.649L10.4 5.6l1.202 1.202-4.242 4.243-.495-.495z"/></svg><span>Certifications</span></a></li><li ><a
+                href="https://learning.oreilly.com/preferences/"
+                class="l1 nav-icn "
+                
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a></li><li ><a
+                href="https://learning.oreilly.com/public/support/"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M7.363 6.656a2.692 2.692 0 0 1-2.681-2.703c0-1.493 1.2-2.703 2.681-2.703a2.692 2.692 0 0 1 2.682 2.703c0 1.493-1.2 2.703-2.682 2.703zm4.023 2.027c-1.852 0-3.352 1.513-3.352 3.379H2v-1.534c-.006-.31.099-.612.295-.852a6.666 6.666 0 0 1 9.09-.993zm-.543.676h1.12v.304c.003.284.16.543.408.676a.766.766 0 0 0 .77 0l.303-.176.556.966-.302.176a.772.772 0 0 0-.362.676v.08a.772.772 0 0 0 .362.677l.302.21-.556.965-.302-.175a.766.766 0 0 0-.771 0 .778.778 0 0 0-.409.675v.352h-1.106v-.372a.778.778 0 0 0-.409-.676.766.766 0 0 0-.77 0l-.303.176-.556-.912.302-.176a.772.772 0 0 0 .362-.676v-.04-.04a.772.772 0 0 0-.362-.676l-.302-.176.556-.966.289.155a.766.766 0 0 0 .77 0 .778.778 0 0 0 .41-.676V9.36zm1.562 2.703c0-.271-.108-.531-.3-.722a1.001 1.001 0 0 0-.72-.292 1.01 1.01 0 0 0-.992 1.023 1.01 1.01 0 0 0 1.01 1.004 1.01 1.01 0 0 0 1.002-1.013z" /></svg><span>Support</span></a></li><li ><a
+                href="https://get.oreilly.com/email-signup.html"
+                class="l1 nav-icn "
+                target=&quot;_blank&quot;
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.564 2.263l2.172 2.174c.17.168.264.397.264.636V11a.6.6 0 0 1-.6.6h-.6V6.2h-6V2.6a.6.6 0 0 1 .6-.6h3.527c.239 0 .468.095.637.263zM2.6 14a.6.6 0 0 1-.6-.6V6.8a.6.6 0 0 1 .6-.6h1.903a1.2 1.2 0 0 1 .849.352L6.2 7.4H11a.6.6 0 0 1 .6.6v5.4a.6.6 0 0 1-.6.6H2.6zM11 5h1.8L11 3.2V5z" /></svg><span>Newsletters</span></a></li><li ><a
+                href="https://learning.oreilly.com/accounts/logout/"
+                class="l1 nav-icn "
+                
+              ><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M2.613 12.63A.607.607 0 0 1 2 12.03V3.602C2 3.269 2.274 3 2.613 3h5.515v1.204H3.226v7.223h4.902v1.203H2.613zM5.677 9.02V6.611h4.903V4.926a.301.301 0 0 1 .19-.274.31.31 0 0 1 .33.063l2.722 2.673a.594.594 0 0 1 0 .849L11.1 10.909a.31.31 0 0 1-.331.063.301.301 0 0 1-.19-.274V9.02H5.677z" /></svg><span>Sign Out</span></a></li></ul></div></li></ul></nav></header>
+
+
+
+      </div>
+      <div id="container" class="application">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="ch07.html#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Beginning Lua Programming
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="ch07.html#" title="Search in archive" class="js-search-controls search-controls" onclick="window.Appcues.track('SearchBook_HeronBook')"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9780470069172/chapter/ch07.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards" onclick="window.Appcues.track('AddPlaylist_HeronBook')"></div></div></li><li class="js-font-control-panel font-control-activator"><a href="ch07.html#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size" onclick="window.Appcues.track('ChangeFont_HeronBook')"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="ch07.html#" class="trigger" data-push-state="false" title="Share" aria-label="Share" onclick="window.Appcues.track('Share_HeronBook')"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a
+        class="twitter share-button t-twitter"
+        target="_blank"
+        aria-label="Share this section on Twitter"
+        title="Share this section on Twitter"
+      
+        href="https://twitter.com/share?url=https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch07.html&text=Beginning%20Lua%20Programming&via=OReillyMedia"
+      ><span>Twitter</span></a></li><li><a
+        class="facebook share-button t-facebook"
+        target="_blank"
+        aria-label="Share this section on Facebook"
+        title="Share this section on Facebook"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch07.html"
+      ><span>Facebook</span></a></li><li><a
+        class="googleplus share-button t-googleplus"
+        target="_blank"
+        aria-label="Share this secton on Google Plus"
+        title="Share this secton on Google Plus"
+        href="https://plus.google.com/share?url=https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch07.html"
+      ><span>Google Plus</span></a></li><li><a
+        class="email share-button t-email"
+        aria-label="Share this section via email"
+        title="Share this section via email"
+      
+        href="mailto:?subject=Safari: 7.%20Using%20Modules&body=https://learning.oreilly.com/library/view/beginning-lua-programming/9780470069172/ch07.html%0D%0Afrom Beginning%20Lua%20Programming%0D%0A"
+      ><span>Email</span></a></li></ul></li><!-- endif request.user.is_authenticated -->
+      </ul>
+    </div>
+
+      
+          
+      
+
+    <section role="document">
+        
+        
+
+
+
+
+  <script defer src="https://learning.oreilly.com/static/js/build/djangoMessagesPage.bfaca9fd8619.js"></script>
+
+
+        <script src="https://fast.appcues.com/48743.js"></script>
+<script>
+  var userId = "ce47de5b-ce80-49f0-b5cd-c60d3d33b198";
+
+  var userObject = {
+    firstName: "Michael",
+    segment: "Trial",
+    admin: "False",
+    profileCreatedOn: "2021-05-13",
+    academic: ""
+  };
+  window.Appcues.identify(userId, userObject);
+  window.Appcues.page();
+
+  setTimeout(function () {
+    window.Appcues.track('ViewingBook_HeronBook')
+  }, 20000);
+</script>
+
+
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="ch06.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">6. Handling and Avoiding Errors</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="ch08.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">8. Extending Lua&#39;s Behavior with Metamethods</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="using_modules"></a>Chapter 7. Using Modules</h1></div></div></div><p>One of the most important techniques of structured programming is partitioning a program into subprograms that have well-defined interfaces and protected implementations. In this chapter, you learn how to do the following:<a id="IDX-CHP-7-0001" class="indexterm"></a><a id="IDX-CHP-7-0002" class="indexterm"></a><a id="IDX-CHP-7-0003" class="indexterm"></a><a id="IDX-CHP-7-0004" class="indexterm"></a><a id="IDX-CHP-7-0005" class="indexterm"></a><a id="IDX-CHP-7-0006" class="indexterm"></a><a id="IDX-CHP-7-0007" class="indexterm"></a><a id="IDX-CHP-7-0008" class="indexterm"></a></p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>Work with interfaces and implementations</p></li><li class="listitem"><p>Modularize Lua scripts</p></li><li class="listitem"><p>Use Lua modules from your application scripts</p></li></ul></div><p>As a working example, you'll explore a Lua value inspection module that should prove useful when you develop Lua programs.</p><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="interfaces_and_implementations"></a>Interfaces and Implementations</h1></div></div></div><p>An <span class="emphasis"><em>interface</em></span> is the part of a subprogram that is known to callers of the subprogram. The <span class="emphasis"><em>implementation</em></span> refers to the way the subprogram works internally. If a subprogram's interface is clearly defined and its implementation doesn't depend on variables that can be modified by other program parts, then it has the desirable attribute of being reusable. This discipline is often referred to as encapsulation or information hiding or modularization. You've seen already how functions in Lua present an interface behind which local variables are protected from tampering. A function is loosely coupled (and therefore is more easily used in a variety of contexts) to the extent that it minimizes the scope of the variables it uses.</p><p>These notions of interface and implementation extend to files containing Lua code. When such a file is loaded, Lua converts it into a function, to which arguments can be passed and from which results can be returned. In this way, a Lua file has its own interface and its own implementation.</p><p>A Lua module is simply a file that conforms to certain rules. First, it can be located and loaded at runtime. Second, it receives one argument: the name of the module. And third, it returns at most one result. The use of modules doesn't guarantee reusability, but it certainly promotes this objective by providing a useful level at which to define an interface beneath which the actual workings can be hidden.</p><p>Libraries written in C and other low-level languages are conventionally made available through Lua's module mechanism. You can also associate a namespace (a Lua table that contains the module's functions and other fields) with a module. This practice lends clarity to programs and reduces the chance of name clashes.<a id="IDX-CHP-7-0009" class="indexterm"></a><a id="IDX-CHP-7-0010" class="indexterm"></a><a id="IDX-CHP-7-0011" class="indexterm"></a></p></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="the_require_function"></a>The require Function</h1></div></div></div><p>The principal high-level function that implements module conventions in Lua is <code class="literal">require</code>. The various lower-level functions it uses to actually locate, load, and run modules are all available to Lua programs. <code class="literal">require</code> simply codifies the way modules are handled to make the business of creating and using modules more uniform across applications.<a id="IDX-CHP-7-0012" class="indexterm"></a></p><p>Newcomers to Lua may confuse <code class="literal">require</code> with a directive, which is a direction to be heeded at compile-time rather than runtime. In particular, C programmers may initially make the mistake of thinking require acts like <code class="literal">#include</code>. Keep in mind that require is a function and that any modules that are required need to be available at runtime. Lua does not have any preprocessor or compiler directives.</p><div class="sidebar"><a id="try_it_out_colon_using_modules"></a><div class="titlepage"><div><div><p class="title"><strong>Try It Out: Using Modules</strong></p></div></div></div><p>There are a few interesting and clever subtleties to modules in Lua, but the basic operation is straightforward. Here's an example that illustrates modules at their simplest. It demonstrates how you can package Lua code into a module so that it can be used by other scripts, and how a script makes use of a module.</p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Add a temporary variable to your shell environment. In Unix-type systems, issue this command:</p><pre class="programlisting">export LUA_PATH='?.luac;?.lua'</pre></li><li class="listitem"><p>In Windows, issue this command from a shell prompt:</p><pre class="programlisting">set LUA_PATH=?.luac;?.lua</pre></li><li class="listitem"><p>With a text editor, create a new file and add the following lines to it:</p><pre class="programlisting">function ObjectShow(Val, Key, TruncLen)
+  print(Key, Val)
+end</pre></li><li class="listitem"><p>Save this module file as <code class="literal">show.lua</code>.</p></li><li class="listitem"><p>Create another file with these contents:</p><pre class="programlisting">require("show")
+ObjectShow("My table", {A = 1})</pre></li><li class="listitem"><p>Save this main script file as <code class="literal">showtest.lua</code> in the same directory as <code class="literal">show.lua.</code></p></li><li class="listitem"><p>Run the script by executing the following command:</p><pre class="programlisting">lua showtest.lua</pre><p>The response looks something like this:</p><pre class="programlisting">My table   table: 00755610</pre></li></ol></div><p><span class="strong"><strong>How It Works</strong></span><a id="IDX-CHP-7-0013" class="indexterm"></a><a id="IDX-CHP-7-0014" class="indexterm"></a></p><p>Lua's response doesn't appear especially spectacular, but a fair amount of processing occurs behind the scenes.</p><p>First, Lua starts up and transfers the contents of the shell environment variable <code class="literal">LUA_PATH</code> to its own variable named <code class="literal">package.path</code>. Your script can modify this variable, but in this example, you leave it alone.</p><p>The script calls Lua's built-in <code class="literal">require</code> function with the name of the module you want to import, namely <code class="literal">show</code>.</p><div class="blockquote"><blockquote class="blockquote"><p>(In many cases, the <code class="literal">require</code> call is followed by a string without parentheses. Remember that Lua treats a function followed by a literal string the same as if the string had parentheses around it.</p></blockquote></div><p>After verifying that the <code class="literal">show</code> module has not already been loaded, the <code class="literal">require</code> function traverses, in order, the segments of the <code class="literal">package.path</code> variable that are delimited by semicolons. In this example, these segments are <code class="literal">?.luac</code> and <code class="literal">?.lua</code>. For each segment, the function performs a simple pattern substitution. It replaces each occurrence of the question mark with the name that was passed to it and checks to see if a file by that name exists. The first substitution results in the <code class="literal">show.luac</code> filename. Because the segment does not contain path information, the <code class="literal">require</code> function follows the usual shell semantics and looks in the current working directory for the file. It doesn't find this file, so it moves onto the next segment. The second substitution results in the <code class="literal">show.lua</code> filename, which it is able to find.<a id="IDX-CHP-7-0015" class="indexterm"></a></p><p>The <code class="literal">require</code> function loads <code class="literal">show.lua</code> as a chunk and calls it with a single argument, the string "<code class="literal">show</code>".</p><p>The execution of <code class="literal">show.lua</code> results in the formation of a new global variable, an <code class="literal">ObjectShow</code> function. Here, <code class="literal">show.lua</code> doesn't return any value, but if it did, <code class="literal">require</code> would return it to the main script.</p></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="where_to_put_modules"></a>Where to Put Modules</h1></div></div></div><p>You'll want to create a directory to hold Lua extension modules, but you do not want that directory in the operating system's search path, because you want the system to locate <code class="literal">lua</code>, and you want <code class="literal">lua</code> to locate its modules. Some of the modules are executable libraries that will be loaded and linked at runtime. These libraries are tailored specifically to Lua, and you don't want the operating system to inadvertently load one or to even waste time looking through them.</p><p>The following section summarizes what you need to do to assure that Lua can find its modules. First, you create a directory for modules, and then you set an environment variable to be used by Lua to locate modules.</p><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="creating_a_module_directory"></a>Creating a Module Directory</h2></div></div></div><p>The locations shown here for Lua module directories are fairly standard among Lua users, but you may change them if you want to or if you lack sufficient system privileges to create them. On Unix-type systems, use a command like this:</p><pre class="programlisting">mkdir –p /usr/local/lib/lua/5.1</pre><p>Some installers of Lua use the directory <code class="literal">/usr/local/share/lua/5.1</code> for Lua scripts and reserve <code class="literal">/usr/local/lib/lua/5.1</code> for shared libraries that interface with Lua's C API.<a id="IDX-CHP-7-0016" class="indexterm"></a><a id="IDX-CHP-7-0017" class="indexterm"></a></p><p>On Windows, issue commands like these to create the module directory:</p><pre class="programlisting">mkdir "c:\program files\lua"
+mkdir "c:\program files\lua\5.1"</pre></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="setting_lua_apostrophy_s_environment_var"></a>Setting Lua's Environment Variable</h2></div></div></div><p>The <code class="literal">LUA_PATH</code> environment variable used in the preceding Try It Out example is rather simple—it doesn't include any directory information. Change that now so that <code class="literal">LUA_PATH</code> takes into account the new directory you have created. On Unix-type systems, where filenames look like this:</p><pre class="programlisting">/usr/local/lib/lua/5.1/show.lua</pre><p>make the following assignment:</p><pre class="programlisting">export LUA_PATH='?.lua;/usr/local/lib/lua/5.1/?.lua'</pre><p>On Windows, where filenames that look like this:</p><p><code class="literal">C:\Program Files\lua\5.1\show.lua</code></p><p>make the following assignment:</p><pre class="programlisting">set LUA_PATH=?.lua;C:\Program Files\lua\5.1\?.lua</pre><p>If necessary, you can refer to <a class="link" href="ch01.html" title="Chapter 1. Getting Situated">Chapter 1</a> for instructions on setting environment variables. Note that on Windows, backslashes should not be escaped and names with spaces should not be quoted.</p><p>Regardless of the form that filenames take, the simple pattern substitution that Lua uses to locate modules is the same. The particular values for <code class="literal">LUA_PATH</code> shown previously specify that Lua is to look for Lua modules first in the current directory and then, if that fails, in the designated common directory.</p></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="preserving_a_module_apostrophy_s_interfa"></a>Preserving a Module's Interface</h1></div></div></div><p>The preceding Try It Out example was trivial, but you will enhance it in the next Try It Out to provide many more details about the passed-in value. The revised module will prove to be very useful when you're developing programs in Lua. In this example, you'll do the revision while preserving the module's interface. That is, although you'll change the implementation of <code class="literal">show.lua</code> dramatically, you will not change the part that it exposes to the outside world, namely the <code class="literal">ObjectShow</code> function and its list of parameters. You'll appreciate the importance of this when you realize that you don't have to change <code class="literal">showtest.lua</code> in the slightest to benefit from the updated implementation of <code class="literal">show.lua</code>. This kind of encapsulation forms the basis of a well-designed application which is partitioned into a number of general-purpose, reusable modules.</p><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="preserving_a_module_apostrophy_s_interf"></a></h2></div></div></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="try_it_out_colon_extending_the_show_modu"></a>Try It Out: Extending the show Module</h3></div></div></div><p>In this Try It Out, you'll dramatically enhance the show module to display more details about the value to be examined. In doing so, you'll preserve the interface of the previous version.<a id="IDX-CHP-7-0018" class="indexterm"></a></p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Replace the contents of <code class="literal">show.lua</code> with the following:</p><pre class="programlisting">-- This function conditions a key or value for display
+
+local function LclRenderStr(Obj, TruncLen)
+    local TpStr = type(Obj)
+    if TpStr == "string" then
+      Obj = string.gsub(Obj, "[^%w%p ]", function(Ch)
+        return "\\" .. string.format("%03d", string.byte(Ch)) end )
+      if TruncLen and TruncLen &gt; 0 and string.len(Obj) &gt; TruncLen + 3 then
+        -- This could misleadingly truncate numeric escape value
+        Obj = string.sub(Obj, 1, TruncLen) .. "..."
+      end
+      Obj = '"' .. Obj .. '"'
+    elseif TpStr == "boolean" then
+      Obj = "boolean: " .. tostring(Obj)
+    els
+      Obj = tostring(Obj)
+    end
+    return Obj
+  end
+
+  -- This function replaces ["x"]["y"] stubble with x.y. Keys are assumed to be
+  -- identifier-compatible.
+
+  local function LclShave(Str)
+    local Count
+    Str, Count = string.gsub(Str, '^%[%"(.+)%"%]$', '%1')
+    if Count == 1 then
+      Str = string.gsub(Str, '%"%]%[%"', '.')
+    end
+    return Str
+  end
+
+  local function LclRender(Tbl, Val, KeyStr, TruncLen, Lvl, Visited, KeyPathStr)
+    local VtpStr, ValStr
+    VtpStr = type(Val)
+    if Visited[Val] then
+      ValStr = "same as " .. Visited[Val]
+    else
+      ValStr = LclRenderStr(Val, TruncLen)
+      if VtpStr == "function" then -- Display function's environment
+        local Env = getfenv(Val)
+        Env = Visited[Env] or Env
+        ValStr = string.gsub(ValStr, "(function:%s*.*)$", "%1 (env " ..
+          string.gsub(tostring(Env), "table: ", "") .. ")")
+      elseif VtpStr == "table" then
+        ValStr = ValStr .. string.format(" (n = %d)", #Val)
+      end
+    end</pre><pre class="programlisting">KeyPathStr = KeyPathStr .. "[" .. KeyStr .. "]"
+   table.insert(Tbl, { Lvl, string.format('[%s] %s',
+     KeyStr, ValStr) })
+   if VtpStr == "table" and not Visited[Val] then
+     Visited[Val] = LclShave(KeyPathStr)
+     local SrtTbl = {}
+     for K, V in pairs(Val) do
+       table.insert(SrtTbl, { LclRenderStr(K, TruncLen), V, K, type(K) })
+     end
+     local function LclCmp(A, B)
+       local Cmp
+       local Ta, Tb = A[4], B[4]
+       if Ta == "number" then
+         if Tb == "number" then
+           Cmp = A[3] &lt; B[3]
+         else
+           Cmp = true -- Numbers appear first
+         end
+       else -- A is not a number
+         if Tb == "number" then
+           Cmp = false -- Numbers appear first
+         else
+           Cmp = A[1] &lt; B[1]
+         end
+       end
+       return Cmp
+     end
+     table.sort(SrtTbl, LclCmp)
+     for J, Rec in ipairs(SrtTbl) do
+       LclRender(Tbl, Rec[2], Rec[1], TruncLen, Lvl + 1, Visited, KeyPathStr)
+    end
+  end
+end
+
+-- This function appends a series of records of the form { level,
+-- description_string } to the indexed table specified by Tbl. When this
+-- function returns, Tbl can be used to inspect the Lua object specified by
+-- Val. Key specifies the name of the object. TruncLen specifies the maximum
+-- length of each description string; if this value is zero, no truncation will
+-- take place. Keys are sorted natively (that is, numbers are sorted
+-- numerically and everything else lexically). String values are displayed with
+-- quotes, numbers are unadorned, and all other values have an identifying
+-- prefix such as "boolean". Consequently, all keys are displayed within their
+-- type partition. This function returns nothing; its only effect is to augment
+-- Tbl.
+
+function ObjectDescribe(Tbl, Val, Key, TruncLen)
+  LclRender(Tbl, Val, LclRenderStr(Key, TruncLen), TruncLen or 0, 1, {}, "")
+end
+
+-- This function prints a hierarchical summary of the object specified by Val
+-- to standard out. See ObjectDescribe for more details.
+
+function ObjectShow(Val, Key, TruncLen)
+  local Tbl = {}</pre><pre class="programlisting">ObjectDescribe(Tbl, Val, Key, TruncLen)
+  for J, Rec in ipairs(Tbl) do
+    io.write(string.rep(" ", Rec[1] - 1), Rec[2], "\n")
+  end
+end</pre></li><li class="listitem"><p>Save the file in the module directory you created earlier. This will be the <code class="literal">show</code> module's permanent home.<a id="IDX-CHP-7-0019" class="indexterm"></a><a id="IDX-CHP-7-0020" class="indexterm"></a></p></li><li class="listitem"><p>In order to avoid some possible confusion, delete the older version <code class="literal">show.lua</code> in your current working directory. Now when you run <code class="literal">showtest.lua</code>, you'll be presented with a richer display of the table you pass to <code class="literal">ObjectShow</code>.</p></li><li class="listitem"><p>Take a look at the entire Lua global environment as follows:</p><pre class="programlisting">require("show")
+ObjectShow(_G, "_G")</pre><p>The output will span more lines than can fit on most screens, so you may want to pipe the output through a paging filter:</p><pre class="programlisting">lua showtest.lua | more</pre></li></ol></div><div class="blockquote"><blockquote class="blockquote"><p>On Linux, the wryly named <code class="literal">less</code> filter will provide more scrolling and search options.</p></blockquote></div></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="how_it_works-018"></a>How It Works</h3></div></div></div><p>Being able to display data structures this way is indispensable when you're developing scripts. After you have installed <code class="literal">show.lua</code> in a location included in the <code class="literal">LUA_PATH</code> sequence, other scripts you write can make use of it by simply requiring it.</p><p>The Lua interpreter enables you to specify a required module on the command line using the <code class="literal">-l</code> switch. For example, you view the global environment from your shell prompt as follows:</p><pre class="programlisting">lua -l show -e "ObjectShow(_G, '_G')" | more</pre><p>This Try It Out illustrates Lua's module location and loading logic. You follow steps that are similar to the previous Try It Out, but now <code class="literal">show.lua</code> resides in a "permanent" location where you can put other Lua modules.</p><p>This example also illustrates the concept of interface preservation. It can be argued that this particular script's interface could be improved, and you'll soon learn techniques to do so, but the advantage of preserving a module's interface should be clear.</p><p>There are some programming techniques that this example demonstrates as well. In particular, <code class="literal">show.lua</code> addresses the tree structure of Lua tables. Trees are special because any subtree (any table within a containing table) s a tree itself. A function that processes a tree can be used to process a subtree. This presents a classic application of using functions recursively.</p><p>Also note the use of thin wrappers at the bottom of the script. The <code class="literal">ObjectShow</code> function in the revised <code class="literal">show.lua</code> is simply a wrapper around the <code class="literal">ObjectDescribe</code> function. <code class="literal">ObjectShow</code> writes to the standard output stream, but <code class="literal">ObjectDescribe</code> and the functions it calls do not. This means you can use <code class="literal">ObjectDescribe</code> in a wider variety of contexts than <code class="literal">ObjectShow</code>. For example, you can call <code class="literal">ObjectDescribe</code> by a web page generator or a graph generator. If a wrapper around <code class="literal">ObjectDescribe</code> required the services of some other module, such as a graphing library, it would make sense to place this wrapper in its own module. Requiring such a module directly in <code class="literal">show.lua</code> where it isn't generally needed would diminish the reusability of <code class="literal">show.lua</code>.<a id="IDX-CHP-7-0021" class="indexterm"></a><a id="IDX-CHP-7-0022" class="indexterm"></a><a id="IDX-CHP-7-0023" class="indexterm"></a></p></div></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="module_bookkeeping"></a>Module Bookkeeping</h1></div></div></div><p>A module can in turn require modules of its own. This sets up the scenario in which the same script might be required more than once. For example, you may require two modules, each of which requires the same third module. How does Lua handle situations like this? As is usual with Lua, a short example can provide all the insight you need to figure things out. With your text editor, create a file named <span class="strong"><strong>modload.lua</strong></span> with the following contents:</p><pre class="programlisting">print(..., package.loaded[...])
+Serial = (Serial or 0) + 1
+return Serial</pre><p>Notice the use of the three dots (the <code class="literal">vararg</code> expression) as a placeholder for the module name. Remember that when Lua loads a chunk, it converts the chunk to a function. As with any Lua function, any practical number of arguments of any type can be passed to it. In this case, however, Lua has no way of knowing what arguments might be expected by the embedded chunk, so the arguments are passed in using the <code class="literal">vararg</code> mechanism. <code class="literal">require</code> passes only the module name to a module, so the <code class="literal">vararg</code> expression evaluates to a single string.</p><p>In the same directory, create a file named <code class="literal">modloadtest.lua</code> with the following contents:</p><pre class="programlisting">local ModStr = "modload"
+print("Main, before require", package.loaded[ModStr])
+local Val = require(ModStr)
+print("Main, after 1st require", package.loaded[ModStr], Val)
+Val = require(ModStr)
+print("Main, after 2nd require", package.loaded[ModStr], Val)
+package.loaded[ModStr] = nil
+Val = require(ModStr)
+print("Main, after reset", package.loaded[ModStr], Val)</pre><p>Now run the module like this:</p><pre class="programlisting">lua modloadtest.lua</pre><p>The output will look like the following:</p><pre class="programlisting">Main, before require  nil
+modload userdata: 6731F6D0
+Main, after 1st require 1        1
+Main, after 2nd require 1        1
+modload userdata: 6731F6D0
+Main, after reset       2        2</pre><p>Lua uses the table <code class="literal">package.loaded</code> to associate the name of a module with its return value. If the entry for a particular module is <code class="literal">nil</code>, it generally means that the module has not yet been loaded. As you can see, it might also mean that the table field has been cleared by your script to force a reload of the module. The <code class="literal">userdata</code> is Lua's way of indicating that a module is in the process of being loaded and no return value is available. This enables Lua to recognize a recursive loading loop and raise an error. The use of a <code class="literal">userdata</code> for this purpose is quintessential Lua, because it's a value that simply cannot be mistaken for the return value of a module.<a id="IDX-CHP-7-0024" class="indexterm"></a><a id="IDX-CHP-7-0025" class="indexterm"></a><a id="IDX-CHP-7-0026" class="indexterm"></a><a id="IDX-CHP-7-0027" class="indexterm"></a><a id="IDX-CHP-7-0028" class="indexterm"></a><a id="IDX-CHP-7-0029" class="indexterm"></a><a id="IDX-CHP-7-0030" class="indexterm"></a><a id="IDX-CHP-7-0031" class="indexterm"></a></p><p>Note that the <code class="literal">require</code> function did not load the module when it was called a second time. The <code class="literal">package.loaded</code> example value indicated that the module was already loaded, so <code class="literal">require</code> simply returned the value associated with it. This behavior suggests that you should do no more than define functions and initialize variables when the module chunk is called.</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>On systems such as Windows, filenames are case-insensitive. For example, <code class="literal">Lib.lua</code> is considered to be the same file as <code class="literal">lib.lua</code>. However, the associative table lookup mechanism that Lua uses to detect whether a file has already been loaded is case-sensitive. This can lead to a module being inadvertently loaded twice if somewhere in your application you call <code class="literal">require("Lib")</code> and elsewhere you call <code class="literal">require("lib")</code>.</p></div><p>Experiment with little variations to the <code class="literal">modload.lua</code> module to see how Lua responds. For example:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>Return <code class="literal">nil</code> rather than <code class="literal">Serial</code>.</p></li><li class="listitem"><p>Require <code class="literal">modload</code> from within <code class="literal">modload.lua</code>.</p></li><li class="listitem"><p>Make <code class="literal">Serial</code> a local variable instead of a global.</p></li></ul></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="bytecode"></a>Bytecode</h1></div></div></div><p>In the first Try It Out of this chapter, you saw the extension <code class="literal">.luac</code> in the <code class="literal">LUA_PATH</code> environment variable. This is the extension conventionally given to Lua bytecode, which is code that has been generated by the Lua compiler for subsequent use in the Lua virtual machine. Lua's script loading mechanism can read both Lua source code and Lua bytecode. When it reads a chunk, it distinguishes between the two forms and in the case of bytecode, it dispenses with the compiling stage. You can use the standalone version of the Lua compiler, named <code class="literal">luac</code> or <code class="literal">luac.exe</code> depending on your platform, to generate a bytecode file. The topic of bytecode fits into a discussion of modules because a compiled Lua script can be placed in the module directory.</p><p>Why would you want to execute bytecode rather than source code? Actually, for fewer reasons than you might at first suppose.</p><p>In general, the platform and the Lua version of both the Lua compiler and the Lua interpreter must match for bytecode to be executed properly. The instruction set used by Lua's virtual machine has changed over time. All bets are off when you compile Lua programs on one machine and run the resulting bytecode on another. Even if the two systems are running on similar hardware, it is likely that sooner or later there will be a version discrepancy between the compiler on one machine and the interpreter on another.</p><p>Lua has such a fast compiler that, in general practice, little performance is gained by skipping the compiling step. If you need to execute a Lua script repeatedly, it makes sense to load and compile the file once and then repeatedly call the resulting function.<a id="IDX-CHP-7-0032" class="indexterm"></a><a id="IDX-CHP-7-0033" class="indexterm"></a><a id="IDX-CHP-7-0034" class="indexterm"></a><a id="IDX-CHP-7-0035" class="indexterm"></a><a id="IDX-CHP-7-0036" class="indexterm"></a><a id="IDX-CHP-7-0037" class="indexterm"></a></p><p>The Lua compiler has a very nice feature that lets you amalgamate more than one Lua script into one bytecode file. To do this, simply specify the source files on the <code class="literal">luac</code> command line. This cannot be accomplished by using the <code class="literal">require</code> function, because even with a compiled script a call to <code class="literal">require</code> occurs at runtime. In fact, if you want to produce a single bytecode file that embeds Lua modules rather than loads them at runtime, you should include the modules on the <code class="literal">luac</code> command line and comment out calls to <code class="literal">require</code>.</p><p>If you're looking for top-notch performance of Lua programs on the x86 platform, investigate LuaJIT, a beautifully implemented just-in-time compiler for Lua programs created by Mike Pall. The LuaJIT package includes a replacement for <code class="literal">lua</code> called <code class="literal">luajit</code> that compiles Lua bytecode into x86 machine code as a program runs. You can find it at <code class="literal">luaforge.net</code>.</p></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="namespaces"></a>Namespaces</h1></div></div></div><p>Consider the following <code class="literal">Util.lua</code> module:</p><pre class="programlisting">function Quote(Str)
+  return string.format("%q", Str)
+end</pre><p>Now look at the following <code class="literal">UtilTest.lua</code> test script, which requires <code class="literal">Util.lua</code>:</p><pre class="programlisting">require("Util")
+print(Quote('Natty "Pathfinder" Bumppo'))</pre><p>Some programmers who use the <code class="literal">Util</code> module would be displeased that the variable <code class="literal">Quote</code> "pollutes" the global environment. In general, you would do well to model your approach after that used with the Lua libraries, and bundle your variables into a namespace table. For example, the string length function is given the name <code class="literal">len</code> in the global table named <code class="literal">string</code>. There are many ways you can implement a module with a namespace. The most common ways will be shown here, each implementing the <code class="literal">Quote</code> example in a slightly different manner.</p><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="creating_and_reusing_namespaces"></a>Creating and Reusing Namespaces</h2></div></div></div><p>Usually, a module will create a namespace table and place its functions and other variables in it. Here is the <code class="literal">Quote</code> example using this technique. The <code class="literal">Util.lua</code> module script contains the following:</p><pre class="programlisting">Util = {}
+
+function Util.Quote(Str)
+  return string.format("%q", Str)
+end
+
+return Util</pre><p>The <code class="literal">UtilTest.lua</code> calling script contains this:</p><pre class="programlisting">require("Util")
+print(Util.Quote('Natty "Pathfinder" Bumppo'))</pre><p>In this case, the namespace table <code class="literal">Util</code> is created as a global variable. By convention, it is also returned from the module. If more than one module is to add fields to the namespace table, it is important not to overwrite it. Find the following line:</p><pre class="programlisting">Util = {}</pre><p>And replace it with this:</p><pre class="programlisting">Util = Util or {}</pre><p>You need to do this in each module that adds fields to the <code class="literal">Util</code> table.</p><p>A module can add one or more fields into a standard library namespace. In this case, there is some merit in conforming to the naming conventions used in the namespace. Here is the <code class="literal">Quote</code> example applied to the standard <code class="literal">string</code> table (notice that the function is given an all-lowercase name). The <code class="literal">Util.lua</code> module script now contains the following:</p><pre class="programlisting">function string.quote(Str)
+  return string.format("%q", Str)
+end
+
+return string</pre><p>The <code class="literal">UtilTest.lua</code> test script contains this:</p><pre class="programlisting">require("Util")
+print(string.quote('Natty "Pathfinder" Bumppo'))</pre><p>A module does not have to create any global variables. Here is the <code class="literal">Quote</code> example using a local namespace table. The <code class="literal">Util.lua</code> module script contains the following:</p><pre class="programlisting">local Util = {}
+
+function Util.Quote(Str)
+  return string.format("%q", Str)
+end
+
+return Util</pre><p>The <code class="literal">UtilTest.lua</code> calling script contains this:</p><pre class="programlisting">Utility = require("Util")
+print(Utility.Quote('Natty "Pathfinder" Bumppo'))</pre><p>In this case, the namespace table must be returned by the module; otherwise, it would not be accessible to the program which requires it. Of course, nothing prevents the requiring program itself from assigning the namespace table to a global variable.</p></div><div class="sect2"><div class="titlepage"><div><div><h2 class="title"><a id="avoiding_global_variables"></a>Avoiding Global Variables</h2></div></div></div><p>Good modularization technique requires that you channel all access to your module through its interface. Creating global variables in a module exposes a part of its implementation and, because these variables are subject to modification outside the module itself, increases the chance of hard-to-track bugs. What methods can you use to avoid inadvertently creating globals?<a id="IDX-CHP-7-0038" class="indexterm"></a><a id="IDX-CHP-7-0039" class="indexterm"></a><a id="IDX-CHP-7-0040" class="indexterm"></a><a id="IDX-CHP-7-0041" class="indexterm"></a><a id="IDX-CHP-7-0042" class="indexterm"></a><a id="IDX-CHP-7-0043" class="indexterm"></a><a id="IDX-CHP-7-0044" class="indexterm"></a><a id="IDX-CHP-7-0045" class="indexterm"></a><a id="IDX-CHP-7-0046" class="indexterm"></a><a id="IDX-CHP-7-0047" class="indexterm"></a><a id="IDX-CHP-7-0048" class="indexterm"></a></p><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="using_the_strict_module"></a>Using the strict Module</h3></div></div></div><p>One technique is to use the <code class="literal">strict.lua</code> module, which is included in the <code class="literal">etc</code> directory of the Lua source distribution. Copy this file to the module directory you set up earlier in this chapter so that it can be loaded with a call to <code class="literal">require</code>. Here's an example of its use:</p><pre class="programlisting">require "strict"
+
+local function Test()
+  A = 2
+  B = 3
+end
+
+A = 1
+Test()</pre><p>Running this script results in the following error message:</p><pre class="programlisting">assign to undeclared variable 'B'</pre><p>The assignment to <code class="literal">A</code> in function <code class="literal">Test</code> was okay, but the assignment to <code class="literal">B</code> was not. When using the <code class="literal">strict</code> module, global variables must be first assigned at the main level of the chunk. This is what the line does, which makes the subsequent reassignment of <code class="literal">A</code> in <code class="literal">Test</code> work fine:</p><pre class="programlisting">A = 1</pre></div><div class="sect3"><div class="titlepage"><div><div><h3 class="title"><a id="reporting_all_global_assignments"></a>Reporting All Global Assignments</h3></div></div></div><p>You can use the Lua compiler to list the virtual machine instructions of your program. Here's an example of how to do this using the <code class="literal">show.lua</code> script:</p><pre class="programlisting">luac –l –p show.lua</pre><p>This results in a flurry of lines that look like the following:</p><pre class="programlisting">6     [104]  MOVE                 8 2 0
+   7     [104]  CALL                 4 5 1
+   8     [105]  GETGLOBAL            4 1      ; ipairs
+   9     [105]  MOVE                 5 3 0
+   10    [105]  CALL                 4 2 5
+   11    [105]  TFORPREP             4 11     ; to 23</pre><p>The <code class="literal">SETGLOBAL</code> instruction indicates the assignment of a global variable. You can simply filter out everything except these <code class="literal">SETGLOBAL</code> instructions using <code class="literal">grep</code>, like this:</p><pre class="programlisting">luac –l –p show.lua | grep SETGLOBAL</pre><p>On the Windows platform where <code class="literal">grep</code> isn't available by default, you can try the following command:<a id="IDX-CHP-7-0049" class="indexterm"></a><a id="IDX-CHP-7-0050" class="indexterm"></a><a id="IDX-CHP-7-0051" class="indexterm"></a><a id="IDX-CHP-7-0052" class="indexterm"></a></p><pre class="programlisting">luac –l –p show.lua | find "SETGLOBAL"</pre><p>This generates the following output, which confirms that there are no global assignments other than the intended ones:</p><pre class="programlisting">10   [95]    SETGLOBAL    3 0   ; ObjectDescribe
+    12   [102]  SETGLOBAL    3 1   ; ObjectShow</pre></div></div></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="the_module_function"></a>The module Function</h1></div></div></div><p>You can modularize a Lua script by calling the <code class="literal">module</code> function. Calling this function simplifies the process of modularizing your Lua code by creating a namespace table and effectively placing all global variables into this table.</p><div class="sidebar"><a id="try_it_out_colon_using_the_module_functi"></a><div class="titlepage"><div><div><p class="title"><strong>Try It Out: Using the module Function</strong></p></div></div></div><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Modify <code class="literal">Util.lua</code> so that it contains the following:</p><pre class="programlisting">local format = string.format
+
+module(...)
+
+function Quote(Str)
+  return format("%q", Str)
+end</pre></li><li class="listitem"><p>The calling script <code class="literal">UtilTest.lua</code> contains:</p><pre class="programlisting">require("Util")
+print(Util.Quote('Natty "Pathfinder" Bumppo'))</pre></li><li class="listitem"><p>Invoke the script in the usual way:</p><pre class="programlisting">lua UtilTest.lua</pre><p>The result is a quoted version of the specified string:</p><pre class="programlisting">"Natty \"Pathfinder\" Bumppo"</pre></li></ol></div><p><span class="strong"><strong>How It Works</strong></span></p><p>A number of things happen with the <code class="literal">module</code> function behind the scenes. Here is a summary of how it works:</p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>The <code class="literal">require</code> function is called with the <code class="literal">"Util"</code>string.</p></li><li class="listitem"><p><code class="literal">require</code> resolves this by locating and loading <code class="literal">"Util.lua"</code> as a chunk and calling it with the single <code class="literal">"Util"</code>argument.</p></li><li class="listitem"><p>The first statement to be executed in the module is the assignment of <code class="literal">string.format</code> to the local variable <code class="literal">format</code>. This is needed because the subsequent call to <code class="literal">module</code> will make all global variables inaccessible. Recall that Lua resolves references to global variables (that is, variables that are not introduced with the <code class="literal">local</code> keyword) in the global environment. By default, every function and chunk is associated with a common global environment, but you can change this programmatically.<a id="IDX-CHP-7-0053" class="indexterm"></a></p></li><li class="listitem"><p><code class="literal">module</code> is called with the <code class="literal">"Util"</code> string because, in this context, the vararg expression <code class="literal">...</code> holds everything that the chunk itself received when it was called by the <code class="literal">require</code> function.</p></li><li class="listitem"><p><code class="literal">module</code> creates a namespace table with the name <code class="literal">Util</code> in the current global environment.</p></li><li class="listitem"><p><code class="literal">module</code> changes the environment of the chunk to this newly created namespace table.</p></li><li class="listitem"><p>After <code class="literal">module</code> returns, the chunk creates the <code class="literal">Quote</code> function and gives it the name <code class="literal">Quote</code> in its global environment. Because of the machinations of module, this is not the original environment—it's the table that has the name <code class="literal">Util</code> in the original environment.</p></li><li class="listitem"><p>The string formatting function is called. However, Lua is now resolving all global variables in the new namespace table, which doesn't contain <code class="literal">string.format</code>, so the local variable that points to this function has to be used.</p></li><li class="listitem"><p><code class="literal">require</code> returns with the net effect that a new global variable named <code class="literal">Util</code> has been created.</p></li></ol></div></div><p>It would be tedious if, before calling <code class="literal">module</code>, you needed to make a local copy of every global variable that you were going to access. You could instead make a local copy of the namespaces you were going to use, like this:</p><pre class="programlisting">local string = string
+local table = table</pre><p>Lua allows you to take this to the next step, and make a local copy of the entire global environment. To do this, you add the following to the <code class="literal">Util.lua</code> file:</p><pre class="programlisting">local _G = _G
+
+module(...)
+
+function Quote(Str)
+  return _G.string.format("%q", Str)
+end</pre><p>Now you can access the members of the original environment within the local table <code class="literal">_G</code>.</p><p>Alternatively, you can dispense with the local copy altogether and arrange to have Lua look for global variables in the original environment by means of a metatable. (Metatables and metamethods will be explained in <a class="link" href="ch11.html" title="Chapter 11. Exploring Lua's Libraries">Chapter 11</a>.) The most convenient way to set this up is to pass the function <code class="literal">package.seeall</code> as a second argument to <code class="literal">module</code>, like this:<a id="IDX-CHP-7-0054" class="indexterm"></a></p><pre class="programlisting">module(..., package.seeall)
+
+function Quote(Str)
+  return string.format("%q", Str)
+end</pre><p>The arguments to <code class="literal">module</code> can include, after the module name, zero or more functions. After <code class="literal">module</code> creates the new namespace table, it calls each of these functions in turn with the namespace table as an argument. <code class="literal">package.seeall</code> creates a metatable for the namespace table that is passed to it, and sets the <code class="literal">index</code> metamethod to look for missing fields in the global environment. In the previous example, string is missing from the module's global environment, so Lua successfully looks for it in the original environment.<a id="IDX-CHP-7-0055" class="indexterm"></a><a id="IDX-CHP-7-0056" class="indexterm"></a><a id="IDX-CHP-7-0057" class="indexterm"></a><a id="IDX-CHP-7-0058" class="indexterm"></a></p></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="c_modules"></a>C Modules</h1></div></div></div><p>Lua modules are not restricted to Lua scripts. One of the defining aspects of Lua is its ability to interoperate smoothly with bindings written in C or some other low-level language. Bindings of this type must be built to conform with platform-dependent library requirements and with Lua's C programming interface. This feature allows Lua to act as an intermediary between the scripts you write and a vast collection of libraries that perform tasks such as network communication, document preparation, and user interface management. This topic is discussed in more detail in <a class="link" href="ch09.html" title="Chapter 9. Handling Events Naturally with Coroutines">Chapters 9</a> and <a class="link" href="ch13.html" title="Chapter 13. Interfacing Lua with Other Languages">13</a>.</p><p>If the <code class="literal">require</code> function fails to locate a matching file using <code class="literal">LUA_PATH</code>, it uses a similar approach to locate a compiled library. When searching for a library, <code class="literal">require</code> employs the same pattern substitution method as before but uses the <code class="literal">LUA_CPATH</code> environment variable. If it finds a match, it calls on the operating system to load the library. If this succeeds, it then locates and calls the function with the name formed by prepending <code class="literal">luaopen_</code> to the name of the module you are requiring. The <code class="literal">require</code> function has additional nuances which allow you to bundle submodules into a module and to accommodate versioned modules; these techniques are described in the Lua manual.</p></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="summary-019"></a>Summary</h1></div></div></div><p>In this chapter, you've learned about the following:</p><div class="itemizedlist"><ul class="itemizedlist"><li class="listitem"><p>Program modularization</p></li><li class="listitem"><p>The importance of adhering to an established module interface</p></li><li class="listitem"><p>The possibility of modifying a module's implementation without breaking the programs that use it</p></li><li class="listitem"><p>Lua's support for modules using the <code class="literal">require</code> and <code class="literal">module</code> functions</p></li><li class="listitem"><p>Lua's method of locating and loading modules</p></li></ul></div><p>Modules form the basis of a large number of Lua libraries and community libraries, which are discussed in the proceeding chapters. But before you go on, try out the concepts you learned in this chapter in the following exercises.</p></div><div class="sect1"><div class="titlepage"><div><div><h1 class="title"><a id="exercises-020"></a>Exercises</h1></div></div></div><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>In subsequent chapters, the <code class="literal">show</code> module will be used to provide insight into data structures managed by your programs. Convert the module into one that returns a table with the functions <code class="literal">Describe</code> and <code class="literal">Show</code>.</p></li><li class="listitem"><p>Imagine a Lua script named <code class="literal">nomod.lua</code> with the following contents:</p><pre class="programlisting">error("cannot find module " .. ...)</pre><p>Assuming there is no file named <code class="literal">xyz.lua</code> in the current directory, what happens when the following script is run?</p><pre class="programlisting">package.path = "?.lua;nomod.lua"
+
+require "xyz"
+
+print("Here in test.lua")</pre></li></ol></div></div></div></div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="ch06.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">6. Handling and Avoiding Errors</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="ch08.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">8. Extending Lua&#39;s Behavior with Metamethods</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag">
+        
+        
+
+        
+          <p>You have 6 days left in your trial, Michaelschiner. Subscribe today. <a href="https://learning.oreilly.com/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+        
+
+<footer class="pagefoot t-pagefoot">
+  <a href="ch07.html#" class="icon-up" onclick="window.Appcues.track('JumpTop_HeronBook')"><div class="visuallyhidden">Back to top</div></a>
+  <ul class='js-footer-nav'>
+  
+    
+    <li><a href="https://learning.oreilly.com/public/support/">Support</a></li>
+    
+    <li><a href="https://learning.oreilly.com/accounts/logout/">Sign Out</a></li>
+    
+  
+  
+  </ul>
+  <span class="copyright">&#169; 2021 <a href="https://learning.oreilly.com/" target="_blank">O'Reilly Media, Inc</a>.</span>
+  
+    
+    <a href="https://www.oreilly.com/terms/">Terms of Service</a> 
+     / 
+    
+    <a href="https://learning.oreilly.com/privacy">Privacy Policy</a> 
+    
+    
+  
+</footer>
+
+      
+    
+    <script src="https://learning.oreilly.com/jsi18n/web/" charset="utf-8"></script>
+    <script src="https://learning.oreilly.com/library/jsi18n/appcache/" charset="utf-8"></script>
+  </body>
+</html>
